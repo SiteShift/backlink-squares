@@ -59,9 +59,12 @@ export interface PricingTier {
 // $1 per square (100 cents)
 export const PRICE_PER_SQUARE = 100
 
+// Grid configuration
 export const GRID_COLUMNS = 10
+export const TOTAL_SQUARES = 10000
+export const MAX_ROWS = TOTAL_SQUARES / GRID_COLUMNS // 1000 rows
+export const INITIAL_ROWS = 20 // Start with 200 squares (20 rows x 10 cols) for faster initial load
 export const SQUARE_SIZE = 80 // px
-export const INITIAL_ROWS = 50
 
 export interface BlogPost {
   slug: string

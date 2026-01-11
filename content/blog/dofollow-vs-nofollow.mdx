@@ -1,0 +1,125 @@
+---
+title: "Dofollow vs Nofollow Links: What's the Difference?"
+description: "Understand the crucial difference between dofollow and nofollow links, how they impact your SEO, and when to use each type."
+date: "2025-01-09"
+author: "Marcus Johnson"
+authorTitle: "Technical SEO Lead"
+keywords:
+  - dofollow
+  - nofollow
+  - link attributes
+primaryKeyword: "dofollow vs nofollow"
+secondaryKeywords:
+  - rel nofollow
+  - link attributes SEO
+  - sponsored links
+---
+
+## Understanding Link Attributes
+
+When a website links to another, that link can carry different attributes that tell search engines how to treat it. The two most important types are dofollow and nofollow links.
+
+## What Is a Dofollow Link?
+
+A dofollow link is a standard HTML link that passes SEO value (often called "link juice" or "link equity") from the linking page to the linked page.
+
+By default, all links are dofollow unless specified otherwise. They look like this in HTML:
+
+```html
+<a href="https://example.com">Link Text</a>
+```
+
+When search engines crawl a dofollow link, they:
+
+- Follow the link to discover the destination page
+- Pass authority and ranking signals to that page
+- Use the anchor text as a relevance signal
+
+## What Is a Nofollow Link?
+
+A nofollow link includes a `rel="nofollow"` attribute that tells search engines not to pass ranking signals through the link.
+
+```html
+<a href="https://example.com" rel="nofollow">Link Text</a>
+```
+
+Google introduced the nofollow attribute in 2005 to combat comment spam. Since then, it's become a standard way to indicate that a website doesn't endorse the linked content.
+
+## When Are Nofollow Links Used?
+
+### Paid Links and Advertisements
+
+According to [Google's link spam policies](https://developers.google.com/search/docs/essentials/spam-policies#link-spam), paid links must use nofollow (or the newer `rel="sponsored"` attribute) to prevent manipulation of search rankings.
+
+### User-Generated Content
+
+Comments, forum posts, and other user-generated content typically use nofollow to prevent spam from affecting SEO.
+
+### Untrusted Content
+
+When you can't vouch for the quality or reliability of a linked page, nofollow is appropriate.
+
+## Additional Link Attributes
+
+Google has introduced additional link attributes beyond nofollow:
+
+### rel="sponsored"
+
+Specifically for paid placements, ads, and sponsored content. This is now Google's preferred attribute for any paid links.
+
+### rel="ugc"
+
+For links in user-generated content like comments and forum posts.
+
+### How Google Treats These Attributes
+
+Since 2020, Google treats nofollow as a "hint" rather than a directive. This means Google may choose to follow these links and pass some value in certain cases, though it's not guaranteed.
+
+## Do Nofollow Links Have Any Value?
+
+Yes! While nofollow links don't directly pass SEO authority, they offer several benefits:
+
+### 1. Referral Traffic
+
+Nofollow links can still drive significant traffic if they're on high-traffic pages.
+
+### 2. Brand Awareness
+
+Being mentioned on authoritative sites increases your brand visibility, regardless of link type.
+
+### 3. Natural Link Profile
+
+A healthy backlink profile includes a mix of dofollow and nofollow links. An unnatural ratio can look suspicious. Learn more about [evaluating backlink quality](/blog/backlink-quality-checklist).
+
+### 4. Potential for Future Dofollow Links
+
+Visibility from nofollow links can lead to dofollow links from other sources who discover your content.
+
+## SEO Best Practices
+
+### For Your Website
+
+- Use nofollow for paid links, ads, and affiliate links
+- Apply nofollow to untrusted or unverified links
+- Don't overuse nofollow on internal links
+
+### For Link Building
+
+- Focus primarily on earning dofollow links for SEO value
+- Don't ignore nofollow opportunities on high-traffic sites
+- Maintain a natural mix of link types
+
+## The Difference in Practice
+
+| Attribute | Passes SEO Value | Best For |
+|-----------|------------------|----------|
+| Dofollow (default) | Yes | Editorial links, organic mentions |
+| Nofollow | Hint only | User comments, untrusted content |
+| Sponsored | No | Paid placements, ads |
+| UGC | Hint only | Forum posts, comments |
+
+## Conclusion
+
+While dofollow links are the primary currency of SEO link building, nofollow links still play an important role in a complete digital marketing strategy. Focus on earning quality links of both types from relevant, authoritative sources.
+
+Ready to start building your dofollow backlink profile? Check out our guide on [link building strategies](/blog/link-building-strategies) for actionable tactics.

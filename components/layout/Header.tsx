@@ -1,21 +1,32 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ArrowRight, ExternalLink } from 'lucide-react'
+import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react'
 
 const navLinks = [
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/blog', label: 'Blog' },
-  { href: '/guides', label: 'Guides' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/about', label: 'About' },
 ]
 
+const contentHubs = [
+  { href: '/backlinks', label: 'Backlinks Fundamentals', description: 'Everything about backlinks' },
+  { href: '/link-building', label: 'Link Building Strategy', description: 'Comprehensive strategies' },
+  { href: '/backlink-quality', label: 'Quality & Risk', description: 'Evaluate and protect' },
+  { href: '/backlink-audit', label: 'Backlink Audits', description: 'Analyze your profile' },
+  { href: '/link-building-tactics', label: 'Tactics Library', description: 'Proven techniques' },
+  { href: '/digital-pr', label: 'Digital PR', description: 'PR-driven links' },
+]
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [learnDropdownOpen, setLearnDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const dropdownRef = useRef<HTMLLIElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,76 +36,90 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setLearnDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* Background with blur effect on scroll */}
-      <motion.div
-        className="absolute inset-0 border-b-2 border-surface-950/10"
-        initial={false}
-        animate={{
-          backgroundColor: scrolled ? 'rgba(250, 250, 249, 0.95)' : 'rgba(250, 250, 249, 1)',
-          backdropFilter: scrolled ? 'blur(12px)' : 'blur(0px)',
+      {/* Glassmorphism background */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'rgba(255, 255, 255, 0.85)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03)',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.5)',
         }}
-        transition={{ duration: 0.2 }}
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            {/* Animated logo mark */}
-            <div className="relative w-10 h-10 lg:w-11 lg:h-11">
-              {/* Base grid */}
-              <div className="absolute inset-0 grid grid-cols-3 gap-[2px] p-[2px] bg-surface-950">
-                {/* Row 1 */}
-                <motion.div
-                  className="bg-brand-red"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 400 }}
-                />
-                <motion.div
-                  className="bg-brand-red"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 400, delay: 0.02 }}
-                />
-                <div className="bg-white" />
-                {/* Row 2 */}
-                <motion.div
-                  className="bg-brand-red"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 400 }}
-                />
-                <motion.div
-                  className="bg-brand-yellow group-hover:bg-brand-blue transition-colors duration-300"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 400 }}
-                />
-                <div className="bg-white" />
-                {/* Row 3 */}
-                <div className="bg-white" />
-                <div className="bg-white" />
-                <motion.div
-                  className="bg-brand-blue"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: 'spring', stiffness: 400 }}
-                />
-              </div>
-            </div>
-
-            {/* Logo text */}
-            <div className="flex flex-col leading-none">
-              <span className="font-display font-black text-sm lg:text-base tracking-tight text-surface-950">
-                BACKLINK
-              </span>
-              <span className="font-display font-black text-sm lg:text-base tracking-tight text-brand-red">
-                GRID
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/backlink-grid-logo.svg"
+              alt="Backlink Grid"
+              width={160}
+              height={40}
+              className="h-8 lg:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center">
             <ul className="flex items-center gap-1">
+              {/* Learn Dropdown */}
+              <li className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setLearnDropdownOpen(!learnDropdownOpen)}
+                  className="relative px-4 py-2 text-sm font-semibold text-surface-600 hover:text-surface-950 transition-colors group flex items-center gap-1"
+                >
+                  Learn
+                  <ChevronDown className={`w-4 h-4 transition-transform ${learnDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {learnDropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute top-full left-0 mt-2 w-72 bg-white border-2 border-surface-950 shadow-brutal py-2"
+                    >
+                      {contentHubs.map((hub) => (
+                        <Link
+                          key={hub.href}
+                          href={hub.href}
+                          onClick={() => setLearnDropdownOpen(false)}
+                          className="block px-4 py-3 hover:bg-surface-50 transition-colors"
+                        >
+                          <span className="block text-sm font-semibold text-surface-950">{hub.label}</span>
+                          <span className="block text-xs text-surface-500 mt-0.5">{hub.description}</span>
+                        </Link>
+                      ))}
+                      <div className="border-t border-surface-200 mt-2 pt-2 px-4 pb-2">
+                        <Link
+                          href="/guides"
+                          onClick={() => setLearnDropdownOpen(false)}
+                          className="text-sm font-semibold text-brand-red hover:underline"
+                        >
+                          View All Guides →
+                        </Link>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </li>
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -121,7 +146,7 @@ export function Header() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span>Get Started</span>
+                <span>Get a Backlink</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </motion.button>
             </Link>
@@ -184,39 +209,68 @@ export function Header() {
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="lg:hidden absolute top-full left-0 right-0 bg-white border-b-2 border-surface-950 overflow-hidden"
             >
-              <nav className="px-4 py-6">
-                <ul className="space-y-1">
-                  {navLinks.map((link, index) => (
-                    <motion.li
-                      key={link.href}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05 + 0.1 }}
-                    >
-                      <Link
-                        href={link.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center gap-3 px-4 py-3 text-lg font-semibold text-surface-700
-                                 hover:text-surface-950 hover:bg-surface-50
-                                 border-l-2 border-transparent hover:border-brand-red
-                                 transition-all"
+              <nav className="px-4 py-6 max-h-[80vh] overflow-y-auto">
+                {/* Learn Section */}
+                <div className="mb-4">
+                  <p className="px-4 text-xs font-bold text-surface-400 uppercase tracking-wider mb-2">Learn</p>
+                  <ul className="space-y-1">
+                    {contentHubs.map((hub, index) => (
+                      <motion.li
+                        key={hub.href}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.03 + 0.1 }}
                       >
-                        {link.label}
-                      </Link>
-                    </motion.li>
-                  ))}
-                </ul>
+                        <Link
+                          href={hub.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-4 py-2 text-base font-semibold text-surface-700
+                                   hover:text-surface-950 hover:bg-surface-50
+                                   border-l-2 border-transparent hover:border-brand-red
+                                   transition-all"
+                        >
+                          {hub.label}
+                        </Link>
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Main Nav */}
+                <div className="border-t border-surface-200 pt-4">
+                  <ul className="space-y-1">
+                    {navLinks.map((link, index) => (
+                      <motion.li
+                        key={link.href}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.05 + 0.3 }}
+                      >
+                        <Link
+                          href={link.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-4 py-3 text-lg font-semibold text-surface-700
+                                   hover:text-surface-950 hover:bg-surface-50
+                                   border-l-2 border-transparent hover:border-brand-red
+                                   transition-all"
+                        >
+                          {link.label}
+                        </Link>
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
 
                 {/* Mobile CTA */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.5 }}
                   className="mt-6 pt-6 border-t border-surface-200"
                 >
                   <Link href="/#grid" onClick={() => setMobileMenuOpen(false)}>
                     <button className="btn-red w-full justify-center">
-                      Get Started
+                      Get a Backlink
                       <ArrowRight className="w-5 h-5" />
                     </button>
                   </Link>

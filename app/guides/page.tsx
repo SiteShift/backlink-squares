@@ -1,67 +1,8 @@
-import { Metadata } from 'next'
 import Link from 'next/link'
 import { Clock, ArrowRight, BookOpen } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-
-export const metadata: Metadata = {
-  title: 'SEO & Link Building Guides - In-Depth Resources',
-  description:
-    'Comprehensive guides on backlinks, link building strategies, and SEO. Learn from our in-depth pillar content.',
-  openGraph: {
-    title: 'SEO & Link Building Guides | SEO Backlinks Grid',
-    description:
-      'In-depth guides covering everything you need to know about backlinks and link building.',
-  },
-}
-
-const guides = [
-  {
-    slug: 'what-are-backlinks-complete-guide',
-    title: 'What Are Backlinks? The Complete Guide',
-    description:
-      'Everything you need to know about backlinks - what they are, why they matter, types of backlinks, and how to build them effectively.',
-    readingTime: '25 min read',
-    chapters: [
-      'Understanding Backlinks',
-      'Types of Backlinks',
-      'How Search Engines Evaluate Links',
-      'Building Your First Backlinks',
-      'Advanced Link Building Tactics',
-    ],
-    color: 'red',
-  },
-  {
-    slug: 'link-building-strategies-guide',
-    title: 'Link Building Strategies: The Definitive Guide',
-    description:
-      'Master every link building technique - from guest posting to broken link building, HARO, and more. Actionable strategies that work.',
-    readingTime: '30 min read',
-    chapters: [
-      'Content-Based Link Building',
-      'Outreach Strategies',
-      'Technical Link Building',
-      'Local Link Building',
-      'Measuring Success',
-    ],
-    color: 'yellow',
-  },
-  {
-    slug: 'domain-authority-guide',
-    title: 'Domain Authority Explained: How to Improve Your DA',
-    description:
-      'A comprehensive guide to understanding and improving your Domain Authority. Learn what affects DA and how to grow it.',
-    readingTime: '20 min read',
-    chapters: [
-      'What is Domain Authority?',
-      'DA vs DR vs Other Metrics',
-      'Factors That Affect DA',
-      'Strategies to Improve DA',
-      'Common DA Myths',
-    ],
-    color: 'blue',
-  },
-]
+import { getAllGuides } from '@/lib/content'
 
 const colorClasses = {
   red: {
@@ -81,7 +22,16 @@ const colorClasses = {
   },
 }
 
+// Map guides to colors
+const guideColors: Record<string, keyof typeof colorClasses> = {
+  'what-are-backlinks-complete-guide': 'red',
+  'link-building-strategies-guide': 'yellow',
+  'domain-authority-guide': 'blue',
+}
+
 export default function GuidesPage() {
+  const guides = getAllGuides()
+
   return (
     <>
       <Header />
@@ -114,7 +64,8 @@ export default function GuidesPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-8">
               {guides.map((guide, index) => {
-                const colors = colorClasses[guide.color as keyof typeof colorClasses]
+                const colorKey = guideColors[guide.slug] || 'red'
+                const colors = colorClasses[colorKey]
                 return (
                   <Link
                     key={guide.slug}
@@ -150,24 +101,18 @@ export default function GuidesPage() {
                             {guide.description}
                           </p>
 
-                          <div className="space-y-2">
-                            <p className="text-sm font-bold text-dark/50 uppercase tracking-wider">
-                              Chapters
-                            </p>
-                            <ol className="grid sm:grid-cols-2 gap-2">
-                              {guide.chapters.map((chapter, i) => (
-                                <li
-                                  key={i}
-                                  className="flex items-center gap-2 text-sm text-dark/70"
+                          {guide.keywords && guide.keywords.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {guide.keywords.map((keyword) => (
+                                <span
+                                  key={keyword}
+                                  className="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-bauhaus-cream border-2 border-dark text-dark"
                                 >
-                                  <span className="flex-shrink-0 w-6 h-6 bg-bauhaus-cream border-2 border-dark flex items-center justify-center text-xs font-bold text-dark">
-                                    {i + 1}
-                                  </span>
-                                  {chapter}
-                                </li>
+                                  {keyword}
+                                </span>
                               ))}
-                            </ol>
-                          </div>
+                            </div>
+                          )}
                         </div>
 
                         <div className="lg:self-center">

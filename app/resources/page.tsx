@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getHubContent, getHubClusters } from '@/lib/content'
+import { getHubContent, getHubClusters, getRelatedHubs } from '@/lib/content'
 import { HubPage } from '@/components/content/HubPage'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
@@ -47,6 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function ResourcesHubPage() {
   const hub = getHubContent(HUB_SLUG)
   const clusters = getHubClusters(HUB_SLUG)
+  const relatedHubs = getRelatedHubs(HUB_SLUG)
 
   if (!hub) {
     notFound()
@@ -76,6 +77,7 @@ export default function ResourcesHubPage() {
       <HubPage
         hub={hub}
         clusters={clusters}
+        relatedHubs={relatedHubs}
         content={
           <MDXRemote
             source={hub.content}

@@ -1,8 +1,6 @@
-'use client'
-
 import Link from 'next/link'
 import { Clock, User, Calendar, ChevronRight, ArrowRight, BookOpen, CheckCircle } from 'lucide-react'
-import { HubContent, ClusterMeta } from '@/lib/content'
+import { HubContent, ClusterMeta, HubMeta } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -12,10 +10,11 @@ import { ContentCTA } from '@/components/content/ContentCTA'
 interface HubPageProps {
   hub: HubContent
   clusters: ClusterMeta[]
+  relatedHubs?: HubMeta[]
   content: React.ReactNode
 }
 
-export function HubPage({ hub, clusters, content }: HubPageProps) {
+export function HubPage({ hub, clusters, relatedHubs = [], content }: HubPageProps) {
   return (
     <>
       <Header />
@@ -61,7 +60,10 @@ export function HubPage({ hub, clusters, content }: HubPageProps) {
               <div className="flex flex-wrap items-center gap-6 text-sm text-dark/60">
                 <div className="flex items-center gap-2">
                   <User className="w-4 h-4" />
-                  <span>{hub.author}</span>
+                  <span>
+                    {hub.author}
+                    {hub.authorTitle && <span className="text-dark/40"> - {hub.authorTitle}</span>}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
@@ -142,6 +144,31 @@ export function HubPage({ hub, clusters, content }: HubPageProps) {
                               <ArrowRight className="w-3 h-3" />
                             </span>
                           </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Related Hubs */}
+                {relatedHubs.length > 0 && (
+                  <div className="mt-12 bg-bauhaus-cream border-3 border-dark p-8">
+                    <h2 className="font-display font-black text-xl text-dark mb-6">
+                      Explore Related Topics
+                    </h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      {relatedHubs.slice(0, 4).map((relatedHub) => (
+                        <Link
+                          key={relatedHub.slug}
+                          href={`/${relatedHub.slug}`}
+                          className="group block bg-white border-3 border-dark p-5 hover:shadow-bauhaus hover:border-bauhaus-red transition-all"
+                        >
+                          <h3 className="font-bold text-dark group-hover:text-bauhaus-red mb-2 transition-colors">
+                            {relatedHub.title}
+                          </h3>
+                          <p className="text-sm text-dark/60 line-clamp-2">
+                            {relatedHub.description}
+                          </p>
                         </Link>
                       ))}
                     </div>

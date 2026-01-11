@@ -6,11 +6,10 @@ import { ChevronDown, Loader2 } from 'lucide-react'
 import { useGridStore } from '@/lib/store'
 import { Square } from './Square'
 import { SelectionBar } from './SelectionBar'
-import { GRID_COLUMNS, INITIAL_ROWS } from '@/lib/types'
+import { GRID_COLUMNS, INITIAL_ROWS, MAX_ROWS, TOTAL_SQUARES } from '@/lib/types'
 import { cn } from '@/lib/utils'
 
 const ROWS_PER_LOAD = 30
-const MAX_ROWS = 500 // Total rows available
 
 export function Grid() {
   const {
@@ -89,7 +88,7 @@ export function Grid() {
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-brand-red" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-surface-500">
-                Live Grid
+                Do Follow Backlinks
               </span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">
@@ -157,7 +156,7 @@ export function Grid() {
 
         {/* Loaded info */}
         <div className="text-center mt-4 sm:mt-6 text-xs sm:text-sm text-surface-400">
-          Showing {(visibleRows * GRID_COLUMNS).toLocaleString()} of {(MAX_ROWS * GRID_COLUMNS).toLocaleString()} squares
+          Showing {(visibleRows * GRID_COLUMNS).toLocaleString()} of {TOTAL_SQUARES.toLocaleString()} squares
         </div>
       </div>
 

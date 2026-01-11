@@ -4,11 +4,17 @@ import { ArrowRight, Target, Heart, Users, TrendingUp } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
+import { OrganizationSchema } from '@/components/seo/JsonLd'
+
+const BASE_URL = 'https://seobacklinks.dev'
 
 export const metadata: Metadata = {
   title: 'About Us - The Story Behind SEO Backlinks Grid',
   description:
     'Learn about SEO Backlinks Grid - the visual backlink marketplace making link building accessible, affordable, and transparent for everyone.',
+  alternates: {
+    canonical: `${BASE_URL}/about`,
+  },
   openGraph: {
     title: 'About SEO Backlinks Grid',
     description:
@@ -56,6 +62,15 @@ const colorClasses = {
 export default function AboutPage() {
   return (
     <>
+      <OrganizationSchema
+        name="SEO Backlinks Grid"
+        url={BASE_URL}
+        logo={`${BASE_URL}/logo.png`}
+        sameAs={[
+          'https://twitter.com/seobacklinks',
+          'https://linkedin.com/company/seobacklinks',
+        ]}
+      />
       <Header />
 
       <main className="min-h-screen">

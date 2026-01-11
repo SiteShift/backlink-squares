@@ -32,6 +32,8 @@ export interface HubMeta {
   wordCount: number
   lastUpdated: string
   author: string
+  authorTitle?: string
+  authorBio?: string
   readingTime: string
   hub: string
   clusterPages?: string[]
@@ -193,8 +195,27 @@ export function getGuide(slug: string): ContentItem | null {
   }
 }
 
+// Glossary term type
+export interface GlossaryTermMeta {
+  slug: string
+  title: string
+  description: string
+  metaTitle?: string
+  metaDescription?: string
+  primaryKeyword?: string
+  secondaryKeywords?: string[]
+  lastUpdated: string
+  author: string
+  readingTime: string
+  relatedTerms: string[]
+}
+
+export interface GlossaryTermContent extends GlossaryTermMeta {
+  content: string
+}
+
 // Get all glossary terms
-export function getAllGlossaryTerms(): ContentMeta[] {
+export function getAllGlossaryTerms(): GlossaryTermMeta[] {
   const glossaryDir = path.join(contentDirectory, 'glossary')
 
   if (!fs.existsSync(glossaryDir)) {
@@ -203,20 +224,33 @@ export function getAllGlossaryTerms(): ContentMeta[] {
 
   const files = fs.readdirSync(glossaryDir)
   const terms = files
-    .filter((file) => file.endsWith('.mdx'))
+    .filter((file) => file.endsWith('.mdx') && file !== '_index.mdx')
     .map((file) => {
       const slug = file.replace('.mdx', '')
       const fullPath = path.join(glossaryDir, file)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
 
+      // Extract clean term name from title (e.g., "What Is a Backlink? Complete Definition & Guide" -> "Backlink")
+      let termName = data.title || slug
+      // Try to extract just the term name if title is a full sentence
+      const match = termName.match(/^What (?:Is|Are) (?:a |an |the )?(.+?)[\?:]/i)
+      if (match) {
+        termName = match[1].trim()
+      }
+
       return {
         slug,
-        title: data.title || slug,
+        title: termName,
         description: data.description || '',
-        date: data.date || new Date().toISOString(),
-        keywords: data.keywords || [],
+        metaTitle: data.metaTitle,
+        metaDescription: data.metaDescription,
+        primaryKeyword: data.primaryKeyword,
+        secondaryKeywords: data.secondaryKeywords || [],
+        lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
+        author: data.author || 'SEO Backlinks Team',
         readingTime: calculateReadingTime(content),
+        relatedTerms: data.relatedTerms || [],
       }
     })
     .sort((a, b) => a.title.localeCompare(b.title))
@@ -225,7 +259,7 @@ export function getAllGlossaryTerms(): ContentMeta[] {
 }
 
 // Get single glossary term
-export function getGlossaryTerm(slug: string): ContentItem | null {
+export function getGlossaryTerm(slug: string): GlossaryTermContent | null {
   const fullPath = path.join(contentDirectory, 'glossary', `${slug}.mdx`)
 
   if (!fs.existsSync(fullPath)) {
@@ -235,13 +269,25 @@ export function getGlossaryTerm(slug: string): ContentItem | null {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
+  // Extract clean term name from title
+  let termName = data.title || slug
+  const match = termName.match(/^What (?:Is|Are) (?:a |an |the )?(.+?)[\?:]/i)
+  if (match) {
+    termName = match[1].trim()
+  }
+
   return {
     slug,
-    title: data.title || slug,
+    title: termName,
     description: data.description || '',
-    date: data.date || new Date().toISOString(),
-    keywords: data.keywords || [],
+    metaTitle: data.metaTitle,
+    metaDescription: data.metaDescription,
+    primaryKeyword: data.primaryKeyword,
+    secondaryKeywords: data.secondaryKeywords || [],
+    lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
+    author: data.author || 'SEO Backlinks Team',
     readingTime: calculateReadingTime(content),
+    relatedTerms: data.relatedTerms || [],
     content,
   }
 }
@@ -299,6 +345,8 @@ export function getHubContent(hubSlug: string): HubContent | null {
     wordCount: content.split(/\s+/).length,
     lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
     author: data.author || 'SEO Backlinks',
+    authorTitle: data.authorTitle,
+    authorBio: data.authorBio,
     readingTime: calculateReadingTime(content),
     hub: hubSlug,
     clusterPages: data.clusterPages || [],
@@ -412,6 +460,13 @@ export function getAllHubs(): HubMeta[] {
     .filter((hub): hub is HubContent => hub !== null)
 }
 
+// Get related hubs (excluding current hub)
+export function getRelatedHubs(currentHubSlug: string, limit: number = 4): HubMeta[] {
+  return getAllHubs()
+    .filter((hub) => hub.slug !== currentHubSlug)
+    .slice(0, limit)
+}
+
 // Get related clusters across hubs
 export function getRelatedClusters(
   currentHub: string,
@@ -498,7 +553,7 @@ export function getAllContentPages(): { url: string; lastModified: string; prior
   for (const term of glossaryTerms) {
     pages.push({
       url: `/glossary/${term.slug}`,
-      lastModified: term.date,
+      lastModified: term.lastUpdated,
       priority: 0.6,
     })
   }

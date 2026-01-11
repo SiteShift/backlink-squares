@@ -29,7 +29,7 @@ export async function createCheckoutSession(
       line_items: [
         {
           price_data: {
-            currency: 'gbp',
+            currency: 'usd',
             product_data: {
               name: `${params.squareCount} Square${params.squareCount > 1 ? 's' : ''} on SEO Backlinks Grid`,
               description: `Permanent dofollow backlink for ${params.siteName}`,

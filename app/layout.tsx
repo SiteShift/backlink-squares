@@ -62,8 +62,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
@@ -77,12 +81,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -91,16 +89,7 @@ export default function RootLayout({
               '@type': 'WebSite',
               name: 'SEO Backlinks Grid',
               url: 'https://seobacklinks.dev',
-              description: 'Buy dofollow backlinks on our visual grid',
-              potentialAction: {
-                '@type': 'SearchAction',
-                target: {
-                  '@type': 'EntryPoint',
-                  urlTemplate:
-                    'https://seobacklinks.dev/search?q={search_term_string}',
-                },
-                'query-input': 'required name=search_term_string',
-              },
+              description: 'Buy dofollow backlinks on our visual grid. Permanent links from $1.',
             }),
           }}
         />

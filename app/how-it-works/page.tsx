@@ -16,17 +16,39 @@ import {
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
+import { HowToSchema } from '@/components/seo/JsonLd'
+
+const BASE_URL = 'https://seobacklinks.dev'
 
 export const metadata: Metadata = {
   title: 'How It Works - Get Your Backlink in 3 Simple Steps',
   description:
     'Learn how to purchase a square on the SEO Backlinks Grid and get your permanent dofollow backlink. Simple 3-step process with instant activation.',
+  alternates: {
+    canonical: `${BASE_URL}/how-it-works`,
+  },
   openGraph: {
     title: 'How It Works | SEO Backlinks Grid',
     description:
       'Get your permanent dofollow backlink in 3 simple steps. Select, customize, and go live instantly.',
   },
 }
+
+// HowTo schema data
+const howToSteps = [
+  {
+    name: 'Select Your Squares',
+    text: 'Browse the grid and click on any empty squares to select them. You can choose a single 1x1 square for maximum affordability, or select multiple adjacent squares for greater visibility.',
+  },
+  {
+    name: 'Add Your Details',
+    text: 'Enter your website URL, site name, and optionally upload your logo. See a live preview of exactly how your square will appear on the grid.',
+  },
+  {
+    name: 'Go Live Instantly',
+    text: 'Complete your purchase securely via Stripe. The moment your payment is confirmed, your square goes live with a real, crawlable dofollow backlink pointing to your site.',
+  },
+]
 
 const steps = [
   {
@@ -128,6 +150,12 @@ const pricing = [
 export default function HowItWorksPage() {
   return (
     <>
+      <HowToSchema
+        name="How to Get a Dofollow Backlink on SEO Backlinks Grid"
+        description="Learn how to purchase a square and get your permanent dofollow backlink in 3 simple steps."
+        steps={howToSteps}
+        totalTime="PT5M"
+      />
       <Header />
 
       <main className="min-h-screen">

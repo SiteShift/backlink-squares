@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { Clock, User, Calendar, ChevronRight, ArrowRight, ArrowLeft, BookOpen } from 'lucide-react'
 import { ClusterContent, ClusterMeta, HubMeta } from '@/lib/content'

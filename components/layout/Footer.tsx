@@ -22,10 +22,10 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { href: 'https://twitter.com/backlinkgrid', icon: Twitter, label: 'Twitter' },
-  { href: 'https://linkedin.com/company/backlinkgrid', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://github.com/backlinkgrid', icon: Github, label: 'GitHub' },
-  { href: 'mailto:hello@backlinkgrid.com', icon: Mail, label: 'Email' },
+  { href: 'https://twitter.com/seobacklinks', icon: Twitter, label: 'Twitter' },
+  { href: 'https://linkedin.com/company/seobacklinks', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://github.com/seobacklinks', icon: Github, label: 'GitHub' },
+  { href: 'mailto:hello@seobacklinks.dev', icon: Mail, label: 'Email' },
 ]
 
 export function Footer() {
@@ -141,7 +141,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-surface-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-surface-500">
-            © {new Date().getFullYear()} BacklinkGrid. All rights reserved.
+            © {new Date().getFullYear()} SEO Backlinks Grid. All rights reserved.
           </p>
 
           {/* Color dots signature */}

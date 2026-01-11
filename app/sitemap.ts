@@ -26,6 +26,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/pricing`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/statistics`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -69,6 +81,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // Hardcoded blog posts (until migrated to MDX)
+  const hardcodedBlogSlugs = [
+    'what-are-backlinks',
+    'dofollow-vs-nofollow',
+    'link-building-strategies',
+    'domain-authority-explained',
+    'backlink-quality-checklist',
+  ]
+  const hardcodedBlogPosts: MetadataRoute.Sitemap = hardcodedBlogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // Hardcoded guides (until migrated to MDX)
+  const hardcodedGuideSlugs = [
+    'what-are-backlinks-complete-guide',
+    'link-building-strategies-guide',
+    'domain-authority-guide',
+  ]
+  const hardcodedGuides: MetadataRoute.Sitemap = hardcodedGuideSlugs.map((slug) => ({
+    url: `${baseUrl}/guides/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
   // Content hub pages (pillar pages - high priority)
   const hubPages: MetadataRoute.Sitemap = []
   const clusterPages: MetadataRoute.Sitemap = []
@@ -95,31 +135,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Blog posts
-  const blogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+  // Blog posts from MDX (when they exist) - merged with hardcoded
+  const mdxBlogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.date || currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
-  // Guides
-  const guides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
+  // Guides from MDX (when they exist) - merged with hardcoded
+  const mdxGuides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
     url: `${baseUrl}/guides/${guide.slug}`,
     lastModified: guide.date || currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
 
-  // Glossary terms
-  const glossaryTerms: MetadataRoute.Sitemap = getAllGlossaryTerms()
-    .filter((term) => term.slug !== '_index')
-    .map((term) => ({
-      url: `${baseUrl}/glossary/${term.slug}`,
-      lastModified: term.date || currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    }))
+  // Glossary terms from MDX
+  const glossaryTerms: MetadataRoute.Sitemap = getAllGlossaryTerms().map((term) => ({
+    url: `${baseUrl}/glossary/${term.slug}`,
+    lastModified: term.lastUpdated || currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  // Combine blog and guide posts (MDX takes precedence, then hardcoded)
+  const allBlogUrls = Array.from(new Set([...mdxBlogPosts.map(p => p.url), ...hardcodedBlogPosts.map(p => p.url)]))
+  const blogPosts = allBlogUrls.map(url => {
+    const mdx = mdxBlogPosts.find(p => p.url === url)
+    const hardcoded = hardcodedBlogPosts.find(p => p.url === url)
+    return mdx || hardcoded!
+  })
+
+  const allGuideUrls = Array.from(new Set([...mdxGuides.map(g => g.url), ...hardcodedGuides.map(g => g.url)]))
+  const guides = allGuideUrls.map(url => {
+    const mdx = mdxGuides.find(g => g.url === url)
+    const hardcoded = hardcodedGuides.find(g => g.url === url)
+    return mdx || hardcoded!
+  })
 
   return [
     ...staticPages,

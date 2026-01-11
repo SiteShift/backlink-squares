@@ -1,45 +1,43 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Search, BookText } from 'lucide-react'
+import { BookText } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { getAllGlossaryTerms } from '@/lib/content'
+
+const BASE_URL = 'https://seobacklinks.dev'
 
 export const metadata: Metadata = {
   title: 'SEO Glossary - Link Building Terms Explained',
   description:
-    'Essential SEO and link building glossary. Learn the meaning of important terms from anchor text to toxic backlinks.',
+    'Essential SEO and link building glossary. Learn the meaning of important terms from anchor text to UGC links. 17+ terms explained simply.',
+  alternates: {
+    canonical: `${BASE_URL}/glossary`,
+  },
   openGraph: {
     title: 'SEO Glossary | SEO Backlinks Grid',
     description:
       'Essential glossary of SEO and link building terms explained simply.',
+    url: `${BASE_URL}/glossary`,
   },
 }
 
-// Glossary terms - only terms with full definitions
-const glossaryTerms = [
-  { slug: 'anchor-text', term: 'Anchor Text', preview: 'The clickable text in a hyperlink that users see and click on.' },
-  { slug: 'backlink', term: 'Backlink', preview: 'A link from one website to another, also called an inbound link.' },
-  { slug: 'dofollow', term: 'Dofollow', preview: 'A standard link that passes SEO value to the linked page.' },
-  { slug: 'domain-authority', term: 'Domain Authority', preview: 'Moz\'s metric predicting how well a site will rank in search.' },
-  { slug: 'link-building', term: 'Link Building', preview: 'The process of acquiring backlinks from other websites to improve SEO.' },
-  { slug: 'link-equity', term: 'Link Equity', preview: 'The value and authority passed from one page to another through links.' },
-  { slug: 'nofollow', term: 'Nofollow', preview: 'A link attribute telling search engines not to pass ranking signals.' },
-  { slug: 'pagerank', term: 'PageRank', preview: 'Google\'s original algorithm for measuring page importance via links.' },
-  { slug: 'referring-domain', term: 'Referring Domain', preview: 'A unique domain that contains at least one link to your website.' },
-  { slug: 'toxic-backlink', term: 'Toxic Backlink', preview: 'A low-quality or spammy link that may harm your search rankings.' },
-]
-
 // Group terms by first letter
-const groupedTerms = glossaryTerms.reduce((acc, term) => {
-  const letter = term.term[0].toUpperCase()
-  if (!acc[letter]) acc[letter] = []
-  acc[letter].push(term)
-  return acc
-}, {} as Record<string, typeof glossaryTerms>)
+function groupTermsByLetter(terms: ReturnType<typeof getAllGlossaryTerms>) {
+  return terms.reduce((acc, term) => {
+    const letter = term.title[0].toUpperCase()
+    if (!acc[letter]) acc[letter] = []
+    acc[letter].push(term)
+    return acc
+  }, {} as Record<string, typeof terms>)
+}
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 export default function GlossaryPage() {
+  const glossaryTerms = getAllGlossaryTerms()
+  const groupedTerms = groupTermsByLetter(glossaryTerms)
+
   return (
     <>
       <Header />
@@ -60,7 +58,7 @@ export default function GlossaryPage() {
               </h1>
               <p className="mt-4 text-xl text-dark/60">
                 The complete dictionary of SEO terminology. From anchor text to
-                zero-click searches, every term explained simply.
+                UGC links, every term explained simply.
               </p>
             </div>
           </div>
@@ -108,10 +106,10 @@ export default function GlossaryPage() {
                         className="group block bg-white border-3 border-dark p-5 hover:shadow-bauhaus hover:border-bauhaus-red transition-all"
                       >
                         <h3 className="font-display font-bold text-dark group-hover:text-bauhaus-red mb-1">
-                          {term.term}
+                          {term.title}
                         </h3>
                         <p className="text-sm text-dark/60 line-clamp-2">
-                          {term.preview}
+                          {term.description}
                         </p>
                       </Link>
                     ))}

@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/components/home/Hero'
@@ -7,8 +8,51 @@ import { PurchaseModal } from '@/components/grid/PurchaseModal'
 import { HowItWorks } from '@/components/home/HowItWorks'
 import { FAQ } from '@/components/home/FAQ'
 import { CTA } from '@/components/home/CTA'
+import { FAQSchema } from '@/components/seo/JsonLd'
 import { Square } from '@/lib/types'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
+
+const BASE_URL = 'https://seobacklinks.dev'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: BASE_URL,
+  },
+}
+
+// FAQ data for schema
+const faqData = [
+  {
+    question: 'What is a dofollow backlink?',
+    answer:
+      'A dofollow backlink is a link that passes "link equity" or "link juice" to your website. Unlike nofollow links, dofollow links tell search engines to follow the link and count it as a vote of confidence for your site, which can help improve your search rankings.',
+  },
+  {
+    question: 'How quickly will my square appear on the grid?',
+    answer:
+      "Your square appears instantly after your payment is confirmed. There's no waiting period or manual approval process. As soon as Stripe confirms your payment, your logo and link go live on the grid.",
+  },
+  {
+    question: 'Is this a permanent backlink?',
+    answer:
+      'Yes! When you purchase a square, you get a permanent, lifetime placement on the grid. There are no monthly fees, no renewals, and no risk of your link being removed. Your backlink stays active as long as our site exists.',
+  },
+  {
+    question: 'Can I buy multiple squares?',
+    answer:
+      'Absolutely! You can select as many adjacent squares as you like. Larger selections give you more visibility on the grid - perfect for showing off your full logo or brand name. The price scales linearly: $1 per square.',
+  },
+  {
+    question: 'How does this help my SEO?',
+    answer:
+      "Every square on our grid includes a real, crawlable dofollow link. As our domain authority grows through our content and links, the value of your backlink increases too. You're essentially getting in early on a growing SEO asset.",
+  },
+  {
+    question: 'Do you offer refunds?',
+    answer:
+      "Due to the nature of this product (instant, permanent backlinks), we generally don't offer refunds once your square is live. However, if there's an issue with your purchase, please contact us and we'll work to make it right.",
+  },
+]
 
 // Fetch purchased squares from database
 async function getPurchasedSquares(): Promise<Square[]> {
@@ -46,6 +90,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <FAQSchema questions={faqData} />
       <Header />
 
       <main className="min-h-screen">
@@ -87,12 +132,12 @@ export default async function HomePage() {
             <div className="text-center mb-16">
               <div className="section-label mx-auto mb-8">
                 <span className="section-label-dot bg-brand-red" />
-                <span>Select Your Squares</span>
+                <span>Do Follow Backlinks</span>
               </div>
 
               <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight">
                 Claim Your{' '}
-                <span className="text-brand-red">Spot</span>
+                <span className="text-brand-red">Backlink</span>
               </h2>
 
               <p className="mt-6 text-lg text-surface-600 max-w-xl mx-auto">

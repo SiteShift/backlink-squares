@@ -1,77 +1,10 @@
-import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { BlogCard } from '@/components/content/BlogCard'
 import { getAllBlogPosts } from '@/lib/content'
 
-export const metadata: Metadata = {
-  title: 'SEO & Link Building Blog - Expert Guides & Tips',
-  description:
-    'Learn about backlinks, link building strategies, and SEO best practices. Expert guides and actionable tips to grow your organic traffic.',
-  openGraph: {
-    title: 'SEO & Link Building Blog | SEO Backlinks Grid',
-    description:
-      'Expert guides, strategies, and tips for building quality backlinks and improving your SEO.',
-  },
-}
-
-// Hardcoded blog posts for demo (in production, these would come from MDX files)
-const demoPosts = [
-  {
-    slug: 'what-are-backlinks',
-    title: 'What Are Backlinks? The Complete Beginner\'s Guide for 2025',
-    description:
-      'Learn everything about backlinks: what they are, why they matter for SEO, and how to start building quality links to your website.',
-    date: '2025-01-10',
-    author: 'SEO Backlinks',
-    keywords: ['backlinks', 'SEO basics', 'link building'],
-    readingTime: '8 min read',
-  },
-  {
-    slug: 'dofollow-vs-nofollow',
-    title: 'Dofollow vs Nofollow Links: What\'s the Difference?',
-    description:
-      'Understand the crucial difference between dofollow and nofollow links, how they impact your SEO, and when to use each type.',
-    date: '2025-01-09',
-    author: 'SEO Backlinks',
-    keywords: ['dofollow', 'nofollow', 'link attributes'],
-    readingTime: '6 min read',
-  },
-  {
-    slug: 'link-building-strategies',
-    title: '15 Proven Link Building Strategies That Work in 2025',
-    description:
-      'Discover actionable link building tactics from guest posting to broken link building. Real strategies that get results.',
-    date: '2025-01-08',
-    author: 'SEO Backlinks',
-    keywords: ['link building', 'strategies', 'tactics'],
-    readingTime: '12 min read',
-  },
-  {
-    slug: 'domain-authority-explained',
-    title: 'Domain Authority Explained: What It Is and How to Improve It',
-    description:
-      'A comprehensive guide to understanding Domain Authority (DA), what affects it, and practical steps to improve your site\'s DA score.',
-    date: '2025-01-07',
-    author: 'SEO Backlinks',
-    keywords: ['domain authority', 'DA', 'Moz'],
-    readingTime: '9 min read',
-  },
-  {
-    slug: 'backlink-quality-checklist',
-    title: 'How to Evaluate Backlink Quality: The Essential Checklist',
-    description:
-      'Not all backlinks are created equal. Learn how to identify high-quality links and avoid toxic ones that could hurt your rankings.',
-    date: '2025-01-06',
-    author: 'SEO Backlinks',
-    keywords: ['link quality', 'toxic backlinks', 'evaluation'],
-    readingTime: '7 min read',
-  },
-]
-
 export default function BlogPage() {
-  // In production: const posts = getAllBlogPosts()
-  const posts = demoPosts
+  const posts = getAllBlogPosts()
   const [featuredPost, ...otherPosts] = posts
 
   return (
