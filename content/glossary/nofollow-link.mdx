@@ -1,0 +1,264 @@
+---
+title: "No-Follow Links: What They Are & Their SEO Value"
+description: "Understand nofollow links—how they work, when they're used, and whether they provide SEO value. Complete guide to the nofollow attribute."
+metaTitle: "No-Follow Links Explained: Complete Guide [2025]"
+metaDescription: "Learn what nofollow links are, how Google treats them, and their role in link building. Understand when nofollow links matter."
+primaryKeyword: "nofollow links"
+secondaryKeywords: ["rel nofollow", "nofollow SEO", "nofollow backlinks", "nofollow attribute"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+termType: "glossary"
+relatedTerms: ["dofollow-link", "sponsored-link", "ugc-link", "link-equity"]
+---
+
+A **nofollow link** is a hyperlink with the `rel="nofollow"` attribute, which originally told search engines not to pass ranking signals through the link. Introduced in 2005, nofollow was designed to combat comment spam and indicate non-endorsement.
+
+## The Nofollow Attribute
+
+### HTML Syntax
+
+```html
+<a href="https://example.com" rel="nofollow">Link Text</a>
+```
+
+The `rel="nofollow"` attribute signals to search engines that the link shouldn't be treated as an endorsement.
+
+### Original Purpose
+
+Nofollow was created to:
+- Combat blog comment spam
+- Mark untrusted content
+- Indicate paid links
+- Give site owners control
+
+---
+
+## How Google Treats Nofollow (2019 Update)
+
+### From Directive to Hint
+
+In September 2019, Google changed how it handles nofollow:
+
+**Before 2019**: Nofollow was a directive—Google wouldn't follow the link or pass PageRank
+
+**After 2019**: Nofollow is a "hint"—Google may choose to follow and count the link
+
+### What This Means
+
+- Google may crawl nofollow links
+- Nofollow links may pass some ranking value
+- The absolute distinction is gone
+- Do-follow links still carry more weight
+
+### New Link Attributes
+
+Google introduced two additional attributes:
+
+- `rel="sponsored"` for paid/advertisement links
+- `rel="ugc"` for user-generated content
+
+These provide more specific signals than generic nofollow.
+
+---
+
+## Where Nofollow Is Used
+
+### User-Generated Content
+
+**Blog comments**: Most use nofollow to prevent spam abuse
+
+**Forum posts**: Links in posts and signatures
+
+**User profiles**: Social networks and community sites
+
+**Wiki links**: Wikipedia and similar sites
+
+### Paid and Sponsored Content
+
+**Advertisements**: All paid links should be nofollow/sponsored
+
+**Sponsored posts**: Disclosed paid content
+
+**Affiliate links**: Many sites nofollow affiliate links
+
+**Press releases**: Distributed releases typically use nofollow
+
+### Site Policy Decisions
+
+**External links in general**: Some sites nofollow all outbound links
+
+**Links to specific sites**: Selective nofollow to certain domains
+
+**Widget links**: Embedded content links
+
+---
+
+## Do Nofollow Links Have SEO Value?
+
+### Direct Ranking Value
+
+**Traditional view**: Nofollow = no value
+**Current reality**: Nofollow = reduced or potential value
+
+Since Google treats nofollow as a hint, some value may pass. However, do-follow links remain more valuable.
+
+### Indirect Benefits
+
+Nofollow links can help through:
+
+**Referral traffic**: Users click regardless of follow status
+
+**Brand exposure**: Visibility builds awareness
+
+**Relationship building**: Opens doors for future opportunities
+
+**Trust signals**: Diverse link profiles look natural
+
+**Discovery**: Google may crawl nofollow links
+
+### Natural Profile Contribution
+
+A natural backlink profile includes nofollow links. All-dofollow profiles look manipulated.
+
+---
+
+## Nofollow in Link Building
+
+### Should You Pursue Nofollow Links?
+
+**Yes, when**:
+- The site has real traffic/audience
+- It builds a valuable relationship
+- The placement is highly visible
+- It's a stepping stone to do-follow
+
+**Maybe skip when**:
+- No other benefit (no traffic, no relationship)
+- Limited time/resources
+- Better opportunities available
+
+### Prioritisation Framework
+
+1. Quality do-follow from relevant site (best)
+2. Quality nofollow from high-traffic relevant site (good)
+3. Quality do-follow from somewhat relevant site (good)
+4. Quality nofollow from somewhat relevant site (okay)
+5. Any link from low-quality site (skip)
+
+---
+
+## Checking for Nofollow
+
+### Manual Inspection
+
+1. Right-click the link
+2. Click "Inspect" or "Inspect Element"
+3. Look for `rel="nofollow"` in the `<a>` tag
+
+### Browser Extensions
+
+- NoFollow Simple
+- Strike Out Nofollow Links
+- SEO toolbars
+
+### Bulk Analysis
+
+- Ahrefs (shows link type in reports)
+- Semrush (identifies nofollow links)
+- Moz (flags nofollow links)
+
+---
+
+## Creating Nofollow Links
+
+### When to Use Nofollow
+
+**Untrusted content**: Links you can't vouch for
+
+**Paid links**: Any link you received compensation for
+
+**User submissions**: Comments, forum posts, profiles
+
+**Affiliate links**: Promotional/commission links
+
+### Implementation
+
+```html
+<!-- Basic nofollow -->
+<a href="url" rel="nofollow">text</a>
+
+<!-- Sponsored content (preferred for paid) -->
+<a href="url" rel="sponsored">text</a>
+
+<!-- User-generated content -->
+<a href="url" rel="ugc">text</a>
+
+<!-- Multiple attributes -->
+<a href="url" rel="nofollow sponsored">text</a>
+```
+
+---
+
+## Common Misconceptions
+
+### "Nofollow links are worthless"
+
+**Reality**: They may pass value (Google's hint system) and definitely drive traffic, build relationships, and contribute to natural profiles.
+
+### "I should only build do-follow links"
+
+**Reality**: Natural profiles have nofollow links. Exclusively do-follow profiles can appear manipulated.
+
+### "All big sites use nofollow"
+
+**Reality**: Many major publications use do-follow for editorial links. It varies by site and context.
+
+### "Nofollow hurts the linked site"
+
+**Reality**: Nofollow simply doesn't endorse for ranking purposes. It doesn't penalise or harm the target site.
+
+---
+
+## Nofollow Strategy
+
+### For Link Builders
+
+- Don't obsess over follow status
+- Evaluate total opportunity value
+- Accept nofollow from quality sources
+- Track nofollow ratio for naturalness
+
+### For Site Owners
+
+- Use nofollow appropriately (paid, untrusted)
+- Don't nofollow everything out of fear
+- Editorial links can be do-follow
+- Be consistent with your policy
+
+---
+
+## Summary
+
+Nofollow links have `rel="nofollow"` and traditionally don't pass ranking signals:
+
+**Current status**:
+- Google treats as "hint," not directive
+- May pass some value
+- Still less valuable than do-follow
+- Provide traffic and relationship benefits
+
+**Best approach**:
+- Don't ignore quality nofollow opportunities
+- Prioritise do-follow when possible
+- Focus on relevance and quality first
+- Accept natural mix in your profile
+
+---
+
+## Related Terms
+
+- [Do-Follow Links](/glossary/dofollow-link)
+- [Sponsored Links](/glossary/sponsored-link)
+- [UGC Links](/glossary/ugc-link)
+- [Link Equity](/glossary/link-equity)

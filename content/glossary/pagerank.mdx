@@ -1,0 +1,244 @@
+---
+title: "PageRank: Google's Original Link Algorithm Explained"
+description: "Understand PageRank—Google's foundational algorithm for measuring page importance through links. Learn its history, how it works, and modern relevance."
+metaTitle: "PageRank Explained: Google's Link Algorithm [2025]"
+metaDescription: "Learn about PageRank—Google's original algorithm for ranking pages based on links. Understand how it works and its role in modern SEO."
+primaryKeyword: "PageRank"
+secondaryKeywords: ["Google PageRank", "PageRank algorithm", "PR SEO", "PageRank explained"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+termType: "glossary"
+relatedTerms: ["link-equity", "backlink", "domain-authority"]
+---
+
+**PageRank** is Google's original algorithm for measuring the importance of web pages based on the links pointing to them. Named after Google co-founder Larry Page, PageRank treats links as votes and uses them to determine which pages deserve higher rankings.
+
+## The Origins of PageRank
+
+### The Problem
+
+Before Google (late 1990s), search engines ranked pages primarily on content signals like keyword density. This was easily manipulated and produced poor results.
+
+### The Solution
+
+Larry Page and Sergey Brin's insight: The web's link structure contains valuable information about page importance. Pages that many sites link to are likely more valuable than pages with few links.
+
+### The Innovation
+
+PageRank analysed the entire web as a graph:
+- Nodes = web pages
+- Edges = links between pages
+- More incoming links = more important
+
+---
+
+## How PageRank Works
+
+### The Basic Concept
+
+PageRank assigns each page a score based on:
+
+1. **Number of incoming links**: More links = higher potential score
+2. **Quality of linking pages**: Links from high-PageRank pages count more
+3. **Outbound links on source pages**: Equity divides among all links
+
+### The Random Surfer Model
+
+PageRank is based on the "random surfer" model:
+
+- Imagine someone randomly clicking links
+- PageRank estimates the probability they'd land on any given page
+- Popular, well-linked pages have higher probability
+
+### Simplified Formula
+
+```
+PR(A) = (1-d) + d × (PR(T1)/C(T1) + PR(T2)/C(T2) + ... + PR(Tn)/C(Tn))
+```
+
+Where:
+- PR(A) = PageRank of page A
+- d = damping factor (typically 0.85)
+- PR(Tn) = PageRank of pages linking to A
+- C(Tn) = number of outbound links on those pages
+
+### The Damping Factor
+
+The damping factor (d) represents the probability a random surfer continues clicking vs starting fresh. At 0.85:
+- 85% chance of following a link
+- 15% chance of jumping to random page
+
+This prevents pages with no outbound links from accumulating all PageRank.
+
+---
+
+## PageRank History
+
+### 1996-1998: Development
+
+- Developed at Stanford University
+- Original paper: "The Anatomy of a Large-Scale Hypertextual Web Search Engine"
+- Became Google's founding technology
+
+### 2000-2013: Public PageRank
+
+- Google Toolbar showed PageRank scores (0-10)
+- SEOs obsessed over "PR" scores
+- Led to widespread link manipulation
+
+### 2014-2016: Toolbar Removal
+
+- Google stopped updating Toolbar PageRank
+- Eventually removed from toolbar entirely
+- Declared "dead" in public form
+
+### Present Day
+
+- PageRank still exists internally at Google
+- Updated and evolved significantly
+- No longer publicly visible
+- Remains part of ranking algorithm
+
+---
+
+## PageRank Myths
+
+### "PageRank is dead"
+
+**Reality**: Public PageRank scores are gone. The algorithm still exists and evolves within Google's systems.
+
+### "PageRank was replaced"
+
+**Reality**: PageRank is one of many signals, not the sole algorithm. It works alongside hundreds of other factors.
+
+### "Links don't matter anymore"
+
+**Reality**: Links remain a fundamental ranking factor. PageRank's principles still apply even if the original formula has evolved.
+
+### "High PageRank = high rankings"
+
+**Reality**: PageRank contributes to rankings but doesn't determine them. Relevance, content quality, and many other factors matter.
+
+---
+
+## PageRank in Modern SEO
+
+### What Changed
+
+**More signals**: Google now uses hundreds of ranking factors beyond links
+
+**Quality focus**: Not just link quantity, but quality, relevance, and naturalness
+
+**Spam detection**: Sophisticated algorithms identify manipulative links
+
+**Machine learning**: AI helps interpret link signals
+
+### What Stayed the Same
+
+**Links matter**: Backlinks remain crucial for rankings
+
+**Quality over quantity**: High-quality links beat many low-quality ones
+
+**Authority flows through links**: The core PageRank concept persists
+
+**Link building works**: Earning quality links still improves rankings
+
+---
+
+## PageRank vs Modern Metrics
+
+### Third-Party Alternatives
+
+Since Google hid PageRank, tools created alternatives:
+
+| Metric | Provider | What It Measures |
+|--------|----------|------------------|
+| Domain Authority | Moz | Domain-level ranking potential |
+| Page Authority | Moz | Page-level ranking potential |
+| Domain Rating | Ahrefs | Domain backlink strength |
+| URL Rating | Ahrefs | Page backlink strength |
+| Trust Flow | Majestic | Link trustworthiness |
+| Citation Flow | Majestic | Link quantity |
+
+### Using These Metrics
+
+These aren't PageRank replacements but useful proxies:
+
+- Compare sites/pages relatively
+- Filter link prospects
+- Track progress over time
+- Estimate link value
+
+---
+
+## PageRank Principles for Today
+
+### Quality Over Quantity
+
+A single link from a high-authority page beats many links from low-authority pages. This core PageRank principle remains true.
+
+### Links as Endorsements
+
+Links from trusted, relevant sources carry more weight. Build relationships with authoritative sites in your niche.
+
+### Authority Distribution
+
+How you structure internal links affects how authority flows through your site. Strategic internal linking matters.
+
+### Natural Link Profiles
+
+Google's evolved algorithms detect manipulation. Natural link acquisition based on quality content aligns with PageRank's original intent.
+
+---
+
+## Common Questions
+
+### Can I check my PageRank?
+
+No. Google no longer shares PageRank scores. Use third-party metrics (DA, DR) as proxies.
+
+### Is PageRank the same as Domain Authority?
+
+No. DA is Moz's proprietary metric. PageRank is Google's internal algorithm. They measure similar concepts differently.
+
+### Do nofollow links affect PageRank?
+
+Historically, nofollow links passed no PageRank. Since 2019, Google treats nofollow as a hint, so some value may pass.
+
+### Is PageRank still updated?
+
+Google's internal PageRank continues to evolve. The publicly visible version hasn't been updated since 2013.
+
+---
+
+## Summary
+
+PageRank is Google's foundational algorithm for measuring page importance:
+
+**Historical significance**:
+- Revolutionised search by using link analysis
+- Made Google the dominant search engine
+- Public scores removed in 2016
+
+**Current relevance**:
+- Still exists within Google
+- Core concept (links = votes) remains valid
+- Evolved alongside hundreds of other signals
+
+**Practical application**:
+- Build quality backlinks from authoritative sources
+- Focus on natural link acquisition
+- Use third-party metrics as proxies
+- Understand that links still matter significantly
+
+The principles behind PageRank remain fundamental to how search engines evaluate and rank content.
+
+---
+
+## Related Terms
+
+- [Link Equity](/glossary/link-equity)
+- [Domain Authority](/glossary/domain-authority)
+- [Backlink](/glossary/backlink)
+- [Authority Metrics](/backlink-quality/authority-metrics)

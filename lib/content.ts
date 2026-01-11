@@ -20,6 +20,65 @@ export interface ContentItem extends ContentMeta {
   content: string
 }
 
+// Hub content type for pillar pages
+export interface HubMeta {
+  slug: string
+  title: string
+  description: string
+  metaTitle: string
+  metaDescription: string
+  primaryKeyword: string
+  secondaryKeywords: string[]
+  wordCount: number
+  lastUpdated: string
+  author: string
+  readingTime: string
+  hub: string
+  clusterPages?: string[]
+  image?: string
+}
+
+export interface HubContent extends HubMeta {
+  content: string
+}
+
+// Cluster content type for supporting pages
+export interface ClusterMeta {
+  slug: string
+  title: string
+  description: string
+  metaTitle: string
+  metaDescription: string
+  primaryKeyword: string
+  secondaryKeywords: string[]
+  searchIntent: string
+  wordCount: number
+  lastUpdated: string
+  author: string
+  readingTime: string
+  parentHub: string
+  siblingPages?: string[]
+  crossHubLinks?: string[]
+  image?: string
+}
+
+export interface ClusterContent extends ClusterMeta {
+  content: string
+}
+
+// Internal link structure
+export interface InternalLink {
+  href: string
+  text: string
+  description?: string
+}
+
+// Navigation structure for content hubs
+export interface HubNavigation {
+  hub: HubMeta
+  clusters: ClusterMeta[]
+}
+
 // Get all blog posts
 export function getAllBlogPosts(): ContentMeta[] {
   const blogDir = path.join(contentDirectory, 'blog')
@@ -211,4 +270,236 @@ export function getBlogPostsByKeyword(keyword: string): ContentMeta[] {
   return allPosts.filter((post) =>
     post.keywords?.some((k) => k.toLowerCase() === keyword.toLowerCase())
   )
+}
+
+// ============================================
+// Hub Content Functions
+// ============================================
+
+// Get hub page content
+export function getHubContent(hubSlug: string): HubContent | null {
+  const hubDir = path.join(contentDirectory, hubSlug)
+  const indexPath = path.join(hubDir, '_index.mdx')
+
+  if (!fs.existsSync(indexPath)) {
+    return null
+  }
+
+  const fileContents = fs.readFileSync(indexPath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  return {
+    slug: hubSlug,
+    title: data.title || hubSlug,
+    description: data.description || '',
+    metaTitle: data.metaTitle || data.title || '',
+    metaDescription: data.metaDescription || data.description || '',
+    primaryKeyword: data.primaryKeyword || '',
+    secondaryKeywords: data.secondaryKeywords || [],
+    wordCount: content.split(/\s+/).length,
+    lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
+    author: data.author || 'SEO Backlinks',
+    readingTime: calculateReadingTime(content),
+    hub: hubSlug,
+    clusterPages: data.clusterPages || [],
+    image: data.image,
+    content,
+  }
+}
+
+// Get all cluster pages for a hub
+export function getHubClusters(hubSlug: string): ClusterMeta[] {
+  const hubDir = path.join(contentDirectory, hubSlug)
+
+  if (!fs.existsSync(hubDir)) {
+    return []
+  }
+
+  const files = fs.readdirSync(hubDir)
+  const clusters = files
+    .filter((file) => file.endsWith('.mdx') && file !== '_index.mdx')
+    .map((file) => {
+      const slug = file.replace('.mdx', '')
+      const fullPath = path.join(hubDir, file)
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const { data, content } = matter(fileContents)
+
+      return {
+        slug,
+        title: data.title || slug,
+        description: data.description || '',
+        metaTitle: data.metaTitle || data.title || '',
+        metaDescription: data.metaDescription || data.description || '',
+        primaryKeyword: data.primaryKeyword || '',
+        secondaryKeywords: data.secondaryKeywords || [],
+        searchIntent: data.searchIntent || 'informational',
+        wordCount: content.split(/\s+/).length,
+        lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
+        author: data.author || 'SEO Backlinks',
+        readingTime: calculateReadingTime(content),
+        parentHub: hubSlug,
+        siblingPages: data.siblingPages || [],
+        crossHubLinks: data.crossHubLinks || [],
+        image: data.image,
+      }
+    })
+    .sort((a, b) => a.title.localeCompare(b.title))
+
+  return clusters
+}
+
+// Get single cluster content
+export function getClusterContent(hubSlug: string, clusterSlug: string): ClusterContent | null {
+  const fullPath = path.join(contentDirectory, hubSlug, `${clusterSlug}.mdx`)
+
+  if (!fs.existsSync(fullPath)) {
+    return null
+  }
+
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  return {
+    slug: clusterSlug,
+    title: data.title || clusterSlug,
+    description: data.description || '',
+    metaTitle: data.metaTitle || data.title || '',
+    metaDescription: data.metaDescription || data.description || '',
+    primaryKeyword: data.primaryKeyword || '',
+    secondaryKeywords: data.secondaryKeywords || [],
+    searchIntent: data.searchIntent || 'informational',
+    wordCount: content.split(/\s+/).length,
+    lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
+    author: data.author || 'SEO Backlinks',
+    readingTime: calculateReadingTime(content),
+    parentHub: hubSlug,
+    siblingPages: data.siblingPages || [],
+    crossHubLinks: data.crossHubLinks || [],
+    image: data.image,
+    content,
+  }
+}
+
+// Get full hub navigation structure
+export function getHubNavigation(hubSlug: string): HubNavigation | null {
+  const hub = getHubContent(hubSlug)
+  if (!hub) return null
+
+  const clusters = getHubClusters(hubSlug)
+
+  return {
+    hub,
+    clusters,
+  }
+}
+
+// Get all available hubs
+export function getAllHubs(): HubMeta[] {
+  const hubSlugs = [
+    'backlinks',
+    'link-building',
+    'backlink-quality',
+    'backlink-audit',
+    'link-building-tactics',
+    'digital-pr',
+    'outreach',
+  ]
+
+  return hubSlugs
+    .map((slug) => getHubContent(slug))
+    .filter((hub): hub is HubContent => hub !== null)
+}
+
+// Get related clusters across hubs
+export function getRelatedClusters(
+  currentHub: string,
+  currentSlug: string,
+  keywords: string[],
+  limit: number = 3
+): ClusterMeta[] {
+  const allHubs = getAllHubs()
+  const allClusters: (ClusterMeta & { relevance: number })[] = []
+
+  for (const hub of allHubs) {
+    const clusters = getHubClusters(hub.slug)
+    for (const cluster of clusters) {
+      if (cluster.parentHub === currentHub && cluster.slug === currentSlug) {
+        continue
+      }
+
+      const relevance = cluster.secondaryKeywords?.filter((k) =>
+        keywords.some((kw) => k.toLowerCase().includes(kw.toLowerCase()))
+      ).length || 0
+
+      allClusters.push({ ...cluster, relevance })
+    }
+  }
+
+  return allClusters
+    .sort((a, b) => b.relevance - a.relevance)
+    .slice(0, limit)
+}
+
+// Generate breadcrumb navigation
+export function generateBreadcrumbs(hubSlug: string, clusterSlug?: string): InternalLink[] {
+  const breadcrumbs: InternalLink[] = [
+    { href: '/', text: 'Home' },
+  ]
+
+  const hub = getHubContent(hubSlug)
+  if (hub) {
+    breadcrumbs.push({
+      href: `/${hubSlug}`,
+      text: hub.title,
+    })
+  }
+
+  if (clusterSlug) {
+    const cluster = getClusterContent(hubSlug, clusterSlug)
+    if (cluster) {
+      breadcrumbs.push({
+        href: `/${hubSlug}/${clusterSlug}`,
+        text: cluster.title,
+      })
+    }
+  }
+
+  return breadcrumbs
+}
+
+// Get all pages for sitemap generation
+export function getAllContentPages(): { url: string; lastModified: string; priority: number }[] {
+  const pages: { url: string; lastModified: string; priority: number }[] = []
+
+  // Add hub pages (high priority)
+  const hubs = getAllHubs()
+  for (const hub of hubs) {
+    pages.push({
+      url: `/${hub.slug}`,
+      lastModified: hub.lastUpdated,
+      priority: 0.9,
+    })
+
+    // Add cluster pages
+    const clusters = getHubClusters(hub.slug)
+    for (const cluster of clusters) {
+      pages.push({
+        url: `/${hub.slug}/${cluster.slug}`,
+        lastModified: cluster.lastUpdated,
+        priority: 0.8,
+      })
+    }
+  }
+
+  // Add glossary terms
+  const glossaryTerms = getAllGlossaryTerms()
+  for (const term of glossaryTerms) {
+    pages.push({
+      url: `/glossary/${term.slug}`,
+      lastModified: term.date,
+      priority: 0.6,
+    })
+  }
+
+  return pages
 }

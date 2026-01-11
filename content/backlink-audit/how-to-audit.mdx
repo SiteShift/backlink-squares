@@ -1,0 +1,480 @@
+---
+title: "How to Audit Your Backlinks: Step-by-Step Process"
+description: "Follow this detailed guide to audit your backlink profile. Learn the exact steps to analyse, evaluate, and improve your link profile."
+metaTitle: "How to Audit Your Backlinks: Complete Step-by-Step Guide [2025]"
+metaDescription: "Learn how to audit your backlinks with this step-by-step guide. Discover the process for analysing link quality and identifying issues."
+primaryKeyword: "how to audit backlinks"
+secondaryKeywords: ["backlink audit process", "audit link profile", "backlink analysis steps"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+parentHub: "backlink-audit"
+siblingPages: ["toxic-links", "audit-tools", "audit-template"]
+crossHubLinks: ["backlink-quality", "link-building/how-to-start"]
+---
+
+This guide walks you through the complete process of auditing your backlinks, from initial data gathering to final recommendations. Follow these steps to understand your link profile and identify opportunities for improvement.
+
+## Before You Begin
+
+### What You'll Need
+
+**Essential tools**:
+- Google Search Console access
+- At least one backlink analysis tool (Ahrefs, Semrush, Moz, or Majestic)
+- Spreadsheet software
+
+**Recommended additions**:
+- SimilarWeb or traffic estimation tool
+- Second backlink tool for comprehensive data
+- Previous audit data (if available)
+
+### Time Expectations
+
+| Audit Type | Profile Size | Expected Time |
+|------------|--------------|---------------|
+| Quick check | Any | 30-60 minutes |
+| Standard audit | <1,000 referring domains | 2-4 hours |
+| Comprehensive audit | 1,000-5,000 referring domains | 4-8 hours |
+| Enterprise audit | 5,000+ referring domains | 8-20+ hours |
+
+---
+
+## Step 1: Gather Your Data
+
+### Export from Multiple Sources
+
+**Google Search Console**:
+
+1. Navigate to Links → External links
+2. Export "Top linking sites"
+3. Export "Top linking text"
+4. Note: This shows Google's view but may be incomplete
+
+**Primary backlink tool** (Ahrefs example):
+
+1. Enter your domain in Site Explorer
+2. Navigate to Backlinks or Referring domains
+3. Export full data including:
+   - Referring domains
+   - Individual backlinks
+   - Anchor text
+   - First/last seen dates
+
+**Secondary tool** (if using):
+
+Repeat export process for additional coverage.
+
+### Consolidate Your Data
+
+Create a master spreadsheet with:
+
+| Column | Description |
+|--------|-------------|
+| Referring Domain | The linking site's domain |
+| DR/DA | Domain authority metric |
+| Traffic | Estimated monthly visitors |
+| Dofollow | Is the link followed? |
+| Anchor Text | Text of the link |
+| Target URL | Page on your site being linked |
+| First Seen | When the link was discovered |
+
+**Deduplicate** referring domains across data sources.
+
+---
+
+## Step 2: Establish Baseline Metrics
+
+### Top-Level Metrics
+
+Record current state:
+
+**Quantity metrics**:
+- Total referring domains: ____
+- Total backlinks: ____
+- Dofollow vs nofollow ratio: ____
+
+**Quality metrics**:
+- Average DR/DA of referring domains: ____
+- Estimated referral traffic: ____
+
+**Distribution metrics**:
+- Links by country (top 5): ____
+- Links by TLD type: ____
+
+### Compare to Previous Data
+
+If you have historical data:
+
+- Change in referring domains: +/- ____
+- New referring domains since last audit: ____
+- Lost referring domains since last audit: ____
+- Quality trend: Improving / Stable / Declining
+
+### Quick Competitive Benchmark
+
+Check 2-3 competitors:
+
+| Metric | Your Site | Competitor 1 | Competitor 2 |
+|--------|-----------|--------------|--------------|
+| Referring domains | | | |
+| Average DR | | | |
+
+---
+
+## Step 3: Segment Your Links
+
+### Create Quality Tiers
+
+Sort referring domains into categories:
+
+**Tier 1: High Quality**
+- DA/DR 50+
+- Real traffic
+- Relevant to your industry
+- Editorial context
+
+**Tier 2: Good Quality**
+- DA/DR 30-50
+- Some traffic
+- Reasonable relevance
+- Legitimate site
+
+**Tier 3: Acceptable**
+- DA/DR 15-30
+- Low traffic
+- General relevance
+- Not spammy
+
+**Tier 4: Low Quality**
+- DA/DR <15
+- No meaningful traffic
+- Limited relevance
+- Still legitimate
+
+**Tier 5: Potentially Toxic**
+- Spam signals present
+- PBN indicators
+- Link farm characteristics
+- Hacked sites
+
+### Quick Segmentation Method
+
+For large profiles, use metrics-based initial sorting:
+
+1. Filter by DR/DA ranges
+2. Within each range, check traffic estimates
+3. Spot-check samples for quality verification
+4. Flag suspicious patterns for closer review
+
+---
+
+## Step 4: Analyse Quality Distribution
+
+### Calculate Distribution
+
+Count referring domains in each tier:
+
+| Tier | Count | Percentage |
+|------|-------|------------|
+| High Quality | | % |
+| Good Quality | | % |
+| Acceptable | | % |
+| Low Quality | | % |
+| Potentially Toxic | | % |
+| **Total** | | 100% |
+
+### Evaluate Health
+
+**Healthy profile indicators**:
+- Majority in Acceptable or better tiers
+- Toxic tier under 5%
+- Diverse range across quality levels
+- Trend improving over time
+
+**Concerning indicators**:
+- High percentage of low-quality links
+- Significant toxic tier
+- Quality declining over time
+- Concentration in problematic sources
+
+### Industry Context
+
+Expectations vary by industry:
+
+**New/small sites**: May have more lower-tier links initially
+**Established sites**: Should have stronger quality distribution
+**Competitive niches**: May need higher quality thresholds
+
+---
+
+## Step 5: Identify Problems
+
+### Toxic Link Review
+
+For links flagged as potentially toxic, investigate:
+
+**Check manually**:
+
+1. Visit the linking site
+2. Assess content quality
+3. Look for spam indicators
+4. Verify link context
+5. Confirm toxicity assessment
+
+**Common toxic link types**:
+
+- PBN sites (similar templates, cross-linking)
+- Link farms (pages of just links)
+- Scraped content sites
+- Hacked sites with injected links
+- Irrelevant foreign language links
+
+**Document findings**:
+
+| Domain | Issue Type | Confidence | Action |
+|--------|-----------|------------|--------|
+| spamsite.com | PBN | High | Disavow |
+| example.com | Link farm | Medium | Review |
+
+### Anchor Text Analysis
+
+**Review anchor distribution**:
+
+| Anchor Type | Count | Percentage | Target |
+|-------------|-------|------------|--------|
+| Branded | | | 40-60% |
+| URL/Naked | | | 15-25% |
+| Generic | | | 10-20% |
+| Keyword-rich | | | 5-15% |
+| Other | | | Variable |
+
+**Warning signs**:
+- Excessive exact-match keywords (>20%)
+- Concentrated specific phrases
+- Unnatural patterns
+
+### Lost Link Analysis
+
+**Identify valuable lost links**:
+
+1. Compare current data to previous audit
+2. Filter for high-quality lost domains
+3. Investigate why links were lost
+4. Prioritise for reclamation
+
+**Common loss reasons**:
+- Page removed or changed
+- Site redesign broke links
+- Content update removed reference
+- Site went offline
+
+### Pattern Problems
+
+Look for concerning patterns:
+
+**Geographic concentration**:
+- Links predominantly from one country
+- Especially if not your target market
+
+**Source type concentration**:
+- Too many links from one type
+- E.g., all blog comments, all forums
+
+**Velocity anomalies**:
+- Unnatural spikes in acquisition
+- Sudden drops in new links
+
+---
+
+## Step 6: Competitive Analysis
+
+### Identify Competitors
+
+Select 3-5 competitors:
+
+- Direct business competitors
+- SEO competitors (ranking for your keywords)
+- Industry leaders
+
+### Compare Profiles
+
+**Metric comparison**:
+
+| Metric | You | Comp 1 | Comp 2 | Comp 3 |
+|--------|-----|--------|--------|--------|
+| Referring domains | | | | |
+| Average quality | | | | |
+| Top anchor types | | | | |
+| Growth rate | | | | |
+
+### Find Opportunities
+
+**Link gap analysis**:
+
+1. Export competitor backlinks
+2. Compare to your profile
+3. Identify sites linking to competitors but not you
+4. Filter for quality and relevance
+5. Create prospect list
+
+**Common link sources**:
+- Sites linking to 2+ competitors
+- Industry resource pages
+- Publications covering competitors
+
+---
+
+## Step 7: Create Recommendations
+
+### Prioritise Issues
+
+Rank findings by impact and urgency:
+
+**High priority**:
+- Manual action warnings
+- Significant toxic link presence
+- Major quality problems
+
+**Medium priority**:
+- Anchor text issues
+- Lost high-value links
+- Growing competitor gap
+
+**Lower priority**:
+- Minor quality concerns
+- Small pattern issues
+- Nice-to-have improvements
+
+### Develop Action Plan
+
+**For toxic links**:
+- Create disavow file
+- Document decision rationale
+- Submit to Google Search Console
+
+**For quality gaps**:
+- Prioritise link building tactics
+- Identify target sources
+- Allocate resources
+
+**For lost links**:
+- Create reclamation outreach list
+- Prioritise by value
+- Develop outreach templates
+
+**For pattern issues**:
+- Plan for diversification
+- Adjust link building approach
+- Monitor improvement
+
+### Set Benchmarks
+
+Define success metrics:
+
+- Target toxic link percentage: <____%
+- Target quality distribution: ____
+- Links to acquire: ____/month
+- Links to reclaim: ____
+
+---
+
+## Step 8: Document Everything
+
+### Create Audit Report
+
+**Executive Summary** (1 page):
+- Current profile health score
+- Key findings summary
+- Priority recommendations
+- Next steps
+
+**Detailed Analysis**:
+- Methodology description
+- Metric breakdown
+- Quality distribution analysis
+- Problem documentation
+- Competitive comparison
+
+**Recommendations**:
+- Prioritised action items
+- Resource requirements
+- Expected outcomes
+- Timeline
+
+**Appendices**:
+- Raw data files
+- Tool screenshots
+- Disavow file (if created)
+
+### Save for Future Reference
+
+Store all audit materials:
+- Raw data exports
+- Working spreadsheets
+- Final report
+- Disavow files submitted
+
+Use for comparison in future audits.
+
+---
+
+## Post-Audit Actions
+
+### Immediate Actions
+
+**This week**:
+- Submit disavow file (if needed)
+- Set up link monitoring alerts
+- Brief stakeholders on findings
+
+**This month**:
+- Begin link reclamation outreach
+- Start addressing quality gaps
+- Implement tracking for new links
+
+### Ongoing Monitoring
+
+**Weekly**:
+- Review new link alerts
+- Check for negative SEO indicators
+
+**Monthly**:
+- Quick metric review
+- Lost link check
+- New link quality assessment
+
+**Quarterly**:
+- Mini-audit of key areas
+- Competitive check
+- Strategy adjustment
+
+**Annually**:
+- Full comprehensive audit
+- Strategy review
+- Goal setting
+
+---
+
+## Summary
+
+The complete backlink audit process:
+
+1. **Data collection**: Multiple sources, comprehensive export
+2. **Baseline metrics**: Document current state
+3. **Segmentation**: Categorise by quality tier
+4. **Distribution analysis**: Evaluate profile health
+5. **Problem identification**: Toxic links, patterns, issues
+6. **Competitive analysis**: Benchmark and find gaps
+7. **Recommendations**: Prioritised action plan
+8. **Documentation**: Report and save
+
+Regular audits keep your link profile healthy and guide effective link building strategy.
+
+---
+
+## What to Read Next
+
+- [Identifying Toxic Links](/backlink-audit/toxic-links)
+- [Audit Tools Compared](/backlink-audit/audit-tools)
+- [Disavow File Guide](/backlink-audit/disavow-guide)

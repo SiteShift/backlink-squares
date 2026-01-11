@@ -1,0 +1,289 @@
+---
+title: "Sponsored Links: Understanding the rel=sponsored Attribute"
+description: "Learn about sponsored links and the rel=sponsored attribute. Understand when to use it, its SEO implications, and compliance requirements."
+metaTitle: "Sponsored Links & rel=sponsored Explained [2025]"
+metaDescription: "Understand sponsored links and the rel=sponsored attribute. Learn when to use it for paid links and advertising to stay compliant."
+primaryKeyword: "sponsored link"
+secondaryKeywords: ["rel sponsored", "sponsored backlink", "paid link attribute", "sponsored attribute SEO"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+termType: "glossary"
+relatedTerms: ["nofollow-link", "ugc-link", "dofollow-link"]
+---
+
+A **sponsored link** is a hyperlink that uses the `rel="sponsored"` attribute to indicate it was created as part of an advertisement, sponsorship, or paid arrangement. Introduced by Google in 2019, this attribute helps search engines identify paid links that shouldn't pass PageRank.
+
+## The rel="sponsored" Attribute
+
+### HTML Syntax
+
+```html
+<a href="https://example.com" rel="sponsored">Link Text</a>
+```
+
+### When to Use It
+
+Use rel="sponsored" for:
+- Paid links
+- Sponsored content
+- Advertising links
+- Affiliate links (optional—can also use nofollow)
+- Any link involving compensation
+
+### Purpose
+
+The attribute tells search engines:
+- This is a paid/compensated link
+- Don't pass ranking signals
+- Don't count as editorial endorsement
+
+---
+
+## History and Context
+
+### Before 2019
+
+Only one option existed: `rel="nofollow"`
+
+Used for:
+- Spam prevention
+- Untrusted content
+- Paid links
+- User-generated content
+
+### The 2019 Update
+
+Google introduced two new attributes:
+
+**rel="sponsored"**: For paid/advertising links
+
+**rel="ugc"**: For user-generated content
+
+### Why the Change
+
+Nofollow was too broad—it didn't distinguish between:
+- Paid links (should never pass value)
+- User content (some may be valuable)
+- Untrusted links (varies)
+
+New attributes provide clearer signals.
+
+---
+
+## Sponsored Links and SEO
+
+### For Sites Giving Links
+
+**If you accept payment for links**:
+- Must use rel="sponsored"
+- Violating can result in penalties
+- Applies to your site and the paying site
+
+**Failing to disclose**:
+- Risks manual action
+- Can affect entire site
+- Damages trust with Google
+
+### For Sites Receiving Links
+
+**Sponsored links provide**:
+- Referral traffic (clicks still work)
+- Brand exposure
+- Limited/no direct SEO value
+
+**What they don't provide**:
+- PageRank passage (officially)
+- Direct ranking boost
+- Link equity
+
+### Google's Position
+
+From Google:
+> "Use the sponsored attribute to identify links on your site that were created as part of advertisements, sponsorships or other compensation agreements."
+
+---
+
+## When rel="sponsored" Is Required
+
+### Clear Cases
+
+**Paid placements**: Any link you paid for
+
+**Sponsored posts**: Content created for payment
+
+**Advertisements**: Banner ads, native ads, etc.
+
+**Affiliate links**: Links with commission potential
+
+**Product placements**: Free products for coverage
+
+### Grey Areas
+
+**Guest posts with payment**: Yes, use sponsored
+
+**Free product + review**: Yes, use sponsored
+
+**Industry partnerships**: If value exchanged, use sponsored
+
+**Event sponsorship links**: Yes, use sponsored
+
+### Rule of Thumb
+
+If compensation of any kind changed hands (money, products, services), use rel="sponsored".
+
+---
+
+## Implementing Sponsored Links
+
+### Basic Implementation
+
+```html
+<a href="https://sponsor.com" rel="sponsored">Sponsor Name</a>
+```
+
+### Combined Attributes
+
+Can combine with other attributes:
+
+```html
+<a href="url" rel="sponsored nofollow">Link</a>
+<a href="url" rel="sponsored noopener">Link</a>
+```
+
+### Multiple Links
+
+Each paid link needs the attribute:
+
+```html
+<p>Thanks to <a href="url1" rel="sponsored">Sponsor 1</a>
+and <a href="url2" rel="sponsored">Sponsor 2</a>.</p>
+```
+
+---
+
+## Sponsored vs Nofollow
+
+### The Relationship
+
+**rel="nofollow"**: General-purpose "don't pass value"
+
+**rel="sponsored"**: Specific to paid/advertising
+
+### Can You Use Either?
+
+Yes—Google accepts both for paid links:
+
+> "If you want to flag a link as sponsored, use rel="sponsored". rel="nofollow" is also acceptable."
+
+### Best Practice
+
+Use rel="sponsored" for paid links because:
+- More specific signal
+- Clearer documentation
+- Future-proofed
+
+Use rel="nofollow" for:
+- Links you simply don't trust
+- Content you can't vouch for
+- Links without payment but without endorsement
+
+---
+
+## Compliance and Disclosure
+
+### Legal Requirements
+
+Many jurisdictions require disclosure of paid content:
+- FTC guidelines (US)
+- ASA requirements (UK)
+- Various national regulations
+
+### Google Requirements
+
+Google requires:
+- Sponsored attribute on paid links
+- Clear disclosure to users
+- No attempts to hide the relationship
+
+### Best Practices
+
+1. Use rel="sponsored" on all paid links
+2. Include visible disclosure ("Sponsored," "Ad," "Partner")
+3. Be transparent with your audience
+4. Document your sponsorship policies
+
+---
+
+## Common Questions
+
+### Do sponsored links help SEO?
+
+Minimally, if at all. They're specifically designed not to pass ranking value. Their benefit is traffic and exposure, not SEO.
+
+### Can I get a sponsored link without rel="sponsored"?
+
+This would violate Google's guidelines. Both the linking site and your site could face penalties. Don't pursue unattributed paid links.
+
+### Should I pursue sponsored links?
+
+For traffic and branding, yes—if the audience is relevant. For SEO purposes, focus on earning editorial links instead.
+
+### Do affiliates need sponsored attribute?
+
+Yes. Affiliate links involve compensation (commission), so they should use rel="sponsored" or rel="nofollow".
+
+---
+
+## Sponsored Links in Strategy
+
+### When They Make Sense
+
+**Brand awareness**: Getting in front of relevant audiences
+
+**Direct traffic**: When conversions matter more than SEO
+
+**Retargeting**: Building audiences for remarketing
+
+**Launch promotion**: New product/service visibility
+
+### When They Don't
+
+**SEO-focused goals**: Won't help rankings
+
+**Limited budget**: May not provide ROI
+
+**Wrong audience**: Irrelevant traffic doesn't convert
+
+---
+
+## Summary
+
+Sponsored links use rel="sponsored" to mark paid links:
+
+**What they are**:
+- Links involving payment/compensation
+- Marked with rel="sponsored" attribute
+- Don't pass ranking signals
+
+**When to use**:
+- Paid placements
+- Sponsored content
+- Advertisements
+- Affiliate links
+
+**SEO implications**:
+- No direct ranking benefit
+- Provides traffic and exposure
+- Required for compliance
+
+Follow the rules—mark sponsored links properly to avoid penalties and maintain trust.
+
+---
+
+## Related Terms
+
+- [No-Follow Links](/glossary/nofollow-link)
+- [UGC Links](/glossary/ugc-link)
+- [Do-Follow Links](/glossary/dofollow-link)
+- [Link Equity](/glossary/link-equity)

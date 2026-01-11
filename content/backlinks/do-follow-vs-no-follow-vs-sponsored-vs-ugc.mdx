@@ -1,0 +1,368 @@
+---
+title: "DoFollow vs NoFollow vs Sponsored vs UGC: Complete Guide to Link Attributes"
+description: "Master the four link attribute types: DoFollow, NoFollow, Sponsored, and UGC. Learn how each affects SEO, when to use them, and Google's current policies."
+metaTitle: "DoFollow vs NoFollow vs Sponsored vs UGC Links Explained [2025]"
+metaDescription: "Complete guide to link attributes - understand DoFollow, NoFollow, Sponsored, and UGC links, how they affect SEO, and when to use each type."
+primaryKeyword: "dofollow vs nofollow"
+secondaryKeywords: ["nofollow links", "sponsored links", "ugc links", "rel attributes", "link types"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+parentHub: "backlinks"
+siblingPages: ["what-is-a-backlink", "link-equity-pagerank-explained", "backlink-myths"]
+crossHubLinks: ["google-link-spam", "backlink-quality"]
+---
+
+Link attributes tell search engines how to interpret hyperlinks. Understanding the four main types—DoFollow, NoFollow, Sponsored, and UGC—is essential for both evaluating backlinks and managing your own outbound links.
+
+## The Four Link Attribute Types
+
+### DoFollow (Standard Links)
+
+DoFollow is the default state of any link. If a link has no special `rel` attribute, it's considered DoFollow.
+
+```html
+<a href="https://example.com">This is a DoFollow link</a>
+```
+
+**How it works**:
+- Passes [link equity (PageRank)](/backlinks/link-equity-pagerank-explained) to the destination
+- Counts as a ranking signal
+- Search engines follow the link and associate the pages
+
+**When to use**:
+- Standard editorial links to trusted resources
+- Links to your own internal pages
+- Links to sources you genuinely endorse
+
+### NoFollow (`rel="nofollow"`)
+
+NoFollow was introduced by Google in 2005 to combat comment spam. It tells search engines: "I'm linking to this, but I don't want to pass ranking signals."
+
+```html
+<a href="https://example.com" rel="nofollow">This is a NoFollow link</a>
+```
+
+**How it works**:
+- Originally meant as a directive (don't pass value)
+- Since 2019, treated as a "hint" (Google may choose to ignore or honour)
+- Still crawled; just not counted as an endorsement
+
+**When to use**:
+- Links you can't fully verify (user comments, forum posts)
+- Links to untrusted or unknown sites
+- Links where you want to avoid association
+
+### Sponsored (`rel="sponsored"`)
+
+Introduced in September 2019, the Sponsored attribute specifically identifies paid or sponsored links.
+
+```html
+<a href="https://example.com" rel="sponsored">This is a Sponsored link</a>
+```
+
+**How it works**:
+- Clearly identifies commercial relationships
+- Search engines don't count these as editorial endorsements
+- Helps maintain search quality by distinguishing paid from organic links
+
+**When to use**:
+- Paid placements and advertisements
+- Affiliate links
+- Sponsored content and native advertising
+- Any link involving compensation
+
+**Important**: Failing to mark paid links as sponsored violates Google's guidelines and can result in penalties.
+
+### UGC (`rel="ugc"`)
+
+Also introduced in 2019, UGC (User-Generated Content) identifies links within content created by users rather than site owners.
+
+```html
+<a href="https://example.com" rel="ugc">This is a UGC link</a>
+```
+
+**How it works**:
+- Signals that the link came from a user, not the site's editors
+- Search engines treat these with appropriate scepticism
+- Helps distinguish editorial links from user-submitted ones
+
+**When to use**:
+- Forum posts and comments
+- Social profiles and user bios
+- Wiki-style user contributions
+- Any link within user-submitted content
+
+---
+
+## Historical Context
+
+Understanding how link attributes evolved helps explain current policies.
+
+### 2005: NoFollow Is Born
+
+Google introduced NoFollow to combat blog comment spam. The explosion of user-generated content made it easy for spammers to drop links across the web. NoFollow gave site owners a way to prevent passing ranking value to these potentially manipulative links.
+
+Initially, NoFollow was treated as a directive—Google strictly followed the instruction not to pass value.
+
+### 2019: Google's Attribute Update
+
+In September 2019, Google made significant changes:
+
+1. **NoFollow became a "hint"**: Google now decides whether to honour NoFollow rather than blindly following it
+2. **Sponsored attribute introduced**: Clearer identification of paid links
+3. **UGC attribute introduced**: Better handling of user-generated content
+4. **Attribute combinations allowed**: You can use multiple attributes together
+
+### Why the Change?
+
+Google recognised that:
+- Valuable links were being nofollowed unnecessarily
+- The web had evolved beyond simple spam prevention
+- More nuance was needed to distinguish link types
+- Treating NoFollow as absolute missed valuable signals
+
+Today, all three non-DoFollow attributes are treated as hints rather than directives.
+
+---
+
+## How Each Attribute Affects SEO
+
+### DoFollow Links
+
+**For the destination site**:
+- Full potential for PageRank transfer
+- Counts as a positive ranking signal
+- Helps with indexing and discovery
+
+**For the linking site**:
+- Associates you with the destination content
+- Passes some of your authority
+- Shows editorial endorsement
+
+### NoFollow Links
+
+**For the destination site**:
+- Traditionally passed no ranking value
+- Now may pass some value (Google decides)
+- Still provides referral traffic and visibility
+- Contributes to natural link profile diversity
+
+**For the linking site**:
+- Limits association with destination
+- Appropriate for uncertain or untrusted links
+- Standard practice for user-generated links
+
+### Sponsored Links
+
+**For the destination site**:
+- Not counted as editorial endorsements
+- Still provides traffic and brand visibility
+- Appropriate for paid placements
+
+**For the linking site**:
+- Demonstrates compliance with Google's guidelines
+- Protects against potential penalties
+- Maintains trust with search engines
+
+### UGC Links
+
+**For the destination site**:
+- Treated with appropriate scepticism
+- May pass value if Google determines the link is valuable
+- Lower weight than editorial links
+
+**For the linking site**:
+- Identifies user-contributed content
+- Reduces responsibility for user link choices
+- Shows appropriate link handling practices
+
+---
+
+## When to Use Each Attribute
+
+### Decision Framework for Site Owners
+
+Use this flowchart when deciding how to handle outbound links:
+
+**Step 1**: Is this a paid or sponsored relationship?
+- Yes → Use `rel="sponsored"`
+
+**Step 2**: Is this user-generated content?
+- Yes → Use `rel="ugc"`
+
+**Step 3**: Do you fully trust and endorse this destination?
+- No → Use `rel="nofollow"`
+- Yes → No attribute needed (DoFollow)
+
+### Common Scenarios
+
+| Scenario | Recommended Attribute |
+|----------|----------------------|
+| Editorial citation to trusted source | DoFollow (no attribute) |
+| Affiliate product link | `rel="sponsored"` |
+| User comment with links | `rel="ugc"` |
+| Sponsored blog post | `rel="sponsored"` |
+| Links in forum signatures | `rel="ugc nofollow"` |
+| Widget or embed links | `rel="nofollow"` |
+| Untrusted external reference | `rel="nofollow"` |
+| Internal site links | DoFollow (no attribute) |
+
+### Combining Attributes
+
+You can use multiple attributes together:
+
+```html
+<a href="..." rel="ugc nofollow">User-submitted, untrusted</a>
+<a href="..." rel="sponsored nofollow">Paid and potentially untrusted</a>
+```
+
+This provides search engines with more context about the link's nature.
+
+---
+
+## Do NoFollow Links Have Value?
+
+A common misconception is that NoFollow links are worthless. In reality, they provide several benefits:
+
+### 1. Referral Traffic
+
+NoFollow links still function as normal links for users. A NoFollow link from a high-traffic site sends real visitors to your site—arguably more valuable than any SEO benefit.
+
+### 2. Brand Visibility
+
+Being mentioned on major publications builds brand awareness regardless of link attributes. Users don't know or care whether a link is DoFollow.
+
+### 3. Indirect SEO Value
+
+- NoFollow links may lead to DoFollow links (others discover your content through the mention)
+- They contribute to natural link profile diversity
+- They may actually pass value (Google's "hint" system)
+
+### 4. Relationship Building
+
+Getting covered by major publications—even with NoFollow links—builds relationships that can lead to future DoFollow opportunities.
+
+### 5. E-E-A-T Signals
+
+Mentions from authoritative sites in your industry can contribute to Experience, Expertise, Authoritativeness, and Trustworthiness signals.
+
+### Our Recommendation
+
+**Don't obsess over DoFollow vs NoFollow**. A healthy backlink profile includes a mix. Focus on:
+- Quality and relevance of the linking site
+- Traffic and visibility potential
+- Relationship-building opportunities
+
+A high-traffic NoFollow link often provides more real-world value than a low-traffic DoFollow link.
+
+---
+
+## How to Check Link Attributes
+
+### Manual Inspection (Browser)
+
+1. Right-click on a link
+2. Select "Inspect" or "Inspect Element"
+3. Look at the HTML for the `<a>` tag
+4. Check for `rel` attributes
+
+Example of what you might see:
+```html
+<a href="https://example.com" rel="nofollow ugc">Link Text</a>
+```
+
+### Bulk Checking with Tools
+
+**Browser extensions**:
+- NoFollow Simple (highlights NoFollow links)
+- Link Redirect Trace (shows all link attributes)
+
+**SEO tools**:
+- Ahrefs shows link attributes in backlink reports
+- Semrush categorises links by type
+- Screaming Frog identifies link attributes during crawls
+
+### Programmatic Checking
+
+For site audits, crawling tools can extract rel attributes from all links, allowing you to:
+- Audit your outbound link practices
+- Identify backlinks by type
+- Ensure compliance with guidelines
+
+---
+
+## Common Mistakes to Avoid
+
+### Over-NoFollowing Internal Links
+
+Some site owners apply NoFollow to internal links in an attempt to control PageRank flow. This practice (called PageRank sculpting) was deprecated by Google in 2009 and no longer works as intended.
+
+**Best practice**: Keep internal links DoFollow unless you have a specific technical reason not to.
+
+### Missing Sponsored Tags on Paid Links
+
+Failing to mark paid links as sponsored risks penalties. If money changes hands for a link—whether for content, placement, or product—use the sponsored attribute.
+
+### Inconsistent Application
+
+Apply link attributes consistently across your site. Random application undermines their purpose and can appear suspicious.
+
+### Ignoring UGC for User Content
+
+If your site has user-generated content, use the UGC attribute for links within that content. This protects you from association with potentially problematic destinations users might link to.
+
+---
+
+## Compliance Requirements
+
+Google's guidelines are clear about link attributes:
+
+### What's Required
+
+- Paid links must use `rel="sponsored"` (or at minimum, `rel="nofollow"`)
+- Advertising and affiliate links need proper attributes
+- Undisclosed paid links violate guidelines
+
+### Potential Consequences
+
+- Algorithmic devaluation of manipulative links
+- Manual actions (penalties) for link schemes
+- Loss of trust and ranking ability
+
+### Staying Compliant
+
+1. Audit your site for proper link attribution
+2. Train content creators on proper link handling
+3. Establish clear policies for sponsored content
+4. Review user-generated content for link compliance
+5. Document all paid link relationships
+
+---
+
+## Summary
+
+Link attributes help search engines understand the nature and intent of hyperlinks:
+
+- **DoFollow**: Default state, passes ranking signals
+- **NoFollow**: A hint not to pass ranking value
+- **Sponsored**: Identifies paid or sponsored relationships
+- **UGC**: Marks links from user-generated content
+
+**Key takeaways**:
+
+1. All attributes except DoFollow are now "hints" Google may choose to follow or ignore
+2. NoFollow links still provide traffic, visibility, and indirect value
+3. Compliance with attribute guidelines protects your site
+4. A healthy link profile includes a natural mix of link types
+5. Focus on quality and relevance, not just link attributes
+
+Understanding these attributes helps you evaluate incoming backlinks and properly manage your own outbound linking.
+
+---
+
+## What to Read Next
+
+- [Link Equity Explained](/backlinks/link-equity-pagerank-explained) - How value flows through links
+- [Google Link Spam Policies](/google-link-spam) - Complete compliance guide
+- [Backlink Quality Guide](/backlink-quality) - Evaluating links properly

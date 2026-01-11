@@ -1,0 +1,353 @@
+---
+title: "Link Equity & PageRank Explained: How Link Value Flows Through the Web"
+description: "Master the concept of link equity (link juice) and PageRank. Learn how authority flows through links, what affects transfer, and how to maximise value."
+metaTitle: "Link Equity & PageRank: How Links Pass SEO Value [2025]"
+metaDescription: "Understand how link equity and PageRank work, what affects value transfer between pages, and how to structure your site for optimal link value distribution."
+primaryKeyword: "link equity"
+secondaryKeywords: ["pagerank", "link juice", "link value distribution", "pagerank explained"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2025-01-11"
+parentHub: "backlinks"
+siblingPages: ["what-is-a-backlink", "internal-vs-external-links", "do-follow-vs-no-follow-vs-sponsored-vs-ugc"]
+crossHubLinks: ["backlink-quality", "backlink-audit"]
+---
+
+Link equity—sometimes called "link juice" or "link value"—is the ranking power passed from one page to another through hyperlinks. Understanding how this value flows helps you maximise the SEO benefit of your backlinks and internal linking.
+
+## What Is Link Equity?
+
+Link equity is the concept that hyperlinks pass value from the linking page to the destination page. When an authoritative page links to your content, some of that authority transfers to you through the link.
+
+Think of it as a recommendation. A recommendation from a respected industry leader carries more weight than one from an unknown source. Similarly, a link from a high-authority page passes more equity than one from a low-authority page.
+
+### Other Terms for Link Equity
+
+You'll hear link equity described various ways:
+
+- **Link juice** - Colloquial term (widely used but slightly dated)
+- **Link value** - Generic descriptor
+- **PageRank** - Google's original algorithm for measuring this
+- **Ranking power** - Describes the effect
+
+They all refer to the same fundamental concept: links transfer ranking signals.
+
+---
+
+## The History of PageRank
+
+Link equity is rooted in Google's founding algorithm, PageRank, developed by Larry Page and Sergey Brin at Stanford University.
+
+### 1996: The Stanford Paper
+
+Page and Brin observed that academic papers are judged partly by citations. More citations from respected papers indicate importance. They applied this logic to web pages.
+
+Their key insight: **links are votes**. A page with many incoming links from important pages is probably important itself.
+
+### The Original Formula (Simplified)
+
+The PageRank formula, simplified:
+
+```
+PR(A) = (1-d) + d × (PR(B)/L(B) + PR(C)/L(C) + ...)
+```
+
+Where:
+- **PR(A)** = PageRank of page A
+- **d** = Damping factor (typically 0.85)
+- **PR(B), PR(C)** = PageRank of pages linking to A
+- **L(B), L(C)** = Number of outbound links on those pages
+
+In plain English: A page's importance equals a base value plus a fraction of the importance of pages linking to it, divided by how many links those pages have.
+
+### 2000-2016: The Public PageRank Toolbar
+
+Google displayed PageRank scores (0-10) in their toolbar, allowing SEOs to see relative page authority. This era created intense focus on link building and spawned the "link juice" terminology.
+
+### 2016-Present: Hidden but Active
+
+Google stopped publicly updating the toolbar PageRank in 2016 and eventually removed it entirely. However, PageRank (in evolved forms) remains part of Google's algorithms. They've confirmed links still matter—they just no longer share the score publicly.
+
+---
+
+## How Link Equity Flows
+
+Understanding the mechanics helps you optimise both incoming backlinks and internal linking.
+
+### Basic Flow Concept
+
+```
+                    High-Authority Page
+                          │
+                          │ (Link)
+                          ▼
+                    Your Page
+                    (Receives equity)
+                          │
+              ┌───────────┼───────────┐
+              │           │           │
+              ▼           ▼           ▼
+          Page A      Page B      Page C
+       (Each receives a portion of equity)
+```
+
+When your page receives equity from external sources, it can pass portions to pages it links to.
+
+### Equity Division
+
+If a page has multiple outbound links, the equity divides among them:
+
+**Page with 100 units of equity and 10 outbound links:**
+- Each linked page receives approximately 10 units (simplified)
+
+**Page with 100 units of equity and 2 outbound links:**
+- Each linked page receives approximately 50 units (simplified)
+
+This is why links from pages with fewer outbound links are often more valuable.
+
+### The Damping Factor
+
+Not all equity passes through. Google's damping factor (estimated at 0.85) means roughly 15% dissipates at each "hop."
+
+This prevents infinite loops and ensures authority diminishes over link chains:
+- Page A → Page B: ~85% passes
+- Page B → Page C: ~85% of B's equity passes
+- And so on
+
+---
+
+## Factors Affecting Link Equity Transfer
+
+Several factors determine how much equity a link passes.
+
+### 1. Source Page Authority
+
+Higher-authority pages pass more equity. A link from a page with strong existing equity transfers more value than one from a weak page.
+
+**Why it matters**: Focus link building efforts on earning links from authoritative pages, not just any pages.
+
+### 2. Number of Links on the Source Page
+
+Equity divides among all outbound links. A page with 5 links passes more equity per link than one with 500 links.
+
+**Why it matters**: A link from a focused resource page often outperforms one from a massive link directory.
+
+### 3. Link Position
+
+Links within main content typically pass more equity than those in:
+- Sidebars
+- Footers
+- Navigation menus
+
+Editorial links embedded in relevant content carry the strongest signals.
+
+### 4. Link Attributes
+
+Different link attributes affect equity transfer:
+
+| Attribute | Equity Transfer |
+|-----------|-----------------|
+| DoFollow (default) | Full potential transfer |
+| NoFollow | Treated as "hint" - may or may not pass |
+| Sponsored | Minimal to no transfer |
+| UGC | Minimal to no transfer |
+
+See our [complete guide to link attributes](/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc).
+
+### 5. Relevance and Context
+
+Google likely weights equity based on topical relevance. A link from a relevant page in your industry probably passes more effective equity than an equal-authority link from an unrelated site.
+
+### 6. Redirect Chains
+
+Each redirect slightly reduces equity passed:
+- Direct link: Maximum equity
+- 301 redirect: Slight reduction
+- Multiple redirects: Cumulative reduction
+
+Keep redirect chains short when possible.
+
+### 7. JavaScript Rendering
+
+Links rendered only via JavaScript may pass equity, but it depends on whether Google renders the page. Plain HTML links are most reliable.
+
+---
+
+## PageRank Sculpting (What Doesn't Work)
+
+In the early 2000s, SEOs attempted "PageRank sculpting"—using NoFollow on certain internal links to concentrate equity on priority pages.
+
+### How It Was Supposed to Work
+
+```
+Homepage (100 units equity, 4 links)
+├── Product Page (NoFollow) - receive nothing
+├── Product Page (DoFollow) - receive 33 units
+├── Product Page (DoFollow) - receive 33 units
+└── Product Page (DoFollow) - receive 33 units
+```
+
+By NoFollowing less important pages, practitioners hoped to funnel more equity to priority pages.
+
+### Why Google Closed This Loophole
+
+In 2009, Matt Cutts confirmed Google changed how NoFollow works:
+
+```
+Homepage (100 units equity, 4 links)
+├── Product Page (NoFollow) - 25 units evaporate
+├── Product Page (DoFollow) - receive 25 units
+├── Product Page (DoFollow) - receive 25 units
+└── Product Page (DoFollow) - receive 25 units
+```
+
+NoFollowed links still "use up" their share of equity—it just evaporates rather than concentrating elsewhere.
+
+### Modern Alternatives
+
+Instead of PageRank sculpting:
+- **Use fewer links** on key pages to concentrate equity
+- **Strategic internal linking** to prioritise important pages
+- **Information architecture** that naturally funnels authority
+- **Content consolidation** rather than link manipulation
+
+---
+
+## Internal Link Equity Distribution
+
+You control internal linking, making it a powerful tool for equity management.
+
+### Site Architecture Impact
+
+**Flat structures** distribute equity widely:
+```
+Homepage
+├── Page A
+├── Page B
+├── Page C
+└── Page D
+(All pages 1 click from home, receiving direct equity)
+```
+
+**Deep structures** concentrate equity at the top:
+```
+Homepage
+└── Category
+    └── Subcategory
+        └── Product
+            └── Variation
+(Pages 4-5 clicks deep receive less direct equity)
+```
+
+### Strategic Internal Linking
+
+Maximise equity to priority pages by:
+
+1. **Linking from high-authority pages**: Your homepage and top-traffic pages
+2. **Reducing click depth**: Keep important pages within 3 clicks
+3. **Using contextual links**: Links within content pass more equity
+4. **Creating hub structures**: Central pages that link to and receive links from related content
+
+### Avoiding Equity Dilution
+
+Equity dilutes across links. Consider:
+
+- **Navigation links**: Site-wide navigation divides equity among many pages
+- **Footer links**: Often carry less weight, and dilute across many pages
+- **Excessive internal linking**: Too many links per page reduces per-link equity
+
+Balance usability (many navigation options) with SEO (concentrated equity flow).
+
+---
+
+## Practical Applications
+
+### Prioritising Link Building Targets
+
+When pursuing backlinks:
+
+1. **Favour authoritative pages**: Higher equity transfer
+2. **Check outbound link counts**: Fewer links = more equity per link
+3. **Seek contextual placements**: Content links pass more equity
+4. **Ensure DoFollow**: Verify link attributes when possible
+
+### Structuring Your Site
+
+For optimal internal equity flow:
+
+1. **Create pillar content**: High-value pages that earn external links
+2. **Link down from pillars**: Pass equity to supporting pages
+3. **Link up from deep pages**: Some equity flows back to important pages
+4. **Build topic clusters**: Related pages reinforcing each other
+
+### Handling Lost Equity
+
+When you lose backlinks:
+- High-authority links: Attempt recovery (see [link reclamation](/link-reclamation))
+- Redirected pages: Ensure 301 redirects preserve equity to new URLs
+- Deleted pages: Redirect to relevant alternatives if possible
+
+---
+
+## Common Misconceptions
+
+### "PageRank Is Dead"
+
+**Reality**: Google stopped showing public scores, but PageRank concepts remain core to their algorithm. Links still pass value; we just can't see the numbers.
+
+### "All Links Pass Equal Equity"
+
+**Reality**: Source authority, position, relevance, and attributes all affect equity transfer. A link from a high-authority, relevant page passes far more value than one from a low-authority, unrelated page.
+
+### "You Can Hoard Equity by Not Linking Out"
+
+**Reality**: External linking doesn't significantly drain your equity. Linking to quality resources may even have positive effects on trust and topicality signals.
+
+### "More Links Always Means More Equity"
+
+**Reality**: If one page links to you 100 times, you don't receive 100× the equity. Multiple links from the same page have diminishing returns.
+
+---
+
+## Frequently Asked Questions
+
+### Does PageRank flow through 302 redirects?
+
+Historically, 302s (temporary) passed less or no equity. Google has indicated they now treat 301 and 302 similarly for PageRank purposes in most cases. However, use 301s for permanent moves to be safe.
+
+### Can I see my PageRank score?
+
+No. Public PageRank scores were discontinued in 2016. Third-party metrics (DA, DR) are estimates, not actual PageRank values.
+
+### Do NoFollow links pass any equity?
+
+Since 2019, Google treats NoFollow as a "hint" rather than directive. They may choose to pass equity through NoFollow links if they determine the link is valuable. Don't rely on this, but it explains why NoFollow links from major sites can still help.
+
+### How long until new link equity affects rankings?
+
+It varies. Google must crawl the linking page, discover the link, evaluate it, and update rankings. This can take weeks to months. Link equity impact isn't immediate.
+
+---
+
+## Summary
+
+Link equity—the ranking value passed through hyperlinks—remains fundamental to how search engines evaluate pages.
+
+**Key takeaways**:
+
+1. **Links pass value**: Higher-authority pages transfer more equity
+2. **Equity divides**: More outbound links means less equity per link
+3. **Position matters**: Contextual links pass more value than footer links
+4. **Attributes affect transfer**: DoFollow passes most; NoFollow is now a "hint"
+5. **Internal linking is powerful**: You control how equity flows within your site
+6. **PageRank lives on**: Though hidden, the concept still drives rankings
+
+Understanding link equity helps you earn more valuable backlinks and structure your site to maximise the authority you've built.
+
+---
+
+## What to Read Next
+
+- [Internal vs External Links](/backlinks/internal-vs-external-links) - Managing all link types
+- [DoFollow vs NoFollow](/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc) - Link attributes explained
+- [Backlink Quality Guide](/backlink-quality) - Evaluating link value
