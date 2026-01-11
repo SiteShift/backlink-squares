@@ -75,7 +75,6 @@ const config: Config = {
         },
         primary: '#DC2626',
         secondary: '#2563EB',
-        accent: '#FACC15',
         dark: '#09090B',
         light: '#F5F5F4',
       },

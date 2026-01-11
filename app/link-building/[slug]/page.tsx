@@ -4,8 +4,10 @@ import { getHubContent, getHubClusters, getClusterContent } from '@/lib/content'
 import { ClusterPage } from '@/components/content/ClusterPage'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
+import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
 const HUB_SLUG = 'link-building'
+const BASE_URL = 'https://seobacklinks.dev'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -19,16 +21,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Page Not Found' }
   }
 
+  const canonicalUrl = `${BASE_URL}/${HUB_SLUG}/${slug}`
+
   return {
     title: cluster.metaTitle || cluster.title,
     description: cluster.metaDescription || cluster.description,
     keywords: [cluster.primaryKeyword, ...cluster.secondaryKeywords],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: cluster.metaTitle || cluster.title,
       description: cluster.metaDescription || cluster.description,
       type: 'article',
+      url: canonicalUrl,
       authors: [cluster.author],
       modifiedTime: cluster.lastUpdated,
+      siteName: 'SEO Backlinks Grid',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: cluster.metaTitle || cluster.title,
+      description: cluster.metaDescription || cluster.description,
     },
   }
 }
@@ -49,18 +63,38 @@ export default async function LinkBuildingClusterPage({ params }: PageProps) {
   }
 
   const components = useMDXComponents({})
+  const canonicalUrl = `${BASE_URL}/${HUB_SLUG}/${slug}`
 
   return (
-    <ClusterPage
-      cluster={cluster}
-      hub={hub}
-      siblings={siblings}
-      content={
-        <MDXRemote
-          source={cluster.content}
-          components={components}
-        />
-      }
-    />
+    <>
+      <ArticleSchema
+        title={cluster.title}
+        description={cluster.description}
+        url={canonicalUrl}
+        datePublished={cluster.lastUpdated}
+        dateModified={cluster.lastUpdated}
+        author={cluster.author}
+        image={cluster.image}
+        keywords={[cluster.primaryKeyword, ...cluster.secondaryKeywords]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: BASE_URL },
+          { name: hub.title, url: `${BASE_URL}/${HUB_SLUG}` },
+          { name: cluster.title, url: canonicalUrl },
+        ]}
+      />
+      <ClusterPage
+        cluster={cluster}
+        hub={hub}
+        siblings={siblings}
+        content={
+          <MDXRemote
+            source={cluster.content}
+            components={components}
+          />
+        }
+      />
+    </>
   )
 }

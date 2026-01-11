@@ -1,70 +1,132 @@
 import { MetadataRoute } from 'next'
+import {
+  getAllHubs,
+  getHubClusters,
+  getAllGlossaryTerms,
+  getAllBlogPosts,
+  getAllGuides,
+} from '@/lib/content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://seobacklinks.dev'
+  const currentDate = new Date().toISOString()
 
   // Static pages
-  const staticPages = [
-    '',
-    '/how-it-works',
-    '/about',
-    '/contact',
-    '/terms',
-    '/privacy',
-    '/blog',
-    '/guides',
-    '/glossary',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === '' ? 'daily' as const : 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
-  }))
+  const staticPages: MetadataRoute.Sitemap = [
+    {
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/how-it-works`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/guides`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/glossary`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+  ]
+
+  // Content hub pages (pillar pages - high priority)
+  const hubPages: MetadataRoute.Sitemap = []
+  const clusterPages: MetadataRoute.Sitemap = []
+
+  const hubs = getAllHubs()
+  for (const hub of hubs) {
+    // Add hub page
+    hubPages.push({
+      url: `${baseUrl}/${hub.slug}`,
+      lastModified: hub.lastUpdated || currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    })
+
+    // Add all cluster pages for this hub
+    const clusters = getHubClusters(hub.slug)
+    for (const cluster of clusters) {
+      clusterPages.push({
+        url: `${baseUrl}/${hub.slug}/${cluster.slug}`,
+        lastModified: cluster.lastUpdated || currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      })
+    }
+  }
 
   // Blog posts
-  const blogPosts = [
-    'what-are-backlinks',
-    'dofollow-vs-nofollow',
-    'link-building-strategies',
-    'domain-authority-explained',
-    'backlink-quality-checklist',
-  ].map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+  const blogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.date || currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
   // Guides
-  const guides = [
-    'what-are-backlinks-complete-guide',
-    'link-building-strategies-guide',
-    'domain-authority-guide',
-  ].map((slug) => ({
-    url: `${baseUrl}/guides/${slug}`,
-    lastModified: new Date(),
+  const guides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: guide.date || currentDate,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
 
-  // Glossary terms - only terms with full definitions
-  const glossaryTerms = [
-    'anchor-text',
-    'backlink',
-    'dofollow',
-    'domain-authority',
-    'link-building',
-    'link-equity',
-    'nofollow',
-    'pagerank',
-    'referring-domain',
-    'toxic-backlink',
-  ].map((slug) => ({
-    url: `${baseUrl}/glossary/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
+  // Glossary terms
+  const glossaryTerms: MetadataRoute.Sitemap = getAllGlossaryTerms()
+    .filter((term) => term.slug !== '_index')
+    .map((term) => ({
+      url: `${baseUrl}/glossary/${term.slug}`,
+      lastModified: term.date || currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }))
 
-  return [...staticPages, ...blogPosts, ...guides, ...glossaryTerms]
+  return [
+    ...staticPages,
+    ...hubPages,
+    ...clusterPages,
+    ...blogPosts,
+    ...guides,
+    ...glossaryTerms,
+  ]
 }

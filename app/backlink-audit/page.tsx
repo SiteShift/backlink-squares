@@ -4,8 +4,10 @@ import { getHubContent, getHubClusters } from '@/lib/content'
 import { HubPage } from '@/components/content/HubPage'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
+import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
 const HUB_SLUG = 'backlink-audit'
+const BASE_URL = 'https://seobacklinks.dev'
 
 export async function generateMetadata(): Promise<Metadata> {
   const hub = getHubContent(HUB_SLUG)
@@ -16,16 +18,23 @@ export async function generateMetadata(): Promise<Metadata> {
     }
   }
 
+  const canonicalUrl = `${BASE_URL}/${HUB_SLUG}`
+
   return {
     title: hub.metaTitle || hub.title,
     description: hub.metaDescription || hub.description,
     keywords: [hub.primaryKeyword, ...hub.secondaryKeywords],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: hub.metaTitle || hub.title,
       description: hub.metaDescription || hub.description,
       type: 'article',
+      url: canonicalUrl,
       authors: [hub.author],
       modifiedTime: hub.lastUpdated,
+      siteName: 'SEO Backlinks Grid',
     },
     twitter: {
       card: 'summary_large_image',
@@ -44,17 +53,36 @@ export default function BacklinkAuditHubPage() {
   }
 
   const components = useMDXComponents({})
+  const canonicalUrl = `${BASE_URL}/${HUB_SLUG}`
 
   return (
-    <HubPage
-      hub={hub}
-      clusters={clusters}
-      content={
-        <MDXRemote
-          source={hub.content}
-          components={components}
-        />
-      }
-    />
+    <>
+      <ArticleSchema
+        title={hub.title}
+        description={hub.description}
+        url={canonicalUrl}
+        datePublished={hub.lastUpdated}
+        dateModified={hub.lastUpdated}
+        author={hub.author}
+        image={hub.image}
+        keywords={[hub.primaryKeyword, ...hub.secondaryKeywords]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: BASE_URL },
+          { name: hub.title, url: canonicalUrl },
+        ]}
+      />
+      <HubPage
+        hub={hub}
+        clusters={clusters}
+        content={
+          <MDXRemote
+            source={hub.content}
+            components={components}
+          />
+        }
+      />
+    </>
   )
 }

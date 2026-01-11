@@ -403,6 +403,8 @@ export function getAllHubs(): HubMeta[] {
     'link-building-tactics',
     'digital-pr',
     'outreach',
+    'industries',
+    'resources',
   ]
 
   return hubSlugs
