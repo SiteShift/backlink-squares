@@ -18,7 +18,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import { HowToSchema } from '@/components/seo/JsonLd'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
   title: 'How It Works - Get Your Backlink in 3 Simple Steps',

@@ -7,7 +7,7 @@ import { useMDXComponents } from '@/mdx-components'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
 const HUB_SLUG = 'industries'
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export async function generateMetadata(): Promise<Metadata> {
   const hub = getHubContent(HUB_SLUG)

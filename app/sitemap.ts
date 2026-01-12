@@ -8,7 +8,7 @@ import {
 } from '@/lib/content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://seobacklinks.dev'
+  const baseUrl = 'https://backlinkgrid.com'
   const currentDate = new Date().toISOString()
 
   // Static pages

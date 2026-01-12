@@ -25,8 +25,8 @@ export default function SuccessPage() {
   const [copied, setCopied] = useState(false)
 
   const shareText =
-    "Just grabbed my spot on the SEO Backlinks Grid! Instant dofollow backlink for $1. Check it out: seobacklinks.dev"
-  const shareUrl = 'https://seobacklinks.dev'
+    "Just grabbed my spot on the SEO Backlinks Grid! Instant dofollow backlink for $1. Check it out: backlinkgrid.com"
+  const shareUrl = 'https://backlinkgrid.com'
 
   const copyLink = () => {
     navigator.clipboard.writeText(shareUrl)

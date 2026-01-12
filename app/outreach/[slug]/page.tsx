@@ -7,7 +7,7 @@ import { useMDXComponents } from '@/mdx-components'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
 const HUB_SLUG = 'outreach'
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 interface PageProps {
   params: Promise<{ slug: string }>

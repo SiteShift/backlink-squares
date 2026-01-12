@@ -4,7 +4,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllHubs, getHubClusters, getAllGlossaryTerms } from '@/lib/content'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
   title: 'Sitemap - All Pages',

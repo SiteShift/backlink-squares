@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
   title: 'SEO & Link Building Blog - Expert Guides & Tips',

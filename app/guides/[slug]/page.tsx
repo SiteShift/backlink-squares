@@ -9,7 +9,7 @@ import { ContentCTA } from '@/components/content/ContentCTA'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: { slug: string }

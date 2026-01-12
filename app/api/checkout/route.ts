@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
       height,
       square_count: squares.length,
       amount_cents: amountCents,
-      currency: 'gbp',
+      currency: 'usd',
       site_url: siteUrl,
       site_name: siteName,
       logo_url: logoUrl,

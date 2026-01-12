@@ -11,7 +11,7 @@ import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: { slug: string }

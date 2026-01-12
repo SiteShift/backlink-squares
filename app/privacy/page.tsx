@@ -26,7 +26,7 @@ export default function PrivacyPage() {
               SEO Backlinks Grid ("we," "our," or "us") respects your privacy
               and is committed to protecting your personal data. This Privacy
               Policy explains how we collect, use, and safeguard your information
-              when you visit our website seobacklinks.dev and use our services.
+              when you visit our website backlinkgrid.com and use our services.
             </p>
 
             <h2>2. Information We Collect</h2>
@@ -158,8 +158,8 @@ export default function PrivacyPage() {
             </ul>
             <p>
               To exercise these rights, please contact us at{' '}
-              <a href="mailto:privacy@seobacklinks.dev">
-                privacy@seobacklinks.dev
+              <a href="mailto:privacy@backlinkgrid.com">
+                privacy@backlinkgrid.com
               </a>.
             </p>
 
@@ -192,8 +192,8 @@ export default function PrivacyPage() {
             <ul>
               <li>
                 Email:{' '}
-                <a href="mailto:privacy@seobacklinks.dev">
-                  privacy@seobacklinks.dev
+                <a href="mailto:privacy@backlinkgrid.com">
+                  privacy@backlinkgrid.com
                 </a>
               </li>
             </ul>

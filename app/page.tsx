@@ -12,7 +12,7 @@ import { FAQSchema } from '@/components/seo/JsonLd'
 import { Square } from '@/lib/types'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
   alternates: {

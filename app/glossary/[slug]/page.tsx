@@ -11,7 +11,7 @@ import { useMDXComponents } from '@/mdx-components'
 import { DefinedTermSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { formatDate } from '@/lib/utils'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: Promise<{ slug: string }>

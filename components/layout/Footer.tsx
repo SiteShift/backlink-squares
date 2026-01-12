@@ -25,7 +25,7 @@ const socialLinks = [
   { href: 'https://twitter.com/seobacklinks', icon: Twitter, label: 'Twitter' },
   { href: 'https://linkedin.com/company/seobacklinks', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://github.com/seobacklinks', icon: Github, label: 'GitHub' },
-  { href: 'mailto:hello@seobacklinks.dev', icon: Mail, label: 'Email' },
+  { href: 'mailto:hello@backlinkgrid.com', icon: Mail, label: 'Email' },
 ]
 
 export function Footer() {

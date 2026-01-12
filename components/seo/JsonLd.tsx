@@ -47,10 +47,10 @@ export function ArticleSchema({
     publisher: {
       '@type': 'Organization',
       name: 'SEO Backlinks Grid',
-      url: 'https://seobacklinks.dev',
+      url: 'https://backlinkgrid.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://seobacklinks.dev/logo.png',
+        url: 'https://backlinkgrid.com/logo.png',
       },
     },
     mainEntityOfPage: {
@@ -60,7 +60,7 @@ export function ArticleSchema({
     ...(image && {
       image: {
         '@type': 'ImageObject',
-        url: image.startsWith('http') ? image : `https://seobacklinks.dev${image}`,
+        url: image.startsWith('http') ? image : `https://backlinkgrid.com${image}`,
       },
     }),
     ...(keywords &&
@@ -162,7 +162,7 @@ export function DefinedTermSchema({ term, definition, url }: DefinedTermSchemaPr
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       name: 'SEO Glossary',
-      url: 'https://seobacklinks.dev/glossary',
+      url: 'https://backlinkgrid.com/glossary',
     },
   }
 
@@ -178,8 +178,8 @@ interface OrganizationSchemaProps {
 
 export function OrganizationSchema({
   name = 'SEO Backlinks Grid',
-  url = 'https://seobacklinks.dev',
-  logo = 'https://seobacklinks.dev/logo.png',
+  url = 'https://backlinkgrid.com',
+  logo = 'https://backlinkgrid.com/logo.png',
   sameAs = [],
 }: OrganizationSchemaProps) {
   const schema = {

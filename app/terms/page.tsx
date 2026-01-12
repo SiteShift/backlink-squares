@@ -24,7 +24,7 @@ export default function TermsPage() {
             <h2>1. Introduction</h2>
             <p>
               Welcome to SEO Backlinks Grid ("we," "our," or "us"). By accessing
-              or using our website at seobacklinks.dev (the "Site") and purchasing
+              or using our website at backlinkgrid.com (the "Site") and purchasing
               our services, you agree to be bound by these Terms of Service ("Terms").
             </p>
 
@@ -146,7 +146,7 @@ export default function TermsPage() {
             <h2>12. Contact</h2>
             <p>
               For questions about these Terms, please contact us at{' '}
-              <a href="mailto:legal@seobacklinks.dev">legal@seobacklinks.dev</a>.
+              <a href="mailto:legal@backlinkgrid.com">legal@backlinkgrid.com</a>.
             </p>
           </div>
         </article>

@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import { OrganizationSchema } from '@/components/seo/JsonLd'
 
-const BASE_URL = 'https://seobacklinks.dev'
+const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
   title: 'About Us - The Story Behind SEO Backlinks Grid',

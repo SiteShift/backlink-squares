@@ -154,7 +154,7 @@ export function isValidEmail(email: string): boolean {
 
 // Generate share text
 export function generateShareText(siteName: string): string {
-  return `Just grabbed my spot on the @seobacklinks grid! Instant dofollow backlink for $1. Check it out: seobacklinks.dev`
+  return `Just grabbed my spot on the @seobacklinks grid! Instant dofollow backlink for $1. Check it out: backlinkgrid.com`
 }
 
 // Generate Twitter share URL

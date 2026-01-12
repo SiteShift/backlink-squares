@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS purchase_groups (
 
   -- Payment
   amount_cents INTEGER NOT NULL,
-  currency TEXT DEFAULT 'gbp',
+  currency TEXT DEFAULT 'usd',
   stripe_session_id TEXT,
   stripe_payment_intent TEXT,
 

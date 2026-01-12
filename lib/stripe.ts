@@ -5,6 +5,10 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   typescript: true,
 })
 
+// Backlink Square product and price IDs
+export const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID || 'price_1SoQAGGe23gJ3NQhpTAJocKR'
+export const STRIPE_PRODUCT_ID = process.env.STRIPE_PRODUCT_ID || 'prod_Tly6XzE01ybym8'
+
 export interface CreateCheckoutParams {
   purchaseGroupId: string
   squareCount: number
@@ -28,18 +32,8 @@ export async function createCheckoutSession(
       customer_email: params.email,
       line_items: [
         {
-          price_data: {
-            currency: 'usd',
-            product_data: {
-              name: `${params.squareCount} Square${params.squareCount > 1 ? 's' : ''} on SEO Backlinks Grid`,
-              description: `Permanent dofollow backlink for ${params.siteName}`,
-              images: [
-                `${process.env.NEXT_PUBLIC_BASE_URL}/og-image.png`,
-              ],
-            },
-            unit_amount: params.amountCents,
-          },
-          quantity: 1,
+          price: STRIPE_PRICE_ID,
+          quantity: params.squareCount,
         },
       ],
       metadata: {

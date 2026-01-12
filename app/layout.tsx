@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://seobacklinks.dev'),
+  metadataBase: new URL('https://backlinkgrid.com'),
   title: {
     default: 'SEO Backlinks Grid - Buy Dofollow Backlinks from $1',
     template: '%s | SEO Backlinks Grid',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://seobacklinks.dev',
+    url: 'https://backlinkgrid.com',
     siteName: 'SEO Backlinks Grid',
     title: 'SEO Backlinks Grid - Buy Dofollow Backlinks from $1',
     description:
@@ -88,7 +88,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'SEO Backlinks Grid',
-              url: 'https://seobacklinks.dev',
+              url: 'https://backlinkgrid.com',
               description: 'Buy dofollow backlinks on our visual grid. Permanent links from $1.',
             }),
           }}
