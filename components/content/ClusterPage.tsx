@@ -99,25 +99,29 @@ export function ClusterPage({ cluster, hub, siblings, content }: ClusterPageProp
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-4 gap-8">
               {/* Table of Contents - Sidebar */}
-              <aside className="lg:col-span-1">
-                <div className="sticky top-24">
+              <aside className="lg:col-span-1 hidden lg:block">
+                <div className="sticky top-24 space-y-4">
                   <TableOfContents />
 
                   {/* Related Pages */}
                   {siblings.length > 1 && (
-                    <div className="mt-8 bg-white border-3 border-dark p-5">
-                      <h3 className="font-bold text-dark mb-4 uppercase text-sm tracking-wider">
-                        Related Topics
-                      </h3>
-                      <nav className="space-y-2">
+                    <div className="bg-white border-3 border-dark">
+                      <div className="p-3 border-b-2 border-dark/10">
+                        <h3 className="font-bold text-dark uppercase text-xs tracking-wider flex items-center gap-2">
+                          <BookOpen className="w-3.5 h-3.5 text-bauhaus-yellow" />
+                          Related Topics
+                          <span className="text-dark/40">({siblings.length - 1})</span>
+                        </h3>
+                      </div>
+                      <nav className="max-h-[25vh] overflow-y-auto py-1">
                         {siblings
                           .filter((s) => s.slug !== cluster.slug)
-                          .slice(0, 5)
+                          .slice(0, 8)
                           .map((sibling) => (
                             <Link
                               key={sibling.slug}
                               href={`/${hub.slug}/${sibling.slug}`}
-                              className="block text-sm text-dark/70 hover:text-bauhaus-red transition-colors py-1"
+                              className="block text-xs text-dark/60 hover:text-dark hover:bg-bauhaus-cream/30 transition-colors py-1.5 px-3"
                             >
                               {sibling.title}
                             </Link>

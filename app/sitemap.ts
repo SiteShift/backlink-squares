@@ -12,8 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Use fixed dates for static content to avoid unnecessary recrawls
   // Update these dates when content actually changes
-  const SITE_LAUNCH_DATE = '2025-01-01T00:00:00.000Z'
-  const LAST_CONTENT_UPDATE = '2025-01-12T00:00:00.000Z'
+  const SITE_LAUNCH_DATE = '2026-01-01T00:00:00.000Z'
+  const LAST_CONTENT_UPDATE = '2026-01-12T00:00:00.000Z'
 
   // Static pages with real timestamps
   const staticPages: MetadataRoute.Sitemap = [

@@ -7,7 +7,7 @@ import { Footer } from '@/components/layout/Footer'
 const BASE_URL = 'https://backlinkgrid.com'
 
 export const metadata: Metadata = {
-  title: 'SEO & Link Building Statistics 2025',
+  title: 'SEO & Link Building Statistics 2026',
   description:
     'The latest statistics on backlinks, link building, and SEO. Data-driven insights to inform your strategy.',
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'SEO & Link Building Statistics | SEO Backlinks Grid',
     description:
-      'Comprehensive SEO and link building statistics for 2025.',
+      'Comprehensive SEO and link building statistics for 2026.',
   },
 }
 
@@ -90,7 +90,7 @@ export default function StatisticsPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-bauhaus-red border-3 border-dark mb-6">
                 <BarChart3 className="w-4 h-4 text-white" />
                 <span className="text-sm font-bold uppercase tracking-wider text-white">
-                  Updated for 2025
+                  Updated for 2026
                 </span>
               </div>
               <h1 className="font-black text-4xl sm:text-5xl uppercase tracking-wide text-dark">

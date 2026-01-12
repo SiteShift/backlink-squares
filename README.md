@@ -603,7 +603,7 @@ Frontmatter:
 ---
 title: "Post Title"
 description: "Meta description"
-date: "2025-01-10"
+date: "2026-01-10"
 author: "SEO Backlinks"
 keywords: ["keyword1", "keyword2"]
 ---

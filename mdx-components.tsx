@@ -1,25 +1,65 @@
 import type { MDXComponents } from 'mdx/types'
 import Link from 'next/link'
 
+// Generate URL-friendly slug from text
+function slugify(text: string): string {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '')
+}
+
+// Extract text content from React children
+function getTextContent(children: React.ReactNode): string {
+  if (typeof children === 'string') return children
+  if (typeof children === 'number') return String(children)
+  if (Array.isArray(children)) return children.map(getTextContent).join('')
+  if (children && typeof children === 'object' && 'props' in children) {
+    return getTextContent((children as React.ReactElement).props.children)
+  }
+  return ''
+}
+
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    // Custom heading with anchor links
-    h2: ({ children, ...props }) => (
-      <h2
-        className="font-bold text-2xl uppercase tracking-wide text-dark mt-12 mb-6 scroll-mt-24"
-        {...props}
-      >
-        {children}
-      </h2>
-    ),
-    h3: ({ children, ...props }) => (
-      <h3
-        className="font-bold text-xl uppercase tracking-wide text-dark mt-8 mb-4"
-        {...props}
-      >
-        {children}
-      </h3>
-    ),
+    // Custom heading with anchor links and auto-generated IDs
+    h2: ({ children, id, ...props }) => {
+      const textContent = getTextContent(children)
+      const headingId = id || slugify(textContent)
+      return (
+        <h2
+          id={headingId}
+          className="font-bold text-2xl uppercase tracking-wide text-dark mt-12 mb-6 scroll-mt-24 group"
+          {...props}
+        >
+          <a href={`#${headingId}`} className="no-underline hover:no-underline">
+            {children}
+            <span className="opacity-0 group-hover:opacity-50 ml-2 text-bauhaus-red transition-opacity">#</span>
+          </a>
+        </h2>
+      )
+    },
+    h3: ({ children, id, ...props }) => {
+      const textContent = getTextContent(children)
+      const headingId = id || slugify(textContent)
+      return (
+        <h3
+          id={headingId}
+          className="font-bold text-xl uppercase tracking-wide text-dark mt-8 mb-4 scroll-mt-24 group"
+          {...props}
+        >
+          <a href={`#${headingId}`} className="no-underline hover:no-underline">
+            {children}
+            <span className="opacity-0 group-hover:opacity-50 ml-2 text-bauhaus-red text-sm transition-opacity">#</span>
+          </a>
+        </h3>
+      )
+    },
     // Custom link component
     a: ({ href, children, ...props }) => {
       const isInternal = href?.startsWith('/') || href?.startsWith('#')

@@ -83,22 +83,26 @@ export function HubPage({ hub, clusters, relatedHubs = [], content }: HubPagePro
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-4 gap-8">
               {/* Table of Contents - Sidebar */}
-              <aside className="lg:col-span-1">
-                <div className="sticky top-24">
+              <aside className="lg:col-span-1 hidden lg:block">
+                <div className="sticky top-24 space-y-4">
                   <TableOfContents />
 
                   {/* Cluster Pages Navigation */}
                   {clusters.length > 0 && (
-                    <div className="mt-8 bg-white border-3 border-dark p-5">
-                      <h3 className="font-bold text-dark mb-4 uppercase text-sm tracking-wider">
-                        In This Guide
-                      </h3>
-                      <nav className="space-y-2">
+                    <div className="bg-white border-3 border-dark">
+                      <div className="p-3 border-b-2 border-dark/10">
+                        <h3 className="font-bold text-dark uppercase text-xs tracking-wider flex items-center gap-2">
+                          <BookOpen className="w-3.5 h-3.5 text-bauhaus-blue" />
+                          In This Guide
+                          <span className="text-dark/40">({clusters.length})</span>
+                        </h3>
+                      </div>
+                      <nav className="max-h-[30vh] overflow-y-auto py-1">
                         {clusters.map((cluster) => (
                           <Link
                             key={cluster.slug}
                             href={`/${hub.slug}/${cluster.slug}`}
-                            className="block text-sm text-dark/70 hover:text-bauhaus-red transition-colors py-1"
+                            className="block text-xs text-dark/60 hover:text-dark hover:bg-bauhaus-cream/30 transition-colors py-1.5 px-3"
                           >
                             {cluster.title}
                           </Link>
