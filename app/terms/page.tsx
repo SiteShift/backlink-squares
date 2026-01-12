@@ -2,10 +2,15 @@ import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
+const BASE_URL = 'https://backlinkgrid.com'
+
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
     'Terms of Service for SEO Backlinks Grid. Read our terms and conditions before making a purchase.',
+  alternates: {
+    canonical: `${BASE_URL}/terms`,
+  },
 }
 
 export default function TermsPage() {

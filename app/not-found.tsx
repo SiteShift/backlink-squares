@@ -1,8 +1,22 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { Home, Search } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
+
+// Prevent 404 pages from being indexed (soft-404 prevention)
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+}
 
 export default function NotFound() {
   return (

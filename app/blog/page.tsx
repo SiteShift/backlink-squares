@@ -1,7 +1,24 @@
+import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { BlogCard } from '@/components/content/BlogCard'
 import { getAllBlogPosts } from '@/lib/content'
+
+const BASE_URL = 'https://backlinkgrid.com'
+
+export const metadata: Metadata = {
+  title: 'SEO & Link Building Blog',
+  description:
+    'Expert insights on SEO, link building, and backlink strategies. Learn from in-depth articles and stay updated on the latest trends.',
+  alternates: {
+    canonical: `${BASE_URL}/blog`,
+  },
+  openGraph: {
+    title: 'SEO & Link Building Blog | SEO Backlinks Grid',
+    description:
+      'Expert insights on SEO, link building, and backlink strategies.',
+  },
+}
 
 export default function BlogPage() {
   const posts = getAllBlogPosts()

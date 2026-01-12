@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_GB',
+    locale: 'en_US',
     url: 'https://backlinkgrid.com',
     siteName: 'SEO Backlinks Grid',
     title: 'SEO Backlinks Grid - Buy Dofollow Backlinks from $1',

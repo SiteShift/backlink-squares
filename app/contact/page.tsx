@@ -3,10 +3,15 @@ import { Mail, MessageSquare, Twitter, HelpCircle } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
+const BASE_URL = 'https://backlinkgrid.com'
+
 export const metadata: Metadata = {
   title: 'Contact Us - Get in Touch',
   description:
     'Have questions about SEO Backlinks Grid? Need help with your purchase? Get in touch with our team.',
+  alternates: {
+    canonical: `${BASE_URL}/contact`,
+  },
   openGraph: {
     title: 'Contact SEO Backlinks Grid',
     description: 'Get in touch with our team for support and inquiries.',

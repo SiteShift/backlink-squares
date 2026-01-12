@@ -2,10 +2,15 @@ import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
+const BASE_URL = 'https://backlinkgrid.com'
+
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'Privacy Policy for SEO Backlinks Grid. Learn how we collect, use, and protect your personal information.',
+  alternates: {
+    canonical: `${BASE_URL}/privacy`,
+  },
 }
 
 export default function PrivacyPage() {

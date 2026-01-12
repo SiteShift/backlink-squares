@@ -9,75 +9,85 @@ import {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://backlinkgrid.com'
-  const currentDate = new Date().toISOString()
 
-  // Static pages
+  // Use fixed dates for static content to avoid unnecessary recrawls
+  // Update these dates when content actually changes
+  const SITE_LAUNCH_DATE = '2025-01-01T00:00:00.000Z'
+  const LAST_CONTENT_UPDATE = '2025-01-12T00:00:00.000Z'
+
+  // Static pages with real timestamps
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: currentDate,
+      lastModified: LAST_CONTENT_UPDATE,
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/how-it-works`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
+      lastModified: SITE_LAUNCH_DATE,
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/pricing`,
-      lastModified: currentDate,
+      lastModified: SITE_LAUNCH_DATE,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/statistics`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
+      lastModified: SITE_LAUNCH_DATE,
+      changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
+      lastModified: SITE_LAUNCH_DATE,
+      changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: currentDate,
+      lastModified: SITE_LAUNCH_DATE,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: currentDate,
+      lastModified: SITE_LAUNCH_DATE,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: currentDate,
+      lastModified: LAST_CONTENT_UPDATE,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/guides`,
-      lastModified: currentDate,
+      lastModified: LAST_CONTENT_UPDATE,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/glossary`,
-      lastModified: currentDate,
+      lastModified: LAST_CONTENT_UPDATE,
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/sitemap-page`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'weekly',
+      priority: 0.5,
     },
   ]
 
@@ -91,7 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
   const hardcodedBlogPosts: MetadataRoute.Sitemap = hardcodedBlogSlugs.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: currentDate,
+    lastModified: SITE_LAUNCH_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
@@ -104,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
   const hardcodedGuides: MetadataRoute.Sitemap = hardcodedGuideSlugs.map((slug) => ({
     url: `${baseUrl}/guides/${slug}`,
-    lastModified: currentDate,
+    lastModified: SITE_LAUNCH_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -118,7 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Add hub page
     hubPages.push({
       url: `${baseUrl}/${hub.slug}`,
-      lastModified: hub.lastUpdated || currentDate,
+      lastModified: hub.lastUpdated || LAST_CONTENT_UPDATE,
       changeFrequency: 'weekly',
       priority: 0.9,
     })
@@ -128,7 +138,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const cluster of clusters) {
       clusterPages.push({
         url: `${baseUrl}/${hub.slug}/${cluster.slug}`,
-        lastModified: cluster.lastUpdated || currentDate,
+        lastModified: cluster.lastUpdated || LAST_CONTENT_UPDATE,
         changeFrequency: 'monthly',
         priority: 0.8,
       })
@@ -138,7 +148,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts from MDX (when they exist) - merged with hardcoded
   const mdxBlogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.date || currentDate,
+    lastModified: post.date || LAST_CONTENT_UPDATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
@@ -146,7 +156,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Guides from MDX (when they exist) - merged with hardcoded
   const mdxGuides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
     url: `${baseUrl}/guides/${guide.slug}`,
-    lastModified: guide.date || currentDate,
+    lastModified: guide.date || LAST_CONTENT_UPDATE,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -154,7 +164,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Glossary terms from MDX
   const glossaryTerms: MetadataRoute.Sitemap = getAllGlossaryTerms().map((term) => ({
     url: `${baseUrl}/glossary/${term.slug}`,
-    lastModified: term.lastUpdated || currentDate,
+    lastModified: term.lastUpdated || LAST_CONTENT_UPDATE,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))

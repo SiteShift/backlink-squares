@@ -5,10 +5,15 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 
+const BASE_URL = 'https://backlinkgrid.com'
+
 export const metadata: Metadata = {
   title: 'Pricing - Simple, Transparent Pricing',
   description:
     'SEO Backlinks Grid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent dofollow backlink.',
+  alternates: {
+    canonical: `${BASE_URL}/pricing`,
+  },
   openGraph: {
     title: 'Pricing | SEO Backlinks Grid',
     description:

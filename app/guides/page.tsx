@@ -1,8 +1,25 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { Clock, ArrowRight, BookOpen } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllGuides } from '@/lib/content'
+
+const BASE_URL = 'https://backlinkgrid.com'
+
+export const metadata: Metadata = {
+  title: 'SEO & Link Building Guides',
+  description:
+    'Comprehensive guides on SEO and link building. Master backlinks, domain authority, and effective link building strategies.',
+  alternates: {
+    canonical: `${BASE_URL}/guides`,
+  },
+  openGraph: {
+    title: 'SEO & Link Building Guides | SEO Backlinks Grid',
+    description:
+      'Comprehensive guides on SEO and link building strategies.',
+  },
+}
 
 const colorClasses = {
   red: {

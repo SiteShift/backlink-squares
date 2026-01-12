@@ -4,10 +4,15 @@ import { BarChart3, TrendingUp, Link as LinkIcon, Users, ArrowRight } from 'luci
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
+const BASE_URL = 'https://backlinkgrid.com'
+
 export const metadata: Metadata = {
   title: 'SEO & Link Building Statistics 2025',
   description:
     'The latest statistics on backlinks, link building, and SEO. Data-driven insights to inform your strategy.',
+  alternates: {
+    canonical: `${BASE_URL}/statistics`,
+  },
   openGraph: {
     title: 'SEO & Link Building Statistics | SEO Backlinks Grid',
     description:
