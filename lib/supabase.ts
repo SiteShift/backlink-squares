@@ -134,12 +134,12 @@ export async function reserveSquares(
 }
 
 // Complete purchase (update squares)
+// NOTE: email is NOT stored in squares to prevent PII exposure via RLS
 export async function completePurchase(
   purchaseGroupId: string,
   siteUrl: string,
   siteName: string,
-  logoUrl: string | null,
-  email: string
+  logoUrl: string | null
 ): Promise<boolean> {
   const serverClient = createServerClient()
 
@@ -150,7 +150,6 @@ export async function completePurchase(
       site_url: siteUrl,
       site_name: siteName,
       logo_url: logoUrl,
-      email: email,
       purchased_at: new Date().toISOString(),
     })
     .eq('purchase_group_id', purchaseGroupId)

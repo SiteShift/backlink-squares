@@ -72,18 +72,19 @@ export async function POST(request: NextRequest) {
         )
       }
 
-      // Mark squares as purchased
-      const { error: squaresError } = await supabase
+      // Mark squares as purchased (only those still belonging to this purchase group)
+      // NOTE: email is NOT stored in squares to prevent PII exposure via RLS
+      const { data: updatedSquares, error: squaresError } = await supabase
         .from('squares')
         .update({
           purchased: true,
           site_url: siteUrl,
           site_name: siteName,
           logo_url: logoUrl,
-          email: email,
           purchased_at: new Date().toISOString(),
         })
         .eq('purchase_group_id', purchaseGroupId)
+        .select('id')
 
       if (squaresError) {
         console.error('Error updating squares:', squaresError)
@@ -91,6 +92,42 @@ export async function POST(request: NextRequest) {
           { error: 'Failed to update squares' },
           { status: 500 }
         )
+      }
+
+      // If no squares were updated (released by TTL), backfill from Stripe metadata
+      // Use the safe complete_purchase_squares RPC that won't overwrite others' purchases
+      const updatedCount = updatedSquares?.length ?? 0
+      if (updatedCount === 0 && session.metadata?.squares) {
+        console.log(`Webhook backfill: No squares found for ${purchaseGroupId}, reclaiming from Stripe metadata`)
+        try {
+          const squaresFromStripe = JSON.parse(session.metadata.squares) as { row: number; col: number }[]
+
+          // Use the atomic RPC that only updates squares if:
+          // 1. They don't exist (inserts new)
+          // 2. They're not purchased
+          // 3. They belong to this same purchase group
+          const { data: completedCount, error: rpcError } = await supabase.rpc('complete_purchase_squares', {
+            p_squares: squaresFromStripe,
+            p_purchase_group_id: purchaseGroupId,
+            p_site_url: siteUrl,
+            p_site_name: siteName,
+            p_logo_url: logoUrl,
+          })
+
+          if (rpcError) {
+            console.error('Webhook backfill: Failed to complete squares via RPC:', rpcError)
+          } else {
+            const expectedCount = squaresFromStripe.length
+            if (completedCount < expectedCount) {
+              console.warn(`Webhook backfill: Only ${completedCount}/${expectedCount} squares available for ${purchaseGroupId} - others were purchased`)
+              // User paid but some squares were taken. Support will need to handle refund/reassignment
+            } else {
+              console.log(`Webhook backfill: Reclaimed all ${completedCount} squares for ${purchaseGroupId}`)
+            }
+          }
+        } catch (parseError) {
+          console.error('Webhook backfill: Failed to parse squares from Stripe metadata:', parseError)
+        }
       }
 
       console.log(

@@ -3,6 +3,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/components/home/Hero'
 import { Grid } from '@/components/grid/Grid'
+import { GridProvider } from '@/components/grid/GridProvider'
 import { SeoLinks } from '@/components/grid/SeoLinks'
 import { PurchaseModal } from '@/components/grid/PurchaseModal'
 import { HowItWorks } from '@/components/home/HowItWorks'
@@ -10,6 +11,7 @@ import { FAQ } from '@/components/home/FAQ'
 import { CTA } from '@/components/home/CTA'
 import { FAQSchema } from '@/components/seo/JsonLd'
 import { Square } from '@/lib/types'
+import { createServerClient } from '@/lib/supabase'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
 
 const BASE_URL = 'https://backlinkgrid.com'
@@ -54,10 +56,39 @@ const faqData = [
   },
 ]
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 // Fetch purchased squares from database
-async function getPurchasedSquares(): Promise<Square[]> {
-  // TODO: Replace with Supabase query when database is connected
-  return []
+async function getPurchasedSquares(): Promise<{ squares: Square[]; totalSold: number; serverTimestamp: string }> {
+  try {
+    const supabase = createServerClient()
+
+    // IMPORTANT: Only select public fields - never expose email (PII)
+    const publicFields = 'id, row_index, col_index, purchased, purchase_group_id, site_url, site_name, logo_url, purchased_at'
+    const { data: squares, error } = await supabase
+      .from('squares')
+      .select(publicFields)
+      .eq('purchased', true)
+      .order('row_index', { ascending: true })
+      .order('col_index', { ascending: true })
+
+    if (error) {
+      console.error('Error fetching squares:', error)
+      return { squares: [], totalSold: 0, serverTimestamp: new Date().toISOString() }
+    }
+
+    return {
+      squares: squares || [],
+      totalSold: squares?.length || 0,
+      // Use server time for delta polling to avoid client clock skew
+      serverTimestamp: new Date().toISOString()
+    }
+  } catch (error) {
+    console.error('Error fetching purchased squares:', error)
+    return { squares: [], totalSold: 0, serverTimestamp: new Date().toISOString() }
+  }
 }
 
 const features = [
@@ -85,8 +116,7 @@ const features = [
 ]
 
 export default async function HomePage() {
-  const purchasedSquares = await getPurchasedSquares()
-  const totalSold = purchasedSquares.length
+  const { squares: purchasedSquares, totalSold, serverTimestamp } = await getPurchasedSquares()
 
   return (
     <>
@@ -146,7 +176,9 @@ export default async function HomePage() {
               </p>
             </div>
 
-            <Grid />
+            <GridProvider initialSquares={purchasedSquares} initialTotalSold={totalSold} serverTimestamp={serverTimestamp}>
+              <Grid />
+            </GridProvider>
           </div>
         </section>
 

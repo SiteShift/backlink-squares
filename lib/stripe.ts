@@ -20,9 +20,14 @@ export interface CreateCheckoutParams {
   squares: { row: number; col: number }[]
 }
 
+export interface CheckoutSessionResult {
+  url: string
+  sessionId: string
+}
+
 export async function createCheckoutSession(
   params: CreateCheckoutParams
-): Promise<string | null> {
+): Promise<CheckoutSessionResult | null> {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -47,7 +52,14 @@ export async function createCheckoutSession(
       },
     })
 
-    return session.url
+    if (!session.url) {
+      return null
+    }
+
+    return {
+      url: session.url,
+      sessionId: session.id,
+    }
   } catch (error) {
     console.error('Error creating checkout session:', error)
     return null

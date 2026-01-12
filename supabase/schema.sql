@@ -12,8 +12,8 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE IF NOT EXISTS squares (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
 
-  -- Position on grid
-  row_index INTEGER NOT NULL,
+  -- Position on grid (100 cols x 1000 rows = 100,000 max, but we use 10 cols x 1000 rows)
+  row_index INTEGER NOT NULL CHECK (row_index >= 0 AND row_index < 1000),
   col_index INTEGER NOT NULL CHECK (col_index >= 0 AND col_index < 10),
 
   -- Purchase info
@@ -21,13 +21,14 @@ CREATE TABLE IF NOT EXISTS squares (
   purchase_group_id UUID,
 
   -- Site info (null if not purchased)
+  -- NOTE: email is intentionally NOT stored here to prevent PII exposure via RLS
+  -- Email is stored only in purchase_groups table (not publicly readable)
   site_url TEXT,
   site_name TEXT,
   logo_url TEXT,
 
   -- Meta
   purchased_at TIMESTAMP WITH TIME ZONE,
-  email TEXT,
 
   -- Timestamps
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -67,8 +68,8 @@ CREATE TABLE IF NOT EXISTS purchase_groups (
   logo_url TEXT,
   email TEXT NOT NULL,
 
-  -- Status
-  status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'completed', 'failed')),
+  -- Status: pending (checkout in progress), completed (paid), failed (error), expired (TTL exceeded)
+  status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'completed', 'failed', 'expired')),
 
   -- Timestamps
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -139,6 +140,172 @@ CREATE TRIGGER update_squares_updated_at
   EXECUTE FUNCTION update_updated_at_column();
 
 -- ============================================
+-- ATOMIC RESERVATION FUNCTION
+-- ============================================
+-- Prevents race conditions by atomically reserving squares
+-- Returns the count of successfully reserved squares
+
+CREATE OR REPLACE FUNCTION reserve_squares(
+  p_squares JSONB,
+  p_purchase_group_id UUID
+)
+RETURNS INTEGER
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  v_inserted_count INTEGER;
+BEGIN
+  -- Insert squares with ON CONFLICT DO NOTHING
+  -- This atomically attempts to reserve all squares
+  WITH inserted AS (
+    INSERT INTO squares (row_index, col_index, purchased, purchase_group_id)
+    SELECT
+      (square->>'row')::INTEGER,
+      (square->>'col')::INTEGER,
+      FALSE,
+      p_purchase_group_id
+    FROM jsonb_array_elements(p_squares) AS square
+    ON CONFLICT (row_index, col_index) DO NOTHING
+    RETURNING id
+  )
+  SELECT COUNT(*) INTO v_inserted_count FROM inserted;
+
+  RETURN v_inserted_count;
+END;
+$$;
+
+-- ============================================
+-- CLEANUP STALE RESERVATIONS FUNCTION
+-- ============================================
+-- Marks stale pending purchase groups as expired and releases their squares
+-- If user pays late, self-heal will re-insert squares from Stripe metadata
+-- This allows expired squares to be purchased by others while still supporting late payments
+
+CREATE OR REPLACE FUNCTION cleanup_stale_reservations(
+  p_ttl_minutes INTEGER DEFAULT 30
+)
+RETURNS INTEGER
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  v_expired_count INTEGER;
+BEGIN
+  -- Mark stale purchase groups as expired AND release their squares
+  -- This is safe because:
+  -- 1. If user pays late, self-heal will re-insert squares from Stripe metadata
+  -- 2. If squares were taken by someone else, that's a legitimate sale
+  WITH expired AS (
+    UPDATE purchase_groups
+    SET status = 'expired'
+    WHERE status = 'pending'
+    AND created_at < NOW() - (p_ttl_minutes || ' minutes')::INTERVAL
+    RETURNING id
+  )
+  SELECT COUNT(*) INTO v_expired_count FROM expired;
+
+  -- Release squares from expired reservations (clear purchase_group_id)
+  -- This makes them available for new purchases
+  UPDATE squares
+  SET purchase_group_id = NULL
+  WHERE purchased = FALSE
+  AND purchase_group_id IN (
+    SELECT id FROM purchase_groups WHERE status = 'expired'
+  );
+
+  RETURN v_expired_count;
+END;
+$$;
+
+-- Index for delta polling (fetch squares updated since timestamp)
+CREATE INDEX IF NOT EXISTS idx_squares_updated_at ON squares(updated_at);
+
+-- ============================================
+-- SAFE SQUARE COMPLETION FUNCTION
+-- ============================================
+-- Safely marks squares as purchased, only if they're available
+-- Returns count of squares successfully marked as purchased
+-- Does NOT overwrite squares purchased by others
+
+CREATE OR REPLACE FUNCTION complete_purchase_squares(
+  p_squares JSONB,
+  p_purchase_group_id UUID,
+  p_site_url TEXT,
+  p_site_name TEXT,
+  p_logo_url TEXT
+)
+RETURNS INTEGER
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  v_completed_count INTEGER := 0;
+  v_square RECORD;
+BEGIN
+  FOR v_square IN SELECT * FROM jsonb_array_elements(p_squares) AS square
+  LOOP
+    -- Try to insert or update, but only if not purchased by others
+    INSERT INTO squares (row_index, col_index, purchased, purchase_group_id, site_url, site_name, logo_url, purchased_at)
+    VALUES (
+      (v_square.square->>'row')::INTEGER,
+      (v_square.square->>'col')::INTEGER,
+      TRUE,
+      p_purchase_group_id,
+      p_site_url,
+      p_site_name,
+      p_logo_url,
+      NOW()
+    )
+    ON CONFLICT (row_index, col_index) DO UPDATE SET
+      purchased = TRUE,
+      purchase_group_id = p_purchase_group_id,
+      site_url = p_site_url,
+      site_name = p_site_name,
+      logo_url = p_logo_url,
+      purchased_at = NOW()
+    WHERE
+      -- Only update if: not purchased, or belongs to same purchase group
+      squares.purchased = FALSE
+      OR squares.purchase_group_id = p_purchase_group_id;
+
+    IF FOUND THEN
+      v_completed_count := v_completed_count + 1;
+    END IF;
+  END LOOP;
+
+  RETURN v_completed_count;
+END;
+$$;
+
+-- ============================================
+-- RPC FUNCTION PERMISSIONS
+-- ============================================
+-- CRITICAL: Lock down SECURITY DEFINER functions to service_role only
+-- These functions can modify data, so anon/public must NOT be able to call them
+
+-- Revoke execute from public/anon/authenticated users
+REVOKE EXECUTE ON FUNCTION reserve_squares(JSONB, UUID) FROM PUBLIC;
+REVOKE EXECUTE ON FUNCTION reserve_squares(JSONB, UUID) FROM anon;
+REVOKE EXECUTE ON FUNCTION reserve_squares(JSONB, UUID) FROM authenticated;
+
+REVOKE EXECUTE ON FUNCTION cleanup_stale_reservations(INTEGER) FROM PUBLIC;
+REVOKE EXECUTE ON FUNCTION cleanup_stale_reservations(INTEGER) FROM anon;
+REVOKE EXECUTE ON FUNCTION cleanup_stale_reservations(INTEGER) FROM authenticated;
+
+REVOKE EXECUTE ON FUNCTION complete_purchase_squares(JSONB, UUID, TEXT, TEXT, TEXT) FROM PUBLIC;
+REVOKE EXECUTE ON FUNCTION complete_purchase_squares(JSONB, UUID, TEXT, TEXT, TEXT) FROM anon;
+REVOKE EXECUTE ON FUNCTION complete_purchase_squares(JSONB, UUID, TEXT, TEXT, TEXT) FROM authenticated;
+
+-- Grant execute only to service_role (used by server-side API routes)
+GRANT EXECUTE ON FUNCTION reserve_squares(JSONB, UUID) TO service_role;
+GRANT EXECUTE ON FUNCTION cleanup_stale_reservations(INTEGER) TO service_role;
+GRANT EXECUTE ON FUNCTION complete_purchase_squares(JSONB, UUID, TEXT, TEXT, TEXT) TO service_role;
+
+-- ============================================
 -- SAMPLE DATA (Optional - for testing)
 -- ============================================
 
@@ -150,9 +317,9 @@ VALUES
   ('550e8400-e29b-41d4-a716-446655440002', 1, 1, 1, 100, 'https://moz.com', 'Moz', 'test@example.com', 'completed', NOW()),
   ('550e8400-e29b-41d4-a716-446655440003', 1, 1, 1, 100, 'https://semrush.com', 'SEMrush', 'test@example.com', 'completed', NOW());
 
-INSERT INTO squares (row_index, col_index, purchased, purchase_group_id, site_url, site_name, purchased_at, email)
+INSERT INTO squares (row_index, col_index, purchased, purchase_group_id, site_url, site_name, purchased_at)
 VALUES
-  (0, 2, true, '550e8400-e29b-41d4-a716-446655440001', 'https://ahrefs.com', 'Ahrefs', NOW(), 'test@example.com'),
-  (0, 7, true, '550e8400-e29b-41d4-a716-446655440002', 'https://moz.com', 'Moz', NOW(), 'test@example.com'),
-  (1, 1, true, '550e8400-e29b-41d4-a716-446655440003', 'https://semrush.com', 'SEMrush', NOW(), 'test@example.com');
+  (0, 2, true, '550e8400-e29b-41d4-a716-446655440001', 'https://ahrefs.com', 'Ahrefs', NOW()),
+  (0, 7, true, '550e8400-e29b-41d4-a716-446655440002', 'https://moz.com', 'Moz', NOW()),
+  (1, 1, true, '550e8400-e29b-41d4-a716-446655440003', 'https://semrush.com', 'SEMrush', NOW());
 */

@@ -8,7 +8,9 @@ export interface Square {
   site_name: string | null
   logo_url: string | null
   purchased_at: string | null
-  email: string | null
+  updated_at?: string | null
+  // NOTE: email is NOT stored in squares table to prevent PII exposure via RLS
+  // Email is only stored in purchase_groups (service_role access only)
 }
 
 export interface PurchaseGroup {
@@ -24,7 +26,7 @@ export interface PurchaseGroup {
   site_name: string
   logo_url: string | null
   email: string
-  status: 'pending' | 'completed' | 'failed'
+  status: 'pending' | 'completed' | 'failed' | 'expired'
   created_at: string
   completed_at: string | null
 }

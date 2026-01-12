@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase'
 import { createCheckoutSession } from '@/lib/stripe'
-import { calculatePrice } from '@/lib/utils'
+import { calculatePrice, isValidSelectionSize, isContiguous } from '@/lib/utils'
+import { GRID_COLUMNS, MAX_ROWS } from '@/lib/types'
 import { v4 as uuidv4 } from 'uuid'
 
 export async function POST(request: NextRequest) {
@@ -33,6 +34,33 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Validate selection size (max 3x3 = 9 squares)
+    if (!isValidSelectionSize(squares)) {
+      return NextResponse.json(
+        { error: 'Selection must be within 3x3 bounds (maximum 9 squares)' },
+        { status: 400 }
+      )
+    }
+
+    // Validate squares form a contiguous shape (all connected)
+    if (!isContiguous(squares)) {
+      return NextResponse.json(
+        { error: 'Selected squares must form a contiguous shape' },
+        { status: 400 }
+      )
+    }
+
+    // Validate squares are within grid bounds (0 <= row < MAX_ROWS, 0 <= col < GRID_COLUMNS)
+    const outOfBounds = squares.some(
+      s => s.row < 0 || s.row >= MAX_ROWS || s.col < 0 || s.col >= GRID_COLUMNS
+    )
+    if (outOfBounds) {
+      return NextResponse.json(
+        { error: 'One or more squares are outside the grid bounds' },
+        { status: 400 }
+      )
+    }
+
     // Validate URL format
     try {
       new URL(siteUrl)
@@ -44,6 +72,10 @@ export async function POST(request: NextRequest) {
     }
 
     const supabase = createServerClient()
+    const RESERVATION_TTL_MINUTES = 30
+
+    // First, clean up any stale reservations (older than TTL)
+    await supabase.rpc('cleanup_stale_reservations', { p_ttl_minutes: RESERVATION_TTL_MINUTES })
 
     // Check if squares are available
     const squareConditions = squares
@@ -52,9 +84,10 @@ export async function POST(request: NextRequest) {
 
     const { data: existingSquares } = await supabase
       .from('squares')
-      .select('row_index, col_index, purchased')
+      .select('row_index, col_index, purchased, purchase_group_id')
       .or(squareConditions)
 
+    // Check for already purchased squares
     const purchasedSquares = existingSquares?.filter((s) => s.purchased) || []
     if (purchasedSquares.length > 0) {
       return NextResponse.json(
@@ -63,22 +96,49 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Calculate price
-    const amountCents = calculatePrice(squares.length)
+    // Check for recent pending reservations (within TTL)
+    // Get purchase group IDs for pending squares
+    const pendingSquares = existingSquares?.filter(
+      (s) => !s.purchased && s.purchase_group_id
+    ) || []
 
-    // Create purchase group ID
+    if (pendingSquares.length > 0) {
+      // Verify these are recent reservations by checking purchase_groups.created_at
+      const pendingGroupIds = Array.from(new Set(pendingSquares.map(s => s.purchase_group_id)))
+      const { data: pendingGroups } = await supabase
+        .from('purchase_groups')
+        .select('id, created_at')
+        .in('id', pendingGroupIds)
+        .eq('status', 'pending')
+        .gte('created_at', new Date(Date.now() - RESERVATION_TTL_MINUTES * 60 * 1000).toISOString())
+
+      if (pendingGroups && pendingGroups.length > 0) {
+        return NextResponse.json(
+          { error: 'One or more squares are currently being purchased. Please try different squares or wait a moment.' },
+          { status: 409 }
+        )
+      }
+    }
+
+    // Calculate price and dimensions
+    const amountCents = calculatePrice(squares.length)
     const purchaseGroupId = uuidv4()
+    const rowIndices = squares.map((s) => s.row)
+    const colIndices = squares.map((s) => s.col)
+    const width = Math.max(...colIndices) - Math.min(...colIndices) + 1
+    const height = Math.max(...rowIndices) - Math.min(...rowIndices) + 1
 
     // Upload logo if provided
     let logoUrl: string | null = null
+    let logoFilePath: string | null = null
     if (logo && logo.size > 0) {
       const fileExt = logo.name.split('.').pop()
       const fileName = `${purchaseGroupId}.${fileExt}`
-      const filePath = `logos/${fileName}`
+      logoFilePath = `logos/${fileName}`
 
       const { error: uploadError } = await supabase.storage
         .from('public')
-        .upload(filePath, logo, {
+        .upload(logoFilePath, logo, {
           cacheControl: '3600',
           upsert: true,
         })
@@ -86,18 +146,19 @@ export async function POST(request: NextRequest) {
       if (!uploadError) {
         const {
           data: { publicUrl },
-        } = supabase.storage.from('public').getPublicUrl(filePath)
+        } = supabase.storage.from('public').getPublicUrl(logoFilePath)
         logoUrl = publicUrl
       }
     }
 
-    // Calculate dimensions
-    const rows = squares.map((s) => s.row)
-    const cols = squares.map((s) => s.col)
-    const width = Math.max(...cols) - Math.min(...cols) + 1
-    const height = Math.max(...rows) - Math.min(...rows) + 1
+    // Helper to clean up orphaned logo on failure
+    const cleanupLogo = async () => {
+      if (logoFilePath) {
+        await supabase.storage.from('public').remove([logoFilePath])
+      }
+    }
 
-    // Create purchase group
+    // Create purchase group FIRST (needed for foreign key)
     const { error: groupError } = await supabase.from('purchase_groups').insert({
       id: purchaseGroupId,
       width,
@@ -114,38 +175,45 @@ export async function POST(request: NextRequest) {
 
     if (groupError) {
       console.error('Error creating purchase group:', groupError)
+      await cleanupLogo()
       return NextResponse.json(
         { error: 'Failed to create purchase' },
         { status: 500 }
       )
     }
 
-    // Reserve squares (mark with purchase_group_id but not purchased yet)
-    const squareRecords = squares.map((s) => ({
-      row_index: s.row,
-      col_index: s.col,
-      purchased: false,
-      purchase_group_id: purchaseGroupId,
-    }))
-
-    const { error: reserveError } = await supabase
-      .from('squares')
-      .upsert(squareRecords, {
-        onConflict: 'row_index,col_index',
-      })
+    // ATOMIC RESERVATION: Use RPC to insert squares with ON CONFLICT DO NOTHING
+    // This prevents race conditions where two buyers reserve the same square
+    const { data: insertedCount, error: reserveError } = await supabase.rpc('reserve_squares', {
+      p_squares: squares,
+      p_purchase_group_id: purchaseGroupId,
+    })
 
     if (reserveError) {
       console.error('Error reserving squares:', reserveError)
-      // Clean up purchase group
       await supabase.from('purchase_groups').delete().eq('id', purchaseGroupId)
+      await cleanupLogo()
       return NextResponse.json(
         { error: 'Failed to reserve squares' },
         { status: 500 }
       )
     }
 
+    // If we couldn't insert all squares, someone else got them first
+    if (insertedCount !== squares.length) {
+      console.log(`Race condition: requested ${squares.length}, inserted ${insertedCount}`)
+      // Clean up what we did insert
+      await supabase.from('squares').delete().eq('purchase_group_id', purchaseGroupId)
+      await supabase.from('purchase_groups').delete().eq('id', purchaseGroupId)
+      await cleanupLogo()
+      return NextResponse.json(
+        { error: 'One or more squares were just taken. Please select different squares.' },
+        { status: 409 }
+      )
+    }
+
     // Create Stripe checkout session
-    const checkoutUrl = await createCheckoutSession({
+    const checkoutResult = await createCheckoutSession({
       purchaseGroupId,
       squareCount: squares.length,
       amountCents,
@@ -156,23 +224,24 @@ export async function POST(request: NextRequest) {
       squares,
     })
 
-    if (!checkoutUrl) {
-      // Clean up
+    if (!checkoutResult) {
+      // Clean up everything including logo
       await supabase.from('squares').delete().eq('purchase_group_id', purchaseGroupId)
       await supabase.from('purchase_groups').delete().eq('id', purchaseGroupId)
+      await cleanupLogo()
       return NextResponse.json(
         { error: 'Failed to create checkout session' },
         { status: 500 }
       )
     }
 
-    // Update purchase group with Stripe session info
+    // Update purchase group with Stripe session ID (not URL!)
     await supabase
       .from('purchase_groups')
-      .update({ stripe_session_id: checkoutUrl })
+      .update({ stripe_session_id: checkoutResult.sessionId })
       .eq('id', purchaseGroupId)
 
-    return NextResponse.json({ url: checkoutUrl })
+    return NextResponse.json({ url: checkoutResult.url })
   } catch (error) {
     console.error('Checkout API error:', error)
     return NextResponse.json(

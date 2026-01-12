@@ -75,19 +75,51 @@ export function isContiguous(squares: SelectedSquare[]): boolean {
   return visited.size === squares.length
 }
 
-// Check if adding a square would maintain contiguity
+// Maximum selection dimensions (3x3 = 9 squares max)
+export const MAX_SELECTION_WIDTH = 3
+export const MAX_SELECTION_HEIGHT = 3
+export const MAX_SQUARES = 9
+
+// Check if adding a square would maintain contiguity and stay within 3x3 bounds
 export function canAddSquare(
   existing: SelectedSquare[],
   newSquare: SelectedSquare
 ): boolean {
   if (existing.length === 0) return true
 
+  // Check max squares limit
+  if (existing.length >= MAX_SQUARES) return false
+
   // New square must be adjacent to at least one existing square
-  return existing.some(
+  const isAdjacent = existing.some(
     (s) =>
       (Math.abs(s.row - newSquare.row) === 1 && s.col === newSquare.col) ||
       (Math.abs(s.col - newSquare.col) === 1 && s.row === newSquare.row)
   )
+
+  if (!isAdjacent) return false
+
+  // Check if adding this square would exceed 3x3 bounds
+  const allSquares = [...existing, newSquare]
+  const rows = allSquares.map((s) => s.row)
+  const cols = allSquares.map((s) => s.col)
+  const width = Math.max(...cols) - Math.min(...cols) + 1
+  const height = Math.max(...rows) - Math.min(...rows) + 1
+
+  return width <= MAX_SELECTION_WIDTH && height <= MAX_SELECTION_HEIGHT
+}
+
+// Validate selection is within 3x3 bounds (for server-side validation)
+export function isValidSelectionSize(squares: { row: number; col: number }[]): boolean {
+  if (squares.length === 0) return false
+  if (squares.length > MAX_SQUARES) return false
+
+  const rows = squares.map((s) => s.row)
+  const cols = squares.map((s) => s.col)
+  const width = Math.max(...cols) - Math.min(...cols) + 1
+  const height = Math.max(...rows) - Math.min(...rows) + 1
+
+  return width <= MAX_SELECTION_WIDTH && height <= MAX_SELECTION_HEIGHT
 }
 
 // Get edge visibility for a square in a selection (for unified border rendering)
