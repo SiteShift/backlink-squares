@@ -132,8 +132,8 @@ export function Hero({ totalSold = 0 }: HeroProps) {
           </div>
         </div>
 
-        {/* Right Side - Interactive Grid Preview */}
-        <div className="flex-1 relative flex items-center justify-center p-6 sm:p-8 lg:p-12 order-1 lg:order-2">
+        {/* Right Side - Interactive Grid Preview - Hidden on mobile */}
+        <div className="hidden lg:flex flex-1 relative items-center justify-center p-6 sm:p-8 lg:p-12 order-1 lg:order-2">
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}

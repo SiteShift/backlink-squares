@@ -99,13 +99,8 @@ export function Grid() {
             </div>
           </div>
 
-          {/* Actual Grid - Responsive columns and gaps */}
-          <div
-            className="grid gap-1 sm:gap-1.5 md:gap-2"
-            style={{
-              gridTemplateColumns: `repeat(${GRID_COLUMNS}, minmax(0, 1fr))`,
-            }}
-          >
+          {/* Actual Grid - Responsive columns: 5 on mobile, 10 on sm+ */}
+          <div className="grid grid-cols-5 sm:grid-cols-10 gap-0.5 sm:gap-1.5 md:gap-2">
             {renderSquares()}
           </div>
 

@@ -29,47 +29,49 @@ export function SelectionBar() {
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 100, opacity: 0 }}
       transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-      className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50"
+      className="fixed bottom-0 left-0 right-0 sm:bottom-6 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 z-50"
     >
+      {/* Mobile: Full-width bar */}
       <div
-        className="flex items-center gap-6 px-8 py-5 bg-white border-2 border-surface-950"
-        style={{ boxShadow: '6px 6px 0px 0px #09090B' }}
+        className="flex items-center justify-between gap-3 px-4 py-4 sm:gap-6 sm:px-8 sm:py-5 bg-white border-t-2 sm:border-2 border-surface-950"
+        style={{ boxShadow: '0 -4px 20px rgba(0,0,0,0.15)' }}
       >
         {/* Selection Info */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           {/* Color block indicator */}
-          <div className="w-12 h-12 bg-brand-red border-2 border-surface-950 flex items-center justify-center">
-            <span className="text-white font-black text-lg">{count}</span>
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-red border-2 border-surface-950 flex items-center justify-center flex-shrink-0">
+            <span className="text-white font-black text-base sm:text-lg">{count}</span>
           </div>
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-surface-500">
+          <div className="min-w-0">
+            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-surface-500 truncate">
               {getSizeLabel()}
             </p>
-            <p className="text-2xl font-black text-surface-950">
+            <p className="text-xl sm:text-2xl font-black text-surface-950">
               {formatPrice(price)}
             </p>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="h-12 w-0.5 bg-surface-200" />
-
         {/* Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <button
             onClick={clearSelection}
-            className="w-12 h-12 border-2 border-surface-950 bg-surface-50 flex items-center justify-center
+            className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-surface-950 bg-surface-50 flex items-center justify-center
                      hover:bg-brand-yellow transition-colors duration-150"
+            aria-label="Clear selection"
           >
-            <X className="w-5 h-5" strokeWidth={2.5} />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />
           </button>
 
           <button
             onClick={openModal}
-            className="btn-red group"
+            className="flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 bg-brand-red text-white font-bold text-sm uppercase tracking-wider
+                     border-2 border-surface-950 hover:bg-red-600 transition-colors"
+            style={{ boxShadow: '3px 3px 0 0 #09090B' }}
           >
-            Continue
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
+            <span className="hidden sm:inline">Continue</span>
+            <span className="sm:hidden">Buy</span>
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />
           </button>
         </div>
       </div>
