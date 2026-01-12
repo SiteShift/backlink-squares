@@ -6,10 +6,12 @@ import { Calendar, Clock, User, ArrowLeft } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
+import { StickyPromo } from '@/components/content/StickyPromo'
 import { BlogCard } from '@/components/content/BlogCard'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
+import { useMDXComponents } from '@/mdx-components'
 
 const BASE_URL = 'https://backlinkgrid.com'
 
@@ -84,6 +86,7 @@ export default function BlogPostPage({ params }: Props) {
       <BreadcrumbSchema items={breadcrumbs} />
 
       <Header />
+      <StickyPromo />
 
       <main className="min-h-screen bg-bauhaus-cream">
         {/* Article Header */}
@@ -138,8 +141,8 @@ export default function BlogPostPage({ params }: Props) {
 
         {/* Article Content */}
         <article className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="article-content">
-            <MDXRemote source={post.content} />
+          <div className="prose prose-lg prose-slate max-w-none">
+            <MDXRemote source={post.content} components={useMDXComponents({})} />
           </div>
 
           {/* CTA */}

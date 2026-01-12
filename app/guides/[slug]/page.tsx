@@ -2,12 +2,14 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import { ArrowLeft, Clock, BookOpen, ChevronRight } from 'lucide-react'
+import { Clock, BookOpen, ChevronRight } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
+import { StickyPromo } from '@/components/content/StickyPromo'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
+import { useMDXComponents } from '@/mdx-components'
 
 const BASE_URL = 'https://backlinkgrid.com'
 
@@ -75,6 +77,7 @@ export default function GuidePage({ params }: Props) {
       <BreadcrumbSchema items={breadcrumbs} />
 
       <Header />
+      <StickyPromo />
 
       <main className="min-h-screen bg-bauhaus-cream">
         {/* Header */}
@@ -133,31 +136,22 @@ export default function GuidePage({ params }: Props) {
           <div className="grid lg:grid-cols-[280px_1fr] gap-12">
             {/* Sidebar */}
             <aside className="hidden lg:block">
-              <div className="sticky top-8">
-                {/* Quick CTA */}
-                <div className="bg-bauhaus-yellow border-3 border-dark p-6" style={{ boxShadow: '4px 4px 0px 0px #0A0A0A' }}>
-                  <p className="font-bold text-dark text-sm mb-3">Ready to get started?</p>
-                  <Link
-                    href="/#grid"
-                    className="inline-flex items-center gap-2 text-sm font-bold text-dark hover:text-bauhaus-red transition-colors"
-                  >
-                    Buy a square from $1
-                    <ArrowLeft className="w-4 h-4 rotate-180" />
-                  </Link>
-                </div>
-
+              <div className="sticky top-32 space-y-4">
                 {/* Related Guides */}
                 {otherGuides.length > 0 && (
-                  <div className="mt-6 bg-white border-3 border-dark p-6" style={{ boxShadow: '4px 4px 0px 0px #0A0A0A' }}>
-                    <h3 className="font-display font-bold text-sm uppercase tracking-wider text-dark mb-4 pb-3 border-b-2 border-dark">
-                      More Guides
-                    </h3>
-                    <nav className="space-y-3">
+                  <div className="bg-white border-3 border-dark">
+                    <div className="p-3 border-b-2 border-dark/10">
+                      <h3 className="font-bold text-dark uppercase text-xs tracking-wider flex items-center gap-2">
+                        <BookOpen className="w-3.5 h-3.5 text-bauhaus-blue" />
+                        More Guides
+                      </h3>
+                    </div>
+                    <nav className="py-1">
                       {otherGuides.map((otherGuide) => (
                         <Link
                           key={otherGuide.slug}
                           href={`/guides/${otherGuide.slug}`}
-                          className="block text-sm text-dark/60 hover:text-bauhaus-red transition-colors"
+                          className="block text-xs text-dark/60 hover:text-dark hover:bg-bauhaus-cream/30 transition-colors py-1.5 px-3"
                         >
                           {otherGuide.title}
                         </Link>
@@ -170,8 +164,8 @@ export default function GuidePage({ params }: Props) {
 
             {/* Main Content */}
             <article className="bg-white border-3 border-dark p-8 lg:p-12" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
-              <div className="article-content">
-                <MDXRemote source={guide.content} />
+              <div className="prose prose-lg prose-slate max-w-none">
+                <MDXRemote source={guide.content} components={useMDXComponents({})} />
               </div>
 
               <ContentCTA />
