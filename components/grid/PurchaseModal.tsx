@@ -387,39 +387,65 @@ export function PurchaseModal() {
               </div>
             </div>
 
-            {/* Grid Preview */}
+            {/* Grid Preview - Dynamic based on selection */}
             <div className="p-4 bg-white border-2 border-surface-200">
               <p className="text-[10px] font-bold uppercase tracking-widest text-surface-400 mb-3">
                 Your Square Preview
               </p>
-              <div className="flex items-center gap-3">
-                <div className="relative">
-                  {/* Mini grid representation */}
-                  <div className="grid grid-cols-4 gap-0.5">
-                    {Array.from({ length: 16 }).map((_, i) => {
-                      const isSelected = i >= 5 && i <= 6
-                      return (
-                        <div
-                          key={i}
-                          className={`w-4 h-4 border ${isSelected ? 'bg-brand-red border-brand-red' : 'bg-surface-100 border-surface-200'}`}
-                        >
-                          {isSelected && logoPreview && (
-                            <img src={logoPreview} alt="" className="w-full h-full object-cover" />
-                          )}
-                        </div>
-                      )
-                    })}
-                  </div>
+
+              {/* Simulated hover state */}
+              <div className="relative">
+                {/* The actual square(s) preview */}
+                <div
+                  className="relative bg-brand-red border-2 border-surface-950 overflow-hidden mx-auto"
+                  style={{
+                    width: `${Math.min(width, 4) * 28}px`,
+                    height: `${Math.min(height, 4) * 28}px`,
+                    maxWidth: '112px',
+                    maxHeight: '112px'
+                  }}
+                >
+                  {/* Grid lines */}
+                  {width > 1 && (
+                    <div
+                      className="absolute inset-0 pointer-events-none"
+                      style={{
+                        backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px)',
+                        backgroundSize: `${100/Math.min(width,4)}% ${100/Math.min(height,4)}%`
+                      }}
+                    />
+                  )}
+
+                  {/* Logo overlay */}
+                  {logoPreview ? (
+                    <img
+                      src={logoPreview}
+                      alt="Your logo"
+                      className="w-full h-full object-contain p-1 bg-white"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-white/50 text-xs font-bold">
+                        {count > 1 ? `${width}×${height}` : '1×1'}
+                      </span>
+                    </div>
+                  )}
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-bold text-surface-950 truncate">
-                    {formData.siteName || 'Your Brand'}
+
+                {/* Simulated tooltip */}
+                <div className="mt-3 p-2.5 bg-surface-950 text-center">
+                  <p className="text-sm font-bold text-white truncate">
+                    {formData.siteName || 'Your Brand Name'}
                   </p>
-                  <p className="text-xs text-brand-red truncate">
-                    {formData.siteUrl || 'yoursite.com'}
+                  <p className="text-xs text-brand-red truncate mt-0.5">
+                    {formData.siteUrl ? formData.siteUrl.replace(/^https?:\/\//, '') : 'yoursite.com'}
                   </p>
                 </div>
               </div>
+
+              <p className="text-[10px] text-center text-surface-400 mt-3">
+                This is how your square will appear on the grid
+              </p>
             </div>
 
             {/* What Happens Next */}
