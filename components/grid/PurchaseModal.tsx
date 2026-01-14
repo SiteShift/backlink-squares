@@ -357,10 +357,11 @@ export function PurchaseModal() {
             <div className="flex items-center justify-center gap-2 text-xs text-surface-400">
               <Lock className="w-3.5 h-3.5" />
               <span>Secured by</span>
-              <svg className="h-4" viewBox="0 0 60 25" fill="currentColor">
-                <path d="M59.64 14.28h-8.06v-1.5h8.06v1.5zm-8.06-4.7h8.06v1.5h-8.06v-1.5zm8.06 9.4h-8.06v-1.5h8.06v1.5zm-24.6-9.4h-8.06v1.5h8.06v-1.5zm-8.06 4.7h8.06v1.5h-8.06v-1.5zm8.06 4.7h-8.06v-1.5h8.06v1.5zM17.3 4.28c-5.5 0-9.96 4.46-9.96 9.96s4.46 9.96 9.96 9.96 9.96-4.46 9.96-9.96-4.46-9.96-9.96-9.96zm0 16.92c-3.84 0-6.96-3.12-6.96-6.96s3.12-6.96 6.96-6.96 6.96 3.12 6.96 6.96-3.12 6.96-6.96 6.96z"/>
-              </svg>
-              <span className="font-semibold text-surface-500">Stripe</span>
+              <img
+                src="/stripe-4.svg"
+                alt="Stripe"
+                className="h-5 opacity-60 grayscale"
+              />
             </div>
           </div>
 
