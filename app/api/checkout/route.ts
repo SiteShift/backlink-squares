@@ -107,16 +107,43 @@ export async function POST(request: NextRequest) {
       const pendingGroupIds = Array.from(new Set(pendingSquares.map(s => s.purchase_group_id)))
       const { data: pendingGroups } = await supabase
         .from('purchase_groups')
-        .select('id, created_at')
+        .select('id, created_at, email')
         .in('id', pendingGroupIds)
         .eq('status', 'pending')
         .gte('created_at', new Date(Date.now() - RESERVATION_TTL_MINUTES * 60 * 1000).toISOString())
 
       if (pendingGroups && pendingGroups.length > 0) {
-        return NextResponse.json(
-          { error: 'One or more squares are currently being purchased. Please try different squares or wait a moment.' },
-          { status: 409 }
+        // Check if this is the same user retrying (same email)
+        const sameUserRetrying = pendingGroups.every(
+          g => g.email.toLowerCase() === email.toLowerCase()
         )
+
+        if (sameUserRetrying) {
+          // Same user is retrying - cancel their old pending reservations
+          const oldGroupIds = pendingGroups.map(g => g.id)
+          console.log(`User ${email} retrying checkout - cancelling old reservations:`, oldGroupIds)
+
+          // Delete the reserved squares from old attempts
+          await supabase
+            .from('squares')
+            .delete()
+            .in('purchase_group_id', oldGroupIds)
+            .eq('purchased', false)
+
+          // Mark old purchase groups as failed (user abandoned and retried)
+          await supabase
+            .from('purchase_groups')
+            .update({ status: 'failed' })
+            .in('id', oldGroupIds)
+
+          // Continue to create new reservation below...
+        } else {
+          // Different user trying to buy same squares - block them
+          return NextResponse.json(
+            { error: 'One or more squares are currently being purchased. Please try different squares or wait a moment.' },
+            { status: 409 }
+          )
+        }
       }
     }
 

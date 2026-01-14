@@ -133,7 +133,8 @@ export function PurchaseModal() {
       }
     } catch (error) {
       console.error('Checkout error:', error)
-      setErrors({ submit: 'Something went wrong. Please try again.' })
+      const message = error instanceof Error ? error.message : 'Something went wrong. Please try again.'
+      setErrors({ submit: message })
     } finally {
       setIsSubmitting(false)
     }
