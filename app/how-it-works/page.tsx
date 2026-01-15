@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const howToSteps = [
   {
     name: 'Select Your Squares',
-    text: 'Browse the grid and click on any empty squares to select them. You can choose a single 1x1 square for maximum affordability, or select multiple adjacent squares for greater visibility.',
+    text: 'Browse the grid and click on any empty squares to select them. Choose a single square for maximum affordability, or select up to 100 squares anywhere on the grid for greater visibility.',
   },
   {
     name: 'Add Your Details',
@@ -55,11 +55,11 @@ const steps = [
     number: '1',
     title: 'Select Your Squares',
     description:
-      'Browse the grid and click on any empty squares to select them. You can choose a single 1x1 square for maximum affordability, or select multiple adjacent squares (up to 3x3) for greater visibility.',
+      'Browse the grid and click on any empty squares to select them. Choose a single square for maximum affordability, or select up to 100 squares anywhere on the grid for greater visibility.',
     icon: MousePointer,
     details: [
       'Click any empty square to select it',
-      'Select multiple adjacent squares for larger placement',
+      'Select squares anywhere - they don\'t need to be connected',
       'Preview your selection as you go',
       'Price shown in real-time based on selection',
     ],
@@ -142,9 +142,9 @@ const benefits = [
 
 const pricing = [
   { squares: 1, price: '$1', description: 'Single square - favicon or small logo' },
-  { squares: 2, price: '$2', description: '1x2 or 2x1 - wider rectangle' },
-  { squares: 4, price: '$4', description: '2x2 grid - full logo' },
-  { squares: 9, price: '$9', description: '3x3 grid - premium real estate' },
+  { squares: 10, price: '$10', description: 'Scattered or grouped - flexible placement' },
+  { squares: 25, price: '$25', description: 'Maximum grid presence' },
+  { squares: 100, price: '$100', description: 'Ultimate visibility - dominate the grid' },
 ]
 
 export default function HowItWorksPage() {

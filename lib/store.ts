@@ -86,7 +86,7 @@ export const useGridStore = create<GridStore>((set, get) => ({
 
     const newSquare = { row, col }
 
-    // Check if we can add this square (adjacent and within 3x3 bounds)
+    // Check if we can add this square (max 100 squares)
     if (canAddSquare(state.selectedSquares, newSquare)) {
       set({
         selectedSquares: [...state.selectedSquares, newSquare],

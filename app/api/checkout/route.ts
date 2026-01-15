@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase'
 import { createCheckoutSession } from '@/lib/stripe'
-import { calculatePrice, isValidSelectionSize, isContiguous } from '@/lib/utils'
+import { calculatePrice, isValidSelectionSize } from '@/lib/utils'
 import { GRID_COLUMNS, MAX_ROWS } from '@/lib/types'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -34,18 +34,10 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Validate selection size (max 3x3 = 9 squares)
+    // Validate selection size (max 100 squares per purchase)
     if (!isValidSelectionSize(squares)) {
       return NextResponse.json(
-        { error: 'Selection must be within 3x3 bounds (maximum 9 squares)' },
-        { status: 400 }
-      )
-    }
-
-    // Validate squares form a contiguous shape (all connected)
-    if (!isContiguous(squares)) {
-      return NextResponse.json(
-        { error: 'Selected squares must form a contiguous shape' },
+        { error: 'Maximum 100 squares per purchase' },
         { status: 400 }
       )
     }

@@ -23,7 +23,7 @@ const faqs = [
   {
     question: 'Can I buy multiple squares?',
     answer:
-      'Absolutely! You can select as many adjacent squares as you like. Larger selections give you more visibility on the grid - perfect for showing off your full logo or brand name. The price scales linearly: $1 per square.',
+      'Absolutely! You can select up to 100 squares anywhere on the grid - they don\'t need to be next to each other. Buy scattered squares across the grid for maximum exposure, or group them together for a larger logo. The price scales linearly: $1 per square.',
   },
   {
     question: 'How does this help my SEO?',

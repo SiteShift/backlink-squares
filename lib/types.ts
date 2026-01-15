@@ -65,7 +65,7 @@ export const PRICE_PER_SQUARE = 100
 export const GRID_COLUMNS = 10
 export const TOTAL_SQUARES = 10000
 export const MAX_ROWS = TOTAL_SQUARES / GRID_COLUMNS // 1000 rows
-export const INITIAL_ROWS = 20 // Start with 200 squares (20 rows x 10 cols) for faster initial load
+export const INITIAL_ROWS = 100 // Start with 1000 squares (100 rows x 10 cols)
 export const SQUARE_SIZE = 80 // px
 
 export interface BlogPost {

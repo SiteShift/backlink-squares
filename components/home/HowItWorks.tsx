@@ -10,7 +10,7 @@ const steps = [
     icon: MousePointer,
     title: 'Select',
     subtitle: 'Choose Your Squares',
-    description: 'Click on any empty square in the grid. Select multiple adjacent squares for a larger, more prominent presence.',
+    description: 'Click on any empty squares in the grid. Select multiple squares anywhere - they don\'t need to be connected.',
     features: ['Interactive grid selection', 'Real-time preview', 'Multi-square support'],
     color: 'red',
     bgColor: 'bg-accent-red-50',
