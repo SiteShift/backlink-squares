@@ -1,0 +1,277 @@
+Site Name,Category,DR,Link Type,Cost,Submit URL,Approval Time,Best For,Tips
+Product Hunt,Launch Platform,92,Dofollow,Free,https://www.producthunt.com/posts/new,1-2 days,All products,Top platform for launches. Create detailed profile with screenshots. Best to launch Tuesday-Thursday.
+Hacker News,Community,90,Nofollow,Free,https://news.ycombinator.com/submit,Instant,Tech/Dev products,Show HN posts work best. Engage authentically. Avoid self-promotion tone.
+Crunchbase,Startup Database,90,Nofollow,Free,https://www.crunchbase.com/add-new,3-5 days,Startups/Companies,Essential for credibility. Add funding info and team details. Used by investors.
+GitHub,Developer Platform,97,Dofollow,Free,https://github.com/new,Instant,Open source/Dev tools,Create public repos with detailed README. Profile bio allows website link.
+LinkedIn,Professional Network,98,Nofollow,Free,https://www.linkedin.com/company/setup/new/,Instant,All businesses,Company page + personal profiles. Newsletter feature has strong reach.
+Medium,Content Platform,95,Nofollow (Profile: Dofollow),Free,https://medium.com/new-story,Instant,Content marketing,Articles are nofollow but bio links are dofollow. Build following for traffic.
+Reddit,Community,97,Nofollow,Free,https://www.reddit.com/submit,Instant,All niches,r/SideProject r/startups r/entrepreneur r/webdev. Follow subreddit rules. Value first.
+Quora,Q&A Platform,91,Nofollow,Free,https://www.quora.com/,Instant,Thought leadership,Answer questions in your niche. Bio link is valuable. Build authority.
+Twitter/X,Social Platform,94,Nofollow,Free,https://twitter.com/,Instant,All businesses,Bio link is key. Build audience through valuable content.
+YouTube,Video Platform,99,Nofollow,Free,https://www.youtube.com/,Instant,All businesses,Description links drive traffic. Create product demos and tutorials.
+G2,Software Reviews,88,Nofollow,Free,https://www.g2.com/products/new,5-10 days,SaaS/Software,Get reviews from customers. Higher reviews = more visibility. Enterprise credibility.
+Capterra,Software Reviews,90,Nofollow,Free,https://www.capterra.com/vendors/sign-up,5-10 days,SaaS/Software,Part of Gartner. Critical for B2B software. Reviews are key ranking factor.
+TrustRadius,Software Reviews,76,Nofollow,Free,https://www.trustradius.com/vendor-signup,5-10 days,Enterprise Software,Verified reviews only. Strong B2B credibility. Long-form reviews.
+Indie Hackers,Community,75,Dofollow,Free,https://www.indiehackers.com/products/new,Instant,Indie products,Product page + community engagement. Share journey and revenue. Engaged audience.
+BetaList,Launch Platform,65,Dofollow,Free,https://betalist.com/submit,3-7 days,Pre-launch/Beta products,Good for early traction. Quality over quantity. Selective approval.
+AlternativeTo,Software Directory,80,Dofollow,Free,https://alternativeto.net/software/submit/,3-5 days,All software,Position as alternative to popular tools. User votes matter.
+SaaSHub,SaaS Directory,71,Dofollow,Free,https://www.saashub.com/submit,3-5 days,SaaS products,Growing SaaS-focused community. Alternative comparisons drive traffic.
+Wellfound (AngelList),Startup Platform,85,Nofollow,Free,https://wellfound.com/company/new,2-3 days,Startups,Essential for startup credibility. Hiring and investor connections.
+F6S,Startup Platform,82,Dofollow,Free,https://www.f6s.com/company/create,1-2 days,Startups,Apply for accelerators and grants. 4M+ founder community.
+Startup Stash,Startup Directory,67,Dofollow,Free,https://startupstash.com/add-startup/,5-7 days,Startups/Tools,Curated directory. Good SEO value. Resource-focused.
+Peerlist,Professional Network,52,Dofollow,Free,https://peerlist.io/signup,Instant,Tech professionals,LinkedIn alternative for devs. Projects feature is valuable. Growing community.
+Dev.to,Developer Community,75,Dofollow,Free,https://dev.to/enter,Instant,Dev tools/Tech,Articles get dofollow links. Profile link is valuable. Active community.
+Hashnode,Developer Blogging,61,Nofollow,Free,https://hashnode.com/onboard,Instant,Dev content,Custom domain option. Good SEO for tech content. Developer audience.
+Substack,Newsletter Platform,77,Dofollow,Free,https://substack.com/signup,Instant,Content creators,Newsletter platform with strong SEO. Links in content are dofollow.
+Uneed,Launch Platform,72,Dofollow,Free (Skip line: $29),https://www.uneed.best/submit,Varies,All products,Guaranteed visibility. Daily launches. Newsletter feature. Growing platform.
+MicroLaunch,Launch Platform,54,Dofollow,Free (Premium: $49),https://microlaunch.com/submit,7-14 days,Side projects,Month-long exposure vs 24hr. Good for early-stage products.
+DevHunt,Dev Tools Directory,59,Dofollow,Free,https://devhunt.org/submit,3-7 days,Developer tools only,Specifically for dev tools. GitHub auth required. Targeted audience.
+Fazier,Launch Platform,45,Dofollow,Free,https://fazier.com/submit,1-3 days,All products,Product Hunt clone. Smaller but growing. Daily competition.
+Trustpilot,Reviews Platform,93,Nofollow,Free,https://business.trustpilot.com/signup,1-3 days,All businesses,Customer reviews essential. Builds trust. High domain authority.
+Yelp,Business Directory,94,Nofollow,Free,https://business.yelp.com/,3-5 days,Local/Service businesses,Critical for local SEO. Respond to reviews.
+Google Business Profile,Business Directory,100,N/A,Free,https://business.google.com/,1-7 days,Local businesses,Essential for local SEO. Maps visibility. Posts feature.
+Behance,Design Portfolio,92,Nofollow,Free,https://www.behance.net/,Instant,Design/Creative,Adobe platform. Showcase visual work. Profile links.
+Dribbble,Design Portfolio,91,Nofollow,Free (Pro features paid),https://dribbble.com/signup,Instant,Designers,Design community. Shot descriptions allow links.
+DeviantArt,Art Community,90,Nofollow,Free,https://www.deviantart.com/join,Instant,Artists/Creatives,Large art community. Profile and description links.
+Pinterest,Visual Platform,94,Nofollow,Free,https://business.pinterest.com/,Instant,Visual products,Pin descriptions can include links. Good for e-commerce.
+Flickr,Photo Platform,93,Nofollow,Free,https://www.flickr.com/signup,Instant,Photography/Visual,Photo sharing. Profile and photo description links.
+Vimeo,Video Platform,95,Nofollow,Free (Plus: $12/mo),https://vimeo.com/join,Instant,Video content,Professional video hosting. Description links.
+SlideShare,Presentations,95,Nofollow,Free,https://www.slideshare.net/upload,Instant,B2B/Educational,Upload presentations. Description links. Good for B2B content.
+Issuu,Publications,93,Nofollow,Free,https://issuu.com/signup,Instant,Publications/Magazines,Digital publications. Profile links.
+Scribd,Documents,92,Nofollow,Free,https://www.scribd.com/upload-document,Instant,Documents/Books,Upload PDFs and docs. Profile links. Large audience.
+Goodreads,Books,92,Nofollow,Free,https://www.goodreads.com/author/program,3-7 days,Authors/Books,Author profiles. Book listings. Reader community.
+Academia.edu,Research,93,Nofollow,Free,https://www.academia.edu/signup,Instant,Research/Academic,Research papers. Profile links. Academic credibility.
+ResearchGate,Research,92,Nofollow,Free,https://www.researchgate.net/signup,Instant,Research/Scientific,Scientific community. Publications and profile links.
+StackShare,Tech Stack,72,Dofollow,Free,https://stackshare.io/signup,Instant,Tech companies,Share your tech stack. Company profiles. Dev audience.
+BuiltWith,Tech Analysis,75,Nofollow,Free,https://trends.builtwith.com/,N/A,Tech products,Technology lookup. Claim your listing.
+CrunchBase,Startup Database,90,Nofollow,Free,https://www.crunchbase.com/add-new,3-5 days,Startups,Company profiles. Investor visibility.
+Owler,Business Intelligence,75,Nofollow,Free,https://www.owler.com/company/claim,2-3 days,Companies,Company profiles and competitive intel.
+Tracxn,Startup Intelligence,72,Nofollow,Free,https://tracxn.com/,3-5 days,Startups,Startup database. Investor visibility.
+PitchBook,Startup Database,85,Nofollow,Verification required,https://pitchbook.com/,Varies,Funded startups,Investor platform. Requires verification.
+Dealroom,Startup Database,78,Nofollow,Free,https://dealroom.co/,3-5 days,European startups,European focus. Investor visibility.
+AngelList,Investment Platform,85,Nofollow,Free,https://angel.co/join,2-3 days,Startups seeking funding,Fundraising platform. Rolling Funds.
+Gust,Startup Platform,70,Nofollow,Free,https://gust.com/,2-3 days,Startups,Accelerator applications. Investor connections.
+About.me,Personal Landing,75,Dofollow,Free (Pro: $8/mo),https://about.me/signup,Instant,Personal branding,One-page personal site. Profile links.
+Gravatar,Profile Service,93,Nofollow,Free,https://gravatar.com/,Instant,Anyone,Globally recognized avatar. Profile link follows you across sites.
+Linktree,Link Aggregator,80,Nofollow,Free (Pro: $5/mo),https://linktr.ee/register,Instant,Creators/Influencers,Link-in-bio tool. Multiple links. Analytics.
+Carrd,Landing Pages,70,Nofollow,Free (Pro: $9/yr),https://carrd.co/,Instant,Simple landing pages,One-page sites. Clean designs. Backlink potential.
+Solo.to,Link Aggregator,40,Dofollow,Free,https://solo.to/,Instant,Creators,Link-in-bio alternative. Growing platform.
+Beacons.ai,Creator Platform,55,Nofollow,Free (Pro: $10/mo),https://beacons.ai/,Instant,Creators,Link-in-bio with monetization features.
+Notion,Productivity,93,Nofollow,Free,https://www.notion.so/,Instant,Documentation,Public pages get indexed. Knowledge bases.
+Telegraph.ph,Quick Publishing,75,Dofollow,Free,https://telegra.ph/,Instant,Quick articles,Anonymous publishing. Instant. No signup needed.
+Blogger,Blogging,96,Nofollow,Free,https://www.blogger.com/about/,Instant,Bloggers,Google-owned. Good for content SEO.
+WordPress.com,Blogging,92,Nofollow (paid: Dofollow),Free (paid plans),https://wordpress.com/start,Instant,Bloggers,Profile links. Gravatar integration.
+Tumblr,Social Blogging,94,Nofollow,Free,https://www.tumblr.com/register,Instant,Creative content,Reblogging culture. Profile and post links.
+SoundCloud,Audio Platform,93,Nofollow,Free (Pro: $12/mo),https://soundcloud.com/signup,Instant,Music/Audio,Audio hosting. Profile and track links.
+TikTok,Video Platform,95,Nofollow,Free,https://www.tiktok.com/signup,Instant,Short video,Bio link requires 1000 followers. Huge reach.
+Instagram,Photo/Video,98,Nofollow,Free,https://www.instagram.com/accounts/emailsignup/,Instant,Visual content,Bio link only. Stories links for 10K+ followers.
+Facebook,Social Platform,99,Nofollow,Free,https://www.facebook.com/pages/create/,Instant,All businesses,Page links. Groups for community building.
+Threads,Social Platform,85,Nofollow,Free,https://www.threads.net/,Instant,Text content,Meta's Twitter alternative. Growing platform.
+Bluesky,Social Platform,60,Nofollow,Free,https://bsky.app/,Instant,Tech early adopters,Decentralized Twitter alternative. Growing.
+Mastodon,Social Platform,75,Nofollow,Free,https://joinmastodon.org/,Instant,Tech/Open source,Decentralized network. Profile links.
+Discord,Community,93,Nofollow,Free,https://discord.com/register,Instant,Community building,Server for your product. Announcement channels.
+Telegram,Messaging,90,Nofollow,Free,https://telegram.org/,Instant,Community building,Channels and groups. Broadcast updates.
+Gumroad,E-commerce,85,Dofollow,Free (fees per sale),https://app.gumroad.com/signup,Instant,Digital products,Sell digital products. Product page links.
+AppSumo,Marketplace,78,Dofollow,Revenue share,https://sell.appsumo.com/,Varies,SaaS with LTD,Lifetime deals. Large audience. Revenue share.
+Product School,Education,65,Nofollow,Paid,https://productschool.com/,Varies,Product content,Product management community.
+Hacker Noon,Tech Blog,80,Dofollow,Free,https://hackernoon.com/signup,2-5 days,Tech content,Guest posting. Good tech audience. Editorial review.
+Forbes Councils,Business,94,Paid ($2K+/yr),https://councils.forbes.com/,Varies,Executives,Thought leadership. High authority. Invite/apply.,
+Inc.com,Business,93,Varies,Varies,https://www.inc.com/,Varies,Business content,PR outreach. High authority.
+Entrepreneur.com,Business,92,Varies,Varies,https://www.entrepreneur.com/,Varies,Entrepreneurship,PR outreach. Contributor program.
+TechCrunch,Tech News,94,Nofollow,PR Outreach,https://techcrunch.com/,Varies,Funded startups,Major tech publication. PR pitch required.
+VentureBeat,Tech News,92,Nofollow,PR Outreach,https://venturebeat.com/,Varies,AI/Enterprise tech,Tech publication. Guest posts available.
+The Next Web,Tech News,90,Nofollow,PR Outreach,https://thenextweb.com/,Varies,Tech startups,European tech focus. Contributor program.
+Mashable,Tech/Culture,93,Nofollow,PR Outreach,https://mashable.com/,Varies,Consumer tech,Lifestyle and tech. PR outreach.
+Wired,Tech News,93,Nofollow,PR Outreach,https://www.wired.com/,Varies,Innovation/Tech,Premium publication. PR only.
+HARO,PR/Outreach,88,Dofollow,Free (Pro: $19/mo),https://www.helpareporter.com/,Daily,All industries,Respond to journalist queries. High authority links.
+Qwoted,PR/Outreach,65,Dofollow,Free,https://www.qwoted.com/,Instant,Experts,Journalist-expert matching. Quote opportunities.
+Featured.com,Expert Platform,68,Dofollow,Free,https://featured.com/,Varies,Experts,Answer expert questions. Get featured.
+Terkel,PR/Outreach,58,Dofollow,Free,https://terkel.io/,Varies,Experts,Expert insights for publications.
+SourceBottle,PR/Outreach,55,Dofollow,Free,https://sourcebottle.com/,Daily,Experts,Journalist query service. Australia-based.
+PRLog,Press Release,70,Dofollow,Free,https://www.prlog.org/,Instant,Press releases,Free press releases. Basic distribution.
+OpenPR,Press Release,65,Dofollow,Free,https://www.openpr.com/,Instant,Press releases,Free press releases. Quick approval.
+EIN Presswire,Press Release,70,Dofollow,$49+,https://www.einpresswire.com/,1-2 days,Press releases,Affordable distribution. Good reach.
+Newswire,Press Release,80,Nofollow,$99+,https://www.newswire.com/,Same day,Press releases,Professional distribution. Wider reach.
+Business Wire,Press Release,90,Nofollow,$400+,https://www.businesswire.com/,Same day,Enterprise PR,Premium distribution. Wide reach.
+Land-book,Design Showcase,72,Dofollow,Free,https://land-book.com/submit,3-7 days,Beautiful landing pages,Curated gallery. Good for design inspiration.
+Saaspo,SaaS Design,52,Nofollow,Free,https://www.saaspo.com/submit,3-5 days,SaaS landing pages,Landing page gallery. Design showcase.
+One Page Love,Design Showcase,68,Dofollow,$49 (featured),https://onepagelove.com/submit,1-2 weeks,One-page sites,Curated one-page sites. Featured option.
+Awwwards,Design Awards,82,Nofollow,$79+ (submission),https://www.awwwards.com/submit,1-2 weeks,Premium websites,Prestigious design award. High standards.
+CSS Design Awards,Design Awards,65,Nofollow,$75+ (submission),https://www.cssdesignawards.com/submit,1-2 weeks,Web design,Design recognition. Portfolio addition.
+Site Inspire,Design Gallery,70,Nofollow,Free,https://www.siteinspire.com/submit,2-4 weeks,Beautiful websites,Curated design gallery. Selective.
+Launching Next,Launch Platform,45,Dofollow,Free,https://www.launchingnext.com/submit/,3-7 days,Startups,Simple submission. Growing directory.
+StartupRanking,Startup Directory,60,Nofollow,Free,https://www.startupranking.com/,3-5 days,Startups,Global ranking. Alexa-based metrics.
+StartupBase,Startup Directory,42,Dofollow,Free,https://startupbase.io/submit,3-5 days,Startups,Simple directory. Growing platform.
+KillerStartups,Startup Directory,52,Nofollow,Free,https://www.killerstartups.com/submit-startup/,5-7 days,Startups,Long-running directory. Reviews included.
+EU-Startups,European Startups,68,Nofollow,Free/Paid,https://www.eu-startups.com/,Varies,European focus,European startup news. Sponsored posts.
+Sifted,European Tech,75,Nofollow,PR Outreach,https://sifted.eu/,Varies,European startups,FT-backed European tech news.
+Tech.eu,European Tech,65,Nofollow,PR Outreach,https://tech.eu/,Varies,European tech,European tech news. Guest posts.
+TechRound,UK Startups,60,Nofollow,Free/Paid,https://techround.co.uk/,Varies,UK startups,UK startup news. Interviews.
+Startups.co.uk,UK Startups,70,Nofollow,Free,https://startups.co.uk/,Varies,UK startups,UK startup resources.
+The Manifest,Business Directory,70,Dofollow,Free,https://themanifest.com/,2-4 weeks,B2B services,Company listings. Review platform.
+Clutch,B2B Reviews,80,Nofollow,Free,https://clutch.co/add-your-company,2-4 weeks,B2B services,B2B reviews. Client verification.
+GoodFirms,Business Directory,70,Nofollow,Free,https://www.goodfirms.co/register-your-company,2-4 weeks,B2B services,Company reviews and rankings.
+DesignRush,Agency Directory,65,Dofollow,Free,https://www.designrush.com/submit-your-company,2-3 weeks,Agencies/Services,Agency rankings. B2B focus.
+Hotfrog,Business Directory,58,Dofollow,Free,https://www.hotfrog.com/AddYourBusiness.aspx,1-3 days,Local businesses,Business directory. Local SEO.
+Cylex,Business Directory,65,Nofollow,Free,https://www.cylex.co.uk/,1-3 days,Local businesses,Business directory network.
+Brownbook,Business Directory,62,Dofollow,Free,https://www.brownbook.net/,1-3 days,Local businesses,Global business directory.
+Webwiki,Web Directory,65,Dofollow,Free,https://www.webwiki.com/add-website,1-3 days,All websites,Website directory. Quick approval.
+Spoke,Business Profiles,68,Nofollow,Free,https://www.spoke.com/,1-3 days,Professionals,Business network. Profile links.
+Manta,Business Directory,72,Nofollow,Free,https://www.manta.com/claim,1-3 days,Small businesses,US business directory.
+YellowPages,Business Directory,90,Nofollow,Free,https://www.yellowpages.com/,1-3 days,Local businesses,Classic directory. Local SEO.
+AppAdvice,iOS Apps,73,Nofollow,Free,https://appadvice.com/,Varies,iOS apps,App reviews. Editorial coverage.
+MacUpdate,Mac Apps,82,Nofollow,Free,https://www.macupdate.com/submit,3-7 days,Mac/iOS apps,Mac software directory.
+Softonic,Software,92,Nofollow,Free,https://en.softonic.com/,Varies,Software/Apps,Large software directory.
+CNET Download,Software,93,Nofollow,Free,https://download.cnet.com/,Varies,Software,Major software directory.
+SourceForge,Open Source,88,Dofollow,Free,https://sourceforge.net/create/,1-3 days,Open source,Open source hosting. Project pages.
+FinancesOnline,SaaS Reviews,72,Nofollow,Free,https://financesonline.com/,3-7 days,B2B SaaS,Detailed SaaS reviews. Awards program.
+SoftwareWorld,Software Directory,74,Nofollow,Free,https://www.softwareworld.co/,3-5 days,Software,Software comparisons. Reviews.
+GetApp,Software Reviews,87,Nofollow,Free,https://www.getapp.com/,5-10 days,Business software,Part of Gartner. B2B software.
+Software Advice,Software Reviews,86,Nofollow,Free,https://www.softwareadvice.com/,5-10 days,Business software,Gartner property. Detailed reviews.
+AppSumo Marketplace,Software,78,Dofollow,Apply,https://sell.appsumo.com/,Varies,SaaS with LTD,Lifetime deal marketplace.
+Toolify.ai,AI Tools,50,Dofollow,Free,https://www.toolify.ai/,3-5 days,AI tools,AI tool directory.
+Future Tools,AI Tools,60,Dofollow,Free,https://futuretools.io/,1-2 weeks,AI products,Popular AI directory. 850K+ monthly visits.
+There's An AI For That,AI Tools,55,Dofollow,Free,https://theresanaiforthat.com/submit/,3-7 days,AI products,Large AI directory. High traffic.
+AI Tool Directory,AI Tools,45,Dofollow,Free,https://www.aitoolsdirectory.com/,3-5 days,AI tools,Growing AI directory.
+Nomad List,Remote/Travel,72,Nofollow,Free,https://nomadlist.com/,Varies,Remote/Travel tools,Digital nomad community. Perfect audience for travel/remote tools.
+Remote Tools,Remote Work,60,Dofollow,Free,https://www.remote.tools/submit,3-5 days,Remote tools,Remote work directory. Targeted audience.
+WikiVoyage,Travel,85,Nofollow,Free (contribute),https://en.wikivoyage.org/,Varies,Travel,Travel wiki. Contribute valuable content.
+TripAdvisor,Travel,93,Nofollow,Free,https://www.tripadvisor.com/business,3-7 days,Travel/Tourism,Essential for travel businesses. Reviews critical.
+Lonely Planet Thorn Tree,Travel Forums,90,Nofollow,Free,https://www.lonelyplanet.com/thorntree,Instant,Travel,Travel forum. Community engagement.
+Curlie,Web Directory,75,Nofollow,Free,https://curlie.org/docs/en/add.html,Weeks-Months,All websites,DMOZ successor. Human-edited. Very selective.
+10015.io,Tools Directory,40,Dofollow,Free,https://10015.io/submit,1-3 days,Online tools,Free online tools directory.
+Twelve Tools,Product Directory,35,Dofollow,Free,https://twelve.tools/submit,1-3 days,Products/Tools,Simple directory. Quick approval.
+Hunt0,Launch Platform,32,Dofollow,Free,https://hunt0.com/submit,1-3 days,Products,Product Hunt alternative. Growing.
+BuildVoyage,Launch Platform,30,Dofollow,Free,https://buildvoyage.com/submit,1-3 days,Indie products,Builder-focused directory.
+LaunchVibe,Launch Platform,28,Dofollow,Free,https://www.launchvibe.app/submit,1-3 days,Products,Simple launch platform.
+TryLaunch,Launch Platform,25,Dofollow,Free,https://trylaunch.ai/submit,1-3 days,Products,AI-assisted launches.
+FoundrList,Startup Directory,30,Dofollow,$9,https://foundrlist.com/submit,1-3 days,Startups,Paid directory. Quick feature.
+BuiltByMe,Maker Directory,25,Dofollow,$5,https://builtbyme.io/submit,1-3 days,Indie makers,Maker showcase. Low cost.
+SubmitHunt,Launch Platform,20,Dofollow,Free,https://www.submithunt.com/,1-3 days,Products,Directory aggregator.
+DoFollow Tools,Directory,35,Dofollow,Free,https://dofollow.tools/submit,1-3 days,All products,SEO-focused directory.
+Startupslab.site,Startup Directory,28,Dofollow,Free,https://startupslab.site/submit,1-3 days,Startups,Leaderboard system. Gamified.
+Launch Vault,Launch Platform,25,Dofollow,Free,https://www.launchvault.dev/submit,1-3 days,Products,Project showcase.
+Workfeed,AI Directory,30,Dofollow,Free,https://www.workfeed.ai/submit,1-3 days,AI tools,AI tool directory.
+GetWeWrite,Content Directory,22,Dofollow,Free,https://www.getwewrite.app/submit,1-3 days,Writing tools,Writing tool directory.
+AuraPlusPlus,Product Directory,20,Dofollow,Free,https://auraplusplus.com/submit,1-3 days,Products,Simple directory.
+HackerBadges,Badge Platform,18,Dofollow,Free,https://hackerbadges.com/submit,Instant,Products,Product badges. Social proof.
+Digg,Social Bookmarking,92,Nofollow,Free,https://digg.com/,Instant,News/Content,News aggregator. Upvotes drive visibility. Tech and entertainment content performs best.
+Pocket,Social Bookmarking,92,Nofollow,Free,https://getpocket.com/,Instant,Content curation,Mozilla-owned. Save articles for later. Public collections can include your links.
+Mix (StumbleUpon),Social Bookmarking,91,Nofollow,Free,https://mix.com/,Instant,Content discovery,Successor to StumbleUpon. Curate content collections. Interest-based discovery.
+Instapaper,Social Bookmarking,82,Dofollow,Free,https://www.instapaper.com/,Instant,Content saving,Public profiles show saved links. Profile links are dofollow. Kobo-owned.
+Diigo,Social Bookmarking,86,Dofollow,Free,https://www.diigo.com/,Instant,Research/Bookmarking,Annotation and bookmarking tool. Group sharing features. Educational focus.
+Scoop.it,Content Curation,86,Dofollow,Free (Pro: $14.99/mo),https://www.scoop.it/,Instant,Content marketing,Curate content topics. Newsletter integration. Publish to social media.
+Flipboard,News Aggregator,88,Nofollow,Free,https://flipboard.com/,Instant,News/Magazines,Create digital magazines. Curate content by topic. Visual magazine-style format.
+Slashdot,Tech News,88,Nofollow,Free,https://slashdot.org/,Varies,Tech/Science,News for nerds. User-submitted stories. Strong tech community. Since 1997.
+LiveJournal,Blogging Platform,86,Dofollow,Free,https://www.livejournal.com/,Instant,Blogging/Journals,Long-running blog platform. Community features. Profile links available.
+DZone,Developer Community,85,Dofollow,Free,https://dzone.com/,Varies,Developer content,Developer tutorials and news. Submit articles for review. Tech audience.
+Steemit,Blockchain Social,84,Dofollow,Free,https://steemit.com/,Instant,Crypto/Content,Blockchain-based social network. Earn crypto for content. Decentralized platform.
+Pearltrees,Content Organization,81,Dofollow,Free,https://www.pearltrees.com/,Instant,Knowledge management,Visual content organization. Collections shareable. Chrome extension available.
+Kickstarter,Crowdfunding,92,Nofollow,Free (5% fee),https://www.kickstarter.com/,1-3 days,Creative projects,All-or-nothing funding. Campaign page links to your site. High authority backlink.
+Indiegogo,Crowdfunding,91,Nofollow,Free (5% fee),https://www.indiegogo.com/,1-3 days,Tech/Innovation,Flexible funding available. InDemand for post-campaign sales. Global reach.
+GoFundMe,Crowdfunding,95,Nofollow,Free (2.9% fee),https://www.gofundme.com/,Instant,Personal/Charity,Personal fundraising. No all-or-nothing. Campaign links to your site.
+Patreon,Creator Funding,91,Nofollow,Free (5-12% fee),https://www.patreon.com/,Instant,Creators/Artists,Recurring revenue from fans. Tiered membership system. Creator profile links.
+Wattpad,Writing Platform,92,Nofollow,Free,https://www.wattpad.com/,Instant,Writers/Stories,Share stories and novels. 90M+ users. Profile links. Writing community.
+Bandcamp,Music Platform,93,Dofollow,Free,https://bandcamp.com/,Instant,Musicians/Labels,Sell music directly. Artist profile links. Fan community. Fair revenue share.
+TED,Ideas Platform,93,Nofollow,Free,https://www.ted.com/,Varies,Thought leaders,Profile for speakers. Attend TEDx events. Ideas worth spreading.
+Giphy,GIF Platform,92,Nofollow,Free,https://giphy.com/,Instant,Brands/Creators,Create branded GIFs. Channel page with links. High engagement content.
+Instructables,DIY Community,89,Nofollow,Free,https://www.instructables.com/,Instant,Makers/DIY,Share how-to projects. Step-by-step tutorials. Profile links. 20M monthly visitors.
+Disqus,Comments Platform,92,Nofollow,Free,https://disqus.com/,Instant,All websites,Comment system. Profile with bio link. Used across millions of sites.
+SoundCloud,Audio Platform,93,Nofollow,Free (Pro: $12/mo),https://soundcloud.com/,Instant,Musicians/Podcasters,Upload audio. Profile links. 175M+ monthly users. Embed on websites.
+Imgur,Image Sharing,91,Nofollow,Free,https://imgur.com/,Instant,Visual content,Viral image sharing. Profile links. Reddit integration. 300M+ monthly users.
+Evernote,Note-taking,91,Nofollow,Free (Premium: $10.83/mo),https://evernote.com/,Instant,Productivity,Share public notes. Profile available. Cross-platform organization.
+WordPress.com,Blogging Platform,93,Dofollow,Free (Paid plans available),https://wordpress.com/,Instant,Bloggers/Businesses,Hosted WordPress. Profile and blog links. SEO-friendly. Massive community.
+Blogger,Blogging Platform,99,Dofollow,Free,https://www.blogger.com/,Instant,Bloggers,Google-owned. Free blogs. Profile bio links. High domain authority.
+Last.fm,Music Discovery,90,Nofollow,Free,https://www.last.fm/,Instant,Music lovers,Music tracking and discovery. Profile links. Scrobbling service.
+Apple Podcasts,Podcast Directory,100,Nofollow,Free,https://podcasters.apple.com/,1-5 days,Podcasters,Essential podcast directory. Show notes links. Massive reach.
+Spotify for Podcasters,Podcast Directory,96,Nofollow,Free,https://podcasters.spotify.com/,1-3 days,Podcasters,Second largest platform. Video podcasts supported. Analytics included.
+Podchaser,Podcast Database,70,Dofollow,Free,https://www.podchaser.com/,Instant,Podcasters,IMDb of podcasts. Claim your show. Reviews and ratings. SEO indexed.
+Listen Notes,Podcast Search,75,Nofollow,Free,https://www.listennotes.com/,1-3 days,Podcasters,Podcast search engine. Episode-level search. API available.
+TuneIn,Audio Streaming,88,Nofollow,Free,https://tunein.com/,3-5 days,Radio/Podcasters,Live radio and podcasts. Global reach. Smart speaker integration.
+Podbean,Podcast Hosting,83,Nofollow,Free (Pro: $9/mo),https://www.podbean.com/,Instant,Podcasters,Podcast hosting and distribution. Monetization features. Profile links.
+iHeartRadio,Audio Platform,92,Nofollow,Free,https://www.iheart.com/podcast/,3-5 days,Podcasters,Major US radio network. Podcast distribution. Wide reach.
+Castbox,Podcast App,75,Nofollow,Free,https://castbox.fm/,1-3 days,Podcasters,80M+ users. In-app discovery. Creator pages. Android-focused.
+Wix,Website Builder,94,Nofollow,Free (Premium: $17/mo),https://www.wix.com/,Instant,All businesses,Free subdomain sites. Profile links. Drag-and-drop builder.
+Weebly,Website Builder,92,Nofollow,Free (Premium: $12/mo),https://www.weebly.com/,Instant,Small businesses,Square-owned. E-commerce features. Profile links. Easy setup.
+Squarespace,Website Builder,92,Nofollow,$16-52/mo,https://www.squarespace.com/,Instant,Creatives/Businesses,Design-focused templates. No free tier. Professional results.
+Jimdo,Website Builder,85,Nofollow,Free (Premium: $11/mo),https://www.jimdo.com/,Instant,Small businesses,German-based. AI website creation. Simple and affordable.
+Site123,Website Builder,78,Nofollow,Free (Premium: $9.80/mo),https://www.site123.com/,Instant,Beginners,Template-based. Very easy setup. Mobile responsive themes.
+Strikingly,Website Builder,87,Nofollow,Free (Pro: $16/mo),https://www.strikingly.com/,Instant,One-page sites,Single-page focus. Quick setup. Profile links on free tier.
+Webflow,Website Builder,91,Nofollow,Free (Paid: $14/mo),https://webflow.com/,Instant,Designers/Developers,Visual development. CMS features. Professional-grade sites.
+Carrd,Landing Pages,80,Dofollow,Free (Pro: $19/yr),https://carrd.co/,Instant,Personal/Simple sites,One-page sites. Very affordable pro. Clean minimal designs.
+Glassdoor,Job Reviews,93,Nofollow,Free,https://www.glassdoor.com/,2-5 days,Employers,Company reviews and salaries. Employer profile. Job listings.
+Indeed,Job Platform,93,Nofollow,Free,https://www.indeed.com/hire,1-3 days,Employers,Largest job site. Company profiles. Sponsored job options.
+Eventbrite,Event Platform,93,Nofollow,Free (fees on tickets),https://www.eventbrite.com/,Instant,Event organizers,Event ticketing. Organizer profile. Calendar integration.
+Meetup,Community Events,93,Nofollow,Free (Organizer: $9.99/mo),https://www.meetup.com/,1-3 days,Community builders,Local groups and events. Organizer profile links. Build community.
+500px,Photography,88,Nofollow,Free (Plus: $6.49/mo),https://500px.com/,Instant,Photographers,Photo sharing and licensing. Portfolio links. Photography community.
+Myspace,Social Network,92,Nofollow,Free,https://myspace.com/,Instant,Musicians/Artists,Relaunched for musicians. Artist profiles. Legacy platform.
+TikTok,Short Video,94,Nofollow,Free,https://www.tiktok.com/,Instant,All creators,Bio link available. Massive reach. Short-form video content.
+DailyMotion,Video Platform,94,Nofollow,Free,https://www.dailymotion.com/,Instant,Video creators,YouTube alternative. Video description links. European focus.
+Twitch,Live Streaming,94,Nofollow,Free,https://www.twitch.tv/,Instant,Streamers/Gamers,Live streaming platform. Channel panels with links. Gaming focus.
+Mixcloud,Audio Streaming,88,Nofollow,Free,https://www.mixcloud.com/,Instant,DJs/Radio,DJ mixes and radio shows. Profile links. Legal music licensing.
+Spreaker,Podcast Platform,82,Nofollow,Free (Pro: $6/mo),https://www.spreaker.com/,Instant,Podcasters,Podcast creation and distribution. Live podcasting. Monetization.
+Anchor (Spotify),Podcast Hosting,90,Nofollow,Free,https://anchor.fm/,Instant,New podcasters,Free podcast hosting. Easy distribution. Spotify-owned.
+Spotify (Artist),Music Platform,96,Nofollow,Free,https://artists.spotify.com/,Varies,Musicians,Artist profiles. Bio links. Playlist pitching. Analytics.
+BuzzFeed Community,Content Platform,93,Nofollow,Free,https://www.buzzfeed.com/,Varies,Content creators,Community posts. Viral potential. Profile links.
+Vocal Media,Writing Platform,75,Dofollow,Free (Plus: $9.99/mo),https://vocal.media/,Instant,Writers,Monetized writing platform. Multiple topics. Profile links.
+HubPages,Content Platform,87,Dofollow,Free,https://hubpages.com/,Instant,Writers,Revenue share for content. Niche sites network. Profile links.
+Folkd,Social Bookmarking,72,Dofollow,Free,https://www.folkd.com/,Instant,Bookmarking,Social bookmarking. Tag-based organization. Public bookmarks.
+BizSugar,Business Content,70,Dofollow,Free,https://www.bizsugar.com/,Varies,Small business,Business content sharing. Voting system. Community engagement.
+Fark,News Aggregator,82,Nofollow,Free,https://www.fark.com/,Varies,News/Humor,User-submitted news. Humorous takes. Active community.
+Triberr,Blog Amplification,65,Dofollow,Free (Premium available),https://triberr.com/,Instant,Bloggers,Blog post sharing. Tribe communities. Social amplification.
+Feedly,RSS Reader,85,Nofollow,Free (Pro: $6/mo),https://feedly.com/,Instant,Content consumers,RSS feed reader. Boards feature. AI-powered curation.
+Letterboxd,Film Community,85,Nofollow,Free (Pro: $19/yr),https://letterboxd.com/,Instant,Film lovers,Film diary and reviews. Profile links. Growing community.
+MyAnimeList,Anime Community,90,Nofollow,Free,https://myanimelist.net/,Instant,Anime fans,Anime/manga database. Profile links. Large community.
+Sketchfab,3D Models,82,Nofollow,Free (Pro: $15/mo),https://sketchfab.com/,Instant,3D Artists,3D model sharing. Embeddable viewer. Portfolio links.
+Coub,Video Loops,72,Nofollow,Free,https://coub.com/,Instant,Video creators,Short video loops. Profile links. Viral potential.
+SpeakerDeck,Presentations,80,Nofollow,Free,https://speakerdeck.com/,Instant,Presenters,Share slide decks. PDF upload. Profile links. Clean interface.
+Prezi,Presentations,91,Nofollow,Free (Plus: $5/mo),https://prezi.com/,Instant,Presenters,Dynamic presentations. Video features. Profile with links.
+Canva,Design Platform,95,Nofollow,Free (Pro: $12.99/mo),https://www.canva.com/,Instant,Designers/Marketers,Design tool. Published designs. Profile available.
+Figma Community,Design Files,92,Nofollow,Free,https://www.figma.com/community,Instant,UI/UX Designers,Share design files. Profile links. Growing community.
+Notion,Workspace,92,Nofollow,Free (Plus: $10/mo),https://www.notion.so/,Instant,Teams/Individuals,Public pages. Template sharing. Profile links possible.
+Airtable,Database,90,Nofollow,Free (Plus: $20/mo),https://www.airtable.com/,Instant,Teams/Developers,Shared bases. Template gallery. Universe submissions.
+Trello,Project Management,93,Nofollow,Free (Premium: $10/mo),https://trello.com/,Instant,Teams,Public boards. Template gallery. Profile links.
+Miro,Whiteboard,91,Nofollow,Free (Team: $8/mo),https://miro.com/,Instant,Teams/Designers,Collaborative whiteboard. Template community. Public boards.
+Gumroad,E-commerce,85,Dofollow,Free (10% fee),https://gumroad.com/,Instant,Creators/Sellers,Sell digital products. Creator profiles. Simple setup.
+Ko-fi,Creator Support,82,Dofollow,Free (Gold: $6/mo),https://ko-fi.com/,Instant,Creators,Accept donations. Sell products. Creator page with links.
+Buy Me a Coffee,Creator Support,80,Dofollow,Free (5% fee),https://www.buymeacoffee.com/,Instant,Creators,Simple support button. Creator page. Membership option.
+Open Collective,Funding,78,Nofollow,Free (5-10% fee),https://opencollective.com/,1-3 days,Open source/Communities,Transparent funding. Collective profiles. Open source focus.
+Itch.io,Game Platform,88,Dofollow,Free,https://itch.io/,Instant,Game developers,Indie games marketplace. Creator pages. Revenue share optional.
+GameJolt,Gaming Community,75,Nofollow,Free,https://gamejolt.com/,Instant,Game developers,Indie games. Creator profiles. Community features.
+Newgrounds,Creative Platform,87,Nofollow,Free,https://www.newgrounds.com/,Instant,Animators/Game devs,Flash legacy. Games and animations. Profile links.
+Artstation,Art Portfolio,90,Nofollow,Free (Pro: $9.95/mo),https://www.artstation.com/,Instant,Digital artists,Industry portfolio standard. Job marketplace. Profile links.
+CGSociety,CG Art,78,Nofollow,Free,https://cgsociety.org/,Instant,CG Artists,Computer graphics community. Portfolio feature. Forums.
+Polycount,Game Art,72,Nofollow,Free,https://polycount.com/,Instant,Game artists,Game art community. Portfolio links. Forum discussions.
+Coroflot,Design Portfolios,78,Nofollow,Free,https://www.coroflot.com/,Instant,Industrial designers,Design jobs and portfolios. Profile links. Industry focus.
+Krop,Creative Jobs,68,Nofollow,Free (Premium: $99/yr),https://www.krop.com/,Instant,Creatives,Creative job board. Portfolio hosting. Profile links.
+Muck Rack,PR Platform,85,Nofollow,Free (for journalists),https://muckrack.com/,Varies,PR/Journalists,Journalist database. Media kit hosting. PR outreach.
+HARO (Connectively),PR Outreach,88,Nofollow,Free (Premium: $19/mo),https://www.connectively.us/,N/A,PR/Businesses,Replaced HARO. Media opportunities. Expert sources.
+SourceBottle,PR Platform,60,Nofollow,Free,https://www.sourcebottle.com/,N/A,PR/Businesses,Journalist queries. Free alternative to HARO. Australian focus.
+Featured,PR Platform,65,Nofollow,Free (Premium available),https://featured.com/,N/A,PR/Businesses,Expert source matching. Quote opportunities. Profile links.
+Qwoted,PR Platform,65,Nofollow,Free,https://www.qwoted.com/,N/A,PR/Businesses,Connect with journalists. Expert profiles. Media opportunities.
+PRLog,Press Releases,78,Dofollow,Free,https://www.prlog.org/,1-3 days,PR/Businesses,Free press releases. Dofollow links. Basic distribution.
+OpenPR,Press Releases,75,Dofollow,Free,https://www.openpr.com/,1-3 days,PR/Businesses,Free press releases. International reach. Quick approval.
+PR.com,Press Releases,72,Nofollow,Free/Paid,https://www.pr.com/,1-3 days,PR/Businesses,Press release distribution. Company profiles. Free tier available.
+1888PressRelease,Press Releases,68,Dofollow,Free,https://www.1888pressrelease.com/,1-3 days,PR/Businesses,Free press releases. Basic distribution. Profile links.
+Pitchengine,Press Releases,65,Nofollow,Free (Pro: $19/mo),https://pitchengine.com/,Instant,PR/Marketers,Visual press releases. Social media integration. Analytics.
+Minds,Social Network,83,Dofollow,Free,https://www.minds.com/,Instant,Alternative social,Decentralized social. Crypto rewards. Profile links.
+Gab,Social Network,83,Nofollow,Free,https://gab.com/,Instant,Alternative social,Free speech focus. Profile links. Growing community.
+Mastodon,Decentralized Social,88,Nofollow,Free,https://joinmastodon.org/,Instant,Tech/Alternative,Federated social network. Instance-based. Profile links.
+Bluesky,Social Network,85,Nofollow,Free,https://bsky.app/,Instant,General social,Twitter alternative. Decentralized protocol. Growing fast.
+Threads,Social Network,90,Nofollow,Free,https://www.threads.net/,Instant,General social,Meta's Twitter alternative. Instagram integration. Bio links.
+Discord,Community Platform,95,Nofollow,Free,https://discord.com/,Instant,Communities,Server communities. Profile links. Massive user base.
+Slack,Team Communication,94,Nofollow,Free (Pro: $8.75/mo),https://slack.com/,Instant,Teams/Communities,Workspace communities. Channel links. App directory.
+Circle,Community Platform,75,Nofollow,$89-399/mo,https://circle.so/,Instant,Creators/Businesses,Branded communities. Course integration. Member profiles.
+Stack Overflow,Developer Q&A,93,Nofollow,Free,https://stackoverflow.com/,Instant,Developers,Q&A for developers. Profile with links. Reputation system.
+Stack Exchange Network,Q&A Platform,91,Nofollow,Free,https://stackexchange.com/,Instant,Various niches,170+ Q&A communities. Profile links. Reputation-based.
+WikiHow,How-To Content,92,Nofollow,Free (contribute),https://www.wikihow.com/,Varies,How-to content,Contribute articles. Profile available. High traffic.
+Instructables Projects,DIY Projects,89,Nofollow,Free,https://www.instructables.com/create/,Varies,Makers/DIY,Step-by-step projects. Contest entries. Profile links.
+Hackaday,Hardware Projects,82,Nofollow,Free,https://hackaday.io/,Instant,Hardware hackers,Project documentation. Profile links. Active community.
+Thingiverse,3D Printing,85,Nofollow,Free,https://www.thingiverse.com/,Instant,3D printing,3D model sharing. Designer profiles. MakerBot-owned.
+Cults3D,3D Models,75,Nofollow,Free,https://cults3d.com/,Instant,3D designers,3D printing marketplace. Designer profiles. Revenue share.
+MyMiniFactory,3D Models,72,Nofollow,Free,https://www.myminifactory.com/,Instant,3D designers,Curated 3D models. Designer profiles. Community features.
+Pinshape,3D Printing,65,Nofollow,Free,https://pinshape.com/,Instant,3D designers,3D model marketplace. Designer profiles. Community.
+Tinkercad,3D Design,90,Nofollow,Free,https://www.tinkercad.com/,Instant,Beginners/Education,Autodesk-owned. Browser-based 3D. Profile available.
+AllTrails,Outdoor Platform,88,Nofollow,Free (Pro: $35.99/yr),https://www.alltrails.com/,Instant,Outdoor/Travel,Trail database. User profiles. Review and share trails.
+Komoot,Outdoor Routes,82,Nofollow,Free,https://www.komoot.com/,Instant,Outdoor/Cycling,Route planning. User profiles. European focus.
+Strava,Fitness Tracking,91,Nofollow,Free (Premium: $11.99/mo),https://www.strava.com/,Instant,Athletes,Activity tracking. Club features. Profile links.

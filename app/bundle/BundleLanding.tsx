@@ -23,7 +23,7 @@ const benefits = [
   },
   {
     icon: FileSpreadsheet,
-    title: '2 Organized CSV Files',
+    title: 'Organized CSV File',
     description: 'Ready to import into your favorite spreadsheet or SEO tool',
   },
   {

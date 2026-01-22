@@ -35,14 +35,15 @@ export default function BundleSuccessPage() {
 
               <div className="space-y-4">
                 <a
-                  href="https://backlinkgrid.com/downloads/backlink-database-bundle.zip"
+                  href="/downloads/backlink-database-bundle.csv"
+                  download="backlink-database-bundle.csv"
                   className="flex items-center justify-between p-4 bg-surface-50 border border-surface-200 hover:border-brand-red transition-colors group"
                 >
                   <div className="flex items-center gap-3">
                     <Download className="w-5 h-5 text-brand-red" />
                     <div className="text-left">
-                      <p className="font-semibold">backlink-database-bundle.zip</p>
-                      <p className="text-sm text-surface-500">Contains 2 CSV files (270+ sites)</p>
+                      <p className="font-semibold">backlink-database-bundle.csv</p>
+                      <p className="text-sm text-surface-500">270+ High DR backlink sites</p>
                     </div>
                   </div>
                   <ArrowRight className="w-5 h-5 text-surface-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all" />
