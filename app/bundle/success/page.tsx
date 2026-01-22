@@ -155,10 +155,8 @@ export default async function BundleSuccessPage({ searchParams }: Props) {
                   <div>
                     <p className="text-sm text-surface-600">
                       {verification.email ? (
-                        <>A confirmation has been sent to <strong>{verification.email}</strong>.</>
-                      ) : (
-                        <>A confirmation email has been sent to your email address.</>
-                      )}
+                        <>Purchased as <strong>{verification.email}</strong>.</>
+                      ) : null}
                       {' '}Bookmark this page to access your download later.
                     </p>
                   </div>
@@ -173,8 +171,8 @@ export default async function BundleSuccessPage({ searchParams }: Props) {
               </div>
             </div>
 
-            <div className="bg-surface-950 text-white p-6">
-              <h3 className="font-display text-lg font-bold mb-2">Need a Backlink Right Now?</h3>
+            <div className="bg-surface-950 p-6">
+              <h3 className="font-display text-lg font-bold mb-2 text-white">Need a Backlink Right Now?</h3>
               <p className="text-white/70 mb-4">
                 Get a permanent dofollow backlink on our grid starting at just $1
               </p>
