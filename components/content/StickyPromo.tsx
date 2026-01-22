@@ -1,17 +1,26 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, Zap, X } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { usePromo } from '@/components/promo'
 
 export function StickyPromo() {
   const [isVisible, setIsVisible] = useState(true)
+  const { isBannerVisible } = usePromo()
 
   if (!isVisible) return null
 
+  // Adjust top position based on banner visibility
+  // Banner height: ~44px mobile, ~48px desktop
+  // Header height: 64px mobile, 80px desktop
+  const topClass = isBannerVisible
+    ? 'top-[108px] lg:top-[128px]'
+    : 'top-16 lg:top-20'
+
   return (
-    <div className="sticky top-16 lg:top-20 z-40 border-b-3 border-dark">
+    <div className={`sticky ${topClass} z-40 border-b-3 border-dark`}>
       <div className="relative bg-bauhaus-red overflow-hidden">
         {/* Subtle pattern overlay */}
         <div

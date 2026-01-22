@@ -7,6 +7,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
+import { BundleCard } from '@/components/promo'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
 import { useMDXComponents } from '@/mdx-components'
@@ -137,6 +138,9 @@ export default function GuidePage({ params }: Props) {
             {/* Sidebar */}
             <aside className="hidden lg:block">
               <div className="sticky top-32 space-y-4">
+                {/* Bundle Promotion */}
+                <BundleCard variant="sidebar" />
+
                 {/* Related Guides */}
                 {otherGuides.length > 0 && (
                   <div className="bg-white border-3 border-dark">

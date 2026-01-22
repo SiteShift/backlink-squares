@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react'
+import { usePromo } from '@/components/promo'
 
 const navLinks = [
   { href: '/how-it-works', label: 'How It Works' },
@@ -27,6 +28,7 @@ export function Header() {
   const [learnDropdownOpen, setLearnDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const dropdownRef = useRef<HTMLLIElement>(null)
+  const { isBannerVisible } = usePromo()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +50,7 @@ export function Header() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className={`fixed left-0 right-0 z-50 transition-[top] duration-300 ${isBannerVisible ? 'top-[44px] sm:top-[48px]' : 'top-0'}`}>
       {/* Glassmorphism background */}
       <div
         className="absolute inset-0"

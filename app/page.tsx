@@ -10,6 +10,7 @@ import { HowItWorks } from '@/components/home/HowItWorks'
 import { FAQ } from '@/components/home/FAQ'
 import { CTA } from '@/components/home/CTA'
 import { FAQSchema } from '@/components/seo/JsonLd'
+import { BundleCard } from '@/components/promo'
 import { Square } from '@/lib/types'
 import { createServerClient } from '@/lib/supabase'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
@@ -183,6 +184,9 @@ export default async function HomePage() {
 
         {/* How It Works */}
         <HowItWorks />
+
+        {/* Bundle Promotion */}
+        <BundleCard />
 
         {/* FAQ */}
         <FAQ />

@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
 import { BlogCard } from '@/components/content/BlogCard'
+import { BundleCard } from '@/components/promo'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
@@ -147,6 +148,11 @@ export default function BlogPostPage({ params }: Props) {
 
           {/* CTA */}
           <ContentCTA />
+
+          {/* Bundle Promotion */}
+          <div className="mt-8">
+            <BundleCard variant="compact" />
+          </div>
         </article>
 
         {/* Related Posts */}
