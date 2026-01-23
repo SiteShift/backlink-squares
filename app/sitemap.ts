@@ -92,6 +92,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.5,
     },
+    // Bundle product page
+    {
+      url: `${baseUrl}/bundle`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    // Tools section
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tools/roi-calculator`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/tools/backlink-analyzer`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    // Strategy and comparison index pages
+    {
+      url: `${baseUrl}/strategies`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/comparisons`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
   ]
 
   // Hardcoded blog posts (until migrated to MDX)

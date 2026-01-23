@@ -3,6 +3,9 @@ import { stripe } from '@/lib/stripe'
 import { readFile } from 'fs/promises'
 import path from 'path'
 
+// This route must be dynamic as it uses searchParams and Stripe API
+export const dynamic = 'force-dynamic'
+
 const BUNDLE_PRODUCT_ID = 'prod_TqD1I2sHtD0QCR'
 
 export async function GET(request: NextRequest) {

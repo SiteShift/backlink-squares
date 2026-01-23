@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server'
 import { stripe } from '@/lib/stripe'
 
+// This route must be dynamic as it calls Stripe API
+export const dynamic = 'force-dynamic'
+
 // Bundle product and price IDs
 const BUNDLE_PRODUCT_ID = 'prod_TqD1I2sHtD0QCR'
 const BUNDLE_PRICE_ID = 'price_1SsWbtGe23gJ3NQhIDjwkWmP'
