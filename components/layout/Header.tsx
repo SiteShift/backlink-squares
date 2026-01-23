@@ -49,8 +49,31 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // Close mobile menu on route change or resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setMobileMenuOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
+
   return (
-    <header className={`fixed left-0 right-0 z-50 transition-[top] duration-300 ${isBannerVisible ? 'top-[44px] sm:top-[48px]' : 'top-0'}`}>
+    <header className={`fixed left-0 right-0 z-50 transition-[top] duration-300 ${isBannerVisible ? 'top-[48px] sm:top-[52px]' : 'top-0'}`}>
       {/* Glassmorphism background */}
       <div
         className="absolute inset-0"
@@ -64,7 +87,7 @@ export function Header() {
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
@@ -190,46 +213,55 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Full screen overlay for better UX */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden fixed inset-0 z-[-1]"
+            style={{ top: isBannerVisible ? '48px' : '0' }}
+          >
             {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-surface-950/20 backdrop-blur-sm lg:hidden"
+            <div
+              className="absolute inset-0 bg-surface-950/20 backdrop-blur-sm"
               onClick={() => setMobileMenuOpen(false)}
             />
 
-            {/* Menu Panel */}
+            {/* Menu Panel - positioned below header */}
             <motion.div
-              initial={{ opacity: 0, y: -10, height: 0 }}
-              animate={{ opacity: 1, y: 0, height: 'auto' }}
-              exit={{ opacity: 0, y: -10, height: 0 }}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:hidden absolute top-full left-0 right-0 bg-white border-b-2 border-surface-950 overflow-hidden"
+              className="absolute left-0 right-0 bg-white border-b-2 border-surface-950 flex flex-col"
+              style={{
+                top: isBannerVisible ? '56px' : '56px',
+                maxHeight: isBannerVisible ? 'calc(100vh - 104px)' : 'calc(100vh - 56px)',
+              }}
             >
-              <nav className="px-4 py-6 max-h-[80vh] overflow-y-auto">
+              {/* Scrollable content area */}
+              <nav className="flex-1 overflow-y-auto overscroll-contain px-4 pt-4 pb-2">
                 {/* Learn Section */}
-                <div className="mb-4">
-                  <p className="px-4 text-xs font-bold text-surface-400 uppercase tracking-wider mb-2">Learn</p>
-                  <ul className="space-y-1">
+                <div className="mb-3">
+                  <p className="px-3 text-xs font-bold text-surface-400 uppercase tracking-wider mb-2">Learn</p>
+                  <ul className="space-y-0.5">
                     {contentHubs.map((hub, index) => (
                       <motion.li
                         key={hub.href}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.03 + 0.1 }}
+                        transition={{ delay: index * 0.02 + 0.05 }}
                       >
                         <Link
                           href={hub.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-3 px-4 py-2 text-base font-semibold text-surface-700
-                                   hover:text-surface-950 hover:bg-surface-50
-                                   border-l-2 border-transparent hover:border-brand-red
-                                   transition-all"
+                          className="flex items-center gap-3 px-3 py-2.5 text-[15px] font-semibold text-surface-700
+                                   active:bg-surface-100 hover:bg-surface-50
+                                   border-l-2 border-transparent active:border-brand-red
+                                   transition-colors rounded-r-lg"
                         >
                           {hub.label}
                         </Link>
@@ -239,22 +271,22 @@ export function Header() {
                 </div>
 
                 {/* Main Nav */}
-                <div className="border-t border-surface-200 pt-4">
-                  <ul className="space-y-1">
+                <div className="border-t border-surface-200 pt-3">
+                  <ul className="space-y-0.5">
                     {navLinks.map((link, index) => (
                       <motion.li
                         key={link.href}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.05 + 0.3 }}
+                        transition={{ delay: index * 0.03 + 0.15 }}
                       >
                         <Link
                           href={link.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-3 px-4 py-3 text-lg font-semibold text-surface-700
-                                   hover:text-surface-950 hover:bg-surface-50
-                                   border-l-2 border-transparent hover:border-brand-red
-                                   transition-all"
+                          className="flex items-center gap-3 px-3 py-3 text-base font-semibold text-surface-700
+                                   active:bg-surface-100 hover:bg-surface-50
+                                   border-l-2 border-transparent active:border-brand-red
+                                   transition-colors rounded-r-lg"
                         >
                           {link.label}
                         </Link>
@@ -262,24 +294,24 @@ export function Header() {
                     ))}
                   </ul>
                 </div>
-
-                {/* Mobile CTA */}
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 }}
-                  className="mt-6 pt-6 border-t border-surface-200"
-                >
-                  <Link href="/#grid" onClick={() => setMobileMenuOpen(false)}>
-                    <button className="btn-red w-full justify-center">
-                      Get a Backlink
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </Link>
-                </motion.div>
               </nav>
+
+              {/* Sticky CTA at bottom - always visible */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="flex-shrink-0 px-4 py-4 border-t border-surface-200 bg-white safe-area-bottom"
+              >
+                <Link href="/#grid" onClick={() => setMobileMenuOpen(false)}>
+                  <button className="btn-red w-full justify-center text-base py-3.5">
+                    Get a Backlink
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
+              </motion.div>
             </motion.div>
-          </>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>
