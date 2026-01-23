@@ -136,7 +136,7 @@ export function BundleLanding() {
                 </span>
               </div>
 
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black mb-6 leading-tight text-white">
                 Complete Backlink
                 <br />
                 <span className="text-brand-red">Database Bundle</span>
