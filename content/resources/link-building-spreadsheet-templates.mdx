@@ -1,0 +1,589 @@
+---
+title: "Link Building Spreadsheet Templates: Complete Tracking System"
+description: "Download link building spreadsheet templates for prospect tracking, outreach management, and results reporting. Ready-to-use systems for Google Sheets and Excel."
+metaTitle: "Link Building Spreadsheet Templates: Free Tracking Sheets [2026]"
+metaDescription: "Free link building spreadsheet templates for tracking prospects, managing outreach, and reporting results. Download and customise for your campaigns."
+primaryKeyword: "link building spreadsheet templates"
+secondaryKeywords: ["link prospecting spreadsheet", "outreach tracker template", "backlink tracking spreadsheet", "link building tracker"]
+searchIntent: "commercial"
+author: "SEO Backlinks Team"
+lastUpdated: "2026-01-23"
+resourceType: "template"
+downloadable: true
+parentHub: "resources"
+---
+
+A well-designed spreadsheet system transforms chaotic link building into a systematic process. These templates provide everything you need to track prospects, manage outreach, and measure results—whether you are building 10 links per month or 100.
+
+Each template is designed for immediate use with minimal setup. Copy the structure, adapt the columns to your workflow, and start tracking today.
+
+---
+
+## Spreadsheet System Overview
+
+### The Complete System
+
+| Template | Purpose | Primary Users |
+|----------|---------|---------------|
+| Master Prospecting Database | Central prospect repository | All link builders |
+| Outreach Campaign Tracker | Email tracking and follow-ups | Outreach specialists |
+| Results Dashboard | Metrics and reporting | Managers, clients |
+| Content Asset Inventory | Linkable content tracking | Content teams |
+| Link Profile Monitor | Existing backlink tracking | SEO analysts |
+
+### How They Work Together
+
+```
+Prospecting Database → Outreach Tracker → Results Dashboard
+        ↑                                         ↓
+Content Inventory ←←←←←←←←←←←←←←←←←← Link Profile Monitor
+```
+
+---
+
+## Template 1: Master Prospecting Database
+
+### Purpose
+
+Central database for all link building prospects. Every potential link source gets entered here with consistent data for prioritisation and tracking.
+
+### Column Structure
+
+| Column | Field | Data Type | Example |
+|--------|-------|-----------|---------|
+| A | Prospect ID | Auto-generated | P-001 |
+| B | Domain | URL | example.com |
+| C | Page URL | URL | example.com/resources |
+| D | Site Name | Text | Example Blog |
+| E | DA/DR | Number | 45 |
+| F | Monthly Traffic | Number | 25000 |
+| G | Relevance Score | 1-5 | 4 |
+| H | Opportunity Type | Dropdown | Guest Post |
+| I | Priority | Dropdown | High |
+| J | Status | Dropdown | Not Contacted |
+| K | Contact Name | Text | John Smith |
+| L | Contact Email | Email | john@example.com |
+| M | Contact Role | Text | Content Editor |
+| N | Notes | Text | Accepts guest posts on marketing |
+| O | Source | Dropdown | Competitor Analysis |
+| P | Campaign | Text | Q1 Guest Posts |
+| Q | Added Date | Date | 2026-01-15 |
+| R | Last Updated | Date | 2026-01-20 |
+
+### Dropdown Options
+
+**Opportunity Type**:
+- Guest Post
+- Resource Page
+- Broken Link
+- Unlinked Mention
+- Link Reclamation
+- Editorial
+- Partnership
+- Directory
+- HARO/Quote
+- Other
+
+**Priority**:
+- Critical (Score 9-10)
+- High (Score 7-8)
+- Medium (Score 5-6)
+- Low (Score 3-4)
+- Backlog (Score 1-2)
+
+**Status**:
+- Not Contacted
+- Contacted
+- Follow-Up 1
+- Follow-Up 2
+- Follow-Up 3
+- Responded
+- In Progress
+- Won
+- Lost - No Response
+- Lost - Declined
+- On Hold
+- Not Qualified
+
+**Source**:
+- Competitor Analysis
+- Manual Search
+- Tool Suggestion
+- Referral
+- Inbound
+- Other
+
+### Formulas
+
+**Priority Score Calculator** (add as Column S):
+```
+=((E2/20)+(G2*2)+IF(H2="Guest Post",2,IF(H2="Resource Page",1.5,1)))
+```
+
+**Days Since Added** (add as Column T):
+```
+=TODAY()-Q2
+```
+
+**Auto-Status Color Coding** (Conditional Formatting):
+- Not Contacted: Light grey
+- Contacted/Follow-Up: Yellow
+- Responded/In Progress: Blue
+- Won: Green
+- Lost: Red
+- On Hold: Orange
+
+### Views to Create
+
+**View 1: Ready for Outreach**
+- Filter: Status = "Not Contacted"
+- Sort: Priority (descending), then DA (descending)
+
+**View 2: Needs Follow-Up**
+- Filter: Status contains "Follow-Up"
+- Sort: Last Updated (ascending)
+
+**View 3: Active Conversations**
+- Filter: Status = "Responded" OR "In Progress"
+- Sort: Last Updated (descending)
+
+**View 4: Campaign View**
+- Filter: Campaign = [specific campaign]
+- Sort: Status, then Priority
+
+---
+
+## Template 2: Outreach Campaign Tracker
+
+### Purpose
+
+Track every email sent, responses received, and follow-ups needed. Connects to the Prospecting Database via Prospect ID.
+
+### Column Structure
+
+| Column | Field | Data Type | Example |
+|--------|-------|-----------|---------|
+| A | Outreach ID | Auto-generated | O-001 |
+| B | Prospect ID | Reference | P-001 |
+| C | Domain | Lookup from Prospect DB | example.com |
+| D | Contact | Lookup from Prospect DB | John Smith |
+| E | Send Date | Date | 2026-01-15 |
+| F | Email Type | Dropdown | Initial |
+| G | Subject Line | Text | Article idea: Content marketing |
+| H | Template Used | Dropdown | Guest Post v2 |
+| I | Sent | Checkbox | Yes |
+| J | Opened | Checkbox | Yes |
+| K | Responded | Checkbox | Yes |
+| L | Response Date | Date | 2026-01-18 |
+| M | Response Type | Dropdown | Positive |
+| N | Response Summary | Text | Interested in Topic 2 |
+| O | Next Action | Text | Send outline |
+| P | Next Action Date | Date | 2026-01-20 |
+| Q | Status | Dropdown | Pending Response |
+| R | Notes | Text | Editor prefers morning sends |
+
+### Dropdown Options
+
+**Email Type**:
+- Initial
+- Follow-Up 1
+- Follow-Up 2
+- Follow-Up 3
+- Response
+- Thank You
+- Delivery
+
+**Template Used**:
+- Guest Post v1
+- Guest Post v2
+- Broken Link
+- Resource Page
+- Unlinked Mention
+- Custom
+
+**Response Type**:
+- Positive (Interested)
+- Neutral (Questions)
+- Negative (Declined)
+- Redirect (Contact someone else)
+- Auto-Reply (OOO)
+
+**Status**:
+- Scheduled
+- Sent
+- Pending Response
+- Needs Follow-Up
+- In Conversation
+- Completed - Won
+- Completed - Lost
+- Paused
+
+### Formulas
+
+**Days Since Sent** (for follow-up timing):
+```
+=IF(L2="",TODAY()-E2,L2-E2)
+```
+
+**Follow-Up Due** (returns TRUE when follow-up needed):
+```
+=AND(K2=FALSE,TODAY()-E2&gt;7,Q2="Pending Response")
+```
+
+**Response Rate by Template** (summary formula):
+```
+=COUNTIFS(H:H,[Template],K:K,TRUE)/COUNTIF(H:H,[Template])
+```
+
+### Views to Create
+
+**View 1: Today's Sends**
+- Filter: Send Date = TODAY(), Sent = FALSE
+- Sort: Priority (from linked prospect)
+
+**View 2: Follow-Ups Due**
+- Filter: Follow-Up Due = TRUE
+- Sort: Days Since Sent (descending)
+
+**View 3: Awaiting Response**
+- Filter: Status = "Pending Response"
+- Sort: Send Date (ascending)
+
+**View 4: Active Conversations**
+- Filter: Status = "In Conversation"
+- Sort: Response Date (descending)
+
+---
+
+## Template 3: Results Dashboard
+
+### Purpose
+
+Aggregate metrics for reporting, analysis, and ROI tracking. Pulls data from other sheets automatically.
+
+### Key Metrics Section
+
+| Metric | Formula | Description |
+|--------|---------|-------------|
+| Total Prospects | `=COUNTA(Prospects!A:A)-1` | All prospects in database |
+| Contacted | `=COUNTIF(Prospects!J:J,"&lt;&gt;Not Contacted")` | Prospects with outreach |
+| Response Rate | `=COUNTIF(Outreach!K:K,TRUE)/COUNTA(Outreach!A:A)` | Responses/emails sent |
+| Links Won | `=COUNTIF(Prospects!J:J,"Won")` | Successfully acquired links |
+| Conversion Rate | `=[Links Won]/[Contacted]` | Links/contacted prospects |
+| Avg. Time to Win | `=AVERAGEIF(Results!K:K,"&gt;0",Results!K:K)` | Days from first contact |
+
+### Period-Based Tracking
+
+| Time Period | Emails Sent | Responses | Links Won | Cost |
+|-------------|-------------|-----------|-----------|------|
+| Week 1 | [formula] | [formula] | [formula] | [manual] |
+| Week 2 | [formula] | [formula] | [formula] | [manual] |
+| Week 3 | [formula] | [formula] | [formula] | [manual] |
+| Week 4 | [formula] | [formula] | [formula] | [manual] |
+| **Month Total** | [sum] | [sum] | [sum] | [sum] |
+
+### Performance by Category
+
+**By Opportunity Type**:
+```
+=SUMPRODUCT((Prospects!H:H="Guest Post")*(Prospects!J:J="Won"))
+```
+
+**By Priority Level**:
+```
+=SUMPRODUCT((Prospects!I:I="High")*(Prospects!J:J="Won"))
+```
+
+**By Campaign**:
+```
+=SUMPRODUCT((Prospects!P:P="Q1 Guest Posts")*(Prospects!J:J="Won"))
+```
+
+### ROI Calculation Section
+
+| Metric | Value |
+|--------|-------|
+| Total Investment (time + tools + content) | [manual entry] |
+| Total Links Acquired | [formula] |
+| Cost Per Link | `=[Investment]/[Links]` |
+| Estimated Link Value | [Links × avg value] |
+| ROI | `=([Value]-[Investment])/[Investment]` |
+
+### Charts to Include
+
+1. **Pipeline Funnel**: Prospects → Contacted → Responded → Won
+2. **Weekly Trend**: Links won per week
+3. **By Type**: Pie chart of link types
+4. **Response Rate Trend**: Line chart over time
+
+---
+
+## Template 4: Content Asset Inventory
+
+### Purpose
+
+Track all content assets available for link building, their performance, and promotion status.
+
+### Column Structure
+
+| Column | Field | Data Type | Example |
+|--------|-------|-----------|---------|
+| A | Asset ID | Auto-generated | A-001 |
+| B | Title | Text | Complete Guide to Link Building |
+| C | URL | URL | /guides/link-building |
+| D | Type | Dropdown | Guide |
+| E | Topic/Keyword | Text | link building |
+| F | Word Count | Number | 5000 |
+| G | Published Date | Date | 2026-01-01 |
+| H | Last Updated | Date | 2026-01-15 |
+| I | Organic Traffic | Number | 2500 |
+| J | Current Backlinks | Number | 45 |
+| K | Referring Domains | Number | 32 |
+| L | Link Target | Number | 50 |
+| M | Target Gap | Formula | 5 |
+| N | Active Campaigns | Text | Q1 Outreach |
+| O | Outreach Sent | Number | 100 |
+| P | Links Won | Number | 12 |
+| Q | Conversion Rate | Formula | 12% |
+| R | Promotion Status | Dropdown | Active |
+| S | Notes | Text | Top performer for guest posts |
+
+### Dropdown Options
+
+**Type**:
+- Blog Post
+- Guide
+- Tool/Calculator
+- Template
+- Research/Study
+- Infographic
+- Video
+- Podcast
+- Case Study
+- Comparison
+
+**Promotion Status**:
+- Not Started
+- Active
+- Paused
+- Completed
+- Evergreen (ongoing)
+
+### Formulas
+
+**Target Gap**:
+```
+=L2-J2
+```
+
+**Conversion Rate**:
+```
+=IF(O2&gt;0,P2/O2,0)
+```
+
+**Link Acquisition Rate** (links per month since published):
+```
+=J2/((TODAY()-G2)/30)
+```
+
+### Priority Scoring for Content
+
+```
+=((I2/1000)+(K2*0.5)+(M2*2))/3
+```
+Higher score = higher promotion priority
+
+---
+
+## Template 5: Link Profile Monitor
+
+### Purpose
+
+Track your existing backlink profile health, new links gained, and links lost over time.
+
+### Column Structure
+
+| Column | Field | Data Type | Example |
+|--------|-------|-----------|---------|
+| A | Link ID | Auto-generated | L-001 |
+| B | Source Domain | URL | referring-site.com |
+| C | Source URL | URL | referring-site.com/article |
+| D | Target URL | URL | yoursite.com/page |
+| E | Anchor Text | Text | link building guide |
+| F | Link Type | Dropdown | Contextual |
+| G | Follow Status | Dropdown | DoFollow |
+| H | Source DA | Number | 45 |
+| I | First Seen | Date | 2026-01-10 |
+| J | Last Verified | Date | 2026-01-20 |
+| K | Status | Dropdown | Active |
+| L | Acquisition Type | Dropdown | Outreach |
+| M | Campaign | Text | Q1 Guest Posts |
+| N | Traffic Value | Number | 500 |
+| O | Notes | Text | Great ongoing relationship |
+
+### Dropdown Options
+
+**Link Type**:
+- Contextual (in content)
+- Author Bio
+- Resource Section
+- Sidebar/Footer
+- Directory Listing
+- Comment/Forum
+
+**Follow Status**:
+- DoFollow
+- NoFollow
+- Sponsored
+- UGC
+
+**Status**:
+- Active
+- Lost
+- Redirected
+- Broken
+- Pending Verification
+
+**Acquisition Type**:
+- Outreach
+- Guest Post
+- Organic/Earned
+- Digital PR
+- Partnership
+- Other
+
+### Monitoring Schedule
+
+| Check | Frequency | Action |
+|-------|-----------|--------|
+| New link verification | Weekly | Verify new links are live |
+| Lost link check | Monthly | Identify recently lost links |
+| Quality audit | Quarterly | Review link quality metrics |
+| Full profile export | Monthly | Export fresh data from tools |
+
+### Health Metrics Dashboard
+
+| Metric | Formula | Target |
+|--------|---------|--------|
+| Total Active Links | `=COUNTIF(K:K,"Active")` | Growing |
+| DoFollow Percentage | `=COUNTIF(G:G,"DoFollow")/COUNT(G:G)` | 70-80% |
+| Average Source DA | `=AVERAGEIF(K:K,"Active",H:H)` | 30+ |
+| Links Lost (30 days) | Count recent status changes | Minimise |
+| Link Velocity | New links per month | Consistent |
+
+---
+
+## Implementation Guide
+
+### Getting Started (Day 1)
+
+1. **Create your master spreadsheet**
+   - Copy the Prospecting Database structure
+   - Set up dropdowns for consistent data entry
+   - Add conditional formatting for visual status
+
+2. **Import existing data**
+   - Export prospects from current tools
+   - Map fields to new column structure
+   - Clean up inconsistent data
+
+3. **Configure basic views**
+   - "Ready for Outreach" filter
+   - "Needs Follow-Up" filter
+
+### Building Your System (Week 1)
+
+1. **Add the Outreach Tracker**
+   - Link to Prospecting Database
+   - Create daily workflow views
+
+2. **Set up Results Dashboard**
+   - Configure formulas to pull from other sheets
+   - Create initial charts
+
+3. **Document your process**
+   - Status definitions
+   - Column usage notes
+   - Team conventions
+
+### Scaling Up (Month 1+)
+
+1. **Add Content Inventory**
+   - Catalogue all linkable assets
+   - Set up performance tracking
+
+2. **Implement Link Profile Monitor**
+   - Monthly export routine
+   - Lost link alerting
+
+3. **Optimise workflows**
+   - Automate where possible
+   - Refine based on usage
+
+---
+
+## Best Practices
+
+### Data Quality
+
+- **Consistent entry**: Use dropdowns, not free text for categories
+- **Immediate updates**: Log activity right after taking action
+- **Regular cleanup**: Archive completed/dead prospects monthly
+- **Notes are valuable**: Record context that helps future outreach
+
+### Team Collaboration
+
+- **Shared definitions**: Everyone uses same status meanings
+- **Assigned ownership**: Clear who works which prospects
+- **Communication**: Comments for handoffs and updates
+- **Access control**: Edit rights only where needed
+
+### Maintenance Schedule
+
+| Task | Frequency |
+|------|-----------|
+| Data entry | Continuous |
+| Status updates | Daily |
+| Follow-up review | Daily |
+| Dashboard review | Weekly |
+| Data cleanup | Monthly |
+| Formula audit | Quarterly |
+
+---
+
+## Tool Alternatives
+
+### When to Use Spreadsheets
+
+- Budget constraints
+- Small team (1-3 people)
+- Simple campaigns
+- Custom workflow needs
+- Learning the process
+
+### When to Upgrade to Dedicated Tools
+
+- Team of 4+ people
+- 100+ active prospects
+- Multiple simultaneous campaigns
+- Need email automation
+- Require detailed analytics
+
+### Tool Options
+
+| Tool | Best For | Starting Price |
+|------|----------|----------------|
+| BuzzStream | Outreach management | $24/month |
+| Pitchbox | Enterprise link building | $550/month |
+| Respona | AI-powered outreach | $99/month |
+| Hunter | Email finding + campaigns | Free tier |
+
+---
+
+## Related Resources
+
+- [Link Prospecting Guide](/outreach/prospecting) - How to find prospects
+- [Outreach Email Templates](/resources/outreach-email-templates) - Email scripts
+- [Link Quality Checklist](/resources/link-quality-checklist) - Prospect evaluation
+- [ROI Calculator](/resources/roi-calculator) - Measure campaign value
+- [Link Building Tools Comparison](/resources/link-building-tools-comparison) - Tool options

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Clock, User, Calendar, ChevronRight, ArrowRight, BookOpen, CheckCircle } from 'lucide-react'
+import { Clock, User, Calendar, ChevronRight, ArrowRight, BookOpen, CheckCircle, Layers, ExternalLink } from 'lucide-react'
 import { HubContent, ClusterMeta, HubMeta } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
 import { Header } from '@/components/layout/Header'
@@ -7,14 +7,30 @@ import { Footer } from '@/components/layout/Footer'
 import { TableOfContents } from '@/components/content/TableOfContents'
 import { ContentCTA } from '@/components/content/ContentCTA'
 
+interface ResolvedLink {
+  href: string
+  title: string
+  description?: string
+}
+
 interface HubPageProps {
   hub: HubContent
   clusters: ClusterMeta[]
   relatedHubs?: HubMeta[]
   content: React.ReactNode
+  // Resolved cluster page links in order from frontmatter
+  orderedClusterLinks?: ResolvedLink[]
 }
 
-export function HubPage({ hub, clusters, relatedHubs = [], content }: HubPageProps) {
+export function HubPage({ hub, clusters, relatedHubs = [], content, orderedClusterLinks = [] }: HubPageProps) {
+  // Use ordered cluster links if available, otherwise fall back to all clusters
+  const displayClusters = orderedClusterLinks.length > 0
+    ? orderedClusterLinks.map(link => {
+        const cluster = clusters.find(c => `/${hub.slug}/${c.slug}` === link.href || c.slug === link.href.split('/').pop())
+        return cluster ? { ...cluster, orderedLink: link } : null
+      }).filter((c): c is ClusterMeta & { orderedLink: ResolvedLink } => c !== null)
+    : clusters
+
   return (
     <>
       <Header />
@@ -154,30 +170,86 @@ export function HubPage({ hub, clusters, relatedHubs = [], content }: HubPagePro
                   </div>
                 )}
 
-                {/* Related Hubs */}
-                {relatedHubs.length > 0 && (
-                  <div className="mt-12 bg-bauhaus-cream border-3 border-dark p-8">
-                    <h2 className="font-display font-black text-xl text-dark mb-6">
-                      Explore Related Topics
-                    </h2>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      {relatedHubs.slice(0, 4).map((relatedHub) => (
+                {/* What to Read Next Section */}
+                <div className="mt-12 bg-white border-3 border-dark p-8">
+                  <h2 className="font-display font-black text-xl text-dark mb-6">
+                    What to Read Next
+                  </h2>
+
+                  <div className="space-y-6">
+                    {/* Start with First Cluster */}
+                    {clusters.length > 0 && (
+                      <div>
+                        <h3 className="text-sm font-bold uppercase text-dark/50 tracking-wider mb-3 flex items-center gap-2">
+                          <BookOpen className="w-4 h-4" />
+                          Start Learning
+                        </h3>
                         <Link
-                          key={relatedHub.slug}
-                          href={`/${relatedHub.slug}`}
-                          className="group block bg-white border-3 border-dark p-5 hover:shadow-bauhaus hover:border-bauhaus-red transition-all"
+                          href={`/${hub.slug}/${clusters[0].slug}`}
+                          className="group block p-4 bg-bauhaus-blue/10 border-2 border-bauhaus-blue/20 hover:border-bauhaus-blue transition-colors"
                         >
-                          <h3 className="font-bold text-dark group-hover:text-bauhaus-red mb-2 transition-colors">
-                            {relatedHub.title}
-                          </h3>
-                          <p className="text-sm text-dark/60 line-clamp-2">
-                            {relatedHub.description}
-                          </p>
+                          <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase text-bauhaus-blue tracking-wider mb-1">
+                            <ArrowRight className="w-3.5 h-3.5" />
+                            First Topic
+                          </span>
+                          <span className="block font-bold text-dark group-hover:text-bauhaus-blue mt-1 transition-colors">
+                            {clusters[0].title}
+                          </span>
+                          <span className="block text-sm text-dark/60 mt-1 line-clamp-2">
+                            {clusters[0].description}
+                          </span>
                         </Link>
-                      ))}
-                    </div>
+                      </div>
+                    )}
+
+                    {/* Related Guides (Other Hubs) */}
+                    {relatedHubs.length > 0 && (
+                      <div>
+                        <h3 className="text-sm font-bold uppercase text-dark/50 tracking-wider mb-3 flex items-center gap-2">
+                          <Layers className="w-4 h-4" />
+                          Explore Related Guides
+                        </h3>
+                        <div className="grid sm:grid-cols-2 gap-3">
+                          {relatedHubs.slice(0, 4).map((relatedHub) => (
+                            <Link
+                              key={relatedHub.slug}
+                              href={`/${relatedHub.slug}`}
+                              className="group block p-3 bg-bauhaus-yellow/10 border-2 border-bauhaus-yellow/20 hover:border-bauhaus-yellow transition-colors"
+                            >
+                              <span className="font-medium text-dark group-hover:text-bauhaus-red transition-colors text-sm">
+                                {relatedHub.title}
+                              </span>
+                              <span className="block text-xs text-dark/50 mt-1 line-clamp-1">
+                                {relatedHub.description}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Quick Links to Key Sections */}
+                    {clusters.length > 1 && (
+                      <div className="border-t-2 border-dark/10 pt-4">
+                        <h3 className="text-sm font-bold uppercase text-dark/50 tracking-wider mb-3 flex items-center gap-2">
+                          <CheckCircle className="w-4 h-4" />
+                          Key Topics in This Guide
+                        </h3>
+                        <div className="flex flex-wrap gap-2">
+                          {clusters.slice(0, 8).map((cluster) => (
+                            <Link
+                              key={cluster.slug}
+                              href={`/${hub.slug}/${cluster.slug}`}
+                              className="inline-flex items-center gap-1 px-3 py-1.5 bg-dark/5 hover:bg-bauhaus-red hover:text-white text-sm text-dark/70 transition-colors"
+                            >
+                              {cluster.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
 
                 {/* CTA */}
                 <ContentCTA />

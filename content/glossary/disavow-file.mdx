@@ -1,0 +1,323 @@
+---
+title: "Disavow File: Format, Creation & Best Practices"
+description: "Learn how to create a disavow file, proper format specifications, and when to use it. Understand the correct approach to disavowing backlinks."
+metaTitle: "Disavow File: Complete Format & Creation Guide [2026]"
+metaDescription: "Learn to create a proper disavow file for Google. Understand format requirements, best practices, and when disavowing links is appropriate."
+primaryKeyword: "disavow file"
+secondaryKeywords: ["disavow txt file", "disavow file format", "create disavow file", "disavow links file"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2026-01-22"
+termType: "glossary"
+relatedTerms: ["google-disavow-tool", "toxic-backlinks", "manual-action"]
+---
+
+**A disavow file** is a text file (.txt) submitted to Google through Search Console that lists backlinks you want Google to ignore when assessing your site. It tells Google not to count specific links as ranking signals.
+
+## Disavow File Format
+
+### Basic Structure
+
+The disavow file is a plain text file with:
+- One entry per line
+- UTF-8 encoding
+- .txt extension
+- Comments optional (start with #)
+
+### Syntax
+
+**Disavow a specific URL**:
+```
+https://example.com/spammy-page
+```
+
+**Disavow an entire domain**:
+```
+domain:spamsite.com
+```
+
+**Add comments**:
+```
+# Links from link network
+domain:linkfarm.com
+domain:spamnetwork.net
+
+# Individual spam pages
+https://example.com/bad-page
+```
+
+---
+
+## File Format Specifications
+
+### Requirements
+
+| Specification | Requirement |
+|--------------|-------------|
+| File type | Plain text (.txt) |
+| Encoding | UTF-8 or 7-bit ASCII |
+| Max size | 100,000 lines, 2MB |
+| Line format | One URL or domain per line |
+| Comments | Start with # |
+
+### URL Format
+
+**Correct**:
+```
+https://example.com/page
+http://example.com/page
+domain:example.com
+```
+
+**Incorrect**:
+```
+example.com/page (missing protocol)
+www.example.com (use domain: prefix)
+*.example.com (wildcards not supported)
+```
+
+---
+
+## When to Use Disavow
+
+### Appropriate Situations
+
+**Manual action**: You have an "unnatural links" penalty
+**Link cleanup**: Recovering from past link spam
+**Known schemes**: Links from your participation in link schemes
+**Penalty prevention**: Large-scale suspicious links you built
+
+### Inappropriate Situations
+
+**Random spam**: Links you didn't build
+**Competitor attacks**: Alleged negative SEO
+**Low-quality links**: Simply not valuable links
+**Precautionary**: "Just in case" disavowing
+
+---
+
+## Creating a Disavow File
+
+### Step 1: Audit Backlinks
+
+**Export from multiple sources**:
+- Google Search Console
+- Ahrefs
+- Semrush
+- Moz
+
+**Create comprehensive list**:
+- Merge all sources
+- Remove duplicates
+- Include all potential issues
+
+### Step 2: Identify Links to Disavow
+
+**Criteria for disavow**:
+- Links you built that violate guidelines
+- Links from known link schemes
+- Links from PBNs you used
+- Paid links you purchased
+- Links from link networks
+
+**Do NOT disavow**:
+- Natural links from low-quality sites
+- Random spam you didn't create
+- Links you're unsure about
+- Competitor-generated spam
+
+### Step 3: Format the File
+
+**Organize by category**:
+```
+# PBN links
+domain:pbn-site1.com
+domain:pbn-site2.com
+
+# Paid links
+https://seller.com/sponsored-article
+https://another-seller.com/paid-post
+
+# Link network
+domain:linknetwork.com
+domain:linknetwork.net
+```
+
+### Step 4: Review and Verify
+
+**Before submission**:
+- Double-check each entry
+- Ensure you're not disavowing good links
+- Verify format is correct
+- Test encoding (UTF-8)
+
+---
+
+## Domain vs URL Disavow
+
+### Domain-Level Disavow
+
+**Use domain: prefix when**:
+- Entire site is spam
+- Multiple pages from same spam domain
+- PBNs and link farms
+- Sites you know are problematic throughout
+
+**Example**:
+```
+domain:entirespamsite.com
+```
+
+### URL-Level Disavow
+
+**Use specific URLs when**:
+- Only some pages are problematic
+- Site is legitimate but specific pages aren't
+- You want to preserve some links from domain
+
+**Example**:
+```
+https://legitsite.com/one-bad-page
+```
+
+---
+
+## Common Disavow Mistakes
+
+### Over-Disavowing
+
+**Problem**: Disavowing too many links
+**Consequence**: Potentially hurting rankings
+**Solution**: Be conservative and specific
+
+### Format Errors
+
+**Common issues**:
+- Wrong encoding
+- Missing protocol
+- Incorrect domain syntax
+- Extra spaces
+
+**Prevention**: Follow format exactly
+
+### Disavowing Good Links
+
+**Problem**: Including legitimate links
+**Consequence**: Losing link equity
+**Solution**: Manual review before inclusion
+
+### Not Disavowing Enough
+
+**Problem**: Incomplete disavow file
+**Consequence**: Penalty persists
+**Solution**: Thorough audit before submission
+
+---
+
+## Disavow File Management
+
+### Updating Your File
+
+**Important note**: New uploads replace old files completely
+
+**Process**:
+1. Download existing disavow file
+2. Add new entries
+3. Review complete file
+4. Upload updated file
+
+### Organization Tips
+
+**Use comments**:
+```
+# Added January 2026 - PBN cleanup
+domain:pbn1.com
+
+# Added February 2026 - Link network
+domain:network.com
+```
+
+**Keep local backup**: Save copies of all versions
+
+---
+
+## After Submission
+
+### What Happens
+
+1. Google receives your file
+2. Links are flagged for disavow
+3. Recrawl needed for processing
+4. Links gradually stop counting
+
+### Timeline
+
+**Processing**: Can take weeks to months
+**Full effect**: When pages are recrawled
+**Monitoring**: Check Search Console for changes
+
+### No Confirmation
+
+Google doesn't confirm individual links are disavowed. You'll only know it worked if:
+- Manual action is lifted (after reconsideration)
+- Rankings recover over time
+
+---
+
+## Best Practices
+
+### Before Creating
+
+- Confirm disavow is necessary
+- Complete thorough audit
+- Try link removal first
+- Document everything
+
+### During Creation
+
+- Be conservative
+- Use domain: for spam sites
+- Add comments for documentation
+- Check format carefully
+
+### After Submission
+
+- Keep backup copies
+- Monitor for changes
+- Update as needed
+- Don't obsess over it
+
+---
+
+## Summary
+
+A disavow file tells Google to ignore specific links:
+
+**Format requirements**:
+- Plain text (.txt)
+- UTF-8 encoding
+- One entry per line
+- domain: prefix for entire domains
+
+**When to use**:
+- Manual actions
+- Links you built that violate guidelines
+- Recovering from link schemes
+
+**Best practices**:
+- Be conservative
+- Manual review each entry
+- Document with comments
+- Keep backups
+- Don't over-disavow
+
+The disavow file is a last resort—only use when truly necessary.
+
+---
+
+## Related Terms
+
+- [Google Disavow Tool](/glossary/google-disavow-tool)
+- [Toxic Backlinks](/glossary/toxic-backlinks)
+- [Manual Action](/glossary/manual-action)
+- [Penalty Recovery](/glossary/penalty-recovery)

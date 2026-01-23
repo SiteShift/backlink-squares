@@ -5,6 +5,9 @@ import {
   getAllGlossaryTerms,
   getAllBlogPosts,
   getAllGuides,
+  getAllStrategies,
+  getAllComparisons,
+  getAllStatistics,
 } from '@/lib/content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Use fixed dates for static content to avoid unnecessary recrawls
   // Update these dates when content actually changes
   const SITE_LAUNCH_DATE = '2026-01-01T00:00:00.000Z'
-  const LAST_CONTENT_UPDATE = '2026-01-12T00:00:00.000Z'
+  const LAST_CONTENT_UPDATE = '2026-01-23T00:00:00.000Z'
 
   // Static pages with real timestamps
   const staticPages: MetadataRoute.Sitemap = [
@@ -119,13 +122,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Content hub pages (pillar pages - high priority)
+  // ============================================
+  // Content Hub Pages (pillar pages - high priority)
+  // Includes: backlinks, link-building, backlink-quality,
+  // backlink-audit, link-building-tactics, digital-pr,
+  // outreach, industries, resources, strategies, comparisons
+  // ============================================
   const hubPages: MetadataRoute.Sitemap = []
   const clusterPages: MetadataRoute.Sitemap = []
 
   const hubs = getAllHubs()
   for (const hub of hubs) {
-    // Add hub page
+    // Add hub page (priority 0.9)
     hubPages.push({
       url: `${baseUrl}/${hub.slug}`,
       lastModified: hub.lastUpdated || LAST_CONTENT_UPDATE,
@@ -133,7 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })
 
-    // Add all cluster pages for this hub
+    // Add all cluster pages for this hub (priority 0.8)
     const clusters = getHubClusters(hub.slug)
     for (const cluster of clusters) {
       clusterPages.push({
@@ -145,7 +153,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Blog posts from MDX (when they exist) - merged with hardcoded
+  // ============================================
+  // Strategy Pages (if not captured via hub system)
+  // Industry-specific link building strategies
+  // ============================================
+  const strategyPages: MetadataRoute.Sitemap = getAllStrategies().map((strategy) => ({
+    url: `${baseUrl}/strategies/${strategy.slug}`,
+    lastModified: strategy.lastUpdated || LAST_CONTENT_UPDATE,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  // ============================================
+  // Comparison Pages (if not captured via hub system)
+  // Tool comparisons, service comparisons, method comparisons
+  // ============================================
+  const comparisonPages: MetadataRoute.Sitemap = getAllComparisons().map((comparison) => ({
+    url: `${baseUrl}/comparisons/${comparison.slug}`,
+    lastModified: comparison.lastUpdated || LAST_CONTENT_UPDATE,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  // ============================================
+  // Statistics Pages (if any exist in content/statistics)
+  // ============================================
+  const statisticsPages: MetadataRoute.Sitemap = getAllStatistics().map((stat) => ({
+    url: `${baseUrl}/statistics/${stat.slug}`,
+    lastModified: stat.lastUpdated || LAST_CONTENT_UPDATE,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // ============================================
+  // Blog Posts from MDX - merged with hardcoded (priority 0.7)
+  // ============================================
   const mdxBlogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.date || LAST_CONTENT_UPDATE,
@@ -153,7 +195,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // Guides from MDX (when they exist) - merged with hardcoded
+  // ============================================
+  // Guides from MDX - merged with hardcoded (priority 0.8)
+  // ============================================
   const mdxGuides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
     url: `${baseUrl}/guides/${guide.slug}`,
     lastModified: guide.date || LAST_CONTENT_UPDATE,
@@ -161,7 +205,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Glossary terms from MDX
+  // ============================================
+  // Glossary Terms (priority 0.6)
+  // ============================================
   const glossaryTerms: MetadataRoute.Sitemap = getAllGlossaryTerms().map((term) => ({
     url: `${baseUrl}/glossary/${term.slug}`,
     lastModified: term.lastUpdated || LAST_CONTENT_UPDATE,
@@ -169,7 +215,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  // Combine blog and guide posts (MDX takes precedence, then hardcoded)
+  // ============================================
+  // Combine and deduplicate blog posts (MDX takes precedence)
+  // ============================================
   const allBlogUrls = Array.from(new Set([...mdxBlogPosts.map(p => p.url), ...hardcodedBlogPosts.map(p => p.url)]))
   const blogPosts = allBlogUrls.map(url => {
     const mdx = mdxBlogPosts.find(p => p.url === url)
@@ -177,6 +225,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return mdx || hardcoded!
   })
 
+  // ============================================
+  // Combine and deduplicate guides (MDX takes precedence)
+  // ============================================
   const allGuideUrls = Array.from(new Set([...mdxGuides.map(g => g.url), ...hardcodedGuides.map(g => g.url)]))
   const guides = allGuideUrls.map(url => {
     const mdx = mdxGuides.find(g => g.url === url)
@@ -184,12 +235,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return mdx || hardcoded!
   })
 
-  return [
-    ...staticPages,
-    ...hubPages,
-    ...clusterPages,
-    ...blogPosts,
-    ...guides,
-    ...glossaryTerms,
-  ]
+  // ============================================
+  // Combine and deduplicate all pages
+  // Strategy and comparison pages may be duplicated if they're also in hubs
+  // ============================================
+  const allUrls = new Set<string>()
+  const allPages: MetadataRoute.Sitemap = []
+
+  const addPages = (pages: MetadataRoute.Sitemap) => {
+    for (const page of pages) {
+      if (!allUrls.has(page.url)) {
+        allUrls.add(page.url)
+        allPages.push(page)
+      }
+    }
+  }
+
+  // Add in priority order (higher priority items first to win deduplication)
+  addPages(staticPages)
+  addPages(hubPages)
+  addPages(clusterPages)
+  addPages(strategyPages)
+  addPages(comparisonPages)
+  addPages(statisticsPages)
+  addPages(blogPosts)
+  addPages(guides)
+  addPages(glossaryTerms)
+
+  return allPages
 }

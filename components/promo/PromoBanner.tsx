@@ -1,14 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import { X, Flame } from 'lucide-react'
+import { Flame } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePromo } from './PromoProvider'
 
 const BUNDLE_URL = '/bundle'
 
 export function PromoBanner() {
-  const { isBannerVisible, dismissBanner } = usePromo()
+  const { isBannerVisible } = usePromo()
 
   return (
     <AnimatePresence>
@@ -43,14 +43,6 @@ export function PromoBanner() {
               >
                 Get It Now
               </Link>
-
-              <button
-                onClick={dismissBanner}
-                className="flex-shrink-0 p-1 hover:bg-white/20 rounded transition-colors ml-1 sm:ml-2"
-                aria-label="Dismiss banner"
-              >
-                <X className="w-4 h-4" />
-              </button>
             </div>
           </div>
         </motion.div>

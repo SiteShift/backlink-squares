@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getHubContent, getHubClusters, getClusterContent } from '@/lib/content'
+import { getHubContent, getHubClusters, getClusterContent, resolveSiblingPages, resolveCrossHubLinks } from '@/lib/content'
 import { ClusterPage } from '@/components/content/ClusterPage'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
@@ -66,6 +66,14 @@ export default async function ResourceClusterPage({ params }: PageProps) {
     notFound()
   }
 
+  // Resolve internal links from metadata
+  const siblingPageLinks = cluster.siblingPages
+    ? resolveSiblingPages(HUB_SLUG, cluster.siblingPages)
+    : []
+  const crossHubLinks = cluster.crossHubLinks
+    ? resolveCrossHubLinks(cluster.crossHubLinks)
+    : []
+
   const components = useMDXComponents({})
   const canonicalUrl = `${BASE_URL}/${HUB_SLUG}/${slug}`
 
@@ -92,6 +100,8 @@ export default async function ResourceClusterPage({ params }: PageProps) {
         cluster={cluster}
         hub={hub}
         siblings={siblings}
+        siblingPageLinks={siblingPageLinks}
+        crossHubLinks={crossHubLinks}
         content={
           <MDXRemote
             source={cluster.content}

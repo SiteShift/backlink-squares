@@ -1,0 +1,477 @@
+---
+title: "Backlink Audit Template: Complete Spreadsheet and Process Guide"
+description: "Step-by-step backlink audit template with spreadsheet structure, scoring methodology, and action planning. Identify toxic links and clean up your profile."
+metaTitle: "Backlink Audit Template: Free Spreadsheet & Guide [2026]"
+metaDescription: "Download our backlink audit template with complete spreadsheet structure, toxic link identification criteria, and disavow decision framework."
+primaryKeyword: "backlink audit template"
+secondaryKeywords: ["link audit spreadsheet", "toxic link checker template", "backlink analysis template", "disavow list template"]
+searchIntent: "commercial"
+author: "SEO Backlinks Team"
+lastUpdated: "2026-01-23"
+resourceType: "template"
+downloadable: true
+parentHub: "resources"
+---
+
+A systematic backlink audit protects your site from algorithm penalties and identifies opportunities to improve your link profile. This template provides the complete framework for auditing backlinks, from data collection through action planning.
+
+Use this template quarterly for ongoing maintenance, or immediately if you suspect link quality issues affecting your rankings.
+
+---
+
+## When to Conduct a Backlink Audit
+
+### Scheduled Audits
+
+| Audit Type | Frequency | Purpose |
+|------------|-----------|---------|
+| Quick health check | Monthly | Monitor key metrics |
+| Standard audit | Quarterly | Identify new issues |
+| Comprehensive audit | Annually | Deep profile analysis |
+
+### Triggered Audits
+
+Conduct an immediate audit when:
+
+- Rankings drop significantly with no obvious cause
+- You receive a manual action notice from Google
+- You've acquired a domain with unknown link history
+- Competitor negative SEO is suspected
+- Major algorithm update affects your niche
+- You've recently disavowed links and want to verify
+
+---
+
+## Audit Process Overview
+
+```
+Phase 1: Data Collection
+    ↓
+Phase 2: Profile Overview Analysis
+    ↓
+Phase 3: Link-by-Link Evaluation
+    ↓
+Phase 4: Categorisation
+    ↓
+Phase 5: Action Planning
+    ↓
+Phase 6: Execution
+    ↓
+Phase 7: Documentation
+```
+
+---
+
+## Phase 1: Data Collection Template
+
+### Required Exports
+
+| Source | What to Export | Format |
+|--------|---------------|--------|
+| Ahrefs | Referring Domains | CSV |
+| Semrush | Backlinks | CSV |
+| Moz | Linking Domains | CSV |
+| Google Search Console | External Links | CSV |
+
+### Master Data Consolidation
+
+Combine all exports into a single master spreadsheet with these columns:
+
+| Column | Field | Source |
+|--------|-------|--------|
+| A | Source Domain | All exports |
+| B | Source URL | All exports |
+| C | Target URL | All exports |
+| D | Anchor Text | All exports |
+| E | Link Type | Tool data |
+| F | First Seen | Tool data |
+| G | Last Seen | Tool data |
+| H | Source DA/DR | Ahrefs/Moz |
+| I | Source Traffic | Semrush/SimilarWeb |
+| J | Spam Score | Moz |
+| K | Found In | Which tool(s) |
+
+### Deduplication Process
+
+1. Sort by Source Domain
+2. Remove exact duplicate rows
+3. For same domain, different pages: Keep all unique source URLs
+4. Record final count vs. starting count
+
+**Starting links**: _______________
+**After deduplication**: _______________
+**Duplicates removed**: _______________
+
+---
+
+## Phase 2: Profile Overview Analysis
+
+### High-Level Metrics
+
+Complete this summary before detailed analysis:
+
+| Metric | Value | Benchmark | Status |
+|--------|-------|-----------|--------|
+| Total referring domains | ___ | N/A | |
+| Total backlinks | ___ | N/A | |
+| DoFollow percentage | ___% | 70-85% | |
+| Referring domain growth (6 mo) | ___ | Positive | |
+| Average source DA | ___ | 25+ ideal | |
+| Links from DA 50+ | ___ | 10%+ ideal | |
+| Links from DA 10- | ___ | &lt;30% ideal | |
+
+### Anchor Text Distribution
+
+| Anchor Type | Count | Percentage | Target Range | Status |
+|-------------|-------|------------|--------------|--------|
+| Branded (company name) | ___ | ___% | 30-40% | |
+| Naked URL | ___ | ___% | 20-30% | |
+| Generic ("click here", etc.) | ___ | ___% | 10-20% | |
+| Exact match keyword | ___ | ___% | &lt;5% | |
+| Partial match keyword | ___ | ___% | 10-20% | |
+| Other/Misc | ___ | ___% | Variable | |
+
+**Red flags**:
+- [ ] Exact match anchors exceed 5%
+- [ ] Single anchor type dominates (&gt;50%)
+- [ ] Branded anchors below 20%
+
+### Top Referring Domains Review
+
+List your top 20 referring domains by link count:
+
+| Rank | Domain | Links | DA | Relevant? | Concern? |
+|------|--------|-------|----|-----------| ---------|
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+| ... | | | | | |
+| 20 | | | | | |
+
+**Questions to answer**:
+- Are these legitimate, relevant sites?
+- Is any single domain providing excessive links?
+- Are there obvious spam domains in the top 20?
+
+---
+
+## Phase 3: Link-by-Link Evaluation
+
+### Evaluation Criteria
+
+For each link, assess these factors:
+
+**Domain Quality (0-3 points)**
+| Score | Criteria |
+|-------|----------|
+| 3 | DA 40+, real traffic, legitimate site |
+| 2 | DA 20-39, some traffic, appears legitimate |
+| 1 | DA 10-19, minimal traffic, questionable |
+| 0 | DA &lt;10, no traffic, clear spam signals |
+
+**Relevance (0-3 points)**
+| Score | Criteria |
+|-------|----------|
+| 3 | Same industry, directly relevant topic |
+| 2 | Related industry, tangentially relevant |
+| 1 | Different industry, weak relevance |
+| 0 | Completely unrelated, no logical connection |
+
+**Trust Signals (0-3 points)**
+| Score | Criteria |
+|-------|----------|
+| 3 | Established site, clear ownership, professional |
+| 2 | Legitimate site, standard trust indicators |
+| 1 | Limited trust signals, some concerns |
+| 0 | No trust indicators, suspicious patterns |
+
+**Spam Indicators (-3 to 0)**
+| Score | Criteria |
+|-------|----------|
+| 0 | No spam signals |
+| -1 | Minor spam indicators (excessive ads, thin content) |
+| -2 | Moderate spam signals (link farm patterns, PBN indicators) |
+| -3 | Clear spam site (known bad neighborhood, malware) |
+
+### Total Link Score
+
+```
+Total Score = Domain Quality + Relevance + Trust Signals + Spam Indicators
+```
+
+| Score Range | Category | Action |
+|-------------|----------|--------|
+| 7-9 | High Quality | Keep, no action needed |
+| 4-6 | Acceptable | Keep, monitor |
+| 1-3 | Low Quality | Review, consider disavow |
+| 0 or negative | Toxic | Disavow recommended |
+
+---
+
+## Phase 4: Categorisation Template
+
+### Link Categories
+
+Sort all evaluated links into these categories:
+
+**Category A: High Quality (Keep)**
+- Score 7-9
+- Valuable editorial links
+- Relevant, authoritative sources
+
+| Domain | Link Score | Notes |
+|--------|------------|-------|
+| | | |
+
+**Category B: Acceptable (Keep, Monitor)**
+- Score 4-6
+- Low but not harmful
+- May improve site reputation over time
+
+| Domain | Link Score | Notes |
+|--------|------------|-------|
+| | | |
+
+**Category C: Low Quality (Review)**
+- Score 1-3
+- Some spam signals
+- Questionable value
+
+| Domain | Link Score | Notes | Decision |
+|--------|------------|-------|----------|
+| | | | |
+
+**Category D: Toxic (Disavow)**
+- Score 0 or negative
+- Clear spam patterns
+- Known bad neighborhoods
+
+| Domain | Link Score | Spam Signals | Priority |
+|--------|------------|--------------|----------|
+| | | | |
+
+### Category Summary
+
+| Category | Count | Percentage | Action |
+|----------|-------|------------|--------|
+| A: High Quality | ___ | ___% | No action |
+| B: Acceptable | ___ | ___% | Monitor |
+| C: Low Quality | ___ | ___% | Review case-by-case |
+| D: Toxic | ___ | ___% | Disavow |
+| **Total** | ___ | 100% | |
+
+---
+
+## Phase 5: Action Planning
+
+### Removal Request Template
+
+Before disavowing, attempt removal for accessible sites:
+
+```
+Subject: Link removal request - [Your Domain]
+
+Hello,
+
+I'm reaching out regarding a link from your site to ours:
+
+From: [Source URL]
+To: [Your URL]
+
+We're conducting a link profile cleanup and have identified
+this link as one we'd like removed. This isn't a reflection
+on your site specifically—we're simply cleaning up our
+overall profile.
+
+Would you be able to remove this link?
+
+If you have any questions, please let me know.
+
+Thank you,
+[Your Name]
+[Your Website]
+```
+
+### Removal Tracking
+
+| Domain | Request Sent | Response | Outcome | Disavow? |
+|--------|--------------|----------|---------|----------|
+| | | | | |
+
+**Process**:
+1. Send removal request
+2. Wait 2-4 weeks for response
+3. Send one follow-up if no response
+4. Move non-responsive to disavow list
+
+### Disavow File Template
+
+```
+# Backlink Audit - [Date]
+# [Your Domain] link profile cleanup
+# Total domains disavowed: [count]
+
+# Category: Link farms
+# Evidence: [brief description]
+domain:spamsite1.com
+domain:spamsite2.com
+
+# Category: Comment spam
+# Evidence: Automated comment links
+domain:commentspam1.com
+domain:commentspam2.com
+
+# Category: Irrelevant foreign language sites
+# Evidence: No topical relevance, low quality
+domain:foreignspam1.com
+
+# Individual URLs (domain otherwise acceptable)
+# Reason: [specific reason for URL-level disavow]
+https://goodsite.com/spammy-page/
+```
+
+### Disavow Best Practices
+
+**DO**:
+- Disavow at domain level for obvious spam sites
+- Use URL-level disavow when only specific pages are problematic
+- Include comments explaining your reasoning
+- Keep a backup of all disavow file versions
+
+**DON'T**:
+- Disavow good links out of excessive caution
+- Submit disavow file without thorough review
+- Forget to document your decisions
+- Disavow competitor links (unless genuinely spammy)
+
+---
+
+## Phase 6: Execution Checklist
+
+### Pre-Submission Checklist
+
+- [ ] All toxic links reviewed individually (not just spam score)
+- [ ] Removal requests sent and allowed time for response
+- [ ] Disavow file formatted correctly
+- [ ] Disavow file reviewed by second person (if available)
+- [ ] Documentation complete
+- [ ] Backup of current disavow file saved
+
+### Submission Process
+
+1. Go to Google Search Console
+2. Navigate to Links section
+3. Access Disavow Links tool
+4. Select property
+5. Upload disavow file
+6. Confirm submission
+
+### Post-Submission
+
+- [ ] Record submission date: _______________
+- [ ] Set reminder for 2-week check
+- [ ] Set reminder for 30-day review
+- [ ] Set reminder for 90-day comprehensive review
+
+---
+
+## Phase 7: Documentation Template
+
+### Audit Summary Report
+
+**Audit Details**
+| Field | Value |
+|-------|-------|
+| Audit date | |
+| Auditor | |
+| Tools used | |
+| Time spent | |
+
+**Profile Summary**
+| Metric | Before Audit | After Cleanup |
+|--------|--------------|---------------|
+| Total referring domains | | |
+| Average domain authority | | |
+| Spam score distribution | | |
+| Toxic link percentage | | |
+
+**Actions Taken**
+| Action | Count |
+|--------|-------|
+| Links reviewed | |
+| Removal requests sent | |
+| Removals achieved | |
+| Domains disavowed | |
+| URLs disavowed | |
+
+**Findings**
+- [Summary of main issues discovered]
+- [Patterns identified]
+- [Recommendations for future]
+
+**Next Steps**
+- [ ] Schedule next audit: [date]
+- [ ] Monitor [specific concerns]
+- [ ] Implement [preventive measures]
+
+---
+
+## Toxic Link Red Flags
+
+### Immediate Disavow Signals
+
+These characteristics indicate clear spam—disavow without hesitation:
+
+| Signal | Description |
+|--------|-------------|
+| Porn/gambling/pharma spam | Links from unrelated adult, gambling, or pharmaceutical sites |
+| Known link networks | Sites identified as PBNs or link farms |
+| Hacked sites | Sites that have been compromised |
+| Exact match anchor farms | Multiple links with exact keyword anchors |
+| Foreign language spam | Irrelevant foreign sites with no logical connection |
+| Sitewide footer/sidebar links | Manipulative site-wide placements |
+
+### Review Required Signals
+
+These need case-by-case evaluation:
+
+| Signal | Evaluation Needed |
+|--------|------------------|
+| Low DA sites | Is it a legitimate new site or spam? |
+| Directory links | Is the directory legitimate or spam? |
+| Forum/comment links | Natural participation or spam? |
+| Reciprocal links | Natural relationship or scheme? |
+
+---
+
+## Ongoing Monitoring Setup
+
+### Alert Configuration
+
+Set up monitoring to catch issues early:
+
+| Monitor | Tool | Frequency | Alert Threshold |
+|---------|------|-----------|-----------------|
+| New backlinks | Ahrefs/Semrush | Weekly | Any new link |
+| Lost backlinks | Ahrefs/Semrush | Weekly | Any lost link |
+| Spam score changes | Moz | Monthly | &gt;10% increase |
+| Referring domain drops | Any tool | Monthly | &gt;5% loss |
+
+### Monthly Quick Check
+
+| Check | Status | Notes |
+|-------|--------|-------|
+| New links reviewed for spam | | |
+| Lost valuable links identified | | |
+| Spam score stable | | |
+| No new toxic patterns | | |
+
+---
+
+## Related Resources
+
+- [Backlink Audit Guide](/backlink-audit/how-to-audit) - Complete audit methodology
+- [Toxic Links Guide](/backlink-audit/toxic-links) - Identifying harmful links
+- [Disavow File Guide](/backlink-audit/disavow-guide) - When and how to disavow
+- [Link Quality Checklist](/resources/link-quality-checklist) - Evaluating link quality
+- [Competitor Analysis Template](/resources/competitor-analysis-template) - Benchmark against competitors

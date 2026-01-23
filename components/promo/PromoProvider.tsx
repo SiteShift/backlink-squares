@@ -2,16 +2,12 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
-const BANNER_DISMISSED_KEY = 'backlink-bundle-banner-dismissed'
-
 interface PromoContextType {
   isBannerVisible: boolean
-  dismissBanner: () => void
 }
 
 const PromoContext = createContext<PromoContextType>({
   isBannerVisible: false,
-  dismissBanner: () => {},
 })
 
 export function usePromo() {
@@ -24,16 +20,8 @@ export function PromoProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true)
-    const dismissed = localStorage.getItem(BANNER_DISMISSED_KEY)
-    if (!dismissed) {
-      setIsBannerVisible(true)
-    }
+    setIsBannerVisible(true)
   }, [])
-
-  const dismissBanner = () => {
-    setIsBannerVisible(false)
-    localStorage.setItem(BANNER_DISMISSED_KEY, 'true')
-  }
 
   // Apply CSS class to body for header positioning
   useEffect(() => {
@@ -47,7 +35,7 @@ export function PromoProvider({ children }: { children: ReactNode }) {
   }, [isBannerVisible, mounted])
 
   return (
-    <PromoContext.Provider value={{ isBannerVisible, dismissBanner }}>
+    <PromoContext.Provider value={{ isBannerVisible }}>
       {children}
     </PromoContext.Provider>
   )

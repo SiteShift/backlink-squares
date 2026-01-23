@@ -1,0 +1,474 @@
+---
+title: "Competitor Backlink Analysis Template: Gap Analysis Framework"
+description: "Complete competitor backlink analysis template with gap identification, opportunity scoring, and outreach planning. Find links your competitors have that you're missing."
+metaTitle: "Competitor Backlink Analysis Template: Find Link Gaps [2026]"
+metaDescription: "Free competitor backlink analysis template. Systematic framework for identifying link gaps, scoring opportunities, and prioritising outreach."
+primaryKeyword: "competitor analysis template"
+secondaryKeywords: ["competitor backlink analysis", "link gap analysis", "competitor link gap template", "backlink gap template"]
+searchIntent: "commercial"
+author: "SEO Backlinks Team"
+lastUpdated: "2026-01-23"
+resourceType: "template"
+downloadable: true
+parentHub: "resources"
+---
+
+Competitor backlink analysis reveals the link opportunities you are missing. By systematically analysing where competitors get their links, you can identify high-probability targets and replicate their success.
+
+This template provides the complete framework for identifying, scoring, and prioritising competitor link gaps.
+
+---
+
+## Analysis Framework Overview
+
+```
+Step 1: Competitor Selection
+    ↓
+Step 2: Data Collection
+    ↓
+Step 3: Gap Identification
+    ↓
+Step 4: Opportunity Scoring
+    ↓
+Step 5: Strategy Mapping
+    ↓
+Step 6: Outreach Prioritisation
+    ↓
+Step 7: Progress Tracking
+```
+
+---
+
+## Step 1: Competitor Selection
+
+### Competitor Identification Criteria
+
+Select 3-5 competitors based on:
+
+| Criterion | Why It Matters |
+|-----------|----------------|
+| Rank for your target keywords | Similar SEO goals |
+| Similar domain authority range | Achievable link targets |
+| Same industry/niche | Relevant link opportunities |
+| Comparable business model | Similar content types |
+
+### Competitor Selection Template
+
+| # | Competitor | Domain | DA | Main Keywords | Why Selected |
+|---|------------|--------|----| --------------|--------------|
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+| 4 | | | | | |
+| 5 | | | | | |
+
+### Competitor Profile Summary
+
+For each competitor, document:
+
+**Competitor 1: [Name]**
+| Attribute | Value |
+|-----------|-------|
+| Domain | |
+| Domain Authority | |
+| Total Referring Domains | |
+| Total Backlinks | |
+| Primary Topics | |
+| Link Building Strengths | |
+| Notable Link Sources | |
+
+(Repeat for each competitor)
+
+---
+
+## Step 2: Data Collection
+
+### Export Requirements
+
+From your backlink analysis tool, export:
+
+| Export | Your Site | Comp 1 | Comp 2 | Comp 3 | Comp 4 | Comp 5 |
+|--------|-----------|--------|--------|--------|--------|--------|
+| Referring Domains | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| All Backlinks | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Anchor Text Report | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
+### Data Fields to Include
+
+Ensure each export contains:
+
+- Source domain
+- Source URL (for backlink exports)
+- Target URL
+- Domain Rating/Authority
+- Anchor text
+- Link type (dofollow/nofollow)
+- First seen date
+
+### Master Database Setup
+
+Create a consolidated spreadsheet with these columns:
+
+| Column | Field | Description |
+|--------|-------|-------------|
+| A | Referring Domain | The linking domain |
+| B | DA/DR | Domain authority score |
+| C | Links to You | Yes/No |
+| D | Links to Comp 1 | Yes/No |
+| E | Links to Comp 2 | Yes/No |
+| F | Links to Comp 3 | Yes/No |
+| G | Links to Comp 4 | Yes/No |
+| H | Links to Comp 5 | Yes/No |
+| I | Competitor Count | How many competitors have this link |
+| J | Gap Status | Gap / Match / You Only |
+| K | Traffic | Estimated monthly visitors |
+| L | Relevance | Score 1-5 |
+| M | Opportunity Type | Guest post, resource, etc. |
+| N | Priority Score | Calculated field |
+
+---
+
+## Step 3: Gap Identification
+
+### Gap Classification
+
+**Formula for Competitor Count (Column I)**:
+```
+=COUNTIF(D2:H2,"Yes")
+```
+
+**Formula for Gap Status (Column J)**:
+```
+=IF(AND(C2="No",I2&gt;0),"Gap",IF(AND(C2="Yes",I2=0),"You Only","Match"))
+```
+
+### Gap Summary Analysis
+
+| Metric | Formula | Your Count |
+|--------|---------|------------|
+| Total unique referring domains (all sites) | Count distinct domains | |
+| Domains linking to you | COUNTIF(C:C,"Yes") | |
+| Domains linking to any competitor | COUNTIF(I:I,"&gt;0") | |
+| **Gap domains** | COUNTIFS(C:C,"No",I:I,"&gt;0") | |
+| Gap percentage | Gaps / Total competitors' domains | |
+
+### Gap Distribution
+
+| Gap Type | Description | Count | % of Total Gaps |
+|----------|-------------|-------|-----------------|
+| All competitors | Links to every competitor, not you | | |
+| 3+ competitors | Links to majority of competitors | | |
+| 2 competitors | Links to some competitors | | |
+| 1 competitor only | Unique to one competitor | | |
+
+### Competitor-Specific Gaps
+
+| Competitor | Their Referring Domains | Shared with You | Gap Count | Gap % |
+|------------|------------------------|-----------------|-----------|-------|
+| Competitor 1 | | | | |
+| Competitor 2 | | | | |
+| Competitor 3 | | | | |
+| Competitor 4 | | | | |
+| Competitor 5 | | | | |
+
+---
+
+## Step 4: Opportunity Scoring
+
+### Scoring Criteria
+
+**Authority Score (0-30 points)**
+| DA Range | Points |
+|----------|--------|
+| 60+ | 30 |
+| 50-59 | 25 |
+| 40-49 | 20 |
+| 30-39 | 15 |
+| 20-29 | 10 |
+| 10-19 | 5 |
+| &lt;10 | 0 |
+
+**Competitor Coverage Score (0-25 points)**
+| Links To | Points |
+|----------|--------|
+| All 5 competitors | 25 |
+| 4 competitors | 20 |
+| 3 competitors | 15 |
+| 2 competitors | 10 |
+| 1 competitor | 5 |
+
+**Relevance Score (0-25 points)**
+| Relevance Level | Points |
+|-----------------|--------|
+| Perfect fit (5) | 25 |
+| Strong fit (4) | 20 |
+| Good fit (3) | 15 |
+| Moderate fit (2) | 10 |
+| Weak fit (1) | 5 |
+
+**Accessibility Score (0-20 points)**
+| Opportunity Type | Points |
+|------------------|--------|
+| Resource page (easy submission) | 20 |
+| Guest post accepting site | 18 |
+| Broken link opportunity | 15 |
+| Directory listing | 12 |
+| Editorial (harder to get) | 10 |
+| Partnership required | 5 |
+
+### Total Priority Score
+
+```
+Priority Score = Authority + Competitor Coverage + Relevance + Accessibility
+```
+
+| Score Range | Priority | Action |
+|-------------|----------|--------|
+| 80-100 | Critical | Pursue immediately |
+| 60-79 | High | Include in next campaign |
+| 40-59 | Medium | Standard outreach queue |
+| 20-39 | Low | Only if capacity allows |
+| 0-19 | Skip | Not worth pursuing |
+
+---
+
+## Step 5: Strategy Mapping
+
+### Opportunity Type Classification
+
+Review each gap domain and classify by how competitors got the link:
+
+| Category | Indicators | Your Strategy |
+|----------|------------|---------------|
+| **Guest Posts** | Author bio links, contributor pages | Pitch similar topics |
+| **Resource Pages** | Listed in resource collection | Submit for inclusion |
+| **Editorial Mentions** | In-article references | Create linkable content |
+| **Directories** | Directory listings | Submit your site |
+| **Partnerships** | Partner pages, sponsorships | Explore relationship |
+| **Digital PR** | News coverage, press | Create newsworthy content |
+| **Content Features** | Data citations, quotes | Create original research |
+
+### Strategy Summary
+
+| Opportunity Type | Count | % of Gaps | Your Content Needed | Effort Level |
+|------------------|-------|-----------|---------------------|--------------|
+| Guest Post | | | | Medium |
+| Resource Page | | | | Low |
+| Editorial | | | | High |
+| Directory | | | | Low |
+| Partnership | | | | High |
+| Digital PR | | | | High |
+| Content Feature | | | | Medium |
+
+### Content Gap Analysis
+
+What content do competitors have that earns these links?
+
+| Competitor | Top Linked Content | Content Type | Your Equivalent? |
+|------------|-------------------|--------------|------------------|
+| Comp 1 | | | Yes / No / Partial |
+| Comp 2 | | | Yes / No / Partial |
+| Comp 3 | | | Yes / No / Partial |
+| Comp 4 | | | Yes / No / Partial |
+| Comp 5 | | | Yes / No / Partial |
+
+### Content Creation Priorities
+
+Based on gap analysis, prioritise creating:
+
+| Content Priority | Topic | Competitors with Similar | Potential Link Sources |
+|------------------|-------|-------------------------|------------------------|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+
+---
+
+## Step 6: Outreach Prioritisation
+
+### Priority Outreach List
+
+Top 20 gap opportunities to pursue first:
+
+| Rank | Domain | DA | Competitors Linked | Type | Priority Score | Outreach Strategy |
+|------|--------|----|--------------------|------|----------------|-------------------|
+| 1 | | | | | | |
+| 2 | | | | | | |
+| 3 | | | | | | |
+| 4 | | | | | | |
+| 5 | | | | | | |
+| 6 | | | | | | |
+| 7 | | | | | | |
+| 8 | | | | | | |
+| 9 | | | | | | |
+| 10 | | | | | | |
+| 11 | | | | | | |
+| 12 | | | | | | |
+| 13 | | | | | | |
+| 14 | | | | | | |
+| 15 | | | | | | |
+| 16 | | | | | | |
+| 17 | | | | | | |
+| 18 | | | | | | |
+| 19 | | | | | | |
+| 20 | | | | | | |
+
+### Quick Wins List
+
+Low-effort opportunities to tackle first:
+
+| Domain | Opportunity Type | Effort | Expected Timeline |
+|--------|------------------|--------|-------------------|
+| | Directory submission | Low | 1 week |
+| | Resource page | Low | 2 weeks |
+| | Profile creation | Low | 1 week |
+
+### Campaign Batching
+
+Group opportunities by strategy for efficient execution:
+
+**Batch 1: Directory Submissions**
+- [List domains]
+- Estimated time: ___
+- Expected completion: ___
+
+**Batch 2: Resource Page Outreach**
+- [List domains]
+- Estimated time: ___
+- Expected completion: ___
+
+**Batch 3: Guest Post Pitches**
+- [List domains]
+- Estimated time: ___
+- Expected completion: ___
+
+**Batch 4: Content-Dependent Opportunities**
+- [List domains]
+- Content needed: ___
+- Estimated time after content: ___
+
+---
+
+## Step 7: Progress Tracking
+
+### Gap Closure Dashboard
+
+| Metric | Start | Current | Change |
+|--------|-------|---------|--------|
+| Total gap domains | | | |
+| Critical priority gaps | | | |
+| High priority gaps | | | |
+| Links acquired from gaps | | | |
+| Gap closure rate | | | |
+
+### Weekly Progress Log
+
+| Week | Outreach Sent | Responses | Links Won | Gap Domains Closed |
+|------|---------------|-----------|-----------|-------------------|
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+| 4 | | | | |
+| **Month Total** | | | | |
+
+### Competitor Parity Tracking
+
+Track your progress toward matching competitor profiles:
+
+| Competitor | Their RDs | Your RDs | Gap | Parity % |
+|------------|-----------|----------|-----|----------|
+| Competitor 1 | | | | |
+| Competitor 2 | | | | |
+| Competitor 3 | | | | |
+| Competitor 4 | | | | |
+| Competitor 5 | | | | |
+
+### Success by Strategy
+
+| Strategy | Outreach Volume | Response Rate | Conversion Rate | Links Won |
+|----------|-----------------|---------------|-----------------|-----------|
+| Guest Post | | | | |
+| Resource Page | | | | |
+| Directory | | | | |
+| Broken Link | | | | |
+| Editorial | | | | |
+
+---
+
+## Analysis Tips
+
+### High-Value Patterns to Find
+
+1. **Sites linking to all competitors but not you**
+   - Highest probability targets
+   - They clearly link to sites in your space
+
+2. **Consistent content types earning links**
+   - If all competitors get links from guides, create guides
+   - If data studies earn links, create original research
+
+3. **Relationship-based links**
+   - Identify competitors' partnerships
+   - Look for similar partnership opportunities
+
+4. **Content gaps competitors exploit**
+   - Topics competitors cover that you don't
+   - Opportunities to create better versions
+
+### Common Mistakes to Avoid
+
+1. **Pursuing every gap blindly**
+   - Not all gaps are worth closing
+   - Some links are relationship-specific
+   - Some are low quality
+
+2. **Ignoring link quality**
+   - High gap count doesn't mean high quality
+   - Always evaluate quality before pursuing
+
+3. **Copying competitor strategy exactly**
+   - What worked for them may not work for you
+   - Find your own angle
+
+4. **One-time analysis only**
+   - Competitors build new links constantly
+   - Refresh analysis quarterly
+
+---
+
+## Spreadsheet Formulas
+
+### Competitor Count
+```
+=COUNTIF(D2:H2,"Yes")
+```
+
+### Gap Identification
+```
+=IF(AND(C2="No",I2&gt;0),"Gap",IF(AND(C2="Yes",I2=0),"You Only","Match"))
+```
+
+### Priority Score
+```
+=IF(B2>=60,30,IF(B2>=50,25,IF(B2>=40,20,IF(B2>=30,15,IF(B2>=20,10,IF(B2>=10,5,0))))))+I2*5+L2*5+[Accessibility Score]
+```
+
+### Gap Percentage
+```
+=COUNTIFS(J:J,"Gap")/COUNTIF(J:J,"<>")
+```
+
+### Parity Percentage
+```
+=Your RDs / Competitor RDs * 100
+```
+
+---
+
+## Related Resources
+
+- [Competitor Analysis Guide](/backlink-audit/competitor-analysis) - Complete methodology
+- [Link Prospecting Guide](/outreach/prospecting) - Finding opportunities
+- [Link Building Spreadsheet Templates](/resources/link-building-spreadsheet-templates) - Tracking systems
+- [Outreach Email Templates](/resources/outreach-email-templates) - Email scripts
+- [Link Quality Checklist](/resources/link-quality-checklist) - Evaluating opportunities

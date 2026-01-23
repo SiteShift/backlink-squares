@@ -1,0 +1,259 @@
+---
+title: "Follow vs Nofollow Links: Understanding Link Attributes"
+description: "Learn the difference between follow and nofollow links, when to use each, and how different link attributes affect SEO and link equity."
+metaTitle: "Follow vs Nofollow Links: Complete SEO Guide [2026]"
+metaDescription: "Understand follow vs nofollow links and other link attributes. Learn when to use dofollow, nofollow, sponsored, and UGC attributes."
+primaryKeyword: "follow vs nofollow"
+secondaryKeywords: ["dofollow nofollow", "nofollow links", "follow links", "link attributes"]
+searchIntent: "informational"
+author: "SEO Backlinks Team"
+lastUpdated: "2026-01-22"
+termType: "glossary"
+relatedTerms: ["dofollow-link", "nofollow-link", "sponsored-link", "ugc-link"]
+---
+
+**Follow vs nofollow** refers to whether a link passes SEO value (PageRank) to the linked page. Follow links (default) pass equity, while nofollow links (rel="nofollow") tell search engines not to follow or count the link for ranking purposes.
+
+## Understanding Link Attributes
+
+### Default (Follow/Dofollow)
+
+**Standard links**:
+- No special attribute needed
+- Pass link equity
+- Count for rankings
+- Default browser behavior
+
+### Nofollow
+
+**rel="nofollow"**:
+- Tells search engines not to follow
+- Originally passed no equity
+- Now treated as a "hint"
+- Used for untrusted links
+
+### Sponsored
+
+**rel="sponsored"**:
+- Identifies paid links
+- Required for advertisements
+- Introduced in 2019
+- Clearer than nofollow alone
+
+### UGC (User Generated Content)
+
+**rel="ugc"**:
+- For user-created links
+- Comments, forum posts
+- Introduced in 2019
+- Signals content source
+
+---
+
+## How Link Attributes Work
+
+### In HTML
+
+**Examples**:
+```html
+<!-- Follow (default) -->
+<a href="https://example.com">Link</a>
+
+<!-- Nofollow -->
+<a href="https://example.com" rel="nofollow">Link</a>
+
+<!-- Sponsored -->
+<a href="https://example.com" rel="sponsored">Link</a>
+
+<!-- UGC -->
+<a href="https://example.com" rel="ugc">Link</a>
+
+<!-- Combined -->
+<a href="https://example.com" rel="nofollow sponsored">Link</a>
+```
+
+---
+
+## When to Use Each Attribute
+
+### Use Follow (Default) When
+
+**Appropriate for**:
+- Editorial links you endorse
+- Natural content references
+- Trusted sources
+- Links you vouch for
+
+### Use Nofollow When
+
+**Appropriate for**:
+- Links you can't vouch for
+- Uncertain quality links
+- Potentially manipulative links
+- Any link you don't endorse
+
+### Use Sponsored When
+
+**Required for**:
+- Paid placements
+- Advertisements
+- Sponsored content
+- Affiliate links
+- Any paid arrangement
+
+### Use UGC When
+
+**Appropriate for**:
+- User comments
+- Forum posts
+- User profiles
+- User-generated content
+
+---
+
+## Google's Treatment
+
+### Pre-2019
+
+**Original behavior**:
+- Nofollow = no PageRank passed
+- Nofollow = not followed/indexed
+- Binary interpretation
+
+### Post-2019
+
+**Current behavior**:
+- All attributes treated as "hints"
+- Google may still follow/crawl
+- May still pass some signals
+- More nuanced approach
+
+### Why the Change
+
+**Google's reasoning**:
+- Learn from all links
+- Not waste useful signals
+- Better understand link graph
+- Reduce spam effectiveness
+
+---
+
+## Impact on Link Building
+
+### Dofollow Links
+
+**SEO value**:
+- Pass link equity
+- Contribute to rankings
+- Most valuable for SEO
+- What link builders target
+
+### Nofollow Links
+
+**SEO value**:
+- Traditionally no direct value
+- May still pass some signals
+- Still provide traffic
+- Brand exposure value
+
+---
+
+## Checking Link Attributes
+
+### Browser Methods
+
+**Right-click → Inspect**:
+- View page source
+- Find the link
+- Check rel attribute
+
+### Tools
+
+**Helpful extensions**:
+- NoFollow extension (Chrome)
+- MozBar
+- Ahrefs toolbar
+- Various SEO extensions
+
+### Bulk Analysis
+
+**For many links**:
+- Ahrefs backlink reports
+- Semrush backlink data
+- Moz link reports
+- Shows follow/nofollow
+
+---
+
+## Common Questions
+
+### Do nofollow links have value?
+
+Yes, beyond SEO: traffic, brand exposure, and Google now treats them as hints that may pass some signals.
+
+### Should I only build dofollow links?
+
+No. A natural profile has both. Nofollow from quality sites still provides value. Focus on quality, not just attributes.
+
+### Can I make my links nofollow?
+
+Yes, you control your outbound links. Add rel="nofollow" to any link you don't want to endorse.
+
+### Does Google always respect nofollow?
+
+Since 2019, nofollow is a "hint" not a directive. Google may still follow and may pass some value.
+
+---
+
+## Best Practices
+
+### For Your Outbound Links
+
+**Use appropriate attributes**:
+- Default for trusted, editorial links
+- Nofollow for uncertain quality
+- Sponsored for paid links
+- UGC for user content
+
+### For Link Building
+
+**Focus on**:
+- Quality over attribute obsession
+- Natural mix of follow/nofollow
+- Building real value
+- Not gaming attributes
+
+---
+
+## Summary
+
+Link attributes tell search engines how to treat links:
+
+**Types**:
+- Follow (default): Passes equity
+- Nofollow: Originally no equity
+- Sponsored: Paid links
+- UGC: User content
+
+**Current reality**:
+- All treated as "hints"
+- May still pass some value
+- Follow still most valuable
+- Natural mix is normal
+
+**Best practices**:
+- Use appropriate attributes
+- Don't obsess over attributes
+- Focus on link quality
+- Accept natural mix
+
+Understanding link attributes helps both link building and proper attribution.
+
+---
+
+## Related Terms
+
+- [Dofollow Link](/glossary/dofollow-link)
+- [Nofollow Link](/glossary/nofollow-link)
+- [Sponsored Link](/glossary/sponsored-link)
+- [UGC Link](/glossary/ugc-link)
