@@ -161,6 +161,20 @@ export function Footer() {
               />
             </a>
 
+            {/* Turbo0 Badge */}
+            <a
+              href="https://turbo0.com/item/lifescoretest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <img
+                src="https://img.turbo0.com/badge-listed-dark.svg"
+                alt="Listed on Turbo0"
+                className="h-8 w-auto"
+              />
+            </a>
+
             {/* Color dots signature */}
             <div className="flex items-center gap-4">
               <span className="text-xs text-surface-400 hidden sm:block">Built with</span>
