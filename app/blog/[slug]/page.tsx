@@ -9,7 +9,7 @@ import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
 import { BlogCard } from '@/components/content/BlogCard'
 import { BundleCard } from '@/components/promo'
-import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
 import { useMDXComponents } from '@/mdx-components'
@@ -85,6 +85,9 @@ export default function BlogPostPage({ params }: Props) {
         image={post.image || `${BASE_URL}/og-image.png`}
       />
       <BreadcrumbSchema items={breadcrumbs} />
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSchema questions={post.faqs} />
+      )}
 
       <Header />
       <StickyPromo />

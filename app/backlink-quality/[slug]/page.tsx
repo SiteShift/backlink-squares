@@ -4,7 +4,7 @@ import { getHubContent, getHubClusters, getClusterContent, resolveSiblingPages, 
 import { ClusterPage } from '@/components/content/ClusterPage'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
-import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 
 const HUB_SLUG = 'backlink-quality'
 const BASE_URL = 'https://backlinkgrid.com'
@@ -96,6 +96,9 @@ export default async function BacklinkQualityClusterPage({ params }: PageProps) 
           { name: cluster.title, url: canonicalUrl },
         ]}
       />
+      {cluster.faqs && cluster.faqs.length > 0 && (
+        <FAQSchema questions={cluster.faqs} />
+      )}
       <ClusterPage
         cluster={cluster}
         hub={hub}

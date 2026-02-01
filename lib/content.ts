@@ -11,9 +11,13 @@ export interface ContentMeta {
   description: string
   date: string
   author?: string
+  authorTitle?: string
   keywords?: string[]
   readingTime: string
   image?: string
+  metaTitle?: string
+  metaDescription?: string
+  faqs?: FAQ[]
 }
 
 export interface ContentItem extends ContentMeta {
@@ -44,6 +48,12 @@ export interface HubContent extends HubMeta {
   content: string
 }
 
+// FAQ type for structured FAQ content
+export interface FAQ {
+  question: string
+  answer: string
+}
+
 // Cluster content type for supporting pages
 export interface ClusterMeta {
   slug: string
@@ -57,11 +67,13 @@ export interface ClusterMeta {
   wordCount: number
   lastUpdated: string
   author: string
+  authorTitle?: string
   readingTime: string
   parentHub: string
   siblingPages?: string[]
   crossHubLinks?: string[]
   image?: string
+  faqs?: FAQ[]
 }
 
 export interface ClusterContent extends ClusterMeta {
@@ -131,9 +143,13 @@ export function getBlogPost(slug: string): ContentItem | null {
     description: data.description || '',
     date: data.date || new Date().toISOString(),
     author: data.author || 'SEO Backlinks',
+    authorTitle: data.authorTitle,
     keywords: data.keywords || [],
     readingTime: calculateReadingTime(content),
     image: data.image,
+    metaTitle: data.metaTitle,
+    metaDescription: data.metaDescription,
+    faqs: data.faqs || [],
     content,
   }
 }
@@ -419,11 +435,13 @@ export function getClusterContent(hubSlug: string, clusterSlug: string): Cluster
     wordCount: content.split(/\s+/).length,
     lastUpdated: data.lastUpdated || data.date || new Date().toISOString(),
     author: data.author || 'SEO Backlinks',
+    authorTitle: data.authorTitle,
     readingTime: calculateReadingTime(content),
     parentHub: hubSlug,
     siblingPages: data.siblingPages || [],
     crossHubLinks: data.crossHubLinks || [],
     image: data.image,
+    faqs: data.faqs || [],
     content,
   }
 }
