@@ -6,16 +6,48 @@ const footerLinks = {
     { href: '/how-it-works', label: 'How It Works' },
     { href: '/#grid', label: 'Buy a Square' },
     { href: '/pricing', label: 'Pricing' },
-    { href: '/statistics', label: 'Statistics' },
+    { href: '/bundle', label: 'Bundle Deal' },
+  ],
+  learn: [
+    { href: '/backlinks', label: 'Backlinks' },
+    { href: '/link-building', label: 'Link Building' },
+    { href: '/backlink-quality', label: 'Backlink Quality' },
+    { href: '/backlink-audit', label: 'Backlink Audit' },
+    { href: '/link-building-tactics', label: 'Link Tactics' },
+    { href: '/digital-pr', label: 'Digital PR' },
+  ],
+  tools: [
+    { href: '/tools', label: 'All Tools' },
+    { href: '/tools/free-backlink-checker', label: 'Free Backlink Checker' },
+    { href: '/tools/backlink-analyzer', label: 'Backlink Audit Checklist' },
+    { href: '/tools/roi-calculator', label: 'ROI Calculator' },
   ],
   resources: [
     { href: '/blog', label: 'Blog' },
     { href: '/guides', label: 'Guides' },
     { href: '/glossary', label: 'Glossary' },
+    { href: '/comparisons', label: 'Comparisons' },
+    { href: '/statistics', label: 'Statistics' },
+    { href: '/resources', label: 'Templates' },
+  ],
+  popular: [
+    { href: '/guides/link-building-strategies-guide', label: 'Link Building Strategies' },
+    { href: '/blog/best-guest-posting-sites-2026', label: 'Guest Posting Sites' },
+    { href: '/blog/best-free-backlink-checkers', label: 'Free Backlink Checkers' },
+    { href: '/comparisons/ahrefs-vs-moz', label: 'Ahrefs vs Moz' },
+    { href: '/glossary/domain-authority', label: 'Domain Authority' },
+  ],
+  industries: [
+    { href: '/industries/saas', label: 'SaaS' },
+    { href: '/industries/ecommerce', label: 'E-commerce' },
+    { href: '/industries/local-business', label: 'Local Business' },
+    { href: '/industries/b2b', label: 'B2B' },
+    { href: '/industries/startup', label: 'Startups' },
   ],
   company: [
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
+    { href: '/sitemap-page', label: 'Sitemap' },
     { href: '/terms', label: 'Terms' },
     { href: '/privacy', label: 'Privacy' },
   ],
@@ -34,9 +66,10 @@ export function Footer() {
       <div className="container-wide">
         {/* Main Footer */}
         <div className="py-16 lg:py-20">
-          <div className="grid grid-cols-2 md:grid-cols-12 gap-8 lg:gap-12">
+          {/* Top Section: Brand + Primary Links */}
+          <div className="grid grid-cols-2 md:grid-cols-12 gap-8 lg:gap-12 mb-12 pb-12 border-b border-surface-200">
             {/* Brand Column */}
-            <div className="col-span-2 md:col-span-4 lg:col-span-5">
+            <div className="col-span-2 md:col-span-4 lg:col-span-3">
               <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
                 {/* Logo */}
                 <div className="relative w-10 h-10 grid grid-cols-3 gap-[2px] p-[2px] bg-surface-950">
@@ -78,8 +111,8 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Links Columns */}
-            <div className="md:col-span-2 lg:col-span-2">
+            {/* Product Links */}
+            <div className="md:col-span-2">
               <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
                 Product
               </h3>
@@ -98,7 +131,48 @@ export function Footer() {
               </ul>
             </div>
 
-            <div className="md:col-span-2 lg:col-span-2">
+            {/* Learn Links */}
+            <div className="md:col-span-2">
+              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
+                Learn
+              </h3>
+              <ul className="space-y-3">
+                {footerLinks.learn.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="group inline-flex items-center gap-1 text-sm text-surface-600 hover:text-surface-950 transition-colors"
+                    >
+                      {link.label}
+                      <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Tools Links */}
+            <div className="md:col-span-2">
+              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
+                Free Tools
+              </h3>
+              <ul className="space-y-3">
+                {footerLinks.tools.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="group inline-flex items-center gap-1 text-sm text-surface-600 hover:text-surface-950 transition-colors"
+                    >
+                      {link.label}
+                      <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Resources Links */}
+            <div className="md:col-span-2">
               <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
                 Resources
               </h3>
@@ -116,8 +190,52 @@ export function Footer() {
                 ))}
               </ul>
             </div>
+          </div>
 
-            <div className="md:col-span-2 lg:col-span-2">
+          {/* Bottom Section: Popular, Industries, Company */}
+          <div className="grid grid-cols-2 md:grid-cols-12 gap-8 lg:gap-12">
+            {/* Popular Pages */}
+            <div className="col-span-2 md:col-span-4">
+              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
+                Popular Pages
+              </h3>
+              <ul className="space-y-3">
+                {footerLinks.popular.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="group inline-flex items-center gap-1 text-sm text-surface-600 hover:text-surface-950 transition-colors"
+                    >
+                      {link.label}
+                      <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Industries */}
+            <div className="md:col-span-3">
+              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
+                Industries
+              </h3>
+              <ul className="space-y-3">
+                {footerLinks.industries.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="group inline-flex items-center gap-1 text-sm text-surface-600 hover:text-surface-950 transition-colors"
+                    >
+                      {link.label}
+                      <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div className="md:col-span-2">
               <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
                 Company
               </h3>
@@ -134,6 +252,23 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Newsletter/CTA */}
+            <div className="col-span-2 md:col-span-3">
+              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
+                Get Started
+              </h3>
+              <p className="text-sm text-surface-600 mb-4">
+                Permanent dofollow backlinks starting at just $1.
+              </p>
+              <Link
+                href="/pricing"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-brand-red text-white text-sm font-bold hover:bg-red-700 transition-colors"
+              >
+                View Pricing
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
