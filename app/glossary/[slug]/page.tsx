@@ -141,7 +141,7 @@ export default async function GlossaryTermPage({ params }: Props) {
 
         {/* Content */}
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="bg-white border-3 border-dark p-8 lg:p-12 prose prose-lg prose-slate max-w-none" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
+          <div className="bg-white border-3 border-dark p-8 lg:p-12 prose prose-lg prose-slate max-w-none overflow-x-auto" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
             <MDXRemote source={term.content} components={components} />
           </div>
 

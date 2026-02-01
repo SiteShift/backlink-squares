@@ -169,8 +169,8 @@ export function ClusterPage({
               </aside>
 
               {/* Main Content */}
-              <div className="lg:col-span-3">
-                <article className="prose prose-lg prose-slate max-w-none bg-white border-3 border-dark p-8 lg:p-12">
+              <div className="lg:col-span-3 min-w-0">
+                <article className="prose prose-lg prose-slate max-w-none bg-white border-3 border-dark p-8 lg:p-12 overflow-x-auto">
                   {content}
                 </article>
 

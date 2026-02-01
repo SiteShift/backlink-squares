@@ -112,6 +112,33 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </blockquote>
     ),
+    // Custom table with overflow handling
+    table: ({ children, ...props }) => (
+      <div className="overflow-x-auto my-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <table
+          className="min-w-full border-collapse border-2 border-dark text-sm"
+          {...props}
+        >
+          {children}
+        </table>
+      </div>
+    ),
+    th: ({ children, ...props }) => (
+      <th
+        className="bg-bauhaus-cream border-2 border-dark px-4 py-2 text-left font-bold text-dark"
+        {...props}
+      >
+        {children}
+      </th>
+    ),
+    td: ({ children, ...props }) => (
+      <td
+        className="border-2 border-dark px-4 py-2 text-dark/80"
+        {...props}
+      >
+        {children}
+      </td>
+    ),
     ...components,
   }
 }

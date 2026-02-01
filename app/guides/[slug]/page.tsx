@@ -167,8 +167,8 @@ export default function GuidePage({ params }: Props) {
             </aside>
 
             {/* Main Content */}
-            <article className="bg-white border-3 border-dark p-8 lg:p-12" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
-              <div className="prose prose-lg prose-slate max-w-none">
+            <article className="bg-white border-3 border-dark p-8 lg:p-12 min-w-0" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
+              <div className="prose prose-lg prose-slate max-w-none overflow-x-auto">
                 <MDXRemote source={guide.content} components={useMDXComponents({})} />
               </div>
 
