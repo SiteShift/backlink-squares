@@ -144,13 +144,31 @@ export function Footer() {
             © {new Date().getFullYear()} SEO Backlinks Grid. All rights reserved.
           </p>
 
-          {/* Color dots signature */}
-          <div className="flex items-center gap-4">
-            <span className="text-xs text-surface-400 hidden sm:block">Built with</span>
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-brand-red" />
-              <div className="w-3 h-3 bg-brand-yellow" />
-              <div className="w-3 h-3 bg-brand-blue" />
+          <div className="flex items-center gap-6">
+            {/* Startup Fame Badge */}
+            <a
+              href="https://startupfa.me/s/lifescore?utm_source=lifescoretest.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <img
+                src="https://startupfa.me/badges/featured-badge.webp"
+                alt="LifeScoreTest - Featured on Startup Fame"
+                width="171"
+                height="54"
+                className="h-8 w-auto"
+              />
+            </a>
+
+            {/* Color dots signature */}
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-surface-400 hidden sm:block">Built with</span>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-brand-red" />
+                <div className="w-3 h-3 bg-brand-yellow" />
+                <div className="w-3 h-3 bg-brand-blue" />
+              </div>
             </div>
           </div>
         </div>
