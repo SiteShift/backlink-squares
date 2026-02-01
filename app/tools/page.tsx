@@ -50,6 +50,15 @@ interface Tool {
 
 const tools: Tool[] = [
   {
+    title: 'Free Backlink Checker',
+    description:
+      'Check backlinks for any website instantly. Enter a domain and get direct links to analyze it in Ahrefs, Moz, Semrush, and other free tools.',
+    href: '/tools/free-backlink-checker',
+    icon: Search,
+    color: 'red',
+    status: 'available'
+  },
+  {
     title: 'Link Building ROI Calculator',
     description:
       'Calculate the potential return on investment for your link building campaigns. Estimate traffic growth, conversions, and revenue.',
@@ -59,22 +68,13 @@ const tools: Tool[] = [
     status: 'available'
   },
   {
-    title: 'Backlink Profile Analyzer',
-    description:
-      'Learn what to analyze in your backlink profile. Educational checklist for referring domains, anchor text distribution, link velocity, and toxic links.',
-    href: '/tools/backlink-analyzer',
-    icon: Search,
-    color: 'red',
-    status: 'available'
-  },
-  {
     title: 'Backlink Audit Checklist',
     description:
-      'Comprehensive checklist to audit your backlink profile. Identify toxic links, opportunities, and gaps in your strategy.',
-    href: '/tools/audit-checklist',
+      'Step-by-step checklist for analyzing your backlink profile. Learn what to look for in referring domains, anchor text, link velocity, and toxic links.',
+    href: '/tools/backlink-analyzer',
     icon: CheckSquare,
     color: 'yellow',
-    status: 'coming-soon'
+    status: 'available'
   },
   {
     title: 'Link Velocity Tracker',

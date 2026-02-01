@@ -1,8 +1,8 @@
 ---
 title: "DoFollow vs NoFollow vs Sponsored vs UGC: Complete Guide to Link Attributes"
 description: "Master the four link attribute types: DoFollow, NoFollow, Sponsored, and UGC. Learn how each affects SEO, when to use them, and Google's current policies."
-metaTitle: "DoFollow vs NoFollow vs Sponsored vs UGC Links Explained [2026]"
-metaDescription: "Complete guide to link attributes - understand DoFollow, NoFollow, Sponsored, and UGC links, how they affect SEO, and when to use each type."
+metaTitle: "DoFollow vs NoFollow: Which Links Actually Help Your SEO? [2026]"
+metaDescription: "Complete guide to link types - learn which links pass SEO value, when to use each attribute, and Google's 2026 policies on sponsored and UGC links."
 primaryKeyword: "dofollow vs nofollow"
 secondaryKeywords: ["nofollow links", "sponsored links", "ugc links", "rel attributes", "link types"]
 searchIntent: "informational"
@@ -11,6 +11,23 @@ lastUpdated: "2026-01-11"
 parentHub: "backlinks"
 siblingPages: ["what-is-a-backlink", "link-equity-pagerank-explained", "backlink-myths"]
 crossHubLinks: ["google-link-spam", "backlink-quality"]
+faqs:
+  - question: "What is the difference between dofollow and nofollow links?"
+    answer: "DoFollow links pass link equity (PageRank) to the linked page and count as ranking signals. NoFollow links include rel='nofollow' and traditionally don't pass link equity. Since 2019, Google treats nofollow as a 'hint'—they may choose to follow or count nofollow links. DoFollow links remain more valuable for SEO, but nofollow links can still drive traffic and brand awareness."
+  - question: "When should I use rel='sponsored' vs rel='nofollow'?"
+    answer: "Use rel='sponsored' for any paid links—advertisements, paid placements, affiliate links, or sponsored content. Use rel='nofollow' for untrusted content or when you don't want to endorse a link but it's not a paid placement. Google specifically requests 'sponsored' for paid links to help identify advertising across the web."
+  - question: "What does rel='ugc' mean and when should I use it?"
+    answer: "UGC stands for User-Generated Content. Use rel='ugc' for links in comments, forum posts, or any content created by users rather than your editorial team. This helps Google understand the link source context. You can combine attributes: rel='ugc nofollow' is common for comment sections."
+  - question: "Do nofollow links help SEO at all?"
+    answer: "Yes, indirectly. While nofollow links don't pass direct link equity, they can drive referral traffic, increase brand visibility, and lead to natural dofollow links when people discover you. Since Google's 2019 update, some nofollow links may even pass ranking signals at Google's discretion. A natural link profile includes both follow and nofollow links."
+  - question: "What percentage of my backlinks should be dofollow?"
+    answer: "Natural link profiles typically have 60-85% dofollow links. Having 100% dofollow links looks unnatural and could raise red flags. Accept quality nofollow links from authoritative sources—they contribute to a healthy, natural-looking backlink profile and can still provide value."
+  - question: "Can I change a nofollow link to dofollow?"
+    answer: "You cannot change links on other websites—that's the site owner's decision. You can ask (politely) during outreach, but don't demand it. For your own site, you control the rel attribute on outbound links. Focus on earning links naturally rather than trying to manipulate link attributes."
+  - question: "Should I disavow nofollow links?"
+    answer: "No, there's no need to disavow nofollow links. Nofollow links already signal to Google not to follow them. Disavow is only for problematic dofollow links from spammy sources that you can't get removed. Don't waste time disavowing nofollow, sponsored, or UGC links."
+  - question: "How do I check if a link is dofollow or nofollow?"
+    answer: "Right-click the link and select 'Inspect Element' to view the HTML. Look for rel='nofollow', rel='sponsored', or rel='ugc' in the anchor tag. No rel attribute means dofollow. Browser extensions like MozBar, NoFollow, or SEO tools like Ahrefs can automatically identify link types across a page."
 ---
 
 Link attributes tell search engines how to interpret hyperlinks. Understanding the four main types—DoFollow, NoFollow, Sponsored, and UGC—is essential for both evaluating backlinks and managing your own outbound links.

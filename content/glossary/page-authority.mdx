@@ -1,260 +1,386 @@
 ---
-title: "Page Authority (PA): Moz's Page-Level Metric Explained"
-description: "Understand Page Authority—Moz's metric for predicting individual page ranking potential. Learn how PA differs from Domain Authority."
-metaTitle: "Page Authority (PA) Explained: Moz Metric Guide [2026]"
-metaDescription: "Learn what Page Authority is and how to use this Moz metric. Understand the difference between Page Authority and Domain Authority."
+title: "Page Authority (PA): What It Is, How to Check & Improve Your Score"
+description: "Page Authority is Moz's metric for predicting individual page ranking potential on a 0-100 scale. Learn how to check PA scores, benchmark against competitors, and improve your page authority with proven strategies."
+metaTitle: "Page Authority: What's a Good PA Score? (+ How to Check) [2026]"
+metaDescription: "Complete guide to Page Authority (PA) - Moz's page-level ranking metric. Learn what a good PA score looks like, how to check yours, and 5 ways to improve it."
 primaryKeyword: "Page Authority"
-secondaryKeywords: ["PA metric", "Moz Page Authority", "page authority SEO", "PA score"]
+secondaryKeywords: ["PA metric", "Moz Page Authority", "page authority SEO", "PA score", "check page authority", "page authority checker", "improve page authority"]
 searchIntent: "informational"
-author: "SEO Backlinks Team"
-lastUpdated: "2026-01-11"
+author: "Elena Rodriguez"
+authorTitle: "Link Building Consultant"
+lastUpdated: "2026-02-01"
 termType: "glossary"
-relatedTerms: ["domain-authority", "link-equity", "backlink"]
+relatedTerms: ["domain-authority", "link-equity", "backlink", "url-rating"]
+faqs:
+  - question: "What is Page Authority in SEO?"
+    answer: "Page Authority (PA) is a metric developed by Moz that predicts how likely a specific webpage is to rank in search engine results. Scored from 0 to 100 on a logarithmic scale, PA measures the ranking strength of an individual URL based on the quantity and quality of backlinks pointing to that specific page. Unlike Domain Authority which measures entire domains, PA focuses exclusively on page-level signals."
+  - question: "What is a good Page Authority score?"
+    answer: "A 'good' PA score depends on your niche and competition. Generally: PA 0-20 is low (new or poorly-linked pages), PA 20-40 is average (typical blog posts), PA 40-60 is strong (well-linked content), PA 60-80 is very strong (authoritative industry pages), and PA 80+ is exceptional (major publication pages, Wikipedia). Compare your PA to pages ranking for your target keywords rather than using absolute benchmarks."
+  - question: "How do I check Page Authority for free?"
+    answer: "You can check Page Authority for free using: MozBar (free Chrome extension - shows PA for any page you visit), Moz Link Explorer free tier (10 queries per month), or Small SEO Tools Page Authority Checker. For the most accurate data, use Moz's official tools since PA is their proprietary metric."
+  - question: "How can I improve my Page Authority?"
+    answer: "Improve Page Authority by: 1) Building quality backlinks directly to the specific page (not just your homepage), 2) Getting internal links from your highest-PA pages, 3) Creating link-worthy content that naturally attracts backlinks, 4) Earning links from high-PA pages on external sites. PA improvements require sustained effort—expect gradual increases over 3-6 months of link building."
+  - question: "What is the difference between Page Authority and Domain Authority?"
+    answer: "Page Authority (PA) measures the ranking potential of a single URL/page, while Domain Authority (DA) measures the ranking potential of an entire domain. PA is based on links pointing to that specific page; DA considers all links to the entire website. A high-DA site can have low-PA pages (new content), and theoretically a low-DA site could have one high-PA page that went viral."
+  - question: "Why did my Page Authority score drop?"
+    answer: "PA fluctuations happen due to: 1) Lost backlinks to that specific page, 2) Moz algorithm updates recalibrating scores, 3) Comparative changes (other pages gaining more links), 4) Link quality reassessment (Moz detecting lower-quality links). Check if you've lost important backlinks using Moz Link Explorer. Minor fluctuations (1-3 points) are normal; investigate drops of 5+ points."
+  - question: "Does Page Authority affect Google rankings?"
+    answer: "Page Authority is not a Google ranking factor—Google doesn't use PA in its algorithm. PA is Moz's prediction of ranking potential based on their analysis of ranking signals. However, the underlying factors PA measures (quality backlinks to a page) do influence Google rankings. Think of PA as a useful proxy for link strength, not a direct ranking signal."
+  - question: "How long does it take to increase Page Authority?"
+    answer: "Increasing PA typically takes 2-6 months depending on your link building activity. Moz updates their link index regularly, but it takes time to: 1) Build new backlinks, 2) Have those links discovered by Moz's crawler, 3) Have PA recalculated. Expect to see PA changes 4-8 weeks after acquiring significant new backlinks. Focus on sustained link building rather than expecting immediate PA jumps."
 ---
 
-**Page Authority (PA)** is a metric developed by Moz that predicts how likely a specific page is to rank in search engine results. Scored from 0-100, Page Authority measures individual URL strength rather than entire domain authority.
+**Page Authority (PA)** is a metric developed by Moz that predicts how likely a specific webpage is to rank in search engine results. Scored on a logarithmic scale from 0 to 100, PA measures the ranking strength of an individual URL based on the backlinks pointing to that specific page.
+
+Unlike [Domain Authority](/glossary/domain-authority) which evaluates entire websites, Page Authority focuses exclusively on page-level link signals. A website with DA 70 might have individual pages ranging from PA 15 to PA 65 depending on how many quality links each page has attracted.
+
+## How Page Authority Works
+
+### The PA Algorithm
+
+Moz calculates Page Authority using a machine learning model that considers:
+
+- **Link quantity**: Number of external links pointing to the specific URL
+- **Link quality**: The PA and DA of pages linking to you
+- **Link diversity**: Variety of referring domains
+- **Anchor text patterns**: How links describe your page
+- **Spam signals**: Presence of suspicious link patterns
+
+The model is trained against actual Google search results, correlating these signals with pages that rank well for competitive terms.
+
+### The Logarithmic Scale
+
+PA uses a logarithmic 0-100 scale, meaning:
+
+- **Moving from PA 20 to 30** requires significantly less effort than moving from PA 50 to 60
+- **The higher your current PA**, the more difficult further improvement becomes
+- **Most pages cluster** in the 20-50 range
+
+This is why brand new pages start near PA 1, while only exceptional pages (Wikipedia articles, major news homepages) approach PA 90+.
+
+### How Often PA Updates
+
+Moz continuously crawls the web and updates their link index. However:
+
+- **Index updates happen regularly** but aren't real-time
+- **New backlinks may take 2-8 weeks** to appear in PA calculations
+- **Deleted pages/links** take time to be removed from the index
+- **Algorithm refinements** occasionally cause score fluctuations
+
+---
 
 ## Page Authority vs Domain Authority
 
 ### Key Differences
 
-| Page Authority (PA) | Domain Authority (DA) |
-|--------------------|----------------------|
-| Measures specific URL | Measures entire domain |
-| Page-level prediction | Domain-level prediction |
-| Based on links to that page | Based on links to domain |
-| Varies across a site | Consistent for a domain |
+| Factor | Page Authority (PA) | Domain Authority (DA) |
+|--------|--------------------|-----------------------|
+| **Scope** | Single URL/page | Entire domain |
+| **Based on** | Links to that specific page | Links to any page on domain |
+| **Varies within site** | Yes - each page has unique PA | No - same DA for all pages |
+| **Best for** | Evaluating specific pages | Comparing overall site strength |
+| **Building strategy** | Target links to specific URLs | General link building |
 
-### When to Use Each
+### When to Use Each Metric
 
-**Use PA when**:
-- Evaluating a specific page for link placement
-- Assessing competing pages for a keyword
-- Analysing page-level link building targets
+**Use Page Authority when:**
+- Evaluating a specific page for link placement opportunities
+- Analyzing competing pages for a target keyword
+- Deciding which of your pages to prioritize for link building
+- Assessing the value of a potential backlink source page
 
-**Use DA when**:
-- Evaluating overall site quality
-- Comparing domains
-- Quick site-level assessment
+**Use Domain Authority when:**
+- Comparing overall website strength
+- Quick site-level quality assessment
+- Evaluating potential partnership or outreach targets
+- Setting domain-level SEO benchmarks
 
----
+### A Practical Example
 
-## How Page Authority Works
+Consider a large publication like Forbes (DA ~95):
+- Homepage: PA 90+
+- Popular article from last month: PA 45
+- New article published today: PA 1-10
 
-### Calculation Factors
-
-PA is calculated using:
-- Links pointing to that specific URL
-- Quality of those linking pages
-- Moz's machine learning model
-- Correlation with actual rankings
-
-### The Score
-
-**0-100 scale**: Higher = more likely to rank
-
-**Logarithmic**: Harder to improve at higher levels
-
-**Relative**: Best used for comparison, not absolute assessment
-
-### What PA Reflects
-
-PA indicates:
-- Link strength of a specific page
-- How much link equity that page has received
-- Ranking potential for that URL
+The DA reflects overall site authority, but individual pages vary dramatically based on their specific backlink profiles.
 
 ---
 
-## Page Authority Ranges
+## Page Authority Benchmarks by Industry
 
-### Typical Scores
+### What's "Good" PA by Sector
 
-| PA Range | Typical Pages |
-|----------|---------------|
-| 0-20 | New pages, thin content, few links |
-| 20-40 | Established pages with some links |
-| 40-60 | Strong pages, significant links |
-| 60-80 | Very authoritative pages |
-| 80-100 | Top pages (Wikipedia articles, major news) |
+PA scores must be interpreted relative to your competition. Here are typical ranges by industry:
 
-### Context Matters
+| Industry/Niche | Low PA | Average PA | Strong PA | Exceptional PA |
+|----------------|--------|------------|-----------|----------------|
+| **Local Business** | 0-15 | 15-25 | 25-40 | 40+ |
+| **SaaS/Tech Startup** | 0-20 | 20-35 | 35-50 | 50+ |
+| **E-commerce (product pages)** | 10-20 | 20-35 | 35-50 | 50+ |
+| **Professional Services** | 0-20 | 20-35 | 35-45 | 45+ |
+| **Health/Medical** | 15-25 | 25-40 | 40-55 | 55+ |
+| **Finance** | 15-30 | 30-45 | 45-60 | 60+ |
+| **News/Media** | 20-35 | 35-50 | 50-70 | 70+ |
+| **Major Publications** | 40-50 | 50-65 | 65-80 | 80+ |
 
-A PA of 35 might be:
-- Excellent for a small niche blog
-- Average for a major publication
-- Low for a critical business page
+### Competitive Benchmarking Process
 
-Always compare to competitors for the same keyword.
+Rather than comparing to general benchmarks, compare your PA to actual competition:
 
----
+1. **Identify your target keyword**
+2. **Check PA of the top 10 ranking pages** for that keyword
+3. **Calculate the average PA** of positions 1-3
+4. **Compare your page's PA** to this competitive benchmark
 
-## Using Page Authority
+**Example:**
+For "best project management software":
+- Position 1: PA 58
+- Position 2: PA 52
+- Position 3: PA 49
+- Your page: PA 31
 
-### For Competitive Analysis
-
-**Steps**:
-1. Identify pages ranking for your target keyword
-2. Check PA of top-ranking pages
-3. Compare to your page's PA
-4. Understand the gap to close
-
-**Example**:
-- Top 3 results have PA 45, 42, 38
-- Your page has PA 25
-- Significant link building needed
-
-### For Link Building Targets
-
-**Evaluating where to get links**:
-- Higher PA pages pass more value
-- PA indicates page-level link strength
-- Consider alongside DA for full picture
-
-**Good link source indicators**:
-- Page PA appropriate for link value expected
-- PA consistent with visible quality
-- Combined with strong DA
-
-### For Internal Linking
-
-**Identify strong pages**:
-- High PA pages on your site
-- Use these to boost weaker pages
-- Strategic internal link flow
+This tells you approximately how much link building you need—your page needs to more than match the PA of current top-rankers (plus have excellent content and relevance).
 
 ---
 
-## Improving Page Authority
+## How to Check Page Authority
 
-### What Increases PA
+### Free PA Checker Tools
 
-**Build links to the specific page**:
-- Each quality link increases PA
-- Links to homepage don't directly boost inner pages
-- Target link building to important pages
+**1. MozBar (Recommended for Quick Checks)**
+- Free Chrome/Firefox extension
+- Shows PA/DA for every page you visit
+- Displays in browser toolbar
+- [Download MozBar](https://moz.com/products/pro/seo-toolbar)
 
-**Internal linking**:
-- Links from high-PA pages on your site
-- Strategic internal link architecture
-- Support key pages with internal links
+**2. Moz Link Explorer Free**
+- 10 free queries per month
+- Shows PA plus detailed link data
+- Most accurate since PA is Moz's metric
+- [Moz Link Explorer](https://moz.com/link-explorer)
 
-**Quality content**:
-- Indirectly helps by attracting links
-- Makes link building easier
-- Increases link worthiness
+**3. Small SEO Tools**
+- Unlimited free checks
+- Less accurate than Moz directly
+- No account required
+- [SmallSEOTools PA Checker](https://smallseotools.com/page-authority-checker/)
 
-### Common Mistakes
+### Checking Competitor PA at Scale
 
-**Ignoring page-level links**: Only building homepage links
+For analyzing multiple competitor pages:
 
-**Expecting DA to transfer**: DA doesn't automatically boost all pages
+1. **Export SERP results** for your target keywords
+2. **Batch check PA** using Moz's API or bulk checker
+3. **Create a spreadsheet** comparing your PA to competitors
+4. **Identify the PA gap** you need to close
 
-**Quick-fix expectations**: PA grows with sustained link building
+### Tracking PA Over Time
+
+Monitor PA for your key pages monthly:
+
+| Page | Jan PA | Feb PA | Mar PA | Change | Notes |
+|------|--------|--------|--------|--------|-------|
+| /service-page | 28 | 29 | 32 | +4 | Added 3 guest post links |
+| /blog/guide | 22 | 22 | 24 | +2 | Natural link growth |
+| /product | 35 | 34 | 33 | -2 | Investigate lost links |
 
 ---
 
-## PA vs Other Page Metrics
+## How to Improve Page Authority
 
-### Comparison
+### 1. Build Backlinks Directly to the Page
 
-| Metric | Provider | What It Measures |
-|--------|----------|------------------|
-| Page Authority | Moz | Page ranking potential |
-| URL Rating | Ahrefs | Page link profile strength |
-| Page Trust Flow | Majestic | Page trust from links |
+The most direct way to increase PA is earning backlinks to the specific URL:
+
+**Effective tactics:**
+- [Guest posting](/link-building-tactics/guest-posting) with links to specific pages (not just homepage)
+- [Broken link building](/link-building-tactics/broken-link-building) targeting relevant pages
+- Creating linkable assets like original research, tools, or comprehensive guides
+- [Digital PR](/digital-pr) to earn editorial links to specific content
+
+**Key principle:** Links to your homepage build DA but don't directly improve specific page PA. Target link building efforts to your priority pages.
+
+### 2. Strategic Internal Linking
+
+Your internal links transfer page authority within your site:
+
+**Best practices:**
+- Link from your highest-PA pages to priority pages needing a boost
+- Use relevant, natural anchor text
+- Ensure important pages receive internal links from multiple sources
+- Create hub pages that link to related content
+
+**Example internal link flow:**
+```
+High-PA blog post (PA 45) → Links to → Money page (PA 25)
+                                        ↓
+                            Money page PA increases over time
+```
+
+### 3. Content Quality and Link Worthiness
+
+PA follows content quality indirectly:
+
+- **Exceptional content attracts natural links** → More links = Higher PA
+- **Comprehensive resources become link targets** → Industry references link to you
+- **Original research gets cited** → Citations = backlinks = PA growth
+
+Focus on creating content people want to reference and share.
+
+### 4. Remove or Disavow Toxic Links
+
+Low-quality or spammy links can suppress PA:
+
+- **Audit existing backlinks** using Moz Link Explorer
+- **Identify suspicious patterns** (foreign language spam, link farms, irrelevant directories)
+- **Use Google's Disavow Tool** for links you can't remove manually
+- **Monitor for negative SEO** attacks
+
+---
+
+## Common PA Mistakes to Avoid
+
+### Mistake 1: Only Building Homepage Links
+
+Many link building campaigns focus exclusively on homepage links. While this builds DA, it doesn't help specific pages rank better.
+
+**Fix:** Allocate link building budget to priority inner pages, not just the homepage.
+
+### Mistake 2: Expecting DA to Transfer
+
+High DA doesn't automatically make new pages high-PA. A brand new page on a DA 70 site still starts with minimal PA.
+
+**Fix:** Understand that new content needs its own link building to gain PA.
+
+### Mistake 3: Obsessing Over Exact Numbers
+
+PA fluctuates regularly. Chasing specific PA targets leads to frustration.
+
+**Fix:** Focus on relative improvement and competitive benchmarking rather than absolute PA targets.
+
+### Mistake 4: Ignoring Link Relevance
+
+A high-PA link from an irrelevant page provides less value than a moderate-PA link from a highly relevant source.
+
+**Fix:** Prioritize relevance alongside PA when evaluating link opportunities.
+
+### Mistake 5: Expecting Overnight Results
+
+PA changes gradually as Moz processes new links.
+
+**Fix:** Plan for 3-6 month link building campaigns with patience. Check PA monthly, not daily.
+
+---
+
+## PA vs Other Page-Level Metrics
+
+### Comparison Table
+
+| Metric | Provider | Scale | What It Measures | Free Access |
+|--------|----------|-------|------------------|-------------|
+| **Page Authority** | Moz | 0-100 | Page ranking potential | Yes (limited) |
+| **URL Rating (UR)** | Ahrefs | 0-100 | Page link profile strength | Yes (limited) |
+| **Page Trust Flow** | Majestic | 0-100 | Page trust from links | Yes (limited) |
+| **Page Citation Flow** | Majestic | 0-100 | Page link quantity | Yes (limited) |
 
 ### Which to Use
 
-All measure similar concepts differently:
-- Use whichever tool you prefer
-- Consider using multiple for validation
-- Don't obsess over exact numbers
+All these metrics measure similar concepts with different methodologies:
+
+- **If you use Moz:** Stick with PA for consistency
+- **If you use Ahrefs:** URL Rating serves the same purpose
+- **For trust assessment:** Majestic's Trust Flow offers unique perspective
+- **For comprehensive view:** Cross-reference multiple metrics
+
+The key is consistency—pick a primary metric and use it across all your analysis for comparable data.
 
 ---
 
 ## Page Authority Limitations
 
-### What PA Isn't
+### What PA Cannot Tell You
 
-**Not a Google metric**: Google doesn't use PA
+**PA is not a Google ranking factor.** Google doesn't use Moz's PA metric. PA predicts ranking potential based on Moz's analysis of ranking signals, but Google's actual algorithm is far more complex.
 
-**Not the only factor**: Rankings depend on many signals
+**PA doesn't account for:**
+- Content quality and relevance
+- User experience signals
+- Technical SEO factors
+- Search intent match
+- Keyword optimization
+- E-E-A-T signals
 
-**Not static**: Changes with algorithm updates and link changes
+**PA is comparative, not absolute.** A PA 40 page might outrank a PA 50 page if it has better content, relevance, or user engagement.
 
-### Appropriate Use
+### Appropriate Use Cases
 
-**Good for**:
-- Relative comparisons
-- Competitive analysis
-- Prospecting decisions
-- Progress tracking
+**Use PA for:**
+- Competitive analysis and benchmarking
+- Link prospecting (evaluating source page quality)
+- Progress tracking over time
+- Internal link prioritization
+- Understanding relative page strength
 
-**Not good for**:
-- Absolute ranking predictions
-- Single-factor decisions
-- Ignoring content/relevance
+**Don't use PA for:**
+- Predicting exact rankings
+- Sole decision-making factor
+- Ignoring content/relevance quality
+- Short-term performance measurement
 
 ---
 
-## Page Authority in Strategy
+## Page Authority Strategy Checklist
 
-### Competitive Benchmarking
+### Monthly PA Audit
 
-**Process**:
-1. List target keywords
-2. Check PA of ranking pages
-3. Note the PA range for top positions
-4. Set realistic targets
+□ Check PA for top 10 priority pages
+□ Compare to previous month's scores
+□ Identify any significant drops (5+ points)
+□ Investigate lost backlinks for declining pages
+□ Update competitive benchmarks for target keywords
 
-### Content Investment
+### Link Building Prioritization
 
-**High-PA potential pages**:
-- Already ranking content
-- Link-worthy content
-- Converting content
-- Strategic priorities
+□ List pages where PA improvement would have highest impact
+□ Allocate link building resources to specific URLs (not just homepage)
+□ Track new backlinks acquired and expected PA impact
+□ Set realistic 3-6 month PA targets based on competitive analysis
 
-Focus link building on pages where PA improvement yields results.
+### Content Optimization
 
-### Monitoring
-
-Track PA for:
-- Key money pages
-- Top content pieces
-- Pages you're actively building links to
+□ Identify low-PA pages with ranking potential
+□ Improve content quality to attract natural links
+□ Add internal links from high-PA pages
+□ Create linkable assets for priority topic areas
 
 ---
 
 ## Summary
 
-Page Authority is Moz's page-level ranking prediction:
+Page Authority is Moz's page-level prediction of ranking potential:
 
-**What it measures**:
-- Individual URL strength
-- Links pointing to that specific page
-- Ranking potential for that URL
+**Key takeaways:**
+- PA measures individual URL strength, not entire domains
+- Build links directly to specific pages to increase their PA
+- Use PA for competitive benchmarking, not absolute targets
+- Compare your PA to pages actually ranking for your keywords
+- PA improvement requires sustained link building over months
 
-**How to use it**:
-- Competitive analysis for keywords
-- Evaluating link placement pages
-- Tracking page-level progress
-- Internal linking decisions
-
-**Key points**:
-- Different from Domain Authority
-- Build links to specific pages to increase
-- Use for comparison, not absolute prediction
-- One factor among many
-
-Focus on building page-level authority for your most important URLs.
+**Your PA action plan:**
+1. Install MozBar to check PA while browsing
+2. Audit your priority pages' current PA scores
+3. Benchmark against top-ranking competitors
+4. Allocate link building to specific pages, not just homepage
+5. Track monthly and celebrate gradual improvements
 
 ---
 
-## Related Terms
+## Related Resources
 
-- [Domain Authority](/glossary/domain-authority)
-- [Link Equity](/glossary/link-equity)
-- [Authority Metrics](/backlink-quality/authority-metrics)
-- [Backlink](/glossary/backlink)
+- [Free Backlink Checker](/tools/free-backlink-checker) - Check Page Authority for any URL instantly
+- [Backlink Audit Checklist](/tools/backlink-analyzer) - Step-by-step audit guide
+- [Domain Authority Explained](/glossary/domain-authority)
+- [Link Equity: How Value Flows Between Pages](/glossary/link-equity)
+- [Authority Metrics: Understanding DA, PA, and Beyond](/backlink-quality/authority-metrics)
+- [Best Free Backlink Checkers](/blog/best-free-backlink-checkers)
+- [How to Evaluate Backlink Quality](/backlink-quality/evaluating-link-opportunities)
