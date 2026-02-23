@@ -11,6 +11,7 @@ import { FAQ } from '@/components/home/FAQ'
 import { CTA } from '@/components/home/CTA'
 import { FAQSchema } from '@/components/seo/JsonLd'
 import { BundleCard } from '@/components/promo'
+import { PopularResources } from '@/components/home/PopularResources'
 import { Square } from '@/lib/types'
 import { createServerClient } from '@/lib/supabase'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
@@ -190,6 +191,9 @@ export default async function HomePage() {
 
         {/* FAQ */}
         <FAQ />
+
+        {/* Popular Resources - Internal links to high-impression pages */}
+        <PopularResources />
 
         {/* SEO Links Section */}
         <SeoLinks purchasedSquares={purchasedSquares} />
