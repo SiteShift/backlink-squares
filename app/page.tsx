@@ -9,19 +9,29 @@ import { PurchaseModal } from '@/components/grid/PurchaseModal'
 import { HowItWorks } from '@/components/home/HowItWorks'
 import { FAQ } from '@/components/home/FAQ'
 import { CTA } from '@/components/home/CTA'
-import { FAQSchema } from '@/components/seo/JsonLd'
+import { FAQSchema, OrganizationSchema, ProductSchema } from '@/components/seo/JsonLd'
 import { BundleCard } from '@/components/promo'
 import { PopularResources } from '@/components/home/PopularResources'
 import { Square } from '@/lib/types'
+import { buildMetadata } from '@/lib/seo'
 import { createServerClient } from '@/lib/supabase'
 import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
 
-const BASE_URL = 'https://backlinkgrid.com'
-
 export const metadata: Metadata = {
-  alternates: {
-    canonical: BASE_URL,
-  },
+  ...buildMetadata({
+    title: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
+    description:
+      'Buy permanent dofollow backlinks on BacklinkGrid. Claim a square from $1, explore free SEO tools, and grow your authority with practical link building resources.',
+    canonicalUrl: 'https://backlinkgrid.com',
+    keywords: [
+      'backlinks',
+      'buy backlinks',
+      'dofollow backlinks',
+      'backlink marketplace',
+      'link building',
+    ],
+    type: 'website',
+  }),
 }
 
 // FAQ data for schema
@@ -122,6 +132,18 @@ export default async function HomePage() {
 
   return (
     <>
+      <OrganizationSchema
+        sameAs={[
+          'https://twitter.com/seobacklinks',
+          'https://linkedin.com/company/seobacklinks',
+        ]}
+      />
+      <ProductSchema
+        name="BacklinkGrid Squares"
+        description="Permanent dofollow backlinks on BacklinkGrid starting at $1 per square."
+        url="https://backlinkgrid.com"
+        price={1}
+      />
       <FAQSchema questions={faqData} />
       <Header />
 

@@ -28,7 +28,7 @@ const footerLinks = {
     { href: '/glossary', label: 'Glossary' },
     { href: '/comparisons', label: 'Comparisons' },
     { href: '/statistics', label: 'Statistics' },
-    { href: '/resources', label: 'Templates' },
+    { href: '/resources', label: 'Templates & Resources' },
   ],
   popular: [
     { href: '/guides/link-building-strategies-guide', label: 'Link Building Strategies' },
@@ -42,7 +42,7 @@ const footerLinks = {
     { href: '/industries/ecommerce', label: 'E-commerce' },
     { href: '/industries/local-business', label: 'Local Business' },
     { href: '/industries/b2b', label: 'B2B' },
-    { href: '/industries/startup', label: 'Startups' },
+    { href: '/blog/link-building-for-startups', label: 'Startups' },
   ],
   company: [
     { href: '/about', label: 'About' },
@@ -254,21 +254,30 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Newsletter/CTA */}
+            {/* Product CTA */}
             <div className="col-span-2 md:col-span-3">
               <h3 className="font-display font-bold text-sm uppercase tracking-widest text-surface-950 mb-5">
                 Get Started
               </h3>
               <p className="text-sm text-surface-600 mb-4">
-                Permanent dofollow backlinks starting at just $1.
+                Claim a permanent dofollow backlink or download the verified backlink bundle.
               </p>
-              <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-brand-red text-white text-sm font-bold hover:bg-red-700 transition-colors"
-              >
-                View Pricing
-                <ArrowUpRight className="w-4 h-4" />
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/#grid"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-brand-red text-white text-sm font-bold hover:bg-red-700 transition-colors"
+                >
+                  Buy a Square
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/bundle"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-surface-950 text-white text-sm font-bold hover:bg-brand-blue transition-colors"
+                >
+                  View Bundle
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -276,48 +285,15 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-surface-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-surface-500">
-            © {new Date().getFullYear()} SEO Backlinks Grid. All rights reserved.
+            © {new Date().getFullYear()} BacklinkGrid. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6">
-            {/* Startup Fame Badge */}
-            <a
-              href="https://startupfa.me/s/lifescore?utm_source=lifescoretest.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="opacity-70 hover:opacity-100 transition-opacity"
-            >
-              <img
-                src="https://startupfa.me/badges/featured-badge.webp"
-                alt="LifeScoreTest - Featured on Startup Fame"
-                width="171"
-                height="54"
-                className="h-8 w-auto"
-              />
-            </a>
-
-            {/* Turbo0 Badge */}
-            <a
-              href="https://turbo0.com/item/lifescoretest"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="opacity-70 hover:opacity-100 transition-opacity"
-            >
-              <img
-                src="https://img.turbo0.com/badge-listed-dark.svg"
-                alt="Listed on Turbo0"
-                className="h-8 w-auto"
-              />
-            </a>
-
-            {/* Color dots signature */}
-            <div className="flex items-center gap-4">
-              <span className="text-xs text-surface-400 hidden sm:block">Built with</span>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-brand-red" />
-                <div className="w-3 h-3 bg-brand-yellow" />
-                <div className="w-3 h-3 bg-brand-blue" />
-              </div>
+          <div className="flex items-center gap-4">
+            <span className="text-xs text-surface-400 hidden sm:block">Built for searchable links</span>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 bg-brand-red" />
+              <div className="w-3 h-3 bg-brand-yellow" />
+              <div className="w-3 h-3 bg-brand-blue" />
             </div>
           </div>
         </div>

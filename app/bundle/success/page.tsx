@@ -4,11 +4,17 @@ import { redirect } from 'next/navigation'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { CheckCircle2, Download, Mail, ArrowRight, AlertCircle } from 'lucide-react'
+import { buildMetadata } from '@/lib/seo'
 import { stripe } from '@/lib/stripe'
 
 export const metadata: Metadata = {
-  title: 'Purchase Complete - Backlink Database Bundle',
-  robots: { index: false, follow: false },
+  ...buildMetadata({
+    title: 'Bundle Purchase Complete',
+    description: 'Your BacklinkGrid bundle purchase has been completed.',
+    canonicalUrl: 'https://backlinkgrid.com/bundle/success',
+    robots: { index: false, follow: false },
+    type: 'website',
+  }),
 }
 
 const BUNDLE_PRODUCT_ID = 'prod_TqD1I2sHtD0QCR'

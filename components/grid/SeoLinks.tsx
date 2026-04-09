@@ -63,7 +63,9 @@ export function SeoLinks({ purchasedSquares }: SeoLinksProps) {
                 {site.logo_url ? (
                   <img
                     src={site.logo_url}
-                    alt={`${site.site_name} logo`}
+                    alt={`${site.site_name || 'Site'} logo`}
+                    width={32}
+                    height={32}
                     className="w-8 h-8 object-contain"
                     loading="lazy"
                   />

@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { PromoBanner, PromoProvider } from '@/components/promo'
+import { SITE_NAME } from '@/lib/seo'
 import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://backlinkgrid.com'),
   title: {
-    default: 'SEO Backlinks Grid - Buy Dofollow Backlinks from $1',
-    template: '%s | SEO Backlinks Grid',
+    default: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
+    template: `%s | ${SITE_NAME}`,
   },
   description:
-    'The backlink grid. Buy a square, get a permanent dofollow backlink. Join 500+ sites building their domain authority. Starting at just $1.',
+    'The backlink grid. Buy a square, get a permanent dofollow backlink. Join growing sites building their authority starting at just $1.',
   keywords: [
     'backlinks',
     'dofollow backlinks',
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
     'domain authority',
     'backlink grid',
   ],
-  authors: [{ name: 'SEO Backlinks Grid' }],
-  creator: 'SEO Backlinks Grid',
-  publisher: 'SEO Backlinks Grid',
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
   formatDetection: {
     email: false,
     address: false,
@@ -32,22 +33,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://backlinkgrid.com',
-    siteName: 'SEO Backlinks Grid',
-    title: 'SEO Backlinks Grid - Buy Dofollow Backlinks from $1',
+    siteName: SITE_NAME,
+    title: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
     description:
       'Own your square. Get your backlink. The visual backlink marketplace starting at $1.',
     images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'SEO Backlinks Grid - The Visual Backlink Marketplace',
-      },
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'BacklinkGrid - The Visual Backlink Marketplace',
+        },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEO Backlinks Grid',
+    title: SITE_NAME,
     description: 'Own your square. Get your backlink. From $1.',
     images: ['/og-image.png'],
     creator: '@seobacklinks',
@@ -89,7 +90,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              name: 'SEO Backlinks Grid',
+              name: SITE_NAME,
               url: 'https://backlinkgrid.com',
               description: 'Buy dofollow backlinks on our visual grid. Permanent links from $1.',
             }),

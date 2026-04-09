@@ -113,6 +113,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/tools/free-backlink-checker`,
+      lastModified: LAST_CONTENT_UPDATE,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/tools/backlink-analyzer`,
       lastModified: LAST_CONTENT_UPDATE,
       changeFrequency: 'monthly',

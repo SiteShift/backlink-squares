@@ -1,28 +1,26 @@
 import { Metadata } from 'next'
-import { Mail, MessageSquare, Twitter, HelpCircle } from 'lucide-react'
+import Link from 'next/link'
+import { Mail, Twitter, HelpCircle, ArrowRight, Package, Search, ShoppingCart } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Get in Touch',
-  description:
-    'Have questions about SEO Backlinks Grid? Need help with your purchase? Get in touch with our team.',
-  alternates: {
-    canonical: `${BASE_URL}/contact`,
-  },
-  openGraph: {
-    title: 'Contact SEO Backlinks Grid',
-    description: 'Get in touch with our team for support and inquiries.',
-  },
+  ...buildMetadata({
+    title: 'Contact BacklinkGrid',
+    description:
+      'Need help with a purchase, your backlink square, or the bundle? Email BacklinkGrid or use the fastest product and support paths here.',
+    canonicalUrl: 'https://backlinkgrid.com/contact',
+    type: 'website',
+    keywords: ['BacklinkGrid contact', 'backlink support', 'SEO backlink support'],
+  }),
 }
 
 const contactMethods = [
   {
     icon: Mail,
     title: 'Email',
-    description: 'Best for general inquiries and support',
+    description: 'Best for purchase support, bundle issues, and update requests',
     action: 'hello@backlinkgrid.com',
     href: 'mailto:hello@backlinkgrid.com',
     cta: 'Send Email',
@@ -57,19 +55,46 @@ const colorClasses = {
 const commonTopics = [
   {
     title: 'Purchase Support',
-    description: 'Issues with payment, square placement, or logo uploads',
+    description: 'Payment issues, square placement, logo uploads, or updating an existing backlink',
   },
   {
-    title: 'Update Request',
-    description: 'Need to change your URL, logo, or site name',
+    title: 'Bundle Access',
+    description: 'Questions about the backlink database bundle, downloads, or checkout confirmation',
   },
   {
-    title: 'Partnership Inquiries',
-    description: 'Interested in featuring or promoting our grid',
+    title: 'Tool Questions',
+    description: 'Need help using the backlink checker, audit checklist, or ROI calculator',
   },
   {
-    title: 'Technical Issues',
-    description: 'Bug reports or website functionality problems',
+    title: 'Partnerships',
+    description: 'Feature requests, collaborations, and product partnership discussions',
+  },
+]
+
+const actionCards = [
+  {
+    href: '/#grid',
+    icon: ShoppingCart,
+    title: 'Buy a Backlink',
+    description: 'Claim a permanent dofollow square on the grid right now.',
+    cta: 'Open the grid',
+    style: 'bg-white',
+  },
+  {
+    href: '/bundle',
+    icon: Package,
+    title: 'Get the Bundle',
+    description: 'Buy the verified backlink opportunity spreadsheet.',
+    cta: 'View the bundle',
+    style: 'bg-bauhaus-yellow',
+  },
+  {
+    href: '/tools',
+    icon: Search,
+    title: 'Use Free Tools',
+    description: 'Check backlinks, audit your profile, and estimate ROI before buying.',
+    cta: 'Browse tools',
+    style: 'bg-white',
   },
 ]
 
@@ -83,11 +108,10 @@ export default function ContactPage() {
         <section className="py-20 lg:py-28 bg-white border-b-3 border-dark">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="font-black text-4xl sm:text-5xl uppercase tracking-wide text-dark">
-              Get in Touch
+              Contact BacklinkGrid
             </h1>
             <p className="mt-6 text-xl text-dark/60 max-w-2xl mx-auto">
-              Have a question or need help? We're here for you. Reach out through
-              any of the channels below.
+              The fastest support path is email. If you're ready to buy or explore, use the direct product links below instead of waiting on a reply.
             </p>
           </div>
         </section>
@@ -122,102 +146,41 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Direct Paths */}
         <section className="py-16 bg-white border-y-3 border-dark">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <div className="w-14 h-14 bg-bauhaus-blue border-3 border-dark flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="w-7 h-7 text-white" />
-              </div>
               <h2 className="font-black text-2xl sm:text-3xl uppercase tracking-wide text-dark">
-                Send Us a Message
+                Skip the Inbox if You Already Know What You Need
               </h2>
               <p className="mt-2 text-dark/60">
-                We typically respond within 24 hours
+                Use the live product pages for immediate action.
               </p>
             </div>
 
-            <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-bold uppercase tracking-wider text-dark mb-2"
-                  >
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 border-3 border-dark bg-white focus:outline-none focus:shadow-bauhaus-blue transition-all"
-                    placeholder="John Smith"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-bold uppercase tracking-wider text-dark mb-2"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border-3 border-dark bg-white focus:outline-none focus:shadow-bauhaus-blue transition-all"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-bold uppercase tracking-wider text-dark mb-2"
+            <div className="grid md:grid-cols-3 gap-6">
+              {actionCards.map((card) => (
+                <Link
+                  key={card.href}
+                  href={card.href}
+                  className={`group block ${card.style} border-3 border-dark p-8 hover:shadow-bauhaus transition-all`}
                 >
-                  Subject
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  className="w-full px-4 py-3 border-3 border-dark bg-white focus:outline-none focus:shadow-bauhaus-blue transition-all"
-                >
-                  <option value="">Select a topic</option>
-                  <option value="purchase">Purchase Support</option>
-                  <option value="update">Update My Square</option>
-                  <option value="partnership">Partnership Inquiry</option>
-                  <option value="technical">Technical Issue</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-bold uppercase tracking-wider text-dark mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  required
-                  className="w-full px-4 py-3 border-3 border-dark bg-white focus:outline-none focus:shadow-bauhaus-blue transition-all resize-none"
-                  placeholder="Tell us how we can help..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full btn-bauhaus-red"
-              >
-                Send Message
-              </button>
-            </form>
+                  <div className="w-14 h-14 bg-bauhaus-blue border-3 border-dark flex items-center justify-center mb-4">
+                    <card.icon className="w-7 h-7 text-white" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="font-bold text-lg uppercase tracking-wide text-dark mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-dark/60 mb-4">
+                    {card.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 font-bold text-bauhaus-red">
+                    {card.cta}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

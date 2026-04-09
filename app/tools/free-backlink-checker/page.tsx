@@ -19,7 +19,7 @@ import {
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
+import { BreadcrumbSchema, FAQSchema, SoftwareApplicationSchema } from '@/components/seo/JsonLd'
 
 const BASE_URL = 'https://backlinkgrid.com'
 
@@ -148,6 +148,17 @@ export default function FreeBacklinkCheckerPage() {
 
   return (
     <>
+      <SoftwareApplicationSchema
+        name="Free Backlink Checker"
+        description="Check backlinks for any website instantly and open the best free backlink checker tools from one screen."
+        url={`${BASE_URL}/tools/free-backlink-checker`}
+        featureList={[
+          'Domain cleaner and validator',
+          'One-click links to Ahrefs, Moz, Semrush, and Majestic',
+          'Backlink tool comparison guidance',
+          'Free backlink analysis workflow',
+        ]}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: BASE_URL },

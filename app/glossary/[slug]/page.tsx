@@ -9,9 +9,8 @@ import { getAllGlossaryTerms, getGlossaryTerm } from '@/lib/content'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { useMDXComponents } from '@/mdx-components'
 import { DefinedTermSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { absoluteUrl, buildArticlePageMetadata } from '@/lib/seo'
 import { formatDate } from '@/lib/utils'
-
-const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -25,26 +24,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Term Not Found' }
   }
 
-  const canonicalUrl = `${BASE_URL}/glossary/${slug}`
-
-  return {
-    title: term.metaTitle || `${term.title} - SEO Glossary Definition`,
-    description: term.metaDescription || term.description.slice(0, 160),
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: `What is ${term.title}? | SEO Glossary`,
-      description: term.metaDescription || term.description.slice(0, 160),
-      url: canonicalUrl,
-      type: 'article',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `What is ${term.title}?`,
-      description: term.metaDescription || term.description.slice(0, 160),
-    },
-  }
+  return buildArticlePageMetadata({
+    pathname: `/glossary/${slug}`,
+    title: `${term.title} - SEO Glossary Definition`,
+    description: term.description.slice(0, 160),
+    metaTitle: term.metaTitle,
+    metaDescription: term.metaDescription,
+    primaryKeyword: term.primaryKeyword,
+    secondaryKeywords: term.secondaryKeywords,
+    modifiedTime: term.lastUpdated,
+    authors: [term.author],
+  })
 }
 
 export function generateStaticParams() {
@@ -72,7 +62,7 @@ export default async function GlossaryTermPage({ params }: Props) {
     .filter(Boolean)
 
   const components = useMDXComponents({})
-  const canonicalUrl = `${BASE_URL}/glossary/${slug}`
+  const canonicalUrl = absoluteUrl(`/glossary/${slug}`)
 
   return (
     <>
@@ -83,8 +73,8 @@ export default async function GlossaryTermPage({ params }: Props) {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: BASE_URL },
-          { name: 'Glossary', url: `${BASE_URL}/glossary` },
+          { name: 'Home', url: absoluteUrl('/') },
+          { name: 'Glossary', url: absoluteUrl('/glossary') },
           { name: term.title, url: canonicalUrl },
         ]}
       />

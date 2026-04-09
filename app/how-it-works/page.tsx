@@ -17,21 +17,17 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import { HowToSchema } from '@/components/seo/JsonLd'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'How It Works - Get Your Backlink in 3 Simple Steps',
-  description:
-    'Learn how to purchase a square on the SEO Backlinks Grid and get your permanent dofollow backlink. Simple 3-step process with instant activation.',
-  alternates: {
-    canonical: `${BASE_URL}/how-it-works`,
-  },
-  openGraph: {
-    title: 'How It Works | SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'How It Works - Get Your Backlink in 3 Simple Steps',
     description:
-      'Get your permanent dofollow backlink in 3 simple steps. Select, customize, and go live instantly.',
-  },
+      'Learn how to purchase a square on BacklinkGrid and get your permanent dofollow backlink. Simple 3-step process with instant activation.',
+    canonicalUrl: 'https://backlinkgrid.com/how-it-works',
+    type: 'website',
+    keywords: ['how backlinkgrid works', 'buy backlinks', 'backlink checkout'],
+  }),
 }
 
 // HowTo schema data
@@ -151,7 +147,7 @@ export default function HowItWorksPage() {
   return (
     <>
       <HowToSchema
-        name="How to Get a Dofollow Backlink on SEO Backlinks Grid"
+        name="How to Get a Dofollow Backlink on BacklinkGrid"
         description="Learn how to purchase a square and get your permanent dofollow backlink in 3 simple steps."
         steps={howToSteps}
         totalTime="PT5M"

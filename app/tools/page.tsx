@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
+import { buildMetadata } from '@/lib/seo'
 import {
   Calculator,
   ArrowRight,
@@ -14,29 +15,22 @@ import {
   Search
 } from 'lucide-react'
 
-const BASE_URL = 'https://backlinkgrid.com'
-
 export const metadata: Metadata = {
-  title: 'Free SEO & Link Building Tools',
-  description:
-    'Free SEO and link building tools to help you build authority and rank higher. ROI calculators, audit checklists, and more.',
-  keywords: [
-    'SEO tools',
-    'link building tools',
-    'free SEO tools',
-    'backlink tools',
-    'SEO calculators',
-    'link building calculators'
-  ],
-  alternates: {
-    canonical: `${BASE_URL}/tools`,
-  },
-  openGraph: {
-    title: 'Free SEO & Link Building Tools | SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'Free SEO & Link Building Tools',
     description:
-      'Free tools to help you build backlinks and improve your SEO. Calculators, checklists, and more.',
-    url: `${BASE_URL}/tools`,
-  },
+      'Free SEO and link building tools to help you build authority and rank higher. ROI calculators, audit checklists, and more.',
+    canonicalUrl: 'https://backlinkgrid.com/tools',
+    keywords: [
+      'SEO tools',
+      'link building tools',
+      'free SEO tools',
+      'backlink tools',
+      'SEO calculators',
+      'link building calculators',
+    ],
+    type: 'website',
+  }),
 }
 
 interface Tool {

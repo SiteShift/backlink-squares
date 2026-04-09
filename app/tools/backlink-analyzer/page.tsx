@@ -23,7 +23,7 @@ import {
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
+import { BreadcrumbSchema, FAQSchema, SoftwareApplicationSchema } from '@/components/seo/JsonLd'
 
 const BASE_URL = 'https://backlinkgrid.com'
 
@@ -293,6 +293,17 @@ export default function BacklinkAnalyzerPage() {
 
   return (
     <>
+      <SoftwareApplicationSchema
+        name="Backlink Profile Analyzer"
+        description="Generate a backlink audit checklist and learn what to inspect in referring domains, anchor text, link velocity, and toxic link patterns."
+        url={`${BASE_URL}/tools/backlink-analyzer`}
+        featureList={[
+          'Interactive backlink audit checklist',
+          'Anchor text and toxicity guidance',
+          'Recommended SEO tools by use case',
+          'Profile recommendations by site maturity',
+        ]}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: BASE_URL },

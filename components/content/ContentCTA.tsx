@@ -13,18 +13,25 @@ export function ContentCTA({ variant = 'default' }: ContentCTAProps) {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h3 className="font-bold uppercase tracking-wide text-dark">
-              Get Your Backlink Today
+              Buy the Backlink, Then Scale It
             </h3>
             <p className="text-sm text-dark/60">
-              Skip the outreach. Instant dofollow link from $1.
+              Claim a square now or grab the backlink bundle for your next campaign.
             </p>
           </div>
-          <Link href="/#grid">
-            <Button variant="primary" size="sm" className="group whitespace-nowrap">
-              <Sparkles className="w-4 h-4 mr-2" />
-              Buy a Square
-            </Button>
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/#grid">
+              <Button variant="primary" size="sm" className="group whitespace-nowrap">
+                <Sparkles className="w-4 h-4 mr-2" />
+                Buy a Square
+              </Button>
+            </Link>
+            <Link href="/bundle">
+              <Button variant="secondary" size="sm" className="whitespace-nowrap">
+                View Bundle
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     )
@@ -40,24 +47,30 @@ export function ContentCTA({ variant = 'default' }: ContentCTAProps) {
       </div>
 
       <h3 className="font-black text-2xl lg:text-3xl uppercase tracking-wide text-white mb-4">
-        Get Your Backlink Today
+        Turn This Research Into Links
       </h3>
 
-      <p className="text-white/70 mb-8 max-w-md mx-auto">
-        Skip the outreach. Skip the waiting. Get a permanent dofollow backlink
-        on our grid starting at just $1.
+      <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+        Claim a permanent dofollow backlink on the grid, or speed up your campaign with the verified backlink bundle.
       </p>
 
-      <Link href="/#grid">
-        <Button
-          variant="secondary"
-          size="lg"
-          className="group"
-        >
-          Grab Your Square
-          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-        </Button>
-      </Link>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <Link href="/#grid">
+          <Button
+            variant="secondary"
+            size="lg"
+            className="group"
+          >
+            Claim Your Square
+            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
+        <Link href="/bundle">
+          <Button variant="primary" size="lg">
+            Get the Bundle
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }

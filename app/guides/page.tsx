@@ -4,21 +4,17 @@ import { Clock, ArrowRight, BookOpen } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllGuides } from '@/lib/content'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'SEO & Link Building Guides',
-  description:
-    'Comprehensive guides on SEO and link building. Master backlinks, domain authority, and effective link building strategies.',
-  alternates: {
-    canonical: `${BASE_URL}/guides`,
-  },
-  openGraph: {
-    title: 'SEO & Link Building Guides | SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'SEO & Link Building Guides',
     description:
-      'Comprehensive guides on SEO and link building strategies.',
-  },
+      'Comprehensive guides on SEO and link building. Master backlinks, domain authority, and effective link building strategies.',
+    canonicalUrl: 'https://backlinkgrid.com/guides',
+    type: 'website',
+    keywords: ['SEO guides', 'link building guides', 'backlink guides'],
+  }),
 }
 
 const colorClasses = {

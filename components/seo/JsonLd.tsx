@@ -1,3 +1,23 @@
+const BASE_URL = 'https://backlinkgrid.com'
+
+function absoluteUrl(pathname: string) {
+  if (!pathname || pathname === '/') {
+    return BASE_URL
+  }
+
+  return pathname.startsWith('http')
+    ? pathname
+    : `${BASE_URL}${pathname.startsWith('/') ? pathname : `/${pathname}`}`
+}
+
+function resolveSchemaImage(image?: string) {
+  if (!image) {
+    return absoluteUrl('/og-image.png')
+  }
+
+  return image.startsWith('http') ? image : absoluteUrl(image)
+}
+
 interface JsonLdProps {
   data: Record<string, unknown>
 }
@@ -46,21 +66,21 @@ export function ArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'SEO Backlinks Grid',
-      url: 'https://backlinkgrid.com',
+      name: 'BacklinkGrid',
+      url: BASE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://backlinkgrid.com/logo.png',
+        url: absoluteUrl('/logo.png'),
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url,
     },
-    ...(image && {
+    ...({
       image: {
         '@type': 'ImageObject',
-        url: image.startsWith('http') ? image : `https://backlinkgrid.com${image}`,
+        url: resolveSchemaImage(image),
       },
     }),
     ...(keywords &&
@@ -162,7 +182,7 @@ export function DefinedTermSchema({ term, definition, url }: DefinedTermSchemaPr
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       name: 'SEO Glossary',
-      url: 'https://backlinkgrid.com/glossary',
+      url: absoluteUrl('/glossary'),
     },
   }
 
@@ -177,9 +197,9 @@ interface OrganizationSchemaProps {
 }
 
 export function OrganizationSchema({
-  name = 'SEO Backlinks Grid',
-  url = 'https://backlinkgrid.com',
-  logo = 'https://backlinkgrid.com/logo.png',
+  name = 'BacklinkGrid',
+  url = BASE_URL,
+  logo = absoluteUrl('/logo.png'),
   sameAs = [],
 }: OrganizationSchemaProps) {
   const schema = {
@@ -192,6 +212,96 @@ export function OrganizationSchema({
       url: logo,
     },
     ...(sameAs.length > 0 && { sameAs: sameAs }),
+  }
+
+  return <JsonLd data={schema} />
+}
+
+interface ProductSchemaProps {
+  name: string
+  description: string
+  url: string
+  image?: string
+  brand?: string
+  category?: string
+  price: number
+  currency?: string
+  availability?: string
+}
+
+export function ProductSchema({
+  name,
+  description,
+  url,
+  image = absoluteUrl('/og-image.png'),
+  brand = 'BacklinkGrid',
+  category = 'SEO Product',
+  price,
+  currency = 'USD',
+  availability = 'https://schema.org/InStock',
+}: ProductSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    url,
+    image,
+    category,
+    brand: {
+      '@type': 'Brand',
+      name: brand,
+    },
+    offers: {
+      '@type': 'Offer',
+      price,
+      priceCurrency: currency,
+      availability,
+      url,
+    },
+  }
+
+  return <JsonLd data={schema} />
+}
+
+interface SoftwareApplicationSchemaProps {
+  name: string
+  description: string
+  url: string
+  applicationCategory?: string
+  operatingSystem?: string
+  image?: string
+  featureList?: string[]
+  price?: number
+  currency?: string
+}
+
+export function SoftwareApplicationSchema({
+  name,
+  description,
+  url,
+  applicationCategory = 'BusinessApplication',
+  operatingSystem = 'Web',
+  image = absoluteUrl('/og-image.png'),
+  featureList = [],
+  price = 0,
+  currency = 'USD',
+}: SoftwareApplicationSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name,
+    description,
+    url,
+    image,
+    applicationCategory,
+    operatingSystem,
+    offers: {
+      '@type': 'Offer',
+      price,
+      priceCurrency: currency,
+    },
+    ...(featureList.length > 0 ? { featureList } : {}),
   }
 
   return <JsonLd data={schema} />

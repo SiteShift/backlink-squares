@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
+import { BreadcrumbSchema, SoftwareApplicationSchema } from '@/components/seo/JsonLd'
 import {
   Calculator,
   DollarSign,
@@ -19,6 +20,8 @@ import {
   BarChart3,
   CheckCircle2
 } from 'lucide-react'
+
+const BASE_URL = 'https://backlinkgrid.com'
 
 interface InputFieldProps {
   label: string
@@ -205,6 +208,24 @@ export default function ROICalculatorPage() {
 
   return (
     <>
+      <SoftwareApplicationSchema
+        name="Link Building ROI Calculator"
+        description="Estimate traffic, conversions, revenue, and ROI from link building campaigns with adjustable business assumptions."
+        url={`${BASE_URL}/tools/roi-calculator`}
+        featureList={[
+          'Monthly budget and cost-per-link inputs',
+          'Projected traffic and revenue growth',
+          'Break-even and ROI calculations',
+          'Educational assumptions for SEO forecasting',
+        ]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: BASE_URL },
+          { name: 'Tools', url: `${BASE_URL}/tools` },
+          { name: 'ROI Calculator', url: `${BASE_URL}/tools/roi-calculator` },
+        ]}
+      />
       <Header />
 
       <main className="min-h-screen bg-surface-50">

@@ -8,11 +8,10 @@ import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
 import { BundleCard } from '@/components/promo'
-import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
+import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
 import { useMDXComponents } from '@/mdx-components'
-
-const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: { slug: string }
@@ -25,21 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Guide Not Found' }
   }
 
-  return {
-    title: `${guide.title} | SEO Backlinks Grid`,
+  return buildArticlePageMetadata({
+    pathname: `/guides/${params.slug}`,
+    title: guide.title,
     description: guide.description,
+    metaTitle: guide.metaTitle,
+    metaDescription: guide.metaDescription,
     keywords: guide.keywords,
-    alternates: {
-      canonical: `${BASE_URL}/guides/${params.slug}`,
-    },
-    openGraph: {
-      title: guide.title,
-      description: guide.description,
-      type: 'article',
-      publishedTime: guide.date,
-      authors: [guide.author || 'SEO Backlinks'],
-    },
-  }
+    image: guide.image,
+    publishedTime: guide.date,
+    modifiedTime: guide.date,
+    authors: [guide.author || 'SEO Backlinks'],
+  })
 }
 
 export function generateStaticParams() {
@@ -59,23 +55,25 @@ export default function GuidePage({ params }: Props) {
 
   // Breadcrumb data
   const breadcrumbs = [
-    { name: 'Home', url: BASE_URL },
-    { name: 'Guides', url: `${BASE_URL}/guides` },
-    { name: guide.title, url: `${BASE_URL}/guides/${params.slug}` },
+    { name: 'Home', url: absoluteUrl('/') },
+    { name: 'Guides', url: absoluteUrl('/guides') },
+    { name: guide.title, url: absoluteUrl(`/guides/${params.slug}`) },
   ]
 
   return (
     <>
       <ArticleSchema
         title={guide.title}
-        description={guide.description}
+        description={pickSeoDescription(guide)}
         author={guide.author || 'SEO Backlinks'}
         datePublished={guide.date}
         dateModified={guide.date}
-        url={`${BASE_URL}/guides/${params.slug}`}
-        image={guide.image || `${BASE_URL}/og-image.png`}
+        url={absoluteUrl(`/guides/${params.slug}`)}
+        image={resolveSchemaImage(guide.image)}
+        keywords={guide.keywords}
       />
       <BreadcrumbSchema items={breadcrumbs} />
+      {guide.faqs && guide.faqs.length > 0 && <FAQSchema questions={guide.faqs} />}
 
       <Header />
       <StickyPromo />

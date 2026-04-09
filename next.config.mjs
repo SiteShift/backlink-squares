@@ -13,6 +13,100 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/industries/startup',
+        destination: '/blog/link-building-for-startups',
+        permanent: true,
+      },
+      {
+        source: '/backlink-quality/toxic-backlinks-myth',
+        destination: '/backlink-audit/toxic-links',
+        permanent: true,
+      },
+      {
+        source: '/backlink-quality/authority-metrics-explained',
+        destination: '/backlink-quality/authority-metrics',
+        permanent: true,
+      },
+      {
+        source: '/backlinks/backlink-profile',
+        destination: '/glossary/link-profile',
+        permanent: true,
+      },
+      {
+        source: '/link-building-tactics/original-research-link-building',
+        destination: '/link-building-tactics/original-research',
+        permanent: true,
+      },
+      {
+        source: '/backlink-audit/checklist',
+        destination: '/resources/audit-checklist',
+        permanent: true,
+      },
+      {
+        source: '/backlink-monitoring/alerts',
+        destination: '/glossary/backlink-monitoring',
+        permanent: true,
+      },
+      {
+        source: '/link-building-tactics/scholarship-links-why-not',
+        destination: '/strategies/scholarship-link-building',
+        permanent: true,
+      },
+      {
+        source: '/penalties/manual-actions-links',
+        destination: '/glossary/manual-action',
+        permanent: true,
+      },
+      {
+        source: '/link-building/agencies',
+        destination: '/blog/best-link-building-agencies',
+        permanent: true,
+      },
+      {
+        source: '/link-building/anchor-text',
+        destination: '/backlinks/anchor-text',
+        permanent: true,
+      },
+      {
+        source: '/link-building/content-strategy',
+        destination: '/link-building/content-that-earns-links',
+        permanent: true,
+      },
+      {
+        source: '/link-building/outreach',
+        destination: '/link-building/outreach-strategy',
+        permanent: true,
+      },
+      {
+        source: '/templates',
+        destination: '/resources',
+        permanent: true,
+      },
+      {
+        source: '/link-building/saas',
+        destination: '/industries/saas',
+        permanent: true,
+      },
+      {
+        source: '/link-building/ecommerce',
+        destination: '/industries/ecommerce',
+        permanent: true,
+      },
+      {
+        source: '/link-building/local-business',
+        destination: '/industries/local-business',
+        permanent: true,
+      },
+      {
+        source: '/link-building/b2b',
+        destination: '/industries/b2b',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

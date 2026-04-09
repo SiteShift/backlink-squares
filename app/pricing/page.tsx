@@ -3,22 +3,19 @@ import Link from 'next/link'
 import { Check, Sparkles, ArrowRight, HelpCircle } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { FAQSchema, ProductSchema } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Pricing - Simple, Transparent Pricing',
-  description:
-    'SEO Backlinks Grid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent dofollow backlink.',
-  alternates: {
-    canonical: `${BASE_URL}/pricing`,
-  },
-  openGraph: {
-    title: 'Pricing | SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'Pricing - Simple, Transparent Pricing',
     description:
-      '$1 per square. Permanent dofollow backlinks with transparent pricing.',
-  },
+      'BacklinkGrid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent dofollow backlink.',
+    canonicalUrl: 'https://backlinkgrid.com/pricing',
+    keywords: ['backlink pricing', 'buy backlink', 'dofollow backlink pricing', '$1 backlink'],
+    type: 'website',
+  }),
 }
 
 const pricingTiers = [
@@ -98,6 +95,13 @@ const faqs = [
 export default function PricingPage() {
   return (
     <>
+      <ProductSchema
+        name="BacklinkGrid Squares"
+        description="Permanent dofollow backlinks on BacklinkGrid starting at $1 per square with no subscription."
+        url="https://backlinkgrid.com/pricing"
+        price={1}
+      />
+      <FAQSchema questions={faqs} />
       <Header />
 
       <main className="min-h-screen bg-bauhaus-cream">

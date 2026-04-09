@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllHubs, getHubClusters, getAllGlossaryTerms } from '@/lib/content'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Sitemap - All Pages',
-  description: 'Complete sitemap of SEO Backlinks Grid. Browse all pages including guides, glossary terms, and content hubs.',
-  alternates: {
-    canonical: `${BASE_URL}/sitemap-page`,
-  },
+  ...buildMetadata({
+    title: 'Sitemap - All Pages',
+    description: 'Complete sitemap of BacklinkGrid. Browse all pages including guides, glossary terms, tools, and content hubs.',
+    canonicalUrl: 'https://backlinkgrid.com/sitemap-page',
+    type: 'website',
+  }),
 }
 
 export default function SitemapPage() {
@@ -44,7 +44,7 @@ export default function SitemapPage() {
               Sitemap
             </h1>
             <p className="mt-4 text-lg text-dark/60">
-              Complete directory of all pages on SEO Backlinks Grid
+              Complete directory of all pages on BacklinkGrid
             </p>
           </div>
         </section>

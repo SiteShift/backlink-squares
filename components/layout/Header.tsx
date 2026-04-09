@@ -9,6 +9,7 @@ import { usePromo } from '@/components/promo'
 
 const navLinks = [
   { href: '/how-it-works', label: 'How It Works' },
+  { href: '/tools', label: 'Tools' },
   { href: '/blog', label: 'Blog' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/about', label: 'About' },
@@ -21,6 +22,12 @@ const contentHubs = [
   { href: '/backlink-audit', label: 'Backlink Audits', description: 'Analyze your profile' },
   { href: '/link-building-tactics', label: 'Tactics Library', description: 'Proven techniques' },
   { href: '/digital-pr', label: 'Digital PR', description: 'PR-driven links' },
+  { href: '/outreach', label: 'Outreach', description: 'Prospecting, email, and follow-up' },
+  { href: '/industries', label: 'Industries', description: 'Vertical-specific link building' },
+  { href: '/resources', label: 'Resources', description: 'Templates, checklists, and tools' },
+  { href: '/strategies', label: 'Strategies', description: 'Industry and tactic playbooks' },
+  { href: '/comparisons', label: 'Comparisons', description: 'Compare SEO tools and services' },
+  { href: '/statistics', label: 'Statistics', description: 'Benchmarks and industry data' },
 ]
 
 export function Header() {
@@ -119,27 +126,38 @@ export function Header() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-2 w-72 bg-white border-2 border-surface-950 shadow-brutal py-2"
+                      className="absolute top-full left-0 mt-2 w-[28rem] bg-white border-2 border-surface-950 shadow-brutal py-2"
                     >
-                      {contentHubs.map((hub) => (
-                        <Link
-                          key={hub.href}
-                          href={hub.href}
-                          onClick={() => setLearnDropdownOpen(false)}
-                          className="block px-4 py-3 hover:bg-surface-50 transition-colors"
-                        >
-                          <span className="block text-sm font-semibold text-surface-950">{hub.label}</span>
-                          <span className="block text-xs text-surface-500 mt-0.5">{hub.description}</span>
-                        </Link>
-                      ))}
+                      <div className="grid grid-cols-2 gap-x-2">
+                        {contentHubs.map((hub) => (
+                          <Link
+                            key={hub.href}
+                            href={hub.href}
+                            onClick={() => setLearnDropdownOpen(false)}
+                            className="block px-4 py-3 hover:bg-surface-50 transition-colors"
+                          >
+                            <span className="block text-sm font-semibold text-surface-950">{hub.label}</span>
+                            <span className="block text-xs text-surface-500 mt-0.5">{hub.description}</span>
+                          </Link>
+                        ))}
+                      </div>
                       <div className="border-t border-surface-200 mt-2 pt-2 px-4 pb-2">
-                        <Link
-                          href="/guides"
-                          onClick={() => setLearnDropdownOpen(false)}
-                          className="text-sm font-semibold text-brand-red hover:underline"
-                        >
-                          View All Guides →
-                        </Link>
+                        <div className="flex items-center justify-between gap-4">
+                          <Link
+                            href="/guides"
+                            onClick={() => setLearnDropdownOpen(false)}
+                            className="text-sm font-semibold text-brand-red hover:underline"
+                          >
+                            View Guides →
+                          </Link>
+                          <Link
+                            href="/sitemap-page"
+                            onClick={() => setLearnDropdownOpen(false)}
+                            className="text-sm font-semibold text-surface-600 hover:text-surface-950"
+                          >
+                            Full Sitemap
+                          </Link>
+                        </div>
                       </div>
                     </motion.div>
                   )}

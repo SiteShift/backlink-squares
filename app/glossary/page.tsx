@@ -4,22 +4,17 @@ import { BookText } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllGlossaryTerms } from '@/lib/content'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'SEO Glossary - Link Building Terms Explained',
-  description:
-    'Essential SEO and link building glossary. Learn the meaning of important terms from anchor text to UGC links. 17+ terms explained simply.',
-  alternates: {
-    canonical: `${BASE_URL}/glossary`,
-  },
-  openGraph: {
-    title: 'SEO Glossary | SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'SEO Glossary - Link Building Terms Explained',
     description:
-      'Essential glossary of SEO and link building terms explained simply.',
-    url: `${BASE_URL}/glossary`,
-  },
+      'Essential SEO and link building glossary. Learn the meaning of important terms from anchor text to UGC links.',
+    canonicalUrl: 'https://backlinkgrid.com/glossary',
+    type: 'website',
+    keywords: ['SEO glossary', 'link building glossary', 'backlink terms'],
+  }),
 }
 
 // Group terms by first letter

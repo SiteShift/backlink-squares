@@ -42,6 +42,7 @@ export interface HubMeta {
   hub: string
   clusterPages?: string[]
   image?: string
+  faqs?: FAQ[]
 }
 
 export interface HubContent extends HubMeta {
@@ -198,17 +199,21 @@ export function getGuide(slug: string): ContentItem | null {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  return {
-    slug,
-    title: data.title || slug,
-    description: data.description || '',
-    date: data.date || new Date().toISOString(),
-    author: data.author || 'SEO Backlinks',
-    keywords: data.keywords || [],
-    readingTime: calculateReadingTime(content),
-    image: data.image,
-    content,
-  }
+      return {
+        slug,
+        title: data.title || slug,
+        description: data.description || '',
+        date: data.date || new Date().toISOString(),
+        author: data.author || 'SEO Backlinks',
+        authorTitle: data.authorTitle,
+        keywords: data.keywords || [],
+        readingTime: calculateReadingTime(content),
+        image: data.image,
+        metaTitle: data.metaTitle,
+        metaDescription: data.metaDescription,
+        faqs: data.faqs || [],
+        content,
+      }
 }
 
 // Glossary term type
@@ -367,6 +372,7 @@ export function getHubContent(hubSlug: string): HubContent | null {
     hub: hubSlug,
     clusterPages: data.clusterPages || [],
     image: data.image,
+    faqs: data.faqs || [],
     content,
   }
 }

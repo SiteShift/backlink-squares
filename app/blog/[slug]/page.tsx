@@ -11,10 +11,9 @@ import { BlogCard } from '@/components/content/BlogCard'
 import { BundleCard } from '@/components/promo'
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
+import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
 import { formatDate } from '@/lib/utils'
 import { useMDXComponents } from '@/mdx-components'
-
-const BASE_URL = 'https://backlinkgrid.com'
 
 type Props = {
   params: { slug: string }
@@ -24,31 +23,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(params.slug)
 
   if (!post) {
-    return {
-      title: 'Post Not Found',
-    }
+    return { title: 'Post Not Found' }
   }
 
-  return {
+  return buildArticlePageMetadata({
+    pathname: `/blog/${params.slug}`,
     title: post.title,
     description: post.description,
+    metaTitle: post.metaTitle,
+    metaDescription: post.metaDescription,
     keywords: post.keywords,
-    alternates: {
-      canonical: `${BASE_URL}/blog/${params.slug}`,
-    },
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: 'article',
-      publishedTime: post.date,
-      authors: [post.author || 'SEO Backlinks'],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description,
-    },
-  }
+    image: post.image,
+    publishedTime: post.date,
+    modifiedTime: post.date,
+    authors: [post.author || 'SEO Backlinks'],
+  })
 }
 
 export function generateStaticParams() {
@@ -68,21 +57,22 @@ export default function BlogPostPage({ params }: Props) {
 
   // Breadcrumb data
   const breadcrumbs = [
-    { name: 'Home', url: BASE_URL },
-    { name: 'Blog', url: `${BASE_URL}/blog` },
-    { name: post.title, url: `${BASE_URL}/blog/${params.slug}` },
+    { name: 'Home', url: absoluteUrl('/') },
+    { name: 'Blog', url: absoluteUrl('/blog') },
+    { name: post.title, url: absoluteUrl(`/blog/${params.slug}`) },
   ]
 
   return (
     <>
       <ArticleSchema
         title={post.title}
-        description={post.description}
+        description={pickSeoDescription(post)}
         author={post.author || 'SEO Backlinks'}
         datePublished={post.date}
         dateModified={post.date}
-        url={`${BASE_URL}/blog/${params.slug}`}
-        image={post.image || `${BASE_URL}/og-image.png`}
+        url={absoluteUrl(`/blog/${params.slug}`)}
+        image={resolveSchemaImage(post.image)}
+        keywords={post.keywords}
       />
       <BreadcrumbSchema items={breadcrumbs} />
       {post.faqs && post.faqs.length > 0 && (

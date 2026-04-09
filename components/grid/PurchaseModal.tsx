@@ -254,6 +254,8 @@ export function PurchaseModal() {
                         <img
                           src={logoPreview}
                           alt="Logo preview"
+                          width={56}
+                          height={56}
                           className="w-full h-full object-contain p-1"
                         />
                       </div>
@@ -360,6 +362,8 @@ export function PurchaseModal() {
               <img
                 src="/stripe-4.svg"
                 alt="Stripe"
+                width={53}
+                height={20}
                 className="h-5 opacity-60 grayscale"
               />
             </div>
@@ -423,6 +427,8 @@ export function PurchaseModal() {
                     <img
                       src={logoPreview}
                       alt="Your logo"
+                      width={112}
+                      height={112}
                       className="w-full h-full object-contain p-1 bg-white"
                     />
                   ) : (

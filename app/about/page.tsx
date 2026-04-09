@@ -5,21 +5,16 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import { OrganizationSchema } from '@/components/seo/JsonLd'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'About Us - The Story Behind SEO Backlinks Grid',
-  description:
-    'Learn about SEO Backlinks Grid - the visual backlink marketplace making link building accessible, affordable, and transparent for everyone.',
-  alternates: {
-    canonical: `${BASE_URL}/about`,
-  },
-  openGraph: {
-    title: 'About SEO Backlinks Grid',
+  ...buildMetadata({
+    title: 'About BacklinkGrid',
     description:
-      'The visual backlink marketplace making link building accessible to everyone.',
-  },
+      'Learn about BacklinkGrid, the visual backlink marketplace making link building accessible, affordable, and transparent.',
+    canonicalUrl: 'https://backlinkgrid.com/about',
+    type: 'website',
+  }),
 }
 
 const values = [
@@ -63,9 +58,9 @@ export default function AboutPage() {
   return (
     <>
       <OrganizationSchema
-        name="SEO Backlinks Grid"
-        url={BASE_URL}
-        logo={`${BASE_URL}/logo.png`}
+        name="BacklinkGrid"
+        url="https://backlinkgrid.com"
+        logo="https://backlinkgrid.com/logo.png"
         sameAs={[
           'https://twitter.com/seobacklinks',
           'https://linkedin.com/company/seobacklinks',
@@ -78,7 +73,7 @@ export default function AboutPage() {
         <section className="relative py-20 lg:py-28 bg-bauhaus-cream border-b-3 border-dark overflow-hidden">
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-dark leading-tight">
-              About SEO Backlinks Grid
+              About BacklinkGrid
             </h1>
             <p className="mt-6 text-xl text-dark/60 max-w-2xl mx-auto">
               We're on a mission to make link building accessible, transparent,
@@ -104,7 +99,7 @@ export default function AboutPage() {
                 </p>
 
                 <p className="text-dark/70 leading-relaxed">
-                  We created SEO Backlinks Grid because we believe there should be
+                  We created BacklinkGrid because we believe there should be
                   a simpler way. A way to get a real, quality backlink without the
                   endless back-and-forth. Without the uncertainty. Without breaking
                   the bank.

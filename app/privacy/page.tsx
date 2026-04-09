@@ -1,16 +1,16 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description:
-    'Privacy Policy for SEO Backlinks Grid. Learn how we collect, use, and protect your personal information.',
-  alternates: {
-    canonical: `${BASE_URL}/privacy`,
-  },
+  ...buildMetadata({
+    title: 'Privacy Policy',
+    description:
+      'Privacy Policy for BacklinkGrid. Learn how we collect, use, and protect your personal information.',
+    canonicalUrl: 'https://backlinkgrid.com/privacy',
+    type: 'website',
+  }),
 }
 
 export default function PrivacyPage() {
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
           <div className="prose prose-slate max-w-none">
             <h2>1. Introduction</h2>
             <p>
-              SEO Backlinks Grid ("we," "our," or "us") respects your privacy
+              BacklinkGrid ("we," "our," or "us") respects your privacy
               and is committed to protecting your personal data. This Privacy
               Policy explains how we collect, use, and safeguard your information
               when you visit our website backlinkgrid.com and use our services.

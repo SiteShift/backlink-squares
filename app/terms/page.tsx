@@ -1,16 +1,16 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-
-const BASE_URL = 'https://backlinkgrid.com'
+import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description:
-    'Terms of Service for SEO Backlinks Grid. Read our terms and conditions before making a purchase.',
-  alternates: {
-    canonical: `${BASE_URL}/terms`,
-  },
+  ...buildMetadata({
+    title: 'Terms of Service',
+    description:
+      'Terms of Service for BacklinkGrid. Read our terms and conditions before making a purchase.',
+    canonicalUrl: 'https://backlinkgrid.com/terms',
+    type: 'website',
+  }),
 }
 
 export default function TermsPage() {
@@ -28,14 +28,14 @@ export default function TermsPage() {
           <div className="prose prose-slate max-w-none">
             <h2>1. Introduction</h2>
             <p>
-              Welcome to SEO Backlinks Grid ("we," "our," or "us"). By accessing
+              Welcome to BacklinkGrid ("we," "our," or "us"). By accessing
               or using our website at backlinkgrid.com (the "Site") and purchasing
               our services, you agree to be bound by these Terms of Service ("Terms").
             </p>
 
             <h2>2. Service Description</h2>
             <p>
-              SEO Backlinks Grid provides a visual grid where users can purchase
+              BacklinkGrid provides a visual grid where users can purchase
               "squares" that display their website logo/favicon and include a
               permanent dofollow backlink to their website. Each square purchase
               is a one-time payment for permanent placement.
@@ -119,7 +119,7 @@ export default function TermsPage() {
 
             <h2>8. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, SEO Backlinks Grid shall
+              To the maximum extent permitted by law, BacklinkGrid shall
               not be liable for any indirect, incidental, special, consequential,
               or punitive damages resulting from your use of or inability to use
               our service.
@@ -127,7 +127,7 @@ export default function TermsPage() {
 
             <h2>9. Indemnification</h2>
             <p>
-              You agree to indemnify and hold harmless SEO Backlinks Grid and
+              You agree to indemnify and hold harmless BacklinkGrid and
               its owners, operators, and affiliates from any claims, damages,
               losses, or expenses arising from your use of our service or
               violation of these Terms.
