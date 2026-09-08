@@ -56,7 +56,7 @@ Audit date: 2026-09-08. Scope: existing public website, its content graph, grid 
 - [x] Browser checks on mobile/desktop for homepage, bundle, representative article, tools and navigation.
 - [x] Test grid selection and load-more, checkout failure handling, sample downloads, protected download rejection and no-JS content.
 - [x] Record evidence, residual operational limitations and measurement guidance.
-- [ ] Commit and push to GitHub; verify remote commit. Live deployment depends on repository integration.
+- [x] Commit and push to GitHub; verified local HEAD and origin/main at `25bdd32d4ed8746a6fd08d4a7ec6896e7a51b8ff` on 2026-09-08. Live deployment depends on repository integration.
 
 ## Measurement after deployment
 

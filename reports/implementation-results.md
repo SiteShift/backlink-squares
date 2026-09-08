@@ -34,4 +34,6 @@ Not every statement in the historical 336-document library was independently re-
 
 ## After GitHub deployment
 
+Implementation pushed to `origin/main` on 2026-09-08, with local and remote commit verified as `25bdd32d4ed8746a6fd08d4a7ec6896e7a51b8ff`. This records GitHub delivery, not confirmation of a completed production deployment.
+
 Verify the live bundle, /templates, /llms.txt, /index.md and /sitemap.xml before submitting the sitemap. Use URL Inspection on the bundle, Moz guide and comparison page. Compare equivalent GSC time windows and track Stripe purchases separately from CTA events. Field performance and ranking changes require post-deployment data; these tests do not establish future search positions or revenue gains.
