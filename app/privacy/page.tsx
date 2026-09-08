@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <h1 className="font-display text-4xl font-bold text-slate-900 mb-4">
             Privacy Policy
           </h1>
-          <p className="text-slate-500 mb-12">Last updated: January 2026</p>
+          <p className="text-slate-500 mb-12">Last updated: 9 September 2026</p>
 
           <div className="prose prose-slate max-w-none">
             <h2>1. Introduction</h2>
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
               The following information is publicly visible on our grid:
             </p>
             <ul>
-              <li>Your website URL (as a dofollow link)</li>
+              <li>Your website URL and its directory link</li>
               <li>Your site/business name</li>
               <li>Your uploaded logo or favicon</li>
             </ul>
@@ -134,6 +134,24 @@ export default function PrivacyPage() {
                 preferences
               </li>
             </ul>
+
+            <h3>Free Website Tools</h3>
+            <p>
+              Our live tools send submitted public URLs to our server to fetch
+              website content. Extracted page responses may be cached in server
+              memory for five minutes; robots policies for ten minutes; and public
+              competitor-discovery results for fifteen minutes. We use request
+              IP information temporarily to limit abuse. Standard hosting logs
+              may contain request metadata. Do not submit private URLs or access tokens.
+            </p>
+            <p>
+              Competitor discovery sends the competitor domains you enter to
+              English Wikipedia and Hacker News search powered by Algolia. Story IDs are checked through the official public Hacker News API. We do
+              not send scan inputs to an AI service. Saved backlink check history
+              stays in your browser’s local storage until you clear it. Rechecks
+              run only while the tool page is open and visible. Downloaded reports
+              remain on your device until you delete them.
+            </p>
 
             <h2>6. Data Security</h2>
             <p>

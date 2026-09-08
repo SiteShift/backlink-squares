@@ -30,7 +30,7 @@ Editorial Markdown is available by adding .md to an editorial URL, for example /
 
 ## Boundaries and contact
 
-Content and sample files are public. Full bundle downloads require a paid Stripe session. There is no public backlink-index API, autonomous purchase API, MCP service or submission service. Tool pages explain or link to third-party tools; they do not crawl the web themselves. Purchases require a person to review the offer and complete checkout. Do not treat directory entries as endorsements or authority scores as Google metrics.
+Content and sample files are public. Full bundle downloads require a paid Stripe session. There is no public backlink-index API, autonomous purchase API, MCP service or submission service. Website tools fetch bounded public-page samples while respecting robots.txt; they are not a comprehensive backlink index. See /llms.txt for individual tool capabilities. Purchases require a person to review the offer and complete checkout. Do not treat directory entries as endorsements or authority scores as Google metrics.
 
 - [About](https://backlinkgrid.com/about)
 - [Editorial policy](https://backlinkgrid.com/editorial-policy)

@@ -30,7 +30,7 @@ Editorial Markdown is available by adding .md to an editorial URL, for example /
 
 ## Boundaries and contact
 
-Content and sample files are public. Full bundle downloads require a paid Stripe session. There is no public backlink-index API, autonomous purchase API, MCP service or submission service. Tool pages explain or link to third-party tools; they do not crawl the web themselves. Purchases require a person to review the offer and complete checkout. Do not treat directory entries as endorsements or authority scores as Google metrics.
+Content and sample files are public. Full bundle downloads require a paid Stripe session. There is no public backlink-index API, autonomous purchase API, MCP service or submission service. Website tools can fetch bounded samples of public pages, respecting robots.txt. There is no comprehensive web backlink index. Purchases require a person to review the offer and complete checkout. Do not treat directory entries as endorsements or authority scores as Google metrics.
 
 - [About](https://backlinkgrid.com/about)
 - [Editorial policy](https://backlinkgrid.com/editorial-policy)
@@ -41,3 +41,14 @@ Content and sample files are public. Full bundle downloads require a paid Stripe
 ## Free browser tools
 
 [Free link building tools](https://backlinkgrid.com/tools): outreach drafts, prospecting queries, monthly link velocity, GSC Top linking sites analysis, list comparisons, anchor classification, educational PageRank, pasted HTML inspection and disavow syntax validation. No paid APIs; no live backlink discovery.
+
+## Live website tools
+
+- [Personalised opportunity finder](https://backlinkgrid.com/tools/backlink-opportunity-finder): match a website and business type to a limited public selection; the full paid bundle stays separate.
+- [Live backlink checker](https://backlinkgrid.com/tools/live-backlink-checker): inspect a known source page. Saved browser history and visible-tab rechecks; no background email monitoring.
+- [Internal link finder](https://backlinkgrid.com/tools/internal-link-finder): exact passage suggestions from up to 12 sampled pages.
+- [Broken link finder](https://backlinkgrid.com/tools/broken-link-finder): up to 12 pages and 40 link destinations; distinguishes missing pages from blocked responses.
+- [Crawlability checker](https://backlinkgrid.com/tools/crawlability-checker): raw HTML, robots, canonicals and sitemap signals; not Google index confirmation.
+- [Competitor source finder](https://backlinkgrid.com/tools/competitor-backlink-finder): limited English Wikipedia/Hacker News discovery and live candidate verification, not a complete domain-level gap analysis.
+
+These tools use no paid data APIs. URLs are fetched by the server. Do not submit private URLs or access tokens.

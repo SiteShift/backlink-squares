@@ -190,7 +190,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics",
-    "bytes": 191220,
+    "bytes": 190492,
     "errors": [],
     "links": [
       "/bundle",
@@ -241,7 +241,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -462,7 +461,7 @@
   },
   {
     "url": "https://backlinkgrid.com/privacy",
-    "bytes": 128643,
+    "bytes": 130616,
     "errors": [],
     "links": [
       "/bundle",
@@ -885,7 +884,7 @@
   },
   {
     "url": "https://backlinkgrid.com/sitemap-page",
-    "bytes": 258661,
+    "bytes": 260803,
     "errors": [],
     "links": [
       "/bundle",
@@ -929,6 +928,12 @@
       "/tools/roi-calculator",
       "/tools/free-backlink-checker",
       "/tools/backlink-analyzer",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
       "/tools/outreach-templates",
       "/tools/link-prospect-finder",
       "/tools/link-velocity",
@@ -1364,7 +1369,7 @@
   },
   {
     "url": "https://backlinkgrid.com/tools",
-    "bytes": 134686,
+    "bytes": 133934,
     "errors": [],
     "links": [
       "/bundle",
@@ -1376,6 +1381,12 @@
       "/glossary",
       "/about",
       "/",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
       "/tools/outreach-templates",
       "/tools/link-prospect-finder",
       "/tools/link-velocity",
@@ -1617,7 +1628,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies",
-    "bytes": 283595,
+    "bytes": 282867,
     "errors": [],
     "links": [
       "/bundle",
@@ -1700,7 +1711,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -1747,7 +1757,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons",
-    "bytes": 266210,
+    "bytes": 265482,
     "errors": [],
     "links": [
       "/bundle",
@@ -1824,7 +1834,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -1871,7 +1880,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks",
-    "bytes": 263117,
+    "bytes": 262389,
     "errors": [],
     "links": [
       "/bundle",
@@ -1940,7 +1949,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -1987,7 +1995,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building",
-    "bytes": 263015,
+    "bytes": 262287,
     "errors": [],
     "links": [
       "/bundle",
@@ -2066,7 +2074,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2113,7 +2120,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality",
-    "bytes": 250065,
+    "bytes": 249337,
     "errors": [],
     "links": [
       "/bundle",
@@ -2167,7 +2174,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2214,7 +2220,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit",
-    "bytes": 237664,
+    "bytes": 238186,
     "errors": [],
     "links": [
       "/bundle",
@@ -2244,6 +2250,7 @@
       "/backlink-quality",
       "/link-building",
       "/backlink-audit/disavow-guide",
+      "/tools/crawlability-checker",
       "/backlink-audit/audit-template",
       "/backlink-audit/audit-tools",
       "/backlink-audit/competitor-analysis",
@@ -2266,7 +2273,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2313,7 +2319,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics",
-    "bytes": 243042,
+    "bytes": 242314,
     "errors": [],
     "links": [
       "/bundle",
@@ -2377,7 +2383,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2424,7 +2429,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr",
-    "bytes": 217205,
+    "bytes": 216477,
     "errors": [],
     "links": [
       "/bundle",
@@ -2470,7 +2475,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2517,7 +2521,7 @@
   },
   {
     "url": "https://backlinkgrid.com/outreach",
-    "bytes": 203832,
+    "bytes": 203104,
     "errors": [],
     "links": [
       "/bundle",
@@ -2560,7 +2564,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2607,7 +2610,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries",
-    "bytes": 245281,
+    "bytes": 244553,
     "errors": [],
     "links": [
       "/bundle",
@@ -2673,7 +2676,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2720,7 +2722,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources",
-    "bytes": 283223,
+    "bytes": 282495,
     "errors": [],
     "links": [
       "/bundle",
@@ -2812,7 +2814,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2859,7 +2860,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/anchor-text-ratios",
-    "bytes": 222717,
+    "bytes": 221989,
     "errors": [],
     "links": [
       "/bundle",
@@ -2887,7 +2888,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -2934,7 +2934,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/anchor-text",
-    "bytes": 214357,
+    "bytes": 213629,
     "errors": [],
     "links": [
       "/bundle",
@@ -2965,7 +2965,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3012,7 +3011,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/backlink-myths",
-    "bytes": 204112,
+    "bytes": 203384,
     "errors": [],
     "links": [
       "/bundle",
@@ -3046,7 +3045,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3093,7 +3091,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc",
-    "bytes": 218038,
+    "bytes": 217310,
     "errors": [],
     "links": [
       "/bundle",
@@ -3122,7 +3120,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3169,7 +3166,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/how-many-backlinks-do-i-need",
-    "bytes": 206320,
+    "bytes": 205592,
     "errors": [],
     "links": [
       "/bundle",
@@ -3198,7 +3195,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3245,7 +3241,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/internal-vs-external-links",
-    "bytes": 209505,
+    "bytes": 209957,
     "errors": [],
     "links": [
       "/bundle",
@@ -3267,6 +3263,7 @@
       "/backlinks/link-equity-pagerank-explained",
       "/backlinks",
       "/link-building",
+      "/tools/internal-link-finder",
       "/backlinks",
       "/backlinks/what-is-a-backlink",
       "/backlinks/link-equity-pagerank-explained",
@@ -3278,7 +3275,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3325,7 +3321,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/link-equity-pagerank-explained",
-    "bytes": 206247,
+    "bytes": 205519,
     "errors": [],
     "links": [
       "/bundle",
@@ -3356,7 +3352,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3403,7 +3398,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/link-velocity",
-    "bytes": 202197,
+    "bytes": 201469,
     "errors": [],
     "links": [
       "/bundle",
@@ -3432,7 +3427,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3479,7 +3473,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/referring-domains-vs-backlinks",
-    "bytes": 192692,
+    "bytes": 191964,
     "errors": [],
     "links": [
       "/bundle",
@@ -3509,7 +3503,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3556,7 +3549,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlinks/what-is-a-backlink",
-    "bytes": 200171,
+    "bytes": 199443,
     "errors": [],
     "links": [
       "/bundle",
@@ -3593,7 +3586,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3640,7 +3632,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/agency-vs-in-house",
-    "bytes": 232742,
+    "bytes": 232014,
     "errors": [],
     "links": [
       "/bundle",
@@ -3668,7 +3660,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3715,7 +3706,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/avoid-black-hat",
-    "bytes": 204278,
+    "bytes": 203550,
     "errors": [],
     "links": [
       "/bundle",
@@ -3747,7 +3738,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3794,7 +3784,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/content-that-earns-links",
-    "bytes": 214831,
+    "bytes": 214103,
     "errors": [],
     "links": [
       "/bundle",
@@ -3824,7 +3814,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3871,7 +3860,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/how-to-start",
-    "bytes": 215235,
+    "bytes": 214507,
     "errors": [],
     "links": [
       "/bundle",
@@ -3904,7 +3893,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -3951,7 +3939,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/outreach-strategy",
-    "bytes": 222297,
+    "bytes": 221569,
     "errors": [],
     "links": [
       "/bundle",
@@ -3980,7 +3968,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4027,7 +4014,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/link-building-pricing",
-    "bytes": 214819,
+    "bytes": 214091,
     "errors": [],
     "links": [
       "/bundle",
@@ -4057,7 +4044,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4104,7 +4090,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/roi",
-    "bytes": 204594,
+    "bytes": 203866,
     "errors": [],
     "links": [
       "/bundle",
@@ -4133,7 +4119,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4180,7 +4165,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/linkable-assets",
-    "bytes": 204502,
+    "bytes": 203774,
     "errors": [],
     "links": [
       "/bundle",
@@ -4210,7 +4195,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4257,7 +4241,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building/white-hat",
-    "bytes": 196636,
+    "bytes": 195908,
     "errors": [],
     "links": [
       "/bundle",
@@ -4289,7 +4273,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4336,7 +4319,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/authority-metrics",
-    "bytes": 205652,
+    "bytes": 204924,
     "errors": [],
     "links": [
       "/bundle",
@@ -4365,7 +4348,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4412,7 +4394,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/relevance-factors",
-    "bytes": 203821,
+    "bytes": 203093,
     "errors": [],
     "links": [
       "/bundle",
@@ -4441,7 +4423,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4488,7 +4469,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/google-link-spam",
-    "bytes": 244691,
+    "bytes": 243963,
     "errors": [],
     "links": [
       "/bundle",
@@ -4532,7 +4513,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4579,7 +4559,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/evaluating-link-opportunities",
-    "bytes": 218840,
+    "bytes": 218112,
     "errors": [],
     "links": [
       "/bundle",
@@ -4609,7 +4589,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4656,7 +4635,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/link-quality-checklist",
-    "bytes": 226626,
+    "bytes": 225898,
     "errors": [],
     "links": [
       "/bundle",
@@ -4684,7 +4663,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4731,7 +4709,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/spam-signals",
-    "bytes": 204947,
+    "bytes": 204219,
     "errors": [],
     "links": [
       "/bundle",
@@ -4761,7 +4739,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4808,7 +4785,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/trust-signals",
-    "bytes": 215988,
+    "bytes": 215260,
     "errors": [],
     "links": [
       "/bundle",
@@ -4837,7 +4814,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4884,7 +4860,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-quality/what-makes-quality-backlink",
-    "bytes": 197330,
+    "bytes": 196602,
     "errors": [],
     "links": [
       "/bundle",
@@ -4913,7 +4889,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -4960,7 +4935,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/audit-template",
-    "bytes": 249186,
+    "bytes": 248458,
     "errors": [],
     "links": [
       "/bundle",
@@ -4988,7 +4963,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5035,7 +5009,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/audit-tools",
-    "bytes": 209840,
+    "bytes": 209112,
     "errors": [],
     "links": [
       "/bundle",
@@ -5065,7 +5039,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5112,7 +5085,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/competitor-analysis",
-    "bytes": 209847,
+    "bytes": 209119,
     "errors": [],
     "links": [
       "/bundle",
@@ -5142,7 +5115,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5189,7 +5161,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/disavow-guide",
-    "bytes": 200900,
+    "bytes": 200172,
     "errors": [],
     "links": [
       "/bundle",
@@ -5218,7 +5190,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5265,7 +5236,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/how-to-audit",
-    "bytes": 230002,
+    "bytes": 229274,
     "errors": [],
     "links": [
       "/bundle",
@@ -5294,7 +5265,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5341,7 +5311,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/toxic-links",
-    "bytes": 199578,
+    "bytes": 198850,
     "errors": [],
     "links": [
       "/bundle",
@@ -5371,7 +5341,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5418,7 +5387,7 @@
   },
   {
     "url": "https://backlinkgrid.com/backlink-audit/using-metrics",
-    "bytes": 207821,
+    "bytes": 207093,
     "errors": [],
     "links": [
       "/bundle",
@@ -5447,7 +5416,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5494,7 +5462,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/broken-link-building",
-    "bytes": 196944,
+    "bytes": 197654,
     "errors": [],
     "links": [
       "/bundle",
@@ -5512,6 +5480,8 @@
       "/link-building-tactics/resource-page-links",
       "/link-building-tactics/link-reclamation",
       "/link-building/outreach-strategy",
+      "/tools/broken-link-finder",
+      "/tools/live-backlink-checker",
       "/link-building-tactics",
       "/link-building-tactics/guest-posting",
       "/link-building-tactics/resource-page-links",
@@ -5522,7 +5492,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5569,7 +5538,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/guest-posting",
-    "bytes": 194252,
+    "bytes": 193524,
     "errors": [],
     "links": [
       "/bundle",
@@ -5598,7 +5567,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5645,7 +5613,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/haro-alternatives",
-    "bytes": 199421,
+    "bytes": 198693,
     "errors": [],
     "links": [
       "/bundle",
@@ -5674,7 +5642,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5721,7 +5688,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/link-reclamation",
-    "bytes": 201620,
+    "bytes": 200892,
     "errors": [],
     "links": [
       "/bundle",
@@ -5751,7 +5718,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5798,7 +5764,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/original-research",
-    "bytes": 206693,
+    "bytes": 205965,
     "errors": [],
     "links": [
       "/bundle",
@@ -5828,7 +5794,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5875,7 +5840,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/resource-page-links",
-    "bytes": 199154,
+    "bytes": 198426,
     "errors": [],
     "links": [
       "/bundle",
@@ -5904,7 +5869,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -5951,7 +5915,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/skyscraper-technique",
-    "bytes": 199850,
+    "bytes": 199122,
     "errors": [],
     "links": [
       "/bundle",
@@ -5980,7 +5944,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6027,7 +5990,7 @@
   },
   {
     "url": "https://backlinkgrid.com/link-building-tactics/unlinked-mentions",
-    "bytes": 196172,
+    "bytes": 195444,
     "errors": [],
     "links": [
       "/bundle",
@@ -6055,7 +6018,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6102,7 +6064,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr/creative-campaigns",
-    "bytes": 192606,
+    "bytes": 191878,
     "errors": [],
     "links": [
       "/bundle",
@@ -6130,7 +6092,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6177,7 +6138,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr/data-studies",
-    "bytes": 196377,
+    "bytes": 195649,
     "errors": [],
     "links": [
       "/bundle",
@@ -6206,7 +6167,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6253,7 +6213,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr/journalist-outreach",
-    "bytes": 196205,
+    "bytes": 195477,
     "errors": [],
     "links": [
       "/bundle",
@@ -6282,7 +6242,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6329,7 +6288,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr/newsjacking",
-    "bytes": 193374,
+    "bytes": 192646,
     "errors": [],
     "links": [
       "/bundle",
@@ -6358,7 +6317,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6405,7 +6363,7 @@
   },
   {
     "url": "https://backlinkgrid.com/digital-pr/press-release-links",
-    "bytes": 181748,
+    "bytes": 181020,
     "errors": [],
     "links": [
       "/bundle",
@@ -6433,7 +6391,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6480,7 +6437,7 @@
   },
   {
     "url": "https://backlinkgrid.com/outreach/follow-up-strategy",
-    "bytes": 187532,
+    "bytes": 186804,
     "errors": [],
     "links": [
       "/bundle",
@@ -6507,7 +6464,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6554,7 +6510,7 @@
   },
   {
     "url": "https://backlinkgrid.com/outreach/email-templates",
-    "bytes": 193287,
+    "bytes": 192559,
     "errors": [],
     "links": [
       "/bundle",
@@ -6582,7 +6538,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6629,7 +6584,7 @@
   },
   {
     "url": "https://backlinkgrid.com/outreach/prospecting",
-    "bytes": 199578,
+    "bytes": 198850,
     "errors": [],
     "links": [
       "/bundle",
@@ -6659,7 +6614,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6706,7 +6660,7 @@
   },
   {
     "url": "https://backlinkgrid.com/outreach/relationship-building",
-    "bytes": 192841,
+    "bytes": 192113,
     "errors": [],
     "links": [
       "/bundle",
@@ -6734,7 +6688,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6781,7 +6734,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/b2b",
-    "bytes": 224799,
+    "bytes": 224071,
     "errors": [],
     "links": [
       "/bundle",
@@ -6810,7 +6763,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6857,7 +6809,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/crypto",
-    "bytes": 223325,
+    "bytes": 222597,
     "errors": [],
     "links": [
       "/bundle",
@@ -6887,7 +6839,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -6934,7 +6885,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/ecommerce",
-    "bytes": 224964,
+    "bytes": 224236,
     "errors": [],
     "links": [
       "/bundle",
@@ -6964,7 +6915,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7011,7 +6961,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/enterprise",
-    "bytes": 238391,
+    "bytes": 237663,
     "errors": [],
     "links": [
       "/bundle",
@@ -7041,7 +6991,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7088,7 +7037,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/fintech",
-    "bytes": 224286,
+    "bytes": 223558,
     "errors": [],
     "links": [
       "/bundle",
@@ -7118,7 +7067,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7165,7 +7113,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/healthcare",
-    "bytes": 223962,
+    "bytes": 223234,
     "errors": [],
     "links": [
       "/bundle",
@@ -7195,7 +7143,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7242,7 +7189,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/legal",
-    "bytes": 224817,
+    "bytes": 224089,
     "errors": [],
     "links": [
       "/bundle",
@@ -7272,7 +7219,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7319,7 +7265,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/local-business",
-    "bytes": 229072,
+    "bytes": 228344,
     "errors": [],
     "links": [
       "/bundle",
@@ -7350,7 +7296,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7397,7 +7342,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/real-estate",
-    "bytes": 224081,
+    "bytes": 223353,
     "errors": [],
     "links": [
       "/bundle",
@@ -7427,7 +7372,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7474,7 +7418,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/saas",
-    "bytes": 220818,
+    "bytes": 220090,
     "errors": [],
     "links": [
       "/bundle",
@@ -7504,7 +7448,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7551,7 +7494,7 @@
   },
   {
     "url": "https://backlinkgrid.com/industries/travel",
-    "bytes": 225204,
+    "bytes": 224476,
     "errors": [],
     "links": [
       "/bundle",
@@ -7580,7 +7523,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7627,7 +7569,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/audit-checklist",
-    "bytes": 207613,
+    "bytes": 206885,
     "errors": [],
     "links": [
       "/bundle",
@@ -7655,7 +7597,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7702,7 +7643,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/backlink-audit-template",
-    "bytes": 280103,
+    "bytes": 279375,
     "errors": [],
     "links": [
       "/bundle",
@@ -7732,7 +7673,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7779,7 +7719,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/backlink-database-guide",
-    "bytes": 181319,
+    "bytes": 182118,
     "errors": [],
     "links": [
       "/bundle",
@@ -7807,6 +7747,8 @@
       "/resources/link-prospect-qualification-checklist",
       "/resources/outreach-email-templates",
       "/backlink-quality",
+      "/tools/backlink-opportunity-finder",
+      "/bundle",
       "/resources",
       "/resources/prospecting-spreadsheet",
       "/resources/outreach-email-templates",
@@ -7818,7 +7760,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7865,7 +7806,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/competitor-analysis-template",
-    "bytes": 329185,
+    "bytes": 329719,
     "errors": [],
     "links": [
       "/bundle",
@@ -7886,6 +7827,7 @@
       "/resources/outreach-email-templates",
       "/resources/link-quality-checklist",
       "/tools/backlink-gap",
+      "/tools/competitor-backlink-finder",
       "/resources",
       "/resources/audit-checklist",
       "/resources/backlink-audit-template",
@@ -7896,7 +7838,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -7943,7 +7884,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/competitor-gap-template",
-    "bytes": 241457,
+    "bytes": 240729,
     "errors": [],
     "links": [
       "/bundle",
@@ -7971,7 +7912,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8018,7 +7958,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/content-promotion-checklist",
-    "bytes": 236534,
+    "bytes": 235806,
     "errors": [],
     "links": [
       "/bundle",
@@ -8048,7 +7988,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8095,7 +8034,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/free-seo-tools-list",
-    "bytes": 244604,
+    "bytes": 243876,
     "errors": [],
     "links": [
       "/bundle",
@@ -8124,7 +8063,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8171,7 +8109,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/guest-post-pitch-templates",
-    "bytes": 218775,
+    "bytes": 218047,
     "errors": [],
     "links": [
       "/bundle",
@@ -8201,7 +8139,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8248,7 +8185,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-building-checklist",
-    "bytes": 253266,
+    "bytes": 252538,
     "errors": [],
     "links": [
       "/bundle",
@@ -8278,7 +8215,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8325,7 +8261,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/outreach-templates",
-    "bytes": 185774,
+    "bytes": 185046,
     "errors": [],
     "links": [
       "/bundle",
@@ -8353,7 +8289,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8400,7 +8335,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/roi-calculator",
-    "bytes": 237129,
+    "bytes": 236401,
     "errors": [],
     "links": [
       "/bundle",
@@ -8428,7 +8363,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8475,7 +8409,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-building-spreadsheet-templates",
-    "bytes": 303581,
+    "bytes": 302853,
     "errors": [],
     "links": [
       "/bundle",
@@ -8505,7 +8439,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8552,7 +8485,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-building-tools-comparison",
-    "bytes": 277626,
+    "bytes": 276898,
     "errors": [],
     "links": [
       "/bundle",
@@ -8581,7 +8514,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8628,7 +8560,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-prospect-qualification-checklist",
-    "bytes": 246661,
+    "bytes": 245933,
     "errors": [],
     "links": [
       "/bundle",
@@ -8658,7 +8590,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8705,7 +8636,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/prospecting-spreadsheet",
-    "bytes": 227771,
+    "bytes": 227043,
     "errors": [],
     "links": [
       "/bundle",
@@ -8734,7 +8665,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8781,7 +8711,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-quality-checklist",
-    "bytes": 234437,
+    "bytes": 233709,
     "errors": [],
     "links": [
       "/bundle",
@@ -8809,7 +8739,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8856,7 +8785,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/link-quality-scorecard",
-    "bytes": 224781,
+    "bytes": 224053,
     "errors": [],
     "links": [
       "/bundle",
@@ -8884,7 +8813,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -8931,7 +8859,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/outreach-email-templates",
-    "bytes": 228099,
+    "bytes": 227371,
     "errors": [],
     "links": [
       "/bundle",
@@ -8962,7 +8890,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9009,7 +8936,7 @@
   },
   {
     "url": "https://backlinkgrid.com/resources/outreach-quality-checklist",
-    "bytes": 237521,
+    "bytes": 236793,
     "errors": [],
     "links": [
       "/bundle",
@@ -9038,7 +8965,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9085,7 +9011,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/startup-community-links",
-    "bytes": 196993,
+    "bytes": 196265,
     "errors": [],
     "links": [
       "/bundle",
@@ -9112,7 +9038,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9159,7 +9084,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/agency-case-study-links",
-    "bytes": 191470,
+    "bytes": 190742,
     "errors": [],
     "links": [
       "/bundle",
@@ -9187,7 +9112,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9234,7 +9158,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/local-sponsorship-links",
-    "bytes": 198627,
+    "bytes": 197899,
     "errors": [],
     "links": [
       "/bundle",
@@ -9262,7 +9186,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9309,7 +9232,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/saas-content-marketing-links",
-    "bytes": 192033,
+    "bytes": 191305,
     "errors": [],
     "links": [
       "/bundle",
@@ -9337,7 +9260,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9384,7 +9306,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/saas-digital-pr",
-    "bytes": 187832,
+    "bytes": 187104,
     "errors": [],
     "links": [
       "/bundle",
@@ -9412,7 +9334,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9459,7 +9380,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/ecommerce-product-link-building",
-    "bytes": 191283,
+    "bytes": 190555,
     "errors": [],
     "links": [
       "/bundle",
@@ -9487,7 +9408,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9534,7 +9454,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/agency-tool-links",
-    "bytes": 201949,
+    "bytes": 201221,
     "errors": [],
     "links": [
       "/bundle",
@@ -9562,7 +9482,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9609,7 +9528,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/startup-investor-pr-links",
-    "bytes": 195653,
+    "bytes": 194925,
     "errors": [],
     "links": [
       "/bundle",
@@ -9637,7 +9556,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9684,7 +9602,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/saas-guest-posting",
-    "bytes": 189745,
+    "bytes": 189017,
     "errors": [],
     "links": [
       "/bundle",
@@ -9712,7 +9630,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9759,7 +9676,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/ecommerce-influencer-links",
-    "bytes": 193698,
+    "bytes": 192970,
     "errors": [],
     "links": [
       "/bundle",
@@ -9787,7 +9704,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9834,7 +9750,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/startup-launch-links",
-    "bytes": 190371,
+    "bytes": 189643,
     "errors": [],
     "links": [
       "/bundle",
@@ -9862,7 +9778,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9909,7 +9824,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/local-citation-building",
-    "bytes": 194907,
+    "bytes": 194179,
     "errors": [],
     "links": [
       "/bundle",
@@ -9937,7 +9852,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -9984,7 +9898,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/local-press-coverage",
-    "bytes": 192600,
+    "bytes": 191872,
     "errors": [],
     "links": [
       "/bundle",
@@ -10012,7 +9926,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10059,7 +9972,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/service-business-local-links",
-    "bytes": 198056,
+    "bytes": 197328,
     "errors": [],
     "links": [
       "/bundle",
@@ -10087,7 +10000,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10134,7 +10046,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/resource-page-link-building-guide",
-    "bytes": 200608,
+    "bytes": 199880,
     "errors": [],
     "links": [
       "/bundle",
@@ -10161,7 +10073,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10208,7 +10119,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/scholarship-link-building",
-    "bytes": 192792,
+    "bytes": 192064,
     "errors": [],
     "links": [
       "/bundle",
@@ -10235,7 +10146,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10282,7 +10192,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/b2b-partnership-links",
-    "bytes": 199479,
+    "bytes": 198751,
     "errors": [],
     "links": [
       "/bundle",
@@ -10310,7 +10220,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10357,7 +10266,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/ecommerce-supplier-links",
-    "bytes": 195316,
+    "bytes": 194588,
     "errors": [],
     "links": [
       "/bundle",
@@ -10385,7 +10294,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10432,7 +10340,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/b2b-thought-leadership-links",
-    "bytes": 197810,
+    "bytes": 197082,
     "errors": [],
     "links": [
       "/bundle",
@@ -10460,7 +10368,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10507,7 +10414,7 @@
   },
   {
     "url": "https://backlinkgrid.com/strategies/b2b-industry-publication-links",
-    "bytes": 192101,
+    "bytes": 191373,
     "errors": [],
     "links": [
       "/bundle",
@@ -10534,7 +10441,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10581,7 +10487,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/majestic-alternatives",
-    "bytes": 253947,
+    "bytes": 253219,
     "errors": [],
     "links": [
       "/bundle",
@@ -10610,7 +10516,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10657,7 +10562,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/buzzstream-alternatives",
-    "bytes": 265169,
+    "bytes": 264441,
     "errors": [],
     "links": [
       "/bundle",
@@ -10687,7 +10592,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10734,7 +10638,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/moz-alternatives",
-    "bytes": 251621,
+    "bytes": 250893,
     "errors": [],
     "links": [
       "/bundle",
@@ -10764,7 +10668,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10811,7 +10714,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/pitchbox-alternatives",
-    "bytes": 275833,
+    "bytes": 275105,
     "errors": [],
     "links": [
       "/bundle",
@@ -10841,7 +10744,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10888,7 +10790,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/semrush-alternatives",
-    "bytes": 250524,
+    "bytes": 249796,
     "errors": [],
     "links": [
       "/bundle",
@@ -10918,7 +10820,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -10965,7 +10866,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/ahrefs-alternatives",
-    "bytes": 256092,
+    "bytes": 255364,
     "errors": [],
     "links": [
       "/bundle",
@@ -10996,7 +10897,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11043,7 +10943,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/ahrefs-vs-moz",
-    "bytes": 179626,
+    "bytes": 178898,
     "errors": [],
     "links": [
       "/bundle",
@@ -11081,7 +10981,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11128,7 +11027,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/ahrefs-vs-semrush-link-building",
-    "bytes": 244399,
+    "bytes": 243671,
     "errors": [],
     "links": [
       "/bundle",
@@ -11160,7 +11059,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11207,7 +11105,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/buzzstream-vs-pitchbox",
-    "bytes": 246068,
+    "bytes": 245340,
     "errors": [],
     "links": [
       "/bundle",
@@ -11238,7 +11136,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11285,7 +11182,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/content-marketing-vs-link-building",
-    "bytes": 221298,
+    "bytes": 220570,
     "errors": [],
     "links": [
       "/bundle",
@@ -11316,7 +11213,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11363,7 +11259,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/guest-posting-services-compared",
-    "bytes": 232900,
+    "bytes": 232172,
     "errors": [],
     "links": [
       "/bundle",
@@ -11393,7 +11289,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11440,7 +11335,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/guest-posts-vs-niche-edits-full-comparison",
-    "bytes": 246941,
+    "bytes": 246213,
     "errors": [],
     "links": [
       "/bundle",
@@ -11471,7 +11366,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11518,7 +11412,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/hunter-vs-snov-io",
-    "bytes": 239273,
+    "bytes": 238545,
     "errors": [],
     "links": [
       "/bundle",
@@ -11548,7 +11442,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11595,7 +11488,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/in-house-vs-outsourced-link-building",
-    "bytes": 240927,
+    "bytes": 240199,
     "errors": [],
     "links": [
       "/bundle",
@@ -11625,7 +11518,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11672,7 +11564,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/manual-vs-automated-outreach",
-    "bytes": 227388,
+    "bytes": 226660,
     "errors": [],
     "links": [
       "/bundle",
@@ -11703,7 +11595,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11750,7 +11641,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/niche-edit-services-compared",
-    "bytes": 238870,
+    "bytes": 238142,
     "errors": [],
     "links": [
       "/bundle",
@@ -11780,7 +11671,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11827,7 +11717,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/outreach-vs-paid-links",
-    "bytes": 228926,
+    "bytes": 228198,
     "errors": [],
     "links": [
       "/bundle",
@@ -11858,7 +11748,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11905,7 +11794,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/semrush-vs-moz",
-    "bytes": 241823,
+    "bytes": 241095,
     "errors": [],
     "links": [
       "/bundle",
@@ -11942,7 +11831,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -11989,7 +11877,7 @@
   },
   {
     "url": "https://backlinkgrid.com/comparisons/link-building-agencies-compared",
-    "bytes": 228946,
+    "bytes": 228218,
     "errors": [],
     "links": [
       "/bundle",
@@ -12019,7 +11907,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12066,7 +11953,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/anchor-text-statistics",
-    "bytes": 164034,
+    "bytes": 163306,
     "errors": [],
     "links": [
       "/bundle",
@@ -12098,7 +11985,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12145,7 +12031,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/backlink-statistics",
-    "bytes": 165598,
+    "bytes": 164870,
     "errors": [],
     "links": [
       "/bundle",
@@ -12178,7 +12064,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12225,7 +12110,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/content-marketing-roi-statistics",
-    "bytes": 165772,
+    "bytes": 165044,
     "errors": [],
     "links": [
       "/bundle",
@@ -12258,7 +12143,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12305,7 +12189,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/domain-authority-statistics",
-    "bytes": 165581,
+    "bytes": 164853,
     "errors": [],
     "links": [
       "/bundle",
@@ -12338,7 +12222,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12385,7 +12268,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/guest-posting-statistics",
-    "bytes": 165995,
+    "bytes": 165267,
     "errors": [],
     "links": [
       "/bundle",
@@ -12418,7 +12301,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12465,7 +12347,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/link-building-pricing-statistics",
-    "bytes": 165916,
+    "bytes": 165188,
     "errors": [],
     "links": [
       "/bundle",
@@ -12498,7 +12380,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12545,7 +12426,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/link-building-statistics-2026",
-    "bytes": 166006,
+    "bytes": 165278,
     "errors": [],
     "links": [
       "/bundle",
@@ -12578,7 +12459,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12625,7 +12505,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/outreach-response-rate-statistics",
-    "bytes": 166075,
+    "bytes": 165347,
     "errors": [],
     "links": [
       "/bundle",
@@ -12658,7 +12538,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12705,7 +12584,7 @@
   },
   {
     "url": "https://backlinkgrid.com/statistics/seo-industry-statistics",
-    "bytes": 164036,
+    "bytes": 163308,
     "errors": [],
     "links": [
       "/bundle",
@@ -12737,7 +12616,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/",
@@ -12784,7 +12662,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/best-free-backlink-checkers",
-    "bytes": 171633,
+    "bytes": 170905,
     "errors": [],
     "links": [
       "/bundle",
@@ -12813,7 +12691,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-guest-posting-sites-2026",
@@ -12863,7 +12740,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/best-guest-posting-sites-2026",
-    "bytes": 330381,
+    "bytes": 329653,
     "errors": [],
     "links": [
       "/bundle",
@@ -12907,7 +12784,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -12957,7 +12833,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/backlink-reporting-for-clients",
-    "bytes": 215690,
+    "bytes": 214962,
     "errors": [],
     "links": [
       "/bundle",
@@ -12974,7 +12850,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13024,7 +12899,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/becoming-a-cited-source-in-your-industry",
-    "bytes": 204021,
+    "bytes": 203293,
     "errors": [],
     "links": [
       "/bundle",
@@ -13043,7 +12918,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13093,7 +12967,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/building-relationships-for-links",
-    "bytes": 209431,
+    "bytes": 208703,
     "errors": [],
     "links": [
       "/bundle",
@@ -13111,7 +12985,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13161,7 +13034,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/building-thought-leadership-through-links",
-    "bytes": 214211,
+    "bytes": 213483,
     "errors": [],
     "links": [
       "/bundle",
@@ -13182,7 +13055,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13232,7 +13104,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/common-link-building-questions-answered",
-    "bytes": 217945,
+    "bytes": 217217,
     "errors": [],
     "links": [
       "/bundle",
@@ -13257,7 +13129,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13307,7 +13178,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/first-10-backlinks-for-new-site",
-    "bytes": 212255,
+    "bytes": 211527,
     "errors": [],
     "links": [
       "/bundle",
@@ -13328,7 +13199,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-for-new-websites",
@@ -13378,7 +13248,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/follow-up-emails-that-get-responses",
-    "bytes": 208011,
+    "bytes": 207283,
     "errors": [],
     "links": [
       "/bundle",
@@ -13395,7 +13265,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13445,7 +13314,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-links-build-brand-authority",
-    "bytes": 208277,
+    "bytes": 207549,
     "errors": [],
     "links": [
       "/bundle",
@@ -13466,7 +13335,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13516,7 +13384,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-101-beginners-guide",
-    "bytes": 214909,
+    "bytes": 214181,
     "errors": [],
     "links": [
       "/bundle",
@@ -13543,7 +13411,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-for-new-websites",
@@ -13593,7 +13460,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-dashboards-and-metrics",
-    "bytes": 214399,
+    "bytes": 213671,
     "errors": [],
     "links": [
       "/bundle",
@@ -13610,7 +13477,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-kpis-and-metrics",
@@ -13660,7 +13526,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-blog-posts",
-    "bytes": 207599,
+    "bytes": 206871,
     "errors": [],
     "links": [
       "/bundle",
@@ -13677,7 +13543,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13727,7 +13592,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-landing-pages",
-    "bytes": 207522,
+    "bytes": 206794,
     "errors": [],
     "links": [
       "/bundle",
@@ -13744,7 +13609,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13794,7 +13658,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-personal-brands",
-    "bytes": 200355,
+    "bytes": 199627,
     "errors": [],
     "links": [
       "/bundle",
@@ -13812,7 +13676,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13862,7 +13725,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-product-pages",
-    "bytes": 210921,
+    "bytes": 210193,
     "errors": [],
     "links": [
       "/bundle",
@@ -13880,7 +13743,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13930,7 +13792,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-service-pages",
-    "bytes": 210859,
+    "bytes": 210131,
     "errors": [],
     "links": [
       "/bundle",
@@ -13947,7 +13809,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -13997,7 +13858,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-terminology-glossary",
-    "bytes": 230212,
+    "bytes": 229484,
     "errors": [],
     "links": [
       "/bundle",
@@ -14014,7 +13875,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14064,7 +13924,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/outreach-response-rate-optimization",
-    "bytes": 217478,
+    "bytes": 216750,
     "errors": [],
     "links": [
       "/bundle",
@@ -14081,7 +13941,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/personalization-in-link-outreach",
@@ -14131,7 +13990,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/personalization-in-link-outreach",
-    "bytes": 210119,
+    "bytes": 209391,
     "errors": [],
     "links": [
       "/bundle",
@@ -14148,7 +14007,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/outreach-response-rate-optimization",
@@ -14198,7 +14056,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/proving-link-building-value-to-stakeholders",
-    "bytes": 212625,
+    "bytes": 211897,
     "errors": [],
     "links": [
       "/bundle",
@@ -14215,7 +14073,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/measuring-link-building-roi",
@@ -14265,7 +14122,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/tracking-link-building-progress",
-    "bytes": 226658,
+    "bytes": 225930,
     "errors": [],
     "links": [
       "/bundle",
@@ -14282,7 +14139,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14332,7 +14188,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/best-link-building-agencies",
-    "bytes": 225394,
+    "bytes": 224666,
     "errors": [],
     "links": [
       "/bundle",
@@ -14349,7 +14205,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14399,7 +14254,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/best-link-building-tools-2026",
-    "bytes": 241526,
+    "bytes": 240798,
     "errors": [],
     "links": [
       "/bundle",
@@ -14417,7 +14272,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14467,7 +14321,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/guest-posting-vs-niche-edits",
-    "bytes": 213297,
+    "bytes": 212569,
     "errors": [],
     "links": [
       "/bundle",
@@ -14484,7 +14338,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14534,7 +14387,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-build-backlinks-with-infographics",
-    "bytes": 219778,
+    "bytes": 219050,
     "errors": [],
     "links": [
       "/bundle",
@@ -14551,7 +14404,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14601,7 +14453,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-do-competitor-backlink-analysis",
-    "bytes": 233079,
+    "bytes": 232351,
     "errors": [],
     "links": [
       "/bundle",
@@ -14618,7 +14470,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14668,7 +14519,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-find-broken-links-for-link-building",
-    "bytes": 226982,
+    "bytes": 226254,
     "errors": [],
     "links": [
       "/bundle",
@@ -14685,7 +14536,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14735,7 +14585,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-backlinks-from-government-sites-gov",
-    "bytes": 228131,
+    "bytes": 227403,
     "errors": [],
     "links": [
       "/bundle",
@@ -14752,7 +14602,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14802,7 +14651,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-backlinks-from-podcasts",
-    "bytes": 203562,
+    "bytes": 202834,
     "errors": [],
     "links": [
       "/bundle",
@@ -14819,7 +14668,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14869,7 +14717,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-backlinks-from-universities-edu",
-    "bytes": 223175,
+    "bytes": 222447,
     "errors": [],
     "links": [
       "/bundle",
@@ -14886,7 +14734,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -14936,7 +14783,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-use-haro-for-link-building",
-    "bytes": 211332,
+    "bytes": 210604,
     "errors": [],
     "links": [
       "/bundle",
@@ -14953,7 +14800,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15003,7 +14849,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-write-guest-post-pitches-that-get-accepted",
-    "bytes": 216960,
+    "bytes": 216232,
     "errors": [],
     "links": [
       "/bundle",
@@ -15020,7 +14866,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15070,7 +14915,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-new-websites",
-    "bytes": 209968,
+    "bytes": 209240,
     "errors": [],
     "links": [
       "/bundle",
@@ -15087,7 +14932,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/first-10-backlinks-for-new-site",
@@ -15137,7 +14981,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-kpis-and-metrics",
-    "bytes": 226802,
+    "bytes": 226074,
     "errors": [],
     "links": [
       "/bundle",
@@ -15154,7 +14998,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-dashboards-and-metrics",
@@ -15204,7 +15047,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-on-a-budget",
-    "bytes": 212162,
+    "bytes": 211434,
     "errors": [],
     "links": [
       "/bundle",
@@ -15221,7 +15064,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15271,7 +15113,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-vs-content-marketing",
-    "bytes": 211231,
+    "bytes": 210503,
     "errors": [],
     "links": [
       "/bundle",
@@ -15288,7 +15130,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15338,7 +15179,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/manual-outreach-vs-automated-tools",
-    "bytes": 212818,
+    "bytes": 212090,
     "errors": [],
     "links": [
       "/bundle",
@@ -15355,7 +15196,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/personalization-in-link-outreach",
@@ -15405,7 +15245,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/top-haro-alternatives-for-link-building",
-    "bytes": 221383,
+    "bytes": 220655,
     "errors": [],
     "links": [
       "/bundle",
@@ -15422,7 +15262,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15472,7 +15311,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/white-label-link-building-guide",
-    "bytes": 208489,
+    "bytes": 207761,
     "errors": [],
     "links": [
       "/bundle",
@@ -15489,7 +15328,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15539,7 +15377,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/ahrefs-for-link-building-tutorial",
-    "bytes": 206374,
+    "bytes": 205646,
     "errors": [],
     "links": [
       "/bundle",
@@ -15557,7 +15395,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15607,7 +15444,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/annual-link-building-roadmap",
-    "bytes": 245819,
+    "bytes": 245177,
     "errors": [],
     "links": [
       "/bundle",
@@ -15625,7 +15462,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15675,7 +15511,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/branded-vs-keyword-anchor-text",
-    "bytes": 218918,
+    "bytes": 218190,
     "errors": [],
     "links": [
       "/bundle",
@@ -15695,7 +15531,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15745,7 +15580,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/building-links-to-boring-industries",
-    "bytes": 204144,
+    "bytes": 203416,
     "errors": [],
     "links": [
       "/bundle",
@@ -15763,7 +15598,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15813,7 +15647,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/building-links-without-content",
-    "bytes": 215744,
+    "bytes": 215016,
     "errors": [],
     "links": [
       "/bundle",
@@ -15831,7 +15665,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15881,7 +15714,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/creating-a-link-building-strategy",
-    "bytes": 241796,
+    "bytes": 241154,
     "errors": [],
     "links": [
       "/bundle",
@@ -15902,7 +15735,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -15952,7 +15784,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/dealing-with-negative-seo-attacks",
-    "bytes": 205533,
+    "bytes": 204805,
     "errors": [],
     "links": [
       "/bundle",
@@ -15970,7 +15802,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16020,7 +15851,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/e-e-a-t-and-link-building",
-    "bytes": 201302,
+    "bytes": 200574,
     "errors": [],
     "links": [
       "/bundle",
@@ -16040,7 +15871,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16090,7 +15920,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/future-of-link-building",
-    "bytes": 201069,
+    "bytes": 200341,
     "errors": [],
     "links": [
       "/bundle",
@@ -16113,7 +15943,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16163,7 +15992,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/google-link-spam-update-2026",
-    "bytes": 189241,
+    "bytes": 188513,
     "errors": [],
     "links": [
       "/bundle",
@@ -16186,7 +16015,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16236,7 +16064,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/google-search-console-backlinks",
-    "bytes": 200997,
+    "bytes": 200269,
     "errors": [],
     "links": [
       "/bundle",
@@ -16255,7 +16083,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16305,7 +16132,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-google-evaluates-backlinks",
-    "bytes": 197667,
+    "bytes": 196939,
     "errors": [],
     "links": [
       "/bundle",
@@ -16324,7 +16151,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16374,7 +16200,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-fix-a-bad-backlink-profile",
-    "bytes": 208220,
+    "bytes": 207492,
     "errors": [],
     "links": [
       "/bundle",
@@ -16393,7 +16219,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/backlink-quality-checklist",
@@ -16443,7 +16268,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-we-built-100-backlinks-in-30-days",
-    "bytes": 219377,
+    "bytes": 218649,
     "errors": [],
     "links": [
       "/bundle",
@@ -16469,7 +16294,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16519,7 +16343,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/international-link-building",
-    "bytes": 210520,
+    "bytes": 209792,
     "errors": [],
     "links": [
       "/bundle",
@@ -16537,7 +16361,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16587,7 +16410,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-agency-vs-freelancer",
-    "bytes": 226707,
+    "bytes": 225979,
     "errors": [],
     "links": [
       "/bundle",
@@ -16605,7 +16428,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16655,7 +16477,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-budget-allocation",
-    "bytes": 246883,
+    "bytes": 246112,
     "errors": [],
     "links": [
       "/bundle",
@@ -16673,7 +16495,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16723,7 +16544,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-campaign-planning",
-    "bytes": 220714,
+    "bytes": 219986,
     "errors": [],
     "links": [
       "/bundle",
@@ -16741,7 +16562,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16791,7 +16611,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-case-study-ecommerce",
-    "bytes": 238945,
+    "bytes": 238217,
     "errors": [],
     "links": [
       "/bundle",
@@ -16810,7 +16630,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16860,7 +16679,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-case-study-saas",
-    "bytes": 233857,
+    "bytes": 233129,
     "errors": [],
     "links": [
       "/bundle",
@@ -16882,7 +16701,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -16932,7 +16750,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-competitive-niches",
-    "bytes": 211612,
+    "bytes": 210884,
     "errors": [],
     "links": [
       "/bundle",
@@ -16950,7 +16768,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17000,7 +16817,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-ymyl-sites",
-    "bytes": 204929,
+    "bytes": 204201,
     "errors": [],
     "links": [
       "/bundle",
@@ -17018,7 +16835,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17068,7 +16884,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-in-age-of-ai",
-    "bytes": 196382,
+    "bytes": 195654,
     "errors": [],
     "links": [
       "/bundle",
@@ -17086,7 +16902,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17136,7 +16951,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-with-digital-assets",
-    "bytes": 223489,
+    "bytes": 222761,
     "errors": [],
     "links": [
       "/bundle",
@@ -17154,7 +16969,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17204,7 +17018,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-with-linkedin",
-    "bytes": 203220,
+    "bytes": 202492,
     "errors": [],
     "links": [
       "/bundle",
@@ -17222,7 +17036,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17272,7 +17085,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-with-quora",
-    "bytes": 206318,
+    "bytes": 205590,
     "errors": [],
     "links": [
       "/bundle",
@@ -17290,7 +17103,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17340,7 +17152,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-with-reddit",
-    "bytes": 203947,
+    "bytes": 203219,
     "errors": [],
     "links": [
       "/bundle",
@@ -17358,7 +17170,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17408,7 +17219,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-with-twitter",
-    "bytes": 203681,
+    "bytes": 202953,
     "errors": [],
     "links": [
       "/bundle",
@@ -17426,7 +17237,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17476,7 +17286,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/moz-link-explorer-guide",
-    "bytes": 174337,
+    "bytes": 173609,
     "errors": [],
     "links": [
       "/bundle",
@@ -17503,7 +17313,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17553,7 +17362,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/paid-vs-organic-link-building",
-    "bytes": 217121,
+    "bytes": 216393,
     "errors": [],
     "links": [
       "/bundle",
@@ -17574,7 +17383,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17624,7 +17432,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/parasite-seo-and-link-building",
-    "bytes": 195751,
+    "bytes": 195023,
     "errors": [],
     "links": [
       "/bundle",
@@ -17642,7 +17450,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17692,7 +17499,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/quantity-vs-quality-backlinks",
-    "bytes": 216573,
+    "bytes": 215845,
     "errors": [],
     "links": [
       "/bundle",
@@ -17712,7 +17519,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17762,7 +17568,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/semrush-link-building-features",
-    "bytes": 211281,
+    "bytes": 210553,
     "errors": [],
     "links": [
       "/bundle",
@@ -17780,7 +17586,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17830,7 +17635,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/topical-authority-and-backlinks",
-    "bytes": 203025,
+    "bytes": 202297,
     "errors": [],
     "links": [
       "/bundle",
@@ -17848,7 +17653,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17898,7 +17702,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/understanding-link-relevance",
-    "bytes": 201801,
+    "bytes": 201073,
     "errors": [],
     "links": [
       "/bundle",
@@ -17916,7 +17720,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -17966,7 +17769,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/what-makes-a-high-quality-backlink",
-    "bytes": 212382,
+    "bytes": 211654,
     "errors": [],
     "links": [
       "/bundle",
@@ -17989,7 +17792,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18039,7 +17841,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/when-to-disavow-backlinks",
-    "bytes": 203856,
+    "bytes": 203128,
     "errors": [],
     "links": [
       "/bundle",
@@ -18057,7 +17859,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18107,7 +17908,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/why-your-link-building-isnt-working",
-    "bytes": 219759,
+    "bytes": 219031,
     "errors": [],
     "links": [
       "/bundle",
@@ -18130,7 +17931,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18180,7 +17980,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/youtube-link-building-strategies",
-    "bytes": 204782,
+    "bytes": 204054,
     "errors": [],
     "links": [
       "/bundle",
@@ -18198,7 +17998,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18248,7 +18047,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/zero-to-dr50-link-building-journey",
-    "bytes": 251039,
+    "bytes": 250354,
     "errors": [],
     "links": [
       "/bundle",
@@ -18269,7 +18068,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18319,7 +18117,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-at-scale",
-    "bytes": 220589,
+    "bytes": 219861,
     "errors": [],
     "links": [
       "/bundle",
@@ -18341,7 +18139,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18391,7 +18188,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/measuring-link-building-roi",
-    "bytes": 212432,
+    "bytes": 211704,
     "errors": [],
     "links": [
       "/bundle",
@@ -18414,7 +18211,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-dashboards-and-metrics",
@@ -18464,7 +18260,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/tiered-link-building-strategy",
-    "bytes": 199159,
+    "bytes": 198431,
     "errors": [],
     "links": [
       "/bundle",
@@ -18494,7 +18290,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18544,7 +18339,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-affiliate-sites",
-    "bytes": 209548,
+    "bytes": 208820,
     "errors": [],
     "links": [
       "/bundle",
@@ -18565,7 +18360,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18615,7 +18409,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-content-sites",
-    "bytes": 209601,
+    "bytes": 208873,
     "errors": [],
     "links": [
       "/bundle",
@@ -18638,7 +18432,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18688,7 +18481,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-service-businesses",
-    "bytes": 214413,
+    "bytes": 213685,
     "errors": [],
     "links": [
       "/bundle",
@@ -18714,7 +18507,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18764,7 +18556,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-for-startups",
-    "bytes": 204868,
+    "bytes": 204140,
     "errors": [],
     "links": [
       "/bundle",
@@ -18791,7 +18583,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18841,7 +18632,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-templates-and-scripts",
-    "bytes": 207342,
+    "bytes": 206614,
     "errors": [],
     "links": [
       "/bundle",
@@ -18859,7 +18650,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -18909,7 +18699,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-mistakes-to-avoid",
-    "bytes": 202311,
+    "bytes": 201583,
     "errors": [],
     "links": [
       "/bundle",
@@ -18953,7 +18743,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19003,7 +18792,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/most-effective-link-building-tactics",
-    "bytes": 219814,
+    "bytes": 219086,
     "errors": [],
     "links": [
       "/bundle",
@@ -19039,7 +18828,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19089,7 +18877,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/types-of-backlinks-complete-list",
-    "bytes": 225391,
+    "bytes": 224663,
     "errors": [],
     "links": [
       "/bundle",
@@ -19136,7 +18924,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19186,7 +18973,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-build-links-with-data-studies",
-    "bytes": 215744,
+    "bytes": 215016,
     "errors": [],
     "links": [
       "/bundle",
@@ -19208,7 +18995,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19258,7 +19044,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-backlinks-from-news-sites",
-    "bytes": 204044,
+    "bytes": 203316,
     "errors": [],
     "links": [
       "/bundle",
@@ -19284,7 +19070,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19334,7 +19119,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-featured-in-roundups",
-    "bytes": 202948,
+    "bytes": 202220,
     "errors": [],
     "links": [
       "/bundle",
@@ -19359,7 +19144,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19409,7 +19193,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-use-content-for-link-building",
-    "bytes": 218894,
+    "bytes": 218166,
     "errors": [],
     "links": [
       "/bundle",
@@ -19433,7 +19217,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19483,7 +19266,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-audit-your-backlink-profile",
-    "bytes": 221645,
+    "bytes": 220917,
     "errors": [],
     "links": [
       "/bundle",
@@ -19529,7 +19312,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19579,7 +19361,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-get-backlinks-without-outreach",
-    "bytes": 203053,
+    "bytes": 202325,
     "errors": [],
     "links": [
       "/bundle",
@@ -19607,7 +19389,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19657,7 +19438,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-recover-from-google-penalty",
-    "bytes": 209333,
+    "bytes": 208605,
     "errors": [],
     "links": [
       "/bundle",
@@ -19692,7 +19473,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19742,7 +19522,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/how-to-remove-toxic-backlinks",
-    "bytes": 213260,
+    "bytes": 212532,
     "errors": [],
     "links": [
       "/bundle",
@@ -19774,7 +19554,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19824,7 +19603,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/what-are-backlinks",
-    "bytes": 164722,
+    "bytes": 163994,
     "errors": [],
     "links": [
       "/bundle",
@@ -19844,7 +19623,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/link-building-strategies",
@@ -19894,7 +19672,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/dofollow-vs-nofollow",
-    "bytes": 167102,
+    "bytes": 166374,
     "errors": [],
     "links": [
       "/bundle",
@@ -19913,7 +19691,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -19963,7 +19740,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/link-building-strategies",
-    "bytes": 174954,
+    "bytes": 174226,
     "errors": [],
     "links": [
       "/bundle",
@@ -19982,7 +19759,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/what-are-backlinks",
@@ -20032,7 +19808,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/domain-authority-explained",
-    "bytes": 168859,
+    "bytes": 168131,
     "errors": [],
     "links": [
       "/bundle",
@@ -20052,7 +19828,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/best-free-backlink-checkers",
@@ -20102,7 +19877,7 @@
   },
   {
     "url": "https://backlinkgrid.com/blog/backlink-quality-checklist",
-    "bytes": 175156,
+    "bytes": 174428,
     "errors": [],
     "links": [
       "/bundle",
@@ -20122,7 +19897,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/blog/how-to-fix-a-bad-backlink-profile",
@@ -20172,7 +19946,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/anchor-text-optimization-guide",
-    "bytes": 218282,
+    "bytes": 217541,
     "errors": [],
     "links": [
       "/bundle",
@@ -20193,7 +19967,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/backlink-analysis-guide",
@@ -20242,7 +20015,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/backlink-analysis-guide",
-    "bytes": 261567,
+    "bytes": 260824,
     "errors": [],
     "links": [
       "/bundle",
@@ -20265,7 +20038,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20314,7 +20086,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/broken-link-building-guide",
-    "bytes": 236280,
+    "bytes": 235537,
     "errors": [],
     "links": [
       "/bundle",
@@ -20335,7 +20107,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20384,7 +20155,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/complete-guide-to-guest-posting",
-    "bytes": 265657,
+    "bytes": 264914,
     "errors": [],
     "links": [
       "/bundle",
@@ -20405,7 +20176,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20454,7 +20224,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/content-that-attracts-backlinks",
-    "bytes": 234889,
+    "bytes": 234146,
     "errors": [],
     "links": [
       "/bundle",
@@ -20475,7 +20245,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20524,7 +20293,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/digital-pr-link-building-guide",
-    "bytes": 256564,
+    "bytes": 255821,
     "errors": [],
     "links": [
       "/bundle",
@@ -20545,7 +20314,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20594,7 +20362,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/ecommerce-link-building-guide",
-    "bytes": 239690,
+    "bytes": 238947,
     "errors": [],
     "links": [
       "/bundle",
@@ -20615,7 +20383,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20664,7 +20431,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/haro-mastery-guide",
-    "bytes": 226104,
+    "bytes": 225361,
     "errors": [],
     "links": [
       "/bundle",
@@ -20685,7 +20452,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20734,7 +20500,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/link-building-outreach-guide",
-    "bytes": 246013,
+    "bytes": 245270,
     "errors": [],
     "links": [
       "/bundle",
@@ -20755,7 +20521,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20804,7 +20569,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/link-building-tools-guide",
-    "bytes": 253975,
+    "bytes": 253232,
     "errors": [],
     "links": [
       "/bundle",
@@ -20825,7 +20590,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20874,7 +20638,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/local-link-building-complete-guide",
-    "bytes": 239981,
+    "bytes": 239238,
     "errors": [],
     "links": [
       "/bundle",
@@ -20895,7 +20659,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -20944,7 +20707,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/saas-link-building-playbook",
-    "bytes": 236112,
+    "bytes": 235369,
     "errors": [],
     "links": [
       "/bundle",
@@ -20966,7 +20729,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -21015,7 +20777,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/what-are-backlinks-complete-guide",
-    "bytes": 164862,
+    "bytes": 164121,
     "errors": [],
     "links": [
       "/bundle",
@@ -21038,7 +20800,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -21087,7 +20848,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/link-building-strategies-guide",
-    "bytes": 171546,
+    "bytes": 170818,
     "errors": [],
     "links": [
       "/bundle",
@@ -21108,7 +20869,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -21157,7 +20917,7 @@
   },
   {
     "url": "https://backlinkgrid.com/guides/domain-authority-guide",
-    "bytes": 167720,
+    "bytes": 166979,
     "errors": [],
     "links": [
       "/bundle",
@@ -21179,7 +20939,6 @@
       "/bundle",
       "/bundle",
       "/",
-      "/bundle",
       "/bundle",
       "/",
       "/guides/anchor-text-optimization-guide",
@@ -26609,6 +26368,384 @@
       "/about",
       "/sitemap-page",
       "/contact",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/backlink-opportunity-finder",
+    "bytes": 130079,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/resources/backlink-database-guide",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/live-backlink-checker",
+    "bytes": 129802,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc",
+      "/tools/backlink-opportunity-finder",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/internal-link-finder",
+    "bytes": 129950,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/backlinks/internal-vs-external-links",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/broken-link-finder",
+    "bytes": 129017,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/link-building-tactics/broken-link-building",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/crawlability-checker",
+      "/tools/competitor-backlink-finder",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/crawlability-checker",
+    "bytes": 129234,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/backlink-audit",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/competitor-backlink-finder",
+      "/",
+      "/how-it-works",
+      "/",
+      "/pricing",
+      "/bundle",
+      "/backlinks",
+      "/link-building",
+      "/backlink-quality",
+      "/backlink-audit",
+      "/link-building-tactics",
+      "/digital-pr",
+      "/tools",
+      "/tools/free-backlink-checker",
+      "/tools/backlink-analyzer",
+      "/tools/roi-calculator",
+      "/blog",
+      "/guides",
+      "/glossary",
+      "/comparisons",
+      "/statistics",
+      "/resources",
+      "/guides/link-building-strategies-guide",
+      "/blog/best-guest-posting-sites-2026",
+      "/blog/best-free-backlink-checkers",
+      "/comparisons/ahrefs-vs-moz",
+      "/templates",
+      "/editorial-policy",
+      "/glossary/domain-authority",
+      "/industries/saas",
+      "/industries/ecommerce",
+      "/industries/local-business",
+      "/industries/b2b",
+      "/blog/link-building-for-startups",
+      "/about",
+      "/contact",
+      "/sitemap-page",
+      "/terms",
+      "/privacy",
+      "/",
+      "/bundle"
+    ]
+  },
+  {
+    "url": "https://backlinkgrid.com/tools/competitor-backlink-finder",
+    "bytes": 131938,
+    "errors": [],
+    "links": [
+      "/bundle",
+      "/",
+      "/bundle",
+      "/how-it-works",
+      "/tools",
+      "/blog",
+      "/glossary",
+      "/about",
+      "/",
+      "/tools",
+      "/resources/competitor-analysis-template",
+      "/tools/backlink-opportunity-finder",
+      "/tools/live-backlink-checker",
+      "/tools/internal-link-finder",
+      "/tools/broken-link-finder",
+      "/tools/crawlability-checker",
       "/",
       "/how-it-works",
       "/",

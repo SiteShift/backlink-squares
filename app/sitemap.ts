@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { freeTools } from '@/lib/tools/catalog'
+import { liveTools } from '@/lib/scanner/catalog'
 import {
   getAllHubs,
   getHubClusters,
@@ -65,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: SITE_LAUNCH_DATE,
+      lastModified: '2026-09-09',
       changeFrequency: 'yearly',
       priority: 0.3,
     },
@@ -103,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Tools section
     {
       url: `${baseUrl}/tools`,
-      lastModified: LAST_CONTENT_UPDATE,
+      lastModified: '2026-09-09',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -313,6 +314,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (updatedStatic.has(new URL(page.url).pathname)) page.lastModified = '2026-09-08'
   }
   allPages.push(...['templates', 'editorial-policy'].map(slug => ({ url: `${baseUrl}/${slug}`, lastModified: '2026-09-08' })))
+  allPages.push(...liveTools.map(tool => ({ url: `${baseUrl}/tools/${tool.slug}`, lastModified: '2026-09-09' })))
   allPages.push(...freeTools.map(tool => ({ url: `${baseUrl}/tools/${tool.slug}`, lastModified: '2026-09-08' })))
   return allPages
 }

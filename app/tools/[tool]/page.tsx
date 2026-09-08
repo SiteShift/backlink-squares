@@ -6,15 +6,19 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { buildMetadata } from '@/lib/seo'
+import { liveTools } from '@/lib/scanner/catalog'
+import { LiveToolPage } from '@/components/tools/LiveToolPage'
 
 export const dynamicParams = false
-export function generateStaticParams() { return freeTools.map(t => ({ tool: t.slug })) }
+export function generateStaticParams() { return [...liveTools, ...freeTools].map(t => ({ tool: t.slug })) }
 export async function generateMetadata({ params }: { params: Promise<{ tool: string }> }) {
-  const { tool } = await params; const entry = freeTools.find(t => t.slug === tool)
+  const { tool } = await params; const entry = [...liveTools, ...freeTools].find(t => t.slug === tool)
   return entry ? buildMetadata({ title: entry.title, description: entry.description, canonicalUrl: `https://backlinkgrid.com/tools/${entry.slug}` }) : {}
 }
 export default async function ToolPage({ params }: { params: Promise<{ tool: string }> }) {
-  const { tool } = await params; const entry = freeTools.find(t => t.slug === tool); if (!entry) notFound()
+  const { tool } = await params
+  const live = liveTools.find(t => t.slug === tool); if (live) return <LiveToolPage tool={live} />
+  const entry = freeTools.find(t => t.slug === tool); if (!entry) notFound()
   const schema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: entry.title, description: entry.description, url: `https://backlinkgrid.com/tools/${entry.slug}`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any modern web browser', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' }, publisher: { '@type': 'Organization', name: 'BacklinkGrid', url: 'https://backlinkgrid.com' } }
   return <><Header /><main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-surface-50"><div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
     <Link href="/tools" className="text-sm text-surface-500 hover:text-brand-red">← All free tools</Link>

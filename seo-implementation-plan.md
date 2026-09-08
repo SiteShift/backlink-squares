@@ -83,3 +83,13 @@ Google links: https://developers.google.com/search/docs/crawling-indexing/qualif
 Detailed scope and verification: `reports/editorial-tools-release.md`.
 
 See `reports/implementation-results.md`, `reports/rendered-crawl.json` and `reports/dependency-audit.json`. Added framework security migration, paid-webhook acknowledgment and checkout validation after audit findings. Editorial replacements prioritize verifiable usefulness over unsupported numerical claims.
+
+### Live website tools — 9 September 2026
+
+- [x] Remove the requested sidebar bundle copy.
+- [x] Implement the six live website tools with explicit free-source and monitoring boundaries.
+- [x] Add safe public fetching, robots handling, request/response limits, DNS pinning, bounded scans and cancellation.
+- [x] Add responsive results, CSV exports, bundle offers, static SEO content, schema and discovery links.
+- [x] Update privacy/agent documentation and verify production builds, regression tests and the 368-page crawl.
+
+Scope and operating limits: `reports/live-tools-release.md`. No paid API/service or plan upgrade added; existing hosting resources are still consumed.
