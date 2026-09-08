@@ -10,7 +10,8 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
-import { BundleCard } from '@/components/promo'
+import { ArticleOffers } from '@/components/content/ArticleOffers'
+import { TableOfContents } from '@/components/content/TableOfContents'
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
 import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
@@ -83,7 +84,7 @@ export default async function GuidePage(props: Props) {
       <Header />
       <StickyPromo />
 
-      <main className="min-h-screen bg-bauhaus-cream">
+      <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-bauhaus-cream">
         {/* Header */}
         <header className="py-16 lg:py-24 bg-white border-b-3 border-dark">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -137,46 +138,17 @@ export default async function GuidePage(props: Props) {
 
         {/* Content Layout */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="grid lg:grid-cols-[280px_1fr] gap-12">
-            {/* Sidebar */}
-            <aside className="hidden lg:block">
-              <div className="sticky top-32 space-y-4">
-                {/* Bundle Promotion */}
-                <BundleCard variant="sidebar" />
-
-                {/* Related Guides */}
-                {otherGuides.length > 0 && (
-                  <div className="bg-white border-3 border-dark">
-                    <div className="p-3 border-b-2 border-dark/10">
-                      <h3 className="font-bold text-dark uppercase text-xs tracking-wider flex items-center gap-2">
-                        <BookOpen className="w-3.5 h-3.5 text-bauhaus-blue" />
-                        More Guides
-                      </h3>
-                    </div>
-                    <nav className="py-1">
-                      {otherGuides.map((otherGuide) => (
-                        <Link
-                          key={otherGuide.slug}
-                          href={`/guides/${otherGuide.slug}`}
-                          className="block text-xs text-dark/60 hover:text-dark hover:bg-bauhaus-cream/30 transition-colors py-1.5 px-3"
-                        >
-                          {otherGuide.title}
-                        </Link>
-                      ))}
-                    </nav>
-                  </div>
-                )}
-              </div>
-            </aside>
-
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_280px] gap-12">
             {/* Main Content */}
-            <article className="bg-white border-3 border-dark p-8 lg:p-12 min-w-0" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
+            <article className="bg-white rounded-lg p-5 sm:p-8 lg:p-10 min-w-0">
+              <TableOfContents />
               <div className="prose prose-lg prose-slate max-w-none overflow-x-auto">
                 <MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={guide.content} components={getMDXComponents({})} />
               </div>
 
               <ContentCTA />
             </article>
+            <ArticleOffers />
           </div>
         </div>
 

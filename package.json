@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint app components lib mdx-components.tsx",
     "test:checkout": "node scripts/checkout-regression.cjs",
-    "audit:content": "node scripts/content-audit.cjs"
+    "audit:content": "node scripts/content-audit.cjs",
+    "test:tools": "node scripts/tools-regression.cjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",

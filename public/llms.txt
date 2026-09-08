@@ -37,3 +37,7 @@ Content and sample files are public. Full bundle downloads require a paid Stripe
 - [Contact](https://backlinkgrid.com/contact): hello@backlinkgrid.com
 - [Terms](https://backlinkgrid.com/terms)
 - [Privacy](https://backlinkgrid.com/privacy)
+
+## Free browser tools
+
+[Free link building tools](https://backlinkgrid.com/tools): outreach drafts, prospecting queries, monthly link velocity, GSC Top linking sites analysis, list comparisons, anchor classification, educational PageRank, pasted HTML inspection and disavow syntax validation. No paid APIs; no live backlink discovery.

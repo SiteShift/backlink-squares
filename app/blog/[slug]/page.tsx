@@ -11,7 +11,8 @@ import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { StickyPromo } from '@/components/content/StickyPromo'
 import { BlogCard } from '@/components/content/BlogCard'
-import { BundleCard } from '@/components/promo'
+import { ArticleOffers } from '@/components/content/ArticleOffers'
+import { TableOfContents } from '@/components/content/TableOfContents'
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
@@ -87,10 +88,10 @@ export default async function BlogPostPage(props: Props) {
       <Header />
       <StickyPromo />
 
-      <main className="min-h-screen bg-bauhaus-cream">
+      <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-bauhaus-cream">
         {/* Article Header */}
-        <header className="py-16 lg:py-24 bg-white border-b-3 border-dark">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header className="py-10 lg:py-16 bg-white border-b border-surface-200">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link
               href="/blog"
               className="inline-flex items-center gap-2 text-sm font-medium text-dark/50 hover:text-bauhaus-red mb-8 transition-colors"
@@ -99,23 +100,13 @@ export default async function BlogPostPage(props: Props) {
               Back to Blog
             </Link>
 
-            {/* Category/Keywords */}
-            <div className="flex flex-wrap gap-2 mb-4">
-              {post.keywords?.slice(0, 3).map((keyword) => (
-                <span
-                  key={keyword}
-                  className="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-bauhaus-red/10 text-bauhaus-red"
-                >
-                  {keyword}
-                </span>
-              ))}
-            </div>
+            <p className="text-sm font-semibold text-brand-red mb-4">BacklinkGrid Journal · Tools & strategies</p>
 
-            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[2.75rem] leading-tight text-dark mb-6">
+            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl max-w-4xl leading-tight text-dark mb-6">
               {post.title}
             </h1>
 
-            <p className="text-lg sm:text-xl text-dark/60 leading-relaxed mb-8">
+            <p className="max-w-3xl text-lg sm:text-xl text-dark/60 leading-relaxed mb-8">
               {post.description}
             </p>
 
@@ -139,7 +130,9 @@ export default async function BlogPostPage(props: Props) {
         </header>
 
         {/* Article Content */}
-        <article className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 grid lg:grid-cols-[minmax(0,1fr)_280px] gap-12">
+        <article className="min-w-0">
+          <TableOfContents />
           <div className="prose prose-lg prose-slate max-w-none">
             <MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={post.content} components={getMDXComponents({})} />
           </div>
@@ -147,11 +140,9 @@ export default async function BlogPostPage(props: Props) {
           {/* CTA */}
           <ContentCTA />
 
-          {/* Bundle Promotion */}
-          <div className="mt-8">
-            <BundleCard variant="compact" />
-          </div>
         </article>
+        <ArticleOffers />
+        </div>
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (

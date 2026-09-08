@@ -153,7 +153,10 @@ export default function ROICalculatorPage() {
     // Revenue
     const currentRevenue = currentConversions * orderValue
     const projectedRevenue = projectedConversions * orderValue
-    const additionalRevenue = projectedRevenue - currentRevenue
+    // Sum incremental monthly revenue across the year, not only month 12.
+    const monthlyGains = Array.from({ length: 12 }, (_, i) =>
+      (currentTraffic * Math.pow(1 + monthlyTrafficIncreasePercent / 100, i + 1) - currentTraffic) * (conversionRate / 100) * orderValue)
+    const additionalRevenue = monthlyGains.reduce((sum, revenue) => sum + revenue, 0)
 
     // Investment over 12 months
     const yearlyInvestment = monthlyBudget * 12
@@ -163,11 +166,13 @@ export default function ROICalculatorPage() {
       ? ((additionalRevenue - yearlyInvestment) / yearlyInvestment) * 100
       : 0
 
-    // Break-even (months to recover investment)
-    const monthlyAdditionalRevenue = additionalRevenue / 12
-    const breakEvenMonths = monthlyAdditionalRevenue > 0
-      ? Math.ceil(yearlyInvestment / monthlyAdditionalRevenue)
-      : Infinity
+    // First month where cumulative incremental revenue covers spend to date.
+    let cumulativeRevenue = 0
+    let breakEvenMonths = Infinity
+    monthlyGains.forEach((revenue, i) => {
+      cumulativeRevenue += revenue
+      if (monthlyBudget > 0 && breakEvenMonths === Infinity && cumulativeRevenue >= monthlyBudget * (i + 1)) breakEvenMonths = i + 1
+    })
 
     return {
       linksPerMonth,
@@ -333,7 +338,7 @@ export default function ROICalculatorPage() {
                       min={0}
                       max={10}
                       step={0.1}
-                      hint="Expected monthly traffic growth per acquired backlink"
+                      hint="Your assumed monthly traffic growth per acquired backlink; not a measured benchmark"
                     />
                   </div>
                 </div>
@@ -345,7 +350,7 @@ export default function ROICalculatorPage() {
                     <div className="text-sm text-surface-600">
                       <p className="font-semibold text-surface-700 mb-1">Disclaimer</p>
                       <p>
-                        These calculations are estimates based on industry averages. Actual results
+                        These calculations use your assumptions, not industry benchmarks or a proven effect per link. Actual results
                         may vary based on link quality, your niche, competition, content quality,
                         and other SEO factors. Use these figures for planning purposes only.
                       </p>

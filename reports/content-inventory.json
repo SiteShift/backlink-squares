@@ -154,7 +154,7 @@
   {
     "file": "content/backlinks/anchor-text.mdx",
     "url": "/backlinks/anchor-text",
-    "words": 1829,
+    "words": 1855,
     "title": "Anchor Text: The Complete Guide to Link Text Optimisation",
     "metaTitle": "Anchor Text Guide: Types, Best Practices & SEO Strategy [2026]",
     "metaDescription": "Learn about anchor text types, natural distribution ratios, and how to optimise your backlink profile's anchor text for SEO without over-optimisation."
@@ -202,7 +202,7 @@
   {
     "file": "content/backlinks/link-velocity.mdx",
     "url": "/backlinks/link-velocity",
-    "words": 1608,
+    "words": 1635,
     "title": "Link Velocity: What It Is, Why It Matters, and How to Monitor It",
     "metaTitle": "Link Velocity Guide: Understanding Backlink Acquisition Rate [2026]",
     "metaDescription": "Learn what link velocity is, how Google evaluates acquisition patterns, and how to maintain natural link building pace without triggering algorithmic flags."
@@ -256,7 +256,7 @@
   {
     "file": "content/blog/best-free-backlink-checkers.mdx",
     "url": "/blog/best-free-backlink-checkers",
-    "words": 973,
+    "words": 1000,
     "title": "Best Free Backlink Checkers: Choose by Research Task",
     "metaTitle": "Best Free Backlink Checkers: Tools & Limits Explained",
     "metaDescription": "Choose a free backlink checker for your own site or competitor research. Compare practical workflows, understand data limits and verify the links that matter."
@@ -1528,7 +1528,7 @@
   {
     "file": "content/glossary/pagerank.mdx",
     "url": "/glossary/pagerank",
-    "words": 1037,
+    "words": 1063,
     "title": "Google PageRank: Algorithm, Formula and Worked Example",
     "metaTitle": "Google PageRank Explained: Formula & Worked Example",
     "metaDescription": "Understand Google PageRank with a simple formula and three-page example. Learn how link analysis differs from DA, DR and your position in Google Search."
@@ -2084,7 +2084,7 @@
   {
     "file": "content/resources/competitor-analysis-template.mdx",
     "url": "/resources/competitor-analysis-template",
-    "words": 2204,
+    "words": 2229,
     "title": "Competitor Backlink Analysis Template: Gap Analysis Framework",
     "metaTitle": "Competitor Backlink Analysis Template: Find Link Gaps [2026]",
     "metaDescription": "Free competitor backlink analysis template. Systematic framework for identifying link gaps, scoring opportunities, and prioritising outreach."
@@ -2172,10 +2172,10 @@
   {
     "file": "content/resources/outreach-email-templates.mdx",
     "url": "/resources/outreach-email-templates",
-    "words": 2696,
-    "title": "Outreach Email Templates: 15+ Proven Templates for Link Building",
-    "metaTitle": "Link Building Outreach Email Templates [15+ Proven Scripts]",
-    "metaDescription": "Copy and customise 15+ proven outreach email templates for link building. Guest posting, broken links, resource pages, unlinked mentions, and follow-up sequences."
+    "words": 2684,
+    "title": "Outreach Email Templates: 15+ Editable Templates for Link Building",
+    "metaTitle": "Link Building Outreach Email Templates [15+ Editable Scripts]",
+    "metaDescription": "Copy and customise 15+ editable outreach email templates for link building. Guest posting, broken links, resource pages, unlinked mentions, and follow-up sequences."
   },
   {
     "file": "content/resources/outreach-quality-checklist.mdx",
@@ -2196,7 +2196,7 @@
   {
     "file": "content/resources/prospecting-spreadsheet.mdx",
     "url": "/resources/prospecting-spreadsheet",
-    "words": 1257,
+    "words": 1283,
     "title": "Link Prospecting Spreadsheet: Track Your Outreach",
     "metaTitle": "Link Prospecting Spreadsheet Template [2026]",
     "metaDescription": "Download our link prospecting spreadsheet template. Track prospects, contacts, outreach status, and results in one organized system."

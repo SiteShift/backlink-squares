@@ -1,47 +1,47 @@
 {
-  "pages": 353,
+  "pages": 362,
   "failures": [],
   "brokenLinks": [],
   "largest": [
     {
       "url": "https://backlinkgrid.com/blog",
-      "bytes": 446986
+      "bytes": 447646
     },
     {
       "url": "https://backlinkgrid.com/blog/best-guest-posting-sites-2026",
-      "bytes": 351951
+      "bytes": 330381
     },
     {
       "url": "https://backlinkgrid.com/resources/competitor-analysis-template",
-      "bytes": 347358
+      "bytes": 329185
     },
     {
       "url": "https://backlinkgrid.com/resources/link-building-spreadsheet-templates",
-      "bytes": 325566
+      "bytes": 303581
     },
     {
-      "url": "https://backlinkgrid.com/resources",
-      "bytes": 307812
-    },
-    {
-      "url": "https://backlinkgrid.com/comparisons/pitchbox-alternatives",
-      "bytes": 307725
+      "url": "https://backlinkgrid.com",
+      "bytes": 294292
     },
     {
       "url": "https://backlinkgrid.com/strategies",
-      "bytes": 305227
+      "bytes": 283595
     },
     {
-      "url": "https://backlinkgrid.com/guides/complete-guide-to-guest-posting",
-      "bytes": 301805
+      "url": "https://backlinkgrid.com/resources",
+      "bytes": 283223
     },
     {
       "url": "https://backlinkgrid.com/resources/backlink-audit-template",
-      "bytes": 296701
+      "bytes": 280103
     },
     {
-      "url": "https://backlinkgrid.com/guides/backlink-analysis-guide",
-      "bytes": 295379
+      "url": "https://backlinkgrid.com/resources/link-building-tools-comparison",
+      "bytes": 277626
+    },
+    {
+      "url": "https://backlinkgrid.com/comparisons/pitchbox-alternatives",
+      "bytes": 275833
     }
   ],
   "unreachableFromHomepage": []

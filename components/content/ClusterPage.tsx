@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { ArticleOffers } from './ArticleOffers'
+import { StickyPromo } from './StickyPromo'
 import { Clock, User, Calendar, ChevronRight, ArrowRight, ArrowLeft, BookOpen, ExternalLink, Lightbulb, Layers } from 'lucide-react'
 import { ClusterContent, ClusterMeta, HubMeta } from '@/lib/content'
 import { formatDate } from '@/lib/utils'
@@ -55,7 +57,7 @@ export function ClusterPage({
     <>
       <Header />
 
-      <main className="min-h-screen bg-bauhaus-cream">
+      <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-bauhaus-cream">
         {/* Breadcrumbs */}
         <nav className="bg-white border-b-3 border-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -128,49 +130,11 @@ export function ClusterPage({
         {/* Content Grid */}
         <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-4 gap-8">
-              {/* Table of Contents - Sidebar */}
-              <aside className="lg:col-span-1 hidden lg:block">
-                <div className="sticky top-24 space-y-4">
-                  <TableOfContents />
-
-                  {/* Related Pages in Sidebar */}
-                  {sidebarItems.length > 0 && (
-                    <SidebarRelated
-                      title={`Related Topics (${sidebarItems.length})`}
-                      items={sidebarItems}
-                      maxItems={8}
-                    />
-                  )}
-
-                  {/* Cross-Hub Links in Sidebar */}
-                  {crossHubLinks.length > 0 && (
-                    <div className="bg-white border-3 border-dark">
-                      <div className="p-3 border-b-2 border-dark/10">
-                        <h3 className="font-bold text-dark uppercase text-xs tracking-wider flex items-center gap-2">
-                          <ExternalLink className="w-3.5 h-3.5 text-bauhaus-blue" />
-                          Related Guides
-                        </h3>
-                      </div>
-                      <nav className="py-1">
-                        {crossHubLinks.slice(0, 4).map((link, index) => (
-                          <Link
-                            key={index}
-                            href={link.href}
-                            className="block text-xs text-dark/60 hover:text-dark hover:bg-bauhaus-cream/30 transition-colors py-1.5 px-3"
-                          >
-                            {link.title}
-                          </Link>
-                        ))}
-                      </nav>
-                    </div>
-                  )}
-                </div>
-              </aside>
-
+            <div className="grid lg:grid-cols-[minmax(0,1fr)_280px] gap-10">
               {/* Main Content */}
-              <div className="lg:col-span-3 min-w-0">
-                <article className="prose prose-lg prose-slate max-w-none bg-white border-3 border-dark p-8 lg:p-12 overflow-x-auto">
+              <div className="min-w-0">
+                <TableOfContents />
+                <article className="prose prose-lg prose-slate max-w-none bg-white rounded-lg p-5 sm:p-8 lg:p-10 overflow-x-auto">
                   {content}
                 </article>
 
@@ -317,10 +281,12 @@ export function ClusterPage({
                 {/* CTA */}
                 <ContentCTA />
               </div>
+              <ArticleOffers />
             </div>
           </div>
         </section>
       </main>
+      <StickyPromo />
 
       <Footer />
     </>

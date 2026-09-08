@@ -34,13 +34,10 @@ export function getMDXComponents(components: MDXComponents): MDXComponents {
       return (
         <h2
           id={headingId}
-          className="font-bold text-2xl uppercase tracking-wide text-dark mt-12 mb-6 scroll-mt-24 group"
+          className="font-bold text-2xl text-dark mt-12 mb-6 scroll-mt-24 group"
           {...props}
         >
-          <a href={`#${headingId}`} className="no-underline hover:no-underline">
-            {children}
-            <span className="opacity-0 group-hover:opacity-50 ml-2 text-bauhaus-red transition-opacity">#</span>
-          </a>
+          {children}
         </h2>
       )
     },
@@ -50,13 +47,10 @@ export function getMDXComponents(components: MDXComponents): MDXComponents {
       return (
         <h3
           id={headingId}
-          className="font-bold text-xl uppercase tracking-wide text-dark mt-8 mb-4 scroll-mt-24 group"
+          className="font-bold text-xl text-dark mt-8 mb-4 scroll-mt-24 group"
           {...props}
         >
-          <a href={`#${headingId}`} className="no-underline hover:no-underline">
-            {children}
-            <span className="opacity-0 group-hover:opacity-50 ml-2 text-bauhaus-red text-sm transition-opacity">#</span>
-          </a>
+          {children}
         </h3>
       )
     },

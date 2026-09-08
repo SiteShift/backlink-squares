@@ -70,4 +70,16 @@ Google links: https://developers.google.com/search/docs/crawling-indexing/qualif
 
 ## Release evidence
 
+### Editorial design and free-tool follow-up — 8 September 2026
+
+- [x] Remove duplicate blog bundle CTA; restore the original Lucide Flame banner icon.
+- [x] Redesign blog hero and remove the unsupported checker-testing description.
+- [x] Use plain article headings with preserved anchor IDs; collapse navigation to major sections.
+- [x] Add right-hand sticky bundle and sponsored-square offers; one dismissible scroll-triggered mobile card.
+- [x] Publish nine free browser tools with examples, validation, exports, explanatory content, metadata and schema. No paid API dependencies or Coming Soon cards.
+- [x] Correct unsupported outreach-template evidence claims and annual ROI arithmetic.
+- [x] Verify tool calculations, real browser workflows, downloads, mobile layouts and all 362 sitemap URLs.
+
+Detailed scope and verification: `reports/editorial-tools-release.md`.
+
 See `reports/implementation-results.md`, `reports/rendered-crawl.json` and `reports/dependency-audit.json`. Added framework security migration, paid-webhook acknowledgment and checkout validation after audit findings. Editorial replacements prioritize verifiable usefulness over unsupported numerical claims.

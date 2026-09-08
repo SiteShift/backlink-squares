@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { freeTools } from '@/lib/tools/catalog'
 import {
   getAllHubs,
   getHubClusters,
@@ -312,5 +313,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (updatedStatic.has(new URL(page.url).pathname)) page.lastModified = '2026-09-08'
   }
   allPages.push(...['templates', 'editorial-policy'].map(slug => ({ url: `${baseUrl}/${slug}`, lastModified: '2026-09-08' })))
+  allPages.push(...freeTools.map(tool => ({ url: `${baseUrl}/tools/${tool.slug}`, lastModified: '2026-09-08' })))
   return allPages
 }
