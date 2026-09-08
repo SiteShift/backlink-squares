@@ -20,7 +20,7 @@ Verified 2026-09-08 against the local production build.
 - Checkout regression script: malformed/duplicate coordinates and unsafe URL schemes rejected before database access; signed bundle event bypasses grid fulfillment.
 - Rendered crawl: 353 sitemap URLs, zero status/metadata/schema failures, zero broken internal destinations, zero pages unreachable from the homepage.
 - Discovery tests: public Markdown and content type, homepage alternate Link header, robots policy, unknown routes, unknown articles, private file denial, missing download session and permanent consolidation redirect passed.
-- Sample: exactly the first five records from the paid file with all nine columns.
+- Sample: exactly the first five records from the paid file with all nine columns, followed by a promotional row linking to the complete bundle. The original sample records are unchanged.
 - Browser: homepage/grid selection and loading, mobile navigation/Escape, bundle failure message, article table layout, templates page, purchase form. Tested at 320, 390 and 1440 pixel widths where relevant; no observed horizontal page overflow. Bundle content and sample link remain readable with application scripts blocked.
 - Final npm audit: zero vulnerabilities. Detailed machine-readable reports accompany this file.
 
