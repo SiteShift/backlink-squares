@@ -1,0 +1,104 @@
+---
+title: "How to Verify a Backlink Placement Before You Count It"
+metaTitle: "Verify a Backlink Placement: A Practical SEO Checklist"
+description: "Check the source page, destination, anchor and link attributes before marking a placement complete. Save evidence and separate missing links from failed checks."
+metaDescription: "Verify a backlink placement with a practical checklist for source access, target URLs, anchors, rel attributes and redirects. Record evidence before counting a link."
+date: "2026-09-09"
+lastUpdated: "2026-09-09"
+author: "BacklinkGrid Editorial Team"
+keywords: ["verify backlink placement", "check backlink attributes", "backlink verification checklist"]
+relatedSlugs: ["backlinks-not-showing-google-search-console", "preserve-backlinks-website-migration", "backlink-reporting-for-clients"]
+---
+
+To verify a backlink placement, check the actual source page and the link it contains, follow the destination, and save the evidence. A submission confirmation, a publisher’s domain score or a screenshot of an SEO dashboard does not establish that the promised link is live.
+
+This is a delivery check within a broader [backlink quality assessment](/backlink-quality). Passing it means the observed placement matches the checks you performed. It does not guarantee indexing, ranking credit, referral traffic or permanence.
+
+## Agree on what “complete” means
+
+Before submitting a listing or approving outreach work, record what you expect to receive. For an editorial contribution, that may be a relevant citation chosen by the publisher. For a directory placement, it may be a public profile with a website link. For a paid advertisement, the commercial relationship and appropriate attributes are part of the delivery.
+
+Keep the expectation separate from a prediction. “A public link to this guide” is observable. “A link that increases our rankings” is not something a placement check can establish.
+
+Use this acceptance table:
+
+| Check | Evidence to save | What a failure means |
+|---|---|---|
+| Source is reachable | Exact URL, response and date | Investigate access or publication status |
+| Your link is present | Anchor element or rendered observation | Review the source before marking it lost |
+| Destination is correct | Observed href and final URL | Correct the URL or your redirect |
+| Context is relevant | A short description of the surrounding passage | Review the usefulness of the placement |
+| Attributes match the relationship | Actual rel tokens | Clarify delivery without demanding inappropriate changes |
+| Target works for visitors | Final page and intended next action | Fix the visitor journey |
+
+The [placement verification worksheet](/templates/backlink-placement-check.csv) gives you a compact record for these observations.
+
+## Open the exact source page
+
+A listing can exist without appearing where you expected it. Start from the URL supplied by the publisher, not a search for their homepage. Check while logged out when public access matters. Note any consent wall, login requirement or unusual redirect.
+
+Then use the [live backlink checker](/tools/live-backlink-checker) with the source page and your target domain. It fetches raw HTML and reports matching links. If it cannot reach the source, record the check as inconclusive. A robots restriction or a timeout is not evidence of removal.
+
+When a link appears in the browser but not the raw response, inspect the rendered page. Some sites add content with JavaScript. Google’s recommended crawlable form is an anchor element with a resolvable `href`; script-driven controls are not equivalent merely because clicking them opens another page. [Google’s crawlable-link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+
+## Inspect the actual destination
+
+Copy the link address rather than retyping its visible text. A link labelled with your domain can point somewhere else. Check for misspellings, outdated paths, tracking redirects and an unexpected final hostname.
+
+An external tracking redirect is not automatically malicious or useless. Record it, follow it and confirm that the visitor reaches the intended resource. If several redirects are involved, distinguish publisher tracking from redirects on your own site. The latter may be under your control.
+
+For an internal business handover, save both the literal href and the final destination. Otherwise, a future colleague may “fix” a legitimate tracking address without understanding why it exists, or miss a broken old URL because a spreadsheet only contains the expected destination.
+
+The [broken link finder](/tools/broken-link-finder) helps check a small sample of destinations. A confirmed 404 or 410 is a different result from 403, rate limiting or a connection failure. Preserve that distinction in the report you send to a publisher.
+
+## Read rel attributes without inventing a score
+
+An observed link might look like this:
+
+```html
+<a href="https://example.com/guide" rel="sponsored noopener">
+  Example guide
+</a>
+```
+
+`rel` can contain several values. Google documents `sponsored` for advertising or paid placements, `ugc` for user-generated content and `nofollow` for other situations where that qualification is appropriate. These values should reflect the relationship; they are not buttons for forcing a ranking outcome. [Google’s link qualification guidance](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links)
+
+`noopener` serves a browser-security purpose: it prevents the newly opened page from accessing the originating window through `window.opener`. It is not the same attribute as `nofollow`. [MDN’s noopener reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener)
+
+Record the actual string instead of replacing it with an unsupported “SEO value” estimate. There is no standard `dofollow` attribute you need a publisher to add. Conversely, the absence of a qualifying attribute does not prove that a search engine will credit the link.
+
+For image links, check the image’s alternative text and the visible context. An empty anchor field in a tool may need a human review rather than an automatic failure.
+
+## Check relevance and the reader’s next step
+
+A technically valid link can still be a poor placement. Read the surrounding paragraph. Does it explain why your resource is useful? Does the destination deliver what the wording promises? Is the page maintained for a real audience, or does it appear to exist only to sell unrelated links?
+
+Apply the same scrutiny to your own landing page. If the source recommends a checklist, send readers to the checklist or a page that makes it immediately available. A generic homepage may be a weaker destination even when the domain is correct.
+
+For a directory, check the category, business name, description and contact details. These are practical delivery details; a high third-party domain score does not excuse an inaccurate listing. Our [backlink database guide](/resources/backlink-database-guide) explains how to qualify an opportunity before submitting.
+
+## Save a reproducible record
+
+Use a small status vocabulary so reports remain comparable:
+
+- **Submitted:** a request was sent; nothing is yet confirmed live.
+- **Live, checked:** the observed source and destination passed your stated checks.
+- **Needs correction:** a specific URL, description or other delivery detail is wrong.
+- **Could not verify:** the check failed or the evidence is incomplete.
+- **Removed or moved:** a change is supported by a follow-up investigation.
+
+**Illustrative example:** a directory email says your business is approved. You open the profile and find the website link points to an old path returning 404. Record “needs correction”, retain the approval email and send the exact replacement. Do not count approval as a completed functioning placement.
+
+Save a check date, not an invented publication date. For recurring reviews, compare against the last successful observation. A transient failure should not erase the earlier evidence.
+
+## Decide when to recheck
+
+Choose a schedule based on the placement’s importance and the way you acquired it. A business-critical partner page warrants more attention than a low-priority historic mention. Recheck after your own URL changes, a publisher redesign, or a report that a link has disappeared.
+
+BacklinkGrid’s checker can save history in your browser and recheck while its page remains open. It is not an unattended monitoring service: closing the tab stops that workflow. Export the record if you need a durable team handover.
+
+For new prospecting, the [Complete Backlink Database Bundle](/bundle) can provide a starting research list. It does not include completed placements. Use this verification process after you choose suitable channels and submit to them.
+
+## What to read next
+
+If a live placement is absent from a dashboard, read [backlinks missing from GSC](/blog/backlinks-not-showing-google-search-console). For URL changes, use the [migration preservation guide](/blog/preserve-backlinks-website-migration). For client communication, see [backlink reporting](/blog/backlink-reporting-for-clients) and the [backlink audit hub](/backlink-audit).

@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { calculateReadingTime } from './utils'
+import { blogTopic } from './blog-topics'
 
 const contentDirectory = path.join(process.cwd(), 'content')
 
@@ -19,6 +20,7 @@ export interface ContentMeta {
   metaTitle?: string
   metaDescription?: string
   faqs?: FAQ[]
+  relatedSlugs?: string[]
 }
 
 export interface ContentItem extends ContentMeta {
@@ -122,6 +124,7 @@ export function getAllBlogPosts(): ContentMeta[] {
         keywords: data.keywords || [],
         readingTime: calculateReadingTime(content),
         image: data.image,
+        relatedSlugs: data.relatedSlugs || [],
       }
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -154,6 +157,7 @@ export function getBlogPost(slug: string): ContentItem | null {
     metaTitle: data.metaTitle,
     metaDescription: data.metaDescription,
     faqs: data.faqs || [],
+    relatedSlugs: data.relatedSlugs || [],
     content,
   }
 }
@@ -325,12 +329,16 @@ export function getRelatedPosts(
   limit: number = 3
 ): ContentMeta[] {
   const allPosts = getAllBlogPosts()
+  const explicit = allPosts.find(p => p.slug === currentSlug)?.relatedSlugs || []
+  const topic = blogTopic(currentSlug).id
 
   return allPosts
     .filter((post) => post.slug !== currentSlug)
     .map((post) => ({
       ...post,
-      relevance: post.keywords?.filter((k) => keywords.includes(k)).length || 0,
+      relevance: (explicit.includes(post.slug) ? 100 - explicit.indexOf(post.slug) : 0) +
+        (blogTopic(post.slug).id === topic ? 5 : 0) +
+        (post.keywords?.filter((k) => !['backlinks', 'link building', 'seo'].includes(k.toLowerCase()) && keywords.some(term => term.toLowerCase() === k.toLowerCase())).length || 0),
     }))
     .sort((a, b) => b.relevance - a.relevance)
     .slice(0, limit)

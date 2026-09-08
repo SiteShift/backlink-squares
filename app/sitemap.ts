@@ -316,5 +316,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   allPages.push(...['templates', 'editorial-policy'].map(slug => ({ url: `${baseUrl}/${slug}`, lastModified: '2026-09-08' })))
   allPages.push(...liveTools.map(tool => ({ url: `${baseUrl}/tools/${tool.slug}`, lastModified: '2026-09-09' })))
   allPages.push(...freeTools.map(tool => ({ url: `${baseUrl}/tools/${tool.slug}`, lastModified: '2026-09-08' })))
+  const updatedSeptember9 = new Set(['/blog', '/contact', '/templates', '/tools/roi-calculator', '/tools/free-backlink-checker', '/tools/backlink-analyzer'])
+  for (const page of allPages) {
+    if (updatedSeptember9.has(new URL(page.url).pathname)) page.lastModified = '2026-09-09'
+  }
   return allPages
 }

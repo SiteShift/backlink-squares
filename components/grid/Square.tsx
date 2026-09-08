@@ -91,8 +91,7 @@ export function Square({
   }
 
   // Purchased square with logo
-  // IMPORTANT: rel="sponsored noopener" is security only - does NOT affect SEO
-  // NO rel="nofollow" or rel="sponsored" - these are real dofollow backlinks
+  // Paid placements are qualified as sponsored; noopener isolates the new tab.
   return (
     <motion.a
       href={square?.site_url || '#'}

@@ -1,4 +1,3 @@
-import { use } from "react";
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 import { Metadata } from 'next'
@@ -16,6 +15,7 @@ import { TableOfContents } from '@/components/content/TableOfContents'
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
+import { blogTopic } from '@/lib/blog-topics'
 import { formatDate } from '@/lib/utils'
 import { getMDXComponents } from '@/mdx-components'
 
@@ -58,6 +58,7 @@ export default async function BlogPostPage(props: Props) {
     notFound()
   }
 
+  const topic = blogTopic(params.slug)
   // Get related posts
   const relatedPosts = getRelatedPosts(params.slug, post.keywords || [], 3)
 
@@ -100,7 +101,7 @@ export default async function BlogPostPage(props: Props) {
               Back to Blog
             </Link>
 
-            <p className="text-sm font-semibold text-brand-red mb-4">BacklinkGrid Journal · Tools & strategies</p>
+            <p className="text-sm font-semibold text-brand-red mb-4">BacklinkGrid Journal · {topic.label}</p>
 
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl max-w-4xl leading-tight text-dark mb-6">
               {post.title}
@@ -144,6 +145,7 @@ export default async function BlogPostPage(props: Props) {
         <ArticleOffers />
         </div>
 
+        <nav aria-label="Topic navigation" className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 text-sm flex flex-wrap gap-5"><Link className="underline" href={topic.hub}>Explore {topic.label.toLowerCase()} →</Link><Link className="underline" href={`/blog#${topic.id}`}>More articles on this topic →</Link></nav>
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
           <section className="py-16 lg:py-20 bg-white border-t-3 border-dark">

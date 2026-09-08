@@ -9,6 +9,8 @@ export default function Templates() {
  <div className="grid md:grid-cols-3 gap-5 mt-8">{[
  ['prospect-tracker','Prospect tracker','Record audience fit, submission rules, source URL, cost and your next action. Prioritize relevance before domain metrics.'],
  ['backlink-audit','Backlink audit sheet','Record source and target pages, anchor text, link attributes and review notes. Keep suspicious links as review items rather than automatic disavow decisions.'],
+ ['backlink-placement-check','Placement verification','Record the exact source, destination, attributes and evidence before counting a backlink as live.'],
+ ['backlink-migration-map','Backlink migration map','Map old URLs to relevant new destinations and record redirects, canonical checks and unresolved exceptions.'],
  ['outreach-tracker','Outreach tracker','Track a useful pitch angle, contact source, first message, follow-up and outcome. Respect opt-outs and avoid repeated generic messages.'],
  ].map(([slug,title,body])=><section key={slug} className="border-2 p-6"><h2 className="font-bold text-xl">{title}</h2><p className="my-4">{body}</p><a className="text-brand-red underline font-bold" href={`/templates/${slug}.csv`} download>Download CSV</a></section>)}</div>
  <h2 className="font-bold text-2xl mt-10">How to use the templates</h2><ol className="list-decimal pl-6 space-y-3 mt-4"><li>Import the CSV using your spreadsheet application’s import function. Keep URLs as text.</li><li>Replace the illustrative example row with a real prospect or link.</li><li>Assign an owner and next-review date so research has a clear next action.</li><li>Record actual published URLs and referral results separately from submissions.</li></ol>

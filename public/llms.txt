@@ -52,3 +52,10 @@ Content and sample files are public. Full bundle downloads require a paid Stripe
 - [Competitor source finder](https://backlinkgrid.com/tools/competitor-backlink-finder): limited English Wikipedia/Hacker News discovery and live candidate verification, not a complete domain-level gap analysis.
 
 These tools use no paid data APIs. URLs are fetched by the server. Do not submit private URLs or access tokens.
+
+## Placement verification and maintenance
+
+- [Verify a backlink placement](https://backlinkgrid.com/blog/verify-backlink-placement): source, destination, attributes and a downloadable check sheet.
+- [Missing backlinks in Search Console](https://backlinkgrid.com/blog/backlinks-not-showing-google-search-console): distinguish report coverage from a removed placement.
+- [Preserve backlinks during migration](https://backlinkgrid.com/blog/preserve-backlinks-website-migration): map old destinations, test redirects and retain evidence.
+- [Blog by topic](https://backlinkgrid.com/blog): browse the editorial library in seven topic groups.

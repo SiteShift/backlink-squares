@@ -669,13 +669,13 @@ export default function BacklinkAnalyzerPage() {
                   Ready to Build Backlinks?
                 </h3>
                 <p className="text-white/80 mb-6">
-                  Get our database of 270+ verified high-DR backlink opportunities.
+                  Get our database of 276 backlink research opportunities.
                   Skip the research and start building links today.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center gap-2 text-white/90 text-sm">
                     <CheckCircle2 className="w-4 h-4" />
-                    270+ verified sites with DR ratings
+                    276 opportunities with recorded DR values
                   </li>
                   <li className="flex items-center gap-2 text-white/90 text-sm">
                     <CheckCircle2 className="w-4 h-4" />
@@ -706,13 +706,13 @@ export default function BacklinkAnalyzerPage() {
                   Get Your First Backlink for $1
                 </h3>
                 <p className="text-white/80 mb-6">
-                  Start building your backlink profile today with a permanent dofollow link
+                  Start building your backlink profile today with a permanent sponsored link
                   from Backlink Grid. No outreach required.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center gap-2 text-white/90 text-sm">
                     <CheckCircle2 className="w-4 h-4" />
-                    Permanent dofollow backlink
+                    Permanent sponsored backlink
                   </li>
                   <li className="flex items-center gap-2 text-white/90 text-sm">
                     <CheckCircle2 className="w-4 h-4" />

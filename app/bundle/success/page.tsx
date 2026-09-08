@@ -149,7 +149,7 @@ export default async function BundleSuccessPage(props: Props) {
                     <Download className="w-5 h-5 text-brand-red" />
                     <div className="text-left">
                       <p className="font-semibold">backlink-database-bundle.csv</p>
-                      <p className="text-sm text-surface-500">270+ High DR backlink sites</p>
+                      <p className="text-sm text-surface-500">276 backlink research opportunities</p>
                     </div>
                   </div>
                   <ArrowRight className="w-5 h-5 text-surface-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all" />
@@ -181,7 +181,7 @@ export default async function BundleSuccessPage(props: Props) {
             <div className="bg-surface-950 p-6">
               <h3 className="font-display text-lg font-bold mb-2 text-white">Need a Backlink Right Now?</h3>
               <p className="text-white/70 mb-4">
-                Get a permanent dofollow backlink on our grid starting at just $1
+                Get a permanent sponsored backlink on our grid starting at just $1
               </p>
               <Link
                 href="/#grid"

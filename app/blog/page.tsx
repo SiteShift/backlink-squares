@@ -1,142 +1,18 @@
-import { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Package, Search } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { BlogCard } from '@/components/content/BlogCard'
+import { ContentCTA } from '@/components/content/ContentCTA'
 import { getAllBlogPosts } from '@/lib/content'
+import { blogTopics, blogTopic } from '@/lib/blog-topics'
 import { buildMetadata } from '@/lib/seo'
-
-export const metadata: Metadata = {
-  ...buildMetadata({
-    title: 'SEO & Link Building Blog',
-    description:
-      'Expert insights on SEO, link building, and backlink strategies. Learn from in-depth articles and stay updated on the latest trends.',
-    canonicalUrl: 'https://backlinkgrid.com/blog',
-    type: 'website',
-    keywords: ['SEO blog', 'link building blog', 'backlink guides', 'SEO insights'],
-  }),
-}
-
+export const metadata = buildMetadata({ title: 'Link Building Blog: Research, Outreach & Practical SEO', description: 'Explore practical backlink guides by topic: research, outreach, link quality, measurement and maintenance. Find useful tools and clear next steps for your site.', canonicalUrl: 'https://backlinkgrid.com/blog', type: 'website' })
 export default function BlogPage() {
   const posts = getAllBlogPosts()
-  const [featuredPost, ...otherPosts] = posts
-
-  return (
-    <>
-      <Header />
-
-      <main className="min-h-screen bg-bauhaus-cream">
-        {/* Hero */}
-        <section className="py-16 lg:py-24 bg-white border-b-3 border-dark">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-bauhaus-red/10 text-bauhaus-red text-sm font-bold uppercase tracking-wider mb-6">
-                Blog
-              </div>
-              <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-dark leading-tight">
-                SEO & Link Building Insights
-              </h1>
-              <p className="mt-6 text-xl text-dark/60 leading-relaxed">
-                Expert guides, strategies, and insights to help you master
-                backlinks and grow your organic traffic.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Post */}
-        {featuredPost && (
-          <section className="py-12 lg:py-16">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-              <p className="text-sm font-bold uppercase tracking-wider text-dark/40 mb-4">Featured</p>
-              <BlogCard post={featuredPost} featured />
-            </div>
-          </section>
-        )}
-
-        {/* All Posts */}
-        <section className="pb-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display font-black text-2xl text-dark mb-8">
-              Latest Articles
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherPosts.map((post) => (
-                <BlogCard key={post.slug} post={post} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Product Funnel */}
-        <section className="py-16 lg:py-20 bg-dark">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10">
-              <h2 className="font-display font-black text-2xl sm:text-3xl text-white mb-4">
-                Turn SEO Reads Into SEO Action
-              </h2>
-              <p className="text-white/60 max-w-2xl mx-auto">
-                Use the free tools, grab the backlink database bundle, or claim a permanent dofollow backlink on the grid.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <Link
-                href="/#grid"
-                className="group bg-white border-3 border-dark p-6 hover:-translate-y-1 transition-all"
-              >
-                <h3 className="font-display font-bold text-xl text-dark mb-2">
-                  Buy a Backlink
-                </h3>
-                <p className="text-dark/60 mb-4">
-                  Claim a permanent dofollow square starting at $1.
-                </p>
-                <span className="inline-flex items-center gap-2 font-bold text-bauhaus-red">
-                  Go to the grid
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Link>
-
-              <Link
-                href="/bundle"
-                className="group bg-bauhaus-yellow border-3 border-dark p-6 hover:-translate-y-1 transition-all"
-              >
-                <Package className="w-6 h-6 text-dark mb-3" />
-                <h3 className="font-display font-bold text-xl text-dark mb-2">
-                  Get the Bundle
-                </h3>
-                <p className="text-dark/70 mb-4">
-                  Download 270+ verified backlink opportunities in one spreadsheet.
-                </p>
-                <span className="inline-flex items-center gap-2 font-bold text-dark">
-                  View bundle
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Link>
-
-              <Link
-                href="/tools/free-backlink-checker"
-                className="group bg-white border-3 border-dark p-6 hover:-translate-y-1 transition-all"
-              >
-                <Search className="w-6 h-6 text-bauhaus-blue mb-3" />
-                <h3 className="font-display font-bold text-xl text-dark mb-2">
-                  Use Free Tools
-                </h3>
-                <p className="text-dark/60 mb-4">
-                  Check backlinks, audit your profile, and estimate ROI without paying first.
-                </p>
-                <span className="inline-flex items-center gap-2 font-bold text-bauhaus-blue">
-                  Open tools
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <Footer />
-    </>
-  )
+  const featured = ['verify-backlink-placement', 'backlinks-not-showing-google-search-console', 'preserve-backlinks-website-migration'].map(slug => posts.find(p => p.slug === slug)).filter(p => p !== undefined)
+  return <><Header /><main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-surface-50">
+    <header className="bg-white border-b border-surface-200"><div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16"><p className="text-sm font-semibold text-brand-red">The BacklinkGrid journal</p><h1 className="text-4xl sm:text-5xl font-bold tracking-tight max-w-3xl mt-4">Build better links.<br />Know what to check next.</h1><p className="text-lg text-surface-600 mt-6 max-w-2xl leading-relaxed">Practical guides for finding opportunities, earning useful placements and looking after the links you already have.</p><nav aria-label="Blog topics" className="flex flex-wrap gap-x-6 gap-y-3 mt-8 text-sm">{blogTopics.map(topic => <a className="underline underline-offset-4 text-surface-700 hover:text-brand-red" key={topic.id} href={`#${topic.id}`}>{topic.label}</a>)}</nav></div></header>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14"><section aria-labelledby="featured-reading"><h2 id="featured-reading" className="text-2xl font-bold">Start with a practical check</h2><div className="grid md:grid-cols-3 gap-8 mt-6">{featured.map(post => <Link key={post.slug} href={`/blog/${post.slug}`} className="group border-t-2 border-surface-950 py-5"><h3 className="font-bold text-xl leading-snug group-hover:text-brand-red transition-colors">{post.title}</h3><p className="text-sm text-surface-600 leading-relaxed mt-3">{post.description}</p><span className="block mt-4 text-sm font-semibold">Read the guide →</span></Link>)}</div></section>
+      {blogTopics.map(topic => <section id={topic.id} key={topic.id} className="scroll-mt-40 border-t border-surface-300 pt-8 mt-12"><div className="sm:flex justify-between gap-8 items-start"><div><h2 className="font-bold text-2xl">{topic.label}</h2><p className="text-sm text-surface-600 mt-2">{topic.description}</p></div><Link className="inline-block mt-3 sm:mt-1 text-sm underline underline-offset-4 shrink-0" href={topic.hub}>Explore the topic hub →</Link></div><ul className="grid md:grid-cols-2 gap-x-10 mt-5">{posts.filter(post => blogTopic(post.slug).id === topic.id).map(post => <li key={post.slug} className="border-b border-surface-200 py-4"><Link className="font-medium leading-relaxed hover:text-brand-red transition-colors" href={`/blog/${post.slug}`}>{post.title}</Link><p className="text-xs text-surface-500 mt-1">{post.readingTime}</p></li>)}</ul></section>)}
+      <div className="mt-14"><ContentCTA /></div><p className="mt-6 text-sm text-surface-600">Ready to apply what you have read? <Link className="underline" href="/tools">Try the free website tools</Link> or <Link className="underline" href="/templates">download a working template</Link>.</p>
+    </div></main><Footer /></>
 }

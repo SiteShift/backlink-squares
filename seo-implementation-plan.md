@@ -93,3 +93,14 @@ See `reports/implementation-results.md`, `reports/rendered-crawl.json` and `repo
 - [x] Update privacy/agent documentation and verify production builds, regression tests and the 368-page crawl.
 
 Scope and operating limits: `reports/live-tools-release.md`. No paid API/service or plan upgrade added; existing hosting resources are still consumed.
+
+## 9 September 2026 — blog topic map and editorial repair
+
+- [x] Mapped all existing blogs; filled three distinct maintenance/verification gaps rather than adding another generic strategy roundup.
+- [x] Rebuilt `/blog` into seven topic sections and made related reading topic-aware, with editorial overrides.
+- [x] Rewrote unsupported headline articles and corrected high-risk embedded claims. Preserved their URLs.
+- [x] Added two downloadable worksheets and relevant commercial paths; refreshed legacy checker guidance and product accuracy.
+- [x] Updated discovery documents and real modification dates for edited pages.
+- [x] Verified all 371 sitemap pages, internal reachability, canonical/indexability signals, Markdown, protected downloads and sampled mobile layouts. Build/lint/regression checks passed.
+
+Evidence and scope: `reports/blog-topical-audit.md`, `reports/blog-map-audit.json`, `reports/rendered-crawl.json`.

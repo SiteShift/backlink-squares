@@ -1,0 +1,4948 @@
+{
+  "method": "Full-source inventory of every blog. Topic and lexical claim flags are editorial triage, not fact verification or proof of cannibalisation. Page-specific factual corrections and priority decisions are documented in blog-topical-audit.md.",
+  "posts": 107,
+  "topics": {
+    "research": 13,
+    "strategy": 29,
+    "fundamentals": 13,
+    "outreach": 13,
+    "industries": 16,
+    "tactics": 14,
+    "risk": 9
+  },
+  "overlapCandidates": [
+    {
+      "first": "/blog/backlinks-not-showing-google-search-console",
+      "second": "/blog/google-search-console-backlinks",
+      "sharedIntentTerms": [
+        "google",
+        "search",
+        "console"
+      ]
+    },
+    {
+      "first": "/blog/link-building-case-study-ecommerce",
+      "second": "/blog/link-building-case-study-saas",
+      "sharedIntentTerms": [
+        "illustrative",
+        "campaign",
+        "case",
+        "study"
+      ]
+    },
+    {
+      "first": "/blog/link-building-for-affiliate-sites",
+      "second": "/blog/link-building-strategies",
+      "sharedIntentTerms": [
+        "strategies",
+        "that",
+        "work"
+      ]
+    },
+    {
+      "first": "/blog/link-building-for-product-pages",
+      "second": "/blog/link-building-with-linkedin",
+      "sharedIntentTerms": [
+        "strategies",
+        "that",
+        "actually",
+        "work"
+      ]
+    },
+    {
+      "first": "/blog/link-building-strategies",
+      "second": "/blog/link-building-with-linkedin",
+      "sharedIntentTerms": [
+        "strategies",
+        "that",
+        "work"
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "slug": "ahrefs-for-link-building-tutorial",
+      "url": "/blog/ahrefs-for-link-building-tutorial",
+      "title": "Ahrefs for Link Building: Complete Tutorial and Strategies",
+      "topic": "research",
+      "words": 1823,
+      "description": "Master Ahrefs for link building with this comprehensive tutorial. Site Explorer, Content Explorer, backlink analysis, and competitor research techniques.",
+      "headings": [
+        "Why Ahrefs Is Essential for Link Building",
+        "Getting Started: Ahrefs Overview",
+        "Site Explorer: Your Link Building Command Center",
+        "Competitor Backlink Analysis",
+        "Content Explorer: Finding Link Opportunities",
+        "Prospecting Workflows",
+        "Backlink Audit and Cleanup",
+        "Tracking Link Building Progress",
+        "Advanced Ahrefs Techniques",
+        "Ahrefs Pricing and Plans",
+        "Ahrefs Link Building Workflow",
+        "Frequently Asked Questions",
+        "Making the Most of Ahrefs"
+      ],
+      "internalLinks": [
+        "/blog/semrush-link-building-features",
+        "/blog/moz-link-explorer-guide"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 359,
+          "text": "Ahrefs has one of the most comprehensive indexes, but no tool catches 100% of links. Use Google Search Console alongside Ahrefs for complete coverage."
+        }
+      ]
+    },
+    {
+      "slug": "annual-link-building-roadmap",
+      "url": "/blog/annual-link-building-roadmap",
+      "title": "Annual Link Building Roadmap: Plan Your Year for Maximum Impact",
+      "topic": "strategy",
+      "words": 2061,
+      "description": "Create a 12-month link building roadmap with this comprehensive planning guide. Includes quarterly frameworks, seasonal opportunities, and milestone tracking.",
+      "headings": [
+        "Why Plan a Full Year?",
+        "Annual Planning Foundation",
+        "Quarterly Framework",
+        "Seasonal Opportunities",
+        "Milestone Tracking",
+        "Team Alignment",
+        "Roadmap Documentation",
+        "Adjusting the Roadmap",
+        "Frequently Asked Questions",
+        "Your Annual Roadmap"
+      ],
+      "internalLinks": [
+        "/blog/creating-a-link-building-strategy",
+        "/blog/link-building-budget-allocation"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 28,
+          "text": "| 50% organic traffic growth | Achieve DR 50 (from 35) |"
+        },
+        {
+          "line": 106,
+          "text": "- [ ] First 25% of annual link target"
+        },
+        {
+          "line": 139,
+          "text": "- [ ] 50% of annual link target reached"
+        },
+        {
+          "line": 174,
+          "text": "- [ ] 75% of annual target reached"
+        },
+        {
+          "line": 495,
+          "text": "Keep 10-15% of budget/time for opportunistic activities. Evaluate opportunities against roadmap goals."
+        }
+      ]
+    },
+    {
+      "slug": "backlink-quality-checklist",
+      "url": "/blog/backlink-quality-checklist",
+      "title": "How to Evaluate Backlink Quality: The Essential Checklist",
+      "topic": "fundamentals",
+      "words": 901,
+      "description": "Not all backlinks are created equal. Learn how to identify high-quality links and avoid toxic ones that could hurt your rankings.",
+      "headings": [
+        "Why Backlink Quality Matters",
+        "The Quality Checklist",
+        "Toxic Backlink Warning Signs",
+        "How to Check Your Existing Backlinks",
+        "Quality Over Quantity",
+        "Link Quality Scoring Framework",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/domain-authority-explained",
+        "/blog/dofollow-vs-nofollow",
+        "/backlink-audit/disavow-guide",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/essentials/spam-policies#link-spam",
+        "https://search.google.com/search-console",
+        "https://support.google.com/webmasters/answer/2648487"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "backlink-reporting-for-clients",
+      "url": "/blog/backlink-reporting-for-clients",
+      "title": "Backlink Reporting for Clients: How to Communicate Link Building Value",
+      "topic": "research",
+      "words": 1898,
+      "description": "Create client reports that demonstrate link building value clearly. Learn what metrics to include, how to present them, and how to tie links to business outcomes.",
+      "headings": [
+        "Why Client Reporting Matters",
+        "Understanding Your Audience",
+        "Essential Report Components",
+        "Report Format Options",
+        "Report Presentation Best Practices",
+        "Handling Difficult Reporting Situations",
+        "Automation and Efficiency",
+        "Frequently Asked Questions",
+        "Report Checklist",
+        "Building Long-Term Reporting Relationships"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 84,
+          "text": "higher-than-expected quality. Organic traffic up 23% YoY."
+        },
+        {
+          "line": 195,
+          "text": "| Response Rate | 12% | 10% |"
+        },
+        {
+          "line": 232,
+          "text": "Average conversion rate: 3%"
+        },
+        {
+          "line": 368,
+          "text": "\"Link acquisition was below target this month (12 vs. 15) due to holiday publishing slowdowns. However, we have 8 confirmed placements scheduled for January, and outreach response rates remain strong at 14%. We expect to catch up in Q1.\""
+        }
+      ]
+    },
+    {
+      "slug": "backlinks-not-showing-google-search-console",
+      "url": "/blog/backlinks-not-showing-google-search-console",
+      "title": "Backlinks Not Showing in Google Search Console?",
+      "topic": "research",
+      "words": 1222,
+      "description": "Backlinks missing from Google Search Console? Check report limits, source pages, canonical URLs and indexing with a practical, evidence-led troubleshooting workflow.",
+      "headings": [
+        "Start with this decision table",
+        "1. Verify the source rather than the total",
+        "2. Confirm the property and destination",
+        "3. Compare the right report and export",
+        "4. Keep indexing and link reporting separate",
+        "5. Escalate only the issue you can demonstrate",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/backlink-audit",
+        "/tools/live-backlink-checker",
+        "/blog/verify-backlink-placement",
+        "/tools/gsc-links-analyzer",
+        "/blog/google-search-console-backlinks",
+        "/blog/moz-link-explorer-guide",
+        "/backlink-quality",
+        "/blog/preserve-backlinks-website-migration"
+      ],
+      "externalSources": [
+        "https://support.google.com/webmasters/answer/9049606?hl=en",
+        "https://support.google.com/webmasters/answer/9049606?hl=en",
+        "https://support.google.com/webmasters/answer/7440203?hl=en"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "becoming-a-cited-source-in-your-industry",
+      "url": "/blog/becoming-a-cited-source-in-your-industry",
+      "title": "How to Become a Cited Source in Your Industry: The Expert's Playbook",
+      "topic": "outreach",
+      "words": 1773,
+      "description": "Learn how to position yourself as the go-to source that journalists, bloggers, and researchers cite. Build authority through strategic content and relationship building.",
+      "headings": [
+        "The Power of Being Cited",
+        "What It Means to Be a Cited Source",
+        "Building Your Citation Foundation",
+        "Strategies for Becoming Cited",
+        "Building Citation Velocity",
+        "Measuring Citation Success",
+        "Common Mistakes",
+        "Industry-Specific Approaches",
+        "Frequently Asked Questions",
+        "Building Your Citation Engine"
+      ],
+      "internalLinks": [
+        "/glossary/haro-link-building",
+        "/glossary/referring-domain"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "best-free-backlink-checkers",
+      "url": "/blog/best-free-backlink-checkers",
+      "title": "Best Free Backlink Checkers: Choose by Research Task",
+      "topic": "research",
+      "words": 1000,
+      "description": "Choose a free backlink checker for your own site or competitor research. Compare practical workflows, understand data limits and verify the links that matter.",
+      "headings": [
+        "Choose by task",
+        "Google Search Console: start with your own property",
+        "Ahrefs: explore a competitor backlink sample",
+        "Moz Link Explorer: work with DA and linking domains",
+        "Other providers: verify access before planning a workflow",
+        "How to compare results fairly",
+        "A practical free review workflow",
+        "Common questions",
+        "What to read next",
+        "Try the free tool"
+      ],
+      "internalLinks": [
+        "/comparisons/ahrefs-vs-moz",
+        "/blog/moz-link-explorer-guide",
+        "/tools/free-backlink-checker",
+        "/backlinks/referring-domains-vs-backlinks",
+        "/templates",
+        "/bundle",
+        "/backlink-quality",
+        "/backlink-audit/disavow-guide",
+        "/blog/moz-link-explorer-guide",
+        "/comparisons/ahrefs-vs-moz",
+        "/backlink-audit",
+        "/templates",
+        "/tools/link-inspector"
+      ],
+      "externalSources": [
+        "https://support.google.com/webmasters/answer/9049606",
+        "https://ahrefs.com/backlink-checker",
+        "https://moz.com/link-explorer"
+      ],
+      "claimReviewCandidates": [
+        {
+          "line": 4,
+          "text": "This is an editorial selection guide, not a claim that we tested dozens of products or measured a vendor's accuracy percentage. Free access, exports and account requirements change. Check each provider before relying on a specific limit."
+        }
+      ]
+    },
+    {
+      "slug": "best-guest-posting-sites-2026",
+      "url": "/blog/best-guest-posting-sites-2026",
+      "title": "Guest Posting Sites: Find and Qualify Editorial Opportunities",
+      "topic": "outreach",
+      "words": 993,
+      "description": "Find guest posting opportunities using official contributor guidelines. Compare audience fit, prepare a useful pitch and verify publication without link guarantees.",
+      "headings": [
+        "Choose guest posting sites by editorial fit",
+        "Two official contributor routes to study",
+        "Find prospects beyond “write for us” lists",
+        "Qualify the actual publication",
+        "Write a contribution an editor can assess",
+        "Agree attribution without demanding ranking credit",
+        "Build a shortlist you can maintain",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/link-building-tactics/guest-posting",
+        "/tools/link-prospect-finder",
+        "/resources/guest-post-pitch-templates",
+        "/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc",
+        "/tools/live-backlink-checker",
+        "/bundle",
+        "/digital-pr",
+        "/resources/link-prospect-qualification-checklist",
+        "/blog/verify-backlink-placement"
+      ],
+      "externalSources": [
+        "https://www.smashingmagazine.com/write-for-us/",
+        "https://alistapart.com/about/contribute/",
+        "https://developers.google.com/search/docs/essentials/spam-policies"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "best-link-building-agencies",
+      "url": "/blog/best-link-building-agencies",
+      "title": "Best Link Building Agency for You: A Due Diligence Guide",
+      "topic": "strategy",
+      "words": 872,
+      "description": "Choose a link building agency using source-level evidence, clear acquisition methods and a practical pilot brief. Compare proposals without trusting ranking promises.",
+      "headings": [
+        "How to choose a link building agency",
+        "Write a brief that makes proposals comparable",
+        "Inspect source pages rather than logos",
+        "Ask how links are obtained",
+        "Use a pilot with acceptance criteria",
+        "Evaluate a case study critically",
+        "Match the buying decision to the bottleneck",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/link-building",
+        "/backlink-quality",
+        "/blog/verify-backlink-placement",
+        "/bundle",
+        "/blog/backlink-reporting-for-clients",
+        "/digital-pr",
+        "/backlink-audit"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/essentials/spam-policies"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "best-link-building-tools-2026",
+      "url": "/blog/best-link-building-tools-2026",
+      "title": "Best Link Building Tools 2026: 25 Essential Tools for SEO Success",
+      "topic": "research",
+      "words": 2524,
+      "description": "Discover the best link building tools of 2026. Compare features, pricing, and use cases for prospecting, outreach, and backlink analysis tools.",
+      "headings": [
+        "Quick Comparison: Top Link Building Tools",
+        "Backlink Analysis Tools",
+        "Prospecting and Research Tools",
+        "Outreach Management Tools",
+        "Chrome Extensions for Link Building",
+        "Link Monitoring and Tracking",
+        "Specialized Link Building Tools",
+        "Building Your Link Building Tool Stack",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [
+        "/blog/ahrefs-for-link-building-tutorial"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "branded-vs-keyword-anchor-text",
+      "url": "/blog/branded-vs-keyword-anchor-text",
+      "title": "Branded vs Keyword Anchor Text: How to Optimize Without Over-Optimizing",
+      "topic": "fundamentals",
+      "words": 1947,
+      "description": "Master anchor text strategy with this complete guide to branded vs keyword anchors. Learn the right ratios, avoid penalties, and build a natural-looking link profile.",
+      "headings": [
+        "What Is Anchor Text and Why Does It Matter?",
+        "Types of Anchor Text",
+        "The Natural Distribution",
+        "Branded Anchor Text Strategy",
+        "Keyword Anchor Text Strategy",
+        "Building a Balanced Profile",
+        "Page-Level Anchor Text Strategy",
+        "Anchor Text for Internal Links",
+        "Recovering from Over-Optimization",
+        "Frequently Asked Questions",
+        "Action Checklist",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/link-building-strategies",
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/link-building-strategies",
+        "/blog/backlink-quality-checklist"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 113,
+          "text": "| Branded | 30-50% | Under 20% |"
+        },
+        {
+          "line": 114,
+          "text": "| Naked URLs | 15-25% | Under 10% |"
+        },
+        {
+          "line": 115,
+          "text": "| Generic | 10-20% | Under 5% |"
+        },
+        {
+          "line": 116,
+          "text": "| Partial match | 10-20% | Over 30% |"
+        },
+        {
+          "line": 117,
+          "text": "| Exact match | 1-5% | Over 10% |"
+        },
+        {
+          "line": 118,
+          "text": "| Topic/related | 5-15% | N/A |"
+        },
+        {
+          "line": 139,
+          "text": "- Exact match over 10-15%"
+        },
+        {
+          "line": 146,
+          "text": "A site with 40% of links using the anchor \"best project management software\" is clearly manipulating."
+        },
+        {
+          "line": 200,
+          "text": "**Keep exact match anchors under 5% of your profile.**"
+        },
+        {
+          "line": 376,
+          "text": "Keep exact match under 5%. Many successful sites have 1-3%. Zero exact match is fine—natural profiles often have very few."
+        },
+        {
+          "line": 430,
+          "text": "- Heavy on branded anchors (30-50%)"
+        },
+        {
+          "line": 431,
+          "text": "- Naked URLs and generics for safety (25-40%)"
+        },
+        {
+          "line": 432,
+          "text": "- Partial match for keyword signal (10-20%)"
+        },
+        {
+          "line": 433,
+          "text": "- Minimal exact match (under 5%)"
+        }
+      ]
+    },
+    {
+      "slug": "building-links-to-boring-industries",
+      "url": "/blog/building-links-to-boring-industries",
+      "title": "Building Links to Boring Industries: Creative Strategies That Work",
+      "topic": "industries",
+      "words": 1752,
+      "description": "How to build backlinks for unsexy industries like insurance, accounting, manufacturing, and B2B services. Creative tactics for challenging niches.",
+      "headings": [
+        "The \"Boring Industry\" Challenge",
+        "Why \"Boring\" Industries Aren't Actually Boring",
+        "Strategy 1: Data and Original Research",
+        "Strategy 2: Consumer-Facing Content",
+        "Strategy 3: Local and Regional Focus",
+        "Strategy 4: Industry News and Commentary",
+        "Strategy 5: Tools and Resources",
+        "Strategy 6: Strategic Partnerships",
+        "Strategy 7: Trade and Industry Publications",
+        "Worked planning example: an industrial manufacturer",
+        "Frequently Asked Questions",
+        "Building Your Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-for-ymyl-sites",
+        "/blog/international-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "building-links-without-content",
+      "url": "/blog/building-links-without-content",
+      "title": "Building Links Without Content: Non-Content Link Building Strategies",
+      "topic": "tactics",
+      "words": 1994,
+      "description": "Learn how to build quality backlinks without relying on content creation. Discover relationship-based, technical, and creative link building tactics that work.",
+      "headings": [
+        "Why Build Links Without Content?",
+        "Relationship-Based Link Building",
+        "Technical and Structural Link Building",
+        "Business Activity Link Building",
+        "Creative Non-Content Strategies",
+        "Building a Non-Content Link Strategy",
+        "Frequently Asked Questions",
+        "Action Steps"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-content-for-link-building",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 48,
+          "text": "**Success Rate:** 40-60% (existing relationships make this easy)"
+        },
+        {
+          "line": 101,
+          "text": "**Success Rate:** 50-70% (companies want testimonials)"
+        },
+        {
+          "line": 147,
+          "text": "**Success Rate:** 20-40% (low effort request, reasonable success)"
+        },
+        {
+          "line": 177,
+          "text": "**Success Rate:** 5-15%"
+        },
+        {
+          "line": 192,
+          "text": "**Success Rate:** 10-25%"
+        },
+        {
+          "line": 237,
+          "text": "**Success Rate:** 20-40% for relevant pitches"
+        }
+      ]
+    },
+    {
+      "slug": "building-relationships-for-links",
+      "url": "/blog/building-relationships-for-links",
+      "title": "Building Relationships for Links: The Long-Term Link Building Strategy",
+      "topic": "tactics",
+      "words": 1934,
+      "description": "Learn how relationship-based link building creates sustainable results. Build genuine connections that generate links naturally over time.",
+      "headings": [
+        "The Compounding Power of Relationships",
+        "Why Relationships Beat Transactions",
+        "Relationship Categories for Link Building",
+        "Relationship Building Tactics",
+        "Nurturing Existing Relationships",
+        "Relationship-Based Outreach",
+        "Building Your Relationship Network",
+        "Measuring Relationship Link Building",
+        "Common Relationship Building Mistakes",
+        "Frequently Asked Questions",
+        "The Relationship Building Mindset"
+      ],
+      "internalLinks": [
+        "/glossary/haro-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 16,
+          "text": "- 5% response rate"
+        },
+        {
+          "line": 17,
+          "text": "- 2% link rate"
+        },
+        {
+          "line": 323,
+          "text": "- 40% nurturing existing relationships"
+        },
+        {
+          "line": 324,
+          "text": "- 30% developing new relationships"
+        },
+        {
+          "line": 325,
+          "text": "- 20% activating relationships for opportunities"
+        },
+        {
+          "line": 326,
+          "text": "- 10% reactivating dormant relationships"
+        }
+      ]
+    },
+    {
+      "slug": "building-thought-leadership-through-links",
+      "url": "/blog/building-thought-leadership-through-links",
+      "title": "Building Thought Leadership Through Strategic Link Building",
+      "topic": "tactics",
+      "words": 1955,
+      "description": "Learn how strategic link building establishes thought leadership, positions you as an industry expert, and creates compounding authority over time.",
+      "headings": [
+        "The Connection Between Links and Thought Leadership",
+        "Why Links Matter for Thought Leaders",
+        "Strategic Framework for Thought Leadership Links",
+        "Content Strategies for Thought Leadership Links",
+        "Tactical Link Building for Thought Leaders",
+        "Measuring Thought Leadership Progress",
+        "Common Thought Leadership Mistakes",
+        "Building Long-Term Authority",
+        "Frequently Asked Questions",
+        "The Thought Leadership Flywheel"
+      ],
+      "internalLinks": [
+        "/glossary/editorial-link",
+        "/glossary/domain-authority",
+        "/glossary/haro-link-building",
+        "/glossary/referring-domain"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "common-link-building-questions-answered",
+      "url": "/blog/common-link-building-questions-answered",
+      "title": "50 Common Link Building Questions Answered by SEO Experts",
+      "topic": "strategy",
+      "words": 2417,
+      "description": "Get answers to the most frequently asked link building questions. From basics to advanced tactics, we address every question beginners and experienced SEOs ask.",
+      "headings": [
+        "The Questions Everyone Asks",
+        "Basic Link Building Questions",
+        "Link Quality Questions",
+        "Link Building Tactics Questions",
+        "Outreach Questions",
+        "Timing and Measurement Questions",
+        "Technical Questions",
+        "Common Concerns",
+        "Strategy Questions",
+        "Getting Started",
+        "Frequently Asked Questions"
+      ],
+      "internalLinks": [
+        "/glossary/link-equity",
+        "/glossary/toxic-backlinks",
+        "/glossary/haro-link-building",
+        "/glossary/deep-link",
+        "/blog/link-building-101-beginners-guide",
+        "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-find-broken-links-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 76,
+          "text": "- 30-40% branded anchors"
+        },
+        {
+          "line": 77,
+          "text": "- 20-30% generic (click here, learn more)"
+        },
+        {
+          "line": 78,
+          "text": "- 10-20% naked URLs"
+        },
+        {
+          "line": 79,
+          "text": "- 10-20% partial match keywords"
+        },
+        {
+          "line": 80,
+          "text": "- 5-10% exact match keywords"
+        },
+        {
+          "line": 218,
+          "text": "- Below 5%: Poor (review your approach)"
+        },
+        {
+          "line": 219,
+          "text": "- 5-10%: Average"
+        },
+        {
+          "line": 220,
+          "text": "- 10-20%: Good"
+        },
+        {
+          "line": 221,
+          "text": "- 20%+: Excellent"
+        }
+      ]
+    },
+    {
+      "slug": "creating-a-link-building-strategy",
+      "url": "/blog/creating-a-link-building-strategy",
+      "title": "Creating a Link Building Strategy: The Complete Framework",
+      "topic": "strategy",
+      "words": 1929,
+      "description": "Learn how to create a comprehensive link building strategy from scratch. Includes goal setting, tactic selection, resource allocation, and measurement frameworks.",
+      "headings": [
+        "Why Strategy Matters",
+        "The Strategy Development Process",
+        "Strategy Templates",
+        "Common Strategy Mistakes",
+        "Frequently Asked Questions",
+        "Action Plan"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+        "/blog/how-to-find-broken-links-for-link-building",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/link-building-templates-and-scripts"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 31,
+          "text": "\"Increase organic traffic to our product pages by 50% in 12 months by building link equity that improves rankings for 10 priority commercial keywords.\""
+        },
+        {
+          "line": 133,
+          "text": "| Tools (Ahrefs, Hunter, etc.) | 15-25% |"
+        },
+        {
+          "line": 134,
+          "text": "| Content (writers, designers) | 30-50% |"
+        },
+        {
+          "line": 135,
+          "text": "| Outreach support | 10-20% |"
+        },
+        {
+          "line": 136,
+          "text": "| Research/PR | 10-25% |"
+        },
+        {
+          "line": 175,
+          "text": "| New | 40% | 30% | 20% | 10% |"
+        },
+        {
+          "line": 176,
+          "text": "| Growing | 30% | 30% | 25% | 15% |"
+        },
+        {
+          "line": 177,
+          "text": "| Established | 25% | 20% | 25% | 30% |"
+        },
+        {
+          "line": 299,
+          "text": "- HARO: 40% (15 hours/month)"
+        },
+        {
+          "line": 300,
+          "text": "- Guest posting: 30% (10 hours/month)"
+        },
+        {
+          "line": 301,
+          "text": "- Directories/partnerships: 20% (7 hours/month)"
+        },
+        {
+          "line": 302,
+          "text": "- Content: 10% (4 hours/month)"
+        },
+        {
+          "line": 320,
+          "text": "- HARO/PR: 30% (12 hours/month)"
+        },
+        {
+          "line": 321,
+          "text": "- Guest posting: 25% (10 hours/month)"
+        },
+        {
+          "line": 322,
+          "text": "- Outreach (broken link, resource): 25% (10 hours/month)"
+        },
+        {
+          "line": 323,
+          "text": "- Content/research: 20% (8 hours/month)"
+        },
+        {
+          "line": 341,
+          "text": "- Digital PR: 30% (major investment)"
+        },
+        {
+          "line": 342,
+          "text": "- Original research: 25% (quarterly major pieces)"
+        },
+        {
+          "line": 343,
+          "text": "- Premium guest posting: 20% (tier 1 publications)"
+        },
+        {
+          "line": 344,
+          "text": "- HARO/expert positioning: 15%"
+        },
+        {
+          "line": 345,
+          "text": "- Other outreach: 10%"
+        }
+      ]
+    },
+    {
+      "slug": "dealing-with-negative-seo-attacks",
+      "url": "/blog/dealing-with-negative-seo-attacks",
+      "title": "Dealing with Negative SEO Attacks: Detection, Defense, and Recovery",
+      "topic": "risk",
+      "words": 1789,
+      "description": "Complete guide to identifying, defending against, and recovering from negative SEO attacks. Learn how to protect your site from malicious link building and other SEO sabotage.",
+      "headings": [
+        "What Is Negative SEO?",
+        "Types of Negative SEO Attacks",
+        "Detecting Negative SEO",
+        "Defending Against Negative SEO",
+        "Recovery After Attacks",
+        "Legal Considerations",
+        "Frequently Asked Questions",
+        "Prevention Checklist",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/how-to-fix-a-bad-backlink-profile",
+        "/blog/when-to-disavow-backlinks"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "dofollow-vs-nofollow",
+      "url": "/blog/dofollow-vs-nofollow",
+      "title": "Dofollow vs Nofollow Links: What's the Difference?",
+      "topic": "fundamentals",
+      "words": 667,
+      "description": "Understand the crucial difference between dofollow and nofollow links, how they impact your SEO, and when to use each type.",
+      "headings": [
+        "Understanding Link Attributes",
+        "What Is a Dofollow Link?",
+        "What Is a Nofollow Link?",
+        "When Are Nofollow Links Used?",
+        "Additional Link Attributes",
+        "Do Nofollow Links Have Any Value?",
+        "SEO Best Practices",
+        "The Difference in Practice",
+        "How to Check Whether a Link Is Dofollow or Nofollow",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/backlink-quality-checklist",
+        "/blog/best-free-backlink-checkers",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/essentials/spam-policies#link-spam"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "domain-authority-explained",
+      "url": "/blog/domain-authority-explained",
+      "title": "Domain Authority Explained: What It Is and How to Improve It",
+      "topic": "fundamentals",
+      "words": 744,
+      "description": "A comprehensive guide to understanding Domain Authority (DA), what affects it, and practical steps to improve your site's DA score.",
+      "headings": [
+        "What Is Domain Authority?",
+        "Important Clarification",
+        "How Is Domain Authority Calculated?",
+        "DA vs. Other Authority Metrics",
+        "What's a Good Domain Authority?",
+        "How to Improve Domain Authority",
+        "Common DA Misconceptions",
+        "DA Limitations",
+        "Should You Focus on DA?",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/glossary/trust-flow",
+        "/blog/link-building-strategies",
+        "/blog/backlink-quality-checklist",
+        "/blog/what-are-backlinks"
+      ],
+      "externalSources": [
+        "https://search.google.com/search-console",
+        "https://support.google.com/webmasters/answer/2648487",
+        "https://developers.google.com/search/docs/essentials/spam-policies"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "e-e-a-t-and-link-building",
+      "url": "/blog/e-e-a-t-and-link-building",
+      "title": "E-E-A-T and Link Building: How Backlinks Support Expertise and Trust",
+      "topic": "fundamentals",
+      "words": 1817,
+      "description": "Understand the relationship between E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) and backlinks. Build links that strengthen your site's credibility.",
+      "headings": [
+        "What Is E-E-A-T?",
+        "Breaking Down E-E-A-T",
+        "How Backlinks Signal E-E-A-T",
+        "Building Links That Strengthen E-E-A-T",
+        "E-E-A-T Link Building by Industry",
+        "Auditing Your Link Profile for E-E-A-T",
+        "Measuring E-E-A-T Link Impact",
+        "E-E-A-T and Algorithm Updates",
+        "Frequently Asked Questions",
+        "Building Sustainable E-E-A-T"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/digital-pr/",
+        "/blog/topical-authority-and-backlinks",
+        "/blog/what-makes-a-high-quality-backlink"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "first-10-backlinks-for-new-site",
+      "url": "/blog/first-10-backlinks-for-new-site",
+      "title": "How to Get Your First 10 Backlinks for a New Website",
+      "topic": "strategy",
+      "words": 2221,
+      "description": "Launch your SEO foundation with these proven strategies for earning your first 10 high-quality backlinks when starting a brand new website.",
+      "headings": [
+        "The Challenge of Starting from Zero",
+        "Why Your First Links Matter Most",
+        "Backlink #1: Google Business Profile (If Applicable)",
+        "Backlink #2: Social Profiles",
+        "Backlink #3: Industry Directories",
+        "Backlink #4: Partner and Vendor Mentions",
+        "Backlink #5: Free Tool or Resource",
+        "Backlink #6: HARO Response",
+        "Backlink #7: Community Participation",
+        "Backlink #8: Unlinked Brand Mentions",
+        "Backlink #9: Guest Post",
+        "Backlink #10: Original Research or Data",
+        "Execution Timeline",
+        "Tracking Your Progress",
+        "What Makes These Links Valuable",
+        "Frequently Asked Questions",
+        "After Your First 10 Links"
+      ],
+      "internalLinks": [
+        "/glossary/domain-authority",
+        "/glossary/haro-link-building",
+        "/glossary/broken-link-building",
+        "/glossary/resource-page-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 170,
+          "text": "Expect 5-10% response rate when starting. Focus on quality over quantity—one excellent pitch beats 10 mediocre ones."
+        },
+        {
+          "line": 235,
+          "text": "High—50% or more of people will add the link since they've already endorsed you."
+        }
+      ]
+    },
+    {
+      "slug": "follow-up-emails-that-get-responses",
+      "url": "/blog/follow-up-emails-that-get-responses",
+      "title": "Follow-Up Emails That Get Responses: The Link Builder's Guide",
+      "topic": "outreach",
+      "words": 1969,
+      "description": "Master the art of follow-up emails for link building. Learn when, how, and what to write to dramatically increase your response rates.",
+      "headings": [
+        "The Power of the Follow-Up",
+        "Why Follow-Ups Work",
+        "The Follow-Up Framework",
+        "Follow-Up Email Types",
+        "Writing Effective Follow-Ups",
+        "Follow-Up Sequences by Opportunity Type",
+        "Tracking and Managing Follow-Ups",
+        "Common Follow-Up Mistakes",
+        "Handling Follow-Up Responses",
+        "Frequently Asked Questions",
+        "The Follow-Up Mindset"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 4,
+          "text": "Here's a truth most link builders ignore: 80% of successful outreach requires follow-up. Your first email likely arrived when the recipient was busy, distracted, or overwhelmed. They may have meant to respond but forgot."
+        },
+        {
+          "line": 15,
+          "text": "- 70% of emails never receive a follow-up"
+        },
+        {
+          "line": 16,
+          "text": "- 50% of replies come after the first follow-up"
+        },
+        {
+          "line": 17,
+          "text": "- Response rates increase 65% with a single follow-up"
+        }
+      ]
+    },
+    {
+      "slug": "future-of-link-building",
+      "url": "/blog/future-of-link-building",
+      "title": "The Future of Link Building: Trends, Predictions, and What's Next",
+      "topic": "strategy",
+      "words": 1974,
+      "description": "Where is link building heading? Expert predictions on AI, algorithm changes, and evolving strategies. Prepare your SEO for what's coming.",
+      "headings": [
+        "Is Link Building Still Relevant?",
+        "Current Trajectory: Where We Are",
+        "Prediction 1: AI Will Transform Link Building",
+        "Prediction 2: Brand Signals Will Integrate With Link Evaluation",
+        "Prediction 3: Link Diversity Becomes Non-Negotiable",
+        "Prediction 4: Content Quality Requirements Will Escalate",
+        "Prediction 5: Relationship-Based Link Building Dominates",
+        "Prediction 6: Technical Link Attributes Will Evolve",
+        "Prediction 7: International and Cross-Language Link Building Grows",
+        "What Link Building Will Look Like in 5 Years",
+        "How to Prepare Your Strategy",
+        "Frequently Asked Questions",
+        "Embracing the Future"
+      ],
+      "internalLinks": [
+        "/blog/link-building-strategies",
+        "/glossary/domain-authority",
+        "/blog/google-link-spam-update-2026",
+        "/digital-pr/",
+        "/glossary/unlinked-mention",
+        "/blog/link-building-strategies",
+        "/digital-pr/"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 110,
+          "text": "- **20-30%:** Organic links from content (unpromoted, naturally discovered)"
+        },
+        {
+          "line": 111,
+          "text": "- **20-25%:** Digital PR and media mentions"
+        },
+        {
+          "line": 112,
+          "text": "- **15-20%:** Guest contributions and expert content"
+        },
+        {
+          "line": 113,
+          "text": "- **10-15%:** Resource and directory links"
+        },
+        {
+          "line": 114,
+          "text": "- **10-15%:** Partnership and relationship-based links"
+        },
+        {
+          "line": 115,
+          "text": "- **5-10%:** Social and community platform links"
+        }
+      ]
+    },
+    {
+      "slug": "google-link-spam-update-2026",
+      "url": "/blog/google-link-spam-update-2026",
+      "title": "Google Link Spam Updates: Diagnose Changes Without Guessing",
+      "topic": "risk",
+      "words": 830,
+      "description": "Check official Google link spam guidance, separate manual actions from ranking changes, and build an evidence-led response before removing useful backlinks.",
+      "headings": [
+        "Start with the confirmed update, not the rumour",
+        "Separate three different situations",
+        "Build an incident timeline",
+        "Rule out technical losses first",
+        "Review link practices against the actual policy",
+        "Choose a proportionate response",
+        "Measure the repair without promising recovery",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/backlink-quality",
+        "/backlink-audit",
+        "/tools/crawlability-checker",
+        "/blog/preserve-backlinks-website-migration",
+        "/blog/verify-backlink-placement",
+        "/backlink-audit",
+        "/blog/backlinks-not-showing-google-search-console",
+        "/blog/verify-backlink-placement"
+      ],
+      "externalSources": [
+        "https://status.search.google.com/summary",
+        "https://developers.google.com/search/docs/essentials/spam-policies",
+        "https://support.google.com/webmasters/answer/9044175"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "google-search-console-backlinks",
+      "url": "/blog/google-search-console-backlinks",
+      "title": "Google Search Console for Backlinks: The Complete Guide",
+      "topic": "research",
+      "words": 1862,
+      "description": "How to use Google Search Console's Links report for backlink analysis. Understand what Google sees, find link opportunities, and monitor your profile.",
+      "headings": [
+        "Why Google Search Console Matters for Backlinks",
+        "Accessing the Links Report",
+        "Analyzing External Links",
+        "What GSC Shows vs. Third-Party Tools",
+        "Practical GSC Workflows",
+        "Using GSC Data for Competitive Intelligence",
+        "Internal Links in GSC",
+        "Disavow and Manual Actions",
+        "Exporting and Analyzing GSC Data",
+        "Common GSC Questions",
+        "Frequently Asked Questions",
+        "Integrating GSC Into Your Link Building",
+        "Troubleshoot a missing placement"
+      ],
+      "internalLinks": [
+        "/blog/ahrefs-for-link-building-tutorial",
+        "/blog/semrush-link-building-features",
+        "/blog/moz-link-explorer-guide",
+        "/blog/backlinks-not-showing-google-search-console"
+      ],
+      "externalSources": [
+        "https://search.google.com/search-console"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "guest-posting-vs-niche-edits",
+      "url": "/blog/guest-posting-vs-niche-edits",
+      "title": "Guest Posting vs Niche Edits: Which Link Building Method Is Better?",
+      "topic": "outreach",
+      "words": 2048,
+      "description": "Compare guest posting and niche edits for link building. Learn the pros, cons, costs, and best use cases for each strategy in 2026.",
+      "headings": [
+        "What Is Guest Posting?",
+        "What Are Niche Edits?",
+        "Side-by-Side Comparison",
+        "Advantages of Guest Posting",
+        "Advantages of Niche Edits",
+        "Risks and Downsides: Guest Posting",
+        "Risks and Downsides: Niche Edits",
+        "Cost Comparison",
+        "When to Use Guest Posting",
+        "When to Use Niche Edits",
+        "How to Evaluate Niche Edit Quality",
+        "Integrated Strategy: Using Both Methods",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 365,
+          "text": "- Guest Posting: 60%"
+        },
+        {
+          "line": 366,
+          "text": "- Niche Edits: 40%"
+        },
+        {
+          "line": 369,
+          "text": "- Guest Posting: 80%"
+        },
+        {
+          "line": 370,
+          "text": "- Niche Edits: 20%"
+        },
+        {
+          "line": 373,
+          "text": "- Guest Posting: 40%"
+        },
+        {
+          "line": 374,
+          "text": "- Niche Edits: 60%"
+        },
+        {
+          "line": 426,
+          "text": "There's no universal answer—it depends on your goals and resources. Starting with 60% guest posts and 40% niche edits provides good balance. Adjust based on results, focusing on quality and relevance regardless of method."
+        }
+      ]
+    },
+    {
+      "slug": "how-google-evaluates-backlinks",
+      "url": "/blog/how-google-evaluates-backlinks",
+      "title": "How Google Evaluates Backlinks: Inside the Algorithm",
+      "topic": "fundamentals",
+      "words": 1899,
+      "description": "Understand how Google's algorithm assesses backlink quality and value. PageRank history, modern evaluation factors, and what actually influences rankings.",
+      "headings": [
+        "The Mystery of Link Evaluation",
+        "The Foundation: PageRank",
+        "Modern Link Evaluation Factors",
+        "Confirmed Google Statements on Links",
+        "Penguin and Link Spam Updates",
+        "How Link Value Is Calculated",
+        "How Google Detects Link Manipulation",
+        "What Doesn't Matter (Anymore)",
+        "Frequently Asked Questions",
+        "Building Links That Google Values",
+        "The Bottom Line"
+      ],
+      "internalLinks": [
+        "/blog/google-link-spam-update-2026",
+        "/blog/link-building-strategies",
+        "/blog/what-makes-a-high-quality-backlink"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 197,
+          "text": "- **Spam Discount:** Reduction for manipulation signals (can be 0% = full discount)"
+        }
+      ]
+    },
+    {
+      "slug": "how-links-build-brand-authority",
+      "url": "/blog/how-links-build-brand-authority",
+      "title": "How Backlinks Build Brand Authority: The Psychology and SEO of Trust",
+      "topic": "tactics",
+      "words": 1905,
+      "description": "Discover how backlinks create brand authority through both psychological trust signals and SEO value. Learn to leverage links for lasting brand credibility.",
+      "headings": [
+        "The Dual Value of Backlinks for Brands",
+        "Understanding Brand Authority",
+        "The Psychology of Link-Based Trust",
+        "How Google Uses Links for Authority Assessment",
+        "Building Brand Authority Through Strategic Link Acquisition",
+        "Link Types That Build Brand Authority",
+        "Measuring Brand Authority from Links",
+        "Authority Building Across Different Brand Stages",
+        "Common Mistakes in Authority-Focused Link Building",
+        "Integrating Link Building with Brand Strategy",
+        "Frequently Asked Questions",
+        "Building Lasting Brand Authority"
+      ],
+      "internalLinks": [
+        "/blog/e-e-a-t-and-link-building",
+        "/glossary/haro-link-building",
+        "/glossary/domain-authority",
+        "/blog/how-to-use-haro-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "how-to-audit-your-backlink-profile",
+      "url": "/blog/how-to-audit-your-backlink-profile",
+      "title": "How to Audit Your Backlink Profile: Complete Step-by-Step Guide",
+      "topic": "research",
+      "words": 1920,
+      "description": "Learn how to conduct a thorough backlink audit to identify toxic links, find opportunities, and improve your link profile health. Includes free and paid tools.",
+      "headings": [
+        "Why Backlink Audits Matter",
+        "Before You Start: Gather Your Tools",
+        "Step 1: Export Your Backlink Data",
+        "Step 2: Analyze Your Referring Domains",
+        "Step 3: Evaluate Anchor Text Distribution",
+        "Step 4: Check Link Placement and Context",
+        "Step 5: Analyze Link Velocity and Patterns",
+        "Step 6: Compare Against Competitors",
+        "Step 7: Identify Opportunities",
+        "Step 8: Create Your Action Plan",
+        "Audit Frequency Recommendations",
+        "Common Audit Mistakes",
+        "Tools Checklist Summary",
+        "Frequently Asked Questions",
+        "Next Steps"
+      ],
+      "internalLinks": [
+        "/glossary/link-profile",
+        "/glossary/domain-authority",
+        "/glossary/toxic-backlinks",
+        "/glossary/link-diversity",
+        "/glossary/anchor-text",
+        "/glossary/dofollow-link",
+        "/glossary/nofollow-link",
+        "/glossary/sponsored-link",
+        "/glossary/ugc-link",
+        "/glossary/referring-domain",
+        "/glossary/trust-flow",
+        "/glossary/pbn",
+        "/glossary/link-scheme",
+        "/glossary/contextual-link",
+        "/glossary/sidebar-link",
+        "/glossary/footer-link",
+        "/glossary/sitewide-link",
+        "/glossary/new-backlinks",
+        "/glossary/lost-backlinks",
+        "/glossary/link-reclamation",
+        "/glossary/link-gap-analysis",
+        "/glossary/unlinked-mention",
+        "/glossary/disavow-file",
+        "/link-building",
+        "/glossary/backlink-monitoring",
+        "/glossary/link-velocity",
+        "/glossary/link-spam",
+        "/link-building",
+        "/blog/how-to-remove-toxic-backlinks",
+        "/blog/how-to-recover-from-google-penalty"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 116,
+          "text": "- High-quality: 10-20%"
+        },
+        {
+          "line": 117,
+          "text": "- Medium-quality: 40-50%"
+        },
+        {
+          "line": 118,
+          "text": "- Low-quality (but legitimate): 30-40%"
+        },
+        {
+          "line": 119,
+          "text": "- Potentially toxic: Under 5%"
+        },
+        {
+          "line": 131,
+          "text": "| Branded | \"Company Name,\" \"companyname.com\" | 40-60% |"
+        },
+        {
+          "line": 132,
+          "text": "| URL | \"https://site.com/page\" | 10-20% |"
+        },
+        {
+          "line": 133,
+          "text": "| Generic | \"click here,\" \"read more,\" \"this site\" | 10-20% |"
+        },
+        {
+          "line": 134,
+          "text": "| Topical | Related terms, variations | 5-15% |"
+        },
+        {
+          "line": 135,
+          "text": "| Exact Match | Your target keyword exactly | 1-5% |"
+        },
+        {
+          "line": 136,
+          "text": "| Partial Match | Contains your keyword with other words | 5-10% |"
+        },
+        {
+          "line": 140,
+          "text": "- Exact match anchors over 5-10%"
+        },
+        {
+          "line": 170,
+          "text": "**Healthy distribution** should be heavily weighted toward in-content and editorial links (60%+)."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-build-backlinks-with-infographics",
+      "url": "/blog/how-to-build-backlinks-with-infographics",
+      "title": "How to Build Backlinks with Infographics: A Step-by-Step Guide",
+      "topic": "tactics",
+      "words": 2303,
+      "description": "Master infographic link building with proven strategies. Learn how to create, promote, and earn quality backlinks with visual content.",
+      "headings": [
+        "Why Infographics Still Work for Link Building",
+        "Step 1: Choosing the Right Topic",
+        "Step 2: Researching and Gathering Data",
+        "Step 3: Designing Your Infographic",
+        "Step 4: Publishing Your Infographic",
+        "Step 5: Promoting and Building Links",
+        "Tracking and Measuring Results",
+        "Advanced Infographic Link Building Tactics",
+        "Common Infographic Link Building Mistakes",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 14,
+          "text": "Content with relevant images gets 94% more views than content without. Infographics compress this advantage into a single, shareable asset that naturally attracts links."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-build-links-with-data-studies",
+      "url": "/blog/how-to-build-links-with-data-studies",
+      "title": "How to Build Links with Data Studies: Complete Research-Based Link Building Guide",
+      "topic": "tactics",
+      "words": 1989,
+      "description": "Learn to create original research that earns high-quality backlinks. From study design to promotion, build links through data other sites must cite.",
+      "headings": [
+        "Why Data Studies Are Link Building Gold",
+        "Phase 1: Identifying Research Opportunities",
+        "Phase 2: Study Design",
+        "Phase 3: Executing the Research",
+        "Phase 4: Packaging Your Findings",
+        "Phase 5: Promotion and Link Acquisition",
+        "Measuring Success",
+        "Worked research brief: an email marketing dataset",
+        "Common Mistakes to Avoid",
+        "Frequently Asked Questions",
+        "Getting Started"
+      ],
+      "internalLinks": [
+        "/glossary/backlink",
+        "/glossary/domain-authority",
+        "/glossary/referring-domain",
+        "/glossary/domain-authority",
+        "/blog/how-to-get-backlinks-from-news-sites",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "how-to-do-competitor-backlink-analysis",
+      "url": "/blog/how-to-do-competitor-backlink-analysis",
+      "title": "How to Do Competitor Backlink Analysis: Complete Step-by-Step Guide",
+      "topic": "research",
+      "words": 2322,
+      "description": "Learn how to analyze competitor backlinks to discover link building opportunities. Master competitive link analysis with proven frameworks and tools.",
+      "headings": [
+        "Why Competitor Backlink Analysis Matters",
+        "Step 1: Identifying the Right Competitors",
+        "Step 2: Gathering Competitor Backlink Data",
+        "Step 3: Analyzing Link Profile Metrics",
+        "Step 4: Link Gap Analysis",
+        "Step 5: Identifying Link Building Strategies",
+        "Step 6: Evaluating Individual Link Opportunities",
+        "Step 7: Replicating Competitor Links",
+        "Step 8: Ongoing Competitive Monitoring",
+        "Advanced Competitor Analysis Techniques",
+        "Common Competitor Analysis Mistakes",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 135,
+          "text": "| Competitor A | 1,234 | 56 | 78% | ~50 |"
+        },
+        {
+          "line": 136,
+          "text": "| Competitor B | 2,567 | 64 | 72% | ~80 |"
+        },
+        {
+          "line": 137,
+          "text": "| Competitor C | 890 | 48 | 82% | ~30 |"
+        },
+        {
+          "line": 138,
+          "text": "| Your Site | 456 | 42 | 75% | ~20 |"
+        },
+        {
+          "line": 150,
+          "text": "- 30-40% branded anchors (company name, URL)"
+        },
+        {
+          "line": 151,
+          "text": "- 20-30% generic anchors (click here, read more)"
+        },
+        {
+          "line": 152,
+          "text": "- 10-20% partial match keywords"
+        },
+        {
+          "line": 153,
+          "text": "- 5-10% exact match keywords"
+        },
+        {
+          "line": 154,
+          "text": "- 10-20% miscellaneous (images, naked URLs)"
+        },
+        {
+          "line": 268,
+          "text": "- Primary tactic: Guest posting (40% of links)"
+        },
+        {
+          "line": 269,
+          "text": "- Secondary: Digital PR/news coverage (25%)"
+        },
+        {
+          "line": 270,
+          "text": "- Tertiary: Resource page links (20%)"
+        },
+        {
+          "line": 271,
+          "text": "- Other: Directories, forums, etc. (15%)"
+        },
+        {
+          "line": 309,
+          "text": "| Domain Authority | 25% | |"
+        },
+        {
+          "line": 310,
+          "text": "| Relevance | 30% | |"
+        },
+        {
+          "line": 311,
+          "text": "| Dofollow status | 15% | |"
+        },
+        {
+          "line": 312,
+          "text": "| Acquisition feasibility | 30% | |"
+        },
+        {
+          "line": 313,
+          "text": "| **Total Weighted Score** | 100% | |"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-find-broken-links-for-link-building",
+      "url": "/blog/how-to-find-broken-links-for-link-building",
+      "title": "How to Find Broken Links for Link Building: Complete Tutorial",
+      "topic": "strategy",
+      "words": 2471,
+      "description": "Master broken link building with step-by-step instructions. Learn how to find broken links, create replacement content, and earn backlinks.",
+      "headings": [
+        "What Is Broken Link Building?",
+        "Finding Broken Link Opportunities",
+        "Tools for Finding Broken Links",
+        "Evaluating Broken Link Opportunities",
+        "Creating Replacement Content",
+        "Broken Link Outreach",
+        "Scaling Broken Link Building",
+        "Common Broken Link Building Mistakes",
+        "Measuring Broken Link Building Success",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 37,
+          "text": "| Emails opened | 30-45% |"
+        },
+        {
+          "line": 38,
+          "text": "| Responses received | 10-20% |"
+        },
+        {
+          "line": 39,
+          "text": "| Links earned | 5-10% |"
+        },
+        {
+          "line": 41,
+          "text": "These rates significantly exceed cold link building outreach, which typically sees 1-3% success rates."
+        },
+        {
+          "line": 483,
+          "text": "| Response rate | Responses / Emails sent | 10-20% |"
+        },
+        {
+          "line": 484,
+          "text": "| Conversion rate | Links earned / Emails sent | 5-10% |"
+        },
+        {
+          "line": 500,
+          "text": "Start by setting a goal of identifying 50 broken link opportunities in your niche. Create or identify replacement content, then launch your first outreach campaign. With a 5-10% success rate, you'll earn 3-5 quality backlinks—and learn what works for your next, larger campaign."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-fix-a-bad-backlink-profile",
+      "url": "/blog/how-to-fix-a-bad-backlink-profile",
+      "title": "How to Fix a Bad Backlink Profile: Complete Cleanup and Recovery Guide",
+      "topic": "risk",
+      "words": 1937,
+      "description": "Learn how to identify, analyze, and fix a toxic backlink profile. Step-by-step guide to cleaning up bad links, submitting disavow files, and rebuilding healthy authority.",
+      "headings": [
+        "What Is a Bad Backlink Profile?",
+        "Part 1: Diagnosing the Problem",
+        "Part 2: The Cleanup Process",
+        "Part 3: Rebuilding Your Backlink Profile",
+        "Part 4: Dealing with Negative SEO",
+        "Part 5: Recovery Timeline",
+        "Frequently Asked Questions",
+        "Your Cleanup Action Plan"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-remove-toxic-backlinks",
+        "/blog/how-to-recover-from-google-penalty"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 73,
+          "text": "| Branded anchors | 30-50% | Below 20% |"
+        },
+        {
+          "line": 74,
+          "text": "| Exact match keywords | 1-5% | Above 20% |"
+        },
+        {
+          "line": 75,
+          "text": "| Generic (\"click here\") | 10-20% | Above 40% |"
+        },
+        {
+          "line": 76,
+          "text": "| Naked URLs | 10-25% | Below 5% |"
+        },
+        {
+          "line": 77,
+          "text": "| Random/gibberish | 0-2% | Above 5% |"
+        },
+        {
+          "line": 91,
+          "text": "- Less than 10% toxic links"
+        },
+        {
+          "line": 97,
+          "text": "- 10-25% toxic links"
+        },
+        {
+          "line": 103,
+          "text": "- Over 25% toxic links"
+        },
+        {
+          "line": 151,
+          "text": "- Response rate: 5-15%"
+        },
+        {
+          "line": 152,
+          "text": "- Removal rate: 3-10%"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-get-backlinks-from-government-sites-gov",
+      "url": "/blog/how-to-get-backlinks-from-government-sites-gov",
+      "title": "How to Get Backlinks from Government Sites (.gov): Complete Strategy",
+      "topic": "strategy",
+      "words": 2385,
+      "description": "Discover proven methods to earn authoritative .gov backlinks. Learn FOIA, grants, and resource page strategies for government link building.",
+      "headings": [
+        "Why .gov Backlinks Are Extremely Valuable",
+        "Understanding Government Website Structure",
+        "Method 1: Resource Page Link Building",
+        "Method 2: Small Business Resources",
+        "Method 3: Grant and Contract Databases",
+        "Method 4: FOIA and Public Records",
+        "Method 5: Government Partnerships and Programs",
+        "Method 6: Government Library Resources",
+        "Method 7: Public Comment Periods",
+        "Method 8: Government News and Press Coverage",
+        "Method 9: Broken Link Building on .gov Sites",
+        "Method 10: Local Government Opportunities",
+        "Tracking Government Link Building Success",
+        "Common .gov Link Building Mistakes",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 530,
+          "text": ".gov backlinks are among the most difficult links to earn. Success rates on outreach are typically 1-5%, and the process often takes months. However, the authority these links pass makes them worth the effort."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-get-backlinks-from-news-sites",
+      "url": "/blog/how-to-get-backlinks-from-news-sites",
+      "title": "How to Get Backlinks from News Sites: Digital PR Strategies",
+      "topic": "outreach",
+      "words": 1866,
+      "description": "Learn proven strategies to earn high-authority backlinks from news sites and major publications. From data-driven stories to newsjacking techniques.",
+      "headings": [
+        "Why News Site Backlinks Matter",
+        "Understanding How Journalists Think",
+        "Strategy 1: Data-Driven Stories",
+        "Strategy 2: Expert Commentary and [HARO](/glossary/haro-link-building)",
+        "Strategy 3: Newsjacking",
+        "Strategy 4: Creating Newsworthy Content",
+        "Strategy 5: Leveraging Existing Expertise",
+        "Building Journalist Relationships",
+        "Measuring Digital PR Success",
+        "Common Mistakes to Avoid",
+        "Frequently Asked Questions",
+        "Building Your Digital PR Strategy"
+      ],
+      "internalLinks": [
+        "/glossary/domain-authority",
+        "/glossary/link-equity",
+        "/glossary/haro-link-building",
+        "/glossary/domain-authority",
+        "/glossary/referring-domain",
+        "/glossary/nofollow-link",
+        "/glossary/sponsored-link",
+        "/digital-pr",
+        "/blog/how-to-build-links-with-data-studies",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 124,
+          "text": "- Response rate: 5-15% for quality responses"
+        },
+        {
+          "line": 152,
+          "text": "✅ \"Most businesses obsess over traffic when their real problem is conversion. A 10% conversion improvement beats a 50% traffic increase almost every time.\""
+        },
+        {
+          "line": 301,
+          "text": "✅ \"After analyzing 50,000 purchases, we found Gen Z spends 40% more on sustainable products—even during inflation\""
+        },
+        {
+          "line": 403,
+          "text": "Response rates for cold pitches range from 1-10%. A campaign with 50-100 targeted pitches might yield 5-10 coverages. Quality pitches to relevant journalists perform better than volume."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-get-backlinks-from-podcasts",
+      "url": "/blog/how-to-get-backlinks-from-podcasts",
+      "title": "How to Get Backlinks from Podcasts: The Complete Guide",
+      "topic": "outreach",
+      "words": 2093,
+      "description": "Learn proven strategies to get high-quality backlinks from podcasts. Discover how podcast guesting and hosting can boost your SEO and domain authority.",
+      "headings": [
+        "Why Podcast Backlinks Are Valuable for SEO",
+        "Understanding the Podcast Link Ecosystem",
+        "How to Find Podcasts to Pitch",
+        "Crafting the Perfect Podcast Pitch",
+        "Maximizing SEO Value from Each Appearance",
+        "Advanced Podcast Link Building Strategies",
+        "Common Mistakes to Avoid",
+        "Tracking Your Podcast Link Building Results",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 347,
+          "text": "Quality over quantity. Start with 10-15 highly targeted pitches per month. As you refine your pitch and build a track record, you can scale up. A 20-30% booking rate is considered excellent."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-get-backlinks-from-universities-edu",
+      "url": "/blog/how-to-get-backlinks-from-universities-edu",
+      "title": "How to Get Backlinks from Universities (.edu): The Definitive Guide",
+      "topic": "strategy",
+      "words": 2370,
+      "description": "Learn proven strategies to earn valuable .edu backlinks from universities. Discover scholarships, resources pages, and other methods that work.",
+      "headings": [
+        "Why .edu Backlinks Are So Valuable",
+        "Understanding University Website Structure",
+        "Method 1: Scholarship Link Building",
+        "Method 2: Resource Page Link Building",
+        "Method 3: Guest Lecturing and Speaking",
+        "Method 4: Alumni Connections",
+        "Method 5: Academic Research and Collaboration",
+        "Method 6: Broken Link Building on .edu Sites",
+        "Method 7: Student Discounts and Programs",
+        "Method 8: Contributing to Open Educational Resources",
+        "Tracking and Measuring .edu Link Building Success",
+        "Common .edu Link Building Mistakes",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "how-to-get-backlinks-without-outreach",
+      "url": "/blog/how-to-get-backlinks-without-outreach",
+      "title": "How to Get Backlinks Without Outreach: 12 Passive Link Building Methods",
+      "topic": "outreach",
+      "words": 1966,
+      "description": "Discover proven strategies to attract backlinks naturally without sending a single outreach email. Build links through content, assets, and strategic positioning.",
+      "headings": [
+        "Why Passive Link Building Works",
+        "1. Create Original Research and Data Studies",
+        "2. Build Free Tools and Calculators",
+        "3. Publish Comprehensive Glossaries",
+        "4. Create Visual Assets",
+        "5. Develop Industry-Standard Frameworks",
+        "6. Be the First to Cover News",
+        "7. Curate Ultimate Resource Lists",
+        "8. Provide Expert Commentary for Journalists",
+        "9. Get Listed in Industry Directories",
+        "10. Create Templates and Downloadable Resources",
+        "11. Answer Questions on Niche Forums",
+        "12. Newsjack Trending Topics",
+        "Building a Passive Link Building System",
+        "Combining Passive and Active Strategies",
+        "Common Mistakes to Avoid",
+        "Frequently Asked Questions",
+        "Start Building Your Passive Link Engine"
+      ],
+      "internalLinks": [
+        "/glossary/linkable-asset",
+        "/glossary/backlink",
+        "/glossary",
+        "/glossary/skyscraper-technique",
+        "/glossary/connectively",
+        "/glossary/web-directory",
+        "/glossary/business-directory",
+        "/glossary/referring-domain",
+        "/glossary/link-velocity",
+        "/glossary/link-growth-rate",
+        "/blog/how-to-use-content-for-link-building",
+        "/blog/types-of-backlinks-complete-list"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 325,
+          "text": "For most sites, passive-only strategies won't match the link velocity of active outreach campaigns. However, they can build 20-50% of your total links while requiring significantly less ongoing effort."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-get-featured-in-roundups",
+      "url": "/blog/how-to-get-featured-in-roundups",
+      "title": "How to Get Featured in Link Roundups and Expert Roundups",
+      "topic": "outreach",
+      "words": 1826,
+      "description": "Learn strategies to get your content featured in link roundups and your expertise featured in expert roundups. Step-by-step guide with templates and examples.",
+      "headings": [
+        "Understanding Roundup Opportunities",
+        "Part 1: Getting Featured in Link Roundups",
+        "Part 2: Getting Featured in Expert Roundups",
+        "Creating Your Own Expert Roundup",
+        "Tracking Roundup Success",
+        "Common Mistakes and How to Avoid Them",
+        "Frequently Asked Questions",
+        "Building Your Roundup Strategy"
+      ],
+      "internalLinks": [
+        "/glossary/contextual-link",
+        "/glossary/expert-roundup",
+        "/glossary/haro-link-building",
+        "/glossary/referring-domain",
+        "/glossary/domain-authority",
+        "/glossary/domain-authority",
+        "/link-building",
+        "/blog/how-to-use-content-for-link-building",
+        "/digital-pr"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 366,
+          "text": "Expect 10-20% inclusion rate for well-targeted pitches to link roundups. For expert roundups where you've been invited, nearly 100% if you respond well and on time."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-recover-from-google-penalty",
+      "url": "/blog/how-to-recover-from-google-penalty",
+      "title": "How to Recover from a Google Penalty: Complete Recovery Guide",
+      "topic": "risk",
+      "words": 2031,
+      "description": "Step-by-step guide to identifying, diagnosing, and recovering from Google penalties. Learn the difference between manual actions and algorithmic impacts.",
+      "headings": [
+        "Understanding Google Penalties",
+        "Step 1: Diagnose the Problem",
+        "Step 2: Assess the Damage",
+        "Step 3: Manual Action Recovery",
+        "Step 4: Algorithmic Recovery",
+        "Step 5: Prevention and Monitoring",
+        "Recovery Timeline Expectations",
+        "When Recovery Isn't Possible",
+        "Frequently Asked Questions",
+        "Moving Forward After Recovery"
+      ],
+      "internalLinks": [
+        "/glossary/link-profile",
+        "/glossary/manual-action",
+        "/glossary/backlink",
+        "/glossary/link-farm",
+        "/glossary/anchor-text",
+        "/glossary/pbn",
+        "/glossary/referring-domain",
+        "/glossary/disavow-file",
+        "/glossary/google-disavow-tool",
+        "/glossary/reciprocal-link",
+        "/glossary/new-backlinks",
+        "/glossary/link-growth-rate",
+        "/link-building",
+        "/glossary/editorial-link",
+        "/glossary/pbn",
+        "/glossary/toxic-backlinks",
+        "/glossary/spammy-backlinks",
+        "/backlink-quality",
+        "/blog/how-to-audit-your-backlink-profile"
+      ],
+      "externalSources": [
+        "https://search.google.com/search-console",
+        "https://status.search.google.com/incidents"
+      ],
+      "claimReviewCandidates": [
+        {
+          "line": 196,
+          "text": "- Successfully removed 234 links (38% removal rate)"
+        },
+        {
+          "line": 342,
+          "text": "- Disavow file contains 80%+ of your link profile"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-remove-toxic-backlinks",
+      "url": "/blog/how-to-remove-toxic-backlinks",
+      "title": "How to Remove Toxic Backlinks: Complete Cleanup Guide",
+      "topic": "risk",
+      "words": 1962,
+      "description": "Step-by-step guide to identifying, removing, and disavowing toxic backlinks. Protect your site from penalties with this actionable cleanup process.",
+      "headings": [
+        "What Are Toxic Backlinks?",
+        "Step 1: Build Your Toxic Link List",
+        "Step 2: Attempt Link Removal",
+        "Step 3: Build Your Disavow File",
+        "Step 4: Submit Your Disavow File",
+        "Step 5: Monitor and Maintain",
+        "Common Mistakes to Avoid",
+        "Recovery Timeline",
+        "Frequently Asked Questions",
+        "Moving Forward"
+      ],
+      "internalLinks": [
+        "/glossary/toxic-backlinks",
+        "/glossary/manual-action",
+        "/glossary/link-farm",
+        "/glossary/pbn",
+        "/glossary/anchor-text",
+        "/glossary/sitewide-link",
+        "/glossary/reciprocal-link",
+        "/glossary/link-scheme",
+        "/glossary/google-disavow-tool",
+        "/glossary/disavow-file",
+        "/glossary/link-velocity",
+        "/glossary/manual-action",
+        "/glossary/nofollow-link",
+        "/glossary/editorial-link",
+        "/blog/how-to-audit-your-backlink-profile",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [
+        "https://search.google.com/search-console/disavow-links"
+      ],
+      "claimReviewCandidates": [
+        {
+          "line": 56,
+          "text": "| Moz | Spam Score | 0-100% probability of spam |"
+        },
+        {
+          "line": 180,
+          "text": "- **Overall**: 5-15% removal rate"
+        },
+        {
+          "line": 181,
+          "text": "- **Legitimate sites**: 20-40% removal rate"
+        },
+        {
+          "line": 182,
+          "text": "- **Spam sites**: Under 5% removal rate (they don't care)"
+        },
+        {
+          "line": 183,
+          "text": "- **Sites charging for removal**: 0% (never pay)"
+        },
+        {
+          "line": 382,
+          "text": "There's no exact threshold. A few obvious spam links on an otherwise healthy profile usually aren't concerning. If more than 10-20% of your referring domains appear manipulative, you likely need cleanup."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-use-content-for-link-building",
+      "url": "/blog/how-to-use-content-for-link-building",
+      "title": "How to Use Content for Link Building: Creating Linkable Assets",
+      "topic": "tactics",
+      "words": 2051,
+      "description": "Learn to create content that naturally attracts backlinks. From data studies to ultimate guides, discover what makes content link-worthy and how to execute each format.",
+      "headings": [
+        "Why Content Is the Foundation of Link Building",
+        "Understanding What Makes Content Link-Worthy",
+        "Content Format 1: Original Research and Data Studies",
+        "Content Format 2: Comprehensive Ultimate Guides",
+        "Content Format 3: Free Tools and Calculators",
+        "Content Format 4: Industry Surveys and Reports",
+        "Content Format 5: Comparison and \"Versus\" Content",
+        "Content Format 6: Templates and Swipe Files",
+        "Content Format 7: Glossaries and Definitions",
+        "Measuring Content Link Performance",
+        "Content Planning for Link Building",
+        "Common Mistakes to Avoid",
+        "Frequently Asked Questions",
+        "Building Your Link-Earning Content Strategy"
+      ],
+      "internalLinks": [
+        "/link-building",
+        "/glossary/linkable-asset",
+        "/glossary/backlink",
+        "/glossary",
+        "/glossary/referring-domain",
+        "/glossary/domain-authority",
+        "/blog/how-to-get-backlinks-without-outreach",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "how-to-use-haro-for-link-building",
+      "url": "/blog/how-to-use-haro-for-link-building",
+      "title": "How to Use HARO for Link Building: Expert Strategies That Work",
+      "topic": "outreach",
+      "words": 2153,
+      "description": "Master HARO for link building with proven pitch strategies. Learn how to respond to journalist queries and earn high-authority media backlinks.",
+      "headings": [
+        "What is HARO and How Does It Work?",
+        "Why HARO Is Powerful for Link Building",
+        "Setting Up for HARO Success",
+        "Crafting Winning HARO Pitches",
+        "HARO Best Practices for Maximum Success",
+        "Advanced HARO Strategies",
+        "Tracking HARO Results",
+        "Common HARO Mistakes to Avoid",
+        "HARO Alternatives to Consider",
+        "Scaling Your HARO Strategy",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 169,
+          "text": "40/30/20/10 approach that carves out 10% specifically for"
+        },
+        {
+          "line": 299,
+          "text": "| Response rate | Submissions / relevant queries | 20-30% |"
+        },
+        {
+          "line": 300,
+          "text": "| Feature rate | Features / submissions | 5-15% |"
+        },
+        {
+          "line": 301,
+          "text": "| Link acquisition | Features with backlinks | 80-90% of features |"
+        },
+        {
+          "line": 432,
+          "text": "Experienced HARO users typically see 5-15% of their responses result in features. This means sending 20-30 quality responses per month should yield 2-4 features. Higher rates indicate strong expertise matching and pitch quality."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-write-guest-post-pitches-that-get-accepted",
+      "url": "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+      "title": "How to Write Guest Post Pitches That Get Accepted: Proven Templates",
+      "topic": "outreach",
+      "words": 2443,
+      "description": "Master the art of guest post pitching with proven email templates and strategies. Learn what editors actually want to see in your pitch.",
+      "headings": [
+        "Why Most Guest Post Pitches Fail",
+        "Research Before You Pitch",
+        "Crafting Your Pitch: Element by Element",
+        "Complete Pitch Templates",
+        "After You Send: Follow-Up Strategy",
+        "Advanced Pitching Strategies",
+        "Common Pitch Mistakes to Avoid",
+        "Measuring Pitch Success",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 117,
+          "text": "- \"Content Pitch: How We Grew Organic Traffic 340% in 6 Months\""
+        },
+        {
+          "line": 514,
+          "text": "| Pitch-to-open rate | Opens / Pitches sent | 40-60% |"
+        },
+        {
+          "line": 515,
+          "text": "| Pitch-to-response rate | Responses / Pitches sent | 15-25% |"
+        },
+        {
+          "line": 516,
+          "text": "| Pitch-to-acceptance rate | Acceptances / Pitches sent | 8-15% |"
+        }
+      ]
+    },
+    {
+      "slug": "how-we-built-100-backlinks-in-30-days",
+      "url": "/blog/how-we-built-100-backlinks-in-30-days",
+      "title": "100 Backlinks in 30 Days? Build a Credible Campaign Plan",
+      "topic": "strategy",
+      "words": 870,
+      "description": "Plan a link building campaign around capacity, qualified prospects and verified placements. Use a worked example without invented results or volume guarantees.",
+      "headings": [
+        "Is 100 backlinks in 30 days a useful target?",
+        "Define an acceptable placement before forecasting volume",
+        "Work backwards from capacity",
+        "Week one: prepare the asset and shortlist",
+        "Week two: test the proposition",
+        "Week three: deliver and verify",
+        "Week four: report decisions, not just totals",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/link-building",
+        "/backlink-quality",
+        "/tools/internal-link-finder",
+        "/bundle",
+        "/templates",
+        "/tools/live-backlink-checker",
+        "/blog/verify-backlink-placement",
+        "/blog/backlink-reporting-for-clients",
+        "/backlink-quality",
+        "/blog/preserve-backlinks-website-migration"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/essentials/spam-policies"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "international-link-building",
+      "url": "/blog/international-link-building",
+      "title": "International Link Building: Strategies for Global SEO Success",
+      "topic": "industries",
+      "words": 1780,
+      "description": "How to build backlinks across countries and languages. Local link building, hreflang considerations, and scaling link building for international markets.",
+      "headings": [
+        "The International Link Building Challenge",
+        "Understanding International Link Landscapes",
+        "Strategic Approaches to International Link Building",
+        "Market-by-Market Tactics",
+        "Language Considerations",
+        "Scaling International Link Building",
+        "Measuring International Link Building",
+        "Technical Considerations",
+        "Frequently Asked Questions",
+        "Building Your International Strategy"
+      ],
+      "internalLinks": [
+        "/blog/building-links-to-boring-industries",
+        "/blog/link-building-at-scale"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-101-beginners-guide",
+      "url": "/blog/link-building-101-beginners-guide",
+      "title": "Link Building 101: The Complete Beginner's Guide to Building Backlinks",
+      "topic": "fundamentals",
+      "words": 2393,
+      "description": "New to link building? This comprehensive beginner's guide covers everything you need to know about backlinks, why they matter, and how to start building them effectively.",
+      "headings": [
+        "What Is Link Building?",
+        "Why Links Matter for SEO",
+        "Understanding Different Types of Links",
+        "Link Quality Factors",
+        "Core Link Building Methods",
+        "Your First Link Building Campaign",
+        "Essential Tools for Beginners",
+        "Common Beginner Mistakes to Avoid",
+        "Building a Sustainable Link Building Practice",
+        "Frequently Asked Questions",
+        "What to Learn Next"
+      ],
+      "internalLinks": [
+        "/glossary/dofollow-link",
+        "/glossary/link-equity",
+        "/glossary/nofollow-link",
+        "/glossary/anchor-text",
+        "/glossary/haro-link-building",
+        "/glossary/unlinked-mention",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/link-building-strategies",
+        "/blog/how-to-do-competitor-backlink-analysis",
+        "/blog/link-building-mistakes-to-avoid"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-agency-vs-freelancer",
+      "url": "/blog/link-building-agency-vs-freelancer",
+      "title": "Link Building Agency vs Freelancer: Which Is Right for Your Business?",
+      "topic": "strategy",
+      "words": 2014,
+      "description": "Compare link building agencies and freelancers across cost, quality, scalability, and results. Make an informed decision for your link building needs.",
+      "headings": [
+        "The Outsourcing Decision",
+        "Understanding the Options",
+        "Detailed Comparison",
+        "Decision Framework",
+        "How to Evaluate Options",
+        "Making It Work",
+        "Frequently Asked Questions",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/best-link-building-agencies",
+        "/blog/measuring-link-building-roi"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-at-scale",
+      "url": "/blog/link-building-at-scale",
+      "title": "Link Building at Scale: Systems and Processes for High-Volume Link Acquisition",
+      "topic": "strategy",
+      "words": 1932,
+      "description": "How to scale link building without sacrificing quality. Build systems, processes, and teams for consistent high-volume link acquisition.",
+      "headings": [
+        "The Challenge of Scale",
+        "Before You Scale: Foundation Requirements",
+        "Building Scalable Link Building Systems",
+        "Scaling Specific Tactics",
+        "Team Structures for Scaled Link Building",
+        "Quality Assurance at Scale",
+        "Technology Stack for Scaled Link Building",
+        "Measuring Scaled Link Building",
+        "Common Scaling Mistakes",
+        "Frequently Asked Questions",
+        "Building Your Scaling Plan"
+      ],
+      "internalLinks": [
+        "/glossary/haro-link-building",
+        "/glossary/domain-authority",
+        "/glossary/contextual-link",
+        "/glossary/anchor-text",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/tiered-link-building-strategy"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-budget-allocation",
+      "url": "/blog/link-building-budget-allocation",
+      "title": "Link Building Budget Allocation: How to Spend Your SEO Budget Wisely",
+      "topic": "strategy",
+      "words": 1927,
+      "description": "Learn how to allocate your link building budget across tactics, tools, content, and labor. Includes frameworks for different budget sizes and ROI optimization.",
+      "headings": [
+        "How Much Should You Spend on Link Building?",
+        "Budget Determination Framework",
+        "Budget Allocation Models",
+        "Allocation by Tactic",
+        "Resource Breakdown",
+        "ROI Optimization",
+        "Budget Planning by Timeline",
+        "Frequently Asked Questions",
+        "Action Steps"
+      ],
+      "internalLinks": [
+        "/blog/creating-a-link-building-strategy",
+        "/blog/link-building-campaign-planning"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 62,
+          "text": "- Page 1 ranking CTR: 5% (500 visits/month)"
+        },
+        {
+          "line": 63,
+          "text": "- Conversion rate: 3% (15 conversions/month)"
+        },
+        {
+          "line": 99,
+          "text": "| Tools | 20% | $200-500 | Ahrefs/SEMrush basic |"
+        },
+        {
+          "line": 100,
+          "text": "| Content | 30% | $300-750 | 1-2 guest posts monthly |"
+        },
+        {
+          "line": 101,
+          "text": "| Outreach | 30% | $300-750 | Freelancer or tool support |"
+        },
+        {
+          "line": 102,
+          "text": "| Research | 20% | $200-500 | Quarterly small study |"
+        },
+        {
+          "line": 123,
+          "text": "| Tools | 10% | $300-700 | Full tool stack |"
+        },
+        {
+          "line": 124,
+          "text": "| Content | 35% | $1,050-2,450 | Guest posts, assets |"
+        },
+        {
+          "line": 125,
+          "text": "| Outreach | 30% | $900-2,100 | Dedicated outreach support |"
+        },
+        {
+          "line": 126,
+          "text": "| Research/PR | 15% | $450-1,050 | Quarterly research, PR |"
+        },
+        {
+          "line": 127,
+          "text": "| Management | 10% | $300-700 | Strategy, reporting |"
+        },
+        {
+          "line": 149,
+          "text": "| Tools | 5% | $400-750 | Premium tools |"
+        },
+        {
+          "line": 150,
+          "text": "| Content | 30% | $2,400-4,500 | High-volume, premium assets |"
+        },
+        {
+          "line": 151,
+          "text": "| Outreach | 25% | $2,000-3,750 | Scaled outreach team |"
+        },
+        {
+          "line": 152,
+          "text": "| Research/PR | 25% | $2,000-3,750 | Regular research, PR agency |"
+        },
+        {
+          "line": 153,
+          "text": "| Management | 15% | $1,200-2,250 | Strategy, optimization |"
+        },
+        {
+          "line": 175,
+          "text": "| Tools | 3% | $600+ | Enterprise tools |"
+        },
+        {
+          "line": 176,
+          "text": "| Content | 25% | $5,000+ | Premium content at scale |"
+        },
+        {
+          "line": 177,
+          "text": "| PR/Media | 30% | $6,000+ | PR agency, media relations |"
+        },
+        {
+          "line": 178,
+          "text": "| Research | 20% | $4,000+ | Major ongoing research |"
+        },
+        {
+          "line": 179,
+          "text": "| Team | 15% | $3,000+ | Dedicated personnel |"
+        },
+        {
+          "line": 180,
+          "text": "| Innovation | 7% | $1,400+ | New tactic development |"
+        },
+        {
+          "line": 213,
+          "text": "- 50% HARO and PR (build authority signals)"
+        },
+        {
+          "line": 214,
+          "text": "- 30% guest posting (establish presence)"
+        },
+        {
+          "line": 215,
+          "text": "- 20% outreach (foundation building)"
+        },
+        {
+          "line": 218,
+          "text": "- 30% guest posting (consistent volume)"
+        },
+        {
+          "line": 219,
+          "text": "- 25% HARO/PR (maintain quality)"
+        },
+        {
+          "line": 220,
+          "text": "- 25% outreach tactics (diversification)"
+        },
+        {
+          "line": 221,
+          "text": "- 20% content assets (long-term earning)"
+        },
+        {
+          "line": 224,
+          "text": "- 35% PR and media (premium links)"
+        },
+        {
+          "line": 225,
+          "text": "- 25% research and data (differentiation)"
+        },
+        {
+          "line": 226,
+          "text": "- 20% guest posting (volume maintenance)"
+        },
+        {
+          "line": 227,
+          "text": "- 20% partnerships (strategic positioning)"
+        },
+        {
+          "line": 260,
+          "text": "- 60-70% on evergreen link magnets"
+        },
+        {
+          "line": 261,
+          "text": "- 20-30% on guest posts"
+        },
+        {
+          "line": 262,
+          "text": "- 10-20% on topical/campaign content"
+        },
+        {
+          "line": 378,
+          "text": "Generally 60% content/40% outreach for link building focused on assets. 40% content/60% outreach for guest-posting-heavy approaches."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-campaign-planning",
+      "url": "/blog/link-building-campaign-planning",
+      "title": "Link Building Campaign Planning: How to Plan and Execute Successful Campaigns",
+      "topic": "strategy",
+      "words": 1781,
+      "description": "Step-by-step guide to planning link building campaigns. From goal setting to execution to analysis, learn how to run campaigns that deliver measurable results.",
+      "headings": [
+        "What Is a Link Building Campaign?",
+        "Campaign Planning Framework",
+        "Campaign Type Examples",
+        "Campaign Planning Templates",
+        "Frequently Asked Questions",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/creating-a-link-building-strategy",
+        "/blog/link-building-budget-allocation"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 102,
+          "text": "- Expect 15-25% success rate"
+        },
+        {
+          "line": 315,
+          "text": "- Journalist outreach: 40%"
+        },
+        {
+          "line": 316,
+          "text": "- Blogger outreach: 30%"
+        },
+        {
+          "line": 317,
+          "text": "- Resource page outreach: 20%"
+        },
+        {
+          "line": 318,
+          "text": "- Social amplification: 10%"
+        },
+        {
+          "line": 332,
+          "text": "- Guest posting: 35%"
+        },
+        {
+          "line": 333,
+          "text": "- Resource pages: 25%"
+        },
+        {
+          "line": 334,
+          "text": "- Broken link building: 20%"
+        },
+        {
+          "line": 335,
+          "text": "- HARO/PR: 20%"
+        },
+        {
+          "line": 349,
+          "text": "- HARO/PR: 30%"
+        },
+        {
+          "line": 350,
+          "text": "- Guest posting: 25%"
+        },
+        {
+          "line": 351,
+          "text": "- Research/content: 25%"
+        },
+        {
+          "line": 352,
+          "text": "- Outreach: 20%"
+        },
+        {
+          "line": 439,
+          "text": "10-20% response rate is typical. 20-30% is good. Above 30% is excellent. Below 10% indicates messaging or targeting issues."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-case-study-ecommerce",
+      "url": "/blog/link-building-case-study-ecommerce",
+      "title": "E-commerce Link Building: Illustrative Campaign Case Study",
+      "topic": "industries",
+      "words": 2622,
+      "description": "An illustrative link building campaign for planning and measurement. Learn the workflow; all campaign numbers are examples, not verified customer results.",
+      "headings": [
+        "The E-commerce Link Building Puzzle",
+        "The Business: Specialty Outdoor Gear",
+        "The Strategy: Content Moat Approach",
+        "Phase 1: Content Foundation (Months 1-4)",
+        "Phase 2: Active Link Building (Months 5-8)",
+        "Phase 3: Scaling and Optimization (Months 9-12)",
+        "Complete 12-Month Results",
+        "Investment and ROI Analysis",
+        "What Worked Best for E-commerce",
+        "What Didn't Work",
+        "Frequently Asked Questions",
+        "Your E-commerce Link Building Plan"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/link-building-strategies",
+        "/blog/how-to-use-content-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 49,
+          "text": "Rather than compete directly for product page links, we built a \"content moat\"—valuable content that earned links and passed authority to commercial pages through internal linking."
+        },
+        {
+          "line": 102,
+          "text": "We analyzed what top-ranking competitors had that we didn't:"
+        },
+        {
+          "line": 126,
+          "text": "- Organic Traffic: 18,500 → 21,200 (+15%)"
+        },
+        {
+          "line": 159,
+          "text": "- 23 positive responses (31%)"
+        },
+        {
+          "line": 160,
+          "text": "- 18 links updated (24% conversion)"
+        },
+        {
+          "line": 192,
+          "text": "- 34 featured (19% success rate)"
+        },
+        {
+          "line": 193,
+          "text": "- 28 included links (82% of features)"
+        },
+        {
+          "line": 256,
+          "text": "| Organic Traffic | 21,200 | 34,500 | +63% |"
+        },
+        {
+          "line": 257,
+          "text": "| Organic Revenue | $95K | $142K | +49% |"
+        },
+        {
+          "line": 275,
+          "text": "Conversion rate: 18% (competitive but content quality difference was obvious)"
+        },
+        {
+          "line": 331,
+          "text": "| Organic Traffic | 18,500 | 58,400 | +216% |"
+        },
+        {
+          "line": 332,
+          "text": "| Organic Revenue | $85,000 | $267,000 | +214% |"
+        },
+        {
+          "line": 333,
+          "text": "| Conversion Rate | 2.1% | 2.3% | +10% |"
+        },
+        {
+          "line": 334,
+          "text": "| Average Order Value | $218 | $197 | -10% |"
+        },
+        {
+          "line": 342,
+          "text": "| Referring Domains | 156 | 462 | +196% |"
+        },
+        {
+          "line": 344,
+          "text": "| Total Backlinks | 890 | 3,240 | +264% |"
+        },
+        {
+          "line": 349,
+          "text": "- HARO/journalist: 89 (19%)"
+        },
+        {
+          "line": 350,
+          "text": "- Content outreach: 112 (24%)"
+        },
+        {
+          "line": 351,
+          "text": "- Local guides: 98 (21%)"
+        },
+        {
+          "line": 352,
+          "text": "- Product reviews: 32 (7%)"
+        },
+        {
+          "line": 353,
+          "text": "- Organic/passive: 131 (28%)"
+        },
+        {
+          "line": 356,
+          "text": "- DR 50+: 67 (14%)"
+        },
+        {
+          "line": 357,
+          "text": "- DR 30-49: 178 (39%)"
+        },
+        {
+          "line": 358,
+          "text": "- DR 15-29: 186 (40%)"
+        },
+        {
+          "line": 359,
+          "text": "- DR under 15: 31 (7%)"
+        },
+        {
+          "line": 400,
+          "text": "ROI: ~930%"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-case-study-saas",
+      "url": "/blog/link-building-case-study-saas",
+      "title": "SaaS Link Building: Illustrative Campaign Case Study",
+      "topic": "industries",
+      "words": 2413,
+      "description": "An illustrative link building campaign for planning and measurement. Learn the workflow; all campaign numbers are examples, not verified customer results.",
+      "headings": [
+        "The SaaS Link Building Challenge",
+        "Company Background",
+        "The 18-Month Journey",
+        "Complete Results Summary",
+        "What Worked Best (and Worst)",
+        "Key Lessons for SaaS Link Building",
+        "Frequently Asked Questions",
+        "Your SaaS Link Building Action Plan"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+        "/blog/how-to-find-broken-links-for-link-building",
+        "/blog/how-to-recover-from-google-penalty",
+        "/blog/link-building-for-startups",
+        "/blog/measuring-link-building-roi"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 102,
+          "text": "> Response: \"The biggest productivity myth is that more tools mean more efficiency. At [Company], we found teams using 5+ productivity tools actually completed 23% fewer projects on time than teams using 2-3 integrated tools."
+        },
+        {
+          "line": 104,
+          "text": "> My recommendation: audit your tool stack quarterly. For every new tool added, remove one. This 'tool equilibrium' approach increased our team's project completion rate by 31%."
+        },
+        {
+          "line": 116,
+          "text": "- Success rate: ~15%"
+        },
+        {
+          "line": 121,
+          "text": "- Success rate: ~30%"
+        },
+        {
+          "line": 126,
+          "text": "- Success rate: ~50%"
+        },
+        {
+          "line": 277,
+          "text": "| Referring Domains | 34 | 578 | +1,600% |"
+        },
+        {
+          "line": 279,
+          "text": "| Organic Traffic | 200 | 28,500 | +14,150% |"
+        },
+        {
+          "line": 280,
+          "text": "| Organic Keywords (Top 100) | 450 | 8,200 | +1,722% |"
+        },
+        {
+          "line": 281,
+          "text": "| Page 1 Rankings | 3 | 187 | +6,133% |"
+        },
+        {
+          "line": 286,
+          "text": "- DR 60+: 78 links (13.5%)"
+        },
+        {
+          "line": 287,
+          "text": "- DR 40-59: 186 links (32.2%)"
+        },
+        {
+          "line": 288,
+          "text": "- DR 20-39: 251 links (43.4%)"
+        },
+        {
+          "line": 289,
+          "text": "- DR under 20: 63 links (10.9%)"
+        },
+        {
+          "line": 292,
+          "text": "- Editorial/contextual: 412 (71.3%)"
+        },
+        {
+          "line": 293,
+          "text": "- Resource pages: 67 (11.6%)"
+        },
+        {
+          "line": 294,
+          "text": "- Directories: 54 (9.3%)"
+        },
+        {
+          "line": 295,
+          "text": "- Social profiles/directories: 45 (7.8%)"
+        },
+        {
+          "line": 298,
+          "text": "- HARO/journalist sources: 156 (27%)"
+        },
+        {
+          "line": 299,
+          "text": "- Guest posting: 98 (17%)"
+        },
+        {
+          "line": 300,
+          "text": "- Original research citations: 143 (25%)"
+        },
+        {
+          "line": 301,
+          "text": "- Broken link/resource outreach: 89 (15%)"
+        },
+        {
+          "line": 302,
+          "text": "- Partnership/integrations: 47 (8%)"
+        },
+        {
+          "line": 303,
+          "text": "- Passive/organic: 45 (8%)"
+        },
+        {
+          "line": 327,
+          "text": "- Acceptance rate: 30%"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-dashboards-and-metrics",
+      "url": "/blog/link-building-dashboards-and-metrics",
+      "title": "Link Building Dashboards and Metrics: Build Your Measurement System",
+      "topic": "strategy",
+      "words": 1813,
+      "description": "Design effective link building dashboards that track the metrics that matter. Learn what to measure, how to visualize it, and how to act on insights.",
+      "headings": [
+        "Why You Need a Link Building Dashboard",
+        "Choosing the Right Metrics",
+        "Dashboard Design Principles",
+        "Building Your Dashboard",
+        "Dashboard Templates by Use Case",
+        "Sample Dashboard Layouts",
+        "Tracking and Alerting",
+        "Using Your Dashboard Effectively",
+        "Common Dashboard Mistakes",
+        "Advanced Dashboard Features",
+        "Frequently Asked Questions",
+        "Building Your First Dashboard"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 106,
+          "text": "**Good:** \"New referring domains dropped 30% this month\""
+        },
+        {
+          "line": 253,
+          "text": "│  │   18    │ │   42    │ │  +23%   │ │ KEYWORDS │  │"
+        },
+        {
+          "line": 289,
+          "text": "│  │ Guest Post   │  34  │   6  │ 18%  │   3     │  │"
+        },
+        {
+          "line": 290,
+          "text": "│  │ Resource     │  28  │   3  │ 11%  │   2     │  │"
+        },
+        {
+          "line": 291,
+          "text": "│  │ Broken Link  │  16  │   3  │ 19%  │   0     │  │"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-affiliate-sites",
+      "url": "/blog/link-building-for-affiliate-sites",
+      "title": "Link Building for Affiliate Sites: Strategies That Work in 2026",
+      "topic": "industries",
+      "words": 1919,
+      "description": "Learn effective link building strategies for affiliate websites. Navigate Google's scrutiny while building authority for product reviews and comparisons.",
+      "headings": [
+        "The Affiliate Site Link Building Challenge",
+        "Why Traditional Approaches Fail for Affiliates",
+        "Strategy 1: Informational Content Wings",
+        "Strategy 2: Original Research and Data",
+        "Strategy 3: Tools and Calculators",
+        "Strategy 4: Expertise-Based Link Building",
+        "Strategy 5: Community and Resource Building",
+        "Strategy 6: Strategic Partnerships",
+        "Content Quality Standards",
+        "Measuring Affiliate Link Building Success",
+        "Common Affiliate Link Building Mistakes",
+        "Frequently Asked Questions",
+        "Building Your Affiliate Link Strategy"
+      ],
+      "internalLinks": [
+        "/glossary/haro-link-building",
+        "/glossary/referring-domain",
+        "/glossary/domain-authority",
+        "/link-building",
+        "/blog/most-effective-link-building-tactics"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 119,
+          "text": "- \"Our survey of 500 coffee enthusiasts found 43% upgraded their grinder before their espresso machine\""
+        },
+        {
+          "line": 395,
+          "text": "For affiliate sites, content quality investment often provides better ROI than pure link building. A rough split might be 60% content improvement, 40% link building. Great content attracts some links naturally and makes outreach more successful."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-blog-posts",
+      "url": "/blog/link-building-for-blog-posts",
+      "title": "Link Building for Blog Posts: Proven Strategies to Amplify Your Content",
+      "topic": "industries",
+      "words": 1931,
+      "description": "Learn how to build high-quality backlinks to your blog posts. From pre-publication planning to ongoing promotion, maximize every piece of content.",
+      "headings": [
+        "Why Blog Posts Need Strategic Link Building",
+        "Pre-Publication: Building for Linkability",
+        "Link Building Strategies by Content Type",
+        "Promotion Timing Framework",
+        "Outreach Templates for Blog Posts",
+        "Maximizing Existing Content",
+        "Common Blog Post Link Building Mistakes",
+        "Measuring Blog Post Link Building Success",
+        "Scaling Blog Post Link Building",
+        "Frequently Asked Questions",
+        "The Blog Post Link Building Cycle"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 19,
+          "text": "- \"We analyzed X and here's what we found\""
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-competitive-niches",
+      "url": "/blog/link-building-for-competitive-niches",
+      "title": "Link Building for Competitive Niches: Advanced Strategies That Work",
+      "topic": "industries",
+      "words": 1831,
+      "description": "How to build backlinks in highly competitive industries where everyone is fighting for the same links. Advanced tactics for finance, legal, SaaS, and other tough niches.",
+      "headings": [
+        "The Competitive Niche Reality",
+        "Understanding Competitive Dynamics",
+        "Advanced Strategies for Competitive Niches",
+        "Tactical Execution",
+        "Common Mistakes in Competitive Niches",
+        "Frequently Asked Questions",
+        "Action Plan for Competitive Niches"
+      ],
+      "internalLinks": [
+        "/blog/link-building-strategies",
+        "/blog/how-to-build-links-with-data-studies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 306,
+          "text": "| Original research | 30% | 20% |"
+        },
+        {
+          "line": 307,
+          "text": "| Content creation | 25% | 30% |"
+        },
+        {
+          "line": 308,
+          "text": "| Outreach/PR | 20% | 25% |"
+        },
+        {
+          "line": 309,
+          "text": "| Tool development | 15% | 15% |"
+        },
+        {
+          "line": 310,
+          "text": "| Relationship building | 10% | 10% |"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-content-sites",
+      "url": "/blog/link-building-for-content-sites",
+      "title": "Link Building for Content Sites and Publishers",
+      "topic": "industries",
+      "words": 1738,
+      "description": "Strategies for content sites, publishers, and media properties to build authority through strategic link acquisition. Scale link building for editorial content.",
+      "headings": [
+        "Content Site Link Building Fundamentals",
+        "The Publisher Advantage",
+        "Strategy 1: Optimize Your Content Calendar for Links",
+        "Strategy 2: Newsjacking and First-Mover Advantage",
+        "Strategy 3: Data Journalism and Original Research",
+        "Strategy 4: Expert Sourcing as Link Building",
+        "Strategy 5: Syndication and Content Licensing",
+        "Strategy 6: Strategic Internal Linking",
+        "Link Building Operations at Scale",
+        "Measuring Success",
+        "Common Publisher Link Building Mistakes",
+        "Frequently Asked Questions",
+        "Building Your Publisher Link Strategy"
+      ],
+      "internalLinks": [
+        "/glossary/expert-roundup",
+        "/glossary/backlink-monitoring",
+        "/glossary/referring-domain",
+        "/glossary/link-equity",
+        "/link-building",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/how-to-build-links-with-data-studies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-landing-pages",
+      "url": "/blog/link-building-for-landing-pages",
+      "title": "Link Building for Landing Pages: Drive Authority to Your Conversion Pages",
+      "topic": "industries",
+      "words": 1808,
+      "description": "Learn effective strategies for building backlinks to landing pages. Improve rankings for your highest-converting pages without sacrificing user experience.",
+      "headings": [
+        "The Landing Page Link Building Paradox",
+        "Understanding Landing Page Types",
+        "Strategy 1: Hybrid Landing Pages",
+        "Strategy 2: Supporting Content Strategy",
+        "Strategy 3: Resource-Based Landing Pages",
+        "Strategy 4: Outreach-Based Strategies",
+        "Strategy 5: Newsjacking and Trending Topics",
+        "Technical Considerations",
+        "Campaign-Specific Approaches",
+        "Measuring Landing Page Link Building ROI",
+        "Frequently Asked Questions",
+        "Landing Page Link Building Priorities"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 157,
+          "text": "└── Case Study: \"How [Company] Increased Leads 300%\""
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-new-websites",
+      "url": "/blog/link-building-for-new-websites",
+      "title": "Link Building for New Websites: The Complete Starter Guide",
+      "topic": "industries",
+      "words": 1980,
+      "description": "Learn effective link building strategies for new websites. Build your first backlinks and establish domain authority from scratch with proven tactics.",
+      "headings": [
+        "The New Website Link Building Challenge",
+        "Phase 1: Foundation Links (Month 1-2)",
+        "Phase 2: Content Foundation (Month 2-4)",
+        "Phase 3: Active Link Building (Month 3-6)",
+        "Phase 4: Scaling Up (Month 6+)",
+        "Timeline and Expectations",
+        "Budget Considerations",
+        "Common Mistakes New Sites Make",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-personal-brands",
+      "url": "/blog/link-building-for-personal-brands",
+      "title": "Link Building for Personal Brands: Establish Your Online Authority",
+      "topic": "industries",
+      "words": 1673,
+      "description": "Build your personal brand's online presence and authority through strategic link building. Learn tactics specifically designed for individuals and solo entrepreneurs.",
+      "headings": [
+        "Why Personal Brand Link Building Matters",
+        "The Personal Brand Advantage",
+        "Foundation: Your Personal SEO Infrastructure",
+        "Personal Brand Link Building Strategies",
+        "Building Your Personal Brand Link Profile",
+        "Personal Brand Link Building Challenges",
+        "Measuring Personal Brand Authority",
+        "Frequently Asked Questions",
+        "The Long Game"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 393,
+          "text": "- 80% value, 20% promotion maximum"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-for-product-pages",
+      "url": "/blog/link-building-for-product-pages",
+      "title": "Link Building for Product Pages: Strategies That Actually Work",
+      "topic": "industries",
+      "words": 1969,
+      "description": "Learn how to build high-quality backlinks directly to your product pages. Proven strategies for e-commerce, SaaS, and physical products that drive rankings and sales.",
+      "headings": [
+        "The Product Page Link Building Challenge",
+        "Why Product Page Links Matter",
+        "Understanding Product Page Link Psychology",
+        "Strategy 1: Enhanced Product Pages",
+        "Strategy 2: Product-Focused Linkable Assets",
+        "Strategy 3: Product Review Outreach",
+        "Strategy 4: Leverage Existing Relationships",
+        "Strategy 5: Product-Related PR",
+        "Strategy 6: Unlinked Mentions and Reclamation",
+        "Industry-Specific Approaches",
+        "Technical Considerations",
+        "Measuring Product Page Link Building",
+        "Frequently Asked Questions",
+        "Product Page Link Building Action Plan"
+      ],
+      "internalLinks": [
+        "/blog/measuring-link-building-roi"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-service-businesses",
+      "url": "/blog/link-building-for-service-businesses",
+      "title": "Link Building for Service Businesses: Local and Professional SEO",
+      "topic": "industries",
+      "words": 1899,
+      "description": "Effective link building strategies for service businesses, from local contractors to professional services. Build authority and local visibility.",
+      "headings": [
+        "Service Business Link Building Fundamentals",
+        "Understanding Service Business Link Needs",
+        "Strategy 1: Citation and Directory Foundation",
+        "Strategy 2: Local Community Link Building",
+        "Strategy 3: Professional Network Links",
+        "Strategy 4: Content Marketing for Services",
+        "Strategy 5: Reviews and Reputation",
+        "Strategy 6: Local PR and Media",
+        "Strategy 7: Professional Services Specific",
+        "Measuring Service Business Link Success",
+        "Budget Considerations",
+        "Frequently Asked Questions",
+        "Building Your Service Business Link Strategy"
+      ],
+      "internalLinks": [
+        "/glossary/local-link-building",
+        "/glossary/citation-building",
+        "/glossary/citation-building",
+        "/glossary/business-directory",
+        "/glossary/nap-consistency",
+        "/glossary/haro-link-building",
+        "/glossary/referring-domain",
+        "/glossary/domain-authority",
+        "/blog/most-effective-link-building-tactics",
+        "/glossary/local-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-service-pages",
+      "url": "/blog/link-building-for-service-pages",
+      "title": "Link Building for Service Pages: Attract Quality Backlinks to Your Offerings",
+      "topic": "industries",
+      "words": 1943,
+      "description": "Learn proven strategies for building backlinks to service pages. Drive qualified traffic and improve rankings for your most important business pages.",
+      "headings": [
+        "The Service Page Link Building Problem",
+        "Why Service Page Links Are Challenging",
+        "Strategy 1: Transform Service Pages into Resources",
+        "Strategy 2: Create Supporting Content That Links to Services",
+        "Strategy 3: Leverage Client Relationships",
+        "Strategy 4: Local Service Link Building",
+        "Strategy 5: Industry Association and Directory Links",
+        "Strategy 6: Content Marketing for Service Links",
+        "Strategy 7: Competitive Link Analysis",
+        "Technical Implementation",
+        "Service Type Specific Strategies",
+        "Measuring Success",
+        "Frequently Asked Questions",
+        "Action Plan"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-startups",
+      "url": "/blog/link-building-for-startups",
+      "title": "Link Building for Startups: Strategies When You Have No Authority",
+      "topic": "industries",
+      "words": 1790,
+      "description": "Practical link building strategies for startups with limited resources and brand awareness. Build authority from zero with these proven approaches.",
+      "headings": [
+        "The Startup Link Building Challenge",
+        "Understanding Your Starting Position",
+        "Phase 1: Foundation Building (Months 1-3)",
+        "Phase 2: Leverage What You Have (Months 2-6)",
+        "Phase 3: Targeted Outreach Campaigns (Months 4-9)",
+        "Budget-Conscious Approaches",
+        "Content Strategy for Link Building",
+        "Building Relationships That Scale",
+        "Measuring Progress",
+        "Common Startup Link Building Mistakes",
+        "Frequently Asked Questions",
+        "Your Startup Link Building Plan"
+      ],
+      "internalLinks": [
+        "/glossary/domain-authority",
+        "/glossary/domain-authority",
+        "/glossary/business-directory",
+        "/glossary/deep-link",
+        "/glossary/broken-link-building",
+        "/glossary/haro-link-building",
+        "/glossary/resource-page-link-building",
+        "/glossary/linkable-asset",
+        "/glossary/referring-domain",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/how-to-build-links-with-data-studies"
+      ],
+      "externalSources": [
+        "https://www.producthunt.com"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-for-ymyl-sites",
+      "url": "/blog/link-building-for-ymyl-sites",
+      "title": "Link Building for YMYL Sites: Strategies for Health, Finance, and Legal",
+      "topic": "industries",
+      "words": 1819,
+      "description": "How to build backlinks for Your Money or Your Life sites. E-E-A-T focused strategies for health, finance, legal, and other high-stakes industries.",
+      "headings": [
+        "What Are YMYL Sites?",
+        "Why YMYL Link Building Is Different",
+        "E-E-A-T-Focused Link Building",
+        "Industry-Specific Strategies",
+        "Link Quality for YMYL Sites",
+        "Content Strategies for YMYL Links",
+        "Avoiding YMYL Link Building Mistakes",
+        "Measuring YMYL Link Building Success",
+        "Frequently Asked Questions",
+        "Building Your YMYL Strategy"
+      ],
+      "internalLinks": [
+        "/blog/e-e-a-t-and-link-building",
+        "/blog/building-links-to-boring-industries"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-in-age-of-ai",
+      "url": "/blog/link-building-in-age-of-ai",
+      "title": "Link Building in the Age of AI: How Artificial Intelligence Is Changing SEO",
+      "topic": "strategy",
+      "words": 1882,
+      "description": "How AI is transforming link building from both sides. Google's AI-powered detection and AI tools for link builders. Adapt your strategy for the AI era.",
+      "headings": [
+        "The AI Revolution in Link Building",
+        "Google's AI: The Detection Side",
+        "AI Tools for Link Building",
+        "The AI Content Conundrum",
+        "Adapting Your Strategy for AI",
+        "Evaluate AI assistance with a controlled trial",
+        "The Future of AI in Link Building",
+        "Frequently Asked Questions",
+        "Embracing AI Thoughtfully"
+      ],
+      "internalLinks": [
+        "/link-building/",
+        "/digital-pr/"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-kpis-and-metrics",
+      "url": "/blog/link-building-kpis-and-metrics",
+      "title": "Link Building KPIs and Metrics: What to Track for SEO Success",
+      "topic": "strategy",
+      "words": 2213,
+      "description": "Learn which link building KPIs and metrics actually matter. Track the right data to measure campaign success and optimize your strategy.",
+      "headings": [
+        "Why Link Building Metrics Matter",
+        "Category 1: Link Acquisition Metrics",
+        "Category 2: Link Quality Metrics",
+        "Category 3: Process and Efficiency Metrics",
+        "Category 4: Outcome and Impact Metrics",
+        "Building Your Tracking Dashboard",
+        "Common Tracking Mistakes",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 91,
+          "text": "Natural profiles typically show 60-80% dofollow, 20-40% nofollow. Pure dofollow looks unnatural."
+        },
+        {
+          "line": 106,
+          "text": "| Branded | 30-40% |"
+        },
+        {
+          "line": 107,
+          "text": "| Generic (click here, learn more) | 20-30% |"
+        },
+        {
+          "line": 108,
+          "text": "| Naked URL | 10-20% |"
+        },
+        {
+          "line": 109,
+          "text": "| Partial match keywords | 10-20% |"
+        },
+        {
+          "line": 110,
+          "text": "| Exact match keywords | 5-10% |"
+        },
+        {
+          "line": 206,
+          "text": "Trust Flow should be at least 50% of Citation Flow. TF:CF of 30:60 is better than 10:60."
+        },
+        {
+          "line": 224,
+          "text": "| &lt;5% | Poor (review approach) |"
+        },
+        {
+          "line": 225,
+          "text": "| 5-10% | Average |"
+        },
+        {
+          "line": 226,
+          "text": "| 10-20% | Good |"
+        },
+        {
+          "line": 227,
+          "text": "| 20%+ | Excellent |"
+        },
+        {
+          "line": 247,
+          "text": "| &lt;1% | Poor |"
+        },
+        {
+          "line": 248,
+          "text": "| 1-3% | Average |"
+        },
+        {
+          "line": 249,
+          "text": "| 3-5% | Good |"
+        },
+        {
+          "line": 250,
+          "text": "| 5%+ | Excellent |"
+        },
+        {
+          "line": 467,
+          "text": "3-5% is good, meaning 3-5 links per 100 outreach emails. Higher rates indicate excellent targeting and value proposition. Lower rates suggest optimization opportunities in targeting, personalization, or offer."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-mistakes-to-avoid",
+      "url": "/blog/link-building-mistakes-to-avoid",
+      "title": "21 Link Building Mistakes That Can Tank Your Rankings",
+      "topic": "risk",
+      "words": 2004,
+      "description": "Avoid these common link building mistakes that can trigger penalties, waste resources, or damage your SEO. Learn what to do instead for sustainable results.",
+      "headings": [
+        "Why Link Building Mistakes Matter",
+        "Penalty-Risk Mistakes",
+        "Resource-Wasting Mistakes",
+        "Strategic Mistakes",
+        "Mistake Prevention Checklist",
+        "Frequently Asked Questions",
+        "Building Links the Right Way"
+      ],
+      "internalLinks": [
+        "/glossary/manual-action",
+        "/glossary/linkable-asset",
+        "/glossary/editorial-link",
+        "/glossary/pbn",
+        "/glossary/anchor-text",
+        "/glossary/reciprocal-link",
+        "/glossary/link-scheme",
+        "/glossary/sitewide-link",
+        "/glossary/contextual-link",
+        "/glossary/sponsored-link",
+        "/glossary/nofollow-link",
+        "/glossary/referring-domain",
+        "/glossary/deep-link",
+        "/glossary/link-equity",
+        "/glossary/lost-backlinks",
+        "/glossary/backlink-monitoring",
+        "/glossary/link-reclamation",
+        "/glossary/haro-link-building",
+        "/glossary/link-profile",
+        "/glossary/unlinked-mention",
+        "/blog/how-to-audit-your-backlink-profile",
+        "/glossary/competitor-backlink-analysis",
+        "/glossary/link-velocity",
+        "/glossary/toxic-backlinks",
+        "/glossary/google-disavow-tool",
+        "/blog/how-to-recover-from-google-penalty",
+        "/blog/link-building-strategies",
+        "/blog/how-to-use-content-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 118,
+          "text": "Mass outreach has terrible response rates (under 1%), damages your reputation with repeated generic pitches, and burns through potential link sources."
+        },
+        {
+          "line": 121,
+          "text": "Personalize outreach, target relevant opportunities, and offer genuine value. A 10% response rate from 50 targeted emails beats a 0.5% rate from 500 spam emails."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-on-a-budget",
+      "url": "/blog/link-building-on-a-budget",
+      "title": "Link Building on a Budget: Effective Strategies That Don't Break the Bank",
+      "topic": "strategy",
+      "words": 1963,
+      "description": "Discover proven link building strategies that work without expensive tools or agencies. Build quality backlinks on any budget with these tactics.",
+      "headings": [
+        "The Budget Link Builder's Mindset",
+        "Free Tools for Link Building",
+        "Zero-Cost Link Building Strategies",
+        "Low-Cost Link Building Strategies",
+        "Budget Allocation Framework",
+        "Time Investment Optimization",
+        "Measuring Success on a Budget",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 338,
+          "text": "100% time investment:"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-strategies",
+      "url": "/blog/link-building-strategies",
+      "title": "15 Proven Link Building Strategies That Work in 2026",
+      "topic": "strategy",
+      "words": 984,
+      "description": "Discover actionable link building tactics from guest posting to broken link building. Real strategies that get results.",
+      "headings": [
+        "Why Link Building Still Matters",
+        "1. Create Link-Worthy Content",
+        "2. Guest Posting",
+        "3. Broken Link Building",
+        "4. Resource Page Link Building",
+        "5. HARO (Help a Reporter Out)",
+        "6. Skyscraper Technique",
+        "7. Digital PR",
+        "8. Competitor Backlink Analysis",
+        "9. Unlinked Brand Mentions",
+        "10. Internal Linking",
+        "11. Create Free Tools",
+        "12. Expert Roundups",
+        "13. Podcasts and Interviews",
+        "14. Testimonials and Case Studies",
+        "15. Strategic Partnerships",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/backlink-audit/competitor-analysis",
+        "/digital-pr",
+        "/blog/backlink-quality-checklist"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/essentials/spam-policies#link-spam"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-templates-and-scripts",
+      "url": "/blog/link-building-templates-and-scripts",
+      "title": "Link Building Templates: Outreach Emails, Scripts, and Swipe Files",
+      "topic": "strategy",
+      "words": 2121,
+      "description": "Ready-to-use link building templates including outreach emails, follow-up scripts, and proven frameworks. Customize for your campaigns.",
+      "headings": [
+        "How to Use These Templates",
+        "Guest Post Outreach Templates",
+        "Broken Link Building Templates",
+        "Resource Page Outreach Templates",
+        "Unlinked Mention Templates",
+        "Digital PR and Journalist Outreach Templates",
+        "Link Reclamation Templates",
+        "Skyscraper Technique Templates",
+        "Follow-Up Framework",
+        "Subject Line Best Practices",
+        "Template Tracking Spreadsheet",
+        "Frequently Asked Questions",
+        "Applying These Templates"
+      ],
+      "internalLinks": [
+        "/blog/most-effective-link-building-tactics",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 484,
+          "text": "Quality outreach typically achieves 8-12% response rates. If you're below 5%, improve personalization and targeting. Above 15% is excellent."
+        }
+      ]
+    },
+    {
+      "slug": "link-building-terminology-glossary",
+      "url": "/blog/link-building-terminology-glossary",
+      "title": "Link Building Terminology Glossary: 100+ Terms Every SEO Should Know",
+      "topic": "strategy",
+      "words": 2714,
+      "description": "The complete glossary of link building and backlink terminology. Understand every term, metric, and concept used in modern link building campaigns.",
+      "headings": [
+        "Understanding Link Building Language",
+        "Core Link Concepts",
+        "Link Types",
+        "Link Attributes and Elements",
+        "Authority Metrics",
+        "Link Building Tactics",
+        "Outreach Terms",
+        "Quality and Risk Terms",
+        "Google Terms",
+        "Analysis Terms",
+        "Performance Metrics",
+        "Technical Terms",
+        "Additional Industry Terms",
+        "Frequently Asked Questions",
+        "Using This Glossary"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-vs-content-marketing",
+      "url": "/blog/link-building-vs-content-marketing",
+      "title": "Link Building vs Content Marketing: Understanding the SEO Relationship",
+      "topic": "tactics",
+      "words": 2048,
+      "description": "Explore the relationship between link building and content marketing. Learn when to prioritize each strategy and how to integrate them effectively.",
+      "headings": [
+        "Understanding the Core Difference",
+        "The Relationship Between Links and Content",
+        "When to Prioritize Link Building",
+        "When to Prioritize Content Marketing",
+        "The Integrated Approach",
+        "Measuring Combined Impact",
+        "Resource Allocation: Finding Your Balance",
+        "Common Mistakes in Link Building vs Content Marketing",
+        "Illustrative Plan: An Integrated Approach",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 295,
+          "text": "- Content Marketing: 40%"
+        },
+        {
+          "line": 296,
+          "text": "- Link Building: 60%"
+        },
+        {
+          "line": 303,
+          "text": "- Content Marketing: 50%"
+        },
+        {
+          "line": 304,
+          "text": "- Link Building: 50%"
+        },
+        {
+          "line": 311,
+          "text": "- Content Marketing: 60%"
+        },
+        {
+          "line": 312,
+          "text": "- Link Building: 40%"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-with-digital-assets",
+      "url": "/blog/link-building-with-digital-assets",
+      "title": "Link Building with Digital Assets: Tools, Calculators, and Interactive Content",
+      "topic": "tactics",
+      "words": 1896,
+      "description": "How to build backlinks using digital assets like tools, calculators, widgets, and interactive content. Includes development ideas, promotion strategies, and ROI analysis.",
+      "headings": [
+        "What Are Digital Assets for Link Building?",
+        "Why Digital Assets Work for Link Building",
+        "Types of Digital Assets",
+        "Planning Your Digital Asset",
+        "Building for Links",
+        "Promotion Strategies",
+        "Measuring ROI",
+        "Choose an asset with a testable job",
+        "Frequently Asked Questions",
+        "Getting Started"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-content-for-link-building",
+        "/blog/how-to-build-links-with-data-studies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 385,
+          "text": "| **Year 1 ROI** | **~880%** |"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-with-linkedin",
+      "url": "/blog/link-building-with-linkedin",
+      "title": "Link Building With LinkedIn: Strategies That Actually Work",
+      "topic": "tactics",
+      "words": 1955,
+      "description": "How to use LinkedIn for link building. From profile optimization to content strategies to relationship building that generates quality backlinks.",
+      "headings": [
+        "Can You Really Build Links With LinkedIn?",
+        "LinkedIn Profile Optimization for Link Building",
+        "Content Strategies for Link Attraction",
+        "Relationship Building for Links",
+        "LinkedIn Outreach for Link Building",
+        "LinkedIn Groups for Link Building",
+        "LinkedIn for Digital PR",
+        "Measuring LinkedIn Link Building Success",
+        "Industry-Specific LinkedIn Strategies",
+        "Frequently Asked Questions",
+        "Building Your LinkedIn Link Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-with-twitter",
+        "/blog/link-building-with-reddit"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 78,
+          "text": "\"We just completed a survey of 500 marketers on AI adoption. Key finding: 67% have experimented with AI for content, but only 12% use it regularly. Full report coming next week.\""
+        }
+      ]
+    },
+    {
+      "slug": "link-building-with-quora",
+      "url": "/blog/link-building-with-quora",
+      "title": "Link Building With Quora: Expert Strategies for Traffic and Authority",
+      "topic": "tactics",
+      "words": 1882,
+      "description": "How to use Quora effectively for link building. Build authority, drive targeted traffic, and generate natural backlinks through expert Q&A participation.",
+      "headings": [
+        "Why Quora Matters for Link Building",
+        "Setting Up Your Quora Profile",
+        "Finding the Right Questions",
+        "Writing High-Quality Answers",
+        "Building Authority on Quora",
+        "Quora for Content Research",
+        "Measuring Quora Impact",
+        "Common Quora Mistakes",
+        "Advanced Quora Strategies",
+        "Quora vs. Other Q&A Platforms",
+        "Frequently Asked Questions",
+        "Building Your Quora Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-with-reddit",
+        "/blog/youtube-link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "link-building-with-reddit",
+      "url": "/blog/link-building-with-reddit",
+      "title": "Link Building With Reddit: Strategies That Won't Get You Banned",
+      "topic": "tactics",
+      "words": 1921,
+      "description": "How to use Reddit for link building without violating community rules. Build authority, drive traffic, and generate natural backlinks through Reddit.",
+      "headings": [
+        "The Reddit Link Building Reality",
+        "Understanding Reddit's Culture",
+        "Building Your Reddit Presence",
+        "Strategic Content Sharing",
+        "Indirect Link Building Through Reddit",
+        "Reddit for Link Opportunity Discovery",
+        "Subreddit-Specific Strategies",
+        "Measuring Reddit Impact",
+        "Common Reddit Mistakes",
+        "Frequently Asked Questions",
+        "Building Your Reddit Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-with-linkedin",
+        "/blog/link-building-with-twitter"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 129,
+          "text": "- HARO response rates have dropped 40%, but quality improved"
+        }
+      ]
+    },
+    {
+      "slug": "link-building-with-twitter",
+      "url": "/blog/link-building-with-twitter",
+      "title": "Link Building With Twitter (X): Tactics for Visibility and Backlinks",
+      "topic": "tactics",
+      "words": 1960,
+      "description": "How to leverage Twitter/X for link building. Build relationships with journalists, amplify content, and generate link opportunities through social engagement.",
+      "headings": [
+        "Twitter's Role in Link Building",
+        "Building Your Twitter Presence for Link Building",
+        "Journalist Relationships on Twitter",
+        "Content Amplification Strategy",
+        "Twitter for Real-Time Link Opportunities",
+        "Twitter Lists for Link Building",
+        "Twitter Ads for Content Amplification",
+        "Measuring Twitter Link Building Success",
+        "Platform Considerations",
+        "Frequently Asked Questions",
+        "Building Your Twitter Link Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-with-linkedin",
+        "/blog/link-building-with-reddit"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 62,
+          "text": "\"Just finished our annual State of Link Building report. Key stat: Average cost per quality link increased 27% in 2025. Full report drops next week.\""
+        },
+        {
+          "line": 139,
+          "text": "\"@Journalist I can help with this. I've managed email campaigns for 15+ SaaS companies, seeing 40% average improvement in deliverability. Happy to share specific tactics. DM me for details.\""
+        }
+      ]
+    },
+    {
+      "slug": "manual-outreach-vs-automated-tools",
+      "url": "/blog/manual-outreach-vs-automated-tools",
+      "title": "Manual Outreach vs Automated Tools: What Works Better for Link Building?",
+      "topic": "research",
+      "words": 1891,
+      "description": "Compare manual link building outreach with automated tools. Learn when to use each approach and how to balance efficiency with personalization.",
+      "headings": [
+        "Understanding the Spectrum",
+        "The Case for Manual Outreach",
+        "The Case for Automated Tools",
+        "Tools for Link Building Outreach",
+        "Hybrid Approach: Best of Both Worlds",
+        "Common Automation Mistakes",
+        "Building Your Outreach System",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 56,
+          "text": "- 20-40% higher open rates"
+        },
+        {
+          "line": 144,
+          "text": "Well-implemented automation can reduce per-prospect time by 60-80%, allowing focus on high-value activities."
+        },
+        {
+          "line": 250,
+          "text": "**Tier 1: High-Value Targets (20%)**"
+        },
+        {
+          "line": 256,
+          "text": "**Tier 2: Quality Targets (50%)**"
+        },
+        {
+          "line": 262,
+          "text": "**Tier 3: Volume Targets (30%)**"
+        },
+        {
+          "line": 411,
+          "text": "| Open Rate | 30-50% | Improve subject lines |"
+        },
+        {
+          "line": 412,
+          "text": "| Response Rate | 10-20% | Enhance personalization |"
+        },
+        {
+          "line": 413,
+          "text": "| Positive Response Rate | 5-10% | Improve value proposition |"
+        },
+        {
+          "line": 414,
+          "text": "| Link Conversion | 3-8% | Better prospect qualification |"
+        },
+        {
+          "line": 434,
+          "text": "Use tiered approaches. Deeply personalize high-value targets (10-20%). Use template-plus-customization for middle tier (50%). Accept lighter personalization for volume targets (30%). Tools like Respona can help with AI-assisted personalization."
+        }
+      ]
+    },
+    {
+      "slug": "measuring-link-building-roi",
+      "url": "/blog/measuring-link-building-roi",
+      "title": "Measuring Link Building ROI: Metrics, Attribution, and Reporting",
+      "topic": "strategy",
+      "words": 1780,
+      "description": "How to measure the ROI of link building campaigns. Learn which metrics matter, how to attribute results, and build reports that demonstrate value.",
+      "headings": [
+        "The Link Building Measurement Challenge",
+        "Understanding the Link Building Value Chain",
+        "Core Link Building Metrics",
+        "Calculating Link Building ROI",
+        "Building a Link Building Dashboard",
+        "Reporting to Stakeholders",
+        "Advanced Measurement Techniques",
+        "Common Measurement Mistakes",
+        "Frequently Asked Questions",
+        "Building Your Measurement System"
+      ],
+      "internalLinks": [
+        "/glossary/link-velocity",
+        "/glossary/trust-flow",
+        "/glossary/referring-domain",
+        "/glossary/dofollow-link",
+        "/glossary/nofollow-link",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/link-building-at-scale"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 65,
+          "text": "| High | 50+ | 10-20% |"
+        },
+        {
+          "line": 66,
+          "text": "| Medium | 30-49 | 30-40% |"
+        },
+        {
+          "line": 67,
+          "text": "| Low-Medium | 10-29 | 30-40% |"
+        },
+        {
+          "line": 68,
+          "text": "| Low | &lt;10 | 10-20% |"
+        },
+        {
+          "line": 136,
+          "text": "ROI: ($50,000 - $15,000) / $15,000 × 100 = 233%"
+        },
+        {
+          "line": 183,
+          "text": "$100,000 organic revenue growth × 40% attribution = $40,000 value"
+        },
+        {
+          "line": 294,
+          "text": "• Organic traffic grew 23% QoQ"
+        },
+        {
+          "line": 299,
+          "text": "ROI: 178%"
+        },
+        {
+          "line": 385,
+          "text": "**Example:** \"We built 100 links this month\" (from what sources?)."
+        },
+        {
+          "line": 393,
+          "text": "**Example:** \"Organic revenue grew 50%—thanks to our link building program.\""
+        }
+      ]
+    },
+    {
+      "slug": "most-effective-link-building-tactics",
+      "url": "/blog/most-effective-link-building-tactics",
+      "title": "Effective Link Building Tactics: Choose by Resources and Fit",
+      "topic": "strategy",
+      "words": 2130,
+      "description": "Compare link building tactics by the assets, expertise and editorial work they require. Choose a suitable approach and measure your own campaign outcomes.",
+      "headings": [
+        "What Makes a Link Building Tactic \"Effective\"?",
+        "Asset-led tactics",
+        "Relationship and outreach tactics",
+        "Context-specific opportunities",
+        "Approaches that need particular care",
+        "Tactics to Avoid",
+        "Choosing Your Tactics",
+        "Measuring Tactic Effectiveness",
+        "Frequently Asked Questions",
+        "Building Your Link Building Stack"
+      ],
+      "internalLinks": [
+        "/glossary/editorial-link",
+        "/blog/how-to-build-links-with-data-studies",
+        "/blog/how-to-get-backlinks-from-news-sites",
+        "/glossary/haro-link-building",
+        "/glossary/broken-link-building",
+        "/blog/how-to-use-content-for-link-building",
+        "/glossary/unlinked-mention",
+        "/glossary/resource-page-link-building",
+        "/glossary/expert-roundup",
+        "/blog/how-to-get-featured-in-roundups",
+        "/glossary/web-directory",
+        "/glossary/skyscraper-technique",
+        "/glossary/pbn",
+        "/glossary/sponsored-link",
+        "/glossary/reciprocal-link",
+        "/glossary/link-scheme",
+        "/glossary/citation-building",
+        "/glossary/local-link-building",
+        "/link-building",
+        "/blog/link-building-mistakes-to-avoid"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "moz-link-explorer-guide",
+      "url": "/blog/moz-link-explorer-guide",
+      "title": "Moz Link Explorer Guide: Check Backlinks and Find Opportunities",
+      "topic": "research",
+      "words": 1286,
+      "description": "Use Moz Link Explorer to review backlinks, compare domains and investigate missing links. Understand DA, PA and Spam Score without mistaking them for Google signals.",
+      "headings": [
+        "Start with the right URL scope",
+        "Read the key metrics in context",
+        "Review inbound links step by step",
+        "Find competitor opportunities without copying blindly",
+        "Investigate missing or lost links",
+        "Can Link Explorer find unlinked mentions or pageviews?",
+        "What should you do with Spam Score?",
+        "A monthly review you can repeat",
+        "Check a placement independently",
+        "What to read next",
+        "Sources"
+      ],
+      "internalLinks": [
+        "/glossary/domain-authority",
+        "/glossary/page-authority",
+        "/backlinks/referring-domains-vs-backlinks",
+        "/templates",
+        "/bundle",
+        "/outreach/prospecting",
+        "/backlink-audit/disavow-guide",
+        "/blog/verify-backlink-placement",
+        "/blog/backlinks-not-showing-google-search-console",
+        "/comparisons/ahrefs-vs-moz",
+        "/blog/best-free-backlink-checkers",
+        "/backlink-audit",
+        "/backlink-quality/authority-metrics"
+      ],
+      "externalSources": [
+        "https://support.google.com/webmasters/answer/9049606",
+        "https://moz.com/link-explorer",
+        "https://moz-static.s3.amazonaws.com/products/landing-pages/announcements/Guide_to_Domain_Authority_2.0.pdf",
+        "https://support.google.com/webmasters/answer/9049606"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "outreach-response-rate-optimization",
+      "url": "/blog/outreach-response-rate-optimization",
+      "title": "Outreach Response Rate Optimization: Data-Driven Techniques for Better Results",
+      "topic": "outreach",
+      "words": 1919,
+      "description": "Learn how to systematically improve your link building outreach response rates. Data-driven techniques for subject lines, messaging, timing, and more.",
+      "headings": [
+        "Why Response Rate Optimization Matters",
+        "Baseline: Understanding Your Current Performance",
+        "Subject Line Optimization",
+        "Email Body Optimization",
+        "Timing Optimization",
+        "Segment-Based Optimization",
+        "Systematic Testing Process",
+        "Common Optimization Opportunities",
+        "Advanced Optimization Techniques",
+        "Tools for Response Rate Optimization",
+        "Frequently Asked Questions",
+        "Building a Culture of Optimization"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 4,
+          "text": "A 2% response rate means you send 100 emails to get 2 responses—maybe 1 link. A 10% response rate means 10 responses from the same effort—potentially 5 links. Same work, 5x the results."
+        },
+        {
+          "line": 16,
+          "text": "- Benchmark: 40-60% for cold outreach"
+        },
+        {
+          "line": 22,
+          "text": "- Benchmark: 5-15% is average; 20%+ is good"
+        },
+        {
+          "line": 27,
+          "text": "- Typically 1-5% of total emails"
+        },
+        {
+          "line": 34,
+          "text": "- Benchmark: 40-60% of responses"
+        },
+        {
+          "line": 209,
+          "text": "| Monday | 50 | 4 | 8% |"
+        },
+        {
+          "line": 210,
+          "text": "| Tuesday | 50 | 7 | 14% |"
+        },
+        {
+          "line": 211,
+          "text": "| Wednesday | 50 | 6 | 12% |"
+        },
+        {
+          "line": 212,
+          "text": "| Thursday | 50 | 5 | 10% |"
+        },
+        {
+          "line": 213,
+          "text": "| Friday | 50 | 3 | 6% |"
+        },
+        {
+          "line": 346,
+          "text": "### Low Open Rates (&lt;40%)"
+        },
+        {
+          "line": 360,
+          "text": "### Low Response Rates (&lt;5%)"
+        },
+        {
+          "line": 374,
+          "text": "### Low Positive Response Rate (&lt;40% of responses)"
+        },
+        {
+          "line": 486,
+          "text": "- 5-10% is average for cold outreach"
+        },
+        {
+          "line": 487,
+          "text": "- 15-20% is good"
+        },
+        {
+          "line": 488,
+          "text": "- 25%+ is excellent"
+        }
+      ]
+    },
+    {
+      "slug": "paid-vs-organic-link-building",
+      "url": "/blog/paid-vs-organic-link-building",
+      "title": "Paid vs Organic Link Building: Complete Comparison Guide",
+      "topic": "strategy",
+      "words": 1943,
+      "description": "Understand the differences between paid and organic link building approaches. Learn when each makes sense, the risks involved, and how to build a sustainable link strategy.",
+      "headings": [
+        "The Paid vs Organic Debate",
+        "Defining the Approaches",
+        "The Risk Landscape",
+        "Detailed Comparison",
+        "When Paid Makes Sense",
+        "When Organic Is Essential",
+        "Hybrid Approaches",
+        "Making the Decision",
+        "Frequently Asked Questions",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-find-broken-links-for-link-building",
+        "/blog/link-building-strategies",
+        "/blog/white-label-link-building-guide"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 311,
+          "text": "**Foundation: 100% Organic**"
+        },
+        {
+          "line": 336,
+          "text": "- Content creation: 40%"
+        },
+        {
+          "line": 337,
+          "text": "- Tools and research: 15%"
+        },
+        {
+          "line": 338,
+          "text": "- Outreach support: 25%"
+        },
+        {
+          "line": 339,
+          "text": "- Sponsored placements: 20%"
+        }
+      ]
+    },
+    {
+      "slug": "parasite-seo-and-link-building",
+      "url": "/blog/parasite-seo-and-link-building",
+      "title": "Parasite SEO and Link Building: What You Need to Know in 2026",
+      "topic": "risk",
+      "words": 1604,
+      "description": "Understand parasite SEO, its connection to link building, the risks involved, and why this controversial tactic is facing increasing scrutiny from Google.",
+      "headings": [
+        "What Is Parasite SEO?",
+        "How Parasite SEO Relates to Link Building",
+        "Google's Position: Site Reputation Abuse",
+        "The Risk Landscape",
+        "Legitimate vs Manipulative Practices",
+        "What This Means for Your Link Building",
+        "Industry Implications",
+        "Frequently Asked Questions",
+        "Strategic Recommendations",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/link-building-strategies",
+        "/blog/white-label-link-building-guide"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "personalization-in-link-outreach",
+      "url": "/blog/personalization-in-link-outreach",
+      "title": "Personalization in Link Outreach: How to Stand Out in Crowded Inboxes",
+      "topic": "outreach",
+      "words": 1954,
+      "description": "Master the art of personalized link building outreach. Learn techniques that dramatically improve response rates and build lasting relationships.",
+      "headings": [
+        "Why Personalization Determines Outreach Success",
+        "The Psychology Behind Personalization",
+        "Levels of Personalization",
+        "Personalization Research Techniques",
+        "Where to Personalize",
+        "Templates as Starting Points",
+        "Scaling Personalization",
+        "Personalization Mistakes to Avoid",
+        "Personalization by Outreach Type",
+        "Measuring Personalization Effectiveness",
+        "Frequently Asked Questions",
+        "The Personalization Mindset"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 6,
+          "text": "The difference isn't subtle. Generic outreach typically achieves 1-3% response rates. Well-personalized outreach can reach 20-40%+. That's the difference between building one link per 100 emails and building 20-40."
+        },
+        {
+          "line": 377,
+          "text": "| Basic | 100 | 5 | 5% | 2 |"
+        },
+        {
+          "line": 378,
+          "text": "| Standard | 50 | 12 | 24% | 6 |"
+        },
+        {
+          "line": 379,
+          "text": "| Deep | 10 | 5 | 50% | 3 |"
+        }
+      ]
+    },
+    {
+      "slug": "preserve-backlinks-website-migration",
+      "url": "/blog/preserve-backlinks-website-migration",
+      "title": "How to Preserve Backlinks During a Website Migration",
+      "topic": "research",
+      "words": 1179,
+      "description": "Preserve backlinks during a website migration with an old-to-new URL map, redirect tests and a post-launch checklist. Prioritise useful destinations and real traffic.",
+      "headings": [
+        "Decide what is actually changing",
+        "Build a preservation inventory before launch",
+        "Map by reader intent, not a convenient pattern",
+        "Test from the old URL, through to the content",
+        "Make the new site’s signals agree",
+        "Keep ownership clear after launch",
+        "Use a post-launch incident queue",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/backlink-audit",
+        "/blog/backlinks-not-showing-google-search-console",
+        "/templates/backlink-migration-map.csv",
+        "/tools/crawlability-checker",
+        "/blog/verify-backlink-placement",
+        "/blog/how-to-audit-your-backlink-profile",
+        "/backlinks/internal-vs-external-links"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+        "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+        "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "proving-link-building-value-to-stakeholders",
+      "url": "/blog/proving-link-building-value-to-stakeholders",
+      "title": "Proving Link Building Value to Stakeholders: Build the Business Case",
+      "topic": "strategy",
+      "words": 1756,
+      "description": "Learn how to demonstrate link building ROI to executives, clients, and skeptics. Connect technical SEO metrics to business outcomes that matter.",
+      "headings": [
+        "The Stakeholder Challenge",
+        "Understanding Stakeholder Perspectives",
+        "Building the Business Case",
+        "Presenting to Different Audiences",
+        "Handling Common Objections",
+        "Building Ongoing Stakeholder Confidence",
+        "Metrics That Resonate",
+        "Creating Your Value Story",
+        "Frequently Asked Questions",
+        "The Long-Term Perspective"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 64,
+          "text": "Conversion rate: 2%"
+        },
+        {
+          "line": 66,
+          "text": "Lead-to-customer rate: 10%"
+        },
+        {
+          "line": 72,
+          "text": "Simple ROI: 525%"
+        }
+      ]
+    },
+    {
+      "slug": "quantity-vs-quality-backlinks",
+      "url": "/blog/quantity-vs-quality-backlinks",
+      "title": "Quantity vs Quality Backlinks: What Matters More for SEO?",
+      "topic": "fundamentals",
+      "words": 1887,
+      "description": "The definitive guide to the quantity vs quality debate in link building. Learn how to balance both factors and build a backlink profile that drives real results.",
+      "headings": [
+        "The Core Question",
+        "How Google Values Links",
+        "Defining Quality",
+        "The Case for Quality",
+        "The Case for Quantity",
+        "The Right Balance",
+        "Quality vs Quantity by Tactic",
+        "Measuring What Matters",
+        "Common Mistakes",
+        "Frequently Asked Questions",
+        "Action Plan",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-find-broken-links-for-link-building",
+        "/blog/link-building-strategies",
+        "/blog/most-effective-link-building-tactics"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 68,
+          "text": "**Domain Rating/Authority (30% weight):**"
+        },
+        {
+          "line": 74,
+          "text": "**Relevance (35% weight):**"
+        },
+        {
+          "line": 80,
+          "text": "**Editorial Nature (20% weight):**"
+        },
+        {
+          "line": 86,
+          "text": "**Link Placement (15% weight):**"
+        },
+        {
+          "line": 175,
+          "text": "| Premium (exceptional) | 10-15% | 60+ | High |"
+        },
+        {
+          "line": 176,
+          "text": "| Good (solid) | 30-40% | 40-59 | Medium |"
+        },
+        {
+          "line": 177,
+          "text": "| Acceptable (baseline) | 45-55% | 20-39 | Lower |"
+        },
+        {
+          "line": 178,
+          "text": "| Below floor | 0% | Under 20* | None |"
+        },
+        {
+          "line": 187,
+          "text": "- Quality emphasis: 60% volume, 40% quality"
+        },
+        {
+          "line": 192,
+          "text": "- Quality emphasis: 50% volume, 50% quality"
+        },
+        {
+          "line": 197,
+          "text": "- Quality emphasis: 40% volume, 60% quality"
+        },
+        {
+          "line": 257,
+          "text": "| Relevant link % | Relevance | 60%+ of profile |"
+        },
+        {
+          "line": 258,
+          "text": "| Link persistence rate | Quality | 80%+ retained yearly |"
+        }
+      ]
+    },
+    {
+      "slug": "semrush-link-building-features",
+      "url": "/blog/semrush-link-building-features",
+      "title": "SEMrush Link Building Features: Complete Guide and Tutorial",
+      "topic": "research",
+      "words": 1710,
+      "description": "Master SEMrush for link building. Backlink Analytics, Link Building Tool, Backlink Audit, and prospecting features explained with practical workflows.",
+      "headings": [
+        "SEMrush for Link Building: An Overview",
+        "Backlink Analytics: Understanding Your Profile",
+        "Competitor Backlink Analysis",
+        "Link Building Tool",
+        "Backlink Audit Tool",
+        "Additional Link Building Features",
+        "SEMrush Link Building Workflows",
+        "Prospecting Techniques in SEMrush",
+        "SEMrush vs. Ahrefs for Link Building",
+        "Pricing Considerations",
+        "Tips for Maximizing SEMrush",
+        "Frequently Asked Questions",
+        "Building Your SEMrush Workflow"
+      ],
+      "internalLinks": [
+        "/blog/ahrefs-for-link-building-tutorial",
+        "/blog/moz-link-explorer-guide"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 383,
+          "text": "No tool finds 100%. Connect Google Search Console for the most complete data. Cross-reference with other tools for important analyses."
+        }
+      ]
+    },
+    {
+      "slug": "tiered-link-building-strategy",
+      "url": "/blog/tiered-link-building-strategy",
+      "title": "Tiered Link Building Strategy: Advanced Link Architecture Explained",
+      "topic": "risk",
+      "words": 1796,
+      "description": "Learn how tiered link building works, when it makes sense, and how to implement it safely. Advanced strategy for building link authority at scale.",
+      "headings": [
+        "What Is Tiered Link Building?",
+        "Understanding the Theory",
+        "The Different Tiers Explained",
+        "When Tiered Link Building Makes Sense",
+        "Safe Tiered Link Building Practices",
+        "Implementing a Tiered Strategy",
+        "Alternative Perspective: Skip the Tiers",
+        "Tiered Link Building Risks",
+        "Modern Tiered Link Building",
+        "Frequently Asked Questions",
+        "Making Your Decision"
+      ],
+      "internalLinks": [
+        "/glossary/link-equity",
+        "/glossary/editorial-link",
+        "/glossary/haro-link-building",
+        "/glossary/link-scheme",
+        "/glossary/pbn",
+        "/glossary/dofollow-link",
+        "/glossary/nofollow-link",
+        "/glossary/linkable-asset",
+        "/glossary/broken-link-building",
+        "/glossary/resource-page-link-building",
+        "/digital-pr",
+        "/glossary/link-velocity",
+        "/blog/most-effective-link-building-tactics",
+        "/blog/link-building-at-scale"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "top-haro-alternatives-for-link-building",
+      "url": "/blog/top-haro-alternatives-for-link-building",
+      "title": "Top HARO Alternatives for Link Building: 12 Journalist Outreach Platforms",
+      "topic": "outreach",
+      "words": 2144,
+      "description": "Discover the best HARO alternatives for earning media backlinks in 2026. Compare journalist outreach platforms for PR and link building.",
+      "headings": [
+        "Why Look Beyond HARO?",
+        "The Best HARO Alternatives",
+        "Comparing HARO Alternatives",
+        "Building Your Media Outreach Stack",
+        "Maximizing Results Across Platforms",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "topical-authority-and-backlinks",
+      "url": "/blog/topical-authority-and-backlinks",
+      "title": "Topical Authority and Backlinks: How Links Build Subject Matter Expertise",
+      "topic": "fundamentals",
+      "words": 1872,
+      "description": "Learn how backlinks contribute to topical authority and why becoming an authority in your niche leads to better rankings and more natural link acquisition.",
+      "headings": [
+        "What Is Topical Authority?",
+        "The Relationship Between Backlinks and Topical Authority",
+        "Building Topical Authority Through Content",
+        "Link Building Strategies for Topical Authority",
+        "Measuring Topical Authority",
+        "Worked topical map: a specialist software site",
+        "Topical Authority and E-E-A-T",
+        "Common Mistakes in Building Topical Authority",
+        "The Long Game: Sustainable Authority",
+        "Frequently Asked Questions",
+        "Building Your Topical Authority Strategy"
+      ],
+      "internalLinks": [
+        "/blog/e-e-a-t-and-link-building",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "tracking-link-building-progress",
+      "url": "/blog/tracking-link-building-progress",
+      "title": "Tracking Link Building Progress: A Complete Measurement Guide",
+      "topic": "strategy",
+      "words": 1733,
+      "description": "Learn how to effectively track link building progress over time. Understand which metrics matter, how to measure them, and how to interpret your results.",
+      "headings": [
+        "Why Tracking Matters",
+        "The Tracking Framework",
+        "Activity Tracking",
+        "Output Tracking",
+        "Outcome Tracking",
+        "Tracking Tools and Systems",
+        "Interpreting Your Data",
+        "Reporting and Communication",
+        "Setting and Adjusting Goals",
+        "Tracking by Campaign Type",
+        "Frequently Asked Questions",
+        "Building Tracking Habits"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 62,
+          "text": "- Below 5%: Needs improvement"
+        },
+        {
+          "line": 63,
+          "text": "- 5-10%: Average"
+        },
+        {
+          "line": 64,
+          "text": "- 10-20%: Good"
+        },
+        {
+          "line": 65,
+          "text": "- 20%+: Excellent"
+        },
+        {
+          "line": 108,
+          "text": "| Premium | DA 60+ | 10-15% |"
+        },
+        {
+          "line": 109,
+          "text": "| High | DA 40-59 | 25-30% |"
+        },
+        {
+          "line": 110,
+          "text": "| Medium | DA 20-39 | 35-40% |"
+        },
+        {
+          "line": 111,
+          "text": "| Low | DA &lt;20 | 15-20% |"
+        },
+        {
+          "line": 179,
+          "text": "Losing 5-10% of links annually is normal. Higher rates warrant investigation."
+        },
+        {
+          "line": 279,
+          "text": "| Jan | 200 | 24 | 12% | 12 | 42 | 15 | Behind |"
+        },
+        {
+          "line": 392,
+          "text": "- 10-20% pitch acceptance typical"
+        },
+        {
+          "line": 404,
+          "text": "- 5-15% conversion rate typical"
+        },
+        {
+          "line": 428,
+          "text": "- 5-10% conversion rate typical"
+        }
+      ]
+    },
+    {
+      "slug": "types-of-backlinks-complete-list",
+      "url": "/blog/types-of-backlinks-complete-list",
+      "title": "Types of Backlinks: Complete Guide to Every Link Type (2026)",
+      "topic": "fundamentals",
+      "words": 2076,
+      "description": "Comprehensive guide to all types of backlinks—from dofollow to nofollow, editorial to directory, and everything in between. Learn which links matter most for SEO.",
+      "headings": [
+        "Understanding Backlink Types",
+        "By Link Attribute: Follow vs. Nofollow",
+        "By Link Placement",
+        "By Link Source",
+        "By Relationship Type",
+        "By Link Location Target",
+        "By Acquisition Method",
+        "Specialty Link Types",
+        "Link Value Quick Reference",
+        "Building a Healthy Link Profile",
+        "Frequently Asked Questions",
+        "Applying This Knowledge"
+      ],
+      "internalLinks": [
+        "/glossary/backlink",
+        "/glossary/link-profile",
+        "/link-building",
+        "/glossary/dofollow-link",
+        "/glossary/link-equity",
+        "/glossary/nofollow-link",
+        "/glossary/sponsored-link",
+        "/glossary/ugc-link",
+        "/glossary/ugc-link",
+        "/glossary/contextual-link",
+        "/glossary/sidebar-link",
+        "/glossary/footer-link",
+        "/glossary/editorial-link",
+        "/glossary/web-directory",
+        "/glossary/business-directory",
+        "/glossary/citation-building",
+        "/glossary/guest-blogging",
+        "/glossary/resource-page-link-building",
+        "/glossary/reciprocal-link",
+        "/glossary/three-way-link-exchange",
+        "/glossary/deep-link",
+        "/glossary/broken-link-building",
+        "/glossary/niche-edit",
+        "/glossary/link-insertion",
+        "/glossary/skyscraper-technique",
+        "/glossary/haro-link-building",
+        "/glossary/citation-building",
+        "/glossary/nap-consistency",
+        "/glossary/link-profile",
+        "/blog/link-building-strategies",
+        "/blog/most-effective-link-building-tactics"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "understanding-link-relevance",
+      "url": "/blog/understanding-link-relevance",
+      "title": "Understanding Link Relevance: Why Topic Alignment Matters for SEO",
+      "topic": "fundamentals",
+      "words": 2004,
+      "description": "Deep dive into link relevance and why topically aligned backlinks outperform random high-authority links. Learn to evaluate and build relevant links.",
+      "headings": [
+        "What Is Link Relevance?",
+        "Why Relevance Matters More Than Ever",
+        "The Three Levels of Relevance",
+        "Relevance vs. Authority: Finding Balance",
+        "How to Evaluate Link Relevance",
+        "Building Relevant Links",
+        "Relevance and Anchor Text",
+        "Measuring Relevance Impact",
+        "Common Relevance Mistakes",
+        "Frequently Asked Questions",
+        "The Relevance Imperative"
+      ],
+      "internalLinks": [
+        "/blog/what-makes-a-high-quality-backlink",
+        "/blog/link-building-strategies"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 249,
+          "text": "**Benchmark:** Aim for 50%+ of links to be highly relevant to your primary topics."
+        }
+      ]
+    },
+    {
+      "slug": "verify-backlink-placement",
+      "url": "/blog/verify-backlink-placement",
+      "title": "How to Verify a Backlink Placement Before You Count It",
+      "topic": "research",
+      "words": 1230,
+      "description": "Verify a backlink placement with a practical checklist for source access, target URLs, anchors, rel attributes and redirects. Record evidence before counting a link.",
+      "headings": [
+        "Agree on what “complete” means",
+        "Open the exact source page",
+        "Inspect the actual destination",
+        "Read rel attributes without inventing a score",
+        "Check relevance and the reader’s next step",
+        "Save a reproducible record",
+        "Decide when to recheck",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/backlink-quality",
+        "/templates/backlink-placement-check.csv",
+        "/tools/live-backlink-checker",
+        "/tools/broken-link-finder",
+        "/resources/backlink-database-guide",
+        "/bundle",
+        "/blog/backlinks-not-showing-google-search-console",
+        "/blog/preserve-backlinks-website-migration",
+        "/blog/backlink-reporting-for-clients",
+        "/backlink-audit"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+        "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+        "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "what-are-backlinks",
+      "url": "/blog/what-are-backlinks",
+      "title": "What Are Backlinks? The Complete Beginner's Guide for 2026",
+      "topic": "fundamentals",
+      "words": 757,
+      "description": "Learn everything about backlinks: what they are, why they matter for SEO, and how to start building quality links to your website.",
+      "headings": [
+        "What Is a Backlink?",
+        "Why Do Backlinks Matter for SEO?",
+        "What Makes a Good Backlink?",
+        "How to Start Building Backlinks",
+        "Common Backlink Mistakes to Avoid",
+        "Conclusion"
+      ],
+      "internalLinks": [
+        "/glossary/backlink",
+        "/blog/dofollow-vs-nofollow",
+        "/blog/domain-authority-explained",
+        "/backlinks"
+      ],
+      "externalSources": [
+        "https://developers.google.com/search/docs/fundamentals/how-search-works",
+        "https://developers.google.com/search/docs/essentials/spam-policies#link-spam"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "what-makes-a-high-quality-backlink",
+      "url": "/blog/what-makes-a-high-quality-backlink",
+      "title": "What Makes a High-Quality Backlink? The Complete Breakdown",
+      "topic": "fundamentals",
+      "words": 2202,
+      "description": "Learn exactly what makes a backlink valuable for SEO. Authority, relevance, placement, anchor text, and more factors that determine link quality.",
+      "headings": [
+        "Why Backlink Quality Matters More Than Ever",
+        "Factor 1: Authority of the Linking Domain",
+        "Factor 2: Topical Relevance",
+        "Factor 3: Link Placement and Context",
+        "Factor 4: Anchor Text",
+        "Factor 5: Dofollow vs. Nofollow",
+        "Factor 6: Traffic and Engagement",
+        "Factor 7: Content Quality of the Linking Page",
+        "Factor 8: Link Uniqueness and First-Link Advantage",
+        "Factor 9: Link Freshness and Stability",
+        "Factor 10: Editorial vs. Non-Editorial Links",
+        "Putting It All Together: The Quality Checklist",
+        "Frequently Asked Questions",
+        "Quality Is the Foundation"
+      ],
+      "internalLinks": [
+        "/backlink-audit/",
+        "/glossary/domain-authority",
+        "/glossary/anchor-text",
+        "/glossary/referring-domain",
+        "/digital-pr/",
+        "/blog/link-building-strategies",
+        "/blog/backlink-quality-checklist"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 313,
+          "text": "| Domain Authority | 20% | |"
+        },
+        {
+          "line": 314,
+          "text": "| Topical Relevance | 25% | |"
+        },
+        {
+          "line": 315,
+          "text": "| Traffic | 15% | |"
+        },
+        {
+          "line": 316,
+          "text": "| Content Quality | 15% | |"
+        },
+        {
+          "line": 317,
+          "text": "| Placement/Context | 15% | |"
+        },
+        {
+          "line": 318,
+          "text": "| Editorial Standards | 10% | |"
+        },
+        {
+          "line": 319,
+          "text": "| **Total** | 100% | |"
+        }
+      ]
+    },
+    {
+      "slug": "when-to-disavow-backlinks",
+      "url": "/blog/when-to-disavow-backlinks",
+      "title": "When to Disavow Backlinks: The Complete Decision Guide",
+      "topic": "risk",
+      "words": 1907,
+      "description": "Learn exactly when you should (and shouldn't) use Google's disavow tool. Includes decision framework, step-by-step process, and common mistakes to avoid.",
+      "headings": [
+        "The Disavow Dilemma",
+        "What the Disavow Tool Does",
+        "When You SHOULD Disavow",
+        "When You Should NOT Disavow",
+        "The Decision Framework",
+        "How to Execute a Disavow",
+        "Common Disavow Mistakes",
+        "Post-Disavow Monitoring",
+        "Frequently Asked Questions",
+        "The Bottom Line"
+      ],
+      "internalLinks": [
+        "/blog/how-to-remove-toxic-backlinks",
+        "/blog/how-to-recover-from-google-penalty"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 78,
+          "text": "This is more nuanced. Correlation isn't causation—ranking drops have many causes. However, if toxic link percentage is high (20%+), cleanup can help."
+        },
+        {
+          "line": 101,
+          "text": "Disavowing legitimate links removes value they might provide. One SEO accidentally disavowed 50% of their links based on low spam scores and lost significant rankings."
+        },
+        {
+          "line": 177,
+          "text": "**Below 10% toxic:** Probably not causing problems. Monitor but don't disavow."
+        },
+        {
+          "line": 179,
+          "text": "**10-25% toxic:** Consider targeted disavow of clearly problematic links."
+        },
+        {
+          "line": 181,
+          "text": "**Above 25% toxic:** Disavow is likely warranted."
+        }
+      ]
+    },
+    {
+      "slug": "white-label-link-building-guide",
+      "url": "/blog/white-label-link-building-guide",
+      "title": "White Label Link Building Guide: A Complete Agency Resource",
+      "topic": "strategy",
+      "words": 1913,
+      "description": "Master white label link building for agencies. Learn how to offer link building services to clients without building in-house capabilities.",
+      "headings": [
+        "What Is White Label Link Building?",
+        "Benefits of White Label Link Building",
+        "Types of White Label Link Building Services",
+        "Selecting a White Label Provider",
+        "Pricing Your White Label Services",
+        "Managing Client Expectations",
+        "Building Long-Term Provider Relationships",
+        "Risk Management",
+        "Scaling White Label Operations",
+        "Conclusion",
+        "FAQ"
+      ],
+      "internalLinks": [],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 226,
+          "text": "Most agencies mark up white label services 50-150%:"
+        },
+        {
+          "line": 243,
+          "text": "Your markup: 75%"
+        },
+        {
+          "line": 468,
+          "text": "Standard markups range from 50-150% depending on your brand positioning and added services. A link costing $200 from provider might be sold for $350-500 to clients. Added services like strategy and custom reporting justify higher margins."
+        }
+      ]
+    },
+    {
+      "slug": "why-your-link-building-isnt-working",
+      "url": "/blog/why-your-link-building-isnt-working",
+      "title": "Why Your Link Building Isn't Working: 15 Common Problems and How to Fix Them",
+      "topic": "strategy",
+      "words": 2209,
+      "description": "If your link building efforts aren't producing results, you're probably making one of these 15 common mistakes. Learn how to diagnose and fix your link building strategy.",
+      "headings": [
+        "When Link Building Fails",
+        "Content Problems",
+        "Outreach Problems",
+        "Strategy Problems",
+        "Technical and Measurement Problems",
+        "Mindset and Process Problems",
+        "Diagnosing Your Specific Problem",
+        "Frequently Asked Questions",
+        "Taking Action"
+      ],
+      "internalLinks": [
+        "/blog/how-to-use-haro-for-link-building",
+        "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+        "/blog/how-to-find-broken-links-for-link-building",
+        "/glossary/referring-domain",
+        "/blog/dofollow-vs-nofollow",
+        "/blog/link-building-strategies",
+        "/blog/link-building-mistakes-to-avoid"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 85,
+          "text": "- Response rates below 5%"
+        },
+        {
+          "line": 167,
+          "text": "Studies show 50%+ of positive responses come from follow-ups, not initial emails."
+        },
+        {
+          "line": 215,
+          "text": "| [HARO/PR](/blog/how-to-use-haro-for-link-building) | 25% | High-authority links |"
+        },
+        {
+          "line": 216,
+          "text": "| [Guest posting](/blog/how-to-write-guest-post-pitches-that-get-accepted) | 25% | Consistent volume |"
+        },
+        {
+          "line": 217,
+          "text": "| [Broken link building](/blog/how-to-find-broken-links-for-link-building) | 15% | Opportunistic wins |"
+        },
+        {
+          "line": 218,
+          "text": "| Resource pages | 15% | Relevance-focused |"
+        },
+        {
+          "line": 219,
+          "text": "| Digital PR/research | 20% | Passive earning |"
+        },
+        {
+          "line": 221,
+          "text": "No single tactic should exceed 40% of your link profile."
+        },
+        {
+          "line": 388,
+          "text": "- [ ] Is my response rate above 10%?"
+        },
+        {
+          "line": 420,
+          "text": "Quality campaigns achieve 15-30% response rates and 5-15% placement rates. Below 5% response indicates outreach quality issues."
+        }
+      ]
+    },
+    {
+      "slug": "youtube-link-building-strategies",
+      "url": "/blog/youtube-link-building-strategies",
+      "title": "YouTube Link Building Strategies: How Video Content Earns Backlinks",
+      "topic": "tactics",
+      "words": 1871,
+      "description": "Complete guide to building backlinks through YouTube. Create linkable video content, optimize for discovery, and convert video views into website links.",
+      "headings": [
+        "Why YouTube for Link Building?",
+        "Creating Linkable Video Content",
+        "YouTube Channel Optimization",
+        "Strategies for Generating Links",
+        "Promoting Videos for Link Generation",
+        "Measuring YouTube Link Building Success",
+        "YouTube Types and Link Potential",
+        "Technical Optimization",
+        "Frequently Asked Questions",
+        "Building Your YouTube Link Strategy"
+      ],
+      "internalLinks": [
+        "/blog/link-building-with-linkedin",
+        "/blog/how-to-use-content-for-link-building"
+      ],
+      "externalSources": [],
+      "claimReviewCandidates": [
+        {
+          "line": 151,
+          "text": "**Success rate:** Expect 5-15% response rate for genuinely relevant outreach."
+        }
+      ]
+    },
+    {
+      "slug": "zero-to-dr50-link-building-journey",
+      "url": "/blog/zero-to-dr50-link-building-journey",
+      "title": "Growing Domain Rating: Measure Progress Beyond DR 50",
+      "topic": "strategy",
+      "words": 781,
+      "description": "Understand what Domain Rating measures, build a useful baseline and evaluate link building progress without treating DR 50 as a ranking or revenue guarantee.",
+      "headings": [
+        "What does reaching DR 50 actually tell you?",
+        "Set a business baseline before a metric target",
+        "Compare relevant competitors carefully",
+        "Build a repeatable improvement cycle",
+        "Read changes without overstating causation",
+        "Review monthly, investigate meaningful changes",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/backlinks",
+        "/backlink-quality",
+        "/comparisons/ahrefs-vs-moz",
+        "/tools/backlink-gap",
+        "/blog/preserve-backlinks-website-migration",
+        "/blog/verify-backlink-placement",
+        "/blog/backlinks-not-showing-google-search-console",
+        "/blog/moz-link-explorer-guide",
+        "/link-building",
+        "/blog/verify-backlink-placement"
+      ],
+      "externalSources": [
+        "https://ahrefs.com/website-authority-checker"
+      ],
+      "claimReviewCandidates": []
+    }
+  ]
+}

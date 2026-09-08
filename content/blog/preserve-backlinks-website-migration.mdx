@@ -1,0 +1,113 @@
+---
+title: "How to Preserve Backlinks During a Website Migration"
+metaTitle: "Preserve Backlinks During a Website Migration: Guide"
+description: "Build an old-to-new URL map, test important redirects and catch lost destinations before launch. A practical backlink preservation checklist for website migrations."
+metaDescription: "Preserve backlinks during a website migration with an old-to-new URL map, redirect tests and a post-launch checklist. Prioritise useful destinations and real traffic."
+date: "2026-09-09"
+lastUpdated: "2026-09-09"
+author: "BacklinkGrid Editorial Team"
+keywords: ["preserve backlinks website migration", "backlink redirects", "website migration checklist"]
+relatedSlugs: ["verify-backlink-placement", "backlinks-not-showing-google-search-console", "how-to-audit-your-backlink-profile"]
+---
+
+To preserve backlinks during a website migration, preserve the reader’s destination first. Inventory old URLs, decide which new page replaces each one, implement appropriate redirects, and test the result from the old address. A spreadsheet marked “redirect configured” is not evidence that a real request reaches the right content.
+
+This guide covers the backlink portion of a migration. It complements your [backlink audit](/backlink-audit), deployment checks and analytics validation. It does not promise stable rankings throughout a move or substitute for a complete migration plan.
+
+## Decide what is actually changing
+
+A visual redesign can keep every public URL intact. A CMS change can preserve paths while changing how they are served. A domain move changes the hostname even when the path stays the same. List these separately before you build redirect rules.
+
+| Change | Backlink preservation concern |
+|---|---|
+| Design only, same URLs | Existing destinations must still return the intended content |
+| New URL structure | Old paths need relevant replacements or an intentional removal decision |
+| New domain | Old hosting, domain ownership and redirects need an explicit owner |
+| Content consolidation | Several old pages may have different reader needs despite similar keywords |
+| Product retirement | The closest replacement must genuinely help the visitor |
+
+Do not combine unrelated changes merely because you already have a deployment window. Separating decisions makes it easier to identify the cause of a problem and roll back the relevant component.
+
+## Build a preservation inventory before launch
+
+Start with the current sitemap and a crawl of your own site. Add URLs from analytics, Search Console exports and any available backlink reports. Include downloadable files and old campaign URLs when people still use them. Different sources will contain different parts of the inventory.
+
+A backlink provider’s absence is not a sufficient reason to delete a page. A URL may matter because it receives referrals, has customers’ bookmarks, or supports a useful task. For missing GSC data, see the [report troubleshooting workflow](/blog/backlinks-not-showing-google-search-console).
+
+Create one row per old destination, rather than one row per backlink. Keep the individual referring pages in a separate sheet linked by destination. This makes a mapping decision reusable across several publishers without losing the evidence for each source.
+
+Recommended columns:
+
+- Old URL and observed response status.
+- Page purpose in one sentence.
+- Relevant referring pages and referral traffic, when available.
+- Proposed new URL or intentional removal.
+- Reason the replacement meets the same reader need.
+- Redirect test result, final status and test date.
+- Owner, outstanding issue and approval state.
+
+[Download the migration mapping worksheet](/templates/backlink-migration-map.csv). Its rows are illustrative, not a completed migration assessment.
+
+## Map by reader intent, not a convenient pattern
+
+Consider an old article about exporting invoice data. Redirecting it to a generic software homepage keeps visitors on the domain but removes the answer they came for. A relevant export guide, with working instructions for the current product, is a stronger destination.
+
+When no equivalent exists, decide whether to retain the original resource, create a useful replacement, or remove it intentionally. Do not route every retired page to a homepage merely to avoid 404 responses. Google specifically cautions against irrelevant mass redirects in its [site-move guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
+
+**Illustrative mapping:**
+
+| Old page | Proposed action | Acceptance check |
+|---|---|---|
+| `/blog/invoice-export` | Redirect to `/guides/export-invoices` | The destination explains the same task |
+| `/downloads/setup.pdf` | Keep the file or redirect to the replacement document | Existing installation instructions remain accessible |
+| `/events/old-meetup` | Retain an archive or intentionally remove | The decision matches the historical value of the page |
+| `/product/retired-model` | Use a relevant replacement only if one exists | The visitor can identify what changed and what to do |
+
+Document exceptions before someone applies a broad pattern across the entire site.
+
+## Test from the old URL, through to the content
+
+For a permanent move, Google recommends a permanent server-side redirect where possible. A redirect response and a final 200 response answer only part of the test: the final page must also contain the intended material. [Google’s redirect documentation](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+
+Use a browser and a header check for important examples:
+
+```bash
+curl -sS -I https://old.example.com/blog/invoice-export
+curl -sS -L -o /dev/null -w '%{http_code} %{url_effective}\n' https://old.example.com/blog/invoice-export
+```
+
+Replace the example address with a URL you control. The first command asks for headers; some servers handle HEAD differently from GET, so investigate disagreements rather than assuming the browser is wrong. The second follows the request to its final destination. Neither command establishes content quality or Google indexing.
+
+Test query parameters, trailing slashes, uppercase variants you actually used, HTTP-to-HTTPS handling and both old hostname variants. Do not generate imaginary variations just to increase your test count. Use real historical URLs and representative routing patterns.
+
+## Make the new site’s signals agree
+
+Check that internal links use the preferred new addresses. Review canonical declarations and sitemap entries together. A destination that returns 200 while telling search engines to consolidate elsewhere needs investigation. So does a production page that retained a staging `noindex` directive.
+
+The [crawlability checker](/tools/crawlability-checker) can catch some of these issues in a small sample. For a migration, use your full URL inventory as the acceptance list; a twelve-page sample is not proof that thousands of redirects work.
+
+Also test the experience beyond the article. Does the primary call to action still work? Can a reader find related documentation? Does the new page preserve an important downloadable file? Preserving links while breaking the task they support is a poor commercial outcome.
+
+## Keep ownership clear after launch
+
+Assign responsibility for the old domain, TLS certificate, hosting or redirect service, and renewal dates. A redirect disappears if the infrastructure serving it disappears. Include these items in the handover to whoever maintains the website.
+
+Google advises keeping redirects for as long as possible, generally at least a year. It also recommends updating important external and internal links to point directly to new destinations. [Post-move guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+Prioritise publisher requests by usefulness: active referral sources, frequently visited guides, integrations and customer-facing resources. Explain the move briefly and provide the exact replacement. Do not request unrelated anchor changes as part of routine maintenance.
+
+## Use a post-launch incident queue
+
+Compare old destination tests with current observations. Classify problems so that each one has a clear owner:
+
+- **Missing redirect:** engineering or hosting configuration.
+- **Wrong replacement:** content owner and migration lead.
+- **Blocked or noindexed destination:** technical SEO review.
+- **Publisher still using the old URL:** outreach, after the redirect is verified.
+- **Report counts changed without a live problem:** investigate reporting scope before treating it as loss.
+
+Save the date and evidence for each fix, then recheck the original failing URL. Track referrals and conversions as well as search visibility. A successful move preserves useful journeys; no single authority score can certify that outcome.
+
+## What to read next
+
+Read [placement verification](/blog/verify-backlink-placement) for a source-to-destination check, the [backlink audit walkthrough](/blog/how-to-audit-your-backlink-profile) for inventory context, and [internal versus external links](/backlinks/internal-vs-external-links) for the relationships you need to preserve.

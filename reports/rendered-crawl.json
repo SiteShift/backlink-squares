@@ -1,47 +1,47 @@
 {
-  "pages": 368,
+  "pages": 371,
   "failures": [],
   "brokenLinks": [],
   "largest": [
     {
-      "url": "https://backlinkgrid.com/blog",
-      "bytes": 447646
-    },
-    {
       "url": "https://backlinkgrid.com/resources/competitor-analysis-template",
-      "bytes": 329719
-    },
-    {
-      "url": "https://backlinkgrid.com/blog/best-guest-posting-sites-2026",
-      "bytes": 329653
+      "bytes": 364368
     },
     {
       "url": "https://backlinkgrid.com/resources/link-building-spreadsheet-templates",
-      "bytes": 302853
-    },
-    {
-      "url": "https://backlinkgrid.com",
-      "bytes": 294292
-    },
-    {
-      "url": "https://backlinkgrid.com/strategies",
-      "bytes": 282867
-    },
-    {
-      "url": "https://backlinkgrid.com/resources",
-      "bytes": 282495
+      "bytes": 325672
     },
     {
       "url": "https://backlinkgrid.com/resources/backlink-audit-template",
-      "bytes": 279375
+      "bytes": 300847
     },
     {
       "url": "https://backlinkgrid.com/resources/link-building-tools-comparison",
-      "bytes": 276898
+      "bytes": 295216
+    },
+    {
+      "url": "https://backlinkgrid.com",
+      "bytes": 294266
     },
     {
       "url": "https://backlinkgrid.com/comparisons/pitchbox-alternatives",
-      "bytes": 275105
+      "bytes": 290216
+    },
+    {
+      "url": "https://backlinkgrid.com/strategies",
+      "bytes": 289283
+    },
+    {
+      "url": "https://backlinkgrid.com/resources",
+      "bytes": 283325
+    },
+    {
+      "url": "https://backlinkgrid.com/comparisons/buzzstream-alternatives",
+      "bytes": 277602
+    },
+    {
+      "url": "https://backlinkgrid.com/comparisons",
+      "bytes": 270342
     }
   ],
   "unreachableFromHomepage": []

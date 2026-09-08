@@ -108,9 +108,9 @@ export function getMDXComponents(components: MDXComponents): MDXComponents {
     ),
     // Custom table with overflow handling
     table: ({ children, ...props }) => (
-      <div className="overflow-x-auto my-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+      <div role="region" aria-label="Scrollable data table" tabIndex={0} className="overflow-x-auto my-6 max-w-full">
         <table
-          className="min-w-full border-collapse border-2 border-dark text-sm"
+          className="w-full min-w-[560px] border-collapse border-2 border-dark text-sm"
           {...props}
         >
           {children}
@@ -119,7 +119,7 @@ export function getMDXComponents(components: MDXComponents): MDXComponents {
     ),
     th: ({ children, ...props }) => (
       <th
-        className="bg-bauhaus-cream border-2 border-dark px-4 py-2 text-left font-bold text-dark"
+        className="min-w-[140px] bg-bauhaus-cream border-2 border-dark px-4 py-2 text-left align-top font-bold text-dark"
         {...props}
       >
         {children}
@@ -127,7 +127,7 @@ export function getMDXComponents(components: MDXComponents): MDXComponents {
     ),
     td: ({ children, ...props }) => (
       <td
-        className="border-2 border-dark px-4 py-2 text-dark/80"
+        className="min-w-[140px] border-2 border-dark px-4 py-2 align-top text-dark/80"
         {...props}
       >
         {children}

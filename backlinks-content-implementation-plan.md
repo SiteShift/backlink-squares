@@ -3436,3 +3436,15 @@ The operative release plan is `seo-implementation-plan.md`; it supersedes specul
 - [x] Reproducible inventory and rendered crawl scripts added under `scripts/`, with reports under `reports/`.
 
 Inventory: 336 MDX files after one consolidation and one new guide. This is not a claim that every historical word-count target or every speculative future service has been implemented. The site sells directory placements and a research database, not managed SEO services. No fabricated service pages or staff biographies were created to satisfy the original outline.
+
+## Blog topical audit and maintenance gaps — completed 9 September 2026
+
+- [x] Full-source map of all 104 existing blogs, grouped by reader task and linked to existing hubs. Final inventory: 107 blogs in `reports/blog-map-audit.json`.
+- [x] Publish three focused guides: missing GSC backlinks, placement verification and preserving backlinks during migrations.
+- [x] Add two practical CSV worksheets, listed on the templates page with contextual bundle links.
+- [x] Replace unsupported Google update, campaign-result, agency-ranking and guest-post verification claims; correct embedded examples and unsupported metric ratios.
+- [x] Improve archive topic navigation and related-post relevance while retaining server-rendered links to every article.
+- [x] Correct older checker launcher claims and sponsored-placement sales copy; update changed sitemap dates and llms.txt.
+- [x] Production build, lint, regression suites, 371-page crawl, Markdown/private-download checks and desktop/mobile browser verification passed.
+
+Detailed decisions, source limitations, GSC priorities and measurement guidance: `reports/blog-topical-audit.md`. These checks do not establish actual Google indexing or guarantee ranking/revenue changes.

@@ -499,7 +499,7 @@ export default function ROICalculatorPage() {
 
                 <ul className="space-y-3 mb-6">
                   {[
-                    'Permanent dofollow backlink',
+                    'Permanent sponsored backlink',
                     'Instant activation',
                     'Your logo displayed on grid',
                     'No monthly fees'
@@ -538,10 +538,10 @@ export default function ROICalculatorPage() {
 
                 <ul className="space-y-3 mb-6">
                   {[
-                    '270+ verified backlink sites',
-                    'High DR dofollow opportunities',
+                    '276 backlink research opportunities',
+                    'Recorded costs and submission links',
                     'Direct submission URLs',
-                    'Save 20+ hours of research'
+                    'Start with a ready-made research list'
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-white/80">
                       <CheckCircle2 className="w-5 h-5 text-brand-yellow flex-shrink-0" />

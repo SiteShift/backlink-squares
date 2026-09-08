@@ -2,7 +2,7 @@
   {
     "file": "content/backlink-audit/_index.mdx",
     "url": "/backlink-audit",
-    "words": 1648,
+    "words": 1690,
     "title": "Backlink Audit: The Complete Guide to Analysing Your Link Profile",
     "metaTitle": "Backlink Audit: Complete Guide to Link Profile Analysis [2026]",
     "metaDescription": "Learn how to audit your backlinks effectively. Comprehensive guide to analysing link quality, identifying toxic links, and improving your link profile."
@@ -248,6 +248,14 @@
     "title": "Backlink Reporting for Clients: How to Communicate Link Building Value"
   },
   {
+    "file": "content/blog/backlinks-not-showing-google-search-console.mdx",
+    "url": "/blog/backlinks-not-showing-google-search-console",
+    "words": 1222,
+    "title": "Backlinks Not Showing in Google Search Console?",
+    "metaTitle": "Backlinks Not Showing in Google Search Console? Fixes",
+    "metaDescription": "Backlinks missing from Google Search Console? Check report limits, source pages, canonical URLs and indexing with a practical, evidence-led troubleshooting workflow."
+  },
+  {
     "file": "content/blog/becoming-a-cited-source-in-your-industry.mdx",
     "url": "/blog/becoming-a-cited-source-in-your-industry",
     "words": 1773,
@@ -264,16 +272,14 @@
   {
     "file": "content/blog/best-guest-posting-sites-2026.mdx",
     "url": "/blog/best-guest-posting-sites-2026",
-    "words": 3761,
-    "title": "67 Best Guest Posting Sites That Actually Accept Posts in 2026 (With DA & Guidelines)",
-    "metaTitle": "67 Best Guest Posting Sites Accepting Posts in 2026 [Updated Monthly]",
-    "metaDescription": "Find guest posting sites by niche with DA scores, submission links, and success tips. Updated for 2026 with 67+ verified opportunities across 10 industries."
+    "words": 993,
+    "title": "Guest Posting Sites: Find and Qualify Editorial Opportunities"
   },
   {
     "file": "content/blog/best-link-building-agencies.mdx",
     "url": "/blog/best-link-building-agencies",
-    "words": 2367,
-    "title": "Best Link Building Agencies 2026: Top 15 Services Reviewed"
+    "words": 872,
+    "title": "Best Link Building Agency for You: A Due Diligence Guide"
   },
   {
     "file": "content/blog/best-link-building-tools-2026.mdx",
@@ -290,7 +296,7 @@
   {
     "file": "content/blog/building-links-to-boring-industries.mdx",
     "url": "/blog/building-links-to-boring-industries",
-    "words": 1797,
+    "words": 1752,
     "title": "Building Links to Boring Industries: Creative Strategies That Work"
   },
   {
@@ -362,19 +368,19 @@
   {
     "file": "content/blog/future-of-link-building.mdx",
     "url": "/blog/future-of-link-building",
-    "words": 1982,
+    "words": 1974,
     "title": "The Future of Link Building: Trends, Predictions, and What's Next"
   },
   {
     "file": "content/blog/google-link-spam-update-2026.mdx",
     "url": "/blog/google-link-spam-update-2026",
-    "words": 1781,
-    "title": "Google Link Spam Update 2026: What Changed and How to Adapt"
+    "words": 830,
+    "title": "Google Link Spam Updates: Diagnose Changes Without Guessing"
   },
   {
     "file": "content/blog/google-search-console-backlinks.mdx",
     "url": "/blog/google-search-console-backlinks",
-    "words": 1823,
+    "words": 1862,
     "title": "Google Search Console for Backlinks: The Complete Guide"
   },
   {
@@ -410,7 +416,7 @@
   {
     "file": "content/blog/how-to-build-links-with-data-studies.mdx",
     "url": "/blog/how-to-build-links-with-data-studies",
-    "words": 1957,
+    "words": 1989,
     "title": "How to Build Links with Data Studies: Complete Research-Based Link Building Guide"
   },
   {
@@ -500,8 +506,8 @@
   {
     "file": "content/blog/how-we-built-100-backlinks-in-30-days.mdx",
     "url": "/blog/how-we-built-100-backlinks-in-30-days",
-    "words": 2152,
-    "title": "How We Built 100 Backlinks in 30 Days: A Complete Case Study"
+    "words": 870,
+    "title": "100 Backlinks in 30 Days? Build a Credible Campaign Plan"
   },
   {
     "file": "content/blog/international-link-building.mdx",
@@ -548,7 +554,7 @@
   {
     "file": "content/blog/link-building-case-study-saas.mdx",
     "url": "/blog/link-building-case-study-saas",
-    "words": 2408,
+    "words": 2413,
     "title": "SaaS Link Building: Illustrative Campaign Case Study"
   },
   {
@@ -632,7 +638,7 @@
   {
     "file": "content/blog/link-building-in-age-of-ai.mdx",
     "url": "/blog/link-building-in-age-of-ai",
-    "words": 1972,
+    "words": 1882,
     "title": "Link Building in the Age of AI: How Artificial Intelligence Is Changing SEO"
   },
   {
@@ -644,7 +650,7 @@
   {
     "file": "content/blog/link-building-mistakes-to-avoid.mdx",
     "url": "/blog/link-building-mistakes-to-avoid",
-    "words": 2020,
+    "words": 2004,
     "title": "21 Link Building Mistakes That Can Tank Your Rankings"
   },
   {
@@ -674,13 +680,13 @@
   {
     "file": "content/blog/link-building-vs-content-marketing.mdx",
     "url": "/blog/link-building-vs-content-marketing",
-    "words": 2049,
+    "words": 2048,
     "title": "Link Building vs Content Marketing: Understanding the SEO Relationship"
   },
   {
     "file": "content/blog/link-building-with-digital-assets.mdx",
     "url": "/blog/link-building-with-digital-assets",
-    "words": 1908,
+    "words": 1896,
     "title": "Link Building with Digital Assets: Tools, Calculators, and Interactive Content"
   },
   {
@@ -722,13 +728,13 @@
   {
     "file": "content/blog/most-effective-link-building-tactics.mdx",
     "url": "/blog/most-effective-link-building-tactics",
-    "words": 2118,
-    "title": "Most Effective Link Building Tactics in 2026: What Actually Works"
+    "words": 2130,
+    "title": "Effective Link Building Tactics: Choose by Resources and Fit"
   },
   {
     "file": "content/blog/moz-link-explorer-guide.mdx",
     "url": "/blog/moz-link-explorer-guide",
-    "words": 1244,
+    "words": 1286,
     "title": "Moz Link Explorer Guide: Check Backlinks and Find Opportunities",
     "metaTitle": "Moz Link Explorer Guide: Backlinks, DA & Lost Links",
     "metaDescription": "Use Moz Link Explorer to review backlinks, compare domains and investigate missing links. Understand DA, PA and Spam Score without mistaking them for Google signals."
@@ -758,6 +764,14 @@
     "title": "Personalization in Link Outreach: How to Stand Out in Crowded Inboxes"
   },
   {
+    "file": "content/blog/preserve-backlinks-website-migration.mdx",
+    "url": "/blog/preserve-backlinks-website-migration",
+    "words": 1179,
+    "title": "How to Preserve Backlinks During a Website Migration",
+    "metaTitle": "Preserve Backlinks During a Website Migration: Guide",
+    "metaDescription": "Preserve backlinks during a website migration with an old-to-new URL map, redirect tests and a post-launch checklist. Prioritise useful destinations and real traffic."
+  },
+  {
     "file": "content/blog/proving-link-building-value-to-stakeholders.mdx",
     "url": "/blog/proving-link-building-value-to-stakeholders",
     "words": 1756,
@@ -766,7 +780,7 @@
   {
     "file": "content/blog/quantity-vs-quality-backlinks.mdx",
     "url": "/blog/quantity-vs-quality-backlinks",
-    "words": 1929,
+    "words": 1887,
     "title": "Quantity vs Quality Backlinks: What Matters More for SEO?"
   },
   {
@@ -790,7 +804,7 @@
   {
     "file": "content/blog/topical-authority-and-backlinks.mdx",
     "url": "/blog/topical-authority-and-backlinks",
-    "words": 1932,
+    "words": 1872,
     "title": "Topical Authority and Backlinks: How Links Build Subject Matter Expertise"
   },
   {
@@ -802,7 +816,7 @@
   {
     "file": "content/blog/types-of-backlinks-complete-list.mdx",
     "url": "/blog/types-of-backlinks-complete-list",
-    "words": 2060,
+    "words": 2076,
     "title": "Types of Backlinks: Complete Guide to Every Link Type (2026)"
   },
   {
@@ -810,6 +824,14 @@
     "url": "/blog/understanding-link-relevance",
     "words": 2004,
     "title": "Understanding Link Relevance: Why Topic Alignment Matters for SEO"
+  },
+  {
+    "file": "content/blog/verify-backlink-placement.mdx",
+    "url": "/blog/verify-backlink-placement",
+    "words": 1230,
+    "title": "How to Verify a Backlink Placement Before You Count It",
+    "metaTitle": "Verify a Backlink Placement: A Practical SEO Checklist",
+    "metaDescription": "Verify a backlink placement with a practical checklist for source access, target URLs, anchors, rel attributes and redirects. Record evidence before counting a link."
   },
   {
     "file": "content/blog/what-are-backlinks.mdx",
@@ -820,7 +842,7 @@
   {
     "file": "content/blog/what-makes-a-high-quality-backlink.mdx",
     "url": "/blog/what-makes-a-high-quality-backlink",
-    "words": 2196,
+    "words": 2202,
     "title": "What Makes a High-Quality Backlink? The Complete Breakdown"
   },
   {
@@ -850,8 +872,8 @@
   {
     "file": "content/blog/zero-to-dr50-link-building-journey.mdx",
     "url": "/blog/zero-to-dr50-link-building-journey",
-    "words": 2319,
-    "title": "Zero to DR 50: Our Complete Link Building Journey (24 Months)"
+    "words": 781,
+    "title": "Growing Domain Rating: Measure Progress Beyond DR 50"
   },
   {
     "file": "content/comparisons/_index.mdx",
