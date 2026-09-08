@@ -26,7 +26,7 @@ export function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }}
     />
   )
 }
@@ -61,8 +61,9 @@ export function ArticleSchema({
     datePublished: datePublished,
     dateModified: dateModified,
     author: {
-      '@type': 'Person',
+      '@type': /team|backlink/i.test(author) ? 'Organization' : 'Person',
       name: author,
+      url: absoluteUrl('/about'),
     },
     publisher: {
       '@type': 'Organization',
@@ -205,8 +206,10 @@ export function OrganizationSchema({
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
     name: name,
     url: url,
+    contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', url: absoluteUrl('/contact'), email: 'hello@backlinkgrid.com' },
     logo: {
       '@type': 'ImageObject',
       url: logo,

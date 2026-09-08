@@ -3420,3 +3420,19 @@ Commercial Pages (Bottom of Funnel)
 ---
 
 *This implementation plan provides the complete roadmap for establishing topical authority in the backlinks and link building space. Execute systematically, measure continuously, and iterate based on performance data.*
+
+## Implementation audit — 2026-09-08
+
+The operative release plan is `seo-implementation-plan.md`; it supersedes speculative service pages and unsupported authority/ranking promises in the initial strategy.
+
+- [x] Six core hubs exist and are linked through navigation and the HTML sitemap: backlinks, link-building, backlink-quality, backlink-audit, link-building-tactics and digital-pr.
+- [x] 76 glossary entries exist, exceeding the 75-term foundation target.
+- [x] Templates index added with downloadable prospect, audit and outreach CSV files.
+- [x] Existing industry and tactic libraries retained; new database qualification guide connects educational intent to the real product.
+- [x] Priority GSC pages refreshed: Moz guide, Ahrefs vs Moz, free checker roundup and PageRank.
+- [x] Unsupported testing and campaign claims corrected; statistics library rewritten with explicit measurement methods and illustrative examples. Duplicate statistics blog URL consolidated via permanent redirect.
+- [x] Shared metadata, GFM tables, headings, attribution, contextual bundle CTAs and navigation improved.
+- [x] Public Markdown discovery added; private paid files remain protected.
+- [x] Reproducible inventory and rendered crawl scripts added under `scripts/`, with reports under `reports/`.
+
+Inventory: 336 MDX files after one consolidation and one new guide. This is not a claim that every historical word-count target or every speculative future service has been implemented. The site sells directory placements and a research database, not managed SEO services. No fabricated service pages or staff biographies were created to satisfy the original outline.

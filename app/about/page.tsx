@@ -22,7 +22,7 @@ const values = [
     icon: Target,
     title: 'Transparency',
     description:
-      "No hidden fees, no surprises. What you see is what you get - a real, permanent dofollow backlink for a fair, upfront price.",
+      "No hidden fees, no surprises. What you see is what you get - a real, permanent sponsored backlink for a fair, upfront price.",
     color: 'red',
   },
   {
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 <p className="text-dark/70 leading-relaxed mb-4">
                   The concept is beautifully simple: we've created a visual grid
                   where you can purchase a square. Each square displays your logo
-                  or favicon and includes a permanent, dofollow backlink to your
+                  or favicon and includes a permanent, sponsored backlink to your
                   website.
                 </p>
 
@@ -193,13 +193,13 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/#grid">
-                <Button variant="primary" size="lg" className="group">
+                <Button as="span" variant="primary" size="lg" className="group">
                   Get Your Square
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="secondary" size="lg">
+                <Button as="span" variant="secondary" size="lg">
                   Contact Us
                 </Button>
               </Link>

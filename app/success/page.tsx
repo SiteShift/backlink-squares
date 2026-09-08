@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 import {
   CheckCircle2,
   Share2,
-  Twitter,
-  Linkedin,
+  Share2 as Twitter,
+  BriefcaseBusiness as Linkedin,
   Copy,
   ArrowRight,
   ExternalLink,
@@ -36,7 +36,7 @@ export default function SuccessPage() {
   const [isManualRetrying, setIsManualRetrying] = useState(false)
 
   const shareText =
-    "Just grabbed my spot on the Backlink Grid! Permanent dofollow backlink for $1. Check it out: backlinkgrid.com"
+    "Just grabbed my spot on the Backlink Grid! Permanent sponsored backlink for $1. Check it out: backlinkgrid.com"
   const shareUrl = 'https://backlinkgrid.com'
 
   const copyLink = () => {
@@ -106,7 +106,7 @@ export default function SuccessPage() {
     },
     {
       icon: LinkIcon,
-      title: 'Dofollow link active',
+      title: 'sponsored link active',
       description: 'Search engines can now discover and crawl your backlink',
       color: 'bg-bauhaus-blue',
     },
@@ -290,7 +290,7 @@ export default function SuccessPage() {
               transition={{ delay: 0.3 }}
               className="mt-4 text-lg text-dark/60 max-w-xl mx-auto"
             >
-              Your square is now live with a permanent dofollow backlink. Welcome
+              Your square is now live with a permanent sponsored backlink. Welcome
               to the Backlink Grid community!
             </motion.p>
           </div>

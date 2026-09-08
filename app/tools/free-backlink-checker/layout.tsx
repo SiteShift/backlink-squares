@@ -3,7 +3,7 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'Free Backlink Checker - Check Any Website\'s Backlinks Instantly',
+    title: 'Free Backlink Checker: Compare Tools for Your Domain',
     description: 'Check backlinks for any website for free. Enter a domain and instantly get links to check it in Ahrefs, Moz, Semrush, and Google Search Console. No signup required.',
     canonicalUrl: 'https://backlinkgrid.com/tools/free-backlink-checker',
     keywords: [

@@ -27,20 +27,20 @@ const BASE_URL = 'https://backlinkgrid.com'
 const freeCheckers = [
   {
     name: 'Ahrefs Free Backlink Checker',
-    description: 'Check the top 100 backlinks from the largest backlink database. Shows Domain Rating and anchor text.',
+    description: 'Check the top 100 backlinks from the a backlink database. Shows Domain Rating and anchor text.',
     url: (domain: string) => `https://ahrefs.com/backlink-checker?input=${encodeURIComponent(domain)}&mode=subdomains`,
     features: ['Top 100 backlinks', 'Domain Rating (DR)', 'Anchor text data', 'Dofollow/nofollow'],
     limit: 'Top 100 links only',
-    bestFor: 'Most accurate data',
+    bestFor: 'Backlink research',
     color: 'blue',
     rating: 5,
   },
   {
     name: 'Moz Link Explorer',
-    description: 'Get Domain Authority, Page Authority, and Spam Score. 10 free queries per month.',
+    description: 'Get Domain Authority, Page Authority, and Spam Score. account-based access.',
     url: (domain: string) => `https://moz.com/link-explorer?site=${encodeURIComponent(domain)}&target=domain`,
     features: ['Domain Authority (DA)', 'Spam Score', 'Top linking domains', 'Anchor text'],
-    limit: '10 queries/month free',
+    limit: 'Check current account limits',
     bestFor: 'Spam detection',
     color: 'yellow',
     rating: 4,
@@ -50,7 +50,7 @@ const freeCheckers = [
     description: 'View backlink overview with Authority Score. Part of Semrush\'s free tier.',
     url: (domain: string) => `https://www.semrush.com/analytics/backlinks/overview/?q=${encodeURIComponent(domain)}`,
     features: ['Authority Score', 'Referring domains', 'Follow/nofollow ratio', 'Top anchors'],
-    limit: '10 requests/day free',
+    limit: 'Check current account limits',
     bestFor: 'Comprehensive overview',
     color: 'red',
     rating: 4,
@@ -60,7 +60,7 @@ const freeCheckers = [
     description: 'Neil Patel\'s free backlink checker with easy-to-understand interface.',
     url: (domain: string) => `https://app.neilpatel.com/en/seo_analyzer/backlinks?domain=${encodeURIComponent(domain)}`,
     features: ['Domain score', 'Backlink count', 'New/lost links', 'Referring domains'],
-    limit: '3 searches/day free',
+    limit: 'Check current account limits',
     bestFor: 'Beginners',
     color: 'yellow',
     rating: 3,
@@ -95,11 +95,11 @@ const faqData = [
   },
   {
     question: 'Which free backlink checker is the most accurate?',
-    answer: 'Ahrefs Free Backlink Checker is generally the most accurate, as it draws from the largest backlink database in the industry. However, it only shows the top 100 links in the free version. For comprehensive free data, combining multiple tools (Ahrefs + Moz + Google Search Console) gives the best picture.',
+    answer: 'Ahrefs Free Backlink Checker is generally the most accurate, as it draws from the a backlink database in the industry. However, it only shows the top 100 links in the free version. For comprehensive free data, combining multiple tools (Ahrefs + Moz + Google Search Console) gives the best picture.',
   },
   {
     question: 'How do I check my website\'s backlinks for free?',
-    answer: 'Enter your domain in the tool above to get instant links to check it in multiple free backlink checkers. For the most complete view: 1) Set up Google Search Console (shows all links Google knows about), 2) Use Ahrefs Free for top 100 links, 3) Check Moz for Domain Authority and Spam Score.',
+    answer: 'Enter your domain in the tool above to get instant links to check it in multiple free backlink checkers. For the most complete view: 1) Set up Google Search Console (shows a non-comprehensive Links report), 2) Use Ahrefs Free for top 100 links, 3) Check Moz for Domain Authority and Spam Score.',
   },
   {
     question: 'Can I check competitor backlinks for free?',
@@ -119,7 +119,7 @@ const faqData = [
   },
   {
     question: 'Is Google Search Console a backlink checker?',
-    answer: 'Yes, Google Search Console includes a Links report showing external links, top linking sites, and top linked pages—directly from Google\'s index. It\'s free, unlimited, and the most authoritative source for your own site\'s backlinks, though it can\'t analyze competitor sites.',
+    answer: 'Yes, Google Search Console includes a Links report showing external links, top linking sites, and top linked pages—directly from Google\'s index. It\'s free and useful for your own site, but the report is not comprehensive, though it can\'t analyze competitor sites.',
   },
 ]
 
@@ -131,6 +131,7 @@ const colorClasses = {
 
 export default function FreeBacklinkCheckerPage() {
   const [domain, setDomain] = useState('')
+  const [inputError, setInputError] = useState('')
   const [checkedDomain, setCheckedDomain] = useState('')
   const [showResults, setShowResults] = useState(false)
 
@@ -142,6 +143,10 @@ export default function FreeBacklinkCheckerPage() {
     let cleanDomain = domain.trim().toLowerCase()
     cleanDomain = cleanDomain.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]
 
+    if (!/^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}$/i.test(cleanDomain)) {
+      setInputError('Enter a valid public domain, such as example.com.'); return
+    }
+    setInputError('')
     setCheckedDomain(cleanDomain)
     setShowResults(true)
   }
@@ -216,6 +221,8 @@ export default function FreeBacklinkCheckerPage() {
                 <Search className="w-5 h-5 ml-2" />
               </Button>
             </form>
+              {inputError && <p role="alert" className="mt-3 text-brand-red">{inputError}</p>}
+              <p className="mt-4 text-sm text-surface-600">This launcher opens third-party backlink tools. It does not fetch live backlink data. Provider accounts and limits may apply.</p>
             <p className="mt-4 text-sm text-surface-500 text-center">
               Works with any website. No signup required. Opens links to free tools in new tabs.
             </p>
@@ -360,7 +367,7 @@ export default function FreeBacklinkCheckerPage() {
                 <tbody>
                   <tr className="border-t-2 border-surface-200">
                     <td className="px-4 py-3 font-bold">Ahrefs Free</td>
-                    <td className="px-4 py-3">Most accurate data</td>
+                    <td className="px-4 py-3">Backlink research</td>
                     <td className="px-4 py-3">Top 100 links</td>
                     <td className="px-4 py-3">Domain Rating (DR)</td>
                     <td className="px-4 py-3"><span className="text-red-500">No</span></td>
@@ -490,7 +497,7 @@ export default function FreeBacklinkCheckerPage() {
 
             <div className="mt-8 text-center">
               <Link href="/tools/backlink-analyzer">
-                <Button variant="outline" className="group">
+                <Button as="span" variant="outline" className="group">
                   Use Our Detailed Analysis Checklist
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -552,7 +559,7 @@ export default function FreeBacklinkCheckerPage() {
                   </li>
                 </ul>
                 <Link href="/pricing">
-                  <Button variant="yellow" size="lg" className="w-full group">
+                  <Button as="span" variant="yellow" size="lg" className="w-full group">
                     See Pricing
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -586,7 +593,7 @@ export default function FreeBacklinkCheckerPage() {
                   </li>
                 </ul>
                 <Link href="/blog/best-free-backlink-checkers">
-                  <Button variant="yellow" size="lg" className="w-full group">
+                  <Button as="span" variant="yellow" size="lg" className="w-full group">
                     Read Full Comparison
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -607,13 +614,13 @@ export default function FreeBacklinkCheckerPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/backlinks">
-                <Button variant="primary" size="lg" className="group bg-white text-surface-950 hover:bg-brand-yellow">
+                <Button as="span" variant="primary" size="lg" className="group bg-white text-surface-950 hover:bg-brand-yellow">
                   Backlinks Guide
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/backlink-quality">
-                <Button variant="outline" size="lg" className="group border-white text-white hover:bg-white hover:text-surface-950">
+                <Button as="span" variant="outline" size="lg" className="group border-white text-white hover:bg-white hover:text-surface-950">
                   Evaluating Link Quality
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

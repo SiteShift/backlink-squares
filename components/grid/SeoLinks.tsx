@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Square } from '@/lib/types'
 
 interface SeoLinksProps {
@@ -12,7 +13,7 @@ interface SeoLinksProps {
  *
  * Key SEO requirements:
  * - Real anchor tags with href
- * - NO rel="nofollow" or rel="sponsored"
+ * - Paid placements qualified with rel="sponsored"
  * - Title attribute for accessibility
  * - Visible to crawlers (not display:none)
  */
@@ -43,7 +44,7 @@ export function SeoLinks({ purchasedSquares }: SeoLinksProps) {
             Sites on the Grid
           </h2>
           <p className="mt-2 text-white/50">
-            {sites.length} {sites.length === 1 ? 'site' : 'sites'} with permanent dofollow backlinks
+            {sites.length} {sites.length === 1 ? 'site' : 'sites'} with paid directory placements
           </p>
         </div>
 
@@ -55,13 +56,13 @@ export function SeoLinks({ purchasedSquares }: SeoLinksProps) {
               href={site.site_url!}
               title={site.site_name || 'Visit site'}
               target="_blank"
-              rel="noopener"
+              rel="sponsored noopener"
               className="group flex flex-col items-center p-4 bg-white/5 border-2 border-white/10 hover:border-bauhaus-red hover:bg-white/10 transition-all"
             >
               {/* Logo or Initial */}
               <div className="w-12 h-12 bg-white/10 border-2 border-white/20 flex items-center justify-center mb-2 group-hover:border-bauhaus-red transition-colors">
                 {site.logo_url ? (
-                  <img
+                  <Image unoptimized
                     src={site.logo_url}
                     alt={`${site.site_name || 'Site'} logo`}
                     width={32}
@@ -86,7 +87,7 @@ export function SeoLinks({ purchasedSquares }: SeoLinksProps) {
 
         {/* SEO note - visible to users, reassures about link quality */}
         <p className="mt-8 text-center text-xs text-white/30 uppercase tracking-wider">
-          All links are permanent dofollow backlinks
+          All links are paid directory placements
         </p>
       </div>
     </section>

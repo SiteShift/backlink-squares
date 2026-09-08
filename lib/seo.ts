@@ -80,11 +80,12 @@ export function buildMetadata({
   const cleanedKeywords = cleanKeywords(keywords)
 
   return {
-    title,
+    title: { absolute: title },
     description,
     ...(cleanedKeywords.length > 0 ? { keywords: cleanedKeywords } : {}),
     alternates: {
       canonical: canonicalUrl,
+      ...(publicEditorialExists(canonicalUrl) ? { types: { "text/markdown": `${canonicalUrl}.md` } } : {}),
     },
     openGraph: {
       title,
@@ -169,4 +170,11 @@ export function buildArticlePageMetadata({
     image,
     robots,
   })
+}
+
+function publicEditorialExists(url: string) {
+  const pathname = new URL(url).pathname
+  const segments = pathname.split('/').filter(Boolean)
+  if (!segments.length || segments.length > 2 || segments.some(s => !/^[a-z0-9-]+$/.test(s))) return false
+  return fs.existsSync(path.join(process.cwd(), 'content', segments[0], `${segments[1] || '_index'}.mdx`))
 }

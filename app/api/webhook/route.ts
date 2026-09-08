@@ -6,7 +6,7 @@ import { createServerClient } from '@/lib/supabase'
 
 export async function POST(request: NextRequest) {
   const body = await request.text()
-  const headersList = headers()
+  const headersList = await headers()
   const signature = headersList.get('stripe-signature')
 
   if (!signature) {
@@ -38,6 +38,12 @@ export async function POST(request: NextRequest) {
     case 'checkout.session.completed': {
       const session = event.data.object as Stripe.Checkout.Session
 
+      if (session.metadata?.product_type === 'backlink_database_bundle') {
+        return NextResponse.json({ received: true })
+      }
+      if (session.payment_status !== 'paid') {
+        return NextResponse.json({ received: true })
+      }
       const purchaseGroupId = session.metadata?.purchase_group_id
       const siteUrl = session.metadata?.site_url
       const siteName = session.metadata?.site_name

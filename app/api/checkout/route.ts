@@ -26,6 +26,10 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    if (!Array.isArray(squares) || squares.some(s => !s || !Number.isInteger(s.row) || !Number.isInteger(s.col)) || new Set(squares.map(s => `${s.row}:${s.col}`)).size !== squares.length) {
+      return NextResponse.json({ error: 'Invalid or duplicate square coordinates' }, { status: 400 })
+    }
+
     // Validate required fields
     if (!siteUrl || !siteName || !email || !squares.length) {
       return NextResponse.json(
@@ -55,7 +59,8 @@ export async function POST(request: NextRequest) {
 
     // Validate URL format
     try {
-      new URL(siteUrl)
+      const target = new URL(siteUrl)
+      if (!['https:', 'http:'].includes(target.protocol) || target.username || target.password) throw new Error('Invalid protocol')
     } catch {
       return NextResponse.json(
         { error: 'Invalid website URL' },

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   ...buildMetadata({
     title: 'Pricing - Simple, Transparent Pricing',
     description:
-      'BacklinkGrid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent dofollow backlink.',
+      'BacklinkGrid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent sponsored backlink.',
     canonicalUrl: 'https://backlinkgrid.com/pricing',
-    keywords: ['backlink pricing', 'buy backlink', 'dofollow backlink pricing', '$1 backlink'],
+    keywords: ['backlink pricing', 'buy backlink', 'sponsored backlink pricing', '$1 backlink'],
     type: 'website',
   }),
 }
@@ -25,7 +25,7 @@ const pricingTiers = [
     dimensions: 'Starter',
     description: 'Perfect for getting started',
     features: [
-      'Permanent dofollow backlink',
+      'Permanent sponsored backlink',
       'Display your favicon',
       'Clickable link to your site',
       'Instant activation',
@@ -76,9 +76,9 @@ const faqs = [
       'Yes! You pay once and your square stays on the grid forever. No monthly fees, no renewals.',
   },
   {
-    question: 'Are the links really dofollow?',
+    question: 'Are the links really sponsored?',
     answer:
-      "Absolutely. Every link on our grid is a genuine dofollow link. No rel=\"nofollow\" or rel=\"sponsored\" attributes.",
+      "Absolutely. Every link on our grid is a genuine sponsored link. Paid links use rel=\"sponsored\". Rankings are not guaranteed.",
   },
   {
     question: 'Can I update my link or logo later?',
@@ -97,7 +97,7 @@ export default function PricingPage() {
     <>
       <ProductSchema
         name="BacklinkGrid Squares"
-        description="Permanent dofollow backlinks on BacklinkGrid starting at $1 per square with no subscription."
+        description="Permanent sponsored backlinks on BacklinkGrid starting at $1 per square with no subscription."
         url="https://backlinkgrid.com/pricing"
         price={1}
       />
@@ -113,7 +113,7 @@ export default function PricingPage() {
             </h1>
             <p className="mt-4 text-xl text-dark/60">
               $1 per square. No hidden fees. One-time payment for a permanent
-              dofollow backlink.
+              sponsored backlink.
             </p>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function PricingPage() {
                   </ul>
 
                   <Link href="/#grid" className="block">
-                    <Button
+                    <Button as="span"
                       variant={tier.popular ? 'primary' : 'secondary'}
                       size="lg"
                       className="w-full"
@@ -205,13 +205,13 @@ export default function PricingPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 'Permanent placement on grid',
-                'Real dofollow backlink',
+                'Real sponsored backlink',
                 'Instant activation',
                 'Your logo/favicon displayed',
                 'Clickable link to your site',
                 'Email receipt & confirmation',
                 'Updates available on request',
-                'Growing domain authority',
+                'Visible website placement',
                 'No monthly fees ever',
               ].map((feature, i) => (
                 <div
@@ -261,7 +261,7 @@ export default function PricingPage() {
               Join hundreds of sites already on the grid.
             </p>
             <Link href="/#grid">
-              <Button
+              <Button as="span"
                 variant="primary"
                 size="lg"
                 className="group"

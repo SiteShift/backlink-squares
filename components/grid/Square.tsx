@@ -35,6 +35,9 @@ export function Square({
   if (!isPurchased) {
     return (
       <motion.button
+        type="button"
+        aria-label={`Square row ${row + 1}, column ${col + 1}: $1`}
+        aria-pressed={isSelected}
         onClick={onSelect}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -88,13 +91,13 @@ export function Square({
   }
 
   // Purchased square with logo
-  // IMPORTANT: rel="noopener" is security only - does NOT affect SEO
+  // IMPORTANT: rel="sponsored noopener" is security only - does NOT affect SEO
   // NO rel="nofollow" or rel="sponsored" - these are real dofollow backlinks
   return (
     <motion.a
       href={square?.site_url || '#'}
       target="_blank"
-      rel="noopener"
+      rel="sponsored noopener"
       title={square?.site_name || 'Visit site'}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

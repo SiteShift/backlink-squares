@@ -23,3 +23,5 @@ export default async function OutreachClusterPage({ params }: PageProps) {
   const { slug } = await params
   return <ClusterRoutePage hubSlug={HUB_SLUG} slug={slug} />
 }
+
+export const dynamicParams = false

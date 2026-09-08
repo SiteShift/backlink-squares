@@ -37,7 +37,7 @@ export default function TermsPage() {
             <p>
               BacklinkGrid provides a visual grid where users can purchase
               "squares" that display their website logo/favicon and include a
-              permanent dofollow backlink to their website. Each square purchase
+              permanent sponsored backlink to their website. Each square purchase
               is a one-time payment for permanent placement.
             </p>
 
@@ -96,7 +96,7 @@ export default function TermsPage() {
             <h2>6. Link Characteristics</h2>
             <p>All links on our grid are:</p>
             <ul>
-              <li>Dofollow (no rel="nofollow" attribute)</li>
+              <li>sponsored (paid advertising link)</li>
               <li>
                 Permanent (remain active as long as our website operates)
               </li>

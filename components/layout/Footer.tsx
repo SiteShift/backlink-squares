@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Twitter, Linkedin, Github, Mail, ArrowUpRight } from 'lucide-react'
+import { Share2 as Twitter, BriefcaseBusiness as Linkedin, Code2 as Github, Mail, ArrowUpRight } from 'lucide-react'
 
 const footerLinks = {
   product: [
@@ -35,6 +35,8 @@ const footerLinks = {
     { href: '/blog/best-guest-posting-sites-2026', label: 'Guest Posting Sites' },
     { href: '/blog/best-free-backlink-checkers', label: 'Free Backlink Checkers' },
     { href: '/comparisons/ahrefs-vs-moz', label: 'Ahrefs vs Moz' },
+    { href: '/templates', label: 'Free Templates' },
+    { href: '/editorial-policy', label: 'Editorial Policy' },
     { href: '/glossary/domain-authority', label: 'Domain Authority' },
   ],
   industries: [
@@ -89,7 +91,7 @@ export function Footer() {
               </Link>
 
               <p className="text-sm text-surface-600 mb-6 max-w-sm leading-relaxed">
-                The visual backlink marketplace. Own your square, get your permanent dofollow link.
+                The visual backlink marketplace. Own your square, get your permanent sponsored link.
                 Simple, transparent, effective.
               </p>
 
@@ -260,7 +262,7 @@ export function Footer() {
                 Get Started
               </h3>
               <p className="text-sm text-surface-600 mb-4">
-                Claim a permanent dofollow backlink or download the verified backlink bundle.
+                Claim a permanent sponsored backlink or download the backlink research bundle.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

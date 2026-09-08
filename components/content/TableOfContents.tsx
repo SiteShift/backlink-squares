@@ -16,6 +16,7 @@ export function TableOfContents() {
   const [isCollapsed, setIsCollapsed] = useState(false)
 
   useEffect(() => {
+    let observer: IntersectionObserver | undefined
     // Small delay to ensure content is rendered
     const timer = setTimeout(() => {
       const article = document.querySelector('article')
@@ -33,7 +34,7 @@ export function TableOfContents() {
       setHeadings(items)
 
       // Set up intersection observer
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -45,13 +46,13 @@ export function TableOfContents() {
       )
 
       elements.forEach((el) => {
-        if (el.id) observer.observe(el)
+        if (el.id) observer?.observe(el)
       })
 
-      return () => observer.disconnect()
+
     }, 100)
 
-    return () => clearTimeout(timer)
+    return () => { clearTimeout(timer); observer?.disconnect() }
   }, [])
 
   const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -75,6 +76,7 @@ export function TableOfContents() {
     <nav className="bg-white border-3 border-dark">
       {/* Header */}
       <button
+        aria-expanded={!isCollapsed}
         onClick={() => setIsCollapsed(!isCollapsed)}
         className="w-full flex items-center justify-between p-4 hover:bg-bauhaus-cream/50 transition-colors"
       >

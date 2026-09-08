@@ -1,3 +1,6 @@
+import { use } from "react";
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -13,13 +16,14 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Jso
 import { getBlogPost, getAllBlogPosts, getRelatedPosts } from '@/lib/content'
 import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
 import { formatDate } from '@/lib/utils'
-import { useMDXComponents } from '@/mdx-components'
+import { getMDXComponents } from '@/mdx-components'
 
 type Props = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const post = getBlogPost(params.slug)
 
   if (!post) {
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: post.keywords,
     image: post.image,
     publishedTime: post.date,
-    modifiedTime: post.date,
+    modifiedTime: post.lastUpdated || post.date,
     authors: [post.author || 'SEO Backlinks'],
   })
 }
@@ -45,7 +49,8 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }))
 }
 
-export default function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage(props: Props) {
+  const params = await props.params;
   const post = getBlogPost(params.slug)
 
   if (!post) {
@@ -69,7 +74,7 @@ export default function BlogPostPage({ params }: Props) {
         description={pickSeoDescription(post)}
         author={post.author || 'SEO Backlinks'}
         datePublished={post.date}
-        dateModified={post.date}
+        dateModified={post.lastUpdated || post.date}
         url={absoluteUrl(`/blog/${params.slug}`)}
         image={resolveSchemaImage(post.image)}
         keywords={post.keywords}
@@ -123,7 +128,7 @@ export default function BlogPostPage({ params }: Props) {
               </span>
               <span className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
-                {formatDate(post.date)}
+                {post.lastUpdated && post.lastUpdated !== post.date ? `Updated ${formatDate(post.lastUpdated)}` : formatDate(post.date)}
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
@@ -136,7 +141,7 @@ export default function BlogPostPage({ params }: Props) {
         {/* Article Content */}
         <article className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="prose prose-lg prose-slate max-w-none">
-            <MDXRemote source={post.content} components={useMDXComponents({})} />
+            <MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={post.content} components={getMDXComponents({})} />
           </div>
 
           {/* CTA */}
@@ -169,3 +174,5 @@ export default function BlogPostPage({ params }: Props) {
     </>
   )
 }
+
+export const dynamicParams = false

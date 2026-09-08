@@ -34,7 +34,7 @@ const steps = [
     icon: Rocket,
     title: 'Launch',
     subtitle: 'Go Live Instantly',
-    description: 'Pay securely via Stripe. Your square and permanent dofollow backlink go live immediately - no waiting.',
+    description: 'Pay securely via Stripe. Your square and permanent sponsored backlink go live immediately - no waiting.',
     features: ['Instant activation', 'Secure payment', 'Permanent placement'],
     color: 'yellow',
     bgColor: 'bg-accent-yellow-50',
@@ -68,7 +68,7 @@ export function HowItWorks() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
             className="section-label mx-auto mb-8"
@@ -78,7 +78,7 @@ export function HowItWorks() {
           </motion.div>
 
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight"
@@ -88,7 +88,7 @@ export function HowItWorks() {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 text-lg text-surface-600 max-w-2xl mx-auto"
@@ -106,7 +106,7 @@ export function HowItWorks() {
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
-                initial={{ opacity: 0, y: 40 }}
+                initial={false}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.15 }}
                 className="relative"
@@ -162,7 +162,7 @@ export function HowItWorks() {
 
         {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-16 text-center"

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, Zap, Link as LinkIcon, Shield, Check } from 'lucide-react'
 import { TOTAL_SQUARES } from '@/lib/types'
@@ -32,7 +33,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
           <div className="max-w-2xl">
             {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               className="inline-flex items-center gap-2 mb-6"
@@ -51,7 +52,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
 
             {/* Main Headline */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
@@ -64,24 +65,24 @@ export function Hero({ totalSold = 0 }: HeroProps) {
 
             {/* Value Proposition */}
             <motion.p
-              initial={{ opacity: 0, y: 15 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
               className="mt-6 text-lg sm:text-xl text-surface-600 max-w-lg leading-relaxed"
             >
-              Permanent dofollow backlinks on a visual grid.
+              Permanent sponsored backlinks on a visual grid.
               <span className="text-surface-950 font-semibold"> No outreach required.</span>
             </motion.p>
 
             {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
               className="mt-8 flex flex-wrap items-center gap-4"
             >
-              <motion.button
-                onClick={scrollToGrid}
+              <motion.a
+                href="#grid"
                 className="group relative inline-flex items-center gap-3 px-7 py-4
                          bg-surface-950 text-white font-bold text-sm uppercase tracking-wider
                          border-2 border-surface-950
@@ -93,7 +94,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
               >
                 <span>Claim Your Square</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
+              </motion.a>
 
               <div className="flex items-center gap-2">
                 <span className="text-3xl font-black text-surface-950">$1</span>
@@ -103,22 +104,25 @@ export function Hero({ totalSold = 0 }: HeroProps) {
               </div>
             </motion.div>
 
+            <Link href="/bundle" className="inline-flex mt-6 font-bold text-brand-red underline underline-offset-4">
+              Research your next campaign: 276-site database · £11.49 →
+            </Link>
             {/* Trust Indicators */}
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.4 }}
               className="mt-10 flex flex-wrap gap-x-6 gap-y-3"
             >
               {[
                 { icon: Zap, label: 'Instant activation' },
-                { icon: LinkIcon, label: 'Real dofollow links' },
+                { icon: LinkIcon, label: 'Real sponsored links' },
                 { icon: Shield, label: 'Permanent placement' },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
                   className="flex items-center gap-2 text-surface-600"
-                  initial={{ opacity: 0, x: -10 }}
+                  initial={false}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.45 + index * 0.05 }}
                 >
@@ -135,7 +139,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
         {/* Right Side - Interactive Grid Preview - Hidden on mobile */}
         <div className="hidden lg:flex flex-1 relative items-center justify-center p-6 sm:p-8 lg:p-12 order-1 lg:order-2">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative z-10 w-full max-w-sm lg:max-w-md"
@@ -175,7 +179,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
                   return (
                     <motion.div
                       key={i}
-                      initial={{ opacity: 0, scale: 0.5 }}
+                      initial={false}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: 0.3 + (i * 0.008) }}
                       className={`
@@ -208,7 +212,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
                 </div>
                 <motion.div
                   className="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 border border-green-200 rounded-full"
-                  initial={{ scale: 0.9, opacity: 0 }}
+                  initial={false}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.6 }}
                 >
@@ -223,7 +227,7 @@ export function Hero({ totalSold = 0 }: HeroProps) {
 
             {/* Floating Price Badge */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
+              initial={false}
               animate={{ opacity: 1, scale: 1, rotate: -6 }}
               transition={{ duration: 0.4, delay: 0.5, type: 'spring', stiffness: 200 }}
               className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 z-20"

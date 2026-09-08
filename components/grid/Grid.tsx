@@ -88,7 +88,7 @@ export function Grid() {
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-brand-red" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-surface-500">
-                Do Follow Backlinks
+                Website Directory
               </span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">

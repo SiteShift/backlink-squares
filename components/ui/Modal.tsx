@@ -21,22 +21,33 @@ export function Modal({
   size = 'md',
 }: ModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef(onClose)
+  useEffect(() => { closeRef.current = onClose }, [onClose])
 
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+    if (!isOpen) return
+    const previous = document.activeElement as HTMLElement | null
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const frame = requestAnimationFrame(() => dialogRef.current?.focus())
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return }
+      if (event.key !== 'Tab') return
+      const items = Array.from(dialogRef.current?.querySelectorAll<HTMLElement>('a[href], button:not(:disabled), input:not(:disabled), select, textarea, [tabindex="0"]') || []).filter(el => el.getClientRects().length)
+      const first = items[0], last = items[items.length - 1]
+      if (!first) { event.preventDefault(); dialogRef.current?.focus(); return }
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === dialogRef.current)) { event.preventDefault(); last.focus() }
+      else if (!event.shiftKey && (document.activeElement === last || document.activeElement === dialogRef.current)) { event.preventDefault(); first.focus() }
     }
-
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscape)
-      document.body.style.overflow = 'hidden'
-    }
-
+    document.addEventListener('keydown', handleKey)
     return () => {
-      document.removeEventListener('keydown', handleEscape)
-      document.body.style.overflow = ''
+      cancelAnimationFrame(frame)
+      document.removeEventListener('keydown', handleKey)
+      document.body.style.overflow = previousOverflow
+      if (previous?.isConnected) previous.focus()
     }
-  }, [isOpen, onClose])
+  }, [isOpen])
 
   const sizes = {
     sm: 'max-w-md',
@@ -48,7 +59,7 @@ export function Modal({
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[80] flex items-center justify-center p-4">
           {/* Backdrop */}
           <motion.div
             ref={overlayRef}
@@ -62,6 +73,11 @@ export function Modal({
 
           {/* Modal */}
           <motion.div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label={title || "Purchase a grid placement"}
+            tabIndex={-1}
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -80,7 +96,8 @@ export function Modal({
                   {title}
                 </h2>
                 <button
-                  onClick={onClose}
+                  aria-label="Close dialog"
+                onClick={onClose}
                   className="w-10 h-10 border-2 border-surface-300 bg-white flex items-center justify-center
                            hover:border-surface-950 hover:bg-brand-yellow transition-all duration-150"
                 >
@@ -92,6 +109,7 @@ export function Modal({
             {/* Close button (if no title) */}
             {!title && (
               <button
+                aria-label="Close dialog"
                 onClick={onClose}
                 className="absolute top-4 right-4 w-10 h-10 border-2 border-surface-300 bg-white
                          flex items-center justify-center z-10

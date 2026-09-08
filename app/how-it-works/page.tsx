@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ...buildMetadata({
     title: 'How It Works - Get Your Backlink in 3 Simple Steps',
     description:
-      'Learn how to purchase a square on BacklinkGrid and get your permanent dofollow backlink. Simple 3-step process with instant activation.',
+      'Learn how to purchase a square on BacklinkGrid and get your permanent sponsored backlink. Simple 3-step process with instant activation.',
     canonicalUrl: 'https://backlinkgrid.com/how-it-works',
     type: 'website',
     keywords: ['how backlinkgrid works', 'buy backlinks', 'backlink checkout'],
@@ -42,7 +42,7 @@ const howToSteps = [
   },
   {
     name: 'Go Live Instantly',
-    text: 'Complete your purchase securely via Stripe. The moment your payment is confirmed, your square goes live with a real, crawlable dofollow backlink pointing to your site.',
+    text: 'Complete your purchase securely via Stripe. The moment your payment is confirmed, your square goes live with a real, crawlable sponsored backlink pointing to your site.',
   },
 ]
 
@@ -68,7 +68,7 @@ const steps = [
       'Enter your website URL, site name, and optionally upload your logo. See a live preview of exactly how your square will appear on the grid before committing to purchase.',
     icon: CreditCard,
     details: [
-      'Enter your target URL (gets the dofollow link)',
+      'Enter your target URL (gets the sponsored link)',
       'Add your site/brand name for hover display',
       'Upload a logo or favicon (optional)',
       'Preview your square before checkout',
@@ -79,12 +79,12 @@ const steps = [
     number: '3',
     title: 'Go Live Instantly',
     description:
-      'Complete your purchase securely via Stripe. The moment your payment is confirmed, your square goes live on the grid with a real, crawlable dofollow backlink pointing to your site.',
+      'Complete your purchase securely via Stripe. The moment your payment is confirmed, your square goes live on the grid with a real, crawlable sponsored backlink pointing to your site.',
     icon: Rocket,
     details: [
       'Pay securely via Stripe',
       'Square appears immediately after payment',
-      'Dofollow link is active instantly',
+      'sponsored link is active instantly',
       'Receive email confirmation with receipt',
     ],
     color: 'blue',
@@ -106,15 +106,15 @@ const benefits = [
   },
   {
     icon: LinkIcon,
-    title: 'Real Dofollow Link',
+    title: 'Real sponsored Link',
     description:
-      'Every link is a genuine dofollow backlink - no nofollow, no sponsored tags.',
+      'Every link is a genuine sponsored backlink - qualified with sponsored attributes for paid advertising.',
   },
   {
     icon: TrendingUp,
     title: 'Growing Value',
     description:
-      'As our domain authority increases through content and traffic, your backlink becomes more valuable.',
+      'Your placement gives visitors a direct route to your website. Traffic and search rankings are not guaranteed.',
   },
   {
     icon: Zap,
@@ -147,8 +147,8 @@ export default function HowItWorksPage() {
   return (
     <>
       <HowToSchema
-        name="How to Get a Dofollow Backlink on BacklinkGrid"
-        description="Learn how to purchase a square and get your permanent dofollow backlink in 3 simple steps."
+        name="How to Get a sponsored Backlink on BacklinkGrid"
+        description="Learn how to purchase a square and get your permanent sponsored backlink in 3 simple steps."
         steps={howToSteps}
         totalTime="PT5M"
       />
@@ -164,7 +164,7 @@ export default function HowItWorksPage() {
             </h1>
             <p className="mt-6 text-xl text-dark/60 max-w-2xl mx-auto">
               No outreach. No negotiations. No waiting. Just select your square,
-              add your details, and you're live with a permanent dofollow backlink.
+              add your details, and you're live with a permanent sponsored backlink.
             </p>
           </div>
         </section>
@@ -303,7 +303,7 @@ export default function HowItWorksPage() {
               Claim your square and get your backlink today.
             </p>
             <Link href="/#grid">
-              <Button variant="primary" size="lg" className="group">
+              <Button as="span" variant="primary" size="lg" className="group">
                 Browse the Grid
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

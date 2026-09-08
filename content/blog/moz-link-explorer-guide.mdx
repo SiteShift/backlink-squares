@@ -1,460 +1,110 @@
 ---
-title: "Moz Link Explorer Guide: Complete Tutorial for Link Building"
-description: "Learn to use Moz Link Explorer for backlink analysis and link building. Domain Authority, Spam Score, competitor analysis, and link prospecting techniques."
-metaTitle: "Moz Link Explorer: 7 Hidden Features Most SEOs Miss [2026]"
-metaDescription: "Step-by-step Moz Link Explorer guide. Discover hidden features, check Domain Authority, find link opportunities, and use Spam Score like a pro."
-date: "2026-01-20"
-author: "Sarah Chen"
-authorTitle: "Senior SEO Strategist"
+title: 'Moz Link Explorer Guide: Check Backlinks and Find Opportunities'
+description: >-
+  Learn to use Moz Link Explorer for backlink analysis and link building. Domain
+  Authority, Spam Score, competitor analysis, and link prospecting techniques.
+metaTitle: 'Moz Link Explorer Guide: Backlinks, DA & Lost Links'
+metaDescription: >-
+  Use Moz Link Explorer to review backlinks, compare domains and investigate
+  missing links. Understand DA, PA and Spam Score without mistaking them for
+  Google signals.
+date: '2026-01-20'
+author: "BacklinkGrid Editorial Team"
 keywords:
   - Moz Link Explorer
   - Domain Authority
   - Moz backlink analysis
-primaryKeyword: "Moz Link Explorer"
+primaryKeyword: Moz Link Explorer
 secondaryKeywords:
   - Moz tutorial
   - Domain Authority explained
   - Moz link building
-faqs:
-  - question: "Is Domain Authority a Google metric?"
-    answer: "No. Domain Authority is Moz's proprietary metric, not used by Google. However, DA attempts to predict ranking ability based on factors similar to what Google considers, making it useful for comparative analysis and link evaluation."
-  - question: "Why is my DA lower than competitors with fewer links?"
-    answer: "DA considers link quality, not just quantity. Competitors may have fewer but higher-quality links from more authoritative sources. DA is also relative—if the web's overall link profile changes, your DA can shift accordingly."
-  - question: "How often should I check Domain Authority?"
-    answer: "DA updates approximately monthly. Checking more frequently won't show changes. Focus on long-term trends (quarterly comparisons) rather than short-term fluctuations. A 1-2 point change is normal variation."
-  - question: "Can I increase Domain Authority quickly?"
-    answer: "No. DA changes gradually based on backlink profile improvements over months. Attempts to rapidly boost DA usually involve low-quality links that ultimately backfire. Focus on earning quality links from relevant sites; DA will follow."
-  - question: "Should I disavow high Spam Score links?"
-    answer: "Not automatically. Spam Score is a risk indicator, not a verdict. Manually review flagged links before disavowing—many legitimate sites have elevated Spam Scores. Only disavow links you're confident are harmful or from obviously spammy sources."
-  - question: "What is a good Domain Authority score?"
-    answer: "DA is relative, so 'good' depends on your niche. Generally: DA 0-20 is new/weak, 21-40 is small businesses, 41-60 is established sites, 61-80 is very strong, and 81-100 is reserved for major sites like Google or Wikipedia. Compare to your direct competitors, not arbitrary benchmarks."
-  - question: "Is Moz Pro worth the cost for link building?"
-    answer: "It depends on your needs. Free tools (MozBar, limited Link Explorer) suffice for occasional DA checks and basic analysis. Moz Pro provides unlimited queries, full exports, and Link Opportunities feature. Many professionals prefer Ahrefs or Semrush for primary backlink research but use Moz for its industry-standard DA metric."
-  - question: "How does Moz compare to Ahrefs for backlink analysis?"
-    answer: "Ahrefs has a larger, fresher backlink index and more advanced features for link building. Moz excels at the industry-standard DA metric, unique Spam Score, and user-friendly interface. Many professionals use both: Ahrefs for deep research, Moz for quick DA/Spam Score checks and client-facing reports."
+faqs: []
+lastUpdated: '2026-09-08'
 ---
 
-## What Is Moz Link Explorer?
+**Moz Link Explorer** is a backlink research tool for reviewing inbound links and linking domains. Use it to investigate who links to a site, compare relevant competitors and create a shortlist for manual review. It is not a traffic analytics tool, a Google penalty checker or a service that builds links for you.
 
-Moz Link Explorer is Moz's backlink analysis tool, providing insights into link profiles, domain authority, and link building opportunities. While Moz's link index is smaller than Ahrefs or SEMrush, Moz pioneered many concepts used across the industry, including [Domain Authority (DA)](/glossary/domain-authority).
+This guide explains a repeatable workflow. Report names, access and export limits can change with your account; check the current Moz interface before choosing a plan. Older references to Moz Open Site Explorer concern an earlier product, so begin with the current Link Explorer entry point.
 
-This guide covers how to use Moz Link Explorer effectively for link building research and analysis.
+## Start with the right URL scope
 
-## Understanding Moz Metrics
+Enter the domain or page you want to investigate, then check the selected scope before interpreting the results. A whole domain, a subdomain and an exact page answer different questions. Use domain scope to study a business's overall profile and exact-page scope to examine a specific article or landing page.
 
-### Domain Authority (DA)
+Record your choice in your notes. If you later compare Moz with another tool, match that scope and the collection date. Many apparent disagreements between tools begin with different inputs rather than different judgments about link quality.
 
-Domain Authority is Moz's most famous metric—a 0-100 score predicting how well a site will rank. It's one of several [authority metrics used in SEO](/backlink-quality/authority-metrics), but arguably the most widely recognized.
+For your own site, export the [Google Search Console Links report](https://support.google.com/webmasters/answer/9049606) as a complementary source. Google explicitly notes that it is not comprehensive. It should not be treated as a complete inventory of all backlinks or proof that every reported link contributes ranking credit.
 
-**How DA is calculated:**
-DA combines multiple factors including:
-- Number of linking root domains
-- Total number of links
-- Link quality indicators
-- Other SEO factors
+## Read the key metrics in context
 
-**Important context:**
-- DA is logarithmic (going from 20 to 30 is easier than 70 to 80)
-- DA is comparative, not absolute
-- Google does not use DA (it's a Moz metric)
-- DA should be one factor among many
+| Metric or report | Useful question | What it does not establish |
+| --- | --- | --- |
+| Domain Authority | How does this domain compare with peers in Moz's model? | A Google authority score or guaranteed rank |
+| Page Authority | How does this particular page compare in Moz's model? | That every link on the page is valuable |
+| Linking domains | How many distinct sites does this report identify? | That every domain is independent or relevant |
+| Inbound links | Which source pages can I investigate? | That each link is live or credited by Google |
+| Spam Score | Which sites deserve closer contextual review? | A penalty, malicious intent or an automatic disavow instruction |
 
-**DA benchmarks:**
-- 0-20: New or weak sites
-- 21-40: Small businesses, new blogs
-- 41-60: Established sites
-- 61-80: Very strong sites
-- 81-100: Major websites (Google, Facebook, etc.)
+A site's [Domain Authority](/glossary/domain-authority) should be compared with relevant peers. Avoid universal cutoffs such as “anything below DA 30 is worthless.” A modest specialist publisher can be more useful to your audience than a large unrelated site. [Page Authority](/glossary/page-authority) and the actual source page help you narrow the investigation.
 
-### Page Authority (PA)
+## Review inbound links step by step
 
-[Page Authority](/glossary/page-authority) is the same concept applied to individual pages rather than domains.
+1. Open the inbound-link report for your selected scope.
+2. Inspect filters before exporting. Record whether the view includes live links, lost links, follow attributes or one result per domain.
+3. Sort or group results to make a manageable review set. High scores can help you order work, but should not automatically approve a site.
+4. Open the source URL and find the link in context. Read the paragraph around it.
+5. Confirm the destination, redirects, visible anchor text and link attributes.
+6. Add a note explaining the link's relevance and any action you need to take.
 
-**When to use PA vs. DA:**
-- **DA:** Evaluating overall site quality
-- **PA:** Evaluating specific link opportunity quality
+A repeated footer link on hundreds of pages deserves a different interpretation from independent editorial mentions. Group by referring domain before concluding that a large raw link count represents a broad audience. Our [referring domains vs backlinks guide](/backlinks/referring-domains-vs-backlinks) explains the distinction.
 
-### Spam Score
+Use the [free backlink audit template](/templates) to keep source URLs, target pages, attributes and review notes together. Document evidence before making changes to a live site's link profile.
 
-Moz's Spam Score indicates the percentage of sites with similar features that have been penalized. Understanding [spam signals in backlink profiles](/backlink-quality/spam-signals) is critical for protecting your site:
+## Find competitor opportunities without copying blindly
 
-**Score interpretation:**
-- 1-30%: Low risk
-- 31-60%: Medium risk (review before linking)
-- 61-100%: High risk (likely spam)
+Choose competitors serving the same audience, rather than simply the largest domains in your industry. Review the pages that earned their links and ask why a publisher linked: an original statistic, a product listing, a useful tool, a local relationship or an editorial reference.
 
-**Important notes:**
-- Not all high Spam Score sites are actually spam — learn more about [what constitutes link spam](/glossary/link-spam)
-- Manual review is always necessary
-- Use as one data point, not a decision maker
+Build a shortlist of opportunities you can legitimately qualify for. A competitor's association membership, sponsorship or integration page may not be replicable. A resource page may be relevant only if you have a genuinely useful resource to offer. Record the reason a reader would benefit from your inclusion before looking for a contact.
 
-## Navigating Link Explorer
+For example, a project-management startup might find that a competitor is mentioned in a university's teaching resources. The next step is to inspect the resource and its audience, not pitch the university a generic product link. Your product may not meet the same educational need. A relevant software directory could be a better fit.
 
-### Overview Dashboard
+For a ready-made starting list, preview the [Complete Backlink Database Bundle](/bundle). It contains 276 opportunities with recorded categories, costs and submission information. It complements manual prospecting; it does not provide live Moz data or guaranteed placements. Use the [prospecting workflow](/outreach/prospecting) to qualify each candidate.
 
-When you enter a domain, the Overview shows:
-- Domain Authority
-- Linking domains
-- Inbound links
-- Ranking keywords
-- Spam Score
+## Investigate missing or lost links
 
-**Quick analysis tips:**
-- Compare DA to competitors for context
-- Check linking domains (unique referring domains)
-- Note Spam Score for quality assessment
+A link missing from a tool is not necessarily missing from the web. Open the source page yourself and check:
 
-### Inbound Links Report
+- Does the page still return useful content?
+- Is the link present in its HTML, or inserted only after interaction?
+- Does the target redirect or use a different hostname?
+- Is the report using the right domain or page scope?
+- Has the source changed since the tool last visited it?
 
-**Path:** Link Explorer > Inbound Links
+A discovered date describes a crawler observation, not necessarily the date the publisher added a link. Similarly, a lost observation is a reason to investigate, not immediate evidence of a publisher removing your placement. Verify before sending a reclamation message. If the link exists and the issue appears to be reporting, use the vendor's support documentation.
 
-This shows all links pointing to the analyzed domain:
+## Can Link Explorer find unlinked mentions or pageviews?
 
-**Key columns:**
-| Column | What It Shows | Link Building Use |
-|--------|---------------|-------------------|
-| Source URL | Linking page | Review page quality |
-| Anchor Text | Link text | Understand anchor distribution |
-| DA | Domain Authority | Evaluate link value |
-| PA | Page Authority | Assess page-level value |
-| Spam Score | Risk indicator | Flag for review |
+A backlink report is built around links. An unlinked brand mention may never appear there. To find mentions without a link, use a separate mention-search workflow and inspect the pages. Do not confuse an inbound-link report with a comprehensive brand-monitoring service.
 
-**Filtering options:**
-- Link type (follow, nofollow, external, internal)
-- DA range
-- Anchor text contains
-- New/lost links (date range)
+Link Explorer also cannot reveal a competitor's actual unique visitors or pageviews. Those are analytics concepts. When another product displays estimated traffic, label it as an estimate and keep it separate from directly measured website analytics.
 
-### Linking Domains Report
+## What should you do with Spam Score?
 
-**Path:** Link Explorer > Linking Domains
+Treat it as a prompt for investigation. Read the site, assess relevance and check whether there is a pattern of manipulative linking. A metric alone is not sufficient evidence to remove or disavow a link. Google's disavow tool is intended for specific circumstances and misuse can harm performance; follow the [disavow guide](/backlink-audit/disavow-guide) and the official instructions before acting.
 
-Shows unique domains linking to the site:
+## A monthly review you can repeat
 
-**More valuable than total links because:**
-- Multiple links from one domain have diminishing returns
-- Referring domain count correlates with rankings
-- Diversity matters more than volume
+Keep the same scope, filters and export format. Review newly observed referring domains, investigate lost links to important pages and compare the actual organic landing-page performance in Search Console. Log what changed and why. This produces a more useful record than chasing small DA fluctuations.
 
-**Analysis approach:**
-- Sort by DA to see highest-authority linkers
-- Review domain categories for relevance
-- Check Spam Score distribution
+Separate outputs from outcomes. “Ten relevant prospects reviewed” is work completed; “three accepted placements” is an intermediate result; qualified visits, leads and sales are business outcomes. Neither link counts nor domain scores alone establish revenue impact.
 
-### Link Opportunities Report
+## What to read next
 
-**Path:** Link Explorer > Link Opportunities
+- [Ahrefs vs Moz: metrics and accuracy](/comparisons/ahrefs-vs-moz)
+- [Free backlink checkers by use case](/blog/best-free-backlink-checkers)
+- [Backlink audit fundamentals](/backlink-audit)
+- [Authority metrics explained](/backlink-quality/authority-metrics)
 
-Moz's automated prospecting feature:
+## Sources
 
-**How it works:**
-- Analyzes your competitors
-- Identifies sites linking to them but not you
-- Prioritizes by potential value
-
-**Using effectively:**
-1. Enter your domain
-2. Add competitors
-3. Review suggested opportunities
-4. Export for outreach
-
-### Anchor Text Report
-
-**Path:** Link Explorer > Anchor Text
-
-Shows the anchor text distribution for the analyzed site:
-
-**Why this matters:**
-- Unnatural anchor text distribution can indicate manipulation
-- Understanding competitor anchors informs your strategy
-- Helps identify over-optimization risks
-
-**Healthy anchor text distribution:**
-- Branded anchors: 40-60%
-- URL/naked links: 15-25%
-- Generic ("click here"): 10-15%
-- Partial match keywords: 5-10%
-- Exact match keywords: 1-5%
-
-### Top Pages Report
-
-**Path:** Link Explorer > Top Pages
-
-Shows pages that earn the most links:
-
-**Link building insights:**
-- What content formats work for competitors?
-- Which topics attract links?
-- Where should you focus content efforts?
-
-## Competitor Analysis Workflows
-
-### Basic Competitor Comparison
-
-**Step 1:** Enter competitor domain
-**Step 2:** Note key metrics (DA, linking domains, Spam Score)
-**Step 3:** Repeat for multiple competitors
-**Step 4:** Compare against your site
-
-**What to look for:**
-- DA gap between you and competitors
-- Linking domain volume differences
-- Quality of link sources
-- Content that earns them links
-
-### Finding Competitor Link Sources
-
-**Detailed analysis:**
-1. Enter competitor domain
-2. Go to Linking Domains
-3. Sort by DA (high to low)
-4. Review high-authority sources
-5. Check if you could earn similar links
-
-**Export and qualify:**
-- Export relevant prospects
-- Research each site's link opportunity type (guest post, resource page, etc.)
-- Prioritize by relevance and achievability
-
-### Link Intersect Analysis
-
-Find sites linking to competitors but not you:
-
-**Manual method:**
-1. Export competitor linking domains
-2. Export your linking domains
-3. Compare lists (Excel VLOOKUP or similar)
-4. Identify gaps
-
-**Using Moz's Link Opportunities:**
-The built-in feature automates this comparison.
-
-## Prospecting With Moz
-
-### Evaluating Link Prospects
-
-When you find a potential link source, check in Moz:
-
-**Quick evaluation checklist:**
-- DA: Is it reasonably authoritative (30+)?
-- Spam Score: Is it low risk (under 30%)?
-- Linking domains: Does it have real backlinks?
-- Traffic: Check organic keywords (indicates real traffic)
-
-### Building Prospect Lists
-
-**Workflow:**
-1. Use Link Opportunities feature
-2. Add competitor-derived prospects
-3. Score by DA and relevance
-4. Export for outreach
-
-**Prioritization framework:**
-| Factor | Weight | Scoring |
-|--------|--------|---------|
-| DA | 30% | Higher is better |
-| Relevance | 40% | Manual assessment |
-| Spam Score | 15% | Lower is better |
-| Achievability | 15% | How likely to succeed? |
-
-### Tracking Link Building Progress
-
-**Monitor your metrics:**
-- Set up Moz Pro tracking for your domain
-- Watch DA trends over time
-- Track referring domain growth
-- Note new high-quality links acquired
-
-## Using Spam Score Effectively
-
-### When to Worry About Spam Score
-
-**Your own Spam Score:**
-If your site has a high Spam Score, investigate why:
-- Check for low-quality incoming links
-- Review technical issues
-- Look for on-site spam signals
-
-**Prospect Spam Scores:**
-Use Spam Score as a filter, but don't automatically reject:
-- Some legitimate sites have elevated scores
-- Always manually verify
-- Check actual content quality
-
-### Reducing Spam Score
-
-**If your Spam Score is high:**
-1. [Audit your backlink profile](/backlink-audit/audit-tools) thoroughly
-2. Identify low-quality incoming links
-3. Consider disavow for worst offenders
-4. Fix any on-site issues
-5. Monitor for improvement
-
-## Moz Free vs. Paid Tools
-
-### Free Moz Tools
-
-**Link Explorer (free version):**
-- 10 queries/month
-- Limited data per query
-- Basic metrics visible
-
-**MozBar (browser extension):**
-- Free DA/PA checking
-- On-page analysis
-- SERP overlay
-
-**Good for:** Occasional checks, quick evaluations. For more options, see our roundup of the [best free backlink checkers](/blog/best-free-backlink-checkers).
-
-### Moz Pro (Paid)
-
-**Features for link building:**
-- Unlimited Link Explorer queries
-- Full data export
-- Link Opportunities feature
-- Campaign tracking
-- Historical data
-
-**Pricing tiers:**
-- Standard: Basic features, 3 campaigns
-- Medium: More campaigns, features
-- Large: Full features, team access
-- Premium: Enterprise level
-
-**For serious link building:** Medium or higher recommended.
-
-## Moz vs. Ahrefs vs. SEMrush
-
-For detailed head-to-head breakdowns, see our [Ahrefs vs. Moz comparison](/comparisons/ahrefs-vs-moz) and [SEMrush vs. Moz comparison](/comparisons/semrush-vs-moz).
-
-### Where Moz Excels
-
-- **Domain Authority:** Industry standard metric
-- **Spam Score:** Unique risk assessment
-- **Interface:** Clean, easy to learn
-- **MozBar:** Convenient free browser tool
-- **Educational resources:** Excellent learning materials
-
-### Where Moz Falls Short
-
-- **Index size:** Smaller than Ahrefs
-- **Update frequency:** Less frequent crawling
-- **Advanced features:** Fewer power-user options
-- **Outreach tools:** Limited compared to SEMrush
-
-### When to Use Moz
-
-- When you need quick DA checks
-- For Spam Score assessments
-- Learning SEO fundamentals
-- Budget-conscious link building
-- When clients ask about DA specifically
-
-### Multi-Tool Approach
-
-Many professionals use multiple tools. If you're exploring alternatives, check out our [Majestic alternatives guide](/comparisons/majestic-alternatives) as well:
-- **Ahrefs** for deep backlink research
-- **SEMrush** for integrated workflows
-- **Moz** for DA/Spam Score and quick checks
-
-## Link Building Workflows in Moz
-
-### Quick Site Evaluation
-
-When considering a link opportunity:
-1. Install MozBar extension
-2. Visit the prospect site
-3. Check DA and Spam Score instantly
-4. Decide whether to investigate further
-
-### Competitor Gap Analysis
-
-**Weekly workflow:**
-1. Enter primary competitor in Link Explorer
-2. Check Linking Domains for new sources
-3. Run Link Opportunities for intersect analysis
-4. Export new prospects
-5. Qualify and add to outreach list
-
-### Monthly Link Profile Audit
-
-**Review your own profile:**
-1. Check current DA (compare to previous month)
-2. Review new links acquired
-3. Check Spam Score trend
-4. Analyze anchor text distribution
-5. Identify any concerning patterns
-
-## Tips for Maximizing Moz
-
-### Best Practices
-
-- **Use MozBar** for quick checks throughout your day
-- **Track campaigns** for sites you actively build links for
-- **Export data** for deeper analysis in spreadsheets
-- **Cross-reference** with other tools for important decisions
-
-### Common Mistakes
-
-- **Over-relying on DA** as the only quality metric
-- **Ignoring Spam Score context** (manual review needed)
-- **Not checking PA** for specific link opportunities
-- **Forgetting that Moz's index is smaller** than competitors
-
-### Integrating With Your Workflow
-
-**Moz fits best as:**
-- Quick qualification tool (MozBar)
-- Standard metric source (DA for client reporting)
-- Secondary verification (alongside Ahrefs/SEMrush)
-- Learning resource (Moz's educational content)
-
-## Frequently Asked Questions
-
-### Is Domain Authority a Google metric?
-
-No. Domain Authority is Moz's proprietary metric. Google does not use it. However, DA attempts to predict ranking ability based on factors similar to what Google might consider.
-
-### Why is my DA lower than competitors with fewer links?
-
-DA considers link quality, not just quantity. Competitors may have fewer but higher-quality links. DA is also relative—if the web's overall link profile changes, your DA can shift.
-
-### How often should I check DA?
-
-DA updates approximately monthly. Checking more frequently won't show changes. Focus on long-term trends rather than short-term fluctuations.
-
-### Can I increase DA quickly?
-
-No. DA changes gradually based on backlink profile improvements. Attempts to rapidly boost DA usually involve low-quality links that ultimately backfire.
-
-### Should I disavow high Spam Score links?
-
-Not automatically. Spam Score is a risk indicator, not a verdict. Manually review flagged links before disavowing. Many legitimate sites have elevated Spam Scores.
-
-### Is Moz Pro worth the cost?
-
-It depends on your needs. If you need quick DA checks and basic analysis, the free tools may suffice. For serious link building with full data access, Pro is valuable—though many choose Ahrefs or SEMrush for primary backlink research.
-
-## Building Your Moz Workflow
-
-Moz works best as part of a broader toolkit:
-
-1. **Use MozBar** for instant evaluations while browsing
-2. **Check Link Explorer** for detailed prospect analysis
-3. **Run Link Opportunities** for competitor gap discovery
-4. **Monitor Spam Score** as a risk indicator
-5. **Track DA trends** for overall progress measurement
-
-While Moz's link index is smaller than competitors, its metrics (especially DA) remain industry standards, and its interface makes it accessible for link builders at all experience levels.
-
-For complementary tools, see our guides on [Ahrefs for link building](/blog/ahrefs-for-link-building-tutorial) and [SEMrush link building features](/blog/semrush-link-building-features). If you're looking for no-cost options to supplement Moz's free tier, our [free backlink checker tools roundup](/blog/best-free-backlink-checkers) covers the top alternatives.
-
-## Related Resources
-
-- [Ahrefs vs. Moz: Which Backlink Tool Is Better?](/comparisons/ahrefs-vs-moz)
-- [SEMrush vs. Moz: Feature-by-Feature Comparison](/comparisons/semrush-vs-moz)
-- [Best Free Backlink Checkers](/blog/best-free-backlink-checkers)
-- [Understanding Authority Metrics in SEO](/backlink-quality/authority-metrics)
-- [Domain Authority Explained](/glossary/domain-authority)
-- [Page Authority: What It Is and How to Use It](/glossary/page-authority)
-- [Backlink Audit Tools and Workflows](/backlink-audit/audit-tools)
+Consult [Moz Link Explorer](https://moz.com/link-explorer) for the current product and [Moz's published DA methodology](https://moz-static.s3.amazonaws.com/products/landing-pages/announcements/Guide_to_Domain_Authority_2.0.pdf) for its comparative model. Google's [Links report documentation](https://support.google.com/webmasters/answer/9049606) explains that report's limitations. This guide is editorial instruction, not a vendor-certified course or an independently measured index benchmark.

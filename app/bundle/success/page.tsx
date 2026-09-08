@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const BUNDLE_PRODUCT_ID = 'prod_TqD1I2sHtD0QCR'
 
 interface Props {
-  searchParams: { session_id?: string }
+  searchParams: Promise<{ session_id?: string }>
 }
 
 async function verifyPurchase(sessionId: string) {
@@ -57,7 +57,8 @@ async function verifyPurchase(sessionId: string) {
   }
 }
 
-export default async function BundleSuccessPage({ searchParams }: Props) {
+export default async function BundleSuccessPage(props: Props) {
+  const searchParams = await props.searchParams;
   const sessionId = searchParams.session_id
 
   // No session ID - redirect to bundle page
@@ -95,7 +96,7 @@ export default async function BundleSuccessPage({ searchParams }: Props) {
               </ul>
 
               <p className="text-surface-600 mb-8">
-                If you completed your purchase, please check your email for the download link,
+                If you completed your purchase, return to your purchase confirmation page or
                 or contact us at{' '}
                 <a href="mailto:support@backlinkgrid.com" className="text-brand-red hover:underline">
                   support@backlinkgrid.com

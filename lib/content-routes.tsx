@@ -1,3 +1,5 @@
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
@@ -18,7 +20,7 @@ import {
   pickSeoDescription,
   resolveSchemaImage,
 } from '@/lib/seo'
-import { useMDXComponents } from '@/mdx-components'
+import { getMDXComponents } from '@/mdx-components'
 
 export function generateHubPageMetadata(hubSlug: string, fallbackTitle: string): Metadata {
   const hub = getHubContent(hubSlug)
@@ -100,7 +102,7 @@ export function HubRoutePage({ hubSlug }: { hubSlug: string }) {
         hub={hub}
         clusters={clusters}
         relatedHubs={relatedHubs}
-        content={<MDXRemote source={hub.content} components={useMDXComponents({})} />}
+        content={<MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={hub.content} components={getMDXComponents({})} />}
       />
     </>
   )
@@ -155,7 +157,7 @@ export function ClusterRoutePage({
         siblings={siblings}
         siblingPageLinks={siblingPageLinks}
         crossHubLinks={crossHubLinks}
-        content={<MDXRemote source={cluster.content} components={useMDXComponents({})} />}
+        content={<MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={cluster.content} components={getMDXComponents({})} />}
       />
     </>
   )

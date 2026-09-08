@@ -48,15 +48,15 @@ const analysisChecklist = [
   {
     id: 'dofollow-nofollow',
     title: 'Dofollow vs Nofollow Ratio',
-    description: 'Analyze the balance between dofollow links (pass authority) and nofollow links (do not pass authority).',
+    description: 'Analyze the balance between dofollow links (pass authority) and nofollow links (qualified with a hint to search engines).',
     icon: LinkIcon,
     whatToLook: [
-      'Natural ratio: typically 60-80% dofollow, 20-40% nofollow',
+      'There is no universal ideal dofollow/nofollow ratio',
       'Nofollow from social media, forums, and press releases is normal',
       'High-authority sites often use nofollow - still valuable for traffic',
     ],
     redFlags: [
-      '100% dofollow links (unnatural pattern)',
+      'Unexplained concentration of paid, unqualified links',
       'Very high percentage from guest posts only',
       'Dofollow links from irrelevant or spammy sites',
     ],
@@ -67,9 +67,9 @@ const analysisChecklist = [
     description: 'Review the clickable text used in links pointing to your site. Over-optimization is a major red flag.',
     icon: FileText,
     whatToLook: [
-      'Branded anchors (your brand name) should be 30-40%+',
+      'Review branded anchors in the context of your niche',
       'Natural mix: branded, URL, generic ("click here"), partial match',
-      'Exact-match keyword anchors should be <5% for most sites',
+      'There is no universally safe exact-match percentage',
     ],
     redFlags: [
       'High percentage of exact-match keyword anchors',
@@ -687,7 +687,7 @@ export default function BacklinkAnalyzerPage() {
                   </li>
                 </ul>
                 <Link href="/bundle">
-                  <Button variant="yellow" size="lg" className="w-full group">
+                  <Button as="span" variant="yellow" size="lg" className="w-full group">
                     Get the Bundle
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -724,7 +724,7 @@ export default function BacklinkAnalyzerPage() {
                   </li>
                 </ul>
                 <Link href="/#grid">
-                  <Button variant="yellow" size="lg" className="w-full group">
+                  <Button as="span" variant="yellow" size="lg" className="w-full group">
                     Claim Your Square
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -745,13 +745,13 @@ export default function BacklinkAnalyzerPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/backlinks">
-                <Button variant="primary" size="lg" className="group bg-white text-surface-950 hover:bg-brand-yellow">
+                <Button as="span" variant="primary" size="lg" className="group bg-white text-surface-950 hover:bg-brand-yellow">
                   Backlinks Guide
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/link-building">
-                <Button variant="outline" size="lg" className="group border-white text-white hover:bg-white hover:text-surface-950">
+                <Button as="span" variant="outline" size="lg" className="group border-white text-white hover:bg-white hover:text-surface-950">
                   Link Building Strategy
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

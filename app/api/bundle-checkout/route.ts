@@ -11,11 +11,10 @@ const BUNDLE_PRICE_ID = 'price_1SsWbtGe23gJ3NQhIDjwkWmP'
 export async function POST() {
   try {
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ['card'],
       mode: 'payment',
       allow_promotion_codes: true,
-      success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/bundle/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/bundle?cancelled=true`,
+      success_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://backlinkgrid.com'}/bundle/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://backlinkgrid.com'}/bundle?cancelled=true`,
       line_items: [
         {
           price: BUNDLE_PRICE_ID,

@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import { ArrowRight, Check, Sparkles } from 'lucide-react'
 
 const benefits = [
-  'Permanent dofollow backlink',
+  'Permanent sponsored backlink',
   'Instant activation',
   'One-time payment',
   'Growing DA value',
@@ -66,7 +66,7 @@ export function CTA() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-3 px-5 py-2.5 bg-white border-2 border-white mb-12"
@@ -80,7 +80,7 @@ export function CTA() {
 
           {/* Headline */}
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[0.9]"
@@ -90,7 +90,7 @@ export function CTA() {
               <span className="text-brand-red">Your Spot</span>
               <motion.span
                 className="absolute -bottom-2 left-0 right-0 h-2 bg-brand-red/30"
-                initial={{ scaleX: 0 }}
+                initial={false}
                 animate={isInView ? { scaleX: 1 } : {}}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 style={{ originX: 0 }}
@@ -101,7 +101,7 @@ export function CTA() {
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 text-xl text-white/60 max-w-2xl mx-auto leading-relaxed"
@@ -114,7 +114,7 @@ export function CTA() {
 
           {/* Benefits */}
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-4"
@@ -122,7 +122,7 @@ export function CTA() {
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit}
-                initial={{ opacity: 0, x: -10 }}
+                initial={false}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
                 className="flex items-center gap-2"
@@ -137,7 +137,7 @@ export function CTA() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -160,7 +160,7 @@ export function CTA() {
 
           {/* Trust note */}
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.6 }}
             className="mt-8 flex items-center justify-center gap-6 text-sm text-white/40"

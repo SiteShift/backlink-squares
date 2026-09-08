@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   title: 'Page Not Found',
   robots: {
     index: false,
-    follow: false,
+    follow: true,
     googleBot: {
       index: false,
-      follow: false,
+      follow: true,
     },
   },
 }
@@ -61,13 +61,13 @@ export default function NotFound() {
           {/* Actions */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/">
-              <Button variant="primary" className="group">
+              <Button as="span" variant="primary" className="group">
                 <Home className="w-4 h-4 mr-2" />
                 Back to Grid
               </Button>
             </Link>
             <Link href="/blog">
-              <Button variant="secondary">
+              <Button as="span" variant="secondary">
                 <Search className="w-4 h-4 mr-2" />
                 Browse Blog
               </Button>
@@ -80,6 +80,8 @@ export default function NotFound() {
               Helpful Links
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <Link href="/sitemap-page">All pages</Link>
+              <a href="/llms.txt">AI reading guide</a>
               <Link
                 href="/how-it-works"
                 className="font-bold text-bauhaus-red hover:underline"

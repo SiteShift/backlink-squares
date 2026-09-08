@@ -8,12 +8,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost' | 'outline' | 'red' | 'yellow' | 'blue'
   size?: 'sm' | 'md' | 'lg'
   isLoading?: boolean
+  as?: 'button' | 'span'
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       className,
+      as = 'button',
       variant = 'primary',
       size = 'md',
       isLoading = false,
@@ -77,6 +79,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       if (variant === 'ghost') return 'none'
       return '4px 4px 0px 0px #09090B'
     }
+
+    if (as === 'span') return <span className={cn(baseStyles, variants[variant], sizes[size], className)} style={{ boxShadow: getShadow() }}>{children}</span>
 
     return (
       <button

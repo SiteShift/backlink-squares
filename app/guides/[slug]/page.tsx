@@ -1,3 +1,6 @@
+import { use } from "react";
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -11,13 +14,14 @@ import { BundleCard } from '@/components/promo'
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/JsonLd'
 import { getGuide, getAllGuides } from '@/lib/content'
 import { absoluteUrl, buildArticlePageMetadata, pickSeoDescription, resolveSchemaImage } from '@/lib/seo'
-import { useMDXComponents } from '@/mdx-components'
+import { getMDXComponents } from '@/mdx-components'
 
 type Props = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const guide = getGuide(params.slug)
 
   if (!guide) {
@@ -33,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: guide.keywords,
     image: guide.image,
     publishedTime: guide.date,
-    modifiedTime: guide.date,
+    modifiedTime: guide.lastUpdated || guide.date,
     authors: [guide.author || 'SEO Backlinks'],
   })
 }
@@ -43,7 +47,8 @@ export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }))
 }
 
-export default function GuidePage({ params }: Props) {
+export default async function GuidePage(props: Props) {
+  const params = await props.params;
   const guide = getGuide(params.slug)
 
   if (!guide) {
@@ -67,7 +72,7 @@ export default function GuidePage({ params }: Props) {
         description={pickSeoDescription(guide)}
         author={guide.author || 'SEO Backlinks'}
         datePublished={guide.date}
-        dateModified={guide.date}
+        dateModified={guide.lastUpdated || guide.date}
         url={absoluteUrl(`/guides/${params.slug}`)}
         image={resolveSchemaImage(guide.image)}
         keywords={guide.keywords}
@@ -167,7 +172,7 @@ export default function GuidePage({ params }: Props) {
             {/* Main Content */}
             <article className="bg-white border-3 border-dark p-8 lg:p-12 min-w-0" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
               <div className="prose prose-lg prose-slate max-w-none overflow-x-auto">
-                <MDXRemote source={guide.content} components={useMDXComponents({})} />
+                <MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={guide.content} components={getMDXComponents({})} />
               </div>
 
               <ContentCTA />
@@ -207,3 +212,5 @@ export default function GuidePage({ params }: Props) {
     </>
   )
 }
+
+export const dynamicParams = false

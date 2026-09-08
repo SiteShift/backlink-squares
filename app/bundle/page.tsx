@@ -8,8 +8,8 @@ import { BUNDLE_PRICE_GBP, bundleFaqs } from './bundleData'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'Complete Backlink Database Bundle - 270+ High DR Sites',
-    description: 'Get 270+ verified backlink sites with DR ratings, link types, costs, and submission URLs. Save 20+ hours of research. One-time purchase for £11.49.',
+    title: 'Backlink Database Bundle: 276 Opportunities for £11.49',
+    description: 'Explore 276 backlink opportunities in one CSV with recorded DR, costs, submission URLs and tips. Preview real rows before buying. £11.49, no subscription.',
     canonicalUrl: 'https://backlinkgrid.com/bundle',
     keywords: ['backlink database', 'link building database', 'SEO bundle', 'backlink opportunities'],
     type: 'website',
@@ -21,7 +21,7 @@ export default function BundlePage() {
     <>
       <ProductSchema
         name="Complete Backlink Database Bundle"
-        description="270+ verified backlink opportunities with DR, link types, costs, and submission URLs in one downloadable CSV."
+        description="276 backlink opportunities with recorded DR, link types, costs, submission URLs and tips in one downloadable CSV."
         url="https://backlinkgrid.com/bundle"
         price={BUNDLE_PRICE_GBP}
         currency="GBP"

@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { useState, useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { motion } from 'framer-motion'
@@ -173,7 +175,7 @@ export function PurchaseModal() {
                     )}
                   </p>
                   <p className="text-xs text-white/80">
-                    Lifetime dofollow backlink
+                    Lifetime sponsored backlink
                   </p>
                 </div>
               </div>
@@ -196,7 +198,7 @@ export function PurchaseModal() {
                   setFormData({ ...formData, siteUrl: e.target.value })
                 }
                 error={errors.siteUrl}
-                hint="Your permanent dofollow link will point here"
+                hint="Your permanent sponsored link will point here"
                 autoComplete="url"
               />
 
@@ -246,12 +248,12 @@ export function PurchaseModal() {
                     }
                   `}
                 >
-                  <input {...getInputProps()} />
+                  <input {...getInputProps()} aria-label="Upload a website logo" />
 
                   {logoPreview ? (
                     <div className="flex items-center gap-4">
                       <div className="relative w-14 h-14 bg-white border-2 border-surface-200 overflow-hidden">
-                        <img
+                        <Image unoptimized
                           src={logoPreview}
                           alt="Logo preview"
                           width={56}
@@ -301,7 +303,7 @@ export function PurchaseModal() {
                 />
                 <div
                   className={`
-                    w-5 h-5 border-2 transition-all flex items-center justify-center
+                    w-5 h-5 border-2 transition-all flex items-center justify-center peer-focus-visible:ring-2 peer-focus-visible:ring-brand-blue
                     ${agreedToTerms
                       ? 'bg-brand-blue border-surface-950'
                       : 'border-surface-300 group-hover:border-brand-blue'
@@ -334,7 +336,7 @@ export function PurchaseModal() {
 
             {/* Submit Error */}
             {errors.submit && (
-              <div className="p-3 bg-brand-red/10 border-2 border-brand-red">
+              <div role="alert" className="p-3 bg-brand-red/10 border-2 border-brand-red">
                 <p className="text-sm text-brand-red font-medium flex items-center gap-2">
                   <AlertCircle className="w-4 h-4" />
                   {errors.submit}
@@ -359,7 +361,7 @@ export function PurchaseModal() {
             <div className="flex items-center justify-center gap-2 text-xs text-surface-400">
               <Lock className="w-3.5 h-3.5" />
               <span>Secured by</span>
-              <img
+              <Image unoptimized
                 src="/stripe-4.svg"
                 alt="Stripe"
                 width={53}
@@ -378,7 +380,7 @@ export function PurchaseModal() {
               </h3>
               <div className="space-y-2.5">
                 {[
-                  { icon: LinkIcon, text: 'Permanent dofollow backlink', color: 'text-brand-red' },
+                  { icon: LinkIcon, text: 'Permanent sponsored backlink', color: 'text-brand-red' },
                   { icon: Zap, text: 'Live instantly after payment', color: 'text-brand-yellow' },
                   { icon: Shield, text: 'No monthly fees, ever', color: 'text-brand-blue' },
                   { icon: ImageIcon, text: 'Your logo on the grid', color: 'text-green-600' },
@@ -424,7 +426,7 @@ export function PurchaseModal() {
 
                   {/* Logo overlay */}
                   {logoPreview ? (
-                    <img
+                    <Image unoptimized
                       src={logoPreview}
                       alt="Your logo"
                       width={112}

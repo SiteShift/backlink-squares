@@ -512,7 +512,7 @@ export default function ROICalculatorPage() {
                 </div>
 
                 <Link href="/#grid">
-                  <Button variant="red" size="lg" className="w-full group">
+                  <Button as="span" variant="red" size="lg" className="w-full group">
                     Claim Your Square
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -552,7 +552,7 @@ export default function ROICalculatorPage() {
                 </div>
 
                 <Link href="/bundle">
-                  <Button variant="yellow" size="lg" className="w-full group">
+                  <Button as="span" variant="yellow" size="lg" className="w-full group">
                     Get the Bundle
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -572,7 +572,7 @@ export default function ROICalculatorPage() {
               Explore Our SEO Tools
             </h2>
             <Link href="/tools">
-              <Button variant="secondary" className="group">
+              <Button as="span" variant="secondary" className="group">
                 View All Tools
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

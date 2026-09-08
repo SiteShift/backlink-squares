@@ -179,7 +179,7 @@ export default function ToolsPage() {
 
                     {!isComingSoon ? (
                       <Link href={tool.href}>
-                        <Button variant="primary" className="group/btn">
+                        <Button as="span" variant="primary" className="group/btn">
                           Use Tool
                           <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                         </Button>
@@ -214,7 +214,7 @@ export default function ToolsPage() {
               </p>
 
               <Link href="/contact">
-                <Button variant="secondary" size="lg" className="group">
+                <Button as="span" variant="secondary" size="lg" className="group">
                   Suggest a Tool
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -242,14 +242,14 @@ export default function ToolsPage() {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/#grid">
-                  <Button variant="red" size="lg" className="group">
+                  <Button as="span" variant="red" size="lg" className="group">
                     Claim Your $1 Square
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
 
                 <Link href="/bundle">
-                  <Button variant="secondary" size="lg" className="group">
+                  <Button as="span" variant="secondary" size="lg" className="group">
                     Get 270+ Backlink Sites
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>

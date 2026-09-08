@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Mail, Twitter, HelpCircle, ArrowRight, Package, Search, ShoppingCart } from 'lucide-react'
+import { Mail, Share2 as Twitter, HelpCircle, ArrowRight, Package, Search, ShoppingCart } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { buildMetadata } from '@/lib/seo'

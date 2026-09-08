@@ -235,7 +235,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   const mdxBlogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.date || LAST_CONTENT_UPDATE,
+    lastModified: post.lastUpdated || post.date || LAST_CONTENT_UPDATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
@@ -245,7 +245,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   const mdxGuides: MetadataRoute.Sitemap = getAllGuides().map((guide) => ({
     url: `${baseUrl}/guides/${guide.slug}`,
-    lastModified: guide.date || LAST_CONTENT_UPDATE,
+    lastModified: guide.lastUpdated || guide.date || LAST_CONTENT_UPDATE,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -307,5 +307,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   addPages(guides)
   addPages(glossaryTerms)
 
+  const updatedStatic = new Set(['/', '/bundle', '/pricing', '/about', '/terms', '/how-it-works', '/tools/free-backlink-checker', '/tools/backlink-analyzer', '/sitemap-page'])
+  for (const page of allPages) {
+    if (updatedStatic.has(new URL(page.url).pathname)) page.lastModified = '2026-09-08'
+  }
+  allPages.push(...['templates', 'editorial-policy'].map(slug => ({ url: `${baseUrl}/${slug}`, lastModified: '2026-09-08' })))
   return allPages
 }

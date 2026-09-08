@@ -655,3 +655,13 @@
     border-color: #000 !important;
   }
 }
+
+/* Fixed navigation occupies real space before first paint. */
+body { padding-top: 48px; }
+@media (min-width: 640px) { body { padding-top: 52px; } }
+:where(a, button, input, summary, select, textarea):focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+.prose, article, .min-w-0 { min-width: 0; overflow-wrap: anywhere; }
+:where(h1,h2,h3,h4,[id]) { scroll-margin-top: 150px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

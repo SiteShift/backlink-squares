@@ -8,6 +8,7 @@ import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react'
 import { usePromo } from '@/components/promo'
 
 const navLinks = [
+  { href: '/bundle', label: 'Database Bundle' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/tools', label: 'Tools' },
   { href: '/blog', label: 'Blog' },
@@ -52,8 +53,10 @@ export function Header() {
         setLearnDropdownOpen(false)
       }
     }
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape') { setMobileMenuOpen(false); setLearnDropdownOpen(false) } }
+    document.addEventListener('keydown', escape)
     document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
+    return () => { document.removeEventListener('mousedown', handleClickOutside); document.removeEventListener('keydown', escape) }
   }, [])
 
   // Close mobile menu on route change or resize
@@ -113,6 +116,7 @@ export function Header() {
               {/* Learn Dropdown */}
               <li className="relative" ref={dropdownRef}>
                 <button
+                  aria-expanded={learnDropdownOpen}
                   onClick={() => setLearnDropdownOpen(!learnDropdownOpen)}
                   className="relative px-4 py-2 text-sm font-semibold text-surface-600 hover:text-surface-950 transition-colors group flex items-center gap-1"
                 >
@@ -181,21 +185,21 @@ export function Header() {
           <div className="flex items-center gap-3">
             {/* Desktop CTA */}
             <Link href="/#grid" className="hidden sm:block">
-              <motion.button
+              <span
                 className="group relative inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold
                          bg-surface-950 text-white border-2 border-surface-950
                          hover:bg-brand-red hover:border-brand-red
                          transition-colors duration-200"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
               >
                 <span>Get a Backlink</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </motion.button>
+              </span>
             </Link>
 
             {/* Mobile Menu Button */}
             <motion.button
+              aria-label={mobileMenuOpen ? "Close navigation" : "Open navigation"}
+              aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden relative w-11 h-11 flex items-center justify-center
                        bg-white border-2 border-surface-950
@@ -322,10 +326,10 @@ export function Header() {
                 className="flex-shrink-0 px-4 py-4 border-t border-surface-200 bg-white safe-area-bottom"
               >
                 <Link href="/#grid" onClick={() => setMobileMenuOpen(false)}>
-                  <button className="btn-red w-full justify-center text-base py-3.5">
+                  <span className="btn-red w-full justify-center text-base py-3.5">
                     Get a Backlink
                     <ArrowRight className="w-5 h-5" />
-                  </button>
+                  </span>
                 </Link>
               </motion.div>
             </motion.div>

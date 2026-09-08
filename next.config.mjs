@@ -4,6 +4,8 @@ import rehypeSlug from 'rehype-slug'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingIncludes: { '/api/bundle-download': ['./private/downloads/backlink-database-bundle.csv'], '/*': ['./content/**/*.mdx'] },
+  htmlLimitedBots: /.*/,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
     remotePatterns: [
@@ -13,8 +15,12 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return { beforeFiles: [{ source: '/:section/:slug.md', destination: '/markdown/:section/:slug.md' }] }
+  },
   async redirects() {
     return [
+      { source: '/blog/link-building-statistics-2026', destination: '/statistics/link-building-statistics-2026', permanent: true },
       {
         source: '/industries/startup',
         destination: '/blog/link-building-for-startups',
@@ -81,11 +87,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/templates',
-        destination: '/resources',
-        permanent: true,
-      },
-      {
         source: '/link-building/saas',
         destination: '/industries/saas',
         permanent: true,
@@ -109,6 +110,9 @@ const nextConfig = {
   },
   async headers() {
     return [
+      { source: '/index.md', headers: [{ key: 'Content-Type', value: 'text/markdown; charset=utf-8' }, { key: 'Link', value: '<https://backlinkgrid.com/>; rel="canonical"' }, { key: 'X-Robots-Tag', value: 'noindex' }] },
+      { source: '/agents.md', headers: [{ key: 'Content-Type', value: 'text/markdown; charset=utf-8' }, { key: 'X-Robots-Tag', value: 'noindex' }] },
+      { source: '/', headers: [{ key: 'Link', value: '<https://backlinkgrid.com/index.md>; rel="alternate"; type="text/markdown"' }] },
       {
         source: '/:path*',
         headers: [

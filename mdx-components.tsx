@@ -20,12 +20,12 @@ function getTextContent(children: React.ReactNode): string {
   if (typeof children === 'number') return String(children)
   if (Array.isArray(children)) return children.map(getTextContent).join('')
   if (children && typeof children === 'object' && 'props' in children) {
-    return getTextContent((children as React.ReactElement).props.children)
+    return getTextContent((children as React.ReactElement<{ children?: React.ReactNode }>).props.children)
   }
   return ''
 }
 
-export function useMDXComponents(components: MDXComponents): MDXComponents {
+export function getMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Custom heading with anchor links and auto-generated IDs
     h2: ({ children, id, ...props }) => {
@@ -142,3 +142,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ...components,
   }
 }
+
+// Next MDX provider convention; the resolver itself does not use React hooks.
+export const useMDXComponents = getMDXComponents

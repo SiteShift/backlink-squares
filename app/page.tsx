@@ -1,3 +1,4 @@
+import { homeFaqs } from '@/lib/home-faq'
 import { Metadata } from 'next'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -19,14 +20,14 @@ import { Zap, Link as LinkIcon, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
+    title: 'BacklinkGrid: Backlink Database & Website Directory',
     description:
-      'Buy permanent dofollow backlinks on BacklinkGrid. Claim a square from $1, explore free SEO tools, and grow your authority with practical link building resources.',
+      'Find backlink opportunities in our 276-site database, claim a directory square from $1, and learn with free link-building guides and practical SEO templates.',
     canonicalUrl: 'https://backlinkgrid.com',
     keywords: [
       'backlinks',
       'buy backlinks',
-      'dofollow backlinks',
+      'sponsored backlinks',
       'backlink marketplace',
       'link building',
     ],
@@ -34,39 +35,7 @@ export const metadata: Metadata = {
   }),
 }
 
-// FAQ data for schema
-const faqData = [
-  {
-    question: 'What is a dofollow backlink?',
-    answer:
-      'A dofollow backlink is a link that passes "link equity" or "link juice" to your website. Unlike nofollow links, dofollow links tell search engines to follow the link and count it as a vote of confidence for your site, which can help improve your search rankings.',
-  },
-  {
-    question: 'How quickly will my square appear on the grid?',
-    answer:
-      "Your square appears instantly after your payment is confirmed. There's no waiting period or manual approval process. As soon as Stripe confirms your payment, your logo and link go live on the grid.",
-  },
-  {
-    question: 'Is this a permanent backlink?',
-    answer:
-      'Yes! When you purchase a square, you get a permanent, lifetime placement on the grid. There are no monthly fees, no renewals, and no risk of your link being removed. Your backlink stays active as long as our site exists.',
-  },
-  {
-    question: 'Can I buy multiple squares?',
-    answer:
-      'Absolutely! You can select up to 100 squares anywhere on the grid - they don\'t need to be next to each other. Buy scattered squares across the grid for maximum exposure, or group them together for a larger logo. The price scales linearly: $1 per square.',
-  },
-  {
-    question: 'How does this help my SEO?',
-    answer:
-      "Every square on our grid includes a real, crawlable dofollow link. As our domain authority grows through our content and links, the value of your backlink increases too. You're essentially getting in early on a growing SEO asset.",
-  },
-  {
-    question: 'Do you offer refunds?',
-    answer:
-      "Due to the nature of this product (instant, permanent backlinks), we generally don't offer refunds once your square is live. However, if there's an issue with your purchase, please contact us and we'll work to make it right.",
-  },
-]
+const faqData = homeFaqs
 
 // Force dynamic rendering
 export const dynamic = 'force-dynamic'
@@ -113,14 +82,14 @@ const features = [
   },
   {
     icon: LinkIcon,
-    value: 'Dofollow',
-    label: 'Real SEO Value',
+    value: 'Listed',
+    label: 'Website Visibility',
     color: 'text-brand-blue',
     bg: 'bg-brand-blue/10',
   },
   {
     icon: Clock,
-    value: 'Forever',
+    value: 'Once',
     label: 'One Payment',
     color: 'text-brand-yellow',
     bg: 'bg-brand-yellow/10',
@@ -132,15 +101,10 @@ export default async function HomePage() {
 
   return (
     <>
-      <OrganizationSchema
-        sameAs={[
-          'https://twitter.com/seobacklinks',
-          'https://linkedin.com/company/seobacklinks',
-        ]}
-      />
+      <OrganizationSchema />
       <ProductSchema
         name="BacklinkGrid Squares"
-        description="Permanent dofollow backlinks on BacklinkGrid starting at $1 per square."
+        description="Permanent sponsored backlinks on BacklinkGrid starting at $1 per square."
         url="https://backlinkgrid.com"
         price={1}
       />
@@ -173,6 +137,8 @@ export default async function HomePage() {
           </div>
         </section>
 
+        <BundleCard />
+
         {/* The Grid - Main Product */}
         <section id="grid" className="section-padding bg-white relative overflow-hidden">
           {/* Background pattern */}
@@ -186,7 +152,7 @@ export default async function HomePage() {
             <div className="text-center mb-16">
               <div className="section-label mx-auto mb-8">
                 <span className="section-label-dot bg-brand-red" />
-                <span>Do Follow Backlinks</span>
+                <span>Website Directory</span>
               </div>
 
               <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight">
@@ -208,8 +174,7 @@ export default async function HomePage() {
         {/* How It Works */}
         <HowItWorks />
 
-        {/* Bundle Promotion */}
-        <BundleCard />
+
 
         {/* FAQ */}
         <FAQ />

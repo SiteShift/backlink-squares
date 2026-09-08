@@ -1,3 +1,5 @@
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -7,7 +9,7 @@ import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { getAllGlossaryTerms, getGlossaryTerm } from '@/lib/content'
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import { useMDXComponents } from '@/mdx-components'
+import { getMDXComponents } from '@/mdx-components'
 import { DefinedTermSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 import { absoluteUrl, buildArticlePageMetadata } from '@/lib/seo'
 import { formatDate } from '@/lib/utils'
@@ -61,7 +63,7 @@ export default async function GlossaryTermPage({ params }: Props) {
     .map((relatedSlug) => allTerms.find((t) => t.slug === relatedSlug))
     .filter(Boolean)
 
-  const components = useMDXComponents({})
+  const components = getMDXComponents({})
   const canonicalUrl = absoluteUrl(`/glossary/${slug}`)
 
   return (
@@ -132,7 +134,7 @@ export default async function GlossaryTermPage({ params }: Props) {
         {/* Content */}
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="bg-white border-3 border-dark p-8 lg:p-12 prose prose-lg prose-slate max-w-none overflow-x-auto" style={{ boxShadow: '6px 6px 0px 0px #0A0A0A' }}>
-            <MDXRemote source={term.content} components={components} />
+            <MDXRemote options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} source={term.content} components={components} />
           </div>
 
           {/* Related Terms */}
@@ -186,3 +188,5 @@ export default async function GlossaryTermPage({ params }: Props) {
     </>
   )
 }
+
+export const dynamicParams = false

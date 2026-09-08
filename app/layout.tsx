@@ -1,3 +1,4 @@
+import { ConversionTracking } from '@/components/seo/ConversionTracking'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { PromoBanner, PromoProvider } from '@/components/promo'
@@ -7,14 +8,14 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://backlinkgrid.com'),
   title: {
-    default: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
+    default: 'BacklinkGrid - Buy sponsored Backlinks from $1',
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'The backlink grid. Buy a square, get a permanent dofollow backlink. Join growing sites building their authority starting at just $1.',
+    'The backlink grid. Buy a square, get a permanent sponsored backlink. Join growing sites building their authority starting at just $1.',
   keywords: [
     'backlinks',
-    'dofollow backlinks',
+    'sponsored backlinks',
     'buy backlinks',
     'SEO backlinks',
     'link building',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://backlinkgrid.com',
     siteName: SITE_NAME,
-    title: 'BacklinkGrid - Buy Dofollow Backlinks from $1',
+    title: 'BacklinkGrid - Buy sponsored Backlinks from $1',
     description:
       'Own your square. Get your backlink. The visual backlink marketplace starting at $1.',
     images: [
@@ -84,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="AI reading guide" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -92,7 +94,7 @@ export default function RootLayout({
               '@type': 'WebSite',
               name: SITE_NAME,
               url: 'https://backlinkgrid.com',
-              description: 'Buy dofollow backlinks on our visual grid. Permanent links from $1.',
+              description: 'Buy sponsored backlinks on our visual grid. Permanent links from $1.',
             }),
           }}
         />
@@ -103,6 +105,7 @@ export default function RootLayout({
           {children}
         </PromoProvider>
         <Analytics />
+        <ConversionTracking />
       </body>
     </html>
   )
