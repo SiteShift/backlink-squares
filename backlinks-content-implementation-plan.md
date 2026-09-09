@@ -3448,3 +3448,12 @@ Inventory: 336 MDX files after one consolidation and one new guide. This is not 
 - [x] Production build, lint, regression suites, 371-page crawl, Markdown/private-download checks and desktop/mobile browser verification passed.
 
 Detailed decisions, source limitations, GSC priorities and measurement guidance: `reports/blog-topical-audit.md`. These checks do not establish actual Google indexing or guarantee ranking/revenue changes.
+
+## H1 and metadata quality pass — 9 September 2026
+
+- [x] Review all sitemap-page headings, title tags and descriptions against page intent.
+- [x] Improve vague, repetitive and unsupported editorial headlines/snippets without changing article URLs.
+- [x] Make statistics descriptions task-specific and distinguish SaaS/ecommerce scenario descriptions.
+- [x] Simplify the bundle promotion while preserving the exact product name and £11.49 offer.
+
+Full evidence and final verification: `reports/heading-meta-audit.md`.

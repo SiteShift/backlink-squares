@@ -61,7 +61,7 @@ export default function GuidesPage() {
                 </span>
               </div>
               <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-dark leading-tight">
-                In-Depth SEO Guides
+                SEO &amp; Link Building Guides
               </h1>
               <p className="mt-4 text-xl text-dark/60">
                 Comprehensive, long-form guides covering everything you need to

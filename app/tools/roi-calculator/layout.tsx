@@ -3,9 +3,9 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'Link Building ROI Calculator - Calculate Your Backlink Investment Returns',
+    title: 'Free Link Building ROI Calculator: Model Campaign Returns',
     description:
-      'Free link building ROI calculator. Estimate the return on investment for your backlink campaigns. Calculate projected traffic, conversions, and revenue from your link building efforts.',
+      'Model link building ROI using your costs, traffic assumptions and conversion rate. Explore estimated revenue and break-even scenarios with this free calculator.',
     canonicalUrl: 'https://backlinkgrid.com/tools/roi-calculator',
     keywords: [
       'link building ROI calculator',

@@ -30,7 +30,7 @@ export default function FreeBacklinkCheckerPage() {
   return <><Header /><BreadcrumbSchema items={[{ name: 'Home', url: 'https://backlinkgrid.com' }, { name: 'Tools', url: 'https://backlinkgrid.com/tools' }, { name: 'Backlink checker launcher', url: 'https://backlinkgrid.com/tools/free-backlink-checker' }]} />
     <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-surface-50"><div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
       <Link href="/tools" className="text-sm underline underline-offset-4">← All free tools</Link>
-      <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mt-7">Find a backlink checker for your task.</h1>
+      <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mt-7">Free Backlink Checker & Research Tool Finder</h1>
       <p className="text-lg text-surface-600 max-w-3xl mt-5 leading-relaxed">Enter a domain to open it in established backlink research tools. This free launcher prepares the links; each provider controls its own data, account requirements and pricing.</p>
       <form onSubmit={submit} className="mt-8 p-5 sm:p-8 bg-white border border-surface-300">
         <label htmlFor="checker-domain" className="font-semibold block mb-3">Website domain</label><div className="flex flex-col sm:flex-row gap-3"><input id="checker-domain" value={domain} onChange={e => setDomain(e.target.value)} required autoComplete="url" spellCheck={false} placeholder="example.com" aria-invalid={Boolean(error)} aria-describedby={error ? 'checker-error' : undefined} className="min-w-0 flex-1 border border-surface-400 px-4 py-3 rounded-none" /><button type="submit" className="bg-brand-red text-white px-6 py-3 font-semibold">Show research links →</button></div>

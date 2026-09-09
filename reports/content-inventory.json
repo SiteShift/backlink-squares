@@ -68,8 +68,8 @@
     "url": "/backlink-quality",
     "words": 1818,
     "title": "Backlink Quality: The Complete Guide to Evaluating Link Value",
-    "metaTitle": "Backlink Quality: How to Evaluate Link Value [2026 Guide]",
-    "metaDescription": "Learn to assess backlink quality with proven frameworks. Understand authority metrics, relevance signals, spam indicators, and what makes links valuable."
+    "metaTitle": "Backlink Quality: Relevance, Metrics & Source Checks",
+    "metaDescription": "Assess backlink quality using source-page context, relevance, authority metrics and acquisition methods. Follow a practical framework for reviewing opportunities."
   },
   {
     "file": "content/backlink-quality/authority-metrics.mdx",
@@ -91,9 +91,9 @@
     "file": "content/backlink-quality/google-link-spam.mdx",
     "url": "/backlink-quality/google-link-spam",
     "words": 2311,
-    "title": "Google Link Spam Update: Complete Guide to Staying Compliant in 2026",
-    "metaTitle": "Google Link Spam Update 2026: Complete Compliance Guide",
-    "metaDescription": "Master Google's link spam policies. Learn what's allowed, what triggers penalties, and how to build links safely. Updated for 2026 SpamBrain changes."
+    "title": "Google Link Spam Policies: What to Check and Avoid",
+    "metaTitle": "Google Link Spam Policies: Examples & Practical Checks",
+    "metaDescription": "Understand Google's link spam policies, review acquisition methods and distinguish manual actions from ranking changes before deciding what to fix."
   },
   {
     "file": "content/backlink-quality/link-quality-checklist.mdx",
@@ -139,17 +139,17 @@
     "file": "content/backlinks/_index.mdx",
     "url": "/backlinks",
     "words": 2683,
-    "title": "Backlinks: The Complete Guide to Understanding, Evaluating, and Earning Links",
-    "metaTitle": "Backlinks: The Complete Guide to Link Building & SEO [2026]",
-    "metaDescription": "Learn everything about backlinks - what they are, types of links, how to evaluate quality, and proven strategies for earning high-quality backlinks for SEO."
+    "title": "Backlinks: What They Are and How to Build Them",
+    "metaTitle": "Backlinks Explained: Types, Quality & Link Building",
+    "metaDescription": "Understand backlink types, evaluate source quality and plan relevant link building. Explore practical guides to research, outreach and link maintenance."
   },
   {
     "file": "content/backlinks/anchor-text-ratios.mdx",
     "url": "/backlinks/anchor-text-ratios",
     "words": 1718,
-    "title": "Anchor Text Ratios: Benchmarks, Analysis, and Safe Distribution Guidelines",
-    "metaTitle": "Anchor Text Ratios: Optimal Distribution & Benchmarks [2026]",
-    "metaDescription": "Discover safe anchor text ratio benchmarks based on data analysis. Learn to calculate your distribution and avoid over-optimisation penalties."
+    "title": "Anchor Text Ratios: How to Analyse Your Distribution",
+    "metaTitle": "Anchor Text Ratios: Analysis Without Safe-Percentage Myths",
+    "metaDescription": "Calculate anchor text distribution and review patterns in context. Understand why a percentage alone cannot establish whether a backlink profile is safe."
   },
   {
     "file": "content/backlinks/anchor-text.mdx",
@@ -157,31 +157,31 @@
     "words": 1855,
     "title": "Anchor Text: The Complete Guide to Link Text Optimisation",
     "metaTitle": "Anchor Text Guide: Types, Best Practices & SEO Strategy [2026]",
-    "metaDescription": "Learn about anchor text types, natural distribution ratios, and how to optimise your backlink profile's anchor text for SEO without over-optimisation."
+    "metaDescription": "Understand anchor text types, descriptive wording and backlink context. Review distribution as evidence rather than a target ratio when analysing your link profile."
   },
   {
     "file": "content/backlinks/backlink-myths.mdx",
     "url": "/backlinks/backlink-myths",
     "words": 1953,
     "title": "Backlink Myths Debunked: 15 Common Misconceptions About Links and SEO",
-    "metaTitle": "15 Backlink Myths Debunked: What Actually Works [2026]",
-    "metaDescription": "Stop believing outdated SEO advice. We debunk 15 common backlink myths with evidence, expert insights, and practical guidance on what really matters."
+    "metaTitle": "Backlink Myths: Common SEO Misconceptions Explained",
+    "metaDescription": "Review common misconceptions about backlink counts, authority metrics, link attributes and acquisition. Use context and evidence to make better SEO decisions."
   },
   {
     "file": "content/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc.mdx",
     "url": "/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc",
     "words": 1691,
-    "title": "DoFollow vs NoFollow vs Sponsored vs UGC: Complete Guide to Link Attributes",
-    "metaTitle": "DoFollow vs NoFollow: Which Links Actually Help Your SEO? [2026]",
-    "metaDescription": "Complete guide to link types - learn which links pass SEO value, when to use each attribute, and Google's 2026 policies on sponsored and UGC links."
+    "title": "Dofollow, Nofollow, Sponsored and UGC Links Explained",
+    "metaTitle": "Dofollow vs Nofollow, Sponsored & UGC: Link Attributes",
+    "metaDescription": "Compare follow, nofollow, sponsored and UGC links with practical HTML examples. Learn how to describe links and choose attributes for different situations."
   },
   {
     "file": "content/backlinks/how-many-backlinks-do-i-need.mdx",
     "url": "/backlinks/how-many-backlinks-do-i-need",
     "words": 1623,
-    "title": "How Many Backlinks Do You Need to Rank? Data-Driven Analysis",
-    "metaTitle": "How Many Backlinks Do You Need to Rank? [2026 Data Analysis]",
-    "metaDescription": "Calculate the backlinks you need to rank based on keyword difficulty, competition analysis, and domain authority. Data-driven approach with benchmarks."
+    "title": "How Many Backlinks Do You Need? A Planning Framework",
+    "metaTitle": "How Many Backlinks Do You Need? Assess the Competition",
+    "metaDescription": "Compare relevant pages and referring sources to plan link building. Learn why keyword difficulty and domain scores cannot give a guaranteed backlink target."
   },
   {
     "file": "content/backlinks/internal-vs-external-links.mdx",
@@ -204,8 +204,8 @@
     "url": "/backlinks/link-velocity",
     "words": 1635,
     "title": "Link Velocity: What It Is, Why It Matters, and How to Monitor It",
-    "metaTitle": "Link Velocity Guide: Understanding Backlink Acquisition Rate [2026]",
-    "metaDescription": "Learn what link velocity is, how Google evaluates acquisition patterns, and how to maintain natural link building pace without triggering algorithmic flags."
+    "metaTitle": "Link Velocity: Measure New and Lost Backlinks",
+    "metaDescription": "Measure backlink acquisition over time, compare consistent datasets and investigate unusual changes without treating a fixed link velocity as a safety rule."
   },
   {
     "file": "content/backlinks/referring-domains-vs-backlinks.mdx",
@@ -213,7 +213,7 @@
     "words": 1352,
     "title": "Referring Domains vs Backlinks: What's the Difference and Why It Matters",
     "metaTitle": "Referring Domains vs Backlinks: Key Differences Explained [2026]",
-    "metaDescription": "Learn why referring domains matter more than total backlink count for SEO, how to interpret these metrics, and set effective link building goals."
+    "metaDescription": "Understand the difference between referring domains and individual backlinks. Compare counts consistently and review source quality before setting campaign goals."
   },
   {
     "file": "content/backlinks/what-is-a-backlink.mdx",
@@ -245,7 +245,8 @@
     "file": "content/blog/backlink-reporting-for-clients.mdx",
     "url": "/blog/backlink-reporting-for-clients",
     "words": 1898,
-    "title": "Backlink Reporting for Clients: How to Communicate Link Building Value"
+    "title": "Backlink Reporting for Clients: Evidence and Business Value",
+    "metaTitle": "Backlink Reporting for Clients: Metrics & Evidence"
   },
   {
     "file": "content/blog/backlinks-not-showing-google-search-console.mdx",
@@ -259,7 +260,9 @@
     "file": "content/blog/becoming-a-cited-source-in-your-industry.mdx",
     "url": "/blog/becoming-a-cited-source-in-your-industry",
     "words": 1773,
-    "title": "How to Become a Cited Source in Your Industry: The Expert's Playbook"
+    "title": "How to Become a Cited Source in Your Industry",
+    "metaTitle": "Become a Cited Source: Research, Expertise & Outreach",
+    "metaDescription": "Prepare useful evidence, make your expertise easy to assess and build relevant publisher relationships. Learn what makes a source easier to cite accurately."
   },
   {
     "file": "content/blog/best-free-backlink-checkers.mdx",
@@ -285,31 +288,37 @@
     "file": "content/blog/best-link-building-tools-2026.mdx",
     "url": "/blog/best-link-building-tools-2026",
     "words": 2524,
-    "title": "Best Link Building Tools 2026: 25 Essential Tools for SEO Success"
+    "title": "Link Building Tools: Research, Outreach and Monitoring",
+    "metaTitle": "Link Building Tools: Research, Outreach & Monitoring"
   },
   {
     "file": "content/blog/branded-vs-keyword-anchor-text.mdx",
     "url": "/blog/branded-vs-keyword-anchor-text",
     "words": 1947,
-    "title": "Branded vs Keyword Anchor Text: How to Optimize Without Over-Optimizing"
+    "title": "Branded vs Keyword Anchor Text: Uses and Trade-Offs",
+    "metaTitle": "Branded vs Keyword Anchor Text: Context & Examples",
+    "metaDescription": "Compare branded, keyword and descriptive anchors. Review wording and acquisition context without assuming a fixed ratio prevents over-optimisation."
   },
   {
     "file": "content/blog/building-links-to-boring-industries.mdx",
     "url": "/blog/building-links-to-boring-industries",
     "words": 1752,
-    "title": "Building Links to Boring Industries: Creative Strategies That Work"
+    "title": "Link Building for Boring Industries: Find Useful Angles",
+    "metaTitle": "Link Building for Boring Industries: Practical Angles"
   },
   {
     "file": "content/blog/building-links-without-content.mdx",
     "url": "/blog/building-links-without-content",
     "words": 1994,
-    "title": "Building Links Without Content: Non-Content Link Building Strategies"
+    "title": "Link Building Without New Content: Practical Options",
+    "metaTitle": "Link Building Without New Content: Options & Limits"
   },
   {
     "file": "content/blog/building-relationships-for-links.mdx",
     "url": "/blog/building-relationships-for-links",
     "words": 1934,
-    "title": "Building Relationships for Links: The Long-Term Link Building Strategy"
+    "title": "Relationship-Based Link Building: A Practical Guide",
+    "metaTitle": "Relationship-Based Link Building: A Practical Guide"
   },
   {
     "file": "content/blog/building-thought-leadership-through-links.mdx",
@@ -321,7 +330,9 @@
     "file": "content/blog/common-link-building-questions-answered.mdx",
     "url": "/blog/common-link-building-questions-answered",
     "words": 2417,
-    "title": "50 Common Link Building Questions Answered by SEO Experts"
+    "title": "Common Link Building Questions Answered",
+    "metaTitle": "Link Building Questions: Basics, Tactics & Measurement",
+    "metaDescription": "Find answers to common questions about backlinks, outreach, link quality and measurement. Use the explanations to plan your next research or campaign step."
   },
   {
     "file": "content/blog/creating-a-link-building-strategy.mdx",
@@ -333,7 +344,9 @@
     "file": "content/blog/dealing-with-negative-seo-attacks.mdx",
     "url": "/blog/dealing-with-negative-seo-attacks",
     "words": 1789,
-    "title": "Dealing with Negative SEO Attacks: Detection, Defense, and Recovery"
+    "title": "Negative SEO: Investigate Suspicious Links and Site Changes",
+    "metaTitle": "Negative SEO: Checks, Evidence & Proportionate Responses",
+    "metaDescription": "Investigate suspicious links and site changes before attributing losses to negative SEO. Record evidence and distinguish technical issues from uncertain signals."
   },
   {
     "file": "content/blog/dofollow-vs-nofollow.mdx",
@@ -351,13 +364,15 @@
     "file": "content/blog/e-e-a-t-and-link-building.mdx",
     "url": "/blog/e-e-a-t-and-link-building",
     "words": 1817,
-    "title": "E-E-A-T and Link Building: How Backlinks Support Expertise and Trust"
+    "title": "E-E-A-T and Backlinks: Expertise, Reputation and Trust",
+    "metaTitle": "E-E-A-T and Backlinks: Expertise, Reputation & Trust"
   },
   {
     "file": "content/blog/first-10-backlinks-for-new-site.mdx",
     "url": "/blog/first-10-backlinks-for-new-site",
     "words": 2221,
-    "title": "How to Get Your First 10 Backlinks for a New Website"
+    "title": "How to Get Your First 10 Backlinks for a New Website",
+    "metaDescription": "Plan your first backlink opportunities for a new website. Review relevant profiles, directories, relationships and useful content before pursuing placements."
   },
   {
     "file": "content/blog/follow-up-emails-that-get-responses.mdx",
@@ -369,7 +384,9 @@
     "file": "content/blog/future-of-link-building.mdx",
     "url": "/blog/future-of-link-building",
     "words": 1974,
-    "title": "The Future of Link Building: Trends, Predictions, and What's Next"
+    "title": "The Future of Link Building: Trends and Open Questions",
+    "metaTitle": "Future of Link Building: Trends & Open Questions",
+    "metaDescription": "Explore how AI tools, publisher practices and search changes affect link building. Separate practical planning considerations from predictions about future results."
   },
   {
     "file": "content/blog/google-link-spam-update-2026.mdx",
@@ -387,19 +404,23 @@
     "file": "content/blog/guest-posting-vs-niche-edits.mdx",
     "url": "/blog/guest-posting-vs-niche-edits",
     "words": 2048,
-    "title": "Guest Posting vs Niche Edits: Which Link Building Method Is Better?"
+    "title": "Guest Posting vs Niche Edits: Methods, Costs and Risks",
+    "metaTitle": "Guest Posting vs Niche Edits: Methods, Costs & Risks"
   },
   {
     "file": "content/blog/how-google-evaluates-backlinks.mdx",
     "url": "/blog/how-google-evaluates-backlinks",
     "words": 1899,
-    "title": "How Google Evaluates Backlinks: Inside the Algorithm"
+    "title": "How Google Evaluates Backlinks: Signals and Limitations",
+    "metaTitle": "How Google Evaluates Backlinks: Signals & Limitations",
+    "metaDescription": "Explore PageRank, link context and Google's published guidance. Understand the limits of third-party metrics and claims about internal ranking algorithms."
   },
   {
     "file": "content/blog/how-links-build-brand-authority.mdx",
     "url": "/blog/how-links-build-brand-authority",
     "words": 1905,
-    "title": "How Backlinks Build Brand Authority: The Psychology and SEO of Trust"
+    "title": "Backlinks and Brand Authority: Reputation and Recognition",
+    "metaTitle": "Backlinks and Brand Authority: Reputation & Recognition"
   },
   {
     "file": "content/blog/how-to-audit-your-backlink-profile.mdx",
@@ -411,19 +432,23 @@
     "file": "content/blog/how-to-build-backlinks-with-infographics.mdx",
     "url": "/blog/how-to-build-backlinks-with-infographics",
     "words": 2303,
-    "title": "How to Build Backlinks with Infographics: A Step-by-Step Guide"
+    "title": "How to Build Backlinks with Infographics: A Step-by-Step Guide",
+    "metaDescription": "Plan infographic link building from a useful visual idea to relevant publisher outreach. Review the evidence, attribution and destination before promotion."
   },
   {
     "file": "content/blog/how-to-build-links-with-data-studies.mdx",
     "url": "/blog/how-to-build-links-with-data-studies",
     "words": 1989,
-    "title": "How to Build Links with Data Studies: Complete Research-Based Link Building Guide"
+    "title": "Link Building with Data Studies: Research and Promotion",
+    "metaTitle": "Link Building with Data Studies: Research & Promotion"
   },
   {
     "file": "content/blog/how-to-do-competitor-backlink-analysis.mdx",
     "url": "/blog/how-to-do-competitor-backlink-analysis",
     "words": 2322,
-    "title": "How to Do Competitor Backlink Analysis: Complete Step-by-Step Guide"
+    "title": "Competitor Backlink Analysis: A Step-by-Step Workflow",
+    "metaTitle": "Competitor Backlink Analysis: Research & Prioritisation",
+    "metaDescription": "Compare competitor source pages, find relevant gaps and qualify potential opportunities. Keep dataset scope and collection dates consistent during the analysis."
   },
   {
     "file": "content/blog/how-to-find-broken-links-for-link-building.mdx",
@@ -435,37 +460,47 @@
     "file": "content/blog/how-to-fix-a-bad-backlink-profile.mdx",
     "url": "/blog/how-to-fix-a-bad-backlink-profile",
     "words": 1937,
-    "title": "How to Fix a Bad Backlink Profile: Complete Cleanup and Recovery Guide"
+    "title": "Backlink Profile Cleanup: Review Problems Before Acting",
+    "metaTitle": "Backlink Profile Cleanup: Evidence, Actions & Follow-Up",
+    "metaDescription": "Review questionable backlinks, acquisition practices and broken destinations. Decide what needs correction before requesting removals or considering disavow."
   },
   {
     "file": "content/blog/how-to-get-backlinks-from-government-sites-gov.mdx",
     "url": "/blog/how-to-get-backlinks-from-government-sites-gov",
     "words": 2385,
-    "title": "How to Get Backlinks from Government Sites (.gov): Complete Strategy"
+    "title": "Government Backlinks: Relevant .gov Opportunities",
+    "metaTitle": "Government Backlinks: Relevant .gov Opportunities",
+    "metaDescription": "Explore government resource pages and legitimate organisational relationships. Assess eligibility and audience relevance before pursuing a .gov link."
   },
   {
     "file": "content/blog/how-to-get-backlinks-from-news-sites.mdx",
     "url": "/blog/how-to-get-backlinks-from-news-sites",
     "words": 1866,
-    "title": "How to Get Backlinks from News Sites: Digital PR Strategies"
+    "title": "How to Get Backlinks from News Sites: Digital PR Strategies",
+    "metaDescription": "Plan newsworthy contributions for relevant publications through research, commentary and timely stories. Prepare evidence and evaluate published media mentions."
   },
   {
     "file": "content/blog/how-to-get-backlinks-from-podcasts.mdx",
     "url": "/blog/how-to-get-backlinks-from-podcasts",
     "words": 2093,
-    "title": "How to Get Backlinks from Podcasts: The Complete Guide"
+    "title": "How to Get Backlinks from Podcasts: The Complete Guide",
+    "metaDescription": "Explore podcast guesting and useful show-note references. Find relevant audiences, prepare a contribution and check whether a published episode includes your link."
   },
   {
     "file": "content/blog/how-to-get-backlinks-from-universities-edu.mdx",
     "url": "/blog/how-to-get-backlinks-from-universities-edu",
     "words": 2370,
-    "title": "How to Get Backlinks from Universities (.edu): The Definitive Guide"
+    "title": "University Backlinks: Relevant .edu Opportunities",
+    "metaTitle": "University Backlinks: Relevant .edu Opportunities",
+    "metaDescription": "Explore relevant university resources, partnerships and student programmes. Review eligibility and practical value instead of pursuing a link for its .edu suffix."
   },
   {
     "file": "content/blog/how-to-get-backlinks-without-outreach.mdx",
     "url": "/blog/how-to-get-backlinks-without-outreach",
     "words": 1966,
-    "title": "How to Get Backlinks Without Outreach: 12 Passive Link Building Methods"
+    "title": "How to Attract Backlinks Without Email Outreach",
+    "metaTitle": "Attract Backlinks Without Outreach: Content & Discovery",
+    "metaDescription": "Explore content, tools and discovery routes that can attract references without email outreach. Understand the work and distribution still required."
   },
   {
     "file": "content/blog/how-to-get-featured-in-roundups.mdx",
@@ -483,7 +518,8 @@
     "file": "content/blog/how-to-remove-toxic-backlinks.mdx",
     "url": "/blog/how-to-remove-toxic-backlinks",
     "words": 1962,
-    "title": "How to Remove Toxic Backlinks: Complete Cleanup Guide"
+    "title": "How to Remove Toxic Backlinks: Complete Cleanup Guide",
+    "metaDescription": "Review links labelled toxic by SEO tools, inspect the actual source pages and assess the context. Learn when a removal request or disavow review may be appropriate."
   },
   {
     "file": "content/blog/how-to-use-content-for-link-building.mdx",
@@ -495,13 +531,17 @@
     "file": "content/blog/how-to-use-haro-for-link-building.mdx",
     "url": "/blog/how-to-use-haro-for-link-building",
     "words": 2153,
-    "title": "How to Use HARO for Link Building: Expert Strategies That Work"
+    "title": "HARO Link Building: Responding to Journalist Requests",
+    "metaTitle": "HARO Link Building: Journalist Requests & Pitching",
+    "metaDescription": "Prepare relevant responses to journalist requests with clear expertise and evidence. Review current HARO access rules and verify any resulting source-page links."
   },
   {
     "file": "content/blog/how-to-write-guest-post-pitches-that-get-accepted.mdx",
     "url": "/blog/how-to-write-guest-post-pitches-that-get-accepted",
     "words": 2443,
-    "title": "How to Write Guest Post Pitches That Get Accepted: Proven Templates"
+    "title": "How to Write a Guest Post Pitch: Templates and Examples",
+    "metaTitle": "Guest Post Pitch Writing: Templates & Examples",
+    "metaDescription": "Write a relevant guest post pitch with a clear audience, useful idea and supporting outline. Adapt example emails to the publisher's current instructions."
   },
   {
     "file": "content/blog/how-we-built-100-backlinks-in-30-days.mdx",
@@ -519,49 +559,58 @@
     "file": "content/blog/link-building-101-beginners-guide.mdx",
     "url": "/blog/link-building-101-beginners-guide",
     "words": 2393,
-    "title": "Link Building 101: The Complete Beginner's Guide to Building Backlinks"
+    "title": "Link Building 101: A Beginner's Guide to Backlinks",
+    "metaTitle": "Link Building 101: A Beginner's Guide to Backlinks"
   },
   {
     "file": "content/blog/link-building-agency-vs-freelancer.mdx",
     "url": "/blog/link-building-agency-vs-freelancer",
     "words": 2014,
-    "title": "Link Building Agency vs Freelancer: Which Is Right for Your Business?"
+    "title": "Link Building Agency vs Freelancer: Costs and Trade-Offs",
+    "metaTitle": "Link Building Agency vs Freelancer: Costs & Trade-Offs"
   },
   {
     "file": "content/blog/link-building-at-scale.mdx",
     "url": "/blog/link-building-at-scale",
     "words": 1932,
-    "title": "Link Building at Scale: Systems and Processes for High-Volume Link Acquisition"
+    "title": "Link Building at Scale: Research, Outreach and Quality",
+    "metaTitle": "Link Building at Scale: Processes & Quality Control"
   },
   {
     "file": "content/blog/link-building-budget-allocation.mdx",
     "url": "/blog/link-building-budget-allocation",
     "words": 1927,
-    "title": "Link Building Budget Allocation: How to Spend Your SEO Budget Wisely"
+    "title": "Link Building Budget Allocation: Plan Your Spending",
+    "metaTitle": "Link Building Budget Allocation: Costs & Priorities"
   },
   {
     "file": "content/blog/link-building-campaign-planning.mdx",
     "url": "/blog/link-building-campaign-planning",
     "words": 1781,
-    "title": "Link Building Campaign Planning: How to Plan and Execute Successful Campaigns"
+    "title": "Link Building Campaign Planning: Goals to Delivery",
+    "metaTitle": "Link Building Campaign Planning: Goals to Delivery",
+    "metaDescription": "Plan a link building campaign with clear goals, research capacity, responsibilities and review points. Track delivery separately from search and revenue outcomes."
   },
   {
     "file": "content/blog/link-building-case-study-ecommerce.mdx",
     "url": "/blog/link-building-case-study-ecommerce",
     "words": 2622,
-    "title": "E-commerce Link Building: Illustrative Campaign Case Study"
+    "title": "E-commerce Link Building: Illustrative Campaign Case Study",
+    "metaDescription": "Explore a hypothetical e-commerce link building campaign using content, product pages and outreach. Use the scenario for planning, not as verified client results."
   },
   {
     "file": "content/blog/link-building-case-study-saas.mdx",
     "url": "/blog/link-building-case-study-saas",
     "words": 2413,
-    "title": "SaaS Link Building: Illustrative Campaign Case Study"
+    "title": "SaaS Link Building: Illustrative Campaign Case Study",
+    "metaDescription": "Explore a hypothetical SaaS link building campaign using product expertise, useful resources and outreach. Its figures illustrate a plan, not verified client results."
   },
   {
     "file": "content/blog/link-building-dashboards-and-metrics.mdx",
     "url": "/blog/link-building-dashboards-and-metrics",
     "words": 1813,
-    "title": "Link Building Dashboards and Metrics: Build Your Measurement System"
+    "title": "Link Building Dashboards: Metrics and Reporting Design",
+    "metaTitle": "Link Building Dashboards: Metrics & Reporting Design"
   },
   {
     "file": "content/blog/link-building-for-affiliate-sites.mdx",
@@ -573,13 +622,15 @@
     "file": "content/blog/link-building-for-blog-posts.mdx",
     "url": "/blog/link-building-for-blog-posts",
     "words": 1931,
-    "title": "Link Building for Blog Posts: Proven Strategies to Amplify Your Content"
+    "title": "Link Building for Blog Posts: Research and Promotion",
+    "metaTitle": "Link Building for Blog Posts: Research & Promotion"
   },
   {
     "file": "content/blog/link-building-for-competitive-niches.mdx",
     "url": "/blog/link-building-for-competitive-niches",
     "words": 1831,
-    "title": "Link Building for Competitive Niches: Advanced Strategies That Work"
+    "title": "Link Building for Competitive Niches: Research and Focus",
+    "metaTitle": "Link Building for Competitive Niches: Research & Focus"
   },
   {
     "file": "content/blog/link-building-for-content-sites.mdx",
@@ -591,25 +642,31 @@
     "file": "content/blog/link-building-for-landing-pages.mdx",
     "url": "/blog/link-building-for-landing-pages",
     "words": 1808,
-    "title": "Link Building for Landing Pages: Drive Authority to Your Conversion Pages"
+    "title": "Link Building for Landing Pages: Relevance and Conversion",
+    "metaTitle": "Link Building for Landing Pages: Relevance & Conversion",
+    "metaDescription": "Plan relevant backlinks to landing pages and supporting content. Match the publisher's audience to a useful destination and review the visitor's next step."
   },
   {
     "file": "content/blog/link-building-for-new-websites.mdx",
     "url": "/blog/link-building-for-new-websites",
     "words": 1980,
-    "title": "Link Building for New Websites: The Complete Starter Guide"
+    "title": "Link Building for New Websites: The Complete Starter Guide",
+    "metaDescription": "Plan link building for a new website with relevant profiles, useful pages and publisher research. Prioritise a clear audience and practical first steps."
   },
   {
     "file": "content/blog/link-building-for-personal-brands.mdx",
     "url": "/blog/link-building-for-personal-brands",
     "words": 1673,
-    "title": "Link Building for Personal Brands: Establish Your Online Authority"
+    "title": "Link Building for Personal Brands: Relevant Visibility",
+    "metaTitle": "Link Building for Personal Brands: Relevant Visibility"
   },
   {
     "file": "content/blog/link-building-for-product-pages.mdx",
     "url": "/blog/link-building-for-product-pages",
     "words": 1969,
-    "title": "Link Building for Product Pages: Strategies That Actually Work"
+    "title": "Link Building for Product Pages: Sources and Approaches",
+    "metaTitle": "Link Building for Product Pages: Sources & Approaches",
+    "metaDescription": "Explore backlink opportunities for product pages through useful resources, partners and relevant coverage. Assess the destination's value to each publisher's reader."
   },
   {
     "file": "content/blog/link-building-for-service-businesses.mdx",
@@ -621,25 +678,30 @@
     "file": "content/blog/link-building-for-service-pages.mdx",
     "url": "/blog/link-building-for-service-pages",
     "words": 1943,
-    "title": "Link Building for Service Pages: Attract Quality Backlinks to Your Offerings"
+    "title": "Link Building for Service Pages: Relevant Opportunities",
+    "metaTitle": "Link Building for Service Pages: Relevant Opportunities",
+    "metaDescription": "Find relevant link opportunities for service pages through expertise, partnerships and useful supporting content. Match each approach to your potential customers."
   },
   {
     "file": "content/blog/link-building-for-startups.mdx",
     "url": "/blog/link-building-for-startups",
     "words": 1790,
-    "title": "Link Building for Startups: Strategies When You Have No Authority"
+    "title": "Link Building for Startups: Strategies When You Have No Authority",
+    "metaDescription": "Plan link building with limited startup resources and brand awareness. Use relevant relationships, useful assets and focused research to qualify opportunities."
   },
   {
     "file": "content/blog/link-building-for-ymyl-sites.mdx",
     "url": "/blog/link-building-for-ymyl-sites",
     "words": 1819,
-    "title": "Link Building for YMYL Sites: Strategies for Health, Finance, and Legal"
+    "title": "Link Building for YMYL Sites: Expertise and Source Quality",
+    "metaTitle": "Link Building for YMYL Sites: Expertise & Source Quality"
   },
   {
     "file": "content/blog/link-building-in-age-of-ai.mdx",
     "url": "/blog/link-building-in-age-of-ai",
     "words": 1882,
-    "title": "Link Building in the Age of AI: How Artificial Intelligence Is Changing SEO"
+    "title": "AI and Link Building: Research, Outreach and Review",
+    "metaTitle": "AI and Link Building: Research, Outreach & Review"
   },
   {
     "file": "content/blog/link-building-kpis-and-metrics.mdx",
@@ -651,43 +713,54 @@
     "file": "content/blog/link-building-mistakes-to-avoid.mdx",
     "url": "/blog/link-building-mistakes-to-avoid",
     "words": 2004,
-    "title": "21 Link Building Mistakes That Can Tank Your Rankings"
+    "title": "Link Building Mistakes: Risks, Wasted Work and Fixes",
+    "metaTitle": "Link Building Mistakes: Risks, Wasted Work & Fixes"
   },
   {
     "file": "content/blog/link-building-on-a-budget.mdx",
     "url": "/blog/link-building-on-a-budget",
     "words": 1963,
-    "title": "Link Building on a Budget: Effective Strategies That Don't Break the Bank"
+    "title": "Link Building on a Budget: Priorities and Practical Tactics",
+    "metaTitle": "Link Building on a Budget: Priorities & Practical Tactics",
+    "metaDescription": "Plan link building around available time, useful content and relevant relationships. Compare practical tactics before paying for tools or agency support."
   },
   {
     "file": "content/blog/link-building-strategies.mdx",
     "url": "/blog/link-building-strategies",
     "words": 984,
-    "title": "15 Proven Link Building Strategies That Work in 2026"
+    "title": "15 Link Building Strategies to Consider for Your Website",
+    "metaTitle": "15 Link Building Strategies: Tactics & Practical Steps",
+    "metaDescription": "Explore 15 link building approaches, including guest posting and broken link research. Choose tactics that fit your website, audience and available resources."
   },
   {
     "file": "content/blog/link-building-templates-and-scripts.mdx",
     "url": "/blog/link-building-templates-and-scripts",
     "words": 2121,
-    "title": "Link Building Templates: Outreach Emails, Scripts, and Swipe Files"
+    "title": "Link Building Templates: Emails, Pitches and Follow-Ups",
+    "metaTitle": "Link Building Templates: Emails, Pitches & Follow-Ups",
+    "metaDescription": "Adapt link building email templates, pitch structures and follow-up scripts. Add relevant details for each recipient rather than sending generic messages."
   },
   {
     "file": "content/blog/link-building-terminology-glossary.mdx",
     "url": "/blog/link-building-terminology-glossary",
     "words": 2714,
-    "title": "Link Building Terminology Glossary: 100+ Terms Every SEO Should Know"
+    "title": "Link Building Terminology: Backlink and Outreach Terms",
+    "metaTitle": "Link Building Terminology: Backlink & Outreach Terms",
+    "metaDescription": "Look up link building terms covering backlinks, authority metrics, outreach and measurement. Follow related definitions when you need more context."
   },
   {
     "file": "content/blog/link-building-vs-content-marketing.mdx",
     "url": "/blog/link-building-vs-content-marketing",
     "words": 2048,
-    "title": "Link Building vs Content Marketing: Understanding the SEO Relationship"
+    "title": "Link Building vs Content Marketing: How They Work Together",
+    "metaTitle": "Link Building vs Content Marketing: Roles & Trade-Offs"
   },
   {
     "file": "content/blog/link-building-with-digital-assets.mdx",
     "url": "/blog/link-building-with-digital-assets",
     "words": 1896,
-    "title": "Link Building with Digital Assets: Tools, Calculators, and Interactive Content"
+    "title": "Digital Assets for Link Building: Tools and Resources",
+    "metaTitle": "Digital Assets for Link Building: Tools & Resources"
   },
   {
     "file": "content/blog/link-building-with-linkedin.mdx",
@@ -699,25 +772,31 @@
     "file": "content/blog/link-building-with-quora.mdx",
     "url": "/blog/link-building-with-quora",
     "words": 1882,
-    "title": "Link Building With Quora: Expert Strategies for Traffic and Authority"
+    "title": "Quora for Link Building: Useful Answers and Referral Traffic",
+    "metaTitle": "Quora for Link Building: Answers & Referral Traffic",
+    "metaDescription": "Explore how useful Quora participation can support discovery and referrals. Match answers to real questions and distinguish platform links from editorial backlinks."
   },
   {
     "file": "content/blog/link-building-with-reddit.mdx",
     "url": "/blog/link-building-with-reddit",
     "words": 1921,
-    "title": "Link Building With Reddit: Strategies That Won't Get You Banned"
+    "title": "Reddit for Link Building: Relevance and Community Rules",
+    "metaTitle": "Reddit for Link Building: Relevance & Community Rules",
+    "metaDescription": "Assess relevant Reddit communities, read their rules and contribute useful answers. Understand promotional limits before including a website link."
   },
   {
     "file": "content/blog/link-building-with-twitter.mdx",
     "url": "/blog/link-building-with-twitter",
     "words": 1960,
-    "title": "Link Building With Twitter (X): Tactics for Visibility and Backlinks"
+    "title": "Twitter (X) for Link Building: Relationships and Discovery",
+    "metaTitle": "Twitter (X) for Link Building: Relationships & Discovery"
   },
   {
     "file": "content/blog/manual-outreach-vs-automated-tools.mdx",
     "url": "/blog/manual-outreach-vs-automated-tools",
     "words": 1891,
-    "title": "Manual Outreach vs Automated Tools: What Works Better for Link Building?"
+    "title": "Manual vs Automated Link Outreach: Workflow Trade-Offs",
+    "metaTitle": "Manual vs Automated Link Outreach: Workflow Trade-Offs"
   },
   {
     "file": "content/blog/measuring-link-building-roi.mdx",
@@ -743,7 +822,9 @@
     "file": "content/blog/outreach-response-rate-optimization.mdx",
     "url": "/blog/outreach-response-rate-optimization",
     "words": 1919,
-    "title": "Outreach Response Rate Optimization: Data-Driven Techniques for Better Results"
+    "title": "Improve Outreach Response Rates: Test and Measure",
+    "metaTitle": "Improve Outreach Response Rates: Test and Measure",
+    "metaDescription": "Review your outreach targeting, subject lines, message and follow-up. Test changes with comparable prospects and measure useful replies rather than assumed benchmarks."
   },
   {
     "file": "content/blog/paid-vs-organic-link-building.mdx",
@@ -761,7 +842,9 @@
     "file": "content/blog/personalization-in-link-outreach.mdx",
     "url": "/blog/personalization-in-link-outreach",
     "words": 1954,
-    "title": "Personalization in Link Outreach: How to Stand Out in Crowded Inboxes"
+    "title": "Link Outreach Personalisation: Research and Relevant Pitches",
+    "metaTitle": "Link Outreach Personalisation: Research & Relevant Pitches",
+    "metaDescription": "Use prospect research to write relevant link outreach messages. Verify recipient details, explain your contribution and keep personalisation accurate."
   },
   {
     "file": "content/blog/preserve-backlinks-website-migration.mdx",
@@ -775,13 +858,15 @@
     "file": "content/blog/proving-link-building-value-to-stakeholders.mdx",
     "url": "/blog/proving-link-building-value-to-stakeholders",
     "words": 1756,
-    "title": "Proving Link Building Value to Stakeholders: Build the Business Case"
+    "title": "Explain Link Building Value to Clients and Stakeholders",
+    "metaTitle": "Explain Link Building Value: Evidence & Business Outcomes"
   },
   {
     "file": "content/blog/quantity-vs-quality-backlinks.mdx",
     "url": "/blog/quantity-vs-quality-backlinks",
     "words": 1887,
-    "title": "Quantity vs Quality Backlinks: What Matters More for SEO?"
+    "title": "Quantity vs Quality Backlinks: What Matters More for SEO?",
+    "metaDescription": "Compare backlink quantity and quality using relevance, referring sources and practical value. Avoid treating domain-score bands as an exchange rate for links."
   },
   {
     "file": "content/blog/semrush-link-building-features.mdx",
@@ -793,19 +878,24 @@
     "file": "content/blog/tiered-link-building-strategy.mdx",
     "url": "/blog/tiered-link-building-strategy",
     "words": 1796,
-    "title": "Tiered Link Building Strategy: Advanced Link Architecture Explained"
+    "title": "Tiered Link Building: How It Works and Its Risks",
+    "metaTitle": "Tiered Link Building: How It Works & SEO Risks",
+    "metaDescription": "Understand tiered link building, its acquisition patterns and potential policy risks. Review alternatives before investing in links intended to influence other links."
   },
   {
     "file": "content/blog/top-haro-alternatives-for-link-building.mdx",
     "url": "/blog/top-haro-alternatives-for-link-building",
     "words": 2144,
-    "title": "Top HARO Alternatives for Link Building: 12 Journalist Outreach Platforms"
+    "title": "HARO Alternatives: Compare Journalist Outreach Platforms",
+    "metaTitle": "HARO Alternatives: Journalist Outreach Platforms"
   },
   {
     "file": "content/blog/topical-authority-and-backlinks.mdx",
     "url": "/blog/topical-authority-and-backlinks",
     "words": 1872,
-    "title": "Topical Authority and Backlinks: How Links Build Subject Matter Expertise"
+    "title": "Topical Authority and Backlinks: Content, Sources and Scope",
+    "metaTitle": "Topical Authority and Backlinks: Content & Sources",
+    "metaDescription": "Explore how useful topic coverage and relevant references work together. Plan distinct pages, connect related resources and evaluate evidence of audience interest."
   },
   {
     "file": "content/blog/tracking-link-building-progress.mdx",
@@ -823,7 +913,9 @@
     "file": "content/blog/understanding-link-relevance.mdx",
     "url": "/blog/understanding-link-relevance",
     "words": 2004,
-    "title": "Understanding Link Relevance: Why Topic Alignment Matters for SEO"
+    "title": "Backlink Relevance: Evaluate Topic and Audience Fit",
+    "metaTitle": "Backlink Relevance: Evaluate Topic & Audience Fit",
+    "metaDescription": "Assess backlink relevance using the source page, surrounding topic and intended audience. Review contextual fit alongside metrics when qualifying opportunities."
   },
   {
     "file": "content/blog/verify-backlink-placement.mdx",
@@ -861,13 +953,16 @@
     "file": "content/blog/why-your-link-building-isnt-working.mdx",
     "url": "/blog/why-your-link-building-isnt-working",
     "words": 2209,
-    "title": "Why Your Link Building Isn't Working: 15 Common Problems and How to Fix Them"
+    "title": "Why Your Link Building Isn't Working: Diagnose the Gaps",
+    "metaTitle": "Why Your Link Building Isn't Working: A Diagnostic Guide",
+    "metaDescription": "Investigate link building that is not meeting your goals. Review targeting, content, outreach, destination pages and measurement before changing the campaign."
   },
   {
     "file": "content/blog/youtube-link-building-strategies.mdx",
     "url": "/blog/youtube-link-building-strategies",
     "words": 1871,
-    "title": "YouTube Link Building Strategies: How Video Content Earns Backlinks"
+    "title": "YouTube Link Building: Video Content and Website References",
+    "metaTitle": "YouTube Link Building: Video & Website References"
   },
   {
     "file": "content/blog/zero-to-dr50-link-building-journey.mdx",
@@ -896,7 +991,7 @@
     "url": "/comparisons/ahrefs-vs-moz",
     "words": 1124,
     "title": "Ahrefs vs Moz: Domain Rating, Domain Authority and Backlinks",
-    "metaTitle": "Ahrefs vs Moz: DA, DR & Backlink Accuracy Compared",
+    "metaTitle": "Ahrefs vs Moz: DA, DR & Backlink Research Compared",
     "metaDescription": "Compare Ahrefs and Moz for backlink research. Learn why DA and DR differ, how to test link coverage on your own site, and which workflow fits your budget."
   },
   {
@@ -967,9 +1062,9 @@
     "file": "content/comparisons/link-building-agencies-compared.mdx",
     "url": "/comparisons/link-building-agencies-compared",
     "words": 1870,
-    "title": "Top Link Building Agencies Compared [2026 Review]",
-    "metaTitle": "Top Link Building Agencies Compared [2026]",
-    "metaDescription": "Compare top link building agencies: pricing, quality, tactics, and client results. Find the right agency for your budget and link building needs."
+    "title": "Link Building Agencies: Compare Methods and Services",
+    "metaTitle": "Link Building Agencies: Compare Methods & Services",
+    "metaDescription": "Compare agency service models, acquisition methods and proposal criteria. Review source-page examples and terms before choosing a link building provider."
   },
   {
     "file": "content/comparisons/majestic-alternatives.mdx",
@@ -1158,10 +1253,10 @@
   {
     "file": "content/glossary/connectively.mdx",
     "url": "/glossary/connectively",
-    "words": 794,
-    "title": "Connectively: The Successor to HARO for Link Building",
-    "metaTitle": "Connectively: Post-HARO Source Platform Guide [2026]",
-    "metaDescription": "Understand Connectively, the successor to HARO. Learn how to use this journalist-source platform for earning high-authority media backlinks."
+    "words": 846,
+    "title": "Connectively: Expert Sourcing, HARO and Platform History",
+    "metaTitle": "What Is Connectively? HARO & Expert Sourcing Explained",
+    "metaDescription": "Understand Connectively's role in expert sourcing, its connection to HARO and its platform history. Check current official guidance before planning outreach."
   },
   {
     "file": "content/glossary/content-syndication.mdx",
@@ -1175,16 +1270,16 @@
     "file": "content/glossary/contextual-link.mdx",
     "url": "/glossary/contextual-link",
     "words": 879,
-    "title": "Contextual Links: Why In-Content Links Matter Most",
-    "metaTitle": "Contextual Links Explained: In-Content Link Guide [2026]",
-    "metaDescription": "Learn what contextual links are and why they carry more SEO weight. Understand how to earn valuable in-content backlinks."
+    "title": "Contextual Links: Definition and In-Content Examples",
+    "metaTitle": "Contextual Links: Definition, Examples & SEO Context",
+    "metaDescription": "See what contextual links look like inside a page. Learn to assess the surrounding content, destination and reader value rather than judging placement alone."
   },
   {
     "file": "content/glossary/contributor-post.mdx",
     "url": "/glossary/contributor-post",
     "words": 807,
-    "title": "Contributor Post: Becoming a Regular Content Contributor",
-    "metaTitle": "Contributor Posts: Building Authority Through Regular Writing [2026]",
+    "title": "Contributor Posts: Regular Writing for Publications",
+    "metaTitle": "Contributor Posts: Meaning & Editorial Relationships",
     "metaDescription": "Understand contributor posts and how to become a regular contributor on industry publications. Learn the path from guest poster to columnist."
   },
   {
@@ -1215,9 +1310,9 @@
     "file": "content/glossary/dofollow-link.mdx",
     "url": "/glossary/dofollow-link",
     "words": 1748,
-    "title": "Dofollow Links: What They Are, How They Work & Why They Matter for SEO",
-    "metaTitle": "Dofollow Links: When They Matter & How to Get More [2026]",
-    "metaDescription": "Learn what dofollow links are, when they actually impact rankings, and how to build more of them. Includes HTML examples and proven link building strategies."
+    "title": "Dofollow Links: Meaning, HTML and SEO Context",
+    "metaTitle": "Dofollow Links: Meaning, HTML and SEO Context",
+    "metaDescription": "Understand what a dofollow link means, see HTML examples and compare it with nofollow and sponsored links. Learn why a followed link does not guarantee SEO value."
   },
   {
     "file": "content/glossary/domain-authority.mdx",
@@ -1231,9 +1326,9 @@
     "file": "content/glossary/editorial-link.mdx",
     "url": "/glossary/editorial-link",
     "words": 954,
-    "title": "Editorial Links: The Gold Standard of Backlinks",
-    "metaTitle": "Editorial Links Explained: Natural Backlink Guide [2026]",
-    "metaDescription": "Learn what editorial links are and why they're the most valuable backlinks. Understand how to create content that earns natural editorial links."
+    "title": "Editorial Links: Definition and Examples",
+    "metaTitle": "Editorial Links: Meaning, Examples & How They Are Earned",
+    "metaDescription": "Understand editorial links, how they differ from arranged placements and why the publisher's context matters. Explore content that gives readers useful references."
   },
   {
     "file": "content/glossary/ego-bait.mdx",
@@ -1329,7 +1424,7 @@
     "words": 880,
     "title": "Link Building Outreach: Strategies & Best Practices",
     "metaTitle": "Link Building Outreach: Complete Strategy Guide [2026]",
-    "metaDescription": "Master link building outreach with proven strategies. Learn how to reach out effectively, personalize pitches, and earn quality backlinks."
+    "metaDescription": "Understand link building outreach, from selecting relevant publishers to writing a useful pitch. Learn how personalisation and follow-up fit the workflow."
   },
   {
     "file": "content/glossary/link-diversity.mdx",
@@ -1377,15 +1472,15 @@
     "words": 773,
     "title": "Link Growth Rate: Measuring Link Acquisition Speed",
     "metaTitle": "Link Growth Rate: Measurement & Benchmarks [2026]",
-    "metaDescription": "Learn about link growth rate, how to measure link acquisition speed, and what healthy link growth looks like for sustainable SEO success."
+    "metaDescription": "Calculate link growth rate using consistent date ranges and data sources. Distinguish reported discovery from publication and investigate changes in context."
   },
   {
     "file": "content/glossary/link-hoarding.mdx",
     "url": "/glossary/link-hoarding",
     "words": 754,
-    "title": "Link Hoarding: Why Not Linking Out Hurts Your SEO",
-    "metaTitle": "Link Hoarding: The Problem with Not Linking Out [2026]",
-    "metaDescription": "Learn why link hoarding (refusing to link out) hurts your site. Understand the value of natural outbound linking for SEO and user experience."
+    "title": "Link Hoarding: Meaning and Outbound Linking Practices",
+    "metaTitle": "Link Hoarding: Meaning & Sensible Outbound Linking",
+    "metaDescription": "Understand link hoarding and the trade-offs of refusing to link out. Learn to add useful references without treating outbound links as automatic ranking losses."
   },
   {
     "file": "content/glossary/link-insertion.mdx",
@@ -1449,7 +1544,7 @@
     "words": 902,
     "title": "Link Velocity: Understanding Link Growth Rate",
     "metaTitle": "Link Velocity Explained: Link Growth Rate Guide [2026]",
-    "metaDescription": "Understand link velocity—the rate of new backlink acquisition. Learn what's natural, what's suspicious, and how to maintain healthy link growth."
+    "metaDescription": "Understand link velocity as a measure of backlink change over time. Compare new and lost links without assuming there is a universal safe acquisition rate."
   },
   {
     "file": "content/glossary/linkable-asset.mdx",
@@ -1457,7 +1552,7 @@
     "words": 911,
     "title": "Linkable Asset: Creating Resources That Earn Backlinks",
     "metaTitle": "Linkable Assets: Creating Link-Earning Resources [2026]",
-    "metaDescription": "Master linkable asset creation. Learn what makes content link-worthy, proven formats, and strategies for building resources that earn backlinks."
+    "metaDescription": "Understand linkable assets and why a reader might reference them. Explore useful formats such as research, tools and guides when planning content for outreach."
   },
   {
     "file": "content/glossary/local-link-building.mdx",
@@ -1481,7 +1576,7 @@
     "words": 894,
     "title": "Manual Action: Google Penalties Explained",
     "metaTitle": "Manual Action: Google's Manual Penalties Guide [2026]",
-    "metaDescription": "Learn about Google manual actions, why sites receive them, and the recovery process. Understand the difference between manual and algorithmic penalties."
+    "metaDescription": "Understand Google manual actions, where to check them in Search Console and how the review process works. Distinguish a notice from an unexplained ranking change."
   },
   {
     "file": "content/glossary/moving-man-method.mdx",
@@ -1535,9 +1630,9 @@
     "file": "content/glossary/page-authority.mdx",
     "url": "/glossary/page-authority",
     "words": 2049,
-    "title": "Page Authority (PA): What It Is, How to Check & Improve Your Score",
-    "metaTitle": "Page Authority: What's a Good PA Score? (+ How to Check) [2026]",
-    "metaDescription": "Complete guide to Page Authority (PA) - Moz's page-level ranking metric. Learn what a good PA score looks like, how to check yours, and 5 ways to improve it."
+    "title": "Page Authority: Moz's PA Metric Explained",
+    "metaTitle": "Page Authority (PA): Meaning, Checks & Limitations",
+    "metaDescription": "Learn what Moz's Page Authority measures, how to check PA and how it differs from domain metrics. Use the score for comparison, not as a Google ranking factor."
   },
   {
     "file": "content/glossary/pagerank-sculpting.mdx",
@@ -1569,7 +1664,7 @@
     "words": 889,
     "title": "Penalty Recovery: How to Recover from Google Penalties",
     "metaTitle": "Penalty Recovery: Google Manual Action Recovery Guide [2026]",
-    "metaDescription": "Learn how to recover from Google penalties. Step-by-step guide to fixing manual actions and algorithmic penalties affecting your rankings."
+    "metaDescription": "Investigate a Google manual action and document the work needed for a review request. Separate manual-action remediation from diagnosing other ranking losses."
   },
   {
     "file": "content/glossary/reciprocal-link.mdx",
@@ -1695,7 +1790,9 @@
     "file": "content/guides/anchor-text-optimization-guide.mdx",
     "url": "/guides/anchor-text-optimization-guide",
     "words": 2047,
-    "title": "Anchor Text Optimization: The Complete Guide [2026]"
+    "title": "Anchor Text Optimisation: Types, Context and Analysis",
+    "metaTitle": "Anchor Text Optimisation: Types & Context Explained",
+    "metaDescription": "Review anchor text types, relevance and distribution. Learn to describe linked pages clearly without treating an ideal anchor ratio as a Google rule."
   },
   {
     "file": "content/guides/backlink-analysis-guide.mdx",
@@ -1725,7 +1822,8 @@
     "file": "content/guides/digital-pr-link-building-guide.mdx",
     "url": "/guides/digital-pr-link-building-guide",
     "words": 3252,
-    "title": "Digital PR for Link Building: The Complete Guide [2026]"
+    "title": "Digital PR for Link Building: The Complete Guide [2026]",
+    "metaDescription": "Explore digital PR through research, timely commentary and journalist relationships. Plan a useful story, prepare evidence and assess relevant media coverage."
   },
   {
     "file": "content/guides/domain-authority-guide.mdx",
@@ -1749,15 +1847,16 @@
     "file": "content/guides/link-building-outreach-guide.mdx",
     "url": "/guides/link-building-outreach-guide",
     "words": 2873,
-    "title": "Link Building Outreach: The Complete Guide [2026]"
+    "title": "Link Building Outreach: The Complete Guide [2026]",
+    "metaDescription": "Plan link building outreach from prospect selection to follow-up. Adapt email templates, organise replies and assess whether each contribution fits the publisher."
   },
   {
     "file": "content/guides/link-building-strategies-guide.mdx",
     "url": "/guides/link-building-strategies-guide",
     "words": 728,
     "title": "Link Building Strategies: The Definitive Guide",
-    "metaTitle": "27 Link Building Strategies That Work in 2026 (I Use #3 Daily)",
-    "metaDescription": "Proven link building strategies: guest posting, broken link building, HARO, digital PR & more. Step-by-step tactics with templates and examples."
+    "metaTitle": "Link Building Strategies: A Practical Campaign Guide",
+    "metaDescription": "Explore link building strategies including guest posting, broken links and digital PR. Use practical workflows, templates and examples to plan your campaign."
   },
   {
     "file": "content/guides/link-building-tools-guide.mdx",
@@ -1775,7 +1874,8 @@
     "file": "content/guides/saas-link-building-playbook.mdx",
     "url": "/guides/saas-link-building-playbook",
     "words": 2618,
-    "title": "SaaS Link Building Playbook: The Complete Guide [2026]"
+    "title": "SaaS Link Building Playbook: The Complete Guide [2026]",
+    "metaDescription": "Plan SaaS link building with integration pages, developer resources and relevant publications. Connect prospecting and useful content to your product audience."
   },
   {
     "file": "content/guides/what-are-backlinks-complete-guide.mdx",
@@ -1795,88 +1895,88 @@
     "file": "content/industries/b2b.mdx",
     "url": "/industries/b2b",
     "words": 2692,
-    "title": "Link Building for B2B: Complete Guide for Business-to-Business Companies",
-    "metaTitle": "B2B Link Building: Business Marketing SEO Guide [2026]",
+    "title": "B2B Link Building: Strategies for Business Audiences",
+    "metaTitle": "B2B Link Building: Strategies for Business Audiences",
     "metaDescription": "Learn link building strategies for B2B companies. Industry publications, partnerships, thought leadership, and tactics that drive business leads."
   },
   {
     "file": "content/industries/crypto.mdx",
     "url": "/industries/crypto",
     "words": 2421,
-    "title": "Link Building for Crypto and Blockchain: Complete Web3 SEO Guide",
-    "metaTitle": "Crypto Link Building: Blockchain and Web3 SEO Guide [2026]",
+    "title": "Link Building for Crypto and Blockchain",
+    "metaTitle": "Crypto & Blockchain Link Building: Approaches & Risks",
     "metaDescription": "Learn link building strategies for crypto and blockchain. Building credibility, navigating industry challenges, and legitimate tactics that work."
   },
   {
     "file": "content/industries/ecommerce.mdx",
     "url": "/industries/ecommerce",
     "words": 2678,
-    "title": "Link Building for E-commerce: Complete Guide for Online Stores",
-    "metaTitle": "E-commerce Link Building: Online Store SEO Guide [2026]",
+    "title": "E-commerce Link Building for Online Stores",
+    "metaTitle": "E-commerce Link Building: Product & Store Opportunities",
     "metaDescription": "Learn link building strategies for e-commerce sites. Product roundups, manufacturer links, gift guides, and tactics that work for online retailers."
   },
   {
     "file": "content/industries/enterprise.mdx",
     "url": "/industries/enterprise",
     "words": 3115,
-    "title": "Link Building for Enterprise Companies: Complete Guide for Large Organizations",
-    "metaTitle": "Enterprise Link Building: Large Organization SEO Guide [2026]",
+    "title": "Enterprise Link Building: Teams, Processes and Quality",
+    "metaTitle": "Enterprise Link Building: Teams, Processes & Quality",
     "metaDescription": "Learn link building strategies for enterprise companies. Global campaigns, brand authority, stakeholder management, and tactics that scale."
   },
   {
     "file": "content/industries/fintech.mdx",
     "url": "/industries/fintech",
     "words": 2519,
-    "title": "Link Building for Fintech: Complete Guide for Financial Technology",
-    "metaTitle": "Fintech Link Building: Financial Technology SEO Guide [2026]",
+    "title": "Fintech Link Building: Expertise and Relevant Sources",
+    "metaTitle": "Fintech Link Building: Expertise & Relevant Sources",
     "metaDescription": "Learn link building strategies for fintech companies. Authority building, trust signals, regulatory considerations, and finance industry tactics."
   },
   {
     "file": "content/industries/healthcare.mdx",
     "url": "/industries/healthcare",
     "words": 2450,
-    "title": "Link Building for Healthcare: Complete Medical Industry SEO Guide",
-    "metaTitle": "Healthcare Link Building: Medical SEO Authority Guide [2026]",
+    "title": "Healthcare Link Building: Expertise and Source Quality",
+    "metaTitle": "Healthcare Link Building: Expertise & Source Quality",
     "metaDescription": "Learn link building strategies for healthcare. Medical authority building, YMYL compliance, health publications, and trust signals for health businesses."
   },
   {
     "file": "content/industries/legal.mdx",
     "url": "/industries/legal",
     "words": 2556,
-    "title": "Link Building for Law Firms: Complete Legal Industry SEO Guide",
-    "metaTitle": "Law Firm Link Building: Legal SEO Authority Guide [2026]",
+    "title": "Link Building for Law Firms: Relevant Legal Sources",
+    "metaTitle": "Law Firm Link Building: Relevant Sources & Outreach",
     "metaDescription": "Learn link building strategies for law firms. Legal directories, bar associations, publications, and ethically sound tactics for attorneys."
   },
   {
     "file": "content/industries/local-business.mdx",
     "url": "/industries/local-business",
     "words": 2786,
-    "title": "Link Building for Local Businesses: Complete Geographic SEO Guide",
-    "metaTitle": "Local Business Link Building: Geographic SEO Guide [2026]",
+    "title": "Local Business Link Building: Sources and Relationships",
+    "metaTitle": "Local Business Link Building: Sources & Relationships",
     "metaDescription": "Learn link building strategies for local businesses. Citations, community links, local press coverage, and location-based tactics that work."
   },
   {
     "file": "content/industries/real-estate.mdx",
     "url": "/industries/real-estate",
     "words": 2491,
-    "title": "Link Building for Real Estate: Complete Agent and Broker SEO Guide",
-    "metaTitle": "Real Estate Link Building: Agent SEO Authority Guide [2026]",
+    "title": "Real Estate Link Building for Agents and Brokers",
+    "metaTitle": "Real Estate Link Building: Agents, Brokers & Local Sources",
     "metaDescription": "Learn link building strategies for real estate. Local market authority, property content, community links, and agent branding tactics that work."
   },
   {
     "file": "content/industries/saas.mdx",
     "url": "/industries/saas",
     "words": 2485,
-    "title": "Link Building for SaaS: Complete Guide for Software Companies",
-    "metaTitle": "SaaS Link Building: Complete Strategy Guide [2026]",
+    "title": "SaaS Link Building: Content, Partnerships and Outreach",
+    "metaTitle": "SaaS Link Building: Content, Partnerships & Outreach",
     "metaDescription": "Learn link building strategies for SaaS companies. Integration directories, tech press, developer outreach, and software-specific tactics that work."
   },
   {
     "file": "content/industries/travel.mdx",
     "url": "/industries/travel",
     "words": 2575,
-    "title": "Link Building for Travel: Complete Tourism and Hospitality SEO Guide",
-    "metaTitle": "Travel Link Building: Tourism SEO Authority Guide [2026]",
+    "title": "Travel Link Building: Tourism and Hospitality Sources",
+    "metaTitle": "Travel Link Building: Tourism & Hospitality Sources",
     "metaDescription": "Learn link building strategies for travel businesses. Destination content, travel media, influencer partnerships, and hospitality tactics that work."
   },
   {
@@ -1884,8 +1984,8 @@
     "url": "/link-building",
     "words": 2044,
     "title": "Link Building: The Complete Strategy Guide for 2026",
-    "metaTitle": "Link Building Guide: Proven Strategies & Tactics [2026]",
-    "metaDescription": "The definitive link building guide. Learn white-hat strategies, outreach tactics, and how to build backlinks that boost rankings without risking penalties."
+    "metaTitle": "Link Building Guide: Strategy, Outreach & Measurement",
+    "metaDescription": "Plan link building around relevant pages, useful content and appropriate outreach. Learn how to qualify prospects, verify placements and measure progress."
   },
   {
     "file": "content/link-building/agency-vs-in-house.mdx",
@@ -1941,7 +2041,7 @@
     "words": 2020,
     "title": "Link Building Outreach Strategy: How to Get Responses and Win Links",
     "metaTitle": "Link Building Outreach Strategy: Complete Guide [2026]",
-    "metaDescription": "Learn to craft outreach emails that get responses. Proven strategies for prospecting, personalisation, and follow-up that win quality backlinks."
+    "metaDescription": "Plan relevant link building outreach with prospect research, tailored emails and considered follow-up. Track conversations and verify published placements."
   },
   {
     "file": "content/link-building/roi.mdx",
@@ -1957,15 +2057,15 @@
     "words": 1610,
     "title": "White Hat Link Building: Ethical Strategies That Build Lasting Authority",
     "metaTitle": "White Hat Link Building: Ethical SEO Strategies [2026]",
-    "metaDescription": "Learn legitimate link building strategies that build lasting authority without risking penalties. Comprehensive guide to ethical, sustainable link acquisition."
+    "metaDescription": "Explore editorial link building through useful content, relevant outreach and relationships. Review acquisition methods against Google's published spam policies."
   },
   {
     "file": "content/link-building-tactics/_index.mdx",
     "url": "/link-building-tactics",
     "words": 1572,
-    "title": "Link Building Tactics: Proven Methods for Earning Quality Backlinks",
-    "metaTitle": "Link Building Tactics: Complete Playbook [2026]",
-    "metaDescription": "Learn proven link building tactics that work. Comprehensive guides to guest posting, broken link building, digital PR, HARO, and more."
+    "title": "Link Building Tactics: Methods for Earning Backlinks",
+    "metaTitle": "Link Building Tactics: Methods for Earning Backlinks",
+    "metaDescription": "Explore guest posting, broken link building, digital PR, original research and other tactics. Choose an approach that fits your audience and available resources."
   },
   {
     "file": "content/link-building-tactics/broken-link-building.mdx",
@@ -2043,9 +2143,9 @@
     "file": "content/outreach/email-templates.mdx",
     "url": "/outreach/email-templates",
     "words": 1389,
-    "title": "Link Building Email Templates: Outreach Messages That Work",
-    "metaTitle": "Link Building Email Templates: Outreach That Works [2026]",
-    "metaDescription": "Proven email templates for link building. Guest posting, broken link building, resource pages, and more. Customise for your outreach success."
+    "title": "Link Building Email Templates: Pitches and Follow-Ups",
+    "metaTitle": "Link Building Email Templates: Copy and Customise",
+    "metaDescription": "Adapt email templates for guest posting, broken links and resource pages. Tailor each message to the recipient and explain a useful reason for the link."
   },
   {
     "file": "content/outreach/follow-up-strategy.mdx",
@@ -2131,17 +2231,17 @@
     "file": "content/resources/free-seo-tools-list.mdx",
     "url": "/resources/free-seo-tools-list",
     "words": 2067,
-    "title": "Free SEO Tools for Link Building: Complete 2026 List",
-    "metaTitle": "Free SEO Tools for Link Building: 50+ Free Tools [2026]",
-    "metaDescription": "Discover 50+ free SEO tools for link building. Free backlink analysis, email finding, prospecting, and monitoring tools with honest capability assessments."
+    "title": "Free SEO Tools for Link Building: Compare Your Options",
+    "metaTitle": "Free SEO Tools for Link Building: Features & Limits",
+    "metaDescription": "Explore free and limited-access tools for backlink research, prospecting and outreach. Check current provider limits and choose tools for your specific task."
   },
   {
     "file": "content/resources/guest-post-pitch-templates.mdx",
     "url": "/resources/guest-post-pitch-templates",
     "words": 2448,
-    "title": "Guest Post Pitch Templates: 10+ Proven Pitches That Get Accepted",
-    "metaTitle": "Guest Post Pitch Templates: Get Published on Top Sites [2026]",
-    "metaDescription": "Proven guest post pitch templates that get accepted. Cold outreach, expert pitches, topic ideation frameworks, and follow-up sequences for guest posting success."
+    "title": "Guest Post Pitch Templates: Examples to Adapt",
+    "metaTitle": "Guest Post Pitch Templates: Emails, Outlines & Follow-Ups",
+    "metaDescription": "Adapt guest post pitches for different editorial situations. Use example emails, topic outlines and follow-up structures to prepare a relevant contribution."
   },
   {
     "file": "content/resources/link-building-checklist.mdx",
@@ -2164,15 +2264,15 @@
     "url": "/resources/link-building-tools-comparison",
     "words": 2337,
     "title": "Link Building Tools Comparison: Complete 2026 Guide",
-    "metaTitle": "Link Building Tools Comparison: Best Tools Reviewed [2026]",
-    "metaDescription": "Compare the best link building tools for backlink analysis, outreach, and prospecting. Honest reviews of Ahrefs, Semrush, BuzzStream, Hunter, and more."
+    "metaTitle": "Link Building Tools Compared: Research, Outreach & Cost",
+    "metaDescription": "Compare tools for backlink research, prospecting and outreach management. Evaluate features, access requirements and costs against your team's workflow."
   },
   {
     "file": "content/resources/link-prospect-qualification-checklist.mdx",
     "url": "/resources/link-prospect-qualification-checklist",
     "words": 1784,
-    "title": "Link Prospect Qualification Checklist: Evaluate Link Opportunities",
-    "metaTitle": "Link Prospect Qualification Checklist: Evaluate Opportunities [2026]",
+    "title": "Link Prospect Qualification Checklist",
+    "metaTitle": "Link Prospect Qualification Checklist: Fit, Quality & Cost",
     "metaDescription": "Use this checklist to qualify link building prospects. Quick filtering criteria and deep analysis framework for prioritising link opportunities."
   },
   {
@@ -2189,7 +2289,7 @@
     "words": 1011,
     "title": "Link Quality Scorecard: Rate Link Opportunities Consistently",
     "metaTitle": "Link Quality Scorecard: Prospect Evaluation System [2026]",
-    "metaDescription": "Use this scorecard to rate link opportunities consistently. Weighted scoring system for objective prospect prioritisation."
+    "metaDescription": "Use a weighted scorecard to organise link prospect reviews. Assess relevance, source quality and risk while keeping the final decision grounded in page-level evidence."
   },
   {
     "file": "content/resources/outreach-email-templates.mdx",
@@ -2243,9 +2343,9 @@
     "file": "content/statistics/anchor-text-statistics.mdx",
     "url": "/statistics/anchor-text-statistics",
     "words": 569,
-    "title": "Anchor Text Statistics: Analyze Distribution Without Myths",
-    "metaTitle": "Anchor Text Statistics: Analyze Distribution Without Myths",
-    "metaDescription": "Understand anchor text statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "title": "Anchor Text Statistics: Measure Your Link Profile",
+    "metaTitle": "Anchor Text Statistics: Distribution, Samples & Limits",
+    "metaDescription": "Calculate anchor text shares from a consistent backlink sample. Compare categories and time periods without inventing a universal safe percentage."
   },
   {
     "file": "content/statistics/backlink-statistics.mdx",
@@ -2253,23 +2353,23 @@
     "words": 578,
     "title": "Backlink Statistics: Counts, Coverage and Interpretation",
     "metaTitle": "Backlink Statistics: Counts, Coverage and Interpretation",
-    "metaDescription": "Understand backlink statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Interpret backlink counts and referring-domain totals with clear reporting definitions. Understand dataset coverage, duplication and comparisons across providers."
   },
   {
     "file": "content/statistics/content-marketing-roi-statistics.mdx",
     "url": "/statistics/content-marketing-roi-statistics",
     "words": 562,
-    "title": "Content Marketing ROI Statistics: Calculate With Care",
-    "metaTitle": "Content Marketing ROI Statistics: Calculate With Care",
-    "metaDescription": "Understand content marketing roi statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "title": "Content Marketing ROI Statistics: Formulas and Attribution",
+    "metaTitle": "Content Marketing ROI Statistics: Formulas & Attribution",
+    "metaDescription": "Calculate content marketing ROI using costs, attributed revenue and a defined time window. Review example calculations and the limits of causal attribution."
   },
   {
     "file": "content/statistics/domain-authority-statistics.mdx",
     "url": "/statistics/domain-authority-statistics",
     "words": 564,
-    "title": "Domain Authority Statistics: Benchmark DA Responsibly",
-    "metaTitle": "Domain Authority Statistics: Benchmark DA Responsibly",
-    "metaDescription": "Understand domain authority statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "title": "Domain Authority Statistics: Benchmarks and Metric Limits",
+    "metaTitle": "Domain Authority Statistics: Benchmarks & Metric Limits",
+    "metaDescription": "Compare Domain Authority scores within a relevant sample. Keep provider, scope and collection date consistent and distinguish vendor metrics from Google signals."
   },
   {
     "file": "content/statistics/guest-posting-statistics.mdx",
@@ -2277,7 +2377,7 @@
     "words": 573,
     "title": "Guest Posting Statistics: Measure Acceptance and Results",
     "metaTitle": "Guest Posting Statistics: Measure Acceptance and Results",
-    "metaDescription": "Understand guest posting statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Measure guest post pitching, acceptance and publication as separate stages. Calculate rates using a defined sample and avoid treating examples as industry benchmarks."
   },
   {
     "file": "content/statistics/link-building-pricing-statistics.mdx",
@@ -2285,7 +2385,7 @@
     "words": 571,
     "title": "Link Building Pricing Statistics: Compare Real Costs",
     "metaTitle": "Link Building Pricing Statistics: Compare Real Costs",
-    "metaDescription": "Understand link building pricing statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Compare link building costs by service scope, acquisition method and included work. Use a consistent cost calculation instead of an unsupported market average."
   },
   {
     "file": "content/statistics/link-building-statistics-2026.mdx",
@@ -2293,7 +2393,7 @@
     "words": 561,
     "title": "Link Building Statistics: A Practical Measurement Framework",
     "metaTitle": "Link Building Statistics: A Practical Measurement Framework",
-    "metaDescription": "Understand link building statistics 2026 with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Build a link building measurement plan covering activity, verified placements and outcomes. Use consistent samples and definitions when comparing campaign statistics."
   },
   {
     "file": "content/statistics/outreach-response-rate-statistics.mdx",
@@ -2301,7 +2401,7 @@
     "words": 584,
     "title": "Outreach Response Rate Statistics: Calculate and Compare",
     "metaTitle": "Outreach Response Rate Statistics: Calculate and Compare",
-    "metaDescription": "Understand outreach response rate statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Calculate outreach reply rates with clear denominators and time windows. Separate any reply from a useful response and compare campaigns with similar audiences."
   },
   {
     "file": "content/statistics/seo-industry-statistics.mdx",
@@ -2309,31 +2409,36 @@
     "words": 558,
     "title": "SEO Industry Statistics: Evaluate Surveys and Benchmarks",
     "metaTitle": "SEO Industry Statistics: Evaluate Surveys and Benchmarks",
-    "metaDescription": "Understand seo industry statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    "metaDescription": "Evaluate SEO industry surveys by sample, date, definitions and methodology. Learn which questions to ask before using a published benchmark in your campaign plan."
   },
   {
     "file": "content/strategies/_index.mdx",
     "url": "/strategies",
     "words": 1589,
-    "title": "Link Building Strategies by Industry & Tactic: Complete Guide"
+    "title": "Link Building Strategies by Industry and Tactic",
+    "metaTitle": "Link Building Strategies by Industry and Tactic",
+    "metaDescription": "Find link building approaches for SaaS, e-commerce, local businesses and startups. Compare tactics by audience, available assets and practical requirements."
   },
   {
     "file": "content/strategies/agency-case-study-links.mdx",
     "url": "/strategies/agency-case-study-links",
     "words": 1211,
-    "title": "Case Study Link Building for Agencies: Turning Client Success into Backlinks"
+    "title": "Case Study Link Building for Agencies",
+    "metaTitle": "Case Study Link Building for Agencies: Planning & Outreach"
   },
   {
     "file": "content/strategies/agency-tool-links.mdx",
     "url": "/strategies/agency-tool-links",
     "words": 1428,
-    "title": "Free Tool Link Building for Agencies: Creating Tools That Earn Backlinks"
+    "title": "Free Tool Link Building for Agencies",
+    "metaTitle": "Free Tool Link Building for Agencies: Ideas & Promotion"
   },
   {
     "file": "content/strategies/b2b-industry-publication-links.mdx",
     "url": "/strategies/b2b-industry-publication-links",
     "words": 1315,
-    "title": "Trade Publication Link Building: Getting Featured in Industry Media"
+    "title": "Trade Publication Link Building for B2B Companies",
+    "metaTitle": "Trade Publication Link Building: B2B Editorial Outreach"
   },
   {
     "file": "content/strategies/b2b-partnership-links.mdx",
@@ -2351,25 +2456,30 @@
     "file": "content/strategies/ecommerce-influencer-links.mdx",
     "url": "/strategies/ecommerce-influencer-links",
     "words": 1272,
-    "title": "Influencer Link Building for E-commerce: Collaborative Strategies That Work"
+    "title": "Influencer Link Building for E-commerce",
+    "metaTitle": "Influencer Link Building for E-commerce: Ways to Collaborate"
   },
   {
     "file": "content/strategies/ecommerce-product-link-building.mdx",
     "url": "/strategies/ecommerce-product-link-building",
     "words": 1233,
-    "title": "E-commerce Product Page Link Building: Getting Links to Your Revenue Pages"
+    "title": "E-commerce Product Page Link Building",
+    "metaTitle": "E-commerce Product Page Link Building: Sources & Tactics",
+    "metaDescription": "Explore product-page backlink opportunities through relevant partners, resources and coverage. Match each source to the product's audience and useful information."
   },
   {
     "file": "content/strategies/ecommerce-supplier-links.mdx",
     "url": "/strategies/ecommerce-supplier-links",
     "words": 1377,
-    "title": "Supplier and Manufacturer Link Building for E-commerce: Leveraging Business Relationships"
+    "title": "Supplier and Manufacturer Backlinks for E-commerce",
+    "metaTitle": "Supplier & Manufacturer Backlinks for E-commerce"
   },
   {
     "file": "content/strategies/local-citation-building.mdx",
     "url": "/strategies/local-citation-building",
     "words": 1156,
-    "title": "Local Citation Building: The Foundation of Local SEO Link Building"
+    "title": "Local Citation Building: Directories and NAP Consistency",
+    "metaTitle": "Local Citation Building: Directories & NAP Consistency"
   },
   {
     "file": "content/strategies/local-press-coverage.mdx",
@@ -2393,48 +2503,56 @@
     "file": "content/strategies/saas-content-marketing-links.mdx",
     "url": "/strategies/saas-content-marketing-links",
     "words": 1360,
-    "title": "Content-Led Link Building for SaaS: Building Links Through Exceptional Content"
+    "title": "Content-Led Link Building for SaaS",
+    "metaTitle": "Content-Led Link Building for SaaS: Assets & Promotion"
   },
   {
     "file": "content/strategies/saas-digital-pr.mdx",
     "url": "/strategies/saas-digital-pr",
     "words": 1226,
-    "title": "Digital PR for SaaS: Earning High-Authority Links Through Media Coverage"
+    "title": "Digital PR for SaaS: Stories, Research and Media Outreach",
+    "metaTitle": "Digital PR for SaaS: Stories, Research & Media Outreach"
   },
   {
     "file": "content/strategies/saas-guest-posting.mdx",
     "url": "/strategies/saas-guest-posting",
     "words": 1273,
-    "title": "Guest Posting for SaaS Companies: Complete Strategy Guide"
+    "title": "Guest Posting for SaaS Companies: Complete Strategy Guide",
+    "metaDescription": "Plan SaaS guest contributions around product expertise and relevant publications. Research editorial fit, prepare a useful pitch and verify the published placement."
   },
   {
     "file": "content/strategies/scholarship-link-building.mdx",
     "url": "/strategies/scholarship-link-building",
     "words": 1251,
-    "title": "Scholarship Link Building: Earning .edu Backlinks Through Student Programs"
+    "title": "Scholarship Link Building: Requirements and SEO Risks",
+    "metaTitle": "Scholarship Link Building: Requirements & SEO Risks"
   },
   {
     "file": "content/strategies/service-business-local-links.mdx",
     "url": "/strategies/service-business-local-links",
     "words": 1204,
-    "title": "Local Service Business Link Building: Strategies for Service Providers"
+    "title": "Local Link Building for Service Businesses",
+    "metaTitle": "Local Link Building for Service Businesses: Practical Tactics"
   },
   {
     "file": "content/strategies/startup-community-links.mdx",
     "url": "/strategies/startup-community-links",
     "words": 1182,
-    "title": "Building Links Through Startup Communities: Networks, Accelerators, and Ecosystems"
+    "title": "Startup Community Link Building: Networks and Resources",
+    "metaTitle": "Startup Community Link Building: Networks & Resources"
   },
   {
     "file": "content/strategies/startup-investor-pr-links.mdx",
     "url": "/strategies/startup-investor-pr-links",
     "words": 1308,
-    "title": "Funding Announcement Link Building: Maximizing PR from Investment Rounds"
+    "title": "Funding Announcement PR and Link Building",
+    "metaTitle": "Funding Announcement PR: Coverage & Link Opportunities"
   },
   {
     "file": "content/strategies/startup-launch-links.mdx",
     "url": "/strategies/startup-launch-links",
     "words": 1258,
-    "title": "Link Building for Product Launches: Maximizing Startup Launch Coverage"
+    "title": "Product Launch Link Building: Plan Relevant Coverage",
+    "metaTitle": "Product Launch Link Building: Plan Relevant Coverage"
   }
 ]

@@ -10,11 +10,14 @@ export function StickyPromo() {
     const update = () => {
       const footer = document.querySelector('footer')
       const end = footer ? footer.getBoundingClientRect().top < innerHeight + 100 : false
-      setVisible(scrollY > 650 && !end && !document.querySelector('[role="dialog"]'))
+      const inlineOffer = document.querySelector('[data-inline-bundle-offer]')?.getBoundingClientRect()
+      const showingInlineOffer = inlineOffer && inlineOffer.top < innerHeight && inlineOffer.bottom > 140
+      setVisible(scrollY > 650 && !end && !showingInlineOffer && !document.querySelector('[role="dialog"]'))
     }
     update()
     addEventListener('scroll', update, { passive: true })
-    return () => removeEventListener('scroll', update)
+    addEventListener('resize', update)
+    return () => { removeEventListener('scroll', update); removeEventListener('resize', update) }
   }, [])
   if (!visible || dismissed) return null
   return <aside aria-label="Bundle offer" className="lg:hidden fixed bottom-3 left-3 right-3 z-40 rounded-xl bg-surface-950 text-white shadow-xl p-4 pb-[max(1rem,env(safe-area-inset-bottom))] animate-[fadeIn_.2s_ease-out]">

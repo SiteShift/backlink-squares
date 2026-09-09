@@ -9,7 +9,7 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'Pricing - Simple, Transparent Pricing',
+    title: 'Backlink Placement Pricing: Grid Squares from $1',
     description:
       'BacklinkGrid pricing. $1 per square. No hidden fees, no subscriptions. One-time payment for a permanent sponsored backlink.',
     canonicalUrl: 'https://backlinkgrid.com/pricing',
@@ -104,12 +104,12 @@ export default function PricingPage() {
       <FAQSchema questions={faqs} />
       <Header />
 
-      <main className="min-h-screen bg-bauhaus-cream">
+      <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen bg-bauhaus-cream">
         {/* Hero */}
         <section className="py-16 lg:py-24 bg-white border-b-3 border-dark">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="font-black text-4xl sm:text-5xl uppercase tracking-wide text-dark">
-              Simple, Transparent Pricing
+              Backlink Placement Pricing
             </h1>
             <p className="mt-4 text-xl text-dark/60">
               $1 per square. No hidden fees. One-time payment for a permanent

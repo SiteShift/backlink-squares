@@ -3,8 +3,8 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'Backlink Audit Checklist - What to Analyze in Your Link Profile',
-    description: 'Free backlink audit checklist tool. Learn what to analyze in referring domains, anchor text distribution, link velocity, and toxic links. Step-by-step guide with red flags to watch for.',
+    title: 'Free Backlink Audit Checklist: Review Your Link Profile',
+    description: 'Use a free backlink audit checklist to review referring domains, anchors and source quality. Work through the checks alongside your own backlink data.',
     canonicalUrl: 'https://backlinkgrid.com/tools/backlink-analyzer',
     keywords: [
       'backlink audit checklist',

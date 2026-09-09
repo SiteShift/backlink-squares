@@ -1,17 +1,22 @@
 import Link from 'next/link'
+import { ArrowUpRight, FileSpreadsheet } from 'lucide-react'
 
 export function ContentCTA({ variant = 'default' }: { variant?: 'default' | 'compact' }) {
   return (
-    <aside className={`mt-10 border-2 border-surface-950 bg-surface-950 text-white ${variant === 'compact' ? 'p-6' : 'p-6 sm:p-10'}`} aria-label="Backlink database bundle">
-      <p className="text-brand-yellow text-xs font-bold uppercase tracking-wider">Put your research to work</p>
-      <h2 className="text-white font-display text-2xl sm:text-3xl font-black mt-3">Your next link prospect list starts here.</h2>
-      <p className="text-white/80 mt-4 max-w-2xl">The Complete Backlink Database Bundle brings 276 opportunities into one CSV, with categories, recorded DR, costs, submission URLs and practical tips. Filter for your business instead of starting with an empty spreadsheet.</p>
-      <div className="flex flex-wrap items-center gap-4 mt-6">
-        <Link href="/bundle" data-conversion="bundle_content" className="inline-flex bg-brand-yellow text-surface-950 px-5 py-3 font-bold">Explore the bundle · £11.49 →</Link>
-        <Link href="/bundle#preview" className="text-white underline underline-offset-4">See real sample rows</Link>
+    <aside className={`not-prose mt-10 overflow-hidden rounded-xl bg-surface-950 text-white ${variant === 'compact' ? 'p-6' : 'p-6 sm:p-8'}`} aria-label="Complete Backlink Database Bundle" data-inline-bundle-offer>
+      <div className="grid grid-cols-[minmax(0,1fr)_72px] sm:grid-cols-[minmax(0,1fr)_100px] gap-x-5 sm:gap-x-8 gap-y-4">
+        <h2 className="col-span-2 sm:col-span-1 text-white text-2xl sm:text-3xl font-bold tracking-tight leading-tight">Complete Backlink<br className="hidden sm:block" /> Database Bundle</h2>
+        <p className="col-start-1 row-start-2 text-white/70 text-sm sm:text-base leading-relaxed max-w-md">Submission links, recorded costs and practical tips. Ready to shortlist in one CSV.</p>
+        <div className="col-start-2 row-start-2 sm:row-start-1 sm:row-span-2 text-brand-yellow text-right pt-1" aria-label="276 backlink opportunities in a CSV">
+          <FileSpreadsheet className="w-7 h-7 ml-auto mb-3 opacity-80" strokeWidth={1.5} aria-hidden="true" />
+          <span className="block text-4xl sm:text-5xl font-bold tracking-tighter leading-none">276</span>
+          <span className="block mt-2 text-[10px] sm:text-xs text-white/60">opportunities</span>
+        </div>
       </div>
-      <p className="mt-4 text-sm text-white/60">One-time payment. CSV download. You choose and submit to suitable sites; placement and rankings are not guaranteed.</p>
-      <Link href="/#grid" className="inline-block mt-4 text-sm text-white/80 underline">Just want a directory placement? Choose a grid square from $1.</Link>
+      <div className="mt-6 pt-6 border-t border-white/15 flex flex-col min-[420px]:flex-row min-[420px]:items-center gap-5 min-[420px]:justify-between">
+        <p className="m-0"><span className="text-2xl font-semibold tracking-tight">£11.49</span><span className="text-white/55 text-sm ml-3">One-time payment</span></p>
+        <Link href="/bundle" data-conversion="bundle_content" className="group inline-flex items-center justify-center gap-5 rounded-md bg-brand-yellow text-surface-950 px-5 py-3 font-bold text-sm transition-colors hover:bg-yellow-300 focus-visible:outline-offset-4">Get the bundle <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" aria-hidden="true" /></Link>
+      </div>
     </aside>
   )
 }

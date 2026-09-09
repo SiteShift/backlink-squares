@@ -3,7 +3,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ContentCTA } from '@/components/content/ContentCTA'
 import { buildMetadata } from '@/lib/seo'
-export const metadata = buildMetadata({ title: 'Free Link Building Templates: Track, Audit & Outreach', description: 'Download free CSV templates for backlink prospecting, audit reviews and outreach tracking. Open in Excel or Google Sheets and follow practical setup guidance.', canonicalUrl: 'https://backlinkgrid.com/templates', type: 'website' })
+export const metadata = buildMetadata({ title: 'Free Link Building Templates: Track, Audit & Outreach', description: 'Download free CSV templates for backlink prospecting, placement checks, migration planning and outreach. Use example rows to set up your own working spreadsheet.', canonicalUrl: 'https://backlinkgrid.com/templates', type: 'website' })
 export default function Templates() {
  return <><Header/><main className="container-wide pt-24 pb-16 max-w-5xl"><nav className="text-sm mb-6"><Link href="/resources">Resources</Link> / Templates</nav><h1 className="font-display text-4xl font-black">Free link building templates</h1><p className="mt-6 text-lg">These link building templates turn research into a trackable workflow. Download a CSV, import it into Excel or Google Sheets, and add one row per prospect or link. They contain column headings and illustrative examples, not a list of approved publishers.</p>
  <div className="grid md:grid-cols-3 gap-5 mt-8">{[

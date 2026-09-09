@@ -104,3 +104,13 @@ Scope and operating limits: `reports/live-tools-release.md`. No paid API/service
 - [x] Verified all 371 sitemap pages, internal reachability, canonical/indexability signals, Markdown, protected downloads and sampled mobile layouts. Build/lint/regression checks passed.
 
 Evidence and scope: `reports/blog-topical-audit.md`, `reports/blog-map-audit.json`, `reports/rendered-crawl.json`.
+
+## 9 September 2026 — H1 and search snippet audit
+
+- [x] Inventory rendered H1s, titles and descriptions across all 371 sitemap pages.
+- [x] Review page intent, uniqueness, readability and unsupported claims; revise editorial and tool metadata where warranted.
+- [x] Preserve requested homepage/product/how-it-works/glossary headings and restore the preferred blog heading.
+- [x] Redesign the shared bundle promotion around the product, opportunity count, one-time price and one action.
+- [x] Verify rendered metadata, protected headings and desktop/mobile promotion; release checks recorded in the audit report.
+
+Evidence: `reports/heading-meta-audit.md`, before/final inventories and `reports/heading-meta-edits.json`.

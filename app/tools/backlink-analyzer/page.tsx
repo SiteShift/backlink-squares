@@ -294,7 +294,7 @@ export default function BacklinkAnalyzerPage() {
   return (
     <>
       <SoftwareApplicationSchema
-        name="Backlink Profile Analyzer"
+        name="Backlink Audit Checklist"
         description="Generate a backlink audit checklist and learn what to inspect in referring domains, anchor text, link velocity, and toxic link patterns."
         url={`${BASE_URL}/tools/backlink-analyzer`}
         featureList={[
@@ -308,14 +308,14 @@ export default function BacklinkAnalyzerPage() {
         items={[
           { name: 'Home', url: BASE_URL },
           { name: 'Tools', url: `${BASE_URL}/tools` },
-          { name: 'Backlink Analyzer', url: `${BASE_URL}/tools/backlink-analyzer` },
+          { name: 'Backlink Audit Checklist', url: `${BASE_URL}/tools/backlink-analyzer` },
         ]}
       />
       <FAQSchema questions={faqData} />
 
       <Header />
 
-      <main className="min-h-screen">
+      <main className="pt-14 sm:pt-16 lg:pt-20 min-h-screen">
         {/* Hero */}
         <section className="relative py-16 lg:py-24 bg-white border-b-3 border-surface-950 overflow-hidden">
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -325,8 +325,8 @@ export default function BacklinkAnalyzerPage() {
             </div>
 
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-surface-950 leading-tight">
-              Backlink Profile{' '}
-              <span className="text-brand-red">Analyzer</span>
+              Backlink Audit{' '}
+              <span className="text-brand-red">Checklist</span>
             </h1>
             <p className="mt-6 text-xl text-surface-600 max-w-2xl mx-auto">
               Learn what to look for when analyzing your backlink profile.

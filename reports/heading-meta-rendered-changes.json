@@ -1,0 +1,2749 @@
+[
+  {
+    "path": "/about",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn about BacklinkGrid, the visual backlink marketplace making link building accessible, affordable, and transparent."
+    },
+    "after": {
+      "description": "Learn about BacklinkGrid: backlink education, a prospecting database and paid directory placements. Understand what we offer and how to contact the team."
+    }
+  },
+  {
+    "path": "/backlink-quality",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "Backlink Quality: How to Evaluate Link Value [2026 Guide]",
+      "description": "Learn to assess backlink quality with proven frameworks. Understand authority metrics, relevance signals, spam indicators, and what makes links valuable."
+    },
+    "after": {
+      "title": "Backlink Quality: Relevance, Metrics & Source Checks",
+      "description": "Assess backlink quality using source-page context, relevance, authority metrics and acquisition methods. Follow a practical framework for reviewing opportunities."
+    }
+  },
+  {
+    "path": "/backlink-quality/google-link-spam",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Google Link Spam Update: Complete Guide to Staying Compliant in 2026"
+      ],
+      "title": "Google Link Spam Update 2026: Complete Compliance Guide",
+      "description": "Master Google's link spam policies. Learn what's allowed, what triggers penalties, and how to build links safely. Updated for 2026 SpamBrain changes."
+    },
+    "after": {
+      "h1": [
+        "Google Link Spam Policies: What to Check and Avoid"
+      ],
+      "title": "Google Link Spam Policies: Examples & Practical Checks",
+      "description": "Understand Google's link spam policies, review acquisition methods and distinguish manual actions from ranking changes before deciding what to fix."
+    }
+  },
+  {
+    "path": "/backlinks",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Backlinks: The Complete Guide to Understanding, Evaluating, and Earning Links"
+      ],
+      "title": "Backlinks: The Complete Guide to Link Building & SEO [2026]",
+      "description": "Learn everything about backlinks - what they are, types of links, how to evaluate quality, and proven strategies for earning high-quality backlinks for SEO."
+    },
+    "after": {
+      "h1": [
+        "Backlinks: What They Are and How to Build Them"
+      ],
+      "title": "Backlinks Explained: Types, Quality & Link Building",
+      "description": "Understand backlink types, evaluate source quality and plan relevant link building. Explore practical guides to research, outreach and link maintenance."
+    }
+  },
+  {
+    "path": "/backlinks/anchor-text",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn about anchor text types, natural distribution ratios, and how to optimise your backlink profile's anchor text for SEO without over-optimisation."
+    },
+    "after": {
+      "description": "Understand anchor text types, descriptive wording and backlink context. Review distribution as evidence rather than a target ratio when analysing your link profile."
+    }
+  },
+  {
+    "path": "/backlinks/anchor-text-ratios",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Anchor Text Ratios: Benchmarks, Analysis, and Safe Distribution Guidelines"
+      ],
+      "title": "Anchor Text Ratios: Optimal Distribution & Benchmarks [2026]",
+      "description": "Discover safe anchor text ratio benchmarks based on data analysis. Learn to calculate your distribution and avoid over-optimisation penalties."
+    },
+    "after": {
+      "h1": [
+        "Anchor Text Ratios: How to Analyse Your Distribution"
+      ],
+      "title": "Anchor Text Ratios: Analysis Without Safe-Percentage Myths",
+      "description": "Calculate anchor text distribution and review patterns in context. Understand why a percentage alone cannot establish whether a backlink profile is safe."
+    }
+  },
+  {
+    "path": "/backlinks/backlink-myths",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "15 Backlink Myths Debunked: What Actually Works [2026]",
+      "description": "Stop believing outdated SEO advice. We debunk 15 common backlink myths with evidence, expert insights, and practical guidance on what really matters."
+    },
+    "after": {
+      "title": "Backlink Myths: Common SEO Misconceptions Explained",
+      "description": "Review common misconceptions about backlink counts, authority metrics, link attributes and acquisition. Use context and evidence to make better SEO decisions."
+    }
+  },
+  {
+    "path": "/backlinks/do-follow-vs-no-follow-vs-sponsored-vs-ugc",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "DoFollow vs NoFollow vs Sponsored vs UGC: Complete Guide to Link Attributes"
+      ],
+      "title": "DoFollow vs NoFollow: Which Links Actually Help Your SEO? [2026]",
+      "description": "Complete guide to link types - learn which links pass SEO value, when to use each attribute, and Google's 2026 policies on sponsored and UGC links."
+    },
+    "after": {
+      "h1": [
+        "Dofollow, Nofollow, Sponsored and UGC Links Explained"
+      ],
+      "title": "Dofollow vs Nofollow, Sponsored & UGC: Link Attributes",
+      "description": "Compare follow, nofollow, sponsored and UGC links with practical HTML examples. Learn how to describe links and choose attributes for different situations."
+    }
+  },
+  {
+    "path": "/backlinks/how-many-backlinks-do-i-need",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How Many Backlinks Do You Need to Rank? Data-Driven Analysis"
+      ],
+      "title": "How Many Backlinks Do You Need to Rank? [2026 Data Analysis]",
+      "description": "Calculate the backlinks you need to rank based on keyword difficulty, competition analysis, and domain authority. Data-driven approach with benchmarks."
+    },
+    "after": {
+      "h1": [
+        "How Many Backlinks Do You Need? A Planning Framework"
+      ],
+      "title": "How Many Backlinks Do You Need? Assess the Competition",
+      "description": "Compare relevant pages and referring sources to plan link building. Learn why keyword difficulty and domain scores cannot give a guaranteed backlink target."
+    }
+  },
+  {
+    "path": "/backlinks/link-velocity",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "Link Velocity Guide: Understanding Backlink Acquisition Rate [2026]",
+      "description": "Learn what link velocity is, how Google evaluates acquisition patterns, and how to maintain natural link building pace without triggering algorithmic flags."
+    },
+    "after": {
+      "title": "Link Velocity: Measure New and Lost Backlinks",
+      "description": "Measure backlink acquisition over time, compare consistent datasets and investigate unusual changes without treating a fixed link velocity as a safety rule."
+    }
+  },
+  {
+    "path": "/backlinks/referring-domains-vs-backlinks",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn why referring domains matter more than total backlink count for SEO, how to interpret these metrics, and set effective link building goals."
+    },
+    "after": {
+      "description": "Understand the difference between referring domains and individual backlinks. Compare counts consistently and review source quality before setting campaign goals."
+    }
+  },
+  {
+    "path": "/blog",
+    "fields": [
+      "h1"
+    ],
+    "before": {
+      "h1": [
+        "Build better links.Know what to check next."
+      ]
+    },
+    "after": {
+      "h1": [
+        "SEO & Link Building Insights"
+      ]
+    }
+  },
+  {
+    "path": "/blog/backlink-reporting-for-clients",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Backlink Reporting for Clients: How to Communicate Link Building Value"
+      ],
+      "title": "Backlink Reporting for Clients: How to Communicate Link Building Value"
+    },
+    "after": {
+      "h1": [
+        "Backlink Reporting for Clients: Evidence and Business Value"
+      ],
+      "title": "Backlink Reporting for Clients: Metrics & Evidence"
+    }
+  },
+  {
+    "path": "/blog/becoming-a-cited-source-in-your-industry",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Become a Cited Source in Your Industry: The Expert's Playbook"
+      ],
+      "title": "How to Become a Cited Source in Your Industry: The Expert's Playbook",
+      "description": "Learn how to position yourself as the go-to source that journalists, bloggers, and researchers cite. Build authority through strategic content and relationship building."
+    },
+    "after": {
+      "h1": [
+        "How to Become a Cited Source in Your Industry"
+      ],
+      "title": "Become a Cited Source: Research, Expertise & Outreach",
+      "description": "Prepare useful evidence, make your expertise easy to assess and build relevant publisher relationships. Learn what makes a source easier to cite accurately."
+    }
+  },
+  {
+    "path": "/blog/best-link-building-tools-2026",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Best Link Building Tools 2026: 25 Essential Tools for SEO Success"
+      ],
+      "title": "Best Link Building Tools 2026: 25 Essential Tools for SEO Success"
+    },
+    "after": {
+      "h1": [
+        "Link Building Tools: Research, Outreach and Monitoring"
+      ],
+      "title": "Link Building Tools: Research, Outreach & Monitoring"
+    }
+  },
+  {
+    "path": "/blog/branded-vs-keyword-anchor-text",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Branded vs Keyword Anchor Text: How to Optimize Without Over-Optimizing"
+      ],
+      "title": "Branded vs Keyword Anchor Text: How to Optimize Without Over-Optimizing",
+      "description": "Master anchor text strategy with this complete guide to branded vs keyword anchors. Learn the right ratios, avoid penalties, and build a natural-looking link profile."
+    },
+    "after": {
+      "h1": [
+        "Branded vs Keyword Anchor Text: Uses and Trade-Offs"
+      ],
+      "title": "Branded vs Keyword Anchor Text: Context & Examples",
+      "description": "Compare branded, keyword and descriptive anchors. Review wording and acquisition context without assuming a fixed ratio prevents over-optimisation."
+    }
+  },
+  {
+    "path": "/blog/building-links-to-boring-industries",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Building Links to Boring Industries: Creative Strategies That Work"
+      ],
+      "title": "Building Links to Boring Industries: Creative Strategies That Work"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Boring Industries: Find Useful Angles"
+      ],
+      "title": "Link Building for Boring Industries: Practical Angles"
+    }
+  },
+  {
+    "path": "/blog/building-links-without-content",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Building Links Without Content: Non-Content Link Building Strategies"
+      ],
+      "title": "Building Links Without Content: Non-Content Link Building Strategies"
+    },
+    "after": {
+      "h1": [
+        "Link Building Without New Content: Practical Options"
+      ],
+      "title": "Link Building Without New Content: Options & Limits"
+    }
+  },
+  {
+    "path": "/blog/building-relationships-for-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Building Relationships for Links: The Long-Term Link Building Strategy"
+      ],
+      "title": "Building Relationships for Links: The Long-Term Link Building Strategy"
+    },
+    "after": {
+      "h1": [
+        "Relationship-Based Link Building: A Practical Guide"
+      ],
+      "title": "Relationship-Based Link Building: A Practical Guide"
+    }
+  },
+  {
+    "path": "/blog/common-link-building-questions-answered",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "50 Common Link Building Questions Answered by SEO Experts"
+      ],
+      "title": "50 Common Link Building Questions Answered by SEO Experts",
+      "description": "Get answers to the most frequently asked link building questions. From basics to advanced tactics, we address every question beginners and experienced SEOs ask."
+    },
+    "after": {
+      "h1": [
+        "Common Link Building Questions Answered"
+      ],
+      "title": "Link Building Questions: Basics, Tactics & Measurement",
+      "description": "Find answers to common questions about backlinks, outreach, link quality and measurement. Use the explanations to plan your next research or campaign step."
+    }
+  },
+  {
+    "path": "/blog/dealing-with-negative-seo-attacks",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Dealing with Negative SEO Attacks: Detection, Defense, and Recovery"
+      ],
+      "title": "Dealing with Negative SEO Attacks: Detection, Defense, and Recovery",
+      "description": "Complete guide to identifying, defending against, and recovering from negative SEO attacks. Learn how to protect your site from malicious link building and other SEO sabotage."
+    },
+    "after": {
+      "h1": [
+        "Negative SEO: Investigate Suspicious Links and Site Changes"
+      ],
+      "title": "Negative SEO: Checks, Evidence & Proportionate Responses",
+      "description": "Investigate suspicious links and site changes before attributing losses to negative SEO. Record evidence and distinguish technical issues from uncertain signals."
+    }
+  },
+  {
+    "path": "/blog/e-e-a-t-and-link-building",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "E-E-A-T and Link Building: How Backlinks Support Expertise and Trust"
+      ],
+      "title": "E-E-A-T and Link Building: How Backlinks Support Expertise and Trust"
+    },
+    "after": {
+      "h1": [
+        "E-E-A-T and Backlinks: Expertise, Reputation and Trust"
+      ],
+      "title": "E-E-A-T and Backlinks: Expertise, Reputation & Trust"
+    }
+  },
+  {
+    "path": "/blog/first-10-backlinks-for-new-site",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Launch your SEO foundation with these proven strategies for earning your first 10 high-quality backlinks when starting a brand new website."
+    },
+    "after": {
+      "description": "Plan your first backlink opportunities for a new website. Review relevant profiles, directories, relationships and useful content before pursuing placements."
+    }
+  },
+  {
+    "path": "/blog/future-of-link-building",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "The Future of Link Building: Trends, Predictions, and What's Next"
+      ],
+      "title": "The Future of Link Building: Trends, Predictions, and What's Next",
+      "description": "Where is link building heading? Expert predictions on AI, algorithm changes, and evolving strategies. Prepare your SEO for what's coming."
+    },
+    "after": {
+      "h1": [
+        "The Future of Link Building: Trends and Open Questions"
+      ],
+      "title": "Future of Link Building: Trends & Open Questions",
+      "description": "Explore how AI tools, publisher practices and search changes affect link building. Separate practical planning considerations from predictions about future results."
+    }
+  },
+  {
+    "path": "/blog/guest-posting-vs-niche-edits",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Guest Posting vs Niche Edits: Which Link Building Method Is Better?"
+      ],
+      "title": "Guest Posting vs Niche Edits: Which Link Building Method Is Better?"
+    },
+    "after": {
+      "h1": [
+        "Guest Posting vs Niche Edits: Methods, Costs and Risks"
+      ],
+      "title": "Guest Posting vs Niche Edits: Methods, Costs & Risks"
+    }
+  },
+  {
+    "path": "/blog/how-google-evaluates-backlinks",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How Google Evaluates Backlinks: Inside the Algorithm"
+      ],
+      "title": "How Google Evaluates Backlinks: Inside the Algorithm",
+      "description": "Understand how Google's algorithm assesses backlink quality and value. PageRank history, modern evaluation factors, and what actually influences rankings."
+    },
+    "after": {
+      "h1": [
+        "How Google Evaluates Backlinks: Signals and Limitations"
+      ],
+      "title": "How Google Evaluates Backlinks: Signals & Limitations",
+      "description": "Explore PageRank, link context and Google's published guidance. Understand the limits of third-party metrics and claims about internal ranking algorithms."
+    }
+  },
+  {
+    "path": "/blog/how-links-build-brand-authority",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "How Backlinks Build Brand Authority: The Psychology and SEO of Trust"
+      ],
+      "title": "How Backlinks Build Brand Authority: The Psychology and SEO of Trust"
+    },
+    "after": {
+      "h1": [
+        "Backlinks and Brand Authority: Reputation and Recognition"
+      ],
+      "title": "Backlinks and Brand Authority: Reputation & Recognition"
+    }
+  },
+  {
+    "path": "/blog/how-to-build-backlinks-with-infographics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master infographic link building with proven strategies. Learn how to create, promote, and earn quality backlinks with visual content."
+    },
+    "after": {
+      "description": "Plan infographic link building from a useful visual idea to relevant publisher outreach. Review the evidence, attribution and destination before promotion."
+    }
+  },
+  {
+    "path": "/blog/how-to-build-links-with-data-studies",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "How to Build Links with Data Studies: Complete Research-Based Link Building Guide"
+      ],
+      "title": "How to Build Links with Data Studies: Complete Research-Based Link Building Guide"
+    },
+    "after": {
+      "h1": [
+        "Link Building with Data Studies: Research and Promotion"
+      ],
+      "title": "Link Building with Data Studies: Research & Promotion"
+    }
+  },
+  {
+    "path": "/blog/how-to-do-competitor-backlink-analysis",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Do Competitor Backlink Analysis: Complete Step-by-Step Guide"
+      ],
+      "title": "How to Do Competitor Backlink Analysis: Complete Step-by-Step Guide",
+      "description": "Learn how to analyze competitor backlinks to discover link building opportunities. Master competitive link analysis with proven frameworks and tools."
+    },
+    "after": {
+      "h1": [
+        "Competitor Backlink Analysis: A Step-by-Step Workflow"
+      ],
+      "title": "Competitor Backlink Analysis: Research & Prioritisation",
+      "description": "Compare competitor source pages, find relevant gaps and qualify potential opportunities. Keep dataset scope and collection dates consistent during the analysis."
+    }
+  },
+  {
+    "path": "/blog/how-to-fix-a-bad-backlink-profile",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Fix a Bad Backlink Profile: Complete Cleanup and Recovery Guide"
+      ],
+      "title": "How to Fix a Bad Backlink Profile: Complete Cleanup and Recovery Guide",
+      "description": "Learn how to identify, analyze, and fix a toxic backlink profile. Step-by-step guide to cleaning up bad links, submitting disavow files, and rebuilding healthy authority."
+    },
+    "after": {
+      "h1": [
+        "Backlink Profile Cleanup: Review Problems Before Acting"
+      ],
+      "title": "Backlink Profile Cleanup: Evidence, Actions & Follow-Up",
+      "description": "Review questionable backlinks, acquisition practices and broken destinations. Decide what needs correction before requesting removals or considering disavow."
+    }
+  },
+  {
+    "path": "/blog/how-to-get-backlinks-from-government-sites-gov",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Get Backlinks from Government Sites (.gov): Complete Strategy"
+      ],
+      "title": "How to Get Backlinks from Government Sites (.gov): Complete Strategy",
+      "description": "Discover proven methods to earn authoritative .gov backlinks. Learn FOIA, grants, and resource page strategies for government link building."
+    },
+    "after": {
+      "h1": [
+        "Government Backlinks: Relevant .gov Opportunities"
+      ],
+      "title": "Government Backlinks: Relevant .gov Opportunities",
+      "description": "Explore government resource pages and legitimate organisational relationships. Assess eligibility and audience relevance before pursuing a .gov link."
+    }
+  },
+  {
+    "path": "/blog/how-to-get-backlinks-from-news-sites",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn proven strategies to earn high-authority backlinks from news sites and major publications. From data-driven stories to newsjacking techniques."
+    },
+    "after": {
+      "description": "Plan newsworthy contributions for relevant publications through research, commentary and timely stories. Prepare evidence and evaluate published media mentions."
+    }
+  },
+  {
+    "path": "/blog/how-to-get-backlinks-from-podcasts",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn proven strategies to get high-quality backlinks from podcasts. Discover how podcast guesting and hosting can boost your SEO and domain authority."
+    },
+    "after": {
+      "description": "Explore podcast guesting and useful show-note references. Find relevant audiences, prepare a contribution and check whether a published episode includes your link."
+    }
+  },
+  {
+    "path": "/blog/how-to-get-backlinks-from-universities-edu",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Get Backlinks from Universities (.edu): The Definitive Guide"
+      ],
+      "title": "How to Get Backlinks from Universities (.edu): The Definitive Guide",
+      "description": "Learn proven strategies to earn valuable .edu backlinks from universities. Discover scholarships, resources pages, and other methods that work."
+    },
+    "after": {
+      "h1": [
+        "University Backlinks: Relevant .edu Opportunities"
+      ],
+      "title": "University Backlinks: Relevant .edu Opportunities",
+      "description": "Explore relevant university resources, partnerships and student programmes. Review eligibility and practical value instead of pursuing a link for its .edu suffix."
+    }
+  },
+  {
+    "path": "/blog/how-to-get-backlinks-without-outreach",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Get Backlinks Without Outreach: 12 Passive Link Building Methods"
+      ],
+      "title": "How to Get Backlinks Without Outreach: 12 Passive Link Building Methods",
+      "description": "Discover proven strategies to attract backlinks naturally without sending a single outreach email. Build links through content, assets, and strategic positioning."
+    },
+    "after": {
+      "h1": [
+        "How to Attract Backlinks Without Email Outreach"
+      ],
+      "title": "Attract Backlinks Without Outreach: Content & Discovery",
+      "description": "Explore content, tools and discovery routes that can attract references without email outreach. Understand the work and distribution still required."
+    }
+  },
+  {
+    "path": "/blog/how-to-remove-toxic-backlinks",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Step-by-step guide to identifying, removing, and disavowing toxic backlinks. Protect your site from penalties with this actionable cleanup process."
+    },
+    "after": {
+      "description": "Review links labelled toxic by SEO tools, inspect the actual source pages and assess the context. Learn when a removal request or disavow review may be appropriate."
+    }
+  },
+  {
+    "path": "/blog/how-to-use-haro-for-link-building",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Use HARO for Link Building: Expert Strategies That Work"
+      ],
+      "title": "How to Use HARO for Link Building: Expert Strategies That Work",
+      "description": "Master HARO for link building with proven pitch strategies. Learn how to respond to journalist queries and earn high-authority media backlinks."
+    },
+    "after": {
+      "h1": [
+        "HARO Link Building: Responding to Journalist Requests"
+      ],
+      "title": "HARO Link Building: Journalist Requests & Pitching",
+      "description": "Prepare relevant responses to journalist requests with clear expertise and evidence. Review current HARO access rules and verify any resulting source-page links."
+    }
+  },
+  {
+    "path": "/blog/how-to-write-guest-post-pitches-that-get-accepted",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "How to Write Guest Post Pitches That Get Accepted: Proven Templates"
+      ],
+      "title": "How to Write Guest Post Pitches That Get Accepted: Proven Templates",
+      "description": "Master the art of guest post pitching with proven email templates and strategies. Learn what editors actually want to see in your pitch."
+    },
+    "after": {
+      "h1": [
+        "How to Write a Guest Post Pitch: Templates and Examples"
+      ],
+      "title": "Guest Post Pitch Writing: Templates & Examples",
+      "description": "Write a relevant guest post pitch with a clear audience, useful idea and supporting outline. Adapt example emails to the publisher's current instructions."
+    }
+  },
+  {
+    "path": "/blog/link-building-101-beginners-guide",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building 101: The Complete Beginner's Guide to Building Backlinks"
+      ],
+      "title": "Link Building 101: The Complete Beginner's Guide to Building Backlinks"
+    },
+    "after": {
+      "h1": [
+        "Link Building 101: A Beginner's Guide to Backlinks"
+      ],
+      "title": "Link Building 101: A Beginner's Guide to Backlinks"
+    }
+  },
+  {
+    "path": "/blog/link-building-agency-vs-freelancer",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Agency vs Freelancer: Which Is Right for Your Business?"
+      ],
+      "title": "Link Building Agency vs Freelancer: Which Is Right for Your Business?"
+    },
+    "after": {
+      "h1": [
+        "Link Building Agency vs Freelancer: Costs and Trade-Offs"
+      ],
+      "title": "Link Building Agency vs Freelancer: Costs & Trade-Offs"
+    }
+  },
+  {
+    "path": "/blog/link-building-at-scale",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building at Scale: Systems and Processes for High-Volume Link Acquisition"
+      ],
+      "title": "Link Building at Scale: Systems and Processes for High-Volume Link Acquisition"
+    },
+    "after": {
+      "h1": [
+        "Link Building at Scale: Research, Outreach and Quality"
+      ],
+      "title": "Link Building at Scale: Processes & Quality Control"
+    }
+  },
+  {
+    "path": "/blog/link-building-budget-allocation",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Budget Allocation: How to Spend Your SEO Budget Wisely"
+      ],
+      "title": "Link Building Budget Allocation: How to Spend Your SEO Budget Wisely"
+    },
+    "after": {
+      "h1": [
+        "Link Building Budget Allocation: Plan Your Spending"
+      ],
+      "title": "Link Building Budget Allocation: Costs & Priorities"
+    }
+  },
+  {
+    "path": "/blog/link-building-campaign-planning",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Campaign Planning: How to Plan and Execute Successful Campaigns"
+      ],
+      "title": "Link Building Campaign Planning: How to Plan and Execute Successful Campaigns",
+      "description": "Step-by-step guide to planning link building campaigns. From goal setting to execution to analysis, learn how to run campaigns that deliver measurable results."
+    },
+    "after": {
+      "h1": [
+        "Link Building Campaign Planning: Goals to Delivery"
+      ],
+      "title": "Link Building Campaign Planning: Goals to Delivery",
+      "description": "Plan a link building campaign with clear goals, research capacity, responsibilities and review points. Track delivery separately from search and revenue outcomes."
+    }
+  },
+  {
+    "path": "/blog/link-building-case-study-ecommerce",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "An illustrative link building campaign for planning and measurement. Learn the workflow; all campaign numbers are examples, not verified customer results."
+    },
+    "after": {
+      "description": "Explore a hypothetical e-commerce link building campaign using content, product pages and outreach. Use the scenario for planning, not as verified client results."
+    }
+  },
+  {
+    "path": "/blog/link-building-case-study-saas",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "An illustrative link building campaign for planning and measurement. Learn the workflow; all campaign numbers are examples, not verified customer results."
+    },
+    "after": {
+      "description": "Explore a hypothetical SaaS link building campaign using product expertise, useful resources and outreach. Its figures illustrate a plan, not verified client results."
+    }
+  },
+  {
+    "path": "/blog/link-building-dashboards-and-metrics",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Dashboards and Metrics: Build Your Measurement System"
+      ],
+      "title": "Link Building Dashboards and Metrics: Build Your Measurement System"
+    },
+    "after": {
+      "h1": [
+        "Link Building Dashboards: Metrics and Reporting Design"
+      ],
+      "title": "Link Building Dashboards: Metrics & Reporting Design"
+    }
+  },
+  {
+    "path": "/blog/link-building-for-blog-posts",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Blog Posts: Proven Strategies to Amplify Your Content"
+      ],
+      "title": "Link Building for Blog Posts: Proven Strategies to Amplify Your Content"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Blog Posts: Research and Promotion"
+      ],
+      "title": "Link Building for Blog Posts: Research & Promotion"
+    }
+  },
+  {
+    "path": "/blog/link-building-for-competitive-niches",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Competitive Niches: Advanced Strategies That Work"
+      ],
+      "title": "Link Building for Competitive Niches: Advanced Strategies That Work"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Competitive Niches: Research and Focus"
+      ],
+      "title": "Link Building for Competitive Niches: Research & Focus"
+    }
+  },
+  {
+    "path": "/blog/link-building-for-landing-pages",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Landing Pages: Drive Authority to Your Conversion Pages"
+      ],
+      "title": "Link Building for Landing Pages: Drive Authority to Your Conversion Pages",
+      "description": "Learn effective strategies for building backlinks to landing pages. Improve rankings for your highest-converting pages without sacrificing user experience."
+    },
+    "after": {
+      "h1": [
+        "Link Building for Landing Pages: Relevance and Conversion"
+      ],
+      "title": "Link Building for Landing Pages: Relevance & Conversion",
+      "description": "Plan relevant backlinks to landing pages and supporting content. Match the publisher's audience to a useful destination and review the visitor's next step."
+    }
+  },
+  {
+    "path": "/blog/link-building-for-new-websites",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn effective link building strategies for new websites. Build your first backlinks and establish domain authority from scratch with proven tactics."
+    },
+    "after": {
+      "description": "Plan link building for a new website with relevant profiles, useful pages and publisher research. Prioritise a clear audience and practical first steps."
+    }
+  },
+  {
+    "path": "/blog/link-building-for-personal-brands",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Personal Brands: Establish Your Online Authority"
+      ],
+      "title": "Link Building for Personal Brands: Establish Your Online Authority"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Personal Brands: Relevant Visibility"
+      ],
+      "title": "Link Building for Personal Brands: Relevant Visibility"
+    }
+  },
+  {
+    "path": "/blog/link-building-for-product-pages",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Product Pages: Strategies That Actually Work"
+      ],
+      "title": "Link Building for Product Pages: Strategies That Actually Work",
+      "description": "Learn how to build high-quality backlinks directly to your product pages. Proven strategies for e-commerce, SaaS, and physical products that drive rankings and sales."
+    },
+    "after": {
+      "h1": [
+        "Link Building for Product Pages: Sources and Approaches"
+      ],
+      "title": "Link Building for Product Pages: Sources & Approaches",
+      "description": "Explore backlink opportunities for product pages through useful resources, partners and relevant coverage. Assess the destination's value to each publisher's reader."
+    }
+  },
+  {
+    "path": "/blog/link-building-for-service-pages",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Service Pages: Attract Quality Backlinks to Your Offerings"
+      ],
+      "title": "Link Building for Service Pages: Attract Quality Backlinks to Your Offerings",
+      "description": "Learn proven strategies for building backlinks to service pages. Drive qualified traffic and improve rankings for your most important business pages."
+    },
+    "after": {
+      "h1": [
+        "Link Building for Service Pages: Relevant Opportunities"
+      ],
+      "title": "Link Building for Service Pages: Relevant Opportunities",
+      "description": "Find relevant link opportunities for service pages through expertise, partnerships and useful supporting content. Match each approach to your potential customers."
+    }
+  },
+  {
+    "path": "/blog/link-building-for-startups",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Practical link building strategies for startups with limited resources and brand awareness. Build authority from zero with these proven approaches."
+    },
+    "after": {
+      "description": "Plan link building with limited startup resources and brand awareness. Use relevant relationships, useful assets and focused research to qualify opportunities."
+    }
+  },
+  {
+    "path": "/blog/link-building-for-ymyl-sites",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for YMYL Sites: Strategies for Health, Finance, and Legal"
+      ],
+      "title": "Link Building for YMYL Sites: Strategies for Health, Finance, and Legal"
+    },
+    "after": {
+      "h1": [
+        "Link Building for YMYL Sites: Expertise and Source Quality"
+      ],
+      "title": "Link Building for YMYL Sites: Expertise & Source Quality"
+    }
+  },
+  {
+    "path": "/blog/link-building-in-age-of-ai",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building in the Age of AI: How Artificial Intelligence Is Changing SEO"
+      ],
+      "title": "Link Building in the Age of AI: How Artificial Intelligence Is Changing SEO"
+    },
+    "after": {
+      "h1": [
+        "AI and Link Building: Research, Outreach and Review"
+      ],
+      "title": "AI and Link Building: Research, Outreach & Review"
+    }
+  },
+  {
+    "path": "/blog/link-building-mistakes-to-avoid",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "21 Link Building Mistakes That Can Tank Your Rankings"
+      ],
+      "title": "21 Link Building Mistakes That Can Tank Your Rankings"
+    },
+    "after": {
+      "h1": [
+        "Link Building Mistakes: Risks, Wasted Work and Fixes"
+      ],
+      "title": "Link Building Mistakes: Risks, Wasted Work & Fixes"
+    }
+  },
+  {
+    "path": "/blog/link-building-on-a-budget",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building on a Budget: Effective Strategies That Don't Break the Bank"
+      ],
+      "title": "Link Building on a Budget: Effective Strategies That Don't Break the Bank",
+      "description": "Discover proven link building strategies that work without expensive tools or agencies. Build quality backlinks on any budget with these tactics."
+    },
+    "after": {
+      "h1": [
+        "Link Building on a Budget: Priorities and Practical Tactics"
+      ],
+      "title": "Link Building on a Budget: Priorities & Practical Tactics",
+      "description": "Plan link building around available time, useful content and relevant relationships. Compare practical tactics before paying for tools or agency support."
+    }
+  },
+  {
+    "path": "/blog/link-building-strategies",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "15 Proven Link Building Strategies That Work in 2026"
+      ],
+      "title": "15 Proven Link Building Strategies That Work in 2026",
+      "description": "Discover actionable link building tactics from guest posting to broken link building. Real strategies that get results."
+    },
+    "after": {
+      "h1": [
+        "15 Link Building Strategies to Consider for Your Website"
+      ],
+      "title": "15 Link Building Strategies: Tactics & Practical Steps",
+      "description": "Explore 15 link building approaches, including guest posting and broken link research. Choose tactics that fit your website, audience and available resources."
+    }
+  },
+  {
+    "path": "/blog/link-building-templates-and-scripts",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Templates: Outreach Emails, Scripts, and Swipe Files"
+      ],
+      "title": "Link Building Templates: Outreach Emails, Scripts, and Swipe Files",
+      "description": "Ready-to-use link building templates including outreach emails, follow-up scripts, and proven frameworks. Customize for your campaigns."
+    },
+    "after": {
+      "h1": [
+        "Link Building Templates: Emails, Pitches and Follow-Ups"
+      ],
+      "title": "Link Building Templates: Emails, Pitches & Follow-Ups",
+      "description": "Adapt link building email templates, pitch structures and follow-up scripts. Add relevant details for each recipient rather than sending generic messages."
+    }
+  },
+  {
+    "path": "/blog/link-building-terminology-glossary",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Terminology Glossary: 100+ Terms Every SEO Should Know"
+      ],
+      "title": "Link Building Terminology Glossary: 100+ Terms Every SEO Should Know",
+      "description": "The complete glossary of link building and backlink terminology. Understand every term, metric, and concept used in modern link building campaigns."
+    },
+    "after": {
+      "h1": [
+        "Link Building Terminology: Backlink and Outreach Terms"
+      ],
+      "title": "Link Building Terminology: Backlink & Outreach Terms",
+      "description": "Look up link building terms covering backlinks, authority metrics, outreach and measurement. Follow related definitions when you need more context."
+    }
+  },
+  {
+    "path": "/blog/link-building-vs-content-marketing",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building vs Content Marketing: Understanding the SEO Relationship"
+      ],
+      "title": "Link Building vs Content Marketing: Understanding the SEO Relationship"
+    },
+    "after": {
+      "h1": [
+        "Link Building vs Content Marketing: How They Work Together"
+      ],
+      "title": "Link Building vs Content Marketing: Roles & Trade-Offs"
+    }
+  },
+  {
+    "path": "/blog/link-building-with-digital-assets",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building with Digital Assets: Tools, Calculators, and Interactive Content"
+      ],
+      "title": "Link Building with Digital Assets: Tools, Calculators, and Interactive Content"
+    },
+    "after": {
+      "h1": [
+        "Digital Assets for Link Building: Tools and Resources"
+      ],
+      "title": "Digital Assets for Link Building: Tools & Resources"
+    }
+  },
+  {
+    "path": "/blog/link-building-with-quora",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building With Quora: Expert Strategies for Traffic and Authority"
+      ],
+      "title": "Link Building With Quora: Expert Strategies for Traffic and Authority",
+      "description": "How to use Quora effectively for link building. Build authority, drive targeted traffic, and generate natural backlinks through expert Q&A participation."
+    },
+    "after": {
+      "h1": [
+        "Quora for Link Building: Useful Answers and Referral Traffic"
+      ],
+      "title": "Quora for Link Building: Answers & Referral Traffic",
+      "description": "Explore how useful Quora participation can support discovery and referrals. Match answers to real questions and distinguish platform links from editorial backlinks."
+    }
+  },
+  {
+    "path": "/blog/link-building-with-reddit",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building With Reddit: Strategies That Won't Get You Banned"
+      ],
+      "title": "Link Building With Reddit: Strategies That Won't Get You Banned",
+      "description": "How to use Reddit for link building without violating community rules. Build authority, drive traffic, and generate natural backlinks through Reddit."
+    },
+    "after": {
+      "h1": [
+        "Reddit for Link Building: Relevance and Community Rules"
+      ],
+      "title": "Reddit for Link Building: Relevance & Community Rules",
+      "description": "Assess relevant Reddit communities, read their rules and contribute useful answers. Understand promotional limits before including a website link."
+    }
+  },
+  {
+    "path": "/blog/link-building-with-twitter",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building With Twitter (X): Tactics for Visibility and Backlinks"
+      ],
+      "title": "Link Building With Twitter (X): Tactics for Visibility and Backlinks"
+    },
+    "after": {
+      "h1": [
+        "Twitter (X) for Link Building: Relationships and Discovery"
+      ],
+      "title": "Twitter (X) for Link Building: Relationships & Discovery"
+    }
+  },
+  {
+    "path": "/blog/manual-outreach-vs-automated-tools",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Manual Outreach vs Automated Tools: What Works Better for Link Building?"
+      ],
+      "title": "Manual Outreach vs Automated Tools: What Works Better for Link Building?"
+    },
+    "after": {
+      "h1": [
+        "Manual vs Automated Link Outreach: Workflow Trade-Offs"
+      ],
+      "title": "Manual vs Automated Link Outreach: Workflow Trade-Offs"
+    }
+  },
+  {
+    "path": "/blog/outreach-response-rate-optimization",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Outreach Response Rate Optimization: Data-Driven Techniques for Better Results"
+      ],
+      "title": "Outreach Response Rate Optimization: Data-Driven Techniques for Better Results",
+      "description": "Learn how to systematically improve your link building outreach response rates. Data-driven techniques for subject lines, messaging, timing, and more."
+    },
+    "after": {
+      "h1": [
+        "Improve Outreach Response Rates: Test and Measure"
+      ],
+      "title": "Improve Outreach Response Rates: Test and Measure",
+      "description": "Review your outreach targeting, subject lines, message and follow-up. Test changes with comparable prospects and measure useful replies rather than assumed benchmarks."
+    }
+  },
+  {
+    "path": "/blog/personalization-in-link-outreach",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Personalization in Link Outreach: How to Stand Out in Crowded Inboxes"
+      ],
+      "title": "Personalization in Link Outreach: How to Stand Out in Crowded Inboxes",
+      "description": "Master the art of personalized link building outreach. Learn techniques that dramatically improve response rates and build lasting relationships."
+    },
+    "after": {
+      "h1": [
+        "Link Outreach Personalisation: Research and Relevant Pitches"
+      ],
+      "title": "Link Outreach Personalisation: Research & Relevant Pitches",
+      "description": "Use prospect research to write relevant link outreach messages. Verify recipient details, explain your contribution and keep personalisation accurate."
+    }
+  },
+  {
+    "path": "/blog/proving-link-building-value-to-stakeholders",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Proving Link Building Value to Stakeholders: Build the Business Case"
+      ],
+      "title": "Proving Link Building Value to Stakeholders: Build the Business Case"
+    },
+    "after": {
+      "h1": [
+        "Explain Link Building Value to Clients and Stakeholders"
+      ],
+      "title": "Explain Link Building Value: Evidence & Business Outcomes"
+    }
+  },
+  {
+    "path": "/blog/quantity-vs-quality-backlinks",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "The definitive guide to the quantity vs quality debate in link building. Learn how to balance both factors and build a backlink profile that drives real results."
+    },
+    "after": {
+      "description": "Compare backlink quantity and quality using relevance, referring sources and practical value. Avoid treating domain-score bands as an exchange rate for links."
+    }
+  },
+  {
+    "path": "/blog/tiered-link-building-strategy",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Tiered Link Building Strategy: Advanced Link Architecture Explained"
+      ],
+      "title": "Tiered Link Building Strategy: Advanced Link Architecture Explained",
+      "description": "Learn how tiered link building works, when it makes sense, and how to implement it safely. Advanced strategy for building link authority at scale."
+    },
+    "after": {
+      "h1": [
+        "Tiered Link Building: How It Works and Its Risks"
+      ],
+      "title": "Tiered Link Building: How It Works & SEO Risks",
+      "description": "Understand tiered link building, its acquisition patterns and potential policy risks. Review alternatives before investing in links intended to influence other links."
+    }
+  },
+  {
+    "path": "/blog/top-haro-alternatives-for-link-building",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Top HARO Alternatives for Link Building: 12 Journalist Outreach Platforms"
+      ],
+      "title": "Top HARO Alternatives for Link Building: 12 Journalist Outreach Platforms"
+    },
+    "after": {
+      "h1": [
+        "HARO Alternatives: Compare Journalist Outreach Platforms"
+      ],
+      "title": "HARO Alternatives: Journalist Outreach Platforms"
+    }
+  },
+  {
+    "path": "/blog/topical-authority-and-backlinks",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Topical Authority and Backlinks: How Links Build Subject Matter Expertise"
+      ],
+      "title": "Topical Authority and Backlinks: How Links Build Subject Matter Expertise",
+      "description": "Learn how backlinks contribute to topical authority and why becoming an authority in your niche leads to better rankings and more natural link acquisition."
+    },
+    "after": {
+      "h1": [
+        "Topical Authority and Backlinks: Content, Sources and Scope"
+      ],
+      "title": "Topical Authority and Backlinks: Content & Sources",
+      "description": "Explore how useful topic coverage and relevant references work together. Plan distinct pages, connect related resources and evaluate evidence of audience interest."
+    }
+  },
+  {
+    "path": "/blog/understanding-link-relevance",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Understanding Link Relevance: Why Topic Alignment Matters for SEO"
+      ],
+      "title": "Understanding Link Relevance: Why Topic Alignment Matters for SEO",
+      "description": "Deep dive into link relevance and why topically aligned backlinks outperform random high-authority links. Learn to evaluate and build relevant links."
+    },
+    "after": {
+      "h1": [
+        "Backlink Relevance: Evaluate Topic and Audience Fit"
+      ],
+      "title": "Backlink Relevance: Evaluate Topic & Audience Fit",
+      "description": "Assess backlink relevance using the source page, surrounding topic and intended audience. Review contextual fit alongside metrics when qualifying opportunities."
+    }
+  },
+  {
+    "path": "/blog/why-your-link-building-isnt-working",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Why Your Link Building Isn't Working: 15 Common Problems and How to Fix Them"
+      ],
+      "title": "Why Your Link Building Isn't Working: 15 Common Problems and How to Fix Them",
+      "description": "If your link building efforts aren't producing results, you're probably making one of these 15 common mistakes. Learn how to diagnose and fix your link building strategy."
+    },
+    "after": {
+      "h1": [
+        "Why Your Link Building Isn't Working: Diagnose the Gaps"
+      ],
+      "title": "Why Your Link Building Isn't Working: A Diagnostic Guide",
+      "description": "Investigate link building that is not meeting your goals. Review targeting, content, outreach, destination pages and measurement before changing the campaign."
+    }
+  },
+  {
+    "path": "/blog/youtube-link-building-strategies",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "YouTube Link Building Strategies: How Video Content Earns Backlinks"
+      ],
+      "title": "YouTube Link Building Strategies: How Video Content Earns Backlinks"
+    },
+    "after": {
+      "h1": [
+        "YouTube Link Building: Video Content and Website References"
+      ],
+      "title": "YouTube Link Building: Video & Website References"
+    }
+  },
+  {
+    "path": "/comparisons/ahrefs-vs-moz",
+    "fields": [
+      "title"
+    ],
+    "before": {
+      "title": "Ahrefs vs Moz: DA, DR & Backlink Accuracy Compared"
+    },
+    "after": {
+      "title": "Ahrefs vs Moz: DA, DR & Backlink Research Compared"
+    }
+  },
+  {
+    "path": "/comparisons/link-building-agencies-compared",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Top Link Building Agencies Compared [2026 Review]"
+      ],
+      "title": "Top Link Building Agencies Compared [2026]",
+      "description": "Compare top link building agencies: pricing, quality, tactics, and client results. Find the right agency for your budget and link building needs."
+    },
+    "after": {
+      "h1": [
+        "Link Building Agencies: Compare Methods and Services"
+      ],
+      "title": "Link Building Agencies: Compare Methods & Services",
+      "description": "Compare agency service models, acquisition methods and proposal criteria. Review source-page examples and terms before choosing a link building provider."
+    }
+  },
+  {
+    "path": "/glossary/connectively",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Connectively: The Successor to HARO for Link Building"
+      ],
+      "title": "Connectively: Post-HARO Source Platform Guide [2026]",
+      "description": "Understand Connectively, the successor to HARO. Learn how to use this journalist-source platform for earning high-authority media backlinks."
+    },
+    "after": {
+      "h1": [
+        "Connectively: Expert Sourcing, HARO and Platform History"
+      ],
+      "title": "What Is Connectively? HARO & Expert Sourcing Explained",
+      "description": "Understand Connectively's role in expert sourcing, its connection to HARO and its platform history. Check current official guidance before planning outreach."
+    }
+  },
+  {
+    "path": "/glossary/contextual-link",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Contextual Links: Why In-Content Links Matter Most"
+      ],
+      "title": "Contextual Links Explained: In-Content Link Guide [2026]",
+      "description": "Learn what contextual links are and why they carry more SEO weight. Understand how to earn valuable in-content backlinks."
+    },
+    "after": {
+      "h1": [
+        "Contextual Links: Definition and In-Content Examples"
+      ],
+      "title": "Contextual Links: Definition, Examples & SEO Context",
+      "description": "See what contextual links look like inside a page. Learn to assess the surrounding content, destination and reader value rather than judging placement alone."
+    }
+  },
+  {
+    "path": "/glossary/contributor-post",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Contributor Post: Becoming a Regular Content Contributor"
+      ],
+      "title": "Contributor Posts: Building Authority Through Regular Writing [2026]"
+    },
+    "after": {
+      "h1": [
+        "Contributor Posts: Regular Writing for Publications"
+      ],
+      "title": "Contributor Posts: Meaning & Editorial Relationships"
+    }
+  },
+  {
+    "path": "/glossary/dofollow-link",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Dofollow Links: What They Are, How They Work & Why They Matter for SEO"
+      ],
+      "title": "Dofollow Links: When They Matter & How to Get More [2026]",
+      "description": "Learn what dofollow links are, when they actually impact rankings, and how to build more of them. Includes HTML examples and proven link building strategies."
+    },
+    "after": {
+      "h1": [
+        "Dofollow Links: Meaning, HTML and SEO Context"
+      ],
+      "title": "Dofollow Links: Meaning, HTML and SEO Context",
+      "description": "Understand what a dofollow link means, see HTML examples and compare it with nofollow and sponsored links. Learn why a followed link does not guarantee SEO value."
+    }
+  },
+  {
+    "path": "/glossary/editorial-link",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Editorial Links: The Gold Standard of Backlinks"
+      ],
+      "title": "Editorial Links Explained: Natural Backlink Guide [2026]",
+      "description": "Learn what editorial links are and why they're the most valuable backlinks. Understand how to create content that earns natural editorial links."
+    },
+    "after": {
+      "h1": [
+        "Editorial Links: Definition and Examples"
+      ],
+      "title": "Editorial Links: Meaning, Examples & How They Are Earned",
+      "description": "Understand editorial links, how they differ from arranged placements and why the publisher's context matters. Explore content that gives readers useful references."
+    }
+  },
+  {
+    "path": "/glossary/link-building-outreach",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master link building outreach with proven strategies. Learn how to reach out effectively, personalize pitches, and earn quality backlinks."
+    },
+    "after": {
+      "description": "Understand link building outreach, from selecting relevant publishers to writing a useful pitch. Learn how personalisation and follow-up fit the workflow."
+    }
+  },
+  {
+    "path": "/glossary/link-growth-rate",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn about link growth rate, how to measure link acquisition speed, and what healthy link growth looks like for sustainable SEO success."
+    },
+    "after": {
+      "description": "Calculate link growth rate using consistent date ranges and data sources. Distinguish reported discovery from publication and investigate changes in context."
+    }
+  },
+  {
+    "path": "/glossary/link-hoarding",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Hoarding: Why Not Linking Out Hurts Your SEO"
+      ],
+      "title": "Link Hoarding: The Problem with Not Linking Out [2026]",
+      "description": "Learn why link hoarding (refusing to link out) hurts your site. Understand the value of natural outbound linking for SEO and user experience."
+    },
+    "after": {
+      "h1": [
+        "Link Hoarding: Meaning and Outbound Linking Practices"
+      ],
+      "title": "Link Hoarding: Meaning & Sensible Outbound Linking",
+      "description": "Understand link hoarding and the trade-offs of refusing to link out. Learn to add useful references without treating outbound links as automatic ranking losses."
+    }
+  },
+  {
+    "path": "/glossary/link-velocity",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand link velocity\u2014the rate of new backlink acquisition. Learn what's natural, what's suspicious, and how to maintain healthy link growth."
+    },
+    "after": {
+      "description": "Understand link velocity as a measure of backlink change over time. Compare new and lost links without assuming there is a universal safe acquisition rate."
+    }
+  },
+  {
+    "path": "/glossary/linkable-asset",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master linkable asset creation. Learn what makes content link-worthy, proven formats, and strategies for building resources that earn backlinks."
+    },
+    "after": {
+      "description": "Understand linkable assets and why a reader might reference them. Explore useful formats such as research, tools and guides when planning content for outreach."
+    }
+  },
+  {
+    "path": "/glossary/manual-action",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn about Google manual actions, why sites receive them, and the recovery process. Understand the difference between manual and algorithmic penalties."
+    },
+    "after": {
+      "description": "Understand Google manual actions, where to check them in Search Console and how the review process works. Distinguish a notice from an unexplained ranking change."
+    }
+  },
+  {
+    "path": "/glossary/page-authority",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Page Authority (PA): What It Is, How to Check & Improve Your Score"
+      ],
+      "title": "Page Authority: What's a Good PA Score? (+ How to Check) [2026]",
+      "description": "Complete guide to Page Authority (PA) - Moz's page-level ranking metric. Learn what a good PA score looks like, how to check yours, and 5 ways to improve it."
+    },
+    "after": {
+      "h1": [
+        "Page Authority: Moz's PA Metric Explained"
+      ],
+      "title": "Page Authority (PA): Meaning, Checks & Limitations",
+      "description": "Learn what Moz's Page Authority measures, how to check PA and how it differs from domain metrics. Use the score for comparison, not as a Google ranking factor."
+    }
+  },
+  {
+    "path": "/glossary/penalty-recovery",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn how to recover from Google penalties. Step-by-step guide to fixing manual actions and algorithmic penalties affecting your rankings."
+    },
+    "after": {
+      "description": "Investigate a Google manual action and document the work needed for a review request. Separate manual-action remediation from diagnosing other ranking losses."
+    }
+  },
+  {
+    "path": "/guides",
+    "fields": [
+      "h1"
+    ],
+    "before": {
+      "h1": [
+        "In-Depth SEO Guides"
+      ]
+    },
+    "after": {
+      "h1": [
+        "SEO & Link Building Guides"
+      ]
+    }
+  },
+  {
+    "path": "/guides/anchor-text-optimization-guide",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Anchor Text Optimization: The Complete Guide [2026]"
+      ],
+      "title": "Anchor Text Optimization: The Complete Guide [2026]",
+      "description": "Master anchor text optimization with our comprehensive guide. Learn ideal ratios, best practices, and how to avoid over-optimization penalties."
+    },
+    "after": {
+      "h1": [
+        "Anchor Text Optimisation: Types, Context and Analysis"
+      ],
+      "title": "Anchor Text Optimisation: Types & Context Explained",
+      "description": "Review anchor text types, relevance and distribution. Learn to describe linked pages clearly without treating an ideal anchor ratio as a Google rule."
+    }
+  },
+  {
+    "path": "/guides/digital-pr-link-building-guide",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master digital PR to earn high-authority backlinks. Learn newsjacking, data-driven campaigns, journalist relationships, and proven PR tactics for SEO."
+    },
+    "after": {
+      "description": "Explore digital PR through research, timely commentary and journalist relationships. Plan a useful story, prepare evidence and assess relevant media coverage."
+    }
+  },
+  {
+    "path": "/guides/link-building-outreach-guide",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master link building outreach with proven email templates, personalization strategies, follow-up sequences, and tactics that get responses and earn links."
+    },
+    "after": {
+      "description": "Plan link building outreach from prospect selection to follow-up. Adapt email templates, organise replies and assess whether each contribution fits the publisher."
+    }
+  },
+  {
+    "path": "/guides/link-building-strategies-guide",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "27 Link Building Strategies That Work in 2026 (I Use #3 Daily)",
+      "description": "Proven link building strategies: guest posting, broken link building, HARO, digital PR & more. Step-by-step tactics with templates and examples."
+    },
+    "after": {
+      "title": "Link Building Strategies: A Practical Campaign Guide",
+      "description": "Explore link building strategies including guest posting, broken links and digital PR. Use practical workflows, templates and examples to plan your campaign."
+    }
+  },
+  {
+    "path": "/guides/saas-link-building-playbook",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Master SaaS link building with integration pages, developer content, comparison strategies, and proven tactics that drive MRR growth through organic traffic."
+    },
+    "after": {
+      "description": "Plan SaaS link building with integration pages, developer resources and relevant publications. Connect prospecting and useful content to your product audience."
+    }
+  },
+  {
+    "path": "/industries/b2b",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for B2B: Complete Guide for Business-to-Business Companies"
+      ],
+      "title": "B2B Link Building: Business Marketing SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "B2B Link Building: Strategies for Business Audiences"
+      ],
+      "title": "B2B Link Building: Strategies for Business Audiences"
+    }
+  },
+  {
+    "path": "/industries/crypto",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Crypto and Blockchain: Complete Web3 SEO Guide"
+      ],
+      "title": "Crypto Link Building: Blockchain and Web3 SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Crypto and Blockchain"
+      ],
+      "title": "Crypto & Blockchain Link Building: Approaches & Risks"
+    }
+  },
+  {
+    "path": "/industries/ecommerce",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for E-commerce: Complete Guide for Online Stores"
+      ],
+      "title": "E-commerce Link Building: Online Store SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "E-commerce Link Building for Online Stores"
+      ],
+      "title": "E-commerce Link Building: Product & Store Opportunities"
+    }
+  },
+  {
+    "path": "/industries/enterprise",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Enterprise Companies: Complete Guide for Large Organizations"
+      ],
+      "title": "Enterprise Link Building: Large Organization SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Enterprise Link Building: Teams, Processes and Quality"
+      ],
+      "title": "Enterprise Link Building: Teams, Processes & Quality"
+    }
+  },
+  {
+    "path": "/industries/fintech",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Fintech: Complete Guide for Financial Technology"
+      ],
+      "title": "Fintech Link Building: Financial Technology SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Fintech Link Building: Expertise and Relevant Sources"
+      ],
+      "title": "Fintech Link Building: Expertise & Relevant Sources"
+    }
+  },
+  {
+    "path": "/industries/healthcare",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Healthcare: Complete Medical Industry SEO Guide"
+      ],
+      "title": "Healthcare Link Building: Medical SEO Authority Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Healthcare Link Building: Expertise and Source Quality"
+      ],
+      "title": "Healthcare Link Building: Expertise & Source Quality"
+    }
+  },
+  {
+    "path": "/industries/legal",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Law Firms: Complete Legal Industry SEO Guide"
+      ],
+      "title": "Law Firm Link Building: Legal SEO Authority Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Link Building for Law Firms: Relevant Legal Sources"
+      ],
+      "title": "Law Firm Link Building: Relevant Sources & Outreach"
+    }
+  },
+  {
+    "path": "/industries/local-business",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Local Businesses: Complete Geographic SEO Guide"
+      ],
+      "title": "Local Business Link Building: Geographic SEO Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Local Business Link Building: Sources and Relationships"
+      ],
+      "title": "Local Business Link Building: Sources & Relationships"
+    }
+  },
+  {
+    "path": "/industries/real-estate",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Real Estate: Complete Agent and Broker SEO Guide"
+      ],
+      "title": "Real Estate Link Building: Agent SEO Authority Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Real Estate Link Building for Agents and Brokers"
+      ],
+      "title": "Real Estate Link Building: Agents, Brokers & Local Sources"
+    }
+  },
+  {
+    "path": "/industries/saas",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for SaaS: Complete Guide for Software Companies"
+      ],
+      "title": "SaaS Link Building: Complete Strategy Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "SaaS Link Building: Content, Partnerships and Outreach"
+      ],
+      "title": "SaaS Link Building: Content, Partnerships & Outreach"
+    }
+  },
+  {
+    "path": "/industries/travel",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Travel: Complete Tourism and Hospitality SEO Guide"
+      ],
+      "title": "Travel Link Building: Tourism SEO Authority Guide [2026]"
+    },
+    "after": {
+      "h1": [
+        "Travel Link Building: Tourism and Hospitality Sources"
+      ],
+      "title": "Travel Link Building: Tourism & Hospitality Sources"
+    }
+  },
+  {
+    "path": "/link-building",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "Link Building Guide: Proven Strategies & Tactics [2026]",
+      "description": "The definitive link building guide. Learn white-hat strategies, outreach tactics, and how to build backlinks that boost rankings without risking penalties."
+    },
+    "after": {
+      "title": "Link Building Guide: Strategy, Outreach & Measurement",
+      "description": "Plan link building around relevant pages, useful content and appropriate outreach. Learn how to qualify prospects, verify placements and measure progress."
+    }
+  },
+  {
+    "path": "/link-building-tactics",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Tactics: Proven Methods for Earning Quality Backlinks"
+      ],
+      "title": "Link Building Tactics: Complete Playbook [2026]",
+      "description": "Learn proven link building tactics that work. Comprehensive guides to guest posting, broken link building, digital PR, HARO, and more."
+    },
+    "after": {
+      "h1": [
+        "Link Building Tactics: Methods for Earning Backlinks"
+      ],
+      "title": "Link Building Tactics: Methods for Earning Backlinks",
+      "description": "Explore guest posting, broken link building, digital PR, original research and other tactics. Choose an approach that fits your audience and available resources."
+    }
+  },
+  {
+    "path": "/link-building/outreach-strategy",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn to craft outreach emails that get responses. Proven strategies for prospecting, personalisation, and follow-up that win quality backlinks."
+    },
+    "after": {
+      "description": "Plan relevant link building outreach with prospect research, tailored emails and considered follow-up. Track conversations and verify published placements."
+    }
+  },
+  {
+    "path": "/link-building/white-hat",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn legitimate link building strategies that build lasting authority without risking penalties. Comprehensive guide to ethical, sustainable link acquisition."
+    },
+    "after": {
+      "description": "Explore editorial link building through useful content, relevant outreach and relationships. Review acquisition methods against Google's published spam policies."
+    }
+  },
+  {
+    "path": "/outreach/email-templates",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Email Templates: Outreach Messages That Work"
+      ],
+      "title": "Link Building Email Templates: Outreach That Works [2026]",
+      "description": "Proven email templates for link building. Guest posting, broken link building, resource pages, and more. Customise for your outreach success."
+    },
+    "after": {
+      "h1": [
+        "Link Building Email Templates: Pitches and Follow-Ups"
+      ],
+      "title": "Link Building Email Templates: Copy and Customise",
+      "description": "Adapt email templates for guest posting, broken links and resource pages. Tailor each message to the recipient and explain a useful reason for the link."
+    }
+  },
+  {
+    "path": "/pricing",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Simple, Transparent Pricing"
+      ],
+      "title": "Pricing - Simple, Transparent Pricing"
+    },
+    "after": {
+      "h1": [
+        "Backlink Placement Pricing"
+      ],
+      "title": "Backlink Placement Pricing: Grid Squares from $1"
+    }
+  },
+  {
+    "path": "/resources/free-seo-tools-list",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Free SEO Tools for Link Building: Complete 2026 List"
+      ],
+      "title": "Free SEO Tools for Link Building: 50+ Free Tools [2026]",
+      "description": "Discover 50+ free SEO tools for link building. Free backlink analysis, email finding, prospecting, and monitoring tools with honest capability assessments."
+    },
+    "after": {
+      "h1": [
+        "Free SEO Tools for Link Building: Compare Your Options"
+      ],
+      "title": "Free SEO Tools for Link Building: Features & Limits",
+      "description": "Explore free and limited-access tools for backlink research, prospecting and outreach. Check current provider limits and choose tools for your specific task."
+    }
+  },
+  {
+    "path": "/resources/guest-post-pitch-templates",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Guest Post Pitch Templates: 10+ Proven Pitches That Get Accepted"
+      ],
+      "title": "Guest Post Pitch Templates: Get Published on Top Sites [2026]",
+      "description": "Proven guest post pitch templates that get accepted. Cold outreach, expert pitches, topic ideation frameworks, and follow-up sequences for guest posting success."
+    },
+    "after": {
+      "h1": [
+        "Guest Post Pitch Templates: Examples to Adapt"
+      ],
+      "title": "Guest Post Pitch Templates: Emails, Outlines & Follow-Ups",
+      "description": "Adapt guest post pitches for different editorial situations. Use example emails, topic outlines and follow-up structures to prepare a relevant contribution."
+    }
+  },
+  {
+    "path": "/resources/link-building-tools-comparison",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "Link Building Tools Comparison: Best Tools Reviewed [2026]",
+      "description": "Compare the best link building tools for backlink analysis, outreach, and prospecting. Honest reviews of Ahrefs, Semrush, BuzzStream, Hunter, and more."
+    },
+    "after": {
+      "title": "Link Building Tools Compared: Research, Outreach & Cost",
+      "description": "Compare tools for backlink research, prospecting and outreach management. Evaluate features, access requirements and costs against your team's workflow."
+    }
+  },
+  {
+    "path": "/resources/link-prospect-qualification-checklist",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Prospect Qualification Checklist: Evaluate Link Opportunities"
+      ],
+      "title": "Link Prospect Qualification Checklist: Evaluate Opportunities [2026]"
+    },
+    "after": {
+      "h1": [
+        "Link Prospect Qualification Checklist"
+      ],
+      "title": "Link Prospect Qualification Checklist: Fit, Quality & Cost"
+    }
+  },
+  {
+    "path": "/resources/link-quality-scorecard",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Use this scorecard to rate link opportunities consistently. Weighted scoring system for objective prospect prioritisation."
+    },
+    "after": {
+      "description": "Use a weighted scorecard to organise link prospect reviews. Assess relevance, source quality and risk while keeping the final decision grounded in page-level evidence."
+    }
+  },
+  {
+    "path": "/statistics/anchor-text-statistics",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Anchor Text Statistics: Analyze Distribution Without Myths"
+      ],
+      "title": "Anchor Text Statistics: Analyze Distribution Without Myths",
+      "description": "Understand anchor text statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "h1": [
+        "Anchor Text Statistics: Measure Your Link Profile"
+      ],
+      "title": "Anchor Text Statistics: Distribution, Samples & Limits",
+      "description": "Calculate anchor text shares from a consistent backlink sample. Compare categories and time periods without inventing a universal safe percentage."
+    }
+  },
+  {
+    "path": "/statistics/backlink-statistics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand backlink statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Interpret backlink counts and referring-domain totals with clear reporting definitions. Understand dataset coverage, duplication and comparisons across providers."
+    }
+  },
+  {
+    "path": "/statistics/content-marketing-roi-statistics",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Content Marketing ROI Statistics: Calculate With Care"
+      ],
+      "title": "Content Marketing ROI Statistics: Calculate With Care",
+      "description": "Understand content marketing roi statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "h1": [
+        "Content Marketing ROI Statistics: Formulas and Attribution"
+      ],
+      "title": "Content Marketing ROI Statistics: Formulas & Attribution",
+      "description": "Calculate content marketing ROI using costs, attributed revenue and a defined time window. Review example calculations and the limits of causal attribution."
+    }
+  },
+  {
+    "path": "/statistics/domain-authority-statistics",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Domain Authority Statistics: Benchmark DA Responsibly"
+      ],
+      "title": "Domain Authority Statistics: Benchmark DA Responsibly",
+      "description": "Understand domain authority statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "h1": [
+        "Domain Authority Statistics: Benchmarks and Metric Limits"
+      ],
+      "title": "Domain Authority Statistics: Benchmarks & Metric Limits",
+      "description": "Compare Domain Authority scores within a relevant sample. Keep provider, scope and collection date consistent and distinguish vendor metrics from Google signals."
+    }
+  },
+  {
+    "path": "/statistics/guest-posting-statistics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand guest posting statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Measure guest post pitching, acceptance and publication as separate stages. Calculate rates using a defined sample and avoid treating examples as industry benchmarks."
+    }
+  },
+  {
+    "path": "/statistics/link-building-pricing-statistics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand link building pricing statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Compare link building costs by service scope, acquisition method and included work. Use a consistent cost calculation instead of an unsupported market average."
+    }
+  },
+  {
+    "path": "/statistics/link-building-statistics-2026",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand link building statistics 2026 with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Build a link building measurement plan covering activity, verified placements and outcomes. Use consistent samples and definitions when comparing campaign statistics."
+    }
+  },
+  {
+    "path": "/statistics/outreach-response-rate-statistics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand outreach response rate statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Calculate outreach reply rates with clear denominators and time windows. Separate any reply from a useful response and compare campaigns with similar audiences."
+    }
+  },
+  {
+    "path": "/statistics/seo-industry-statistics",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Understand seo industry statistics with clear formulas, labeled examples and practical reporting steps. Compare data carefully and avoid unsupported ranking claims."
+    },
+    "after": {
+      "description": "Evaluate SEO industry surveys by sample, date, definitions and methodology. Learn which questions to ask before using a published benchmark in your campaign plan."
+    }
+  },
+  {
+    "path": "/strategies",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Link Building Strategies by Industry & Tactic: Complete Guide"
+      ],
+      "title": "Link Building Strategies by Industry & Tactic: Complete Guide",
+      "description": "Discover proven link building strategies tailored to your industry. SaaS, e-commerce, local, B2B, and startup-specific tactics that actually work."
+    },
+    "after": {
+      "h1": [
+        "Link Building Strategies by Industry and Tactic"
+      ],
+      "title": "Link Building Strategies by Industry and Tactic",
+      "description": "Find link building approaches for SaaS, e-commerce, local businesses and startups. Compare tactics by audience, available assets and practical requirements."
+    }
+  },
+  {
+    "path": "/strategies/agency-case-study-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Case Study Link Building for Agencies: Turning Client Success into Backlinks"
+      ],
+      "title": "Case Study Link Building for Agencies: Turning Client Success into Backlinks"
+    },
+    "after": {
+      "h1": [
+        "Case Study Link Building for Agencies"
+      ],
+      "title": "Case Study Link Building for Agencies: Planning & Outreach"
+    }
+  },
+  {
+    "path": "/strategies/agency-tool-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Free Tool Link Building for Agencies: Creating Tools That Earn Backlinks"
+      ],
+      "title": "Free Tool Link Building for Agencies: Creating Tools That Earn Backlinks"
+    },
+    "after": {
+      "h1": [
+        "Free Tool Link Building for Agencies"
+      ],
+      "title": "Free Tool Link Building for Agencies: Ideas & Promotion"
+    }
+  },
+  {
+    "path": "/strategies/b2b-industry-publication-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Trade Publication Link Building: Getting Featured in Industry Media"
+      ],
+      "title": "Trade Publication Link Building: Getting Featured in Industry Media"
+    },
+    "after": {
+      "h1": [
+        "Trade Publication Link Building for B2B Companies"
+      ],
+      "title": "Trade Publication Link Building: B2B Editorial Outreach"
+    }
+  },
+  {
+    "path": "/strategies/ecommerce-influencer-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Influencer Link Building for E-commerce: Collaborative Strategies That Work"
+      ],
+      "title": "Influencer Link Building for E-commerce: Collaborative Strategies That Work"
+    },
+    "after": {
+      "h1": [
+        "Influencer Link Building for E-commerce"
+      ],
+      "title": "Influencer Link Building for E-commerce: Ways to Collaborate"
+    }
+  },
+  {
+    "path": "/strategies/ecommerce-product-link-building",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "E-commerce Product Page Link Building: Getting Links to Your Revenue Pages"
+      ],
+      "title": "E-commerce Product Page Link Building: Getting Links to Your Revenue Pages",
+      "description": "Learn proven strategies for building backlinks directly to e-commerce product pages. Increase rankings and revenue with product-specific link building tactics."
+    },
+    "after": {
+      "h1": [
+        "E-commerce Product Page Link Building"
+      ],
+      "title": "E-commerce Product Page Link Building: Sources & Tactics",
+      "description": "Explore product-page backlink opportunities through relevant partners, resources and coverage. Match each source to the product's audience and useful information."
+    }
+  },
+  {
+    "path": "/strategies/ecommerce-supplier-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Supplier and Manufacturer Link Building for E-commerce: Leveraging Business Relationships"
+      ],
+      "title": "Supplier and Manufacturer Link Building for E-commerce: Leveraging Business Relationships"
+    },
+    "after": {
+      "h1": [
+        "Supplier and Manufacturer Backlinks for E-commerce"
+      ],
+      "title": "Supplier & Manufacturer Backlinks for E-commerce"
+    }
+  },
+  {
+    "path": "/strategies/local-citation-building",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Local Citation Building: The Foundation of Local SEO Link Building"
+      ],
+      "title": "Local Citation Building: The Foundation of Local SEO Link Building"
+    },
+    "after": {
+      "h1": [
+        "Local Citation Building: Directories and NAP Consistency"
+      ],
+      "title": "Local Citation Building: Directories & NAP Consistency"
+    }
+  },
+  {
+    "path": "/strategies/saas-content-marketing-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Content-Led Link Building for SaaS: Building Links Through Exceptional Content"
+      ],
+      "title": "Content-Led Link Building for SaaS: Building Links Through Exceptional Content"
+    },
+    "after": {
+      "h1": [
+        "Content-Led Link Building for SaaS"
+      ],
+      "title": "Content-Led Link Building for SaaS: Assets & Promotion"
+    }
+  },
+  {
+    "path": "/strategies/saas-digital-pr",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Digital PR for SaaS: Earning High-Authority Links Through Media Coverage"
+      ],
+      "title": "Digital PR for SaaS: Earning High-Authority Links Through Media Coverage"
+    },
+    "after": {
+      "h1": [
+        "Digital PR for SaaS: Stories, Research and Media Outreach"
+      ],
+      "title": "Digital PR for SaaS: Stories, Research & Media Outreach"
+    }
+  },
+  {
+    "path": "/strategies/saas-guest-posting",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Learn proven guest posting strategies specifically for SaaS companies. Build thought leadership, drive qualified traffic, and earn high-authority backlinks."
+    },
+    "after": {
+      "description": "Plan SaaS guest contributions around product expertise and relevant publications. Research editorial fit, prepare a useful pitch and verify the published placement."
+    }
+  },
+  {
+    "path": "/strategies/scholarship-link-building",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Scholarship Link Building: Earning .edu Backlinks Through Student Programs"
+      ],
+      "title": "Scholarship Link Building: Earning .edu Backlinks Through Student Programs"
+    },
+    "after": {
+      "h1": [
+        "Scholarship Link Building: Requirements and SEO Risks"
+      ],
+      "title": "Scholarship Link Building: Requirements & SEO Risks"
+    }
+  },
+  {
+    "path": "/strategies/service-business-local-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Local Service Business Link Building: Strategies for Service Providers"
+      ],
+      "title": "Local Service Business Link Building: Strategies for Service Providers"
+    },
+    "after": {
+      "h1": [
+        "Local Link Building for Service Businesses"
+      ],
+      "title": "Local Link Building for Service Businesses: Practical Tactics"
+    }
+  },
+  {
+    "path": "/strategies/startup-community-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Building Links Through Startup Communities: Networks, Accelerators, and Ecosystems"
+      ],
+      "title": "Building Links Through Startup Communities: Networks, Accelerators, and Ecosystems"
+    },
+    "after": {
+      "h1": [
+        "Startup Community Link Building: Networks and Resources"
+      ],
+      "title": "Startup Community Link Building: Networks & Resources"
+    }
+  },
+  {
+    "path": "/strategies/startup-investor-pr-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Funding Announcement Link Building: Maximizing PR from Investment Rounds"
+      ],
+      "title": "Funding Announcement Link Building: Maximizing PR from Investment Rounds"
+    },
+    "after": {
+      "h1": [
+        "Funding Announcement PR and Link Building"
+      ],
+      "title": "Funding Announcement PR: Coverage & Link Opportunities"
+    }
+  },
+  {
+    "path": "/strategies/startup-launch-links",
+    "fields": [
+      "h1",
+      "title"
+    ],
+    "before": {
+      "h1": [
+        "Link Building for Product Launches: Maximizing Startup Launch Coverage"
+      ],
+      "title": "Link Building for Product Launches: Maximizing Startup Launch Coverage"
+    },
+    "after": {
+      "h1": [
+        "Product Launch Link Building: Plan Relevant Coverage"
+      ],
+      "title": "Product Launch Link Building: Plan Relevant Coverage"
+    }
+  },
+  {
+    "path": "/templates",
+    "fields": [
+      "description"
+    ],
+    "before": {
+      "description": "Download free CSV templates for backlink prospecting, audit reviews and outreach tracking. Open in Excel or Google Sheets and follow practical setup guidance."
+    },
+    "after": {
+      "description": "Download free CSV templates for backlink prospecting, placement checks, migration planning and outreach. Use example rows to set up your own working spreadsheet."
+    }
+  },
+  {
+    "path": "/tools",
+    "fields": [
+      "h1"
+    ],
+    "before": {
+      "h1": [
+        "Your website.Your next useful finding."
+      ]
+    },
+    "after": {
+      "h1": [
+        "Free SEO & Link Building Tools"
+      ]
+    }
+  },
+  {
+    "path": "/tools/backlink-analyzer",
+    "fields": [
+      "h1",
+      "title",
+      "description"
+    ],
+    "before": {
+      "h1": [
+        "Backlink Profile Analyzer"
+      ],
+      "title": "Backlink Audit Checklist - What to Analyze in Your Link Profile",
+      "description": "Free backlink audit checklist tool. Learn what to analyze in referring domains, anchor text distribution, link velocity, and toxic links. Step-by-step guide with red flags to watch for."
+    },
+    "after": {
+      "h1": [
+        "Backlink Audit Checklist"
+      ],
+      "title": "Free Backlink Audit Checklist: Review Your Link Profile",
+      "description": "Use a free backlink audit checklist to review referring domains, anchors and source quality. Work through the checks alongside your own backlink data."
+    }
+  },
+  {
+    "path": "/tools/free-backlink-checker",
+    "fields": [
+      "h1"
+    ],
+    "before": {
+      "h1": [
+        "Find a backlink checker for your task."
+      ]
+    },
+    "after": {
+      "h1": [
+        "Free Backlink Checker & Research Tool Finder"
+      ]
+    }
+  },
+  {
+    "path": "/tools/roi-calculator",
+    "fields": [
+      "title",
+      "description"
+    ],
+    "before": {
+      "title": "Link Building ROI Calculator - Calculate Your Backlink Investment Returns",
+      "description": "Free link building ROI calculator. Estimate the return on investment for your backlink campaigns. Calculate projected traffic, conversions, and revenue from your link building efforts."
+    },
+    "after": {
+      "title": "Free Link Building ROI Calculator: Model Campaign Returns",
+      "description": "Model link building ROI using your costs, traffic assumptions and conversion rate. Explore estimated revenue and break-even scenarios with this free calculator."
+    }
+  }
+]

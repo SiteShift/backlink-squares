@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ...buildMetadata({
     title: 'About BacklinkGrid',
     description:
-      'Learn about BacklinkGrid, the visual backlink marketplace making link building accessible, affordable, and transparent.',
+      'Learn about BacklinkGrid: backlink education, a prospecting database and paid directory placements. Understand what we offer and how to contact the team.',
     canonicalUrl: 'https://backlinkgrid.com/about',
     type: 'website',
   }),
