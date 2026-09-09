@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, BadgeCheck, Check, LockKeyhole, Plus, Clock3, Target, Compass, TrendingUp } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight, BadgeCheck, Check, Download, LockKeyhole, Plus, Clock3, Target, Compass, TrendingUp } from 'lucide-react'
 import { track } from '@vercel/analytics'
 import { BUNDLE_PRICE_GBP, bundleFaqs } from './bundleData'
 import './bundle.css'
@@ -115,6 +116,7 @@ export function BundleLanding() {
       <p className="bundle-support">Stop hunting for places to submit your website. We’ve sourced 276 opportunities so you can spend less time searching—and more time building links.</p>
       <div className="bundle-hero-action">{buy('Unlock the Backlinks', true)}</div>
       <p className="bundle-reassurance"><LockKeyhole size={12} aria-hidden="true" /> One payment · Instant download after checkout</p>
+      <a className="bundle-sample-jump" href="#preview">Try the free sample first <ArrowRight size={14} aria-hidden="true" /></a>
 
       <noscript><p>Enable JavaScript to open checkout, or contact hello@backlinkgrid.com for help.</p></noscript>
     </div><GrowthVisual /></div></section>
@@ -125,7 +127,20 @@ export function BundleLanding() {
       {Icon:Compass,title:'Improve SEO'},
     ].map(({Icon,title})=><div className="bundle-benefit" key={title}><Icon size={21} strokeWidth={1.4} aria-hidden="true" /><h2>{title}</h2></div>)}</div></section>
 
-    <section id="preview" className="bundle-wrap bundle-faq-section"><div><h2>Frequently<br className="bundle-desktop-break" /> asked questions</h2></div><div>{bundleFaqs.map(f=><details className="bundle-faq" key={f.question}><summary>{f.question}<Plus size={17} aria-hidden="true" /></summary><p>{f.answer}</p></details>)}</div></section>
+    <section id="preview" className="bundle-sample-section" aria-labelledby="bundle-sample-title">
+      <div className="bundle-wrap bundle-sample-layout">
+        <div className="bundle-sample-copy">
+          <p className="bundle-sample-eyebrow">FREE BACKLINK DATABASE SAMPLE</p>
+          <h2 id="bundle-sample-title">Download a Free Sample</h2>
+          <p>Five foundational places to list your product, with submission links and practical instructions. Download the sheet and put them to work.</p>
+          <a className="bundle-sample-download" href="/samples/backlink-database-sample.xlsx" download onClick={() => track('bundle_sample_download', { format: 'xlsx', placement: 'bundle' })}><Download size={18} aria-hidden="true" /> Download free sample</a>
+          <div className="bundle-sample-formats"><span>Excel & Google Sheets · No email required</span><a href="/samples/backlink-database-sample.csv" download onClick={() => track('bundle_sample_download', { format: 'csv', placement: 'bundle' })}>Prefer CSV?</a></div>
+        </div>
+        <div className="bundle-sample-brand" aria-hidden="true"><Image src="/backlink-grid-logo.svg" alt="" width={1200} height={240} /></div>
+      </div>
+
+    </section>
+    <section className="bundle-wrap bundle-faq-section"><div><h2>Frequently<br className="bundle-desktop-break" /> asked questions</h2></div><div>{bundleFaqs.map(f=><details className="bundle-faq" key={f.question}><summary>{f.question}<Plus size={17} aria-hidden="true" /></summary><p>{f.answer}</p></details>)}</div></section>
     <section ref={final} id="get-bundle" className="bundle-final"><div className="bundle-wrap bundle-final-layout"><div><p className="bundle-kicker">START BUILDING BACKLINKS</p><h2>Stop searching.<br /><span>Start building links.</span></h2><p>Get 276 sourced opportunities in one download.<br />Choose your shortlist and make your next move.</p></div><div className="bundle-final-purchase"><span className="bundle-final-label">Complete Backlink Database Bundle</span><div className="bundle-final-price">£{BUNDLE_PRICE_GBP}<span>Pay once. No subscription.</span></div>{buy()}<p><Check size={13} aria-hidden="true" /> 276 opportunities. Download after payment.</p></div></div><p className="bundle-wrap bundle-fine-print">A downloadable database, not a placement service. Publisher fees are separate. Placements, traffic and rankings are not guaranteed.</p></section>
     <section id="verification" className="bundle-verification bundle-wrap"><BadgeCheck size={18} aria-hidden="true" /><p><strong>What “Verified Backlinks” means here:</strong> sourced opportunities to investigate, not links already placed for you. Recorded details can change; check current eligibility and fees before submitting.</p></section>
     {error&&<div className="bundle-error" role="alert"><p>{error}</p><button type="button" onClick={()=>setError('')}>Dismiss</button></div>}

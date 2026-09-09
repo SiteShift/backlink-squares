@@ -1,0 +1,72 @@
+[
+  {
+    "row": {
+      "Site Name": "SaaSHub",
+      "Category": "Software directory",
+      "DR": "71",
+      "Link Type": "Dofollow",
+      "Cost": "Free submission; optional paid priority",
+      "Submit URL": "https://www.saashub.com/services/submit",
+      "Approval Time": "Publisher review; timing varies",
+      "Best For": "Released software",
+      "Tips": "Submit your product URL, then complete the product details. Use your own domain and an English-language site. Agencies and unreleased products are not accepted."
+    },
+    "source": "https://www.saashub.com/services/submit"
+  },
+  {
+    "row": {
+      "Site Name": "Peerlist",
+      "Category": "Project launch platform",
+      "DR": "52",
+      "Link Type": "Dofollow",
+      "Cost": "Free standard launch",
+      "Submit URL": "https://peerlist.io/launchpad",
+      "Approval Time": "Weekly launch window",
+      "Best For": "Tech projects and products",
+      "Tips": "Use a verified Peerlist profile. Add a project under Work and complete every required field. Launch on Monday or schedule ahead. Prepare screenshots and respond to community questions."
+    },
+    "source": "https://help.peerlist.io/individual/launchpad/how-to-launch-a-project-on-peerlist-launchpad"
+  },
+  {
+    "row": {
+      "Site Name": "G2",
+      "Category": "Software reviews",
+      "DR": "88",
+      "Link Type": "Nofollow",
+      "Cost": "Free basic profile; paid upgrades",
+      "Submit URL": "https://sell.g2.com/create-a-profile",
+      "Approval Time": "Publisher review; timing varies",
+      "Best For": "B2B software",
+      "Tips": "Check whether your product already has a profile before requesting a new one. Complete product information and screenshots. Invite genuine customers to review it."
+    },
+    "source": "https://sell.g2.com/create-a-profile"
+  },
+  {
+    "row": {
+      "Site Name": "AlternativeTo",
+      "Category": "Software directory",
+      "DR": "80",
+      "Link Type": "Dofollow",
+      "Cost": "Free review; optional paid priority",
+      "Submit URL": "https://alternativeto.net/faq/#add-a-new-application",
+      "Approval Time": "Free queue typically takes months",
+      "Best For": "Software with clear alternatives",
+      "Tips": "Verify your email, then choose Suggest new application from your account menu. Specify platforms, license and relevant alternatives. Free review is not a quick-placement option."
+    },
+    "source": "https://alternativeto.net/faq/"
+  },
+  {
+    "row": {
+      "Site Name": "Product Hunt",
+      "Category": "Product launch platform",
+      "DR": "92",
+      "Link Type": "Dofollow",
+      "Cost": "Free standard launch",
+      "Submit URL": "https://www.producthunt.com/posts/new",
+      "Approval Time": "Schedule after account eligibility",
+      "Best For": "New or substantially updated products",
+      "Tips": "Prepare your product URL, tagline, screenshots and maker comment. New accounts may need a waiting period. Schedule the launch and be available to answer questions."
+    },
+    "source": "https://help.producthunt.com/en/articles/479557-how-to-post-a-product"
+  }
+]

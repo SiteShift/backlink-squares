@@ -41,3 +41,40 @@
 }
 
 .bundle-benefits{background:#eeefeb;border-top-color:#e0e2da;border-bottom-color:#e0e2da}
+
+/* Free sample: readable research preview with a single download action. */
+.bundle-sample-jump{display:inline-flex;align-items:center;gap:7px;margin-top:19px;color:#353b32;font-size:14px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#b7bcb1}
+.bundle-sample-section{padding:78px 0 0;background:#fff;scroll-margin-top:130px}
+.bundle-sample-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:90px;align-items:center}
+.bundle-sample-eyebrow{font-size:11px;font-weight:650;letter-spacing:.1em;color:#676d63;margin-bottom:18px}
+.bundle-page .bundle-sample-copy h2{font-size:clamp(32px,3.3vw,45px);letter-spacing:-.04em;color:#1d231a;line-height:1.12}
+.bundle-sample-copy>p:not(.bundle-sample-eyebrow){font-size:17px;line-height:1.75;color:#525a4b;max-width:460px;margin-top:20px}
+.bundle-sample-download{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#252b22;color:#fff;border:1px solid #252b22;border-radius:7px;padding:14px 20px;font-size:15px;font-weight:600;margin-top:25px;transition:background .18s,transform .18s}
+.bundle-sample-download:hover{background:#394333;transform:translateY(-1px)}
+.bundle-sample-formats{display:flex;flex-wrap:wrap;gap:5px 15px;margin-top:12px;font-size:12px;line-height:1.7;color:#656c5e}
+.bundle-sample-formats a{color:#414b39;text-decoration:underline;text-underline-offset:3px}
+.bundle-sample-sheet{border:1px solid #dde2d8;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 12px 40px #26311f08}
+.bundle-sample-sheet-top{display:flex;align-items:center;gap:10px;padding:19px 22px;border-bottom:1px solid #e3e7df;font-size:13px;font-weight:600;color:#343c2d;background:#f7f8f4}
+.bundle-sample-sheet-top>span:last-child{margin-left:auto;font-size:11px;font-weight:400;color:#6a7263}
+.bundle-sample-sheet ol{margin:0;padding:0 22px;list-style:none}
+.bundle-sample-sheet li{display:flex;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid #edf0e8}
+.bundle-sample-sheet li:last-child{border:0}
+.bundle-sample-number{font-variant-numeric:tabular-nums;font-size:11px;color:#838a7c}
+.bundle-sample-sheet li>div{display:flex;flex-direction:column;gap:3px}
+.bundle-sample-sheet li strong{font-size:15px;font-weight:600;color:#252d1e}
+.bundle-sample-sheet li>div>span{font-size:12px;color:#6b7460}
+.bundle-sample-sheet li>svg{margin-left:auto;color:#66765a}
+.bundle-sample-sheet-bottom{border-top:1px solid #e8ece2;padding:14px 22px;font-size:12px;color:#65705a;background:#fafbf8}
+.bundle-sample-upgrade{display:flex;align-items:center;gap:45px;margin-top:42px;padding:28px 0;border-top:1px solid #e1e5dc;border-bottom:1px solid #e1e5dc}
+.bundle-sample-upgrade h3{font-size:18px;font-weight:650;color:#252d1e;letter-spacing:-.015em}
+.bundle-sample-upgrade p{max-width:740px;font-size:14px;line-height:1.75;color:#5c6651;margin-top:7px}
+.bundle-sample-upgrade>a{flex-shrink:0;margin-left:auto;font-size:14px;font-weight:600;color:#c12724;display:flex;flex-direction:column;gap:7px;padding:8px 0}
+.bundle-sample-upgrade>a>span{display:flex;align-items:center;gap:10px;font-size:17px}
+@media(max-width:1000px){.bundle-sample-layout{gap:40px}.bundle-sample-upgrade{gap:30px}}
+@media(max-width:700px){.bundle-sample-section{padding-top:45px}.bundle-sample-layout{grid-template-columns:1fr;gap:28px}.bundle-sample-copy>p:not(.bundle-sample-eyebrow){font-size:16px;margin-top:17px}.bundle-sample-eyebrow{font-size:10px;margin-bottom:14px}.bundle-sample-download{width:100%;padding:15px 18px}.bundle-sample-formats{justify-content:center;font-size:11px}.bundle-sample-sheet-top{padding:17px 18px}.bundle-sample-sheet ol{padding:0 18px}.bundle-sample-sheet li{padding:12px 0}.bundle-sample-sheet-bottom{padding:13px 18px;font-size:11px}.bundle-sample-upgrade{align-items:flex-start;flex-direction:column;gap:15px;margin-top:30px;padding:24px 0}.bundle-sample-upgrade>a{margin:0;flex-direction:row;align-items:center;gap:20px}.bundle-sample-upgrade p{font-size:14px}.bundle-sample-upgrade h3{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.bundle-sample-download{transition:none}.bundle-sample-download:hover{transform:none}}
+
+.bundle-sample-section{padding-bottom:58px;border-bottom:1px solid #e1e5dc}
+.bundle-sample-brand{width:240px;height:240px;overflow:hidden;justify-self:center}
+.bundle-sample-brand img{display:block;width:1200px;height:240px;max-width:none}
+@media(max-width:700px){.bundle-sample-brand{width:140px;height:140px;margin-top:8px}.bundle-sample-brand img{width:700px;height:140px}.bundle-sample-section{padding-bottom:40px}}
