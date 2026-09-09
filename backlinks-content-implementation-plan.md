@@ -3457,3 +3457,10 @@ Detailed decisions, source limitations, GSC priorities and measurement guidance:
 - [x] Simplify the bundle promotion while preserving the exact product name and £11.49 offer.
 
 Full evidence and final verification: `reports/heading-meta-audit.md`.
+
+### 2026-09-09 — Submission content expansion
+- [x] Five researched submission guides covering SaaS destinations, business-type directories, free/paid routes, SaaSHub walkthrough and Product Hunt preparation.
+- [x] Added real qualification examples to the existing checklist and linked seven established pages into the workflow.
+- [x] Corrected finder eligibility/routes and extended llms discovery.
+- Submission experiment removed at the user's explicit request. No outcome case study published.
+- Research and release checks: `reports/submission-content-plan.md`.

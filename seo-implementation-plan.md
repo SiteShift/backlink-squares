@@ -114,3 +114,9 @@ Evidence and scope: `reports/blog-topical-audit.md`, `reports/blog-map-audit.jso
 - [x] Verify rendered metadata, protected headings and desktop/mobile promotion; release checks recorded in the audit report.
 
 Evidence: `reports/heading-meta-audit.md`, before/final inventories and `reports/heading-meta-edits.json`.
+
+### 2026-09-09 — Commercial submission content
+- [x] Added five distinct guides with checked publisher sources, original SaaSHub screenshots, explicit fees/eligibility and contextual bundle connections.
+- [x] Upgraded existing directory qualification content and seven existing entry pages; reused existing prospect tracker.
+- [x] Corrected SaaSHub/G2 opportunity metadata and added llms discovery links.
+- User removed experiment scope; no fabricated or pending-results case study published.

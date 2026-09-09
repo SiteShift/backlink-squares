@@ -327,6 +327,14 @@
     "title": "Building Thought Leadership Through Strategic Link Building"
   },
   {
+    "file": "content/blog/business-directories-by-business-type.mdx",
+    "url": "/blog/business-directories-by-business-type",
+    "words": 933,
+    "title": "Business Directories by Business Type: Where You Qualify",
+    "metaTitle": "Business Directories by Business Type: Find Your Fit",
+    "metaDescription": "Find suitable business directories for local services, online shops and B2B software. Compare eligibility, free routes and evidence to prepare before applying."
+  },
+  {
     "file": "content/blog/common-link-building-questions-answered.mdx",
     "url": "/blog/common-link-building-questions-answered",
     "words": 2417,
@@ -379,6 +387,14 @@
     "url": "/blog/follow-up-emails-that-get-responses",
     "words": 1969,
     "title": "Follow-Up Emails That Get Responses: The Link Builder's Guide"
+  },
+  {
+    "file": "content/blog/free-vs-paid-directory-submissions.mdx",
+    "url": "/blog/free-vs-paid-directory-submissions",
+    "words": 811,
+    "title": "Free vs Paid Directory Submissions: What Are You Buying?",
+    "metaTitle": "Free vs Paid Directory Submissions: Costs & Checks",
+    "metaDescription": "Compare free listings, paid reviews and priority submission fees. See checked examples, understand what payment buys and decide which routes fit your budget."
   },
   {
     "file": "content/blog/future-of-link-building.mdx",
@@ -829,7 +845,7 @@
   {
     "file": "content/blog/paid-vs-organic-link-building.mdx",
     "url": "/blog/paid-vs-organic-link-building",
-    "words": 1943,
+    "words": 1982,
     "title": "Paid vs Organic Link Building: Complete Comparison Guide"
   },
   {
@@ -855,6 +871,14 @@
     "metaDescription": "Preserve backlinks during a website migration with an old-to-new URL map, redirect tests and a post-launch checklist. Prioritise useful destinations and real traffic."
   },
   {
+    "file": "content/blog/product-hunt-submission-checklist.mdx",
+    "url": "/blog/product-hunt-submission-checklist",
+    "words": 808,
+    "title": "Product Hunt Submission Checklist: Prepare Your Launch",
+    "metaTitle": "Product Hunt Submission Checklist: Prepare a Launch",
+    "metaDescription": "Prepare your Product Hunt submission with a practical asset checklist, accurate product positioning and launch checks based on the official posting guidance."
+  },
+  {
     "file": "content/blog/proving-link-building-value-to-stakeholders.mdx",
     "url": "/blog/proving-link-building-value-to-stakeholders",
     "words": 1756,
@@ -873,6 +897,14 @@
     "url": "/blog/semrush-link-building-features",
     "words": 1710,
     "title": "SEMrush Link Building Features: Complete Guide and Tutorial"
+  },
+  {
+    "file": "content/blog/submit-product-saashub.mdx",
+    "url": "/blog/submit-product-saashub",
+    "words": 806,
+    "title": "How to Submit a Product to SaaSHub: Free Listing Walkthrough",
+    "metaTitle": "Submit a Product to SaaSHub: Free Listing Walkthrough",
+    "metaDescription": "Follow the SaaSHub submission route with original screenshots. Prepare the required fields, choose the free option and separate submission from verification."
   },
   {
     "file": "content/blog/tiered-link-building-strategy.mdx",
@@ -942,6 +974,14 @@
     "url": "/blog/when-to-disavow-backlinks",
     "words": 1907,
     "title": "When to Disavow Backlinks: The Complete Decision Guide"
+  },
+  {
+    "file": "content/blog/where-to-submit-saas-product.mdx",
+    "url": "/blog/where-to-submit-saas-product",
+    "words": 950,
+    "title": "Where to Submit a SaaS Product: Routes, Costs and Eligibility",
+    "metaTitle": "Where to Submit a SaaS Product: Free & Paid Routes",
+    "metaDescription": "Compare SaaS submission routes by product stage, eligibility and cost. Check Product Hunt, SaaSHub, G2 and BetaList before preparing your software listing."
   },
   {
     "file": "content/blog/white-label-link-building-guide.mdx",
@@ -1910,7 +1950,7 @@
   {
     "file": "content/industries/ecommerce.mdx",
     "url": "/industries/ecommerce",
-    "words": 2678,
+    "words": 2704,
     "title": "E-commerce Link Building for Online Stores",
     "metaTitle": "E-commerce Link Building: Product & Store Opportunities",
     "metaDescription": "Learn link building strategies for e-commerce sites. Product roundups, manufacturer links, gift guides, and tactics that work for online retailers."
@@ -1950,7 +1990,7 @@
   {
     "file": "content/industries/local-business.mdx",
     "url": "/industries/local-business",
-    "words": 2786,
+    "words": 2812,
     "title": "Local Business Link Building: Sources and Relationships",
     "metaTitle": "Local Business Link Building: Sources & Relationships",
     "metaDescription": "Learn link building strategies for local businesses. Citations, community links, local press coverage, and location-based tactics that work."
@@ -1966,7 +2006,7 @@
   {
     "file": "content/industries/saas.mdx",
     "url": "/industries/saas",
-    "words": 2485,
+    "words": 2535,
     "title": "SaaS Link Building: Content, Partnerships and Outreach",
     "metaTitle": "SaaS Link Building: Content, Partnerships & Outreach",
     "metaDescription": "Learn link building strategies for SaaS companies. Integration directories, tech press, developer outreach, and software-specific tactics that work."
@@ -2198,7 +2238,7 @@
   {
     "file": "content/resources/backlink-database-guide.mdx",
     "url": "/resources/backlink-database-guide",
-    "words": 1259,
+    "words": 1316,
     "title": "Backlink Database Guide: Choose and Qualify Opportunities",
     "metaTitle": "Backlink Database Guide: Choose Better Opportunities",
     "metaDescription": "Choose a backlink database by relevance, useful fields and realistic claims. Learn to verify sites, prioritize prospects and track submissions with a free template."
@@ -2270,7 +2310,7 @@
   {
     "file": "content/resources/link-prospect-qualification-checklist.mdx",
     "url": "/resources/link-prospect-qualification-checklist",
-    "words": 1784,
+    "words": 2227,
     "title": "Link Prospect Qualification Checklist",
     "metaTitle": "Link Prospect Qualification Checklist: Fit, Quality & Cost",
     "metaDescription": "Use this checklist to qualify link building prospects. Quick filtering criteria and deep analysis framework for prioritising link opportunities."
@@ -2477,7 +2517,7 @@
   {
     "file": "content/strategies/local-citation-building.mdx",
     "url": "/strategies/local-citation-building",
-    "words": 1156,
+    "words": 1205,
     "title": "Local Citation Building: Directories and NAP Consistency",
     "metaTitle": "Local Citation Building: Directories & NAP Consistency"
   },

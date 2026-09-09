@@ -59,3 +59,10 @@ These tools use no paid data APIs. URLs are fetched by the server. Do not submit
 - [Missing backlinks in Search Console](https://backlinkgrid.com/blog/backlinks-not-showing-google-search-console): distinguish report coverage from a removed placement.
 - [Preserve backlinks during migration](https://backlinkgrid.com/blog/preserve-backlinks-website-migration): map old destinations, test redirects and retain evidence.
 - [Blog by topic](https://backlinkgrid.com/blog): browse the editorial library in seven topic groups.
+
+## Submission research and walkthroughs
+- [SaaS submission routes](https://backlinkgrid.com/blog/where-to-submit-saas-product): Product stage, eligibility and checked fee distinctions.
+- [Directories by business type](https://backlinkgrid.com/blog/business-directories-by-business-type): Local, online-shop, software and professional-service requirements.
+- [Free versus paid submissions](https://backlinkgrid.com/blog/free-vs-paid-directory-submissions): Review fees, promotion and research-file deliverables.
+- [SaaSHub walkthrough](https://backlinkgrid.com/blog/submit-product-saashub): Original form screenshots and observed free submission steps.
+- [Product Hunt preparation](https://backlinkgrid.com/blog/product-hunt-submission-checklist): Official-guidance-based launch checklist; not an acceptance case study.

@@ -1,9 +1,9 @@
 {
   "method": "Full-source inventory of every blog. Topic and lexical claim flags are editorial triage, not fact verification or proof of cannibalisation. Page-specific factual corrections and priority decisions are documented in blog-topical-audit.md.",
-  "posts": 107,
+  "posts": 112,
   "topics": {
     "research": 13,
-    "strategy": 29,
+    "strategy": 34,
     "fundamentals": 13,
     "outreach": 13,
     "industries": 16,
@@ -622,6 +622,43 @@
       "claimReviewCandidates": []
     },
     {
+      "slug": "business-directories-by-business-type",
+      "url": "/blog/business-directories-by-business-type",
+      "title": "Business Directories by Business Type: Where You Qualify",
+      "topic": "strategy",
+      "words": 933,
+      "description": "Find suitable business directories for local services, online shops and B2B software. Compare eligibility, free routes and evidence to prepare before applying.",
+      "headings": [
+        "Match the listing to the business model",
+        "Local businesses: check real-world contact first",
+        "Online shops: a customer-review profile has a different purpose",
+        "B2B software: release status changes the shortlist",
+        "Professional services: prove the relationship behind the listing",
+        "Use an exclusion column",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/strategies/local-citation-building",
+        "/industries/ecommerce",
+        "/blog/where-to-submit-saas-product",
+        "/templates/prospect-tracker.csv",
+        "/resources/link-prospect-qualification-checklist",
+        "/tools/backlink-opportunity-finder",
+        "/bundle",
+        "/blog/free-vs-paid-directory-submissions",
+        "/blog/submit-product-saashub",
+        "/blog/verify-backlink-placement"
+      ],
+      "externalSources": [
+        "https://support.google.com/business/answer/13763036?hl=en",
+        "https://business.yelp.com/products/business-page/",
+        "https://business.trustpilot.com/pricing",
+        "https://documentation.g2.com/help/docs/finding-or-listing-a-product-on-g2",
+        "https://help.shopify.com/en/partners/grow-your-business/partner-directory/join"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
       "slug": "common-link-building-questions-answered",
       "url": "/blog/common-link-building-questions-answered",
       "title": "Common Link Building Questions Answered",
@@ -999,6 +1036,44 @@
           "text": "- Response rates increase 65% with a single follow-up"
         }
       ]
+    },
+    {
+      "slug": "free-vs-paid-directory-submissions",
+      "url": "/blog/free-vs-paid-directory-submissions",
+      "title": "Free vs Paid Directory Submissions: What Are You Buying?",
+      "topic": "strategy",
+      "words": 811,
+      "description": "Compare free listings, paid reviews and priority submission fees. See checked examples, understand what payment buys and decide which routes fit your budget.",
+      "headings": [
+        "Current examples and what the fee means",
+        "Separate four different purchases",
+        "Paying more does not establish SEO value",
+        "Count the time cost as well",
+        "A zero-budget submission workflow",
+        "Decide using evidence, then keep it",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/blog/submit-product-saashub",
+        "/bundle",
+        "/#grid",
+        "/blog/paid-vs-organic-link-building",
+        "/templates/prospect-tracker.csv",
+        "/tools/backlink-opportunity-finder",
+        "/blog/where-to-submit-saas-product",
+        "/blog/business-directories-by-business-type",
+        "/resources/link-prospect-qualification-checklist"
+      ],
+      "externalSources": [
+        "https://www.producthunt.com/launch/how-product-hunt-works",
+        "https://www.saashub.com/services/submit",
+        "https://betalist.com/support",
+        "https://sell.g2.com/profiles",
+        "https://business.trustpilot.com/pricing",
+        "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+        "https://developers.google.com/search/docs/essentials/spam-policies"
+      ],
+      "claimReviewCandidates": []
     },
     {
       "slug": "future-of-link-building",
@@ -4018,9 +4093,10 @@
       "url": "/blog/paid-vs-organic-link-building",
       "title": "Paid vs Organic Link Building: Complete Comparison Guide",
       "topic": "strategy",
-      "words": 1943,
+      "words": 1982,
       "description": "Understand the differences between paid and organic link building approaches. Learn when each makes sense, the risks involved, and how to build a sustainable link strategy.",
       "headings": [
+        "Comparing directory submission fees?",
         "The Paid vs Organic Debate",
         "Defining the Approaches",
         "The Risk Landscape",
@@ -4033,6 +4109,7 @@
         "Conclusion"
       ],
       "internalLinks": [
+        "/blog/free-vs-paid-directory-submissions",
         "/blog/how-to-write-guest-post-pitches-that-get-accepted",
         "/blog/how-to-use-haro-for-link-building",
         "/blog/how-to-find-broken-links-for-link-building",
@@ -4042,23 +4119,23 @@
       "externalSources": [],
       "claimReviewCandidates": [
         {
-          "line": 311,
+          "line": 315,
           "text": "**Foundation: 100% Organic**"
         },
         {
-          "line": 336,
+          "line": 340,
           "text": "- Content creation: 40%"
         },
         {
-          "line": 337,
+          "line": 341,
           "text": "- Tools and research: 15%"
         },
         {
-          "line": 338,
+          "line": 342,
           "text": "- Outreach support: 25%"
         },
         {
-          "line": 339,
+          "line": 343,
           "text": "- Sponsored placements: 20%"
         }
       ]
@@ -4161,6 +4238,38 @@
         "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
         "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
         "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+      ],
+      "claimReviewCandidates": []
+    },
+    {
+      "slug": "product-hunt-submission-checklist",
+      "url": "/blog/product-hunt-submission-checklist",
+      "title": "Product Hunt Submission Checklist: Prepare Your Launch",
+      "topic": "strategy",
+      "words": 808,
+      "description": "Prepare your Product Hunt submission with a practical asset checklist, accurate product positioning and launch checks based on the official posting guidance.",
+      "headings": [
+        "Check the product and account first",
+        "Prepare an asset pack that explains one useful job",
+        "Make the description specific",
+        "Test the visitor journey before launch",
+        "Enter the launch and review the preview",
+        "Measure behaviour after the click",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/tools",
+        "/bundle",
+        "/templates/prospect-tracker.csv",
+        "/blog/where-to-submit-saas-product",
+        "/blog/submit-product-saashub",
+        "/blog/free-vs-paid-directory-submissions",
+        "/resources/link-prospect-qualification-checklist"
+      ],
+      "externalSources": [
+        "https://www.producthunt.com/launch/how-product-hunt-works",
+        "https://help.producthunt.com/en/articles/479557-how-to-post-a-product",
+        "https://www.producthunt.com/launch"
       ],
       "claimReviewCandidates": []
     },
@@ -4316,6 +4425,41 @@
           "text": "No tool finds 100%. Connect Google Search Console for the most complete data. Cross-reference with other tools for important analyses."
         }
       ]
+    },
+    {
+      "slug": "submit-product-saashub",
+      "url": "/blog/submit-product-saashub",
+      "title": "How to Submit a Product to SaaSHub: Free Listing Walkthrough",
+      "topic": "strategy",
+      "words": 806,
+      "description": "Follow the SaaSHub submission route with original screenshots. Prepare the required fields, choose the free option and separate submission from verification.",
+      "headings": [
+        "Start at the product submission form",
+        "Review the imported information",
+        "Choose the free route deliberately",
+        "Do not choose misleading competitors",
+        "Check the next state before claiming success",
+        "Keep a reusable submission record",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/images/submissions/saashub-start.png",
+        "/images/submissions/saashub-form.png",
+        "/blog/free-vs-paid-directory-submissions",
+        "/tools/live-backlink-checker",
+        "/templates/prospect-tracker.csv",
+        "/blog/where-to-submit-saas-product",
+        "/tools/backlink-opportunity-finder",
+        "/bundle",
+        "/blog/product-hunt-submission-checklist",
+        "/blog/business-directories-by-business-type",
+        "/blog/verify-backlink-placement"
+      ],
+      "externalSources": [
+        "https://www.saashub.com/services/submit",
+        "https://www.saashub.com/faq"
+      ],
+      "claimReviewCandidates": []
     },
     {
       "slug": "tiered-link-building-strategy",
@@ -4743,6 +4887,51 @@
           "text": "**Above 25% toxic:** Disavow is likely warranted."
         }
       ]
+    },
+    {
+      "slug": "where-to-submit-saas-product",
+      "url": "/blog/where-to-submit-saas-product",
+      "title": "Where to Submit a SaaS Product: Routes, Costs and Eligibility",
+      "topic": "strategy",
+      "words": 950,
+      "description": "Compare SaaS submission routes by product stage, eligibility and cost. Check Product Hunt, SaaSHub, G2 and BetaList before preparing your software listing.",
+      "headings": [
+        "Choose the route that matches your product",
+        "Product Hunt: prepare for people trying the product",
+        "SaaSHub: describe the software accurately",
+        "G2: check release stage before completing a profile",
+        "BetaList: remove it from a zero-budget shortlist",
+        "Build a submission pack once, then adapt it",
+        "Measure the useful next step",
+        "What to read next"
+      ],
+      "internalLinks": [
+        "/industries/saas",
+        "/blog/product-hunt-submission-checklist",
+        "/blog/submit-product-saashub",
+        "/blog/free-vs-paid-directory-submissions",
+        "/templates/prospect-tracker.csv",
+        "/tools/live-backlink-checker",
+        "/tools/backlink-opportunity-finder",
+        "/bundle",
+        "/blog/business-directories-by-business-type",
+        "/resources/link-prospect-qualification-checklist",
+        "/resources/backlink-database-guide"
+      ],
+      "externalSources": [
+        "https://www.producthunt.com/launch",
+        "https://www.saashub.com/services/submit",
+        "https://sell.g2.com/create-a-profile",
+        "https://betalist.com/submit",
+        "https://www.producthunt.com/launch/how-product-hunt-works",
+        "https://help.producthunt.com/en/articles/479557-how-to-post-a-product",
+        "https://www.saashub.com/faq",
+        "https://documentation.g2.com/help/docs/finding-or-listing-a-product-on-g2",
+        "https://sell.g2.com/profiles",
+        "https://betalist.com/support",
+        "https://betalist.com/criteria"
+      ],
+      "claimReviewCandidates": []
     },
     {
       "slug": "white-label-link-building-guide",

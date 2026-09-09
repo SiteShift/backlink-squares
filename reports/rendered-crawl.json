@@ -1,5 +1,5 @@
 {
-  "pages": 371,
+  "pages": 376,
   "failures": [],
   "brokenLinks": [],
   "largest": [
@@ -33,15 +33,15 @@
     },
     {
       "url": "https://backlinkgrid.com/resources",
-      "bytes": 285739
+      "bytes": 285741
     },
     {
       "url": "https://backlinkgrid.com/comparisons/buzzstream-alternatives",
       "bytes": 280250
     },
     {
-      "url": "https://backlinkgrid.com/comparisons",
-      "bytes": 272932
+      "url": "https://backlinkgrid.com/resources/link-prospect-qualification-checklist",
+      "bytes": 276125
     }
   ],
   "unreachableFromHomepage": []
